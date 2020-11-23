@@ -1,0 +1,14 @@
+{% extends "layouts/base.html" %}
+
+{% set pageHeaderTitle = title %}
+{% set pageHeaderSummary = content %}
+
+{% block content %}
+
+    {% include "partials/page-header.html" %}
+
+    <p>Content for the How We Invest page.</p>
+
+    {% include "partials/cta.html" %}
+
+{% endblock %}

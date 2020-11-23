@@ -1,0 +1,7 @@
+<!-- A reusable header partial for pages that follow a similar visual format -->
+<h1>{{ pageHeaderTitle}}</h1>
+{% if pageHeaderSummary %}
+<p>
+    {{ pageHeaderSummary | safe }}
+</p>
+{% endif %}

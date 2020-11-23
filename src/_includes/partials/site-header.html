@@ -1,0 +1,15 @@
+<a href="#main-content">Skip to content</a>
+<header role="banner">
+    <a href="/" aria-label="{{ site.name }} — Home">
+        {% include "partials/brand.svg" %}
+    </a>
+    <nav aria-label="Primary">
+        <ul>
+            {% for item in navigation.items %}
+                <li>
+                    <a href="{{ item.url }}">{{ item.text }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </nav>
+</header>

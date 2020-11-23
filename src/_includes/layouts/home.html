@@ -1,0 +1,12 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+<article>
+    <h1>{{ intro.headlineLineOne }}<br>{{ intro.headlineLineTwo }}</h1>
+    <p>{{ intro.subtitle }}</p>
+
+    {{ content | safe }}
+
+    {% include "partials/cta.html" %}
+</article>
+{% endblock %}

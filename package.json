@@ -1,0 +1,19 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "Future Super's website",
+  "main": ".eleventy.js",
+  "scripts": {
+    "start": "npx eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://bitbucket.org/futrsupr/website.git"
+  },
+  "author": "Future Super",
+  "license": "UNLICENSED",
+  "homepage": "https://bitbucket.org/futrsupr/website#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^0.11.1"
+  }
+}

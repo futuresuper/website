@@ -1,0 +1,20 @@
+{
+  "items": [
+    {
+      "text": "Home",
+      "url": "/"
+    },
+    {
+      "text": "How We Invest",
+      "url": "/how-we-invest/"
+    },
+    {
+      "text": "Contact",
+      "url": "/contact/"
+    },
+    {
+      "text": "Join",
+      "url": "https://join.futuresuper.com.au/"
+    }
+  ]
+}
