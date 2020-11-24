@@ -1,13 +1,14 @@
 {% extends "layouts/base.html" %}
 
+{% set pageSpecificStyles = ['/css/how-we-invest.css'] %}
+
 {% set pageHeaderTitle = title %}
-{% set pageHeaderSummary = content %}
 
 {% block content %}
 
-    {% include "partials/page-header.html" %}
+    {% include "partials/how-we-invest/intro.html" %}
 
-    <p>Content for the How We Invest page.</p>
+    {% include "partials/how-we-invest/negative-screens.html" %}
 
     {% include "partials/join-cta.html" %}
 

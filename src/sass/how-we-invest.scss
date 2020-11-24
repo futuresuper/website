@@ -1,0 +1,33 @@
+// Page-specific styles for /how-we-invest
+h1 {
+  font-size: 20vw;
+  line-height: 100%;
+}
+
+main > header {
+  height: 80vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  font-size: 5vh;
+  line-height: 110%;
+
+  &#part-one {
+    margin-top: 20vh;
+  }
+
+  &#part-two {
+    margin-top: 20vh;
+    height: 90vh;
+  }
+
+  p {
+    font-weight: 500;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}

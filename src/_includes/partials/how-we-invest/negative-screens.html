@@ -1,0 +1,29 @@
+<article>
+    <header>
+        <h2>How we <span>exclude</span></h2>
+        <p>We apply industry-leading ethical screens to all our super portfolios.</p>
+        <p>Investments must pass every screen to qualify.</p>
+    </header>
+    <form>
+        {% for item in screens.items %}
+            {# Create a radio button for each, with the first one checked by default #}
+            <input type="radio" name="screen" id="{{ item.name | slug }}" value="{{ item.name | slug }}" {% if loop.index === 1 %} checked {% endif %}>
+            <label for="{{ item.name | slug }}">{{ item.name }}</label>
+        {% endfor %}
+    </form>
+
+    {% set pageSpecificScript %}
+    <script>
+        console.log("test")
+    </script>
+    {% endset %}
+
+    {% set selectedScreen = helpers.getSelectedScreen() %}
+
+    <p>Currently selected item from above is: {{ selectedScreen }}</p>
+    <p>Currently selected item from above is: TODO</p>
+
+    <script>
+        console.log("test")
+    </script>
+</article>

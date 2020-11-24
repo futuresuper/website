@@ -21,3 +21,7 @@ npm start
 ```
 
 Then open [localhost:8080](http://localhost:8080) in your browser of choice.
+
+## Todo
+
+- [ ] Subset fonts automatically on build using [glyphhanger](https://github.com/filamentgroup/glyphhanger)

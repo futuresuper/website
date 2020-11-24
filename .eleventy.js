@@ -9,6 +9,7 @@ module.exports = config => {
     config.addPassthroughCopy("./src/css/")
 
     // Sets directories to pass through to the dist folder
+    config.addPassthroughCopy('./src/fonts/');
     config.addPassthroughCopy('./src/images/');
 
     // Add filters to Eleventy

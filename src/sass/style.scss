@@ -1,3 +1,13 @@
+// Reset browser-specific styling
+// Bring in Future Super global config and functions
+@import "config";
+@import "colours";
+
+// Reset browser-specific styling
+@import "reset";
+
+// Global styles start
 body {
-  font-family: sans-serif;
+  font-family: "SharpGrotesk", sans-serif;
+  color: $black-900;
 }
