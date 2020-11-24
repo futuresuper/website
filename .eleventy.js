@@ -15,6 +15,11 @@ module.exports = config => {
         return [...collection.getFilteredByGlob('./src/posts/*.md')].reverse();
     });
 
+    // Returns a collection of homepage sections
+    config.addCollection('homeSections', collection => {
+        return [...collection.getFilteredByGlob('./src/home-sections/*.md')].reverse();
+    });
+
     return {
         // Tells Eleventy to process Markdown, data, and HTML with Nunjucks
         markdownTemplateEngine: 'njk',

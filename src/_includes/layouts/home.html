@@ -1,12 +1,16 @@
 {% extends "layouts/base.html" %}
 
 {% block content %}
-    <article>
-        <h1>{{ intro.headlineLineOne }}<br>{{ intro.headlineLineTwo }}</h1>
-        <p>{{ intro.subtitle }}</p>
 
-        {{ content | safe }}
+<header>
+    <h1>{{ intro.headlineLineOne }}<br>{{ intro.headlineLineTwo }}</h1>
+    <p>{{ intro.subtitle }}</p>
+</header>
 
-        {% include "partials/join-cta.html" %}
-    </article>
+{{ content | safe }}
+
+{% include "partials/home-sections.html" %}
+
+{% include "partials/join-cta.html" %}
+
 {% endblock %}

@@ -1,0 +1,36 @@
+<footer>
+    <a href="/" aria-label="{{ site.name }} — Home">
+        {% include "partials/brand.svg" %}
+    </a>
+    <nav>
+        <ul>
+            {% for item in navigation.items %}
+            <li>
+                <a href="{{ item.url }}">{{ item.text }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </nav>
+
+    <p>
+        We acknowledge the Traditional Custodians of the lands on which we operate. We pay our respects to their Elders,
+        past, present and emerging, and recognise that sovereignty was never ceded. See our <a
+            href="/rap">Reconciliation
+            Action Plan</a>.
+    </p>
+
+    <img src="/images/icons/b-corp.svg" alt="Logo for Certified B Corporation">
+
+    <p>
+        All information provided is general in nature only. We recommend you seek financial advice when considering if
+        Future Super is right for your objectives and needs. When considering returns, past performance is not
+        indicative of
+        future performance.
+    </p>
+
+    <ul>
+        <li>Fund Information</li>
+        <li>Terms & Conditions</li>
+        <li>Privacy Policy</li>
+    </ul>
+</footer>
