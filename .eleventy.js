@@ -3,12 +3,17 @@ const dateFilter = require('./src/filters/date-filter.js');
 const w3DateFilter = require('./src/filters/w3-date-filter.js');
 
 module.exports = config => {
-    // Add filters to Eleventy
-    config.addFilter('dateFilter', dateFilter);
-    config.addFilter('w3DateFilter', w3DateFilter);
+    // Watch for changes in /sass
+    config.addWatchTarget("./src/sass/")
+    // Take the contents of /css and pass through to /dist
+    config.addPassthroughCopy("./src/css/")
 
     // Sets directories to pass through to the dist folder
     config.addPassthroughCopy('./src/images/');
+
+    // Add filters to Eleventy
+    config.addFilter('dateFilter', dateFilter);
+    config.addFilter('w3DateFilter', w3DateFilter);
 
     // Returns a collection of blog posts in reverse date order
     config.addCollection('blog', collection => {
