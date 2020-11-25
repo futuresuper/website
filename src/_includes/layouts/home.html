@@ -2,15 +2,15 @@
 
 {% block content %}
 
-<header>
-    <h1>{{ intro.headlineLineOne }}<br>{{ intro.headlineLineTwo }}</h1>
-    <p>{{ intro.subtitle }}</p>
-</header>
+    <header>
+        <h1>{{ intro.headlineLineOne }}<br>{{ intro.headlineLineTwo }}</h1>
+        <p>{{ intro.subtitle }}</p>
+    </header>
 
-{{ content | safe }}
+    {{ content | safe }}
 
-{% include "partials/home-sections.html" %}
+    {% include "partials/home/home-sections.html" %}
 
-{% include "partials/join-cta.html" %}
+    {% include "partials/join-cta.html" %}
 
 {% endblock %}

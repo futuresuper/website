@@ -10,6 +10,13 @@
 
         {# Allow for page-specific styling #}
         {# TODO: make these inline styles instead of another <link> call #}
+        {# {% if pageSpecificStyles %}
+            <style>
+                {% for item in pageSpecificStyles %}
+                    {% include item %}
+                {% endfor %}
+            </style>
+        {% endif %} #}
         {% if pageSpecificStyles %}
             {% for item in pageSpecificStyles %}
                 <link rel="stylesheet" href="{{ item | url }}"/>
@@ -25,7 +32,7 @@
         {% include "partials/site-footer.html" %}
 
         {% if pageSpecificScripts %}
-            <script defer>
+            <script type="module" defer>
                 {% for item in pageSpecificScripts %}
                     {% set js %}
                     {% include item %}

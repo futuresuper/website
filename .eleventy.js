@@ -28,7 +28,10 @@ module.exports = config => {
         return [...collection.getFilteredByGlob('./src/home-sections/*.md')].reverse();
     });
 
-    // Minify inline JavaScript
+    // TODO Returns a publicly accessible collection based on what's in screens.js(on)
+    config.addPassthroughCopy('./src/data-passed-to-client/');
+
+    // Allow JavaScript to be minified via the jsmin Nunjucks filter
     // https://www.11ty.dev/docs/quicktips/inline-js/
     config.addNunjucksAsyncFilter("jsmin", async function (
         code,
