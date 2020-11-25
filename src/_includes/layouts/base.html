@@ -24,8 +24,15 @@
         </main>
         {% include "partials/site-footer.html" %}
 
-        {% if pageSpecificScript %}
-            {{ pageSpecificScript | safe }}
+        {% if pageSpecificScripts %}
+            <script defer>
+                {% for item in pageSpecificScripts %}
+                    {% set js %}
+                    {% include item %}
+                    {% endset %}
+                    {{ js | jsmin | safe }}
+                {% endfor %}
+            </script>
         {% endif %}
     </body>
 

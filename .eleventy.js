@@ -2,6 +2,8 @@
 const dateFilter = require('./src/filters/date-filter.js');
 const w3DateFilter = require('./src/filters/w3-date-filter.js');
 
+const { minify } = require("terser");
+
 module.exports = config => {
     // Watch for changes in /sass
     config.addWatchTarget("./src/sass/")
@@ -25,6 +27,23 @@ module.exports = config => {
     config.addCollection('homeSections', collection => {
         return [...collection.getFilteredByGlob('./src/home-sections/*.md')].reverse();
     });
+
+    // Minify inline JavaScript
+    // https://www.11ty.dev/docs/quicktips/inline-js/
+    config.addNunjucksAsyncFilter("jsmin", async function (
+        code,
+        callback
+    ) {
+        try {
+            const minified = await minify(code);
+            callback(null, minified.code);
+        } catch (err) {
+            console.error("Terser error: ", err);
+            // Fail gracefully.
+            callback(null, code);
+        }
+    });
+
 
     return {
         // Tells Eleventy to process Markdown, data, and HTML with Nunjucks

@@ -3,7 +3,7 @@ module.exports = {
     * Returns the currently selected item in the negative-screens form
     */
     getSelectedScreen() {
-        // const formEl = document.querySelector("form")
+        const formEl = document.querySelector("form")
         // console.log(formEl)
         let response = "foo";
 
