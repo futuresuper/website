@@ -1,3 +1,10 @@
+/*
+* Duplicates data found in _data/screens.json because it must be made available to client-side JS
+* in order for page viewers to interact with data.
+*
+* Ideally, both the page and the page's client-side JS use the same .json file
+*/
+
 export default {
     items: [
         {

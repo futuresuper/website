@@ -7,29 +7,33 @@ const { minify } = require("terser");
 module.exports = config => {
     // Watch for changes in /sass
     config.addWatchTarget("./src/sass/")
-    // Take the contents of /css and pass through to /dist
+    // Take the contents of /the following directories and pass through to /dist
     config.addPassthroughCopy("./src/css/")
-
-    // Sets directories to pass through to the dist folder
     config.addPassthroughCopy('./src/fonts/');
     config.addPassthroughCopy('./src/images/');
+    // TEMP: Do the same for the negative screens, which are acted on by client-side JS
+    config.addPassthroughCopy('./src/data-passed-to-client/');
+    // TODO Change above to publicly accessible collection based on what's in screens.js(on)
+    // Because otherwise we have two sources of the same information (the other being in _data/screens.js)
+    // I.e:
+    // config.addCollection('negativeScreens', collection => {
+    //     return [...collection.doSomethingTo('path/to/screens.js')];
+    // });
 
     // Add filters to Eleventy
+    // Handle dates in areas such as blog posts
     config.addFilter('dateFilter', dateFilter);
     config.addFilter('w3DateFilter', w3DateFilter);
 
-    // Returns a collection of blog posts in reverse date order
+    // Return a collection of blog posts in reverse date order
     config.addCollection('blog', collection => {
         return [...collection.getFilteredByGlob('./src/posts/*.md')].reverse();
     });
 
-    // Returns a collection of homepage sections
+    // Return a collection of homepage sections
     config.addCollection('homeSections', collection => {
         return [...collection.getFilteredByGlob('./src/home-sections/*.md')].reverse();
     });
-
-    // TODO Returns a publicly accessible collection based on what's in screens.js(on)
-    config.addPassthroughCopy('./src/data-passed-to-client/');
 
     // Allow JavaScript to be minified via the jsmin Nunjucks filter
     // https://www.11ty.dev/docs/quicktips/inline-js/
@@ -47,9 +51,8 @@ module.exports = config => {
         }
     });
 
-
     return {
-        // Tells Eleventy to process Markdown, data, and HTML with Nunjucks
+        // Tell Eleventy to process Markdown, data, and HTML with Nunjucks
         markdownTemplateEngine: 'njk',
         dataTemplateEngine: 'njk',
         htmlTemplateEngine: 'njk',

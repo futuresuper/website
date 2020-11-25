@@ -1,3 +1,12 @@
+/*
+* This script is designed to allow a visitor to /how-we-invest
+* to browse through the negative screens and see their criteria.
+*
+* It currently imports data from a public source, which is 
+* different to the source from which the radio buttons are created.
+* They should ideally both read from the same source.
+*/
+
 const formEl = document.getElementById('screens-form');
 const outputEl = document.getElementById('selected-screen');
 const criteriaContainer = document.getElementById('criteria-container');
