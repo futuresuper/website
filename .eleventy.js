@@ -11,14 +11,8 @@ module.exports = config => {
     config.addPassthroughCopy("./src/css/")
     config.addPassthroughCopy('./src/fonts/');
     config.addPassthroughCopy('./src/images/');
-    // TEMP: Do the same for the negative screens, which are acted on by client-side JS
-    config.addPassthroughCopy('./src/data-passed-to-client/');
-    // TODO Change above to publicly accessible collection based on what's in screens.js(on)
-    // Because otherwise we have two sources of the same information (the other being in _data/screens.js)
-    // I.e:
-    // config.addCollection('negativeScreens', collection => {
-    //     return [...collection.doSomethingTo('path/to/screens.js')];
-    // });
+    // And do the same for any data we want publicly-accessible
+    config.addPassthroughCopy('./src/_data/screens.json');
 
     // Add filters to Eleventy
     // Handle dates in areas such as blog posts
