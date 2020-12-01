@@ -1,7 +1,8 @@
 // Declare filters
+// Date filters
 const dateFilter = require('./src/filters/date-filter.js');
 const w3DateFilter = require('./src/filters/w3-date-filter.js');
-
+// JS minification filter
 const { minify } = require("terser");
 
 module.exports = config => {
