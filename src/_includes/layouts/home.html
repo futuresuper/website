@@ -2,9 +2,11 @@
 
 {% block content %}
 
-    <div>
-        <h1 class="uppercase">{{ intro.headlineLineOne }}<br>{{ intro.headlineLineTwo }}</h1>
-        <p>{{ intro.subtitle }} test</p>
+    <div class="flex-center" style="flex-direction: column; min-height: 60vh; align-items: center">
+        <h1 class="uppercase" style="text-align: center; font-size: 5rem; line-height: 5.6rem">{{ intro.headlineLineOne }}<br>
+        {{ intro.headlineLineTwo }}</h1>
+        <p style="margin-top: 1rem">{{ intro.subtitle }}</p>
+        <button class="button" style="margin-top: 2rem">Join Now</button>
     </div>
 
     {{ content | safe }}
