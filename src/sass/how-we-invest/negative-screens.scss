@@ -1,0 +1,79 @@
+@import "../colours";
+
+article header {
+  text-align: center;
+
+  p {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+}
+
+// Fade in-and-outs of criteria
+#criteria-container,
+#selected-screen-title {
+  opacity: 0;
+  transition: opacity 250ms ease-in-out;
+
+  &.is-visible {
+    opacity: 1;
+  }
+}
+
+.scroll-buttons {
+  @media (min-width: 720px) {
+    display: none;
+  }
+}
+
+// Form radio buttons
+#screens-form {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "JetBrains Mono";
+  font-size: 0.875rem;
+  margin-top: -0.25rem;
+  margin-left: -0.25rem;
+  // Mobile-specific item behaviour
+  overflow-x: scroll;
+  flex-wrap: nowrap;
+  // Tablet/desktop-specific item behaviour
+  @media (min-width: 720px) {
+    flex-wrap: wrap;
+  }
+
+  input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    &:checked + label {
+      background-color: $red-700;
+      color: $white-500;
+      border-color: $red-700;
+    }
+  }
+
+  label {
+    cursor: pointer;
+    padding: 0.75rem 1rem;
+    margin: 0.25rem;
+    color: $red-700;
+    border: 1px solid $red-200;
+    background-color: $white-500;
+    transition: all 200ms ease;
+    flex-shrink: 0;
+    text-align: center;
+
+    @media (min-width: 720px) {
+      flex-grow: 1;
+    }
+
+    &:hover {
+      background-color: $red-200;
+      border-color: $red-500;
+    }
+  }
+}

@@ -182,8 +182,8 @@
       "name": "Pornography",
       "criteria": [
         {
-          "question": "TBA",
-          "examples": ["TBA"]
+          "question": "Does the company produce pornographic material or provide significant services to the pornographic industry?",
+          "examples": ["No companies assessed"]
         }
       ]
     }

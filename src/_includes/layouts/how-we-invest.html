@@ -2,7 +2,7 @@
 
 {# Calls in any page-specific styles #}
 {# These should be reserved for 'hero' pages where we want to deviate from site-wide templates #}
-{% set pageSpecificStyles = ['/css/how-we-invest.css'] %}
+{% set pageSpecificStyles = ['/css/how-we-invest/how-we-invest.css', '/css/how-we-invest/negative-screens.css'] %}
 
 {# Sets the page title from the .md file this layout is called from #}
 {% set pageHeaderTitle = title %}
@@ -20,4 +20,4 @@
 
 {# Calls in any page-specific, client-side, scripts that are required for this page #}
 {# Think interactive elements such as the negative screens browser #}
-{% set pageSpecificScripts = ['scripts/how-we-invest/get-selected-screen.js'] %}
+{% set pageSpecificScripts = ['scripts/how-we-invest/get-selected-screen.js','scripts/how-we-invest/scroll-screens.js'] %}

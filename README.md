@@ -38,4 +38,5 @@ Then open [localhost:8080](http://localhost:8080) in your browser of choice.
 
 ### Low priority
 
+- [ ] Prevent injected scrips/styles from getting Nunjucks indentation on build
 - [ ] Subset fonts automatically on build using [glyphhanger](https://github.com/filamentgroup/glyphhanger)
