@@ -8,12 +8,80 @@
 // Reset browser-specific styling
 @import "reset";
 
+// apply a natural box layout model to all elements
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 // Global styles start
 body {
   font-family: "SharpGrotesk", sans-serif;
   color: $black-900;
+  background-color: $off-white-500;
 }
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.button {
+  background-color: $black-900;
+  color: $off-white-500;
+  font-size: 1.125rem;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  border: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  &:hover {
+    background: $blue-500;
+  }
+}
+
+header {
+  padding: 2rem 3rem;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  font-weight: 700;
+}
+
+nav > ul > li {
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border: 1px solid transparent;
+  &.has-subitems {
+    &:hover {
+      background-color: $white-500;
+      border: 1px solid $black-900;
+    }
+  }
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  color: $black-900;
+}
+
+nav > ul > li > ul {
+  display: none;
+  position: absolute;
+  margin-top: 1rem;
+  margin-left: calc(-2rem - 1px);
+  background-color: $white-500;
+  border: 1px solid $black-900;
+  padding: 2rem;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
 }
