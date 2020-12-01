@@ -4,17 +4,35 @@
       "text": "Why Us ↓",
       "subItems": [
         {
-          "text": "One",
-          "url": "/contact/"
+          "text": "How We Invest",
+          "url": "/how-we-invest/"
         },
         {
-          "text": "Two",
-          "url": "/contact/"
+          "text": "Investment Options",
+          "url": "/investment-options/"
+        },
+        {
+          "text": "Performance & Returns",
+          "url": "/performance-and-returns/"
         }
       ]
     },
     {
-      "text": "Resources ↓"
+      "text": "Resources ↓",
+      "subItems": [
+        {
+          "text": "Support & FAQs",
+          "url": "/support-and-faqs/"
+        },
+        {
+          "text": "Documents & Forms",
+          "url": "/documents-and-forms/"
+        },
+        {
+          "text": "Employers",
+          "url": "/employers/"
+        }
+      ]
     },
     {
       "text": "COVID-19",

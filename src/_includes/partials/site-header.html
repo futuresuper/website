@@ -5,35 +5,27 @@
         <img src="/images/Future_Super_Logo.svg" alt="Future Super Logo">
       </a>
       <nav aria-label="Primary">
-        <ul>
           {% for item in navigation.items %}
               {% if item.url %}
-                <li>
-                  <a href="{{ item.url }}">{{ item.text }}</a>
-                </li>
+                <a href="{{ item.url }}">{{ item.text }}</a>
               {% else %}
-                <li class="has-subitems">
+              <div class="dropdown">
+                <div class="button">
                   {{ item.text }}
-                  <ul>
+                </div>
+                <div class="dropdown-content">
                     {% for subItem in item.subItems %}
-                      <li>
-                        {{ subItem.text }}
-                      </li>
+                      <a href="{{ subItem.url }}">{{ subItem.text }}</a>
                     {% endfor %}
-                  </ul>
-                </li>
+                </div>
+              </div>
               {% endif %}
           {% endfor %}
-        </ul>
       </nav>
     </div>
     <nav class="flex-center">
-      <ul><li><a href="#">
-        Login
-      </a></li></ul>
-      <a href="#" class="button">
-        Join Now
-      </a>
+      <a href="#">Login</a>
+      <a href="#" class="button">Join Now</a>
     </nav>
   </div>
 </header>
