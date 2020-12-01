@@ -1,15 +1,31 @@
-<a href="#main-content">Skip to content</a>
 <header role="banner">
-    <a href="/" aria-label="{{ site.name }} — Home">
-        {% include "partials/brand.svg" %}
-    </a>
-    <nav aria-label="Primary">
-        <ul>
-            {% for item in navigation.items %}
-                <li>
-                    <a href="{{ item.url }}">{{ item.text }}</a>
-                </li>
-            {% endfor %}
-        </ul>
+  <div class="flex-center" style="justify-content: space-between">
+    <div class="flex-center">
+      <a href="/" aria-label="{{ site.name }} — Home" style="margin-right: 2rem">
+        <img src="/images/Future_Super_Logo.svg" alt="Future Super Logo">
+      </a>
+      <nav aria-label="Primary">
+          {% for item in navigation.items %}
+              {% if item.url %}
+                <a href="{{ item.url }}">{{ item.text }}</a>
+              {% else %}
+              <div class="dropdown">
+                <div class="button">
+                  {{ item.text }}
+                </div>
+                <div class="dropdown-content">
+                    {% for subItem in item.subItems %}
+                      <a href="{{ subItem.url }}">{{ subItem.text }}</a>
+                    {% endfor %}
+                </div>
+              </div>
+              {% endif %}
+          {% endfor %}
+      </nav>
+    </div>
+    <nav class="flex-center">
+      <a href="#">Login</a>
+      <a href="#" class="button">Join Now</a>
     </nav>
+  </div>
 </header>
