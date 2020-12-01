@@ -7,26 +7,25 @@
 
     <ul>
         {% for item in collections.screensTest %}
-        <li>{{ item }}</li>
+            <li>{{ item }}</li>
         {% endfor %}
     </ul>
 
-
     <form id="screens-form">
         {% for item in screens.items %}
-        {# Create a radio button for each, with the first one checked by default #}
-        <input type="radio" name="screen" id="{{ item.name | slug }}" value="{{ item.name }}" {% if loop.index === 1 %}
+            {# Create a radio button for each, with the first one checked by default #}
+            <input type="radio" name="screen" id="{{ item.name | slug }}" value="{{ item.name }}" {% if loop.index === 1 %}
             checked {% endif %}>
-        <label for="{{ item.name | slug }}">{{ item.name }}</label>
+            <label for="{{ item.name | slug }}">{{ item.name }}</label>
         {% endfor %}
     </form>
 
     <p>We exclude</p>
-    <h3 id="selected-screen">
+    <h3 id="selected-screen-title">
         {% for item in screens.items %}
-        {% if loop.index === 1 %}
-        {{ item.name }}
-        {% endif %}
+            {% if loop.index === 1 %}
+                {{ item.name }}
+            {% endif %}
         {% endfor %}
     </h3>
     <p>through the following criteria</p>

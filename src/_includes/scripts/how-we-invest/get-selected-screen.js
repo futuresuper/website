@@ -1,62 +1,85 @@
 /*
 * This script is designed to allow a visitor to /how-we-invest
 * to browse through the negative screens and see their criteria.
-*
-* It currently imports data from a public source, which is 
-* different to the source from which the radio buttons are created.
-* They should ideally both read from the same source.
 */
 
 const formEl = document.getElementById('screens-form');
-const outputEl = document.getElementById('selected-screen');
+const screenTitleEl = document.getElementById('selected-screen-title');
 const criteriaContainer = document.getElementById('criteria-container');
 
-const data = fetch("/_data/screens.json")
-    .then(response => response.json())
-    .then(json => listenToInputs(json))
-    .catch(function (error) {
-        console.log(error)
-    });
 
+// Function for accessing screens data
+async function fetchData() {
+    const response = await fetch("/_data/screens.json")
+    const json = await response.json();
+    return json
+}
 
-function listenToInputs(screensData) {
-    // TODO: amend the below to wait for the fetch to finish
-    formEl.addEventListener('change', e => {
-        // update the outputEl with the currently selected item
-        outputEl.textContent = formEl.screen.value
+// Run at load
+refreshCriteriaContent()
+// Then check for changes
+formEl.addEventListener('change', e => {
+    // Update the criteria content
+    refreshCriteriaContent()
 
-        // Show screen criteria
-        Array.from(screensData.items).forEach((item) => {
-            if (item.name === formEl.screen.value) {
-                // console.log("Matched", item.name, "to", formEl.screen.value)
-                item.criteria.map((i) => {
-                    const criteriaItem = document.createElement("div");
-                    criteriaItem.classList.add("criteria")
+})
 
-                    const question = document.createElement("p");
-                    question.textContent = i.question;
-                    question.classList.add("question");
-                    const examplelabel = document.createElement("p")
-                    examplelabel.textContent = "Failing examples include..."
-                    examplelabel.classList.add("example-label")
-                    const examplesContainer = document.createElement("ul");
-                    examplesContainer.classList.add("examples")
+// Core function for updating the screening content below the selects
+async function refreshCriteriaContent() {
+    let data = await fetchData()
+    // Remove old screen criteria
+    criteriaContainer.classList.remove("is-visible");
+    screenTitleEl.classList.remove("is-visible");
 
-                    const examples = i.examples;
-                    examples.map((i) => {
-                        const exampleItem = document.createElement("li");
-                        exampleItem.textContent = i;
-                        examplesContainer.appendChild(exampleItem);
-                    });
+    setTimeout(function () {
+        while (criteriaContainer.firstChild) {
+            criteriaContainer.removeChild(criteriaContainer.firstChild);
+        }
+        // Add new screen criteria
+        showNewScreenContent(data);
+    }, 250)
 
-                    criteriaItem.appendChild(question);
-                    criteriaItem.append(examplelabel);
-                    criteriaItem.appendChild(examplesContainer);
-                    criteriaContainer.appendChild(criteriaItem);
-                });
-            }
-        })
-    });
+    setTimeout(function () {
+        criteriaContainer.classList.add("is-visible");
+        screenTitleEl.classList.add("is-visible");
+    }, 500)
+
 
 }
 
+function showNewScreenContent(screensData) {
+    /// update the screenTitleEl with the currently selected item
+    screenTitleEl.textContent = formEl.screen.value
+    // // Show new screen criteria
+    console.log("Current selected radio button: ", formEl.screen.value)
+    Array.from(screensData.items).forEach((item) => {
+        if (item.name === formEl.screen.value) {
+            console.log("Match from data: ", item.name)
+            item.criteria.map((i) => {
+                const criteriaItem = document.createElement("div");
+                criteriaItem.classList.add("criteria")
+
+                const question = document.createElement("p");
+                question.textContent = i.question;
+                question.classList.add("question");
+                const examplelabel = document.createElement("p")
+                examplelabel.textContent = "Failing examples include..."
+                examplelabel.classList.add("example-label")
+                const examplesContainer = document.createElement("ul");
+                examplesContainer.classList.add("examples")
+
+                const examples = i.examples;
+                examples.map((i) => {
+                    const exampleItem = document.createElement("li");
+                    exampleItem.textContent = i;
+                    examplesContainer.appendChild(exampleItem);
+                });
+
+                criteriaItem.appendChild(question);
+                criteriaItem.append(examplelabel);
+                criteriaItem.appendChild(examplesContainer);
+                criteriaContainer.appendChild(criteriaItem);
+            });
+        }
+    })
+}

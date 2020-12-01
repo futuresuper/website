@@ -38,7 +38,10 @@
                     {% set js %}
                     {% include item %}
                     {% endset %}
-                    {{ js | jsmin | safe }}
+                    {# If production #}
+                    {# {{ js | jsmin | safe }} #}
+                    {# Else #}
+                    {{ js | safe }}
                 {% endfor %}
             </script>
         {% endif %}
