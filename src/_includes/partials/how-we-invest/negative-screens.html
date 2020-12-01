@@ -1,31 +1,30 @@
 <article>
     <header>
         <h2>How we <span>exclude</span></h2>
-        <p>We apply industry-leading ethical screens to all our super portfolios.</p>
+        <p class="hero">We apply industry-leading ethical screens to all our super portfolios.</p>
         <p>Investments must pass every screen to qualify.</p>
     </header>
 
-    <ul>
-        {% for item in collections.screensTest %}
-            <li>{{ item }}</li>
-        {% endfor %}
-    </ul>
+    <div class="scroll-buttons">
+        <button id="left">Left</button>
+        <button id="right">Right</button>
+    </div>
 
     <form id="screens-form">
         {% for item in screens.items %}
-            {# Create a radio button for each, with the first one checked by default #}
-            <input type="radio" name="screen" id="{{ item.name | slug }}" value="{{ item.name }}" {% if loop.index === 1 %}
+        {# Create a radio button for each, with the first one checked by default #}
+        <input type="radio" name="screen" id="{{ item.name | slug }}" value="{{ item.name }}" {% if loop.index === 1 %}
             checked {% endif %}>
-            <label for="{{ item.name | slug }}">{{ item.name }}</label>
+        <label for="{{ item.name | slug }}">{{ item.name }}</label>
         {% endfor %}
     </form>
 
     <p>We exclude</p>
     <h3 id="selected-screen-title">
         {% for item in screens.items %}
-            {% if loop.index === 1 %}
-                {{ item.name }}
-            {% endif %}
+        {% if loop.index === 1 %}
+        {{ item.name }}
+        {% endif %}
         {% endfor %}
     </h3>
     <p>through the following criteria</p>

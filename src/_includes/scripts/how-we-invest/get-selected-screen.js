@@ -48,13 +48,11 @@ async function refreshCriteriaContent() {
 }
 
 function showNewScreenContent(screensData) {
-    /// update the screenTitleEl with the currently selected item
+    /// Update the screenTitleEl with the currently selected item
     screenTitleEl.textContent = formEl.screen.value
-    // // Show new screen criteria
-    console.log("Current selected radio button: ", formEl.screen.value)
+    // Show new screen criteria
     Array.from(screensData.items).forEach((item) => {
         if (item.name === formEl.screen.value) {
-            console.log("Match from data: ", item.name)
             item.criteria.map((i) => {
                 const criteriaItem = document.createElement("div");
                 criteriaItem.classList.add("criteria")
