@@ -13,8 +13,15 @@ main > header {
 }
 
 section {
-  font-size: 5vh;
-  line-height: 110%;
+  &.loud {
+    p {
+      font-size: 4rem;
+      line-height: 110%;
+      font-weight: 500;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+  }
 
   &#part-one {
     margin-top: 20vh;
@@ -23,15 +30,5 @@ section {
   &#part-two {
     margin-top: 20vh;
     height: 90vh;
-  }
-
-  p {
-    font-weight: 500;
-    margin-left: 1rem;
-    margin-right: 1rem;
-
-    &.hero {
-      font-size: 1.5rem;
-    }
   }
 }
