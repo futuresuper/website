@@ -1,0 +1,29 @@
+---
+title: "Andrew test"
+data: screens2
+---
+
+{% extends "layouts/base.html" %}
+{% block content %}
+
+<div style="padding: 6rem">
+  {% for screen in screens2 %}
+    <button onclick="showScreen('{{ screen.name }}')">{{ screen.name }}</button>
+  {% endfor %}
+  {% for screen in screens2 %}
+    <div class="screen-containers" id="{{ screen.name }}" style="display: none">
+      {{ screen.name }}
+    </div>
+  {% endfor %}
+</div>
+<script>
+  function showScreen(screen) {
+    const screenContainers = document.getElementsByClassName("screen-containers");
+    for (let i=0; i<screenContainers.length; i++) {
+      screenContainers[i].style.display = "none";
+    }
+    document.getElementById(screen).style.display = "block";
+  }
+</script>
+
+{% endblock %}
