@@ -1,78 +1,101 @@
 /*
- * This script is designed to allow a visitor to /how-we-invest
- * to browse through the negative screens and see their criteria.
- */
+* This script is designed to allow a visitor to /how-we-invest
+* to browse through the negative screens and see their criteria.
+*/
 
-const formEl = document.getElementById("screens-form");
-const screenTitleEl = document.getElementById("selected-screen-title");
-const criteriaContainer = document.getElementById("criteria-container");
+const form = document.getElementById('screens-form');
+const screenIcon = document.getElementsByClassName('screen-icon')[0];
+const screenTitle = document.getElementById('selected-screen-title');
+const criteriaContainer = document.getElementById('criteria-container');
+const slugify = text => text
+    .toString()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .trim()
+    .replace(/\s+/g, '-')
+    .replace(/[^\w-]+/g, '')
+    .replace(/--+/g, '-')
+
 
 // Function for accessing screens data
 async function fetchData() {
-  const response = await fetch("/_data/screens.json");
-  return response.json();
+    const response = await fetch("/_data/screens.json")
+    const json = await response.json();
+    return json
 }
 
 // Run at load
-refreshCriteriaContent();
+refreshCriteriaContent()
 // Then check for changes
-formEl.addEventListener("change", (e) => {
-  // Update the criteria content
-  refreshCriteriaContent();
-});
+form.addEventListener('change', e => {
+    // Update the criteria content
+    refreshCriteriaContent()
+
+})
 
 // Core function for updating the screening content below the selects
 async function refreshCriteriaContent() {
-  let data = await fetchData();
-  // Remove old screen criteria
-  criteriaContainer.classList.remove("is-visible");
-  screenTitleEl.classList.remove("is-visible");
+    let data = await fetchData()
+    const elementsToFade = [criteriaContainer, screenTitle, screenIcon]
 
-  setTimeout(function () {
-    while (criteriaContainer.firstChild) {
-      criteriaContainer.removeChild(criteriaContainer.firstChild);
-    }
-    // Add new screen criteria
-    showNewScreenContent(data);
-  }, 250);
+    // Fade-out old screen criteria
+    elementsToFade.forEach(element => {
+        element.classList.remove("is-visible");
+    })
 
-  setTimeout(function () {
-    criteriaContainer.classList.add("is-visible");
-    screenTitleEl.classList.add("is-visible");
-  }, 500);
+    setTimeout(function () {
+        // Remove old screen criteria
+        while (criteriaContainer.firstChild) {
+            criteriaContainer.removeChild(criteriaContainer.firstChild);
+        }
+        // Add new screen criteria
+        showNewScreenContent(data);
+    }, 250)
+
+    setTimeout(function () {
+        // Fade-in new screen criteria
+        elementsToFade.forEach(element => {
+            element.classList.add("is-visible");
+        })
+    }, 500)
+
+
 }
 
 function showNewScreenContent(screensData) {
-  /// Update the screenTitleEl with the currently selected item
-  screenTitleEl.textContent = formEl.screen.value;
-  // Show new screen criteria
-  Array.from(screensData.items).forEach((item) => {
-    if (item.name === formEl.screen.value) {
-      item.criteria.map((i) => {
-        const criteriaItem = document.createElement("div");
-        criteriaItem.classList.add("criteria");
+    /// Update the screenTitle with the currently selected item
+    screenTitle.textContent = form.screen.value
+    screenIcon.src = `/images/icons/screens/${slugify(form.screen.value)}.svg`
+    screenIcon.alt = `Icon for ${form.screen.value}`
+    // Show new screen criteria
+    Array.from(screensData.items).forEach((item) => {
+        if (item.name === form.screen.value) {
+            item.criteria.map((i) => {
+                const criteriaItem = document.createElement("div");
+                criteriaItem.classList.add("criteria")
 
-        const question = document.createElement("p");
-        question.textContent = i.question;
-        question.classList.add("question");
-        const examplelabel = document.createElement("p");
-        examplelabel.textContent = "Failing examples include...";
-        examplelabel.classList.add("example-label");
-        const examplesContainer = document.createElement("ul");
-        examplesContainer.classList.add("examples");
+                const question = document.createElement("p");
+                question.textContent = i.question;
+                question.classList.add("question");
+                const examplelabel = document.createElement("p")
+                examplelabel.textContent = "Failing examples include..."
+                examplelabel.classList.add("example-label")
+                const examplesContainer = document.createElement("ul");
+                examplesContainer.classList.add("examples")
 
-        const examples = i.examples;
-        examples.map((i) => {
-          const exampleItem = document.createElement("li");
-          exampleItem.textContent = i;
-          examplesContainer.appendChild(exampleItem);
-        });
+                const examples = i.examples;
+                examples.map((i) => {
+                    const exampleItem = document.createElement("li");
+                    exampleItem.textContent = i;
+                    examplesContainer.appendChild(exampleItem);
+                });
 
-        criteriaItem.appendChild(question);
-        criteriaItem.append(examplelabel);
-        criteriaItem.appendChild(examplesContainer);
-        criteriaContainer.appendChild(criteriaItem);
-      });
-    }
-  });
+                criteriaItem.appendChild(question);
+                criteriaItem.append(examplelabel);
+                criteriaItem.appendChild(examplesContainer);
+                criteriaContainer.appendChild(criteriaItem);
+            });
+        }
+    })
 }
