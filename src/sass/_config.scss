@@ -1,15 +1,23 @@
 @font-face {
   font-family: "SharpGrotesk";
-  src: url("../fonts/SharpGroteskBook19-subset-latin.woff2") format("woff2");
-  font-weight: normal;
+  src: url("../fonts/SharpGroteskBook19-subset.woff2") format("woff2");
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: "SharpGrotesk";
-  src: url("../fonts/SharpGroteskMedium19-subset-latin.woff2") format("woff2");
-  font-weight: bold;
+  src: url("../fonts/SharpGroteskMedium19-subset.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SharpGrotesk";
+  src: url("../fonts/SharpGroteskSmBold19-subset.woff2") format("woff2");
+  font-weight: 900;
   font-style: normal;
   font-display: swap;
 }

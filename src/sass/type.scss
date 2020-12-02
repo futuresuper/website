@@ -2,8 +2,9 @@ $font-size-sm: 0.875rem; //14px
 
 @import "colours";
 
-.legal {
-  color: $grey-400;
+h1,
+h2 {
+  font-weight: 900;
 }
 
 p {
@@ -13,4 +14,16 @@ p {
       color: $blue-500;
     }
   }
+}
+
+.headline-loud {
+  text-transform: uppercase;
+  line-height: 98%;
+  font-size: 6rem;
+  text-align: center;
+  color: $black-500;
+}
+
+.legal {
+  color: $grey-400;
 }
