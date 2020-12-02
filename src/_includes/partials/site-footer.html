@@ -1,38 +1,91 @@
 <footer>
-  <a href="/" aria-label="{{ site.name }} — Home">
-    <img src="/images/logo-single-line.svg" alt="Future Super Logo">
-    {# TODO: replace with: #}
-    {# {% include "partials/brand.svg" %} #}
-  </a>
-  <nav>
-    <ul>
-      {% for item in navigation.items %}
-        <li>
-          <a href="{{ item.url }}">{{ item.text }}</a>
-        </li>
-      {% endfor %}
-    </ul>
-  </nav>
+    <div class="container">
+        <div class="grid">
+            <div>
+                <a href="/" aria-label="{{ site.name }} — Home">
+                    <img src="/images/logo-single-line.svg" alt="Future Super Logo">
+                    {# TODO: replace with: #}
+                    {# {% include "partials/brand.svg" %} #}
+                    <ul>
+                        {% for item in navigation.items %}
+                        <li>
+                            <a href="{{ item.url }}">{{ item.text }}</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </a>
+            </div>
 
-  <p>
-        We acknowledge the Traditional Custodians of the lands on which we operate. We pay our respects to their Elders,
-        past, present and emerging, and recognise that sovereignty was never ceded. See our <a
-            href="/rap">Reconciliation
-            Action Plan</a>.
-    </p>
+            <div>
+                <h2>Why us</h2>
+                <ul>
+                    {% for item in navigation.items %}
+                    <li>
+                        <a href="{{ item.url }}">{{ item.text }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div>
+                <h2>Resources</h2>
 
-  <img src="/images/icons/b-corp.svg" alt="Logo for Certified B Corporation">
+                <ul>
+                    {% for item in navigation.items %}
+                    <li>
+                        <a href="{{ item.url }}">{{ item.text }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div>
 
-  <p>
-        All information provided is general in nature only. We recommend you seek financial advice when considering if
-        Future Super is right for your objectives and needs. When considering returns, past performance is not
-        indicative of
-        future performance.
-    </p>
+                <h2>Company</h2>
+                <ul>
+                    {% for item in navigation.items %}
+                    <li>
+                        <a href="{{ item.url }}">{{ item.text }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div>
 
-  <ul>
-    <li>Fund Information</li>
-    <li>Terms & Conditions</li>
-    <li>Privacy Policy</li>
-  </ul>
+                <h2>Members</h2>
+                <ul>
+                    {% for item in navigation.items %}
+                    <li>
+                        <a href="{{ item.url }}">{{ item.text }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+
+        <p>
+            We acknowledge the Traditional Custodians of the lands on which we operate. We pay our respects
+            to their
+            Elders,
+            past, present and emerging, and recognise that sovereignty was never ceded. See our <a
+                href="/rap">Reconciliation
+                Action Plan</a>.
+        </p>
+
+        <img src="/images/icons/b-corp.svg" alt="Logo for Certified B Corporation">
+
+        <p>
+            All information provided is general in nature only. We recommend you seek financial advice when
+            considering
+            if
+            Future Super is right for your objectives and needs. When considering returns, past performance
+            is not
+            indicative of
+            future performance.
+        </p>
+
+        <ul>
+            <li>Fund Information</li>
+            <li>Terms & Conditions</li>
+            <li>Privacy Policy</li>
+        </ul>
+    </div>
 </footer>
