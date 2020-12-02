@@ -3,9 +3,19 @@
 * to browse through the negative screens and see their criteria.
 */
 
-const formEl = document.getElementById('screens-form');
-const screenTitleEl = document.getElementById('selected-screen-title');
+const form = document.getElementById('screens-form');
+const screenIcon = document.getElementsByClassName('screen-icon')[0];
+const screenTitle = document.getElementById('selected-screen-title');
 const criteriaContainer = document.getElementById('criteria-container');
+const slugify = text => text
+    .toString()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .trim()
+    .replace(/\s+/g, '-')
+    .replace(/[^\w-]+/g, '')
+    .replace(/--+/g, '-')
 
 
 // Function for accessing screens data
@@ -18,7 +28,7 @@ async function fetchData() {
 // Run at load
 refreshCriteriaContent()
 // Then check for changes
-formEl.addEventListener('change', e => {
+form.addEventListener('change', e => {
     // Update the criteria content
     refreshCriteriaContent()
 
@@ -27,11 +37,15 @@ formEl.addEventListener('change', e => {
 // Core function for updating the screening content below the selects
 async function refreshCriteriaContent() {
     let data = await fetchData()
-    // Remove old screen criteria
-    criteriaContainer.classList.remove("is-visible");
-    screenTitleEl.classList.remove("is-visible");
+    const elementsToFade = [criteriaContainer, screenTitle, screenIcon]
+
+    // Fade-out old screen criteria
+    elementsToFade.forEach(element => {
+        element.classList.remove("is-visible");
+    })
 
     setTimeout(function () {
+        // Remove old screen criteria
         while (criteriaContainer.firstChild) {
             criteriaContainer.removeChild(criteriaContainer.firstChild);
         }
@@ -40,19 +54,23 @@ async function refreshCriteriaContent() {
     }, 250)
 
     setTimeout(function () {
-        criteriaContainer.classList.add("is-visible");
-        screenTitleEl.classList.add("is-visible");
+        // Fade-in new screen criteria
+        elementsToFade.forEach(element => {
+            element.classList.add("is-visible");
+        })
     }, 500)
 
 
 }
 
 function showNewScreenContent(screensData) {
-    /// Update the screenTitleEl with the currently selected item
-    screenTitleEl.textContent = formEl.screen.value
+    /// Update the screenTitle with the currently selected item
+    screenTitle.textContent = form.screen.value
+    screenIcon.src = `/images/icons/screens/${slugify(form.screen.value)}.svg`
+    screenIcon.alt = `Icon for ${form.screen.value}`
     // Show new screen criteria
     Array.from(screensData.items).forEach((item) => {
-        if (item.name === formEl.screen.value) {
+        if (item.name === form.screen.value) {
             item.criteria.map((i) => {
                 const criteriaItem = document.createElement("div");
                 criteriaItem.classList.add("criteria")

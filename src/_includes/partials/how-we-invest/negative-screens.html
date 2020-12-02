@@ -1,35 +1,45 @@
 <article class="container">
     <header>
-        <h2>How we <span>exclude</span></h2>
-        <p class="hero">We apply industry-leading ethical screens to all our super portfolios.</p>
-        <p>Investments must pass every screen to qualify.</p>
+        <h2>Ethical screens</h2>
+        <p>We apply industry-leading ethical screens to all our super portfolios. Investments must pass
+            every screen to qualify.</p>
     </header>
 
-    <div class="scroll-buttons">
-        <button id="left">Left</button>
-        <button id="right">Right</button>
-    </div>
 
-    <form id="screens-form">
-        {% for item in screens.items %}
-        {# Create a radio button for each, with the first one checked by default #}
-        <input type="radio" name="screen" id="{{ item.name | slug }}" value="{{ item.name }}" {% if loop.index === 1 %}
-            checked {% endif %}>
-        <label for="{{ item.name | slug }}">{{ item.name }}</label>
-        {% endfor %}
-    </form>
+    <div class="screens-container">
+        <div class="scroll-buttons">
+            <button id="left">Left</button>
+            <button id="right">Right</button>
+        </div>
+        <form id="screens-form">
+            {% for item in screens.items %}
+            {# Create a radio button for each, with the first one checked by default #}
+            <input type="radio" name="screen" id="{{ item.name | slug }}" value="{{ item.name }}"
+                {% if loop.index === 1 %} checked {% endif %}>
+            <label for="{{ item.name | slug }}">{{ item.name }}</label>
+            {% endfor %}
+        </form>
 
-    <p>We exclude</p>
-    <h3 id="selected-screen-title">
-        {% for item in screens.items %}
-        {% if loop.index === 1 %}
-        {{ item.name }}
-        {% endif %}
-        {% endfor %}
-    </h3>
-    <p>through the following criteria</p>
+        <section>
+            <header class="criteria-intro">
+                {% for item in screens.items %}
+                {% if loop.index === 1 %}
+                <!-- TODO: Format as SVG for fill colour
+    https://stackoverflow.com/a/11978996 -->
+                <img class="screen-icon" src="/images/icons/screens/{{ item.name | slug }}.svg"
+                    alt="Icon for {{ item.name }}">
+                <h3 id="selected-screen-title">
+                    {{ item.name }}
+                </h3>
+                {% endif %}
+                {% endfor %}
 
-    <div id="criteria-container">
-        <p>Loading...</p>
+                <p>Is screened for through the following criteria...</p>
+            </header>
+
+            <div id="criteria-container">
+                <p>Loading...</p>
+            </div>
+        </section>
     </div>
 </article>

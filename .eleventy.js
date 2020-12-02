@@ -14,8 +14,8 @@ module.exports = (config) => {
     config.addPassthroughCopy("./src/css/");
     config.addPassthroughCopy("./src/fonts/");
     config.addPassthroughCopy("./src/images/");
-    // And do the same for any data we want publicly-accessible
-    // config.addPassthroughCopy("./src/_data/screens.json");
+    // And do the same for any data we want made publicly-accessible
+    config.addPassthroughCopy("./src/_data/screens.json");
 
     // Add filters to Eleventy
     // Handle dates in areas such as blog posts
@@ -28,10 +28,11 @@ module.exports = (config) => {
     });
 
     // Return a collection of homepage sections
+    // TODO: why is this collection being shown in reverse order locally but not externally?
     config.addCollection("homeSections", (collection) => {
         return [
             ...collection.getFilteredByGlob("./src/home-sections/*.md"),
-        ].reverse();
+        ];
     });
 
     // Allow JavaScript to be minified via the jsmin Nunjucks filter

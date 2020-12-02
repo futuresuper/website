@@ -2,8 +2,8 @@ const leftButton = document.getElementById("left")
 const rightButton = document.getElementById("right")
 
 leftButton.onclick = function () {
-    if (formEl.scrollLeft) {
-        formEl.scrollBy({
+    if (form.scrollLeft) {
+        form.scrollBy({
             left: -200,
             behavior: 'smooth'
         })
@@ -15,7 +15,7 @@ leftButton.onclick = function () {
 };
 
 rightButton.onclick = function () {
-    formEl.scrollBy({
+    form.scrollBy({
         left: 200,
         behavior: 'smooth'
     })
