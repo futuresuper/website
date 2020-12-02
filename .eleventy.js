@@ -15,7 +15,7 @@ module.exports = (config) => {
     config.addPassthroughCopy("./src/fonts/");
     config.addPassthroughCopy("./src/images/");
     // And do the same for any data we want publicly-accessible
-    config.addPassthroughCopy("./src/_data/screens.json");
+    // config.addPassthroughCopy("./src/_data/screens.json");
 
     // Add filters to Eleventy
     // Handle dates in areas such as blog posts
