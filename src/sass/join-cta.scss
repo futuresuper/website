@@ -6,4 +6,15 @@
   .container {
     padding: 10rem 0;
   }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  .button {
+    background-color: $white-500;
+    color: $black-500;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
 }
