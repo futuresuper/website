@@ -1,0 +1,16 @@
+$font-size-sm: 0.875rem; //14px
+
+@import "colours";
+
+.legal {
+  color: $grey-400;
+}
+
+p {
+  a {
+    color: inherit;
+    &:hover {
+      color: $blue-500;
+    }
+  }
+}

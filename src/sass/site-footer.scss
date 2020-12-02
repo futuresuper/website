@@ -1,7 +1,20 @@
+@import "colours";
+@import "type";
+
 body > footer {
   background-color: $white-500;
+  font-size: $font-size-sm;
+  padding-top: 2rem;
 
   h2 {
     font-size: 1rem;
+  }
+
+  .acknowledgement-of-country {
+    .flags {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
   }
 }
