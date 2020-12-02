@@ -75,3 +75,9 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
+// Begin custom styles
+// Remove WebKit blue outline when main is selected
+main:focus {
+  outline: none;
+}
