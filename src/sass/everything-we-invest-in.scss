@@ -1,0 +1,74 @@
+@import "colours";
+@import "type";
+
+.everything-we-invest-in {
+  h1 {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  fieldset {
+    display: inline-block;
+    border: 0;
+  }
+
+  select {
+    background-color: $grey-100;
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 1rem;
+    color: $black-900;
+    border: 1px solid $grey-500;
+    outline: none;
+  }
+
+  .top-section-container {
+    padding: 8rem;
+    background-color: $white-500;
+  }
+
+  .selectors-container {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .investment-card-section-container {
+    padding: 3rem 3rem 10rem 3rem;
+
+    .info-at-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 3rem;
+
+      select {
+        background-color: $white-500;
+      }
+    }
+
+    .sorting-container {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .grid-of-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+  }
+
+  .investment-container {
+    padding: 2rem;
+    border: 1px solid $grey-200;
+    background-color: $white-500;
+
+    h4 {
+      margin-top: 0.5rem;
+    }
+  }
+}
