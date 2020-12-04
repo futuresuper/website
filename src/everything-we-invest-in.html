@@ -14,7 +14,7 @@ data: investments
     <div class="selectors-container">
       <div class="everything-form-text">Show me</div>
  	    <fieldset data-filter-group="">
-        <select id="field" name="field" class="everything-dropdown select-filter">
+        <select class="everything-dropdown select-filter">
           <option value="">all types of</option>
           <option value=".advertising">Advertising</option>
           <option value=".agricultural-products">Agricultural Products</option>
@@ -26,7 +26,7 @@ data: investments
     <div class="selectors-container">
 	    <div>from</div>
       <fieldset data-filter-group="">
-        <select id="field" name="field" class="everything-dropdown select-filter">
+        <select class="everything-dropdown select-filter">
           <option value="">anywhere</option>
           <option value="">--------</option>
           <option value=".australia">Australia</option>
@@ -35,7 +35,7 @@ data: investments
       </fieldset>
       <div>in</div>
       <fieldset data-filter-group="">
-        <select id="field" name="field" class="everything-dropdown select-filter">
+        <select class="everything-dropdown select-filter">
           <option value="">any investment option</option>
           <option value=".balanced-index">Balanced Index</option>
           <option value=".balanced-impact">Balanced Impact</option>
@@ -57,11 +57,19 @@ data: investments
         </div>
       </div>
       <div class="sorting-container">
-        <div style="margin-right: 1rem">Sort by</div>
+        <div>Show</div>
+        <fieldset>
+          <select id="detailed-info">
+            <option value="basic">Basic info</option>
+            <option value="detailed">Detailed info</option>
+          </select>
+        </fieldset>
+        <div style="padding-left: 1rem">Sort by</div>
         <fieldset>
           <select class="select-sort" name="field">
             <option value="featured:asc">Featured</option>
             <option value="name:asc">Alphabetically</option>
+            <option value="size:desc">Holding Size</option>
           </select>
         </fieldset>
       </div>
@@ -70,16 +78,49 @@ data: investments
     {# Investment Cards #}
     <div class="grid-of-cards">
       {% for investment in investments.list %}
-        <div class="mix investment-container" data-name="{{ investment.name }}" data-featured="{{ investment.featuredOrder }}">
+        <div
+          class="mix investment-container"
+          data-name="{{ investment.name }}"
+          data-featured="{{ investment.featured }}"
+          data-size="{{ investment.totalSize }}"
+        >
           <h3>{{ investment.name }}</h3>
-          <h4>Country</h4>
-          <div class="filter-category">{{ investment.country }}</div>
-          <h4>Business Type</h4>
-          <div class="filter-category">{{ investment.businessType }}</div>
-          <div style="display: none" filter-category="">{{ investment.businessType }}</div>
+          {% if investment.country %}
+            <h4>Country</h4>
+            <div class="filter-category">{{ investment.country }}</div>
+          {% endif %}
+          {% if investment.businessType %}
+            <h4>Business Type</h4>
+            <div class="filter-category">{{ investment.businessType }}</div>
+          {% endif %}
           {% for investmentOption in investment.investmentOptions %}
-            <div style="display: none" class="filter-category">{{ investmentOption }}</div>
+            <div style="display: none" class="filter-category">{{ investmentOption.name }}</div>
           {% endfor %}
+          <div class="details" style="display: none">
+            <h4>Investment Type</h4>
+            <div class="filter-category">{{ investment.type }}</div>
+            <h4>Investment Options</h4>
+            <div class="grid-options-weight">
+              <div class="bold">Option</div>
+              <div class="bold">Portfolio Weight</div>
+              {% for investmentOption in investment.investmentOptions %}
+                <div>{{ investmentOption.name }}</div>
+                <div>{{ investmentOption.weight | round(2) }}%</div>
+              {% endfor %}
+            </div>
+            <h4>Total Holding Size (All Options)</h4>
+            <div>
+              {% if investment.totalSize > 0.1 %}
+                ${{ investment.totalSize | round(1) }} Million
+              {% else %}
+                Less than $0.1 Million
+              {% endif %}
+            </div>
+            {% if investment.etf !== "No" %}
+            <h4>Held via ETF</h4>
+            <div>{{ investment.etf }}</div>
+            {% endif %}
+          </div>
         </div>
       {% endfor %}
     </div>
@@ -95,6 +136,18 @@ data: investments
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.0/mixitup.min.js"></script>
 <script src="https://content.myfuturesuper.com.au/scripts/mixitup-multifilter.min.js"></script>
+
+<script>
+  // Basic/Detailed View Selector
+  var details = document.getElementsByClassName("details");
+  var viewSelector = document.querySelector('#detailed-info');
+  viewSelector.addEventListener('change', function() {
+    let visibility = viewSelector.value === "detailed" ? "block" : "none";
+    for(var i = 0; i < details.length; i++){
+      details[i].style.display = visibility;
+    }
+  });
+</script>
 
 <script>
 
@@ -134,6 +187,12 @@ data: investments
   var noItemsFoundMessage = document.getElementById("noItemsFoundMessage");
   noItemsFoundMessage.style.display = "none";
 
+  // hide detailed view by deafult
+  var details = document.getElementsByClassName("details");
+  for(var i = 0; i < details.length; i++){
+    details[i].style.display = "none";
+  }
+
   var mixer = mixitup(containerEl, {
     multifilter: {
         enable: true // enable the multifilter extension for the mixer
@@ -151,6 +210,7 @@ data: investments
            else{
               noItemsFoundMessage.style.display = "none";
            }
+           console.log(state);
      		}
      }
 	});
