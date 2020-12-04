@@ -12,7 +12,7 @@
         {% endfor %}
       </div>
       {% for screen in screens %}
-        <div class="screen-containers criteria-intro" id="{{ screen.name }}" style="{% if loop.first %}display:block{% else %}display:none{% endif %}">
+        <div class="screen-container criteria-intro" id="{{ screen.name }}" style="{% if loop.first %}display:block{% else %}display:none{% endif %}">
           <!-- TODO: Format as SVG for fill colour https://stackoverflow.com/a/11978996 -->
           <img class="screen-icon" src="/images/icons/screens/{{ screen.name | slug }}.svg" alt="Icon for {{ screen.name }}">
           <h3>{{ screen.name }}</h3>
@@ -37,7 +37,7 @@
   </div>
   <script>
     function showScreen(screen) {
-      const screenContainers = document.getElementsByClassName("screen-containers");
+      const screenContainers = document.getElementsByClassName("screen-container");
       for (let i=0; i<screenContainers.length; i++) {
         screenContainers[i].style.display = "none";
       }
