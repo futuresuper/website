@@ -1,42 +1,98 @@
 {
   "items": [
     {
-      "text": "Why Us ↓",
+      "text": "Why Us",
+      "inSiteHeader": true,
       "subItems": [
         {
           "text": "How We Invest",
-          "url": "/how-we-invest/"
+          "url": "/how-we-invest/",
+          "inSiteHeader": true
+        },
+        {
+          "text": "Pension Fund",
+          "url": "/pension-fund/",
+          "inSiteHeader": false
         },
         {
           "text": "Investment Options",
-          "url": "/investment-options/"
+          "url": "/investment-options/",
+          "inSiteHeader": true
         },
         {
           "text": "Performance & Returns",
-          "url": "/performance-and-returns/"
+          "url": "/performance-and-returns/",
+          "inSiteHeader": true
         }
       ]
     },
     {
-      "text": "Resources ↓",
+      "text": "Resources",
+      "inSiteHeader": true,
       "subItems": [
         {
           "text": "Support & FAQs",
-          "url": "/support-and-faqs/"
+          "url": "/support-and-faqs/",
+          "inSiteHeader": true
+        },
+        {
+          "text": "Everything We Invest In",
+          "url": "/everything-we-invest-in/",
+          "inSiteHeader": false
         },
         {
           "text": "Documents & Forms",
-          "url": "/documents-and-forms/"
+          "url": "/documents-and-forms/",
+          "inSiteHeader": true
         },
         {
           "text": "Employers",
-          "url": "/employers/"
+          "url": "/employers/",
+          "inSiteHeader": true
+        },
+        {
+          "text": "Blog",
+          "url": "/blog/",
+          "inSiteHeader": false
         }
       ]
     },
     {
       "text": "COVID-19",
-      "url": "/contact/"
+      "url": "/contact/",
+      "inSiteHeader": true
+    },
+    {
+      "text": "Company",
+      "inSiteHeader": false,
+      "subItems": [
+        {
+          "text": "Contact Us",
+          "url": "/contact/"
+        },
+        {
+          "text": "About Us",
+          "url": "/about/"
+        },
+        {
+          "text": "Worth With Us",
+          "url": "/work-with-us/"
+        }
+      ]
+    },
+    {
+      "text": "Members",
+      "inSiteHeader": false,
+      "subItems": [
+        {
+          "text": "Log In",
+          "url": "https://my.futuresuper.com.au/"
+        },
+        {
+          "text": "Sign Up",
+          "url": "https://join.futuresuper.com.au"
+        }
+      ]
     }
   ]
 }

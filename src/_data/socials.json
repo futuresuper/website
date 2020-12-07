@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "platform": "Instagram",
+      "url": "https://www.instagram.com/future_super/",
+      "inSiteFooter": true
+    },
+    {
+      "platform": "Twitter",
+      "url": "https://twitter.com/myfuturesuper/",
+      "inSiteFooter": true
+    },
+    {
+      "platform": "Facebook",
+      "url": "https://www.facebook.com/myfuturesuper/",
+      "inSiteFooter": true
+    },
+    {
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/company/future-super/",
+      "inSiteFooter": false
+    }
+  ]
+}
