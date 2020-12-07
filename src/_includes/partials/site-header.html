@@ -8,19 +8,27 @@
       </a>
       <nav aria-label="Primary">
         {% for item in navigation.items %}
-          {% if item.url %}
-            <a href="{{ item.url }}">{{ item.text }}</a>
-          {% else %}
-            <div class="dropdown">
-              <div class="button">
-                {{ item.text }}
+          {# Not all items will go in site header, so check them #}
+          {% if item.inSiteHeader %}
+            {# Show the COVID shortcut link differently #}
+            {% if item.url %}
+              <a href="{{ item.url }}">{{ item.text }}</a>
+            {% else %}
+              {# Make every other item a dropdown heading #}
+              <div class="dropdown">
+                <div class="button">
+                  {{ item.text }}  ↓
               </div>
-              <div class="dropdown-content">
-                {% for subItem in item.subItems %}
-                  <a href="{{ subItem.url }}">{{ subItem.text }}</a>
-                {% endfor %}
+                <div class="dropdown-content">
+                  {% for subItem in item.subItems %}
+                    {% if subItem.inSiteHeader %}
+                      {# Not all subitems will go in site header (even if their parent does), so check them #}
+                      <a href="{{ subItem.url }}">{{ subItem.text }}</a>
+                    {% endif %}
+                  {% endfor %}
+                </div>
               </div>
-            </div>
+            {% endif %}
           {% endif %}
         {% endfor %}
       </nav>

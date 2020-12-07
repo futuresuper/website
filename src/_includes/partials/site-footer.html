@@ -3,62 +3,38 @@
         <div class="grid">
             <div>
                 <a href="/" aria-label="{{ site.name }} — Home">
-                    <img src="/images/logo-single-line.svg" alt="Future Super Logo">
                     {# TODO: replace with: #}
                     {# {% include "partials/brand.svg" %} #}
+                    <img src="/images/logo-single-line.svg" alt="Future Super Logo">
                     <ul>
-                        {% for item in navigation.items %}
-                        <li>
-                            <a href="{{ item.url }}">{{ item.text }}</a>
-                        </li>
+                        {% for item in socials.items %}
+                            {% if item.inSiteFooter %}
+                                <li>
+                                    <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.platform}}</a>
+                                </li>
+                            {% endif %}
                         {% endfor %}
                     </ul>
                 </a>
             </div>
 
-            <div>
-                <h2>Why us</h2>
-                <ul>
-                    {% for item in navigation.items %}
-                    <li>
-                        <a href="{{ item.url }}">{{ item.text }}</a>
-                    </li>
-                    {% endfor %}
-                </ul>
-            </div>
-            <div>
-                <h2>Resources</h2>
+            {% for item in navigation.items %}
+                {# Don't include the COVID shortcut link #}
+                {% if not item.url %}
+                    <div>
+                        <h2>{{ item.text }}</h2>
 
-                <ul>
-                    {% for item in navigation.items %}
-                    <li>
-                        <a href="{{ item.url }}">{{ item.text }}</a>
-                    </li>
-                    {% endfor %}
-                </ul>
-            </div>
-            <div>
+                        <ul>
+                            {% for subItem in item.subItems %}
+                                <li>
+                                    <a href="{{ subItem.url }}">{{ subItem.text }}</a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                {% endif %}
+            {% endfor %}
 
-                <h2>Company</h2>
-                <ul>
-                    {% for item in navigation.items %}
-                    <li>
-                        <a href="{{ item.url }}">{{ item.text }}</a>
-                    </li>
-                    {% endfor %}
-                </ul>
-            </div>
-            <div>
-
-                <h2>Members</h2>
-                <ul>
-                    {% for item in navigation.items %}
-                    <li>
-                        <a href="{{ item.url }}">{{ item.text }}</a>
-                    </li>
-                    {% endfor %}
-                </ul>
-            </div>
         </div>
 
         <div class="acknowledgement-of-country">
@@ -78,13 +54,12 @@
 
         <img src="/images/icons/b-corp.svg" alt="Logo for Certified B Corporation">
 
-        <div class="legal">
+        <div class="text-tertiary">
             <p>
                 All information provided is general in nature only. We recommend you seek financial advice when
                 considering if Future Super is right for your objectives and needs. When considering returns, past
                 performance is not indicative of future performance.
             </p>
-
 
             <ul>
                 <li>Fund Information</li>

@@ -1,0 +1,14 @@
+{
+  "support": {
+    "email": "info@futuresuper.com.au",
+    "phone": {
+      "number": "1300 658 422",
+      "openingTime": "9:30am",
+      "closingTime": "4:30pm"
+    },
+    "postalAddress": ["PO Box 1282", "Albury", "NSW 2640"]
+  },
+  "media": {
+    "email": "media@futuresuper.com.au"
+  }
+}
