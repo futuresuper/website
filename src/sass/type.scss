@@ -6,6 +6,12 @@ h1 {
   font-weight: 900;
 }
 
+h3,
+.heading-three {
+  font-size: 1.17rem;
+  font-weight: 700;
+}
+
 p {
   a {
     color: inherit;
@@ -23,6 +29,6 @@ p {
   color: $black-500;
 }
 
-.legal {
+.text-tertiary {
   color: $grey-400;
 }

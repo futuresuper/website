@@ -81,3 +81,8 @@ select {
 main:focus {
   outline: none;
 }
+
+// Remove italics from address elements
+address {
+  font-style: inherit;
+}
