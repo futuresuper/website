@@ -16,4 +16,3 @@ npm-debug.*
 .sass-cache
 .env
 .cache
-.vscode/
