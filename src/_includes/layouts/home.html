@@ -2,16 +2,16 @@
 
 {% block content %}
 
-    <div class="flex-center" style="flex-direction: column; min-height: 60vh; align-items: center">
-        <h1 class="headline-loud">{{ intro.headlineLineOne }}<br>{{ intro.headlineLineTwo }}</h1>
-        <p style="margin-top: 1rem">{{ intro.subtitle }}</p>
-        <a href="{{ site.joinUrl }}" class="button" style="margin-top: 2rem">Join Now</a>
-    </div>
+  <div class="flex-center" style="flex-direction: column; min-height: 60vh; align-items: center">
+    <h1 class="headline-loud">{{ intro.headlineLineOne }}<br>{{ intro.headlineLineTwo }}</h1>
+    <p style="margin-top: 1rem">{{ intro.subtitle }}</p>
+    <a href="{{ site.joinUrl }}" class="button" style="margin-top: 2rem">Join Now</a>
+  </div>
 
-    {{ content | safe }}
+  {{ content | safe }}
 
-    {% include "partials/home/home-sections.html" %}
+  {% include "partials/home/home-sections.html" %}
 
-    {% include "partials/join-cta.html" %}
+  {% include "partials/join-cta.html" %}
 
 {% endblock %}
