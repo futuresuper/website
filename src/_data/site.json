@@ -4,7 +4,7 @@
   "joinUrl": "https://join.futuresuper.com.au",
   "signInUrl": "https://my.futuresuper.com.au/",
   "banner": {
-    "shown": true,
+    "shown": false,
     "adviceOrCritical": "critical"
   }
 }
