@@ -1,5 +1,4 @@
-@import "type";
-@import "colours";
+@use "../base" as *;
 
 .join-cta {
   background-color: $black-900;

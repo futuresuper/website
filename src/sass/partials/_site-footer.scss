@@ -1,5 +1,4 @@
-@import "type";
-@import "colours";
+@use "../base" as *;
 
 // Target only the site footer
 // (as the footer can be semantically used elsewhere)
