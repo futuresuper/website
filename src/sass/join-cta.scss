@@ -1,3 +1,4 @@
+@import "type";
 @import "colours";
 
 .join-cta {
@@ -26,7 +27,7 @@
     }
 
     &:last-of-type {
-      font-size: $font-size-sm;
+      font-size: $size-sm;
     }
   }
 }

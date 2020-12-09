@@ -1,10 +1,11 @@
+@import "type";
 @import "colours";
 
 // Target only the site footer
 // (as the footer can be semantically used elsewhere)
 body > footer {
   background-color: $white-500;
-  font-size: $font-size-sm;
+  font-size: $size-sm;
   padding-top: 2rem;
 
   h2 {
