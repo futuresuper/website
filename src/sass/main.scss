@@ -1,10 +1,10 @@
 // The main, site-wide, scss file
 
 // Bring in global config including colours etc
-@use 'base';
+@use "base";
 
 // Bring in the partials that are used widely across site (eg header, footer, join-cta)
-@use 'partials';
+@use "partials";
 
 // Global styles start
 body {

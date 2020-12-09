@@ -5,17 +5,116 @@
 body > footer {
   background-color: $white-500;
   font-size: $size-sm;
-  padding-top: 2rem;
+  padding: 3rem 0 4rem;
 
   h2 {
     font-size: 1rem;
   }
 
+  nav {
+    h2,
+    img {
+      margin-bottom: 1rem;
+    }
+
+    ul li {
+      // TODO: custom styling
+      // Ain't working because browser can't resolve @use files
+      text-decoration: none;
+      color: $grey-800;
+
+      &:hover {
+        text-decoration: underline;
+        color: $grey-500;
+      }
+    }
+  }
+
+  .socials-list {
+    @media (min-width: $breakpoint-lg) {
+      grid-column: span 4;
+    }
+  }
+
   .acknowledgement-of-country {
+    margin: 3rem 0;
+
+    div {
+      grid-column: span 12;
+    }
+    @media (min-width: $breakpoint-md) {
+      div {
+        grid-column: span 8;
+      }
+    }
+
     .flags {
       display: flex;
-      gap: 1rem;
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
+
+      img:first-child {
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  .by-the-way {
+    img {
+      grid-row: 1 / 1;
+    }
+
+    p {
+      grid-row: 2 / 2;
+      grid-column: span 12;
+    }
+
+    @media (min-width: $breakpoint-md) {
+      p {
+        grid-column: span 8;
+      }
+    }
+
+    @media (min-width: $breakpoint-lg) {
+      p,
+      img {
+        grid-row: 1 / 1;
+      }
+
+      p {
+        grid-column: span 6;
+      }
+
+      img {
+        justify-self: end;
+        grid-column: 12 / 12;
+      }
+    }
+  }
+
+  .legal-link-list {
+    display: flex;
+    margin-top: 2rem;
+
+    li {
+      a {
+        color: inherit;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+          color: $grey-500;
+        }
+      }
+    }
+
+    li:not(:last-of-type) {
+      margin-right: 1.15rem;
+
+      &::after {
+        margin-left: 1rem;
+        font-weight: 900;
+        content: "•";
+      }
     }
   }
 }
