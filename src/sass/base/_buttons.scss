@@ -1,0 +1,18 @@
+@use '_colours.scss' as *;
+
+.button {
+  display: inline-block;
+  cursor: pointer;
+  background-color: $black-900;
+  color: $white-500;
+  font-size: 1.125rem;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  border: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+
+  &:hover {
+    background: $blue-500;
+  }
+}

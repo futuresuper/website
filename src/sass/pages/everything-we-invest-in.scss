@@ -1,4 +1,9 @@
-@import "colours";
+// EVERYTHING WE INVEST IN - PAGE-SPECIFIC STYLES
+
+// includes colours, type and everything else in "sass > base" folder
+// the "as *" is so that we can reference colours etc, without the
+// namespace (ie '$grey-100' instead of 'base.$grey100')
+@use "../base" as *;
 
 .everything-we-invest-in {
   h1 {

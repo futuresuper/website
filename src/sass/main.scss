@@ -1,58 +1,12 @@
 // The main, site-wide, scss file
 
-// Bring in Future Super global config and functions
-@import "config";
-@import "helpers";
-@import "colours";
+// Bring in global config including colours etc
+@use 'base';
 
-// Reset browser-specific styling
-@import "reset";
-
-// Import layout
-@import "layout";
-
-@import "type";
-@import "components/buttons";
-
-// Import global partial styles
-@import "site-header";
-@import "site-footer";
-@import "join-cta";
+// Bring in the partials that are used widely across site (eg header, footer, join-cta)
+@use 'partials';
 
 // Global styles start
 body {
-  font-family: "SharpGrotesk", sans-serif;
-  color: $black-900;
-  background-color: $off-white-300;
-}
-
-h1 {
-  font-weight: 900;
-}
-
-h3,
-.heading-three {
-  font-size: 1.17rem;
-  font-weight: 700;
-}
-
-p {
-  a {
-    color: inherit;
-    &:hover {
-      color: $blue-500;
-    }
-  }
-}
-
-.headline-loud {
-  text-transform: uppercase;
-  line-height: 98%;
-  font-size: 6rem;
-  text-align: center;
-  color: $black-500;
-}
-
-.text-tertiary {
-  color: $grey-400;
+  background-color: base.$off-white-300;
 }
