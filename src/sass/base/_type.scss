@@ -1,3 +1,5 @@
+@use '_colours.scss' as *;
+
 @font-face {
   font-family: "SharpGrotesk";
   src: url("../fonts/SharpGroteskBook19-subset.woff2") format("woff2");
@@ -20,4 +22,46 @@
   font-weight: 900;
   font-style: normal;
   font-display: swap;
+}
+
+body {
+  font-family: "SharpGrotesk", sans-serif;
+  color: $black-900;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+h3,
+.heading-three {
+  font-size: 1.17rem;
+  font-weight: 700;
+}
+
+p {
+  a {
+    color: inherit;
+    &:hover {
+      color: $blue-500;
+    }
+  }
+}
+
+$size-sm: 0.875rem; // 14px
+
+.bold {
+  font-weight: 700;
+}
+
+.headline-loud {
+  text-transform: uppercase;
+  line-height: 98%;
+  font-size: 6rem;
+  text-align: center;
+  color: $black-500;
+}
+
+.text-tertiary {
+  color: $grey-400;
 }
