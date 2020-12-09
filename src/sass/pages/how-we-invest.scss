@@ -1,352 +1,358 @@
+// HOW WE INVEST - PAGE-SPECIFIC STYLES
+
+// Includes colours, type and everything else in "sass > base" folder
+// the "as *" is so that we can reference colours etc, without the
+// namespace (ie '$grey-100' instead of 'base.$grey100')
 @use "../base" as *;
 
-// Page-specific styles for /how-we-invest
-h1 {
-  font-size: 10rem;
-  line-height: 100%;
-}
+.how-we-invest {
+  h1 {
+    font-size: 10rem;
+    line-height: 100%;
+  }
 
-main > header {
-  height: 80vh;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  header {
+    height: 80vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-section {
-  &.loud {
-    p {
-      font-size: 4rem;
-      line-height: 110%;
-      font-weight: 500;
-      margin-left: 1rem;
-      margin-right: 1rem;
+  section {
+    &.loud {
+      p {
+        font-size: 4rem;
+        line-height: 110%;
+        font-weight: 500;
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
+    }
+
+    &#part-one {
+      margin-top: 20vh;
+    }
+
+    &#part-two {
+      margin-top: 20vh;
+      height: 90vh;
     }
   }
 
-  &#part-one {
-    margin-top: 20vh;
+  article > header {
+    text-align: center;
+
+    // p {
+    //   font-size: 1.5rem;
+    //   font-weight: 400;
+    // }
   }
 
-  &#part-two {
-    margin-top: 20vh;
-    height: 90vh;
+  .screens-container {
+    background-color: $white-500;
+    max-width: $breakpoint-sm;
+    margin: 0 auto;
+    margin-bottom: 10rem;
+    border: 1px solid $red-500;
+    padding: 1.5rem;
   }
-}
 
-article > header {
-  text-align: center;
+  .is-screened {
+    padding-bottom: 2rem;
+  }
 
-  // p {
-  //   font-size: 1.5rem;
-  //   font-weight: 400;
+  // Fade in-and-outs of criteria
+  // #criteria-container,
+  // #selected-screen-title,
+  // .screen-icon {
+  //   opacity: 0;
+  //   transition: opacity 250ms ease-in-out;
+
+  //   &.is-visible {
+  //     opacity: 1;
+  //   }
+  // }
+
+  // .scroll-buttons {
+  //   @media (min-width: 720px) {
+  //     display: none;
+  //   }
+  // }
+
+  // Buttons
+  .buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.875rem;
+    margin-top: -0.25rem;
+    margin-left: -0.25rem;
+    // Mobile-specific item behaviour
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+    // Tablet/desktop-specific item behaviour
+    @media (min-width: 720px) {
+      flex-wrap: wrap;
+    }
+
+    button {
+      cursor: pointer;
+      padding: 0.75rem 1rem;
+      margin: 0.25rem;
+      color: $red-700;
+      border: 1px solid $red-200;
+      background-color: $white-500;
+      transition: all 200ms ease;
+      flex-shrink: 0;
+      text-align: center;
+      outline: none;
+
+      @media (min-width: 720px) {
+        flex-grow: 1;
+      }
+
+      &:hover {
+        background-color: $red-200;
+        border-color: $red-500;
+      }
+    }
+  }
+
+  // Form radio buttons
+  // #screens-form {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   font-family: "JetBrains Mono";
+  //   font-size: 0.875rem;
+  //   margin-top: -0.25rem;
+  //   margin-left: -0.25rem;
+  //   // Mobile-specific item behaviour
+  //   overflow-x: scroll;
+  //   flex-wrap: nowrap;
+  //   // Tablet/desktop-specific item behaviour
+  //   @media (min-width: 720px) {
+  //     flex-wrap: wrap;
+  //   }
+
+  //   input {
+  //     position: absolute;
+  //     top: 0;
+  //     left: 0;
+  //     visibility: hidden;
+  //     pointer-events: none;
+
+  //     &:checked + label {
+  //       background-color: $red-700;
+  //       color: $white-500;
+  //       border-color: $red-700;
+  //     }
+  //   }
+
+  //   label {
+  //     cursor: pointer;
+  //     padding: 0.75rem 1rem;
+  //     margin: 0.25rem;
+  //     color: $red-700;
+  //     border: 1px solid $red-200;
+  //     background-color: $white-500;
+  //     transition: all 200ms ease;
+  //     flex-shrink: 0;
+  //     text-align: center;
+
+  //     @media (min-width: 720px) {
+  //       flex-grow: 1;
+  //     }
+
+  //     &:hover {
+  //       background-color: $red-200;
+  //       border-color: $red-500;
+  //     }
+  //   }
+  // }
+
+  .criteria-intro {
+    text-align: center;
+    padding-top: 2rem;
+
+    .screen-icon {
+      margin: auto;
+      width: 4rem;
+    }
+
+    h3 {
+      color: $red-700;
+    }
+  }
+
+  /* Criteria */
+  .criteria {
+    margin-bottom: 3rem;
+    font-size: 0.875rem;
+  }
+
+  /* Style the speech bubbles */
+  .question {
+    background: $red-700;
+    color: $white-500;
+    padding: 1.5rem;
+    position: relative;
+    line-height: 150%;
+    text-align: left;
+  }
+
+  /* Speech bubble arrows */
+  .question:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border: 1.5rem solid transparent;
+    border-top-color: $red-700;
+    border-bottom: 0;
+
+    margin-left: -0.75em;
+    margin-bottom: -1.5rem;
+  }
+
+  .criteria:nth-child(odd) > .question:after {
+    left: 2rem;
+    border-left: 0;
+  }
+
+  .criteria:nth-child(even) > .question:after {
+    right: 1.5rem;
+    border-right: 0;
+  }
+
+  /* Style the example bullets */
+  .example-label {
+    margin-top: 1rem;
+    margin-left: 4rem;
+    font-weight: 450;
+    font-size: 0.6875rem;
+    color: $grey-400;
+    text-align: left;
+  }
+
+  .examples {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .example-label,
+  .examples li {
+    margin-bottom: 0.25rem;
+    text-align: left;
+    margin-left: 4rem;
+  }
+
+  .examples li::before {
+    content: "❌";
+    margin-right: 1em;
+  }
+
+  // .criteria-intro {
+  //   text-align: center;
+
+  //   .screen-icon {
+  //     margin: auto;
+  //     width: 4rem;
+  //   }
+
+  //   h3 {
+  //     color: $red-700;
+  //   }
+  // }
+
+  // /* Criteria */
+  // .criteria {
+  //   margin-bottom: 3rem;
+  //   font-size: 0.875rem;
+  // }
+
+  // /* Style the speech bubbles */
+  // .question {
+  //   font-family: "JetBrains Mono";
+  //   background: $red-700;
+  //   color: $white-500;
+  //   padding: 1.5rem;
+  //   position: relative;
+  //   line-height: 150%;
+  // }
+
+  // /* Speech bubble arrows */
+  // .question:after {
+  //   content: "";
+  //   position: absolute;
+  //   bottom: 0;
+  //   width: 0;
+  //   height: 0;
+  //   border: 1.5rem solid transparent;
+  //   border-top-color: $red-700;
+  //   border-bottom: 0;
+
+  //   margin-left: -0.75em;
+  //   margin-bottom: -1.5rem;
+  // }
+
+  // .criteria:nth-child(odd) > .question:after {
+  //   left: 2rem;
+  //   border-left: 0;
+  // }
+
+  // .criteria:nth-child(even) > .question:after {
+  //   right: 1.5rem;
+  //   border-right: 0;
+  // }
+
+  // /* Style the example bullets */
+  // .example-label {
+  //   font-weight: 450;
+  //   font-size: 0.6875rem;
+  //   color: $grey-400;
+  // }
+
+  // .examples {
+  //   list-style: none;
+  //   margin: 0 auto;
+  //   padding: 0;
+  // }
+
+  // .example-label,
+  // .examples li {
+  //   margin-bottom: 0.25rem;
+  // }
+
+  // .criteria:nth-child(odd) > .example-label,
+  // .criteria:nth-child(odd) > .examples li {
+  //   padding-left: 3rem;
+  // }
+
+  // .criteria:nth-child(odd) > .examples li::before {
+  //   content: "❌";
+  //   margin-right: 1em;
+  // }
+
+  // .criteria:nth-child(even) > .example-label,
+  // .criteria:nth-child(even) > .examples li {
+  //   padding-right: 3rem;
+  //   text-align: right;
+  // }
+
+  // .criteria:nth-child(even) > .examples li::after {
+  //   content: "❌";
+  //   margin-left: 1em;
+  // }
+
+  // @media (min-width: 720px) {
+  //   .criteria:nth-child(odd) > .examples li {
+  //     padding-left: 8rem;
+  //   }
+
+  //   .criteria:nth-child(even) > .examples li {
+  //     padding-right: 8rem;
+  //   }
   // }
 }
-
-.screens-container {
-  background-color: $white-500;
-  max-width: $breakpoint-sm;
-  margin: 0 auto;
-  margin-bottom: 10rem;
-  border: 1px solid $red-500;
-  padding: 1.5rem;
-}
-
-.is-screened {
-  padding-bottom: 2rem;
-}
-
-// Fade in-and-outs of criteria
-// #criteria-container,
-// #selected-screen-title,
-// .screen-icon {
-//   opacity: 0;
-//   transition: opacity 250ms ease-in-out;
-
-//   &.is-visible {
-//     opacity: 1;
-//   }
-// }
-
-// .scroll-buttons {
-//   @media (min-width: 720px) {
-//     display: none;
-//   }
-// }
-
-// Buttons
-.buttons-container {
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 0.875rem;
-  margin-top: -0.25rem;
-  margin-left: -0.25rem;
-  // Mobile-specific item behaviour
-  overflow-x: scroll;
-  flex-wrap: nowrap;
-  // Tablet/desktop-specific item behaviour
-  @media (min-width: 720px) {
-    flex-wrap: wrap;
-  }
-
-  button {
-    cursor: pointer;
-    padding: 0.75rem 1rem;
-    margin: 0.25rem;
-    color: $red-700;
-    border: 1px solid $red-200;
-    background-color: $white-500;
-    transition: all 200ms ease;
-    flex-shrink: 0;
-    text-align: center;
-    outline: none;
-
-    @media (min-width: 720px) {
-      flex-grow: 1;
-    }
-
-    &:hover {
-      background-color: $red-200;
-      border-color: $red-500;
-    }
-  }
-}
-
-// Form radio buttons
-// #screens-form {
-//   display: flex;
-//   flex-wrap: wrap;
-//   font-family: "JetBrains Mono";
-//   font-size: 0.875rem;
-//   margin-top: -0.25rem;
-//   margin-left: -0.25rem;
-//   // Mobile-specific item behaviour
-//   overflow-x: scroll;
-//   flex-wrap: nowrap;
-//   // Tablet/desktop-specific item behaviour
-//   @media (min-width: 720px) {
-//     flex-wrap: wrap;
-//   }
-
-//   input {
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     visibility: hidden;
-//     pointer-events: none;
-
-//     &:checked + label {
-//       background-color: $red-700;
-//       color: $white-500;
-//       border-color: $red-700;
-//     }
-//   }
-
-//   label {
-//     cursor: pointer;
-//     padding: 0.75rem 1rem;
-//     margin: 0.25rem;
-//     color: $red-700;
-//     border: 1px solid $red-200;
-//     background-color: $white-500;
-//     transition: all 200ms ease;
-//     flex-shrink: 0;
-//     text-align: center;
-
-//     @media (min-width: 720px) {
-//       flex-grow: 1;
-//     }
-
-//     &:hover {
-//       background-color: $red-200;
-//       border-color: $red-500;
-//     }
-//   }
-// }
-
-.criteria-intro {
-  text-align: center;
-  padding-top: 2rem;
-
-  .screen-icon {
-    margin: auto;
-    width: 4rem;
-  }
-
-  h3 {
-    color: $red-700;
-  }
-}
-
-/* Criteria */
-.criteria {
-  margin-bottom: 3rem;
-  font-size: 0.875rem;
-}
-
-/* Style the speech bubbles */
-.question {
-  background: $red-700;
-  color: $white-500;
-  padding: 1.5rem;
-  position: relative;
-  line-height: 150%;
-  text-align: left;
-}
-
-/* Speech bubble arrows */
-.question:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  width: 0;
-  height: 0;
-  border: 1.5rem solid transparent;
-  border-top-color: $red-700;
-  border-bottom: 0;
-
-  margin-left: -0.75em;
-  margin-bottom: -1.5rem;
-}
-
-.criteria:nth-child(odd) > .question:after {
-  left: 2rem;
-  border-left: 0;
-}
-
-.criteria:nth-child(even) > .question:after {
-  right: 1.5rem;
-  border-right: 0;
-}
-
-/* Style the example bullets */
-.example-label {
-  margin-top: 1rem;
-  margin-left: 4rem;
-  font-weight: 450;
-  font-size: 0.6875rem;
-  color: $grey-400;
-  text-align: left;
-}
-
-.examples {
-  list-style: none;
-  margin: 0 auto;
-  padding: 0;
-}
-
-.example-label,
-.examples li {
-  margin-bottom: 0.25rem;
-  text-align: left;
-  margin-left: 4rem;
-}
-
-.examples li::before {
-  content: "❌";
-  margin-right: 1em;
-}
-
-// .criteria-intro {
-//   text-align: center;
-
-//   .screen-icon {
-//     margin: auto;
-//     width: 4rem;
-//   }
-
-//   h3 {
-//     color: $red-700;
-//   }
-// }
-
-// /* Criteria */
-// .criteria {
-//   margin-bottom: 3rem;
-//   font-size: 0.875rem;
-// }
-
-// /* Style the speech bubbles */
-// .question {
-//   font-family: "JetBrains Mono";
-//   background: $red-700;
-//   color: $white-500;
-//   padding: 1.5rem;
-//   position: relative;
-//   line-height: 150%;
-// }
-
-// /* Speech bubble arrows */
-// .question:after {
-//   content: "";
-//   position: absolute;
-//   bottom: 0;
-//   width: 0;
-//   height: 0;
-//   border: 1.5rem solid transparent;
-//   border-top-color: $red-700;
-//   border-bottom: 0;
-
-//   margin-left: -0.75em;
-//   margin-bottom: -1.5rem;
-// }
-
-// .criteria:nth-child(odd) > .question:after {
-//   left: 2rem;
-//   border-left: 0;
-// }
-
-// .criteria:nth-child(even) > .question:after {
-//   right: 1.5rem;
-//   border-right: 0;
-// }
-
-// /* Style the example bullets */
-// .example-label {
-//   font-weight: 450;
-//   font-size: 0.6875rem;
-//   color: $grey-400;
-// }
-
-// .examples {
-//   list-style: none;
-//   margin: 0 auto;
-//   padding: 0;
-// }
-
-// .example-label,
-// .examples li {
-//   margin-bottom: 0.25rem;
-// }
-
-// .criteria:nth-child(odd) > .example-label,
-// .criteria:nth-child(odd) > .examples li {
-//   padding-left: 3rem;
-// }
-
-// .criteria:nth-child(odd) > .examples li::before {
-//   content: "❌";
-//   margin-right: 1em;
-// }
-
-// .criteria:nth-child(even) > .example-label,
-// .criteria:nth-child(even) > .examples li {
-//   padding-right: 3rem;
-//   text-align: right;
-// }
-
-// .criteria:nth-child(even) > .examples li::after {
-//   content: "❌";
-//   margin-left: 1em;
-// }
-
-// @media (min-width: 720px) {
-//   .criteria:nth-child(odd) > .examples li {
-//     padding-left: 8rem;
-//   }
-
-//   .criteria:nth-child(even) > .examples li {
-//     padding-right: 8rem;
-//   }
-// }

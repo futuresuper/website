@@ -1,7 +1,9 @@
 // The main, site-wide, scss file
 
-// Bring in Future Super global config and functions
+// Bring in global config including colours etc
 @use 'base';
+
+// Bring in the partials that are used widely across site (eg header, footer, join-cta)
 @use 'partials';
 
 // Global styles start
