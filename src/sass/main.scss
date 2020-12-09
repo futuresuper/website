@@ -1,4 +1,3 @@
-// Reset browser-specific styling
 // The main, site-wide, scss file
 
 // Bring in Future Super global config and functions
@@ -10,6 +9,8 @@
 
 // Import layout
 @import "layout";
+
+@import "type";
 
 // Import global partial styles
 @import "site-footer";
@@ -31,10 +32,6 @@ body {
   color: $black-900;
   background-color: $off-white-300;
 }
-
-$font-size-sm: 0.875rem; //14px
-
-@import "colours";
 
 h1 {
   font-weight: 900;
