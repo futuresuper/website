@@ -5,6 +5,6 @@
   "signInUrl": "https://my.futuresuper.com.au/",
   "banner": {
     "shown": false,
-    "adviceOrCritical": "advice"
+    "adviceOrCritical": "critical"
   }
 }
