@@ -2,6 +2,7 @@
 
 // Bring in Future Super global config and functions
 @import "config";
+@import "helpers";
 @import "colours";
 
 // Reset browser-specific styling
@@ -11,20 +12,12 @@
 @import "layout";
 
 @import "type";
+@import "components/buttons";
 
 // Import global partial styles
+@import "site-header";
 @import "site-footer";
 @import "join-cta";
-
-// apply a natural box layout model to all elements
-html {
-  box-sizing: border-box;
-}
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
 
 // Global styles start
 body {
@@ -62,88 +55,4 @@ p {
 
 .text-tertiary {
   color: $grey-400;
-}
-
-.bold {
-  font-weight: 700;
-}
-
-.button {
-  display: inline-block;
-  cursor: pointer;
-  background-color: $black-900;
-  color: $white-500;
-  font-size: 1.125rem;
-  font-weight: 700;
-  padding: 1rem 2rem;
-  border: 0;
-  text-decoration: none;
-  box-sizing: border-box;
-
-  &:hover {
-    background: $blue-500;
-  }
-}
-
-header {
-  padding: 2rem 3rem;
-}
-
-nav {
-  display: flex;
-}
-
-nav > a {
-  display: inline-block;
-  padding: 1rem 2rem;
-  text-decoration: none;
-  color: $black-900;
-  font-weight: 700;
-  border: 1px solid transparent;
-}
-
-nav > .dropdown {
-  border: 1px solid transparent;
-  &:hover {
-    background-color: $white-500;
-    border: 1px solid $black-900;
-    .dropdown-content {
-      display: flex;
-    }
-  }
-}
-
-nav > .dropdown > .button {
-  position: relative;
-  display: inline-block;
-  padding: 1rem 2rem;
-  background-color: transparent;
-  color: $black-900;
-  cursor: default;
-}
-
-.dropdown-content {
-  display: none;
-  flex-direction: column;
-  position: absolute;
-  min-width: 10rem;
-  background-color: $white-500;
-  border: 1px solid $black-900;
-  margin-left: -1px;
-}
-
-.dropdown-content > a {
-  text-decoration: none;
-  color: $black-900;
-  padding: 1rem 2rem;
-  &:hover {
-    background-color: $black-900;
-    color: $white-500;
-  }
-}
-
-.flex-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }

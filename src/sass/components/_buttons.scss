@@ -1,0 +1,30 @@
+.button {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1.125rem;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  border: 0;
+  text-decoration: none;
+}
+
+.button {
+  &.primary {
+    color: $white-500;
+    background-color: $black-900;
+
+    &.inverted {
+      color: $black-900;
+      background-color: $white-500;
+    }
+
+    &:hover {
+      background-color: $blue-500;
+    }
+  }
+
+  &.clear {
+    color: inherit;
+    background-color: inherit;
+  }
+}

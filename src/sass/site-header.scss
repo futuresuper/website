@@ -1,0 +1,87 @@
+@import "colours";
+
+// Target only the site header
+header[role="banner"] {
+  .banner {
+    text-align: center;
+    padding: 1.5rem;
+
+    &.advice {
+      color: $grey-500;
+      background-color: $off-white-500;
+
+      a:hover {
+        color: $grey-900;
+      }
+    }
+
+    &.critical {
+      color: $yellow-900;
+      background-color: $yellow-500;
+
+      a:hover {
+        color: $yellow-700;
+      }
+    }
+  }
+
+  .nav-content {
+    padding: 2rem 3rem;
+
+    nav {
+      display: flex;
+
+      a:not(.button) {
+        display: inline-block;
+        padding: 1rem 2rem;
+        text-decoration: none;
+        color: $black-900;
+        font-weight: 700;
+        border: 1px solid transparent;
+      }
+
+      .dropdown {
+        border: 1px solid transparent;
+
+        &:hover {
+          background-color: $white-500;
+          border: 1px solid $black-900;
+
+          .dropdown-content {
+            display: flex;
+          }
+        }
+
+        // .button {
+        //   position: relative;
+        //   display: inline-block;
+        //   padding: 1rem 2rem;
+        //   background-color: inherit;
+        //   color: $black-900;
+        // }
+      }
+
+      .dropdown-content {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        min-width: 10rem;
+        background-color: $white-500;
+        border: 1px solid $black-900;
+        margin-left: -1px;
+
+        a {
+          text-decoration: none;
+          font-weight: 500;
+          color: $black-900;
+          padding: 1rem 2rem;
+
+          &:hover {
+            background-color: $black-900;
+            color: $white-500;
+          }
+        }
+      }
+    }
+  }
+}

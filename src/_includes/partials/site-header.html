@@ -1,5 +1,13 @@
 <header role="banner">
-  <div class="flex-center" style="justify-content: space-between">
+  {# Conditional banner #}
+  {% if site.banner.shown %}
+    <section class="banner {{ site.banner.adviceOrCritical }}">
+      <p>This is an important banner. Find out more <a href="#">here</a>.</p>
+    </section>
+  {% endif %}
+
+  {# Regular site header content #}
+  <section class="nav-content flex-center" style="justify-content: space-between">
     <div class="flex-center">
       <a href="/" aria-label="{{ site.name }} — Home" style="margin-right: 2rem">
         <img src="/images/logo-single-line.svg" alt="Future Super Logo">
@@ -16,7 +24,7 @@
             {% else %}
               {# Make every other item a dropdown heading #}
               <div class="dropdown">
-                <div class="button">
+                <div class="button clear">
                   {{ item.text }}  ↓
               </div>
                 <div class="dropdown-content">
@@ -35,7 +43,7 @@
     </div>
     <nav class="flex-center">
       <a href="#">Login</a>
-      <a href="#" class="button">Join Now</a>
+      <a href="#" class="button primary">Join Now</a>
     </nav>
-  </div>
+  </section>
 </header>

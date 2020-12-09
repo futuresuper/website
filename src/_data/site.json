@@ -2,5 +2,9 @@
   "name": "Future Super",
   "url": "https://futuresuper.com.au",
   "joinUrl": "https://join.futuresuper.com.au",
-  "signInUrl": "https://my.futuresuper.com.au/"
+  "signInUrl": "https://my.futuresuper.com.au/",
+  "banner": {
+    "shown": false,
+    "adviceOrCritical": "advice"
+  }
 }
