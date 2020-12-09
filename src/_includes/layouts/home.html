@@ -3,14 +3,36 @@
 {% block content %}
 
   <div class="flex-center" style="flex-direction: column; min-height: 60vh; align-items: center">
-    <h1 class="headline-loud">{{ intro.headlineLineOne }}<br>{{ intro.headlineLineTwo }}</h1>
+    <h1 class="heading-zero">{{ intro.headlineLineOne }}<br>{{ intro.headlineLineTwo }}</h1>
     <p style="margin-top: 1rem">{{ intro.subtitle }}</p>
     <a href="{{ site.joinUrl }}" class="button primary" style="margin-top: 2rem">Join Now</a>
   </div>
 
   {{ content | safe }}
 
-  {% include "partials/home/home-sections.html" %}
+  <section>
+    {% for item in collections.homeSections %}
+      <article class="container">
+        <img src="{{ item.data.image.url }}" alt="{{ item.data.image.alt }}">
+
+        <h2>{{ item.data.title }}</h2>
+        <p>{{ item.templateContent | safe }}</p>
+
+        {% if item.data.cta %}
+          <a href="{{ item.data.cta.url }}">{{ item.data.cta.text }} →</a>
+        {% endif %}
+
+        {% if item.data.disclaimer %}
+          <aside>
+            <p>
+              <a href="{{ item.data.disclaimer.linkUrl }}" target="_blank"
+                    rel="noopener noreferrer">{{ item.data.disclaimer.linkText }}</a>{{ item.data.disclaimer.plainText }}
+            </p>
+          </aside>
+        {% endif %}
+      </article>
+    {% endfor %}
+  </section>
 
   {% include "partials/join-cta.html" %}
 

@@ -4,29 +4,31 @@ $breakpoint-md: 48rem; //768px
 $breakpoint-lg: 80rem; //1280px
 
 .container {
-  max-width: $breakpoint-sm;
+  max-width: $breakpoint-lg;
   margin-right: auto;
   margin-left: auto;
+  padding: 0 1rem;
 
   @media (min-width: $breakpoint-md) {
-    max-width: $breakpoint-lg;
+    padding: 0 2rem;
   }
 }
 
 .grid {
   display: grid;
-
-  @media (min-width: $breakpoint-md) {
-    grid-template-columns: repeat(12, 1fr);
-    gap: 2rem;
-    > div {
-      grid-column: span 6;
-    }
-  }
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
   @media (min-width: $breakpoint-lg) {
-    grid-template-columns: repeat(12, 1fr);
+    gap: 1.5rem;
+  }
+
+  > * {
+    grid-column: span 6;
+  }
+
+  @media (min-width: $breakpoint-lg) {
     gap: 2rem;
-    > div {
+    > * {
       grid-column: span 2;
     }
   }

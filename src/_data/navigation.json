@@ -3,6 +3,7 @@
     {
       "text": "Why Us",
       "inSiteHeader": true,
+      "inSiteFooter": true,
       "subItems": [
         {
           "text": "How We Invest",
@@ -29,6 +30,7 @@
     {
       "text": "Resources",
       "inSiteHeader": true,
+      "inSiteFooter": true,
       "subItems": [
         {
           "text": "Support & FAQs",
@@ -60,11 +62,13 @@
     {
       "text": "COVID-19",
       "url": "/contact/",
-      "inSiteHeader": true
+      "inSiteHeader": true,
+      "inSiteFooter": false
     },
     {
       "text": "Company",
       "inSiteHeader": false,
+      "inSiteFooter": true,
       "subItems": [
         {
           "text": "Contact Us",
@@ -83,6 +87,7 @@
     {
       "text": "Members",
       "inSiteHeader": false,
+      "inSiteFooter": true,
       "subItems": [
         {
           "text": "Log In",
@@ -91,6 +96,25 @@
         {
           "text": "Sign Up",
           "url": "https://join.futuresuper.com.au"
+        }
+      ]
+    },
+    {
+      "text": "Legal",
+      "inSiteHeader": false,
+      "inSiteFooter": false,
+      "subItems": [
+        {
+          "text": "Fund Information",
+          "url": "/fund-information/"
+        },
+        {
+          "text": "Terms & Conditions",
+          "url": "/terms-and-conditions/"
+        },
+        {
+          "text": "Privacy Policy",
+          "url": "/privacy-policy/"
         }
       ]
     }
