@@ -1,60 +1,79 @@
 @use "../base" as *;
 
-// Target only the site footer
-// (as the footer can be semantically used elsewhere)
-body > header {
-  padding: 2rem 3rem;
+// Target only the site header
+header[role="banner"] {
+  .banner {
+    text-align: center;
+    padding: 1.5rem;
 
-  nav {
-    display: flex;
-  }
+    &.advice {
+      color: $grey-500;
+      background-color: $off-white-500;
 
-  nav > a {
-    display: inline-block;
-    padding: 1rem 2rem;
-    text-decoration: none;
-    color: $black-900;
-    font-weight: 700;
-    border: 1px solid transparent;
-  }
+      a:hover {
+        color: $grey-900;
+      }
+    }
 
-  nav > .dropdown {
-    border: 1px solid transparent;
-    &:hover {
-      background-color: $white-500;
-      border: 1px solid $black-900;
-      .dropdown-content {
-        display: flex;
+    &.critical {
+      color: $yellow-900;
+      background-color: $yellow-500;
+
+      a:hover {
+        color: $yellow-700;
       }
     }
   }
 
-  nav > .dropdown > .button {
-    position: relative;
-    display: inline-block;
-    padding: 1rem 2rem;
-    background-color: transparent;
-    color: $black-900;
-    cursor: default;
-  }
+  .nav-content {
+    padding: 2rem 3rem;
 
-  .dropdown-content {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    min-width: 10rem;
-    background-color: $white-500;
-    border: 1px solid $black-900;
-    margin-left: -1px;
-  }
+    nav {
+      display: flex;
 
-  .dropdown-content > a {
-    text-decoration: none;
-    color: $black-900;
-    padding: 1rem 2rem;
-    &:hover {
-      background-color: $black-900;
-      color: $white-500;
+      a:not(.button) {
+        display: inline-block;
+        padding: 1rem 2rem;
+        text-decoration: none;
+        color: $black-900;
+        font-weight: 700;
+        border: 1px solid transparent;
+      }
+
+      .dropdown {
+        border: 1px solid transparent;
+
+        &:hover {
+          background-color: $white-500;
+          border: 1px solid $black-900;
+
+          .dropdown-content {
+            display: flex;
+          }
+        }
+      }
+
+      .dropdown-content {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        min-width: 10rem;
+        background-color: $white-500;
+        border: 1px solid $black-900;
+        margin-left: -1px;
+
+        a {
+          text-decoration: none;
+          font-weight: 500;
+          color: $black-900;
+          padding: 1rem 2rem;
+
+          &:hover {
+            background-color: $black-900;
+            color: $white-500;
+          }
+        }
+      }
     }
   }
 }
