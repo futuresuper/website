@@ -2,8 +2,11 @@ backend:
   name: git-gateway
   branch: master
 
-media_folder: "dist/images/uploads"
-public_folder: "/images/uploads"
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: future-super
+    api_key: 749866111487797
 
 collections:
   - name: "posts"
