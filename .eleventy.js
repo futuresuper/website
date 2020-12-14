@@ -14,6 +14,7 @@ module.exports = (config) => {
   config.addPassthroughCopy("./src/css/");
   config.addPassthroughCopy("./src/fonts/");
   config.addPassthroughCopy("./src/images/");
+  config.addPassthroughCopy("./src/admin/");
 
   // Add filters to Eleventy
   // Handle dates in areas such as blog posts
