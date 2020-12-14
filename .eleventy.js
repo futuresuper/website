@@ -6,6 +6,8 @@ const w3DateFilter = require("./src/filters/w3-date-filter.js");
 const { minify } = require("terser");
 // CSS minification filter
 const CleanCSS = require("clean-css");
+// Shortcodes
+const { srcset, src } = require("./_11ty/shortcodes");
 
 module.exports = (config) => {
   // Watch for changes in /sass
@@ -48,6 +50,9 @@ module.exports = (config) => {
   config.addFilter("cssmin", function (code) {
     return new CleanCSS({}).minify(code).styles;
   });
+
+  config.addShortcode('src', src);
+  config.addShortcode('srcset', srcset);
 
   return {
     // Tell Eleventy to process Markdown, data, and HTML with Nunjucks

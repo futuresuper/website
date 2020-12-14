@@ -56,6 +56,7 @@ a:not([class]) {
 img {
   max-width: 100%;
   display: block;
+  height: auto; // to avoid stretching on layout shift
 }
 
 /* Inherit fonts for inputs and buttons */
