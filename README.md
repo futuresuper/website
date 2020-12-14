@@ -20,7 +20,7 @@ Run:
 npm start
 ```
 
-Then open [localhost:8080](http://localhost:8080) in your browser.
+Then open [localhost:8080](http://localhost:8080) in your browser of choice.
 
 ## Structure
 
