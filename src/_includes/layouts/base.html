@@ -1,50 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" shrink-to-fit="no"/>
-        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-        <title>{{ title }}</title>
-        <link rel="stylesheet" href="{{ '/css/main.css' | url }}">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" shrink-to-fit="no"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ '/css/main.css' | url }}">
 
-        {# Allow for page-specific styling #}
-        {# TODO: make these inline styles instead of another <link> call #}
-        {# For example: #}
-        {# {% if pageSpecificStyles %}
+    {# Allow for page-specific styling #}
+    {# TODO: make these inline styles instead of another <link> call #}
+    {# For example: #}
+    {# {% if pageSpecificStyles %}
             <style>
                 {% for item in pageSpecificStyles %}
                     {% include item %}
                 {% endfor %}
             </style>
         {% endif %} #}
-        {% if pageSpecificStyles %}
-            {% for item in pageSpecificStyles %}
-                <link rel="stylesheet" href="{{ item | url }}"/>
-            {% endfor %}
-        {% endif %}
-    </head>
+    {% if pageSpecificStyles %}
+      {% for item in pageSpecificStyles %}
+        <link rel="stylesheet" href="{{ item | url }}"/>
+      {% endfor %}
+    {% endif %}
+  </head>
 
-    <body>
-        {% include "partials/site-header.html" %}
-        <main tabindex="-1" id="main-content">
-            {% block content %}{% endblock %}
-        </main>
-        {% include "partials/site-footer.html" %}
+  <body>
+    {% include "partials/site-header.html" %}
+    <main tabindex="-1" id="main-content">
+      {% block content %}{% endblock %}
+    </main>
+    {% include "partials/site-footer.html" %}
 
-        {% if pageSpecificScripts %}
-            <script defer>
-                {% for item in pageSpecificScripts %}
-                    {% set js %}
-                    {% include item %}
-                    {% endset %}
-                    {# If production #} 
-                    {# {{ js | jsmin | safe }} #} 
-                    {# Else #}
-                    {{ js | safe }}
-                {% endfor %}
-            </script>
-        {% endif %}
-    </body>
+    {% if pageSpecificScripts %}
+      <script defer="defer">
+        {% for item in pageSpecificScripts %}
+          {% set js %}
+          {% include item %}
+          {% endset %}
+          {# If production #} {
+            # {{ js | jsmin | safe }}#
+          } {
+            # Else #
+          }
+          {{ js | safe }}
+        {% endfor %}
+      </script>
+    {% endif %}
+  </body>
 
 </html>

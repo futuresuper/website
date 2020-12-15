@@ -51,7 +51,8 @@
       <div class="info-at-top">
         <div>
           <div>
-          As at {{ investments.asAtDate }}
+            As at
+            {{ investments.asAtDate }}
           </div>
         </div>
         <div class="sorting-container">
@@ -76,12 +77,7 @@
       {# Investment Cards #}
       <div class="grid-of-cards">
         {% for investment in investments.list %}
-          <div
-          class="mix investment-container"
-          data-name="{{ investment.name }}"
-          data-featured="{{ investment.featured }}"
-          data-size="{{ investment.totalSize }}"
-        >
+          <div class="mix investment-container" data-name="{{ investment.name }}" data-featured="{{ investment.featured }}" data-size="{{ investment.totalSize }}">
             <h3>{{ investment.name }}</h3>
             {% if investment.country %}
               <h4>Country</h4>
@@ -109,10 +105,11 @@
               <h4>Total Holding Size (All Options)</h4>
               <div>
                 {% if investment.totalSize > 0.1 %}
-                ${{ investment.totalSize | round(1) }} Million
-              {% else %}
-                Less than $0.1 Million
-              {% endif %}
+                  ${{ investment.totalSize | round(1) }}
+                  Million
+                {% else %}
+                  Less than $0.1 Million
+                {% endif %}
               </div>
               {% if investment.etf !== "No" %}
                 <h4>Held via ETF</h4>
@@ -124,8 +121,8 @@
       </div>
 
       <div id="noitemsfoundmessage">
-      No items found
-    </div>
+        No items found
+      </div>
     </div>
   </div>
 
