@@ -1,5 +1,6 @@
 ---
 title: "Everything We Invest In"
+layout: "layouts/everything-we-invest-in.html"
 pageStyles: ["src/css/pages/everything-we-invest-in.css"]
 pageScripts:
   [
