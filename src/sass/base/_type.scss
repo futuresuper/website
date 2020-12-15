@@ -42,6 +42,13 @@ h1 {
   font-weight: 900;
 }
 
+h2 {
+  font-weight: 900;
+  font-size: 3.6rem;
+  line-height: 110%;
+  margin-bottom: 1.4rem;
+}
+
 h3,
 .heading-three {
   font-size: 1.17rem;
@@ -49,6 +56,7 @@ h3,
 }
 
 p {
+  margin-bottom: 1rem;
   a {
     color: inherit;
     &:hover {
@@ -59,10 +67,35 @@ p {
 
 $size-sm: 0.875rem; // 14px
 
+.disclaimer {
+  color: $grey-400;
+  font-size: 0.75rem;
+}
+
 .bold {
   font-weight: 700;
 }
 
+.no-underline {
+  text-decoration: none;
+}
+
 .text-tertiary {
   color: $grey-400;
+}
+
+.pink {
+  color: $pink-700;
+}
+
+.green {
+  color: $green-500;
+}
+
+.yellow {
+  color: $yellow-500;
+}
+
+.red {
+  color: $red-500;
 }

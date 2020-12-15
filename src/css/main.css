@@ -187,12 +187,22 @@ h1 {
   font-weight: 900;
 }
 
+h2 {
+  font-weight: 900;
+  font-size: 3.6rem;
+  line-height: 110%;
+  margin-bottom: 1.4rem;
+}
+
 h3,
 .heading-three {
   font-size: 1.17rem;
   font-weight: 700;
 }
 
+p {
+  margin-bottom: 1rem;
+}
 p a {
   color: inherit;
 }
@@ -200,12 +210,37 @@ p a:hover {
   color: #0a5aff;
 }
 
+.disclaimer {
+  color: #76766f;
+  font-size: 0.75rem;
+}
+
 .bold {
   font-weight: 700;
 }
 
+.no-underline {
+  text-decoration: none;
+}
+
 .text-tertiary {
   color: #76766f;
+}
+
+.pink {
+  color: #c445a2;
+}
+
+.green {
+  color: #2bb151;
+}
+
+.yellow {
+  color: #fac33c;
+}
+
+.red {
+  color: #f04b23;
 }
 
 .join-cta {
@@ -304,13 +339,16 @@ body > footer nav h2,
 body > footer nav img {
   margin-bottom: 1rem;
 }
-body > footer nav ul li {
+body > footer nav ul > li {
+  margin-bottom: 0.2rem;
+}
+body > footer nav ul > li a {
   text-decoration: none;
   color: #1d1d1b;
 }
-body > footer nav ul li:hover {
+body > footer nav ul > li a:hover {
   text-decoration: underline;
-  color: #52524c;
+  color: #0a5aff;
 }
 @media (min-width: 80rem) {
   body > footer .socials-list {

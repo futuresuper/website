@@ -187,12 +187,22 @@ h1 {
   font-weight: 900;
 }
 
+h2 {
+  font-weight: 900;
+  font-size: 3.6rem;
+  line-height: 110%;
+  margin-bottom: 1.4rem;
+}
+
 h3,
 .heading-three {
   font-size: 1.17rem;
   font-weight: 700;
 }
 
+p {
+  margin-bottom: 1rem;
+}
 p a {
   color: inherit;
 }
@@ -200,12 +210,37 @@ p a:hover {
   color: #0a5aff;
 }
 
+.disclaimer {
+  color: #76766f;
+  font-size: 0.75rem;
+}
+
 .bold {
   font-weight: 700;
 }
 
+.no-underline {
+  text-decoration: none;
+}
+
 .text-tertiary {
   color: #76766f;
+}
+
+.pink {
+  color: #c445a2;
+}
+
+.green {
+  color: #2bb151;
+}
+
+.yellow {
+  color: #fac33c;
+}
+
+.red {
+  color: #f04b23;
 }
 
 .how-we-invest {

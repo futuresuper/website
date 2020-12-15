@@ -1,0 +1,38 @@
+// HOME PAGE - PAGE-SPECIFIC STYLES
+
+// Includes colours, type and everything else in "sass > base" folder
+// the "as *" is so that we can reference colours etc, without the
+// namespace (ie '$grey-100' instead of 'base.$grey100')
+@use "../base" as *;
+
+.home {
+  padding: 3rem;
+
+  .hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 60vh;
+
+    p {
+      margin-top: 1rem;
+    }
+
+    .button {
+      margin-top: 2rem;
+    }
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5rem;
+    padding: 8rem;
+
+    .featured-link {
+      text-decoration: none;
+      margin-bottom: 3rem;
+    }
+  }
+}

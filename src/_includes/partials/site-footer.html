@@ -1,75 +1,73 @@
 <footer>
-    <div class="container">
-        <nav class="grid">
-            <div class="socials-list">
-                <a href="/" aria-label="{{ site.name }} — Home">
-                    {# TODO: replace with: #}
-                    {# {% include "partials/brand.svg" %} #}
-                    <img src="/images/logo-single-line.svg" alt="Future Super Logo">
-                    <ul class="plain">
-                        {% for item in socials.items %}
-                            {% if item.inSiteFooter %}
-                                <li>
-                                    <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.platform}}</a>
-                                </li>
-                            {% endif %}
-                        {% endfor %}
-                    </ul>
-                </a>
-            </div>
-
-            {% for item in navigation.items %}
-                {# Not all items will go in site header, so check them #}
-                {% if item.inSiteFooter %}
-                    {# Don't include the COVID shortcut link #}
-                    {% if not item.url %}
-                        <div>
-                            <h2>{{ item.text }}</h2>
-                            <ul class="plain">
-                                {% for subItem in item.subItems %}
-                                    <li>
-                                        <a href="{{ subItem.url }}">{{ subItem.text }}</a>
-                                    </li>
-                                {% endfor %}
-                            </ul>
-                        </div>
-                    {% endif %}
-                {% endif %}
+  <div class="container">
+    <nav class="grid">
+      <div class="socials-list">
+        <a href="/" aria-label="{{ site.name }} — Home">
+          {# TODO: replace with: #}
+          {# {% include "partials/brand.svg" %} #}
+          <img src="/images/logo-single-line.svg" alt="Future Super Logo">
+          <ul class="plain">
+            {% for item in socials.items %}
+              {% if item.inSiteFooter %}
+                <li>
+                  <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.platform}}</a>
+                </li>
+              {% endif %}
             {% endfor %}
-        </nav>
+          </ul>
+        </a>
+      </div>
 
-        <section class="acknowledgement-of-country grid">
+      {% for item in navigation.items %}
+        {# Not all items will go in site header, so check them #}
+        {% if item.inSiteFooter %}
+          {# Don't include the COVID shortcut link #}
+          {% if not item.url %}
             <div>
-                <div class="flags">
-                    <img src="/images/icons/flag-aboriginal.svg" alt="Aboriginal flag">
-                    <img src="/images/icons/flag-torres-strait.svg" alt="Torres Strait Islander flag">
-                </div>
-                <p>
-                    We acknowledge the Traditional Custodians of the lands on which we operate. We pay our respects
-                    to their Elders, past, present and emerging, and recognise that sovereignty was never ceded. See our <a href="/rap">Reconciliation Action Plan</a>.
-                </p>
+              <h2>{{ item.text }}</h2>
+              <ul class="plain">
+                {% for subItem in item.subItems %}
+                  <li>
+                    <a href="{{ subItem.url }}">{{ subItem.text }}</a>
+                  </li>
+                {% endfor %}
+              </ul>
             </div>
-        </section>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </nav>
 
-        <section class="by-the-way grid">
-            <img src="/images/icons/b-corp.svg" alt="Logo for Certified B Corporation">
-            <p class="text-tertiary">
-                All information provided is general in nature only. We recommend you seek financial advice when
-                considering if Future Super is right for your objectives and needs. When considering returns, past
-                performance is not indicative of future performance.
-            </p>
-        </section>
+    <section class="acknowledgement-of-country grid">
+      <div>
+        <div class="flags">
+          <img src="/images/icons/flag-aboriginal.svg" alt="Aboriginal flag">
+          <img src="/images/icons/flag-torres-strait.svg" alt="Torres Strait Islander flag">
+        </div>
+        <p>
+          We acknowledge the Traditional Custodians of the lands on which we operate. We pay our respects to their Elders, past, present and emerging, and recognise that sovereignty was never ceded. See our
+          <a href="/rap">Reconciliation Action Plan</a>.
+        </p>
+      </div>
+    </section>
 
-        <ul class="legal-link-list text-tertiary">
-            {% for item in navigation.items %}
-                {% if "Legal" in item.text %}
-                    {% for subItem in item.subItems %}
-                        <li>
-                            <a href="{{ subItem.url }}">{{ subItem.text }}</a>
-                        </li>
-                    {% endfor %}
-                {% endif %}
-            {% endfor %}
-        </ul>
-    </div>
+    <section class="by-the-way grid">
+      <img src="/images/icons/b-corp.svg" alt="Logo for Certified B Corporation">
+      <p class="text-tertiary">
+        All information provided is general in nature only. We recommend you seek financial advice when considering if Future Super is right for your objectives and needs. When considering returns, past performance is not indicative of future performance.
+      </p>
+    </section>
+
+    <ul class="legal-link-list text-tertiary">
+      {% for item in navigation.items %}
+        {% if "Legal" in item.text %}
+          {% for subItem in item.subItems %}
+            <li>
+              <a href="{{ subItem.url }}">{{ subItem.text }}</a>
+            </li>
+          {% endfor %}
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
 </footer>

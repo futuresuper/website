@@ -17,15 +17,16 @@ body > footer {
       margin-bottom: 1rem;
     }
 
-    ul li {
-      // TODO: custom styling
-      // Ain't working because browser can't resolve @use files
-      text-decoration: none;
-      color: $grey-800;
+    ul > li {
+      margin-bottom: 0.2rem;
+      a {
+        text-decoration: none;
+        color: $grey-800;
 
-      &:hover {
-        text-decoration: underline;
-        color: $grey-500;
+        &:hover {
+          text-decoration: underline;
+          color: $blue-500;
+        }
       }
     }
   }

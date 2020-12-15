@@ -1,6 +1,5 @@
 ---
 title: "Blog"
-layout: "layouts/feed.html"
 pagination:
   data: collections.blog
   size: 5
@@ -9,5 +8,3 @@ paginationPrevText: "Newer posts"
 paginationNextText: "Older posts"
 paginationAnchor: "#post-list"
 ---
-
-What's new at Future Super.
