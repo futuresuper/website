@@ -7,20 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>{{ title }}</title>
     <link rel="stylesheet" href="{{ '/css/main.css' | url }}">
-
-    {# Allow for page-specific styling #}
-    {# TODO: make these inline styles instead of another <link> call #}
-    {# For example: #}
-    {# {% if pageSpecificStyles %}
-            <style>
-                {% for item in pageSpecificStyles %}
-                    {% include item %}
-                {% endfor %}
-            </style>
-        {% endif %} #}
-    {% if pageSpecificStyles %}
-      {% for item in pageSpecificStyles %}
-        <link rel="stylesheet" href="{{ item | url }}"/>
+    {% if pageStyles %}
+      {% for styles in pageStyles %}
+        {% set css %}
+        {% include styles %}
+        {% endset %}
+        <style>
+          {{css | cssmin | safe}}
+        </style>
       {% endfor %}
     {% endif %}
   </head>
@@ -32,20 +26,15 @@
     </main>
     {% include "partials/site-footer.html" %}
 
-    {% if pageSpecificScripts %}
-      <script defer="defer">
-        {% for item in pageSpecificScripts %}
-          {% set js %}
-          {% include item %}
-          {% endset %}
-          {# If production #} {
-            # {{ js | jsmin | safe }}#
-          } {
-            # Else #
-          }
-          {{ js | safe }}
-        {% endfor %}
-      </script>
+    {% if pageScripts %}
+      {% for script in pageScripts %}
+        {% set js %}
+        {% include script %}
+        {% endset %}
+        <script defer="defer">
+          {{ js | jsmin | safe }}
+        </script>
+      {% endfor %}
     {% endif %}
   </body>
 

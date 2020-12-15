@@ -13,10 +13,10 @@ module.exports = (config) => {
   // Watch for changes in /sass
   config.addWatchTarget("./src/sass/");
   // Take the contents of /the following directories and pass through to /dist
-  config.addPassthroughCopy("./src/css/");
   config.addPassthroughCopy("./src/fonts/");
   config.addPassthroughCopy("./src/images/");
   config.addPassthroughCopy("./src/admin/");
+  config.addPassthroughCopy("./src/css/");
 
   // Add filters to Eleventy
   // Handle dates in areas such as blog posts

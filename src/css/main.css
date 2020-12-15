@@ -1,0 +1,388 @@
+@charset "UTF-8";
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core root defaults */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01s !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01s !important;
+    scroll-behavior: auto !important;
+  }
+}
+main:focus {
+  outline: none;
+}
+
+address {
+  font-style: inherit;
+}
+
+.button {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1.125rem;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  border: 0;
+  text-decoration: none;
+}
+
+.button.primary {
+  color: #ffffff;
+  background-color: #000000;
+}
+.button.primary.inverted {
+  color: #000000;
+  background-color: #ffffff;
+}
+.button.primary:hover {
+  background-color: #0a5aff;
+}
+.button.clear {
+  color: inherit;
+  background-color: inherit;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 80rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 1rem;
+}
+@media (min-width: 48rem) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
+}
+@media (min-width: 80rem) {
+  .grid {
+    gap: 1.5rem;
+  }
+}
+.grid > * {
+  grid-column: span 6;
+}
+@media (min-width: 80rem) {
+  .grid {
+    gap: 2rem;
+  }
+  .grid > * {
+    grid-column: span 2;
+  }
+}
+
+@font-face {
+  font-family: "SharpGrotesk";
+  src: url("../fonts/SharpGroteskBook19-subset.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SharpGrotesk";
+  src: url("../fonts/SharpGroteskMedium19-subset.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SharpGrotesk";
+  src: url("../fonts/SharpGroteskSmBold19-subset.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-family: "SharpGrotesk", sans-serif;
+  color: #000000;
+}
+
+.heading-zero {
+  text-transform: uppercase;
+  line-height: 98%;
+  font-size: 6rem;
+  text-align: center;
+  color: #140f14;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+h3,
+.heading-three {
+  font-size: 1.17rem;
+  font-weight: 700;
+}
+
+p a {
+  color: inherit;
+}
+p a:hover {
+  color: #0a5aff;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.text-tertiary {
+  color: #76766f;
+}
+
+.join-cta {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+}
+.join-cta .container {
+  padding: 10rem 0;
+}
+.join-cta h2 {
+  font-size: 3rem;
+}
+.join-cta .button {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.join-cta p:first-of-type {
+  font-size: 1.5rem;
+}
+.join-cta p:last-of-type {
+  font-size: 0.875rem;
+}
+
+header[role=banner] .banner {
+  text-align: center;
+  padding: 1.5rem;
+}
+header[role=banner] .banner.advice {
+  color: #52524c;
+  background-color: #f5f0f0;
+}
+header[role=banner] .banner.advice a:hover {
+  color: #0b0b0a;
+}
+header[role=banner] .banner.critical {
+  color: #322401;
+  background-color: #fac33c;
+}
+header[role=banner] .banner.critical a:hover {
+  color: #9a6f04;
+}
+header[role=banner] .nav-content {
+  padding: 2rem 3rem;
+}
+header[role=banner] .nav-content nav {
+  display: flex;
+}
+header[role=banner] .nav-content nav a:not(.button) {
+  display: inline-block;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  color: #000000;
+  font-weight: 700;
+  border: 1px solid transparent;
+}
+header[role=banner] .nav-content nav .dropdown {
+  border: 1px solid transparent;
+}
+header[role=banner] .nav-content nav .dropdown:hover {
+  background-color: #ffffff;
+  border: 1px solid #000000;
+}
+header[role=banner] .nav-content nav .dropdown:hover .dropdown-content {
+  display: flex;
+}
+header[role=banner] .nav-content nav .dropdown-content {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  min-width: 10rem;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  margin-left: -1px;
+}
+header[role=banner] .nav-content nav .dropdown-content a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #000000;
+  padding: 1rem 2rem;
+}
+header[role=banner] .nav-content nav .dropdown-content a:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+body > footer {
+  background-color: #ffffff;
+  font-size: 0.875rem;
+  padding: 3rem 0 4rem;
+}
+body > footer h2 {
+  font-size: 1rem;
+}
+body > footer nav h2,
+body > footer nav img {
+  margin-bottom: 1rem;
+}
+body > footer nav ul li {
+  text-decoration: none;
+  color: #1d1d1b;
+}
+body > footer nav ul li:hover {
+  text-decoration: underline;
+  color: #52524c;
+}
+@media (min-width: 80rem) {
+  body > footer .socials-list {
+    grid-column: span 4;
+  }
+}
+body > footer .acknowledgement-of-country {
+  margin: 3rem 0;
+}
+body > footer .acknowledgement-of-country div {
+  grid-column: span 12;
+}
+@media (min-width: 48rem) {
+  body > footer .acknowledgement-of-country div {
+    grid-column: span 8;
+  }
+}
+body > footer .acknowledgement-of-country .flags {
+  display: flex;
+  margin-bottom: 1rem;
+}
+body > footer .acknowledgement-of-country .flags img:first-child {
+  margin-right: 1rem;
+}
+body > footer .by-the-way img {
+  grid-row: 1/1;
+}
+body > footer .by-the-way p {
+  grid-row: 2/2;
+  grid-column: span 12;
+}
+@media (min-width: 48rem) {
+  body > footer .by-the-way p {
+    grid-column: span 8;
+  }
+}
+@media (min-width: 80rem) {
+  body > footer .by-the-way p,
+body > footer .by-the-way img {
+    grid-row: 1/1;
+  }
+  body > footer .by-the-way p {
+    grid-column: span 6;
+  }
+  body > footer .by-the-way img {
+    justify-self: end;
+    grid-column: 12/12;
+  }
+}
+body > footer .legal-link-list {
+  display: flex;
+  margin-top: 2rem;
+}
+body > footer .legal-link-list li a {
+  color: inherit;
+  text-decoration: none;
+}
+body > footer .legal-link-list li a:hover {
+  text-decoration: underline;
+  color: #52524c;
+}
+body > footer .legal-link-list li:not(:last-of-type) {
+  margin-right: 1.15rem;
+}
+body > footer .legal-link-list li:not(:last-of-type)::after {
+  margin-left: 1rem;
+  font-weight: 900;
+  content: "•";
+}
+
+body {
+  background-color: #fbf9f9;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,358 @@
+@charset "UTF-8";
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core root defaults */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01s !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01s !important;
+    scroll-behavior: auto !important;
+  }
+}
+main:focus {
+  outline: none;
+}
+
+address {
+  font-style: inherit;
+}
+
+.button {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1.125rem;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  border: 0;
+  text-decoration: none;
+}
+
+.button.primary {
+  color: #ffffff;
+  background-color: #000000;
+}
+.button.primary.inverted {
+  color: #000000;
+  background-color: #ffffff;
+}
+.button.primary:hover {
+  background-color: #0a5aff;
+}
+.button.clear {
+  color: inherit;
+  background-color: inherit;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 80rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 1rem;
+}
+@media (min-width: 48rem) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
+}
+@media (min-width: 80rem) {
+  .grid {
+    gap: 1.5rem;
+  }
+}
+.grid > * {
+  grid-column: span 6;
+}
+@media (min-width: 80rem) {
+  .grid {
+    gap: 2rem;
+  }
+  .grid > * {
+    grid-column: span 2;
+  }
+}
+
+@font-face {
+  font-family: "SharpGrotesk";
+  src: url("../fonts/SharpGroteskBook19-subset.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SharpGrotesk";
+  src: url("../fonts/SharpGroteskMedium19-subset.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SharpGrotesk";
+  src: url("../fonts/SharpGroteskSmBold19-subset.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-family: "SharpGrotesk", sans-serif;
+  color: #000000;
+}
+
+.heading-zero {
+  text-transform: uppercase;
+  line-height: 98%;
+  font-size: 6rem;
+  text-align: center;
+  color: #140f14;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+h3,
+.heading-three {
+  font-size: 1.17rem;
+  font-weight: 700;
+}
+
+p a {
+  color: inherit;
+}
+p a:hover {
+  color: #0a5aff;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.text-tertiary {
+  color: #76766f;
+}
+
+.how-we-invest {
+  /* Criteria */
+  /* Style the speech bubbles */
+  /* Speech bubble arrows */
+  /* Style the example bullets */
+}
+.how-we-invest h1 {
+  font-size: 10rem;
+  line-height: 100%;
+}
+.how-we-invest header {
+  height: 80vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.how-we-invest section.loud p {
+  font-size: 4rem;
+  line-height: 110%;
+  font-weight: 500;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.how-we-invest section#part-one {
+  margin-top: 20vh;
+}
+.how-we-invest section#part-two {
+  margin-top: 20vh;
+  height: 90vh;
+}
+.how-we-invest article > header {
+  text-align: center;
+}
+.how-we-invest .screens-container {
+  background-color: #ffffff;
+  max-width: 40rem;
+  margin: 0 auto;
+  margin-bottom: 10rem;
+  border: 1px solid #f04b23;
+  padding: 1.5rem;
+}
+.how-we-invest .is-screened {
+  padding-bottom: 2rem;
+}
+.how-we-invest .buttons-container {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.875rem;
+  margin-top: -0.25rem;
+  margin-left: -0.25rem;
+  overflow-x: scroll;
+  flex-wrap: nowrap;
+}
+@media (min-width: 720px) {
+  .how-we-invest .buttons-container {
+    flex-wrap: wrap;
+  }
+}
+.how-we-invest .buttons-container button {
+  cursor: pointer;
+  padding: 0.75rem 1rem;
+  margin: 0.25rem;
+  color: #db380f;
+  border: 1px solid #faccc2;
+  background-color: #ffffff;
+  transition: all 200ms ease;
+  flex-shrink: 0;
+  text-align: center;
+  outline: none;
+}
+@media (min-width: 720px) {
+  .how-we-invest .buttons-container button {
+    flex-grow: 1;
+  }
+}
+.how-we-invest .buttons-container button:hover {
+  background-color: #faccc2;
+  border-color: #f04b23;
+}
+.how-we-invest .criteria-intro {
+  text-align: center;
+  padding-top: 2rem;
+}
+.how-we-invest .criteria-intro .screen-icon {
+  margin: auto;
+  width: 4rem;
+}
+.how-we-invest .criteria-intro h3 {
+  color: #db380f;
+}
+.how-we-invest .criteria {
+  margin-bottom: 3rem;
+  font-size: 0.875rem;
+}
+.how-we-invest .question {
+  background: #db380f;
+  color: #ffffff;
+  padding: 1.5rem;
+  position: relative;
+  line-height: 150%;
+  text-align: left;
+}
+.how-we-invest .question:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border: 1.5rem solid transparent;
+  border-top-color: #db380f;
+  border-bottom: 0;
+  margin-left: -0.75em;
+  margin-bottom: -1.5rem;
+}
+.how-we-invest .criteria:nth-child(odd) > .question:after {
+  left: 2rem;
+  border-left: 0;
+}
+.how-we-invest .criteria:nth-child(even) > .question:after {
+  right: 1.5rem;
+  border-right: 0;
+}
+.how-we-invest .example-label {
+  margin-top: 1rem;
+  margin-left: 4rem;
+  font-weight: 450;
+  font-size: 0.6875rem;
+  color: #76766f;
+  text-align: left;
+}
+.how-we-invest .examples {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+.how-we-invest .example-label,
+.how-we-invest .examples li {
+  margin-bottom: 0.25rem;
+  text-align: left;
+  margin-left: 4rem;
+}
+.how-we-invest .examples li::before {
+  content: "❌";
+  margin-right: 1em;
+}
+
+/*# sourceMappingURL=how-we-invest.css.map */
