@@ -6,11 +6,10 @@
   text-align: center;
 
   .container {
-    padding: 10rem 0;
-  }
-
-  h2 {
-    font-size: 3rem;
+    padding: 10rem 3rem;
+    @media (max-width: $breakpoint-sm) {
+      padding: 4rem 3rem;
+    }
   }
 
   .button {
@@ -20,7 +19,8 @@
 
   p {
     &:first-of-type {
-      font-size: 1.5rem;
+      font-size: 1rem; // Fallback
+      font-size: min(max(1rem, 3vw), 1.8rem); // Min, Variable, Max
     }
 
     &:last-of-type {

@@ -2,7 +2,8 @@
   {# Conditional banner #}
   {% if site.banner.shown %}
     <aside class="banner {{ site.banner.adviceOrCritical }}">
-      <p>This is an important banner. Find out more <a href="#">here</a>.</p>
+      <p>This is an important banner. Find out more
+        <a href="#">here</a>.</p>
     </aside>
   {% endif %}
 
@@ -25,8 +26,9 @@
               {# Make every other item a dropdown heading #}
               <div class="dropdown">
                 <div class="button clear">
-                  {{ item.text }}  ↓
-              </div>
+                  {{ item.text }}
+                  ↓
+                </div>
                 <div class="dropdown-content">
                   {% for subItem in item.subItems %}
                     {% if subItem.inSiteHeader %}
