@@ -8,26 +8,42 @@
   {% endif %}
 
   {# Regular site header content #}
-  <section class="nav-content flex-center" style="justify-content: space-between">
-    <div class="flex-center">
-      <a href="/" aria-label="{{ site.name }} — Home" style="margin-right: 2rem">
+  <section>
+    <a class="logo" href="/" aria-label="{{ site.name }} — Home" style="margin-right: 2rem">
+      <picture>
+        <source media="(max-width: 1067px)" srcset="/images/logo-stacked.svg">
+        <source media="(min-width: 1068px)" srcset="/images/logo-single-line.svg">
         <img src="/images/logo-single-line.svg" alt="Future Super Logo">
-        {# TODO: replace with: #}
-        {# {% include "partials/brand.svg" %} #}
+      </picture>
+    </a>
+    <div class="show-hide-mobile-menu">
+
+      <a onclick="showMobileMenu(true)" id="menu-button">
+        Menu
+        <img src="/images/icons/menu.svg" alt="Menu open icon">
       </a>
+      <a onclick="showMobileMenu(false)" id="menu-close-button">
+        Close
+        <img src="/images/icons/cross.svg" class="close" alt="Menu close icon">
+      </a>
+      {# <a onclick="document.getElementById('nav-container').style.display = 'flex'">Menu
+        <img src="/images/icons/menu.svg" alt="Menu open icon"></a>
+      <a onclick="document.getElementById('nav-container').style.display = 'none'">Close
+        <img src="/images/icons/cross.svg" class="close" alt="Menu close icon"></a> #}
+    </div>
+    <div id="nav-container" class="nav-container">
       <nav aria-label="Primary">
         {% for item in navigation.items %}
           {# Not all items will go in site header, so check them #}
           {% if item.inSiteHeader %}
             {# Show the COVID shortcut link differently #}
             {% if item.url %}
-              <a href="{{ item.url }}">{{ item.text }}</a>
+              <a class="non-dropdown" href="{{ item.url }}">{{ item.text }}</a>
             {% else %}
               {# Make every other item a dropdown heading #}
               <div class="dropdown">
                 <div class="button clear">
                   {{ item.text }}
-                  ↓
                 </div>
                 <div class="dropdown-content">
                   {% for subItem in item.subItems %}
@@ -42,10 +58,11 @@
           {% endif %}
         {% endfor %}
       </nav>
+      <nav>
+        <a href="{{ site.signInUrl }}">Login</a>
+        <a href="{{ site.joinUrl }}" class="button primary">Join Now</a>
+      </nav>
+
     </div>
-    <nav class="flex-center">
-      <a href="{{ site.signInUrl }}">Login</a>
-      <a href="{{ site.joinUrl }}" class="button primary">Join Now</a>
-    </nav>
   </section>
 </header>

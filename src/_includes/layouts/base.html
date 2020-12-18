@@ -26,12 +26,20 @@
     </main>
     {% include "partials/site-footer.html" %}
 
+    {# Add global script #}
+    {% set globaljs %}
+    {% include "scripts/global.js" %}
+    {% endset %}
+    <script>
+      {{ globaljs | jsmin | safe }}
+    </script>
+
     {% if pageScripts %}
       {% for script in pageScripts %}
         {% set js %}
         {% include script %}
         {% endset %}
-        <script defer="defer">
+        <script>
           {{ js | jsmin | safe }}
         </script>
       {% endfor %}

@@ -132,15 +132,18 @@ address {
   grid-template-columns: repeat(12, 1fr);
   gap: 1rem;
 }
-@media (min-width: 80rem) {
+.grid > * {
+  grid-column: span 12;
+}
+@media (min-width: 40rem) {
   .grid {
     gap: 1.5rem;
   }
+  .grid > * {
+    grid-column: span 6;
+  }
 }
-.grid > * {
-  grid-column: span 6;
-}
-@media (min-width: 80rem) {
+@media (min-width: 48rem) {
   .grid {
     gap: 2rem;
   }
@@ -295,54 +298,158 @@ header[role=banner] .banner.critical {
 header[role=banner] .banner.critical a:hover {
   color: #9a6f04;
 }
-header[role=banner] .nav-content {
+header[role=banner] section {
   padding: 2rem 3rem;
-}
-header[role=banner] .nav-content nav {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-header[role=banner] .nav-content nav a:not(.button) {
-  display: inline-block;
-  padding: 1rem 2rem;
-  text-decoration: none;
-  color: #000000;
-  font-weight: 700;
-  border: 1px solid transparent;
+header[role=banner] section .logo {
+  margin-right: 2rem;
+  z-index: 2;
 }
-header[role=banner] .nav-content nav .dropdown {
-  border: 1px solid transparent;
+header[role=banner] section .show-hide-mobile-menu {
+  z-index: 2;
 }
-header[role=banner] .nav-content nav .dropdown:hover {
-  background-color: #ffffff;
-  border: 1px solid #000000;
-}
-header[role=banner] .nav-content nav .dropdown:hover .dropdown-content {
+header[role=banner] section .show-hide-mobile-menu a {
   display: flex;
+  align-items: center;
 }
-header[role=banner] .nav-content nav .dropdown-content {
+header[role=banner] section .show-hide-mobile-menu a#menu-close-button {
   display: none;
-  flex-direction: column;
-  position: absolute;
-  min-width: 10rem;
-  background-color: #ffffff;
-  border: 1px solid #000000;
-  margin-left: -1px;
 }
-header[role=banner] .nav-content nav .dropdown-content a {
-  text-decoration: none;
-  font-weight: 500;
-  color: #000000;
-  padding: 1rem 2rem;
+header[role=banner] section .show-hide-mobile-menu a img {
+  display: inline-block;
+  margin-left: 0.5rem;
 }
-header[role=banner] .nav-content nav .dropdown-content a:hover {
-  background-color: #000000;
-  color: #ffffff;
+header[role=banner] section .show-hide-mobile-menu a img.close {
+  margin-left: 0.2rem;
+}
+@media (min-width: 1068px) {
+  header[role=banner] section .show-hide-mobile-menu {
+    display: none;
+  }
+  header[role=banner] section .nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+  header[role=banner] section .nav-container nav {
+    display: flex;
+    align-items: center;
+  }
+  header[role=banner] section .nav-container nav .clear:after {
+    content: " ↓";
+  }
+  header[role=banner] section .nav-container nav a:not(.button) {
+    display: inline-block;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 700;
+    border: 1px solid transparent;
+  }
+  header[role=banner] section .nav-container nav .dropdown {
+    border: 1px solid transparent;
+  }
+  header[role=banner] section .nav-container nav .dropdown:hover {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+  }
+  header[role=banner] section .nav-container nav .dropdown:hover .dropdown-content {
+    display: flex;
+  }
+  header[role=banner] section .nav-container nav .dropdown-content {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    min-width: 10rem;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    margin-left: -1px;
+  }
+  header[role=banner] section .nav-container nav .dropdown-content a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #000000;
+    padding: 1rem 2rem;
+  }
+  header[role=banner] section .nav-container nav .dropdown-content a:hover {
+    background-color: #000000;
+    color: #ffffff;
+  }
+}
+@media (max-width: 1067px) {
+  header[role=banner] section .show-hide-mobile-menu {
+    display: block;
+  }
+  header[role=banner] section .nav-container {
+    height: 100%;
+    width: 100%;
+    padding: 8rem 2rem 3rem 2rem;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: #fbf9f9;
+    overflow-x: hidden;
+    display: none;
+    flex-direction: column;
+  }
+  header[role=banner] section .nav-container nav:first-of-type .button {
+    padding: 1.4rem 0 0.8rem 0;
+  }
+  header[role=banner] section .nav-container nav:first-of-type .non-dropdown {
+    display: block;
+    padding: 1.4rem 0 2rem 0;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 700;
+  }
+  header[role=banner] section .nav-container nav:first-of-type .non-dropdown:hover {
+    color: #0a5aff;
+  }
+  header[role=banner] section .nav-container nav:first-of-type .dropdown-content a {
+    display: block;
+    padding: 0.3rem 0;
+    color: #000000;
+    text-decoration: none;
+  }
+  header[role=banner] section .nav-container nav:first-of-type .dropdown-content a:hover {
+    color: #0a5aff;
+  }
+  header[role=banner] section .nav-container nav:last-of-type a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+    border: 2px solid #000000;
+  }
+  header[role=banner] section .nav-container nav:last-of-type a:first-of-type {
+    font-size: 1.125rem;
+    font-weight: 700;
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    color: #000000;
+  }
+  header[role=banner] section .nav-container nav:last-of-type a:first-of-type:hover {
+    background-color: #dc91c8;
+  }
+  header[role=banner] section .nav-container nav:last-of-type a:last-of-type:hover {
+    border-color: #0a5aff;
+  }
+}
+@media (max-width: 40rem) {
+  header[role=banner] section {
+    padding: 2rem;
+  }
 }
 
 body > footer {
   background-color: #ffffff;
   font-size: 0.875rem;
-  padding: 3rem 0 4rem;
+  padding: 3rem 1rem 4rem;
 }
 body > footer h2 {
   font-size: 1rem;
@@ -362,7 +469,7 @@ body > footer nav ul > li a:hover {
   text-decoration: underline;
   color: #0a5aff;
 }
-@media (min-width: 80rem) {
+@media (min-width: 48rem) {
   body > footer .socials-list {
     grid-column: span 4;
   }
@@ -413,6 +520,7 @@ body > footer .by-the-way img {
 body > footer .legal-link-list {
   display: flex;
   margin-top: 2rem;
+  flex-direction: column;
 }
 body > footer .legal-link-list li a {
   color: inherit;
@@ -422,13 +530,18 @@ body > footer .legal-link-list li a:hover {
   text-decoration: underline;
   color: #52524c;
 }
-body > footer .legal-link-list li:not(:last-of-type) {
-  margin-right: 1.15rem;
-}
-body > footer .legal-link-list li:not(:last-of-type)::after {
-  margin-left: 1rem;
-  font-weight: 900;
-  content: "•";
+@media (min-width: 40rem) {
+  body > footer .legal-link-list {
+    flex-direction: row;
+  }
+  body > footer .legal-link-list li:not(:last-of-type) {
+    margin-right: 1.15rem;
+  }
+  body > footer .legal-link-list li:not(:last-of-type)::after {
+    margin-left: 1rem;
+    font-weight: 900;
+    content: "•";
+  }
 }
 
 body {

@@ -132,15 +132,18 @@ address {
   grid-template-columns: repeat(12, 1fr);
   gap: 1rem;
 }
-@media (min-width: 80rem) {
+.grid > * {
+  grid-column: span 12;
+}
+@media (min-width: 40rem) {
   .grid {
     gap: 1.5rem;
   }
+  .grid > * {
+    grid-column: span 6;
+  }
 }
-.grid > * {
-  grid-column: span 6;
-}
-@media (min-width: 80rem) {
+@media (min-width: 48rem) {
   .grid {
     gap: 2rem;
   }

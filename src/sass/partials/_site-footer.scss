@@ -5,7 +5,7 @@
 body > footer {
   background-color: $white-500;
   font-size: $size-sm;
-  padding: 3rem 0 4rem;
+  padding: 3rem 1rem 4rem;
 
   h2 {
     font-size: 1rem;
@@ -32,7 +32,7 @@ body > footer {
   }
 
   .socials-list {
-    @media (min-width: $breakpoint-lg) {
+    @media (min-width: $breakpoint-md) {
       grid-column: span 4;
     }
   }
@@ -95,6 +95,7 @@ body > footer {
   .legal-link-list {
     display: flex;
     margin-top: 2rem;
+    flex-direction: column;
 
     li {
       a {
@@ -108,13 +109,16 @@ body > footer {
       }
     }
 
-    li:not(:last-of-type) {
-      margin-right: 1.15rem;
+    @media (min-width: $breakpoint-sm) {
+      flex-direction: row;
+      li:not(:last-of-type) {
+        margin-right: 1.15rem;
 
-      &::after {
-        margin-left: 1rem;
-        font-weight: 900;
-        content: "•";
+        &::after {
+          margin-left: 1rem;
+          font-weight: 900;
+          content: "•";
+        }
       }
     }
   }

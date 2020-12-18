@@ -18,15 +18,16 @@ $breakpoint-lg: 80rem; //1280px
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 1rem;
-  @media (min-width: $breakpoint-lg) {
-    gap: 1.5rem;
-  }
-
   > * {
-    grid-column: span 6;
+    grid-column: span 12;
   }
-
-  @media (min-width: $breakpoint-lg) {
+  @media (min-width: $breakpoint-sm) {
+    gap: 1.5rem;
+    > * {
+      grid-column: span 6;
+    }
+  }
+  @media (min-width: $breakpoint-md) {
     gap: 2rem;
     > * {
       grid-column: span 2;
