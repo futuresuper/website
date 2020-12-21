@@ -126,6 +126,7 @@ header[role="banner"] {
       }
 
       .nav-container {
+        display: none;
         height: 100%;
         width: 100%;
         padding: 8rem 2rem 3rem 2rem;
@@ -135,7 +136,6 @@ header[role="banner"] {
         top: 0;
         background-color: $off-white-300;
         overflow-x: hidden;
-        display: none;
         flex-direction: column;
         nav:first-of-type {
           .button {

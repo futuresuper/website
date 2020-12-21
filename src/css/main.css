@@ -385,6 +385,7 @@ header[role=banner] section .show-hide-mobile-menu a img.close {
     display: block;
   }
   header[role=banner] section .nav-container {
+    display: none;
     height: 100%;
     width: 100%;
     padding: 8rem 2rem 3rem 2rem;
@@ -394,7 +395,6 @@ header[role=banner] section .show-hide-mobile-menu a img.close {
     top: 0;
     background-color: #fbf9f9;
     overflow-x: hidden;
-    display: none;
     flex-direction: column;
   }
   header[role=banner] section .nav-container nav:first-of-type .button {
