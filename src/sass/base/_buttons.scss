@@ -1,5 +1,6 @@
 @use "colours" as *;
 
+button,
 .button {
   display: inline-block;
   cursor: pointer;
@@ -8,9 +9,6 @@
   padding: 1rem 2rem;
   border: 0;
   text-decoration: none;
-}
-
-.button {
   &.primary {
     color: $white-500;
     background-color: $black-900;

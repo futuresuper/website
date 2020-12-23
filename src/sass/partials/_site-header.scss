@@ -26,7 +26,7 @@ header[role="banner"] {
   }
 
   section {
-    padding: 2rem 3rem;
+    padding: 2rem 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -129,7 +129,7 @@ header[role="banner"] {
         display: none;
         height: 100%;
         width: 100%;
-        padding: 8rem 2rem 3rem 2rem;
+        padding: 8rem 2rem 3rem;
         position: fixed;
         z-index: 1;
         left: 0;
@@ -189,8 +189,8 @@ header[role="banner"] {
         }
       }
     }
-    @media (max-width: $breakpoint-sm) {
-      padding: 2rem;
-    }
+    // @media (max-width: $breakpoint-sm) {
+    //   padding: 2rem;
+    // }
   }
 }

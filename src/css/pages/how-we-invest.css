@@ -83,6 +83,7 @@ address {
   font-style: inherit;
 }
 
+button,
 .button {
   display: inline-block;
   cursor: pointer;
@@ -92,18 +93,21 @@ address {
   border: 0;
   text-decoration: none;
 }
-
+button.primary,
 .button.primary {
   color: #ffffff;
   background-color: #000000;
 }
+button.primary.inverted,
 .button.primary.inverted {
   color: #000000;
   background-color: #ffffff;
 }
+button.primary:hover,
 .button.primary:hover {
   background-color: #0a5aff;
 }
+button.clear,
 .button.clear {
   color: inherit;
   background-color: inherit;
@@ -192,7 +196,7 @@ h1 {
   line-height: 110%;
   margin-bottom: 1.8rem;
   font-size: 2.8rem;
-  font-size: min(max(2rem, 7vw), 6rem);
+  font-size: min(max(2rem, 7vw), 5rem);
 }
 
 h2 {
@@ -235,6 +239,10 @@ p a:hover {
   text-decoration: none;
 }
 
+.center {
+  text-align: center;
+}
+
 .text-tertiary {
   color: #76766f;
 }
@@ -253,6 +261,41 @@ p a:hover {
 
 .red {
   color: #f04b23;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  color: #0a5aff;
+  border-bottom: 1px dotted #0a5aff;
+}
+.tooltip .tooltip-text {
+  visibility: hidden;
+  background-color: #140f14;
+  color: #ffffff;
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 0.5rem;
+  position: absolute;
+  z-index: 1;
+  width: 10rem;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5rem;
+}
+.tooltip .tooltip-text::after {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #140f14 transparent transparent transparent;
+}
+.tooltip:hover .tooltip-text {
+  visibility: visible;
 }
 
 .how-we-invest {

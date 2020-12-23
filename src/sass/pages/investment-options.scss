@@ -1,0 +1,82 @@
+// HOW WE INVEST - PAGE-SPECIFIC STYLES
+
+// Includes colours, type and everything else in "sass > base" folder
+// the "as *" is so that we can reference colours etc, without the
+// namespace (ie '$grey-100' instead of 'base.$grey100')
+@use "../base" as *;
+
+.investment-options {
+  background-color: $white-500;
+  padding: 4rem 0 12rem;
+
+  h1 {
+    padding: 3rem 0;
+  }
+
+  .grid {
+    gap: 3rem;
+    margin-bottom: 6rem;
+    > .optionCard {
+      grid-column: span 12;
+      @media (min-width: $breakpoint-sm) {
+        grid-column: span 4;
+      }
+    }
+  }
+
+  .optionCard {
+    padding: 3rem;
+    border: 2px solid $grey-200;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    > div {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+
+      img {
+        margin-bottom: 1rem;
+      }
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+
+    button {
+      font-weight: 400;
+      color: $white-500;
+      margin-top: 1rem;
+    }
+
+    &:first-of-type {
+      h2,
+      p {
+        color: $pink-900;
+      }
+      button {
+        background-color: $pink-700;
+      }
+    }
+    &:nth-of-type(2) {
+      h2,
+      p {
+        color: $blue-900;
+      }
+      button {
+        background-color: $blue-500;
+      }
+    }
+    &:last-of-type {
+      h2,
+      p {
+        color: $green-900;
+      }
+      button {
+        background-color: $green-500;
+      }
+    }
+  }
+}

@@ -4,6 +4,33 @@
 
 {% block content %}
 
-  {% include "partials/page-header.html" %}
+  <div class="investment-options">
+    <div class="container">
+      <h1 class="center">{{ pageHeaderTitle }}</h1>
+      <div class="grid">
+        {% for option in investmentOptions %}
+          <div class="optionCard">
+            <div>
+              <img src="{{ option.icon }}"/>
+              <h2>{{ option.name }}</h2>
+              <p>{{ option.description }}</p>
+            </div>
+            <div>
+              <button>Select</button>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+      <h3>Let's break things down</h3>
+      <p>Not sure what something means? Tap anything that’s
+        <a class="tooltip">
+          underlined
+          <span class="tooltip-text">You're a natural!</span>
+        </a>
+        to see a full, jargon-free, explanation.</p>
+    </div>
+  </div>
+
+  {% include "partials/join-cta.html" %}
 
 {% endblock %}
