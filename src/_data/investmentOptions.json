@@ -3,6 +3,7 @@
     "name": "Balanced Index",
     "description": "Zero fossil fuels but no impact targets. Just divestment.",
     "icon": "/images/icons/investment-options/renewables.svg",
+    "colour": "#C445A2",
     "impact": "Low",
     "fightsInequality": false
   },
@@ -10,6 +11,7 @@
     "name": "Balanced Impact",
     "description": "Zero fossul fuels, plus investments in renewable energy and social impact projects.",
     "icon": "/images/icons/investment-options/conservation.svg",
+    "colour": "#0A5AFF",
     "impact": "Medium",
     "fightsInequality": true
   },
@@ -17,6 +19,7 @@
     "name": "Renewables Plus Growth",
     "description": "Zero fossil fuels, highest impact. Targets 20% investment in renewable energy projects.",
     "icon": "/images/icons/investment-options/recycling.svg",
+    "colour": "#21873E",
     "impact": "High",
     "fightsInequality": true
   }

@@ -7,26 +7,30 @@ $breakpoint-lg: 80rem; //1280px
   max-width: $breakpoint-lg;
   margin-right: auto;
   margin-left: auto;
-  padding: 0 1rem;
+  padding: 0 2rem;
 
   @media (min-width: $breakpoint-md) {
-    padding: 0 2rem;
+    padding: 0 3rem;
   }
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  // Small screens default = 1 column
+  grid-template-columns: 100%;
   gap: 1rem;
   > * {
-    grid-column: span 12;
+    grid-column: span 1;
   }
+  // Medium screens default = 2 columns (span 6 of 12)
   @media (min-width: $breakpoint-sm) {
+    grid-template-columns: repeat(12, 1fr);
     gap: 1.5rem;
     > * {
       grid-column: span 6;
     }
   }
+  // Large screens default = 6 columns (span 2 of 12)
   @media (min-width: $breakpoint-md) {
     gap: 2rem;
     > * {

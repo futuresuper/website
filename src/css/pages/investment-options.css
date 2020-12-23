@@ -122,24 +122,25 @@ button.clear,
   max-width: 80rem;
   margin-right: auto;
   margin-left: auto;
-  padding: 0 1rem;
+  padding: 0 2rem;
 }
 @media (min-width: 48rem) {
   .container {
-    padding: 0 2rem;
+    padding: 0 3rem;
   }
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: 100%;
   gap: 1rem;
 }
 .grid > * {
-  grid-column: span 12;
+  grid-column: span 1;
 }
 @media (min-width: 40rem) {
   .grid {
+    grid-template-columns: repeat(12, 1fr);
     gap: 1.5rem;
   }
   .grid > * {
@@ -308,10 +309,12 @@ p a:hover {
   gap: 3rem;
   margin-bottom: 6rem;
 }
-.investment-options .grid > .optionCard {
-  grid-column: span 12;
-}
 @media (min-width: 40rem) {
+  .investment-options .grid > .optionCard {
+    grid-column: span 12;
+  }
+}
+@media (min-width: 80rem) {
   .investment-options .grid > .optionCard {
     grid-column: span 4;
   }
@@ -360,6 +363,33 @@ p a:hover {
 }
 .investment-options .optionCard:last-of-type button {
   background-color: #2bb151;
+}
+.investment-options section .grid-container {
+  width: 100%;
+  overflow-x: scroll;
+}
+.investment-options section .grid-container .details-grid {
+  padding: 6rem 0;
+  display: grid;
+  grid-template-columns: repeat(12, auto);
+  gap: 1rem;
+}
+.investment-options section .grid-container .details-grid > * {
+  grid-column: span 2;
+}
+@media (min-width: 40rem) {
+  .investment-options section .grid-container .details-grid {
+    gap: 1.5rem;
+  }
+}
+@media (min-width: 48rem) {
+  .investment-options section .grid-container .details-grid {
+    gap: 2rem;
+  }
+}
+.investment-options section .grid-container .details-grid h3,
+.investment-options section .grid-container .details-grid h5 {
+  grid-column: span 6;
 }
 
 /*# sourceMappingURL=investment-options.css.map */

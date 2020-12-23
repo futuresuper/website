@@ -17,8 +17,10 @@
     gap: 3rem;
     margin-bottom: 6rem;
     > .optionCard {
-      grid-column: span 12;
       @media (min-width: $breakpoint-sm) {
+        grid-column: span 12;
+      }
+      @media (min-width: $breakpoint-lg) {
         grid-column: span 4;
       }
     }
@@ -76,6 +78,34 @@
       }
       button {
         background-color: $green-500;
+      }
+    }
+  }
+
+  section {
+    .grid-container {
+      width: 100%;
+      overflow-x: scroll;
+      .details-grid {
+        padding: 6rem 0;
+        display: grid;
+        grid-template-columns: repeat(12, auto);
+        gap: 1rem;
+        > * {
+          grid-column: span 2;
+        }
+        // Medium screens default = 2 columns (span 6 of 12)
+        @media (min-width: $breakpoint-sm) {
+          gap: 1.5rem;
+        }
+        // Large screens default = 6 columns (span 2 of 12)
+        @media (min-width: $breakpoint-md) {
+          gap: 2rem;
+        }
+        h3,
+        h5 {
+          grid-column: span 6;
+        }
       }
     }
   }

@@ -122,24 +122,25 @@ button.clear,
   max-width: 80rem;
   margin-right: auto;
   margin-left: auto;
-  padding: 0 1rem;
+  padding: 0 2rem;
 }
 @media (min-width: 48rem) {
   .container {
-    padding: 0 2rem;
+    padding: 0 3rem;
   }
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: 100%;
   gap: 1rem;
 }
 .grid > * {
-  grid-column: span 12;
+  grid-column: span 1;
 }
 @media (min-width: 40rem) {
   .grid {
+    grid-template-columns: repeat(12, 1fr);
     gap: 1.5rem;
   }
   .grid > * {
