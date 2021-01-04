@@ -1,9 +1,18 @@
 @use "colours" as *;
+$size-sm: 0.875rem; // 14px
 
 @font-face {
   font-family: "SharpGrotesk";
   src: url("../fonts/SharpGroteskBook19-subset.woff2") format("woff2");
   font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SharpGrotesk";
+  src: url("../fonts/SharpGroteskMedium19-subset.woff2") format("woff2");
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
@@ -59,7 +68,7 @@ h2 {
 
 h3,
 .heading-three {
-  font-weight: 900;
+  font-weight: 700;
   line-height: 110%;
   margin-bottom: 1rem;
   font-size: 1rem; // Fallback
@@ -74,9 +83,11 @@ p {
       color: $blue-500;
     }
   }
-}
 
-$size-sm: 0.875rem; // 14px
+  &.page-header-summary {
+    font-size: 2rem;
+  }
+}
 
 .disclaimer {
   color: $grey-400;
@@ -118,11 +129,17 @@ $size-sm: 0.875rem; // 14px
 .tooltip {
   position: relative;
   display: inline-block;
-  color: $blue-500;
-  border-bottom: 1px dotted $blue-500;
+  border-bottom: 1px dashed $black-500;
+
+  &:hover {
+    cursor: pointer;
+    color: $blue-500;
+    border-bottom: 1px dashed $blue-500;
+  }
+
   .tooltip-text {
     visibility: hidden;
-    background-color: $black-500;
+    background-color: $black-900;
     color: $white-500;
     text-align: center;
     font-size: 0.8rem;
@@ -133,6 +150,7 @@ $size-sm: 0.875rem; // 14px
     bottom: 100%;
     left: 50%;
     margin-left: -5rem;
+
     &::after {
       content: " ";
       position: absolute;
@@ -148,5 +166,21 @@ $size-sm: 0.875rem; // 14px
     .tooltip-text {
       visibility: visible;
     }
+  }
+}
+
+table {
+  text-align: left;
+
+  // Add visual row gaps
+  border-collapse: separate;
+  border-spacing: 0 1rem;
+  // Remove byproduct visual gap above and below table
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+
+  // Only apply horizontal padding if table has vertical headers, not horizontal
+  th:only-of-type {
+    padding-right: 3rem;
   }
 }

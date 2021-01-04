@@ -166,6 +166,13 @@ button.clear,
 @font-face {
   font-family: "SharpGrotesk";
   src: url("../fonts/SharpGroteskMedium19-subset.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SharpGrotesk";
+  src: url("../fonts/SharpGroteskMedium19-subset.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -209,7 +216,7 @@ h2 {
 
 h3,
 .heading-three {
-  font-weight: 900;
+  font-weight: 700;
   line-height: 110%;
   margin-bottom: 1rem;
   font-size: 1rem;
@@ -224,6 +231,9 @@ p a {
 }
 p a:hover {
   color: #0a5aff;
+}
+p.page-header-summary {
+  font-size: 2rem;
 }
 
 .disclaimer {
@@ -266,12 +276,16 @@ p a:hover {
 .tooltip {
   position: relative;
   display: inline-block;
+  border-bottom: 1px dashed #140f14;
+}
+.tooltip:hover {
+  cursor: pointer;
   color: #0a5aff;
-  border-bottom: 1px dotted #0a5aff;
+  border-bottom: 1px dashed #0a5aff;
 }
 .tooltip .tooltip-text {
   visibility: hidden;
-  background-color: #140f14;
+  background-color: #000000;
   color: #ffffff;
   text-align: center;
   font-size: 0.8rem;
@@ -296,6 +310,17 @@ p a:hover {
 }
 .tooltip:hover .tooltip-text {
   visibility: visible;
+}
+
+table {
+  text-align: left;
+  border-collapse: separate;
+  border-spacing: 0 1rem;
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+}
+table th:only-of-type {
+  padding-right: 3rem;
 }
 
 .home {
