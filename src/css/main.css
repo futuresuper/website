@@ -366,8 +366,7 @@ table th:only-of-type {
 }
 
 .join-cta {
-  background-color: #000000;
-  color: #ffffff;
+  color: #140f14;
   text-align: center;
 }
 .join-cta .container {
@@ -561,6 +560,9 @@ body > footer h2 {
   letter-spacing: -0.03rem;
   font-weight: 700;
 }
+body > footer nav {
+  margin-bottom: 5rem;
+}
 body > footer nav h2,
 body > footer nav img {
   margin-bottom: 1rem;
@@ -580,24 +582,6 @@ body > footer nav ul > li a:hover {
   body > footer .socials-list {
     grid-column: span 4;
   }
-}
-body > footer .acknowledgement-of-country {
-  margin: 3rem 0;
-}
-body > footer .acknowledgement-of-country div {
-  grid-column: span 12;
-}
-@media (min-width: 48rem) {
-  body > footer .acknowledgement-of-country div {
-    grid-column: span 8;
-  }
-}
-body > footer .acknowledgement-of-country .flags {
-  display: flex;
-  margin-bottom: 1rem;
-}
-body > footer .acknowledgement-of-country .flags img:first-child {
-  margin-right: 1rem;
 }
 body > footer .by-the-way img {
   grid-row: 1/1;
@@ -649,6 +633,52 @@ body > footer .legal-link-list li a:hover {
     font-weight: 900;
     content: "•";
   }
+}
+
+.acknowledgement-of-country {
+  color: #ffffff;
+  background: #0b0b0a;
+  height: 100vh;
+}
+.acknowledgement-of-country .flags {
+  display: flex;
+  margin-bottom: 2rem;
+}
+.acknowledgement-of-country .flags img:first-child {
+  margin-right: 1rem;
+}
+.acknowledgement-of-country .statement p {
+  font-size: 1.5rem;
+  grid-column: span 12;
+}
+@media (min-width: 48rem) {
+  .acknowledgement-of-country .statement p {
+    grid-column: span 8;
+  }
+}
+@media (min-width: 80rem) {
+  .acknowledgement-of-country .statement p {
+    grid-column: span 7;
+  }
+}
+.acknowledgement-of-country .details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5rem;
+}
+.acknowledgement-of-country .details p#custodian {
+  color: #fac33c;
+  opacity: 0;
+  transition: opacity 900ms ease-in-out;
+}
+.acknowledgement-of-country .details p#custodian.active {
+  opacity: 1;
+}
+.acknowledgement-of-country .details p a {
+  color: inherit;
+}
+.acknowledgement-of-country .details p a:hover {
+  color: #fac33c;
 }
 
 body {

@@ -1,0 +1,56 @@
+@use "../base" as *;
+
+.acknowledgement-of-country {
+  color: $white-500;
+  background: $grey-900;
+  height: 100vh;
+
+  .flags {
+    display: flex;
+    margin-bottom: 2rem;
+
+    img:first-child {
+      margin-right: 1rem;
+    }
+  }
+
+  .statement {
+    p {
+      font-size: 1.5rem;
+      grid-column: span 12;
+
+      @media (min-width: $breakpoint-md) {
+        grid-column: span 8;
+      }
+      @media (min-width: $breakpoint-lg) {
+        grid-column: span 7;
+      }
+    }
+  }
+
+  .details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+
+    p {
+      &#custodian {
+        color: $yellow-500;
+        opacity: 0;
+        transition: opacity 900ms ease-in-out;
+
+        &.active {
+          opacity: 1;
+        }
+      }
+
+      a {
+        color: inherit;
+
+        &:hover {
+          color: $yellow-500;
+        }
+      }
+    }
+  }
+}

@@ -13,7 +13,7 @@
         {% include styles %}
         {% endset %}
         <style>
-          {{ css | cssmin | safe }}
+          {{css | cssmin | safe}}
         </style>
       {% endfor %}
     {% endif %}
@@ -25,6 +25,7 @@
       {% block content %}{% endblock %}
     </main>
     {% include "partials/site-footer.html" %}
+    {% include "partials/aoc-footer.html" %}
 
     {# Add global script #}
     {% set globaljs %}
