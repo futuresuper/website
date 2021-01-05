@@ -22,7 +22,7 @@ main > article.container {
 .grid {
   display: grid;
   // Small screens default = 1 column
-  grid-template-columns: 100%;
+  grid-template-columns: 1fr;
   gap: 1rem;
   > * {
     grid-column: span 1;

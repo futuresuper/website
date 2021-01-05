@@ -7,6 +7,19 @@
   display: flex;
   align-items: center;
 
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    article {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
   .flags {
     display: flex;
     margin-bottom: 2rem;
@@ -17,23 +30,41 @@
   }
 
   .statement {
-    p {
-      font-size: 1.5rem;
-      grid-column: span 12;
-
+    .content {
+      @media (min-width: $breakpoint-sm) {
+        grid-column: span 10;
+      }
       @media (min-width: $breakpoint-md) {
-        grid-column: span 8;
+        grid-column: span 7;
       }
       @media (min-width: $breakpoint-lg) {
-        grid-column: span 7;
+        grid-column: span 5;
+      }
+
+      p {
+        font-size: 1.125rem;
       }
     }
   }
 
   .details {
     display: flex;
+    flex-direction: column;
+    @media (min-width: $breakpoint-sm) {
+      // Put into row and swap visual order
+      flex-direction: row;
+      p {
+        &:nth-child(1) {
+          order: 2;
+        }
+        &:nth-child(2) {
+          order: 1;
+        }
+      }
+    }
+
     justify-content: space-between;
-    margin-top: 5rem;
+    margin-bottom: 3rem;
 
     p {
       &#custodian {
@@ -47,10 +78,10 @@
       }
 
       a {
-        color: inherit;
+        color: $grey-300;
 
         &:hover {
-          color: $yellow-500;
+          color: $white-500;
         }
       }
     }

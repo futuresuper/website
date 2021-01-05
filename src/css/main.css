@@ -163,7 +163,7 @@ main > article.container {
 
 .grid {
   display: grid;
-  grid-template-columns: 100%;
+  grid-template-columns: 1fr;
   gap: 1rem;
 }
 .grid > * {
@@ -389,6 +389,9 @@ table th:only-of-type {
   font-size: 0.875rem;
 }
 
+header[role=banner] {
+  overflow: hidden;
+}
 header[role=banner] .banner {
   text-align: center;
   padding: 1.5rem;
@@ -642,6 +645,17 @@ body > footer .legal-link-list li a:hover {
   display: flex;
   align-items: center;
 }
+.acknowledgement-of-country .container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.acknowledgement-of-country .container article {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .acknowledgement-of-country .flags {
   display: flex;
   margin-bottom: 2rem;
@@ -649,24 +663,40 @@ body > footer .legal-link-list li a:hover {
 .acknowledgement-of-country .flags img:first-child {
   margin-right: 1rem;
 }
-.acknowledgement-of-country .statement p {
-  font-size: 1.5rem;
-  grid-column: span 12;
-}
-@media (min-width: 48rem) {
-  .acknowledgement-of-country .statement p {
-    grid-column: span 8;
+@media (min-width: 40rem) {
+  .acknowledgement-of-country .statement .content {
+    grid-column: span 10;
   }
 }
-@media (min-width: 80rem) {
-  .acknowledgement-of-country .statement p {
+@media (min-width: 48rem) {
+  .acknowledgement-of-country .statement .content {
     grid-column: span 7;
   }
 }
+@media (min-width: 80rem) {
+  .acknowledgement-of-country .statement .content {
+    grid-column: span 5;
+  }
+}
+.acknowledgement-of-country .statement .content p {
+  font-size: 1.125rem;
+}
 .acknowledgement-of-country .details {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+@media (min-width: 40rem) {
+  .acknowledgement-of-country .details {
+    flex-direction: row;
+  }
+  .acknowledgement-of-country .details p:nth-child(1) {
+    order: 2;
+  }
+  .acknowledgement-of-country .details p:nth-child(2) {
+    order: 1;
+  }
 }
 .acknowledgement-of-country .details p#custodian {
   color: #fac33c;
@@ -677,10 +707,10 @@ body > footer .legal-link-list li a:hover {
   opacity: 1;
 }
 .acknowledgement-of-country .details p a {
-  color: inherit;
+  color: #dadad7;
 }
 .acknowledgement-of-country .details p a:hover {
-  color: #fac33c;
+  color: #ffffff;
 }
 
 body {

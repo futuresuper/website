@@ -162,7 +162,7 @@ main > article.container {
 
 .grid {
   display: grid;
-  grid-template-columns: 100%;
+  grid-template-columns: 1fr;
   gap: 1rem;
 }
 .grid > * {
