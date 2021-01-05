@@ -4,6 +4,8 @@
   color: $white-500;
   background: $grey-900;
   height: 100vh;
+  display: flex;
+  align-items: center;
 
   .flags {
     display: flex;

@@ -639,6 +639,8 @@ body > footer .legal-link-list li a:hover {
   color: #ffffff;
   background: #0b0b0a;
   height: 100vh;
+  display: flex;
+  align-items: center;
 }
 .acknowledgement-of-country .flags {
   display: flex;
