@@ -11,7 +11,7 @@ function showMobileMenu(show) {
   }
 }
 
-// Rotate custodians in footer
+// Rotate custodians in footer acknowledgement of country
 let currentCustodianIndex = 0;
 const custodianEl = document.querySelector("p#custodian");
 custodianEl.classList.add("active");
@@ -37,7 +37,7 @@ async function showNextCustodianName() {
 
 setInterval(showNextCustodianName, 4000);
 
-// Watch for and animate bottom Acknowledgement of Country
+// Watch for and animate footer acknowledgement of country
 const aocContainer = document.querySelector(".acknowledgement-of-country .container");
 const siteContent = document.querySelector("body > .content");
 const config = {
