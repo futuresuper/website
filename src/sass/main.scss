@@ -8,5 +8,9 @@
 
 // Global styles start
 body {
-  background-color: base.$white-500;
+  > .content {
+    background-color: base.$white-500;
+    // Match height of below element acknowledgement-of-country
+    margin-bottom: 100vh;
+  }
 }

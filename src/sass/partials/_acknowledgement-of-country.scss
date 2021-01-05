@@ -4,45 +4,58 @@
   color: $white-500;
   background: $grey-900;
   height: 100vh;
+  width: 100%;
   display: flex;
   align-items: center;
+
+  position: fixed;
+  z-index: -1;
+  bottom: 0;
 
   .container {
     display: flex;
     flex-direction: column;
     height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 900ms ease-in-out;
+
+    &.active {
+      opacity: 1;
+      visibility: visible;
+    }
 
     article {
       flex-grow: 1;
       display: flex;
       flex-direction: column;
       justify-content: center;
-    }
-  }
 
-  .flags {
-    display: flex;
-    margin-bottom: 2rem;
+      .flags {
+        display: flex;
+        margin-bottom: 2rem;
 
-    img:first-child {
-      margin-right: 1rem;
-    }
-  }
-
-  .statement {
-    .content {
-      @media (min-width: $breakpoint-sm) {
-        grid-column: span 10;
-      }
-      @media (min-width: $breakpoint-md) {
-        grid-column: span 7;
-      }
-      @media (min-width: $breakpoint-lg) {
-        grid-column: span 5;
+        img:first-child {
+          margin-right: 1rem;
+        }
       }
 
-      p {
-        font-size: 1.125rem;
+      .statement {
+        .content {
+          @media (min-width: $breakpoint-sm) {
+            grid-column: span 10;
+          }
+          @media (min-width: $breakpoint-md) {
+            grid-column: span 7;
+          }
+          @media (min-width: $breakpoint-lg) {
+            grid-column: span 5;
+          }
+
+          p {
+            font-size: 1.125rem;
+          }
+        }
       }
     }
   }

@@ -36,3 +36,24 @@ async function showNextCustodianName() {
 }
 
 setInterval(showNextCustodianName, 4000);
+
+// Watch for and animate bottom Acknowledgement of Country
+const aocContainer = document.querySelector(".acknowledgement-of-country .container");
+const siteContent = document.querySelector("body > .content");
+const config = {
+  rootMargin: "-60% 0% 0% 0%",
+};
+
+let observer = new IntersectionObserver(
+  (entries) =>
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        aocContainer.classList.remove("active");
+      } else {
+        aocContainer.classList.add("active");
+      }
+    }),
+  config
+);
+
+observer.observe(siteContent);

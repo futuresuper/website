@@ -2,7 +2,7 @@
 
 // Target only the site footer
 // (as the footer can be semantically used elsewhere)
-body > footer {
+body > .content > footer {
   background-color: $off-white-500;
   font-size: $size-sm;
   padding: 3rem 0 4rem;

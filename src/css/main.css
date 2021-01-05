@@ -553,85 +553,85 @@ header[role=banner] section .show-hide-mobile-menu a img.close {
   }
 }
 
-body > footer {
+body > .content > footer {
   background-color: #f5f0f0;
   font-size: 0.875rem;
   padding: 3rem 0 4rem;
 }
-body > footer h2 {
+body > .content > footer h2 {
   font-size: 1rem;
   letter-spacing: -0.03rem;
   font-weight: 700;
 }
-body > footer nav {
+body > .content > footer nav {
   margin-bottom: 5rem;
 }
-body > footer nav h2,
-body > footer nav img {
+body > .content > footer nav h2,
+body > .content > footer nav img {
   margin-bottom: 1rem;
 }
-body > footer nav ul > li {
+body > .content > footer nav ul > li {
   margin-bottom: 1rem;
 }
-body > footer nav ul > li a {
+body > .content > footer nav ul > li a {
   text-decoration: none;
   color: #1d1d1b;
 }
-body > footer nav ul > li a:hover {
+body > .content > footer nav ul > li a:hover {
   text-decoration: underline;
   color: #0a5aff;
 }
 @media (min-width: 48rem) {
-  body > footer .socials-list {
+  body > .content > footer .socials-list {
     grid-column: span 4;
   }
 }
-body > footer .by-the-way img {
+body > .content > footer .by-the-way img {
   grid-row: 1/1;
 }
-body > footer .by-the-way p {
+body > .content > footer .by-the-way p {
   grid-row: 2/2;
   grid-column: span 12;
 }
 @media (min-width: 48rem) {
-  body > footer .by-the-way p {
+  body > .content > footer .by-the-way p {
     grid-column: span 8;
   }
 }
 @media (min-width: 80rem) {
-  body > footer .by-the-way p,
-body > footer .by-the-way img {
+  body > .content > footer .by-the-way p,
+body > .content > footer .by-the-way img {
     grid-row: 1/1;
   }
-  body > footer .by-the-way p {
+  body > .content > footer .by-the-way p {
     grid-column: span 6;
   }
-  body > footer .by-the-way img {
+  body > .content > footer .by-the-way img {
     justify-self: end;
     grid-column: 12/12;
   }
 }
-body > footer .legal-link-list {
+body > .content > footer .legal-link-list {
   display: flex;
   margin-top: 2rem;
   flex-direction: column;
 }
-body > footer .legal-link-list li a {
+body > .content > footer .legal-link-list li a {
   color: inherit;
   text-decoration: none;
 }
-body > footer .legal-link-list li a:hover {
+body > .content > footer .legal-link-list li a:hover {
   text-decoration: underline;
   color: #52524c;
 }
 @media (min-width: 40rem) {
-  body > footer .legal-link-list {
+  body > .content > footer .legal-link-list {
     flex-direction: row;
   }
-  body > footer .legal-link-list li:not(:last-of-type) {
+  body > .content > footer .legal-link-list li:not(:last-of-type) {
     margin-right: 1.15rem;
   }
-  body > footer .legal-link-list li:not(:last-of-type)::after {
+  body > .content > footer .legal-link-list li:not(:last-of-type)::after {
     margin-left: 1rem;
     font-weight: 900;
     content: "•";
@@ -642,13 +642,24 @@ body > footer .legal-link-list li a:hover {
   color: #ffffff;
   background: #0b0b0a;
   height: 100vh;
+  width: 100%;
   display: flex;
   align-items: center;
+  position: fixed;
+  z-index: -1;
+  bottom: 0;
 }
 .acknowledgement-of-country .container {
   display: flex;
   flex-direction: column;
   height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 900ms ease-in-out;
+}
+.acknowledgement-of-country .container.active {
+  opacity: 1;
+  visibility: visible;
 }
 .acknowledgement-of-country .container article {
   flex-grow: 1;
@@ -656,29 +667,29 @@ body > footer .legal-link-list li a:hover {
   flex-direction: column;
   justify-content: center;
 }
-.acknowledgement-of-country .flags {
+.acknowledgement-of-country .container article .flags {
   display: flex;
   margin-bottom: 2rem;
 }
-.acknowledgement-of-country .flags img:first-child {
+.acknowledgement-of-country .container article .flags img:first-child {
   margin-right: 1rem;
 }
 @media (min-width: 40rem) {
-  .acknowledgement-of-country .statement .content {
+  .acknowledgement-of-country .container article .statement .content {
     grid-column: span 10;
   }
 }
 @media (min-width: 48rem) {
-  .acknowledgement-of-country .statement .content {
+  .acknowledgement-of-country .container article .statement .content {
     grid-column: span 7;
   }
 }
 @media (min-width: 80rem) {
-  .acknowledgement-of-country .statement .content {
+  .acknowledgement-of-country .container article .statement .content {
     grid-column: span 5;
   }
 }
-.acknowledgement-of-country .statement .content p {
+.acknowledgement-of-country .container article .statement .content p {
   font-size: 1.125rem;
 }
 .acknowledgement-of-country .details {
@@ -713,8 +724,9 @@ body > footer .legal-link-list li a:hover {
   color: #ffffff;
 }
 
-body {
+body > .content {
   background-color: #ffffff;
+  margin-bottom: 100vh;
 }
 
 /*# sourceMappingURL=main.css.map */
