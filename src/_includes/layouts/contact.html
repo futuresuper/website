@@ -5,34 +5,38 @@
 
 {% block content %}
 
-  {% include "partials/page-header.html" %}
+  <article class="container">
 
-  <section>
-    <h2>Support</h2>
-    <address>
-      <dl>
-        <dt class="heading-three">Email</dt>
-        <dd>
-          <a href="mailto:{{ contact.support.email }}">{{ contact.support.email }}</a>
-        </dd>
-        <dt class="heading-three">Phone</dt>
-        <dd>
-          <a href="tel:{{ contact.support.phone.number }}">{{ contact.support.phone.number }}</a>
-          <p>Monday&hairsp;–&hairsp;Friday<br>{{ contact.support.phone.openingTime }}&hairsp;–&hairsp;{{ contact.support.phone.closingTime }}<br>
-            <span class="text-tertiary">Sydney local time</span></p>
-        </dd>
-        <dt class="heading-three">Post</dt>
-        <dd>
-          <p>PO Box 1282<br>Albury<br>NSW 2640</p>
-        </dd>
-      </dl>
-    </address>
-  </section>
+    {% include "partials/page-header.html" %}
 
-  <section>
-    <h2>Media enquiries</h2>
-    <a href="mailto:{{ contact.media.email }}">{{ contact.media.email }}</a>
+    <section>
+      <h2>Support</h2>
+      <address>
+        <dl>
+          <dt class="heading-three">Email</dt>
+          <dd>
+            <a href="mailto:{{ contact.support.email }}">{{ contact.support.email }}</a>
+          </dd>
+          <dt class="heading-three">Phone</dt>
+          <dd>
+            <a href="tel:{{ contact.support.phone.number }}">{{ contact.support.phone.number }}</a>
+            <p>Monday&hairsp;–&hairsp;Friday<br>{{ contact.support.phone.openingTime }}&hairsp;–&hairsp;{{ contact.support.phone.closingTime }}<br>
+              <span class="text-tertiary">Sydney local time</span></p>
+          </dd>
+          <dt class="heading-three">Post</dt>
+          <dd>
+            <p>PO Box 1282<br>Albury<br>NSW 2640</p>
+          </dd>
+        </dl>
+      </address>
+    </section>
 
-  </section>
+    <section>
+      <h2>Media enquiries</h2>
+      <a href="mailto:{{ contact.media.email }}">{{ contact.media.email }}</a>
+
+    </section>
+
+  </article>
 
 {% endblock %}
