@@ -41,7 +41,7 @@ setInterval(showNextCustodianName, 4000);
 const aocContainer = document.querySelector(".acknowledgement-of-country .container");
 const siteContent = document.querySelector("body > .content");
 const config = {
-  rootMargin: "-60% 0% 0% 0%",
+  rootMargin: "-60% 0 0 0",
 };
 
 let observer = new IntersectionObserver(
