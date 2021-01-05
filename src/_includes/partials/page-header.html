@@ -1,9 +1,9 @@
 <!-- A reusable header partial for pages that follow a similar visual format -->
 <header>
   <h1>{{ pageHeaderTitle}}</h1>
-  {% if pageHeaderSummary %}
+  {% if summary %}
     <p class="page-header-summary">
-      {{ pageHeaderSummary | safe }}
+      {{ summary | safe }}
     </p>
   {% endif %}
 </header>

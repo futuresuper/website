@@ -39,6 +39,12 @@
       </tr>
     </table>
   </section>
+
+  {% if faqs %}
+  {% set pageFaqs = faqs %}
+  {% include "partials/faqs.html" %}
+  {% endif %}
+
 </article>
 
 {% endblock %}

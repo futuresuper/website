@@ -3,7 +3,7 @@
 // Target only the site footer
 // (as the footer can be semantically used elsewhere)
 body > footer {
-  background-color: $white-500;
+  background-color: $off-white-500;
   font-size: $size-sm;
   padding: 3rem 0 4rem;
 
@@ -19,7 +19,8 @@ body > footer {
     }
 
     ul > li {
-      margin-bottom: 0.2rem;
+      margin-bottom: 1rem;
+
       a {
         text-decoration: none;
         color: $grey-800;

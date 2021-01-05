@@ -3,7 +3,7 @@
 {% set pageHeaderTitle = title %}
 
 {# Render post date and any tags that this post has been filed under #}
-{% set pageHeaderSummary %}
+{% set summary %}
 <time datetime="{{ date | w3DateFilter }}">{{ date | dateFilter }}</time>
 {% if tags %}
   <p>Tags:</p>

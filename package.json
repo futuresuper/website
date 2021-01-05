@@ -13,11 +13,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://bitbucket.org/futrsupr/website.git"
+    "url": "https://github.com/futuresuper/website.git"
   },
   "author": "Future Super",
   "license": "UNLICENSED",
-  "homepage": "https://bitbucket.org/futrsupr/website#readme",
+  "homepage": "https://github.com/futuresuper/website#readme",
   "dependencies": {
     "@11ty/eleventy": "^0.11.1",
     "clean-css": "^4.2.3",
