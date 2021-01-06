@@ -149,6 +149,9 @@ button.clear,
 body.mobile-menu-active {
   position: fixed;
 }
+body.mobile-menu-active.aoc-active {
+  top: -60vh;
+}
 
 .container {
   max-width: 80rem;
@@ -400,16 +403,6 @@ header[role=banner] {
 header[role=banner] svg .fill-target {
   fill: #000000;
 }
-header[role=banner].aoc-active {
-  color: #ffffff;
-  background-color: #0b0b0a;
-}
-header[role=banner].aoc-active svg .fill-target {
-  fill: #ffffff;
-}
-header[role=banner].aoc-active svg.mobile-menu-active .fill-target {
-  fill: #000000;
-}
 header[role=banner] .banner {
   text-align: center;
   padding: 1.5rem;
@@ -490,22 +483,6 @@ header[role=banner] section .show-hide-mobile-menu a img.close {
   header[role=banner] section .nav-container nav .non-dropdown:hover {
     color: #52524c;
   }
-}
-@media (min-width: 1068px) and (min-width: 1068px) {
-  header[role=banner].aoc-active .nav-container nav .non-dropdown {
-    color: #ffffff;
-  }
-  header[role=banner].aoc-active .nav-container nav .non-dropdown:hover {
-    color: #76766f;
-  }
-  header[role=banner].aoc-active .nav-container nav .button.primary {
-    background-color: #52524c;
-  }
-  header[role=banner].aoc-active .nav-container nav .button.primary:hover {
-    background-color: #0a5aff;
-  }
-}
-@media (min-width: 1068px) {
   header[role=banner] section .nav-container nav .dropdown {
     border: 1px solid transparent;
   }
@@ -517,8 +494,6 @@ header[role=banner] section .show-hide-mobile-menu a img.close {
   header[role=banner] section .nav-container nav .dropdown:hover .dropdown-content {
     display: flex;
   }
-}
-@media (min-width: 1068px) {
   header[role=banner] section .nav-container nav .dropdown-content {
     display: none;
     flex-direction: column;
@@ -695,18 +670,27 @@ body > .flow-content > footer .legal-link-list li a:hover {
   width: 100%;
   display: flex;
   align-items: center;
+  position: fixed;
 }
 .acknowledgement-of-country.header {
+  z-index: -1;
   height: 60vh;
+  top: 0;
   display: none;
+}
+.acknowledgement-of-country.header .container {
+  opacity: 0;
+  transition: opacity 900ms 80ms ease-in-out;
 }
 .acknowledgement-of-country.header.active {
   display: block;
 }
+.acknowledgement-of-country.header.active .container {
+  opacity: 1;
+}
 .acknowledgement-of-country.footer {
+  z-index: -2;
   height: 100vh;
-  position: fixed;
-  z-index: -1;
   bottom: 0;
 }
 .acknowledgement-of-country .container {
@@ -719,7 +703,10 @@ body > .flow-content > footer .legal-link-list li a:hover {
   visibility: hidden;
   transition: opacity 900ms 80ms ease-in-out;
 }
-.js .acknowledgement-of-country.footer .container.active {
+.js .acknowledgement-of-country.footer.active {
+  z-index: -1;
+}
+.js .acknowledgement-of-country.footer.active .container {
   opacity: 1;
   visibility: visible;
 }
@@ -790,6 +777,9 @@ body > .flow-content > footer .legal-link-list li a:hover {
 body .flow-content {
   background-color: #ffffff;
   margin-bottom: 100vh;
+}
+body .flow-content.aoc-active {
+  margin-top: 60vh;
 }
 
 /*# sourceMappingURL=main.css.map */

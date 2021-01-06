@@ -1,7 +1,7 @@
 // The main, site-wide, scss file
 
 // Bring in global config including colours etc
-@use "base";
+@use "base" as *;
 
 // Bring in the partials that are used widely across site (eg header, footer, join-cta)
 @use "partials";
@@ -9,8 +9,13 @@
 // Global styles start
 body {
   .flow-content {
-    background-color: base.$white-500;
-    // Match height of below element acknowledgement-of-country
-    margin-bottom: 100vh;
+    background-color: $white-500;
+    // Match height of below element acknowledgement-of-country (footer)
+    margin-bottom: $height-acknowledgement-of-country-footer;
+
+    &.aoc-active {
+      // Match height of above element acknowledgement-of-country (header)
+      margin-top: $height-acknowledgement-of-country-header;
+    }
   }
 }

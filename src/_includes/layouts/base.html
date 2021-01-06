@@ -20,6 +20,11 @@
   </head>
 
   <body>
+    {# Conditional content for the homepage #}
+    {% if title === "Home" %}
+      {% include "partials/acknowledgement-of-country-header.html" %}
+    {% endif %}
+
     <div class="flow-content">
       {% include "partials/site-header.html" %}
       <main tabindex="-1" id="main-content">
