@@ -70,8 +70,19 @@ header[role="banner"] {
       a {
         display: flex;
         align-items: center;
+        cursor: pointer;
+
+        &#menu-open-button {
+          &.mobile-menu-active {
+            display: none;
+          }
+        }
+
         &#menu-close-button {
           display: none;
+          &.mobile-menu-active {
+            display: flex;
+          }
         }
         img {
           display: inline-block;
@@ -189,6 +200,10 @@ header[role="banner"] {
 
       .nav-container {
         display: none;
+        &.mobile-menu-active {
+          display: flex;
+        }
+
         height: 100%;
         width: 100%;
         padding: 8rem 2rem 3rem;

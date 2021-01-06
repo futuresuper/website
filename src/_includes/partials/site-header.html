@@ -14,14 +14,13 @@
         {{ '/src/images/logo-single-line.svg' | svgContents | safe }}
       </a>
       <div class="show-hide-mobile-menu">
-
-        <a onclick="showMobileMenu(true)" id="menu-button">
+        <a onclick="showMobileMenu(true)" id="menu-open-button">
           Menu
           {{ '/src/images/icons/menu.svg' | svgContents | safe }}
         </a>
         <a onclick="showMobileMenu(false)" id="menu-close-button">
           Close
-          <img src="/images/icons/cross.svg" class="close" alt="Menu close icon">
+          {{ '/src/images/icons/cross.svg' | svgContents | safe }}
         </a>
         {# <a onclick="document.getElementById('nav-container').style.display = 'flex'">Menu
         <img src="/images/icons/menu.svg" alt="Menu open icon"></a>
@@ -29,7 +28,7 @@
         <img src="/images/icons/cross.svg" class="close" alt="Menu close icon"></a> #}
       </div>
 
-      <div id="nav-container" class="nav-container">
+      <div class="nav-container">
         <nav aria-label="Primary">
           {% for item in navigation.items %}
             {# Not all items will go in site header, so check them #}

@@ -440,9 +440,16 @@ header[role=banner] section .show-hide-mobile-menu {
 header[role=banner] section .show-hide-mobile-menu a {
   display: flex;
   align-items: center;
+  cursor: pointer;
+}
+header[role=banner] section .show-hide-mobile-menu a#menu-open-button.mobile-menu-active {
+  display: none;
 }
 header[role=banner] section .show-hide-mobile-menu a#menu-close-button {
   display: none;
+}
+header[role=banner] section .show-hide-mobile-menu a#menu-close-button.mobile-menu-active {
+  display: flex;
 }
 header[role=banner] section .show-hide-mobile-menu a img {
   display: inline-block;
@@ -544,6 +551,9 @@ header[role=banner] section .show-hide-mobile-menu a img.close {
     background-color: #fbf9f9;
     overflow-x: hidden;
     flex-direction: column;
+  }
+  header[role=banner] section .nav-container.mobile-menu-active {
+    display: flex;
   }
   header[role=banner] section .nav-container nav:first-of-type .button {
     color: #000000;

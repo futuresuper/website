@@ -4,24 +4,20 @@ document.documentElement.className = "js";
 
 // Handle mobile menu navigation
 const logoEl = document.querySelector(".logo svg");
-// const navContainer = document.querySelector(".nav-container");
-// const menuCloseButton = document.querySelector("#menu-close-button");
-// const menuOpenButton = document.querySelector("#menu-button");
-
-// const menuChangeElements = [logoEl, navContainer, menuCloseButton, menuOpenButton];
-// console.log(menuChangeElements);
+const navContainer = document.querySelector(".nav-container");
+const menuCloseButton = document.querySelector("#menu-close-button");
+const menuOpenButton = document.querySelector("#menu-open-button");
+const menuChangeElements = [logoEl, navContainer, menuCloseButton, menuOpenButton];
 
 function showMobileMenu(show) {
   if (show) {
-    logoEl.classList.add("mobile-menu-active");
-    document.getElementById("nav-container").style.display = "flex";
-    document.getElementById("menu-close-button").style.display = "flex";
-    document.getElementById("menu-button").style.display = "none";
+    menuChangeElements.forEach((element) => {
+      element.classList.add("mobile-menu-active");
+    });
   } else {
-    logoEl.classList.remove("mobile-menu-active");
-    document.getElementById("nav-container").style.display = "none";
-    document.getElementById("menu-close-button").style.display = "none";
-    document.getElementById("menu-button").style.display = "flex";
+    menuChangeElements.forEach((element) => {
+      element.classList.remove("mobile-menu-active");
+    });
   }
 }
 
