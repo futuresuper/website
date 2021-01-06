@@ -1,3 +1,7 @@
+// Apply a class to HTML if JavaScript is enabled
+// so we can apply JS-dependent styles without ruining the experience for non-JS visitors
+document.documentElement.className = "js";
+
 // Handle mobile menu navigation
 function showMobileMenu(show) {
   if (show) {
@@ -41,7 +45,7 @@ setInterval(showNextCustodianName, 4000);
 const aocContainer = document.querySelector(".acknowledgement-of-country .container");
 const siteContent = document.querySelector("body > .content");
 const config = {
-  rootMargin: "-60% 0 0 0",
+  rootMargin: "-60% 0% 0% 0%",
 };
 
 let observer = new IntersectionObserver(

@@ -653,14 +653,17 @@ body > .content > footer .legal-link-list li a:hover {
   display: flex;
   flex-direction: column;
   height: 100%;
+}
+.js .acknowledgement-of-country .container {
   opacity: 0;
   visibility: hidden;
   transition: opacity 900ms ease-in-out;
 }
-.acknowledgement-of-country .container.active {
+.js .acknowledgement-of-country .container.active {
   opacity: 1;
   visibility: visible;
 }
+
 .acknowledgement-of-country .container article {
   flex-grow: 1;
   display: flex;

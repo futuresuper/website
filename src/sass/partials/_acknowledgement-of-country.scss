@@ -16,13 +16,22 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 900ms ease-in-out;
 
-    &.active {
-      opacity: 1;
-      visibility: visible;
+    // Traverse back up the DOM to check if the HTML tag has signaled JS is available
+    // Only hide this content in the case that JS is availalbe
+    @at-root .js {
+      .acknowledgement-of-country {
+        .container {
+          opacity: 0;
+          visibility: hidden;
+          transition: opacity 900ms ease-in-out;
+
+          &.active {
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+      }
     }
 
     article {
