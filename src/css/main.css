@@ -666,7 +666,7 @@ body > .flow-content > footer .legal-link-list li a:hover {
 
 .acknowledgement-of-country {
   color: #ffffff;
-  background: #0b0b0a;
+  background-color: #0b0b0a;
   width: 100%;
   display: flex;
   align-items: center;
@@ -780,6 +780,7 @@ body .flow-content {
 }
 body .flow-content.aoc-active {
   margin-top: 60vh;
+  box-shadow: 0 -1rem 5rem #0b0b0a;
 }
 
 /*# sourceMappingURL=main.css.map */
