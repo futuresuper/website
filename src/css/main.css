@@ -604,85 +604,85 @@ header[role=banner] section .show-hide-mobile-menu a img.close {
   }
 }
 
-body > .content > footer {
+body > .flow-content > footer {
   background-color: #f5f0f0;
   font-size: 0.875rem;
   padding: 3rem 0 4rem;
 }
-body > .content > footer h2 {
+body > .flow-content > footer h2 {
   font-size: 1rem;
   letter-spacing: -0.03rem;
   font-weight: 700;
 }
-body > .content > footer nav {
+body > .flow-content > footer nav {
   margin-bottom: 5rem;
 }
-body > .content > footer nav h2,
-body > .content > footer nav img {
+body > .flow-content > footer nav h2,
+body > .flow-content > footer nav img {
   margin-bottom: 1rem;
 }
-body > .content > footer nav ul > li {
+body > .flow-content > footer nav ul > li {
   margin-bottom: 1rem;
 }
-body > .content > footer nav ul > li a {
+body > .flow-content > footer nav ul > li a {
   text-decoration: none;
   color: #1d1d1b;
 }
-body > .content > footer nav ul > li a:hover {
+body > .flow-content > footer nav ul > li a:hover {
   text-decoration: underline;
   color: #0a5aff;
 }
 @media (min-width: 48rem) {
-  body > .content > footer .socials-list {
+  body > .flow-content > footer .socials-list {
     grid-column: span 4;
   }
 }
-body > .content > footer .by-the-way img {
+body > .flow-content > footer .by-the-way img {
   grid-row: 1/1;
 }
-body > .content > footer .by-the-way p {
+body > .flow-content > footer .by-the-way p {
   grid-row: 2/2;
   grid-column: span 12;
 }
 @media (min-width: 48rem) {
-  body > .content > footer .by-the-way p {
+  body > .flow-content > footer .by-the-way p {
     grid-column: span 8;
   }
 }
 @media (min-width: 80rem) {
-  body > .content > footer .by-the-way p,
-body > .content > footer .by-the-way img {
+  body > .flow-content > footer .by-the-way p,
+body > .flow-content > footer .by-the-way img {
     grid-row: 1/1;
   }
-  body > .content > footer .by-the-way p {
+  body > .flow-content > footer .by-the-way p {
     grid-column: span 6;
   }
-  body > .content > footer .by-the-way img {
+  body > .flow-content > footer .by-the-way img {
     justify-self: end;
     grid-column: 12/12;
   }
 }
-body > .content > footer .legal-link-list {
+body > .flow-content > footer .legal-link-list {
   display: flex;
   margin-top: 2rem;
   flex-direction: column;
 }
-body > .content > footer .legal-link-list li a {
+body > .flow-content > footer .legal-link-list li a {
   color: inherit;
   text-decoration: none;
 }
-body > .content > footer .legal-link-list li a:hover {
+body > .flow-content > footer .legal-link-list li a:hover {
   text-decoration: underline;
   color: #52524c;
 }
 @media (min-width: 40rem) {
-  body > .content > footer .legal-link-list {
+  body > .flow-content > footer .legal-link-list {
     flex-direction: row;
   }
-  body > .content > footer .legal-link-list li:not(:last-of-type) {
+  body > .flow-content > footer .legal-link-list li:not(:last-of-type) {
     margin-right: 1.15rem;
   }
-  body > .content > footer .legal-link-list li:not(:last-of-type)::after {
+  body > .flow-content > footer .legal-link-list li:not(:last-of-type)::after {
     margin-left: 1rem;
     font-weight: 900;
     content: "•";
@@ -787,7 +787,7 @@ body > .content > footer .legal-link-list li a:hover {
   color: #ffffff;
 }
 
-body > .content {
+body .flow-content {
   background-color: #ffffff;
   margin-bottom: 100vh;
 }

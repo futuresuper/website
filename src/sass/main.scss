@@ -8,7 +8,7 @@
 
 // Global styles start
 body {
-  > .content {
+  .flow-content {
     background-color: base.$white-500;
     // Match height of below element acknowledgement-of-country
     margin-bottom: 100vh;

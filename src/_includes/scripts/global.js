@@ -55,7 +55,7 @@ setInterval(showNextCustodianName, 4000);
 
 // Watch for and animate acknowledgement of country (footer only)
 const aocFooterContainer = document.querySelector(".acknowledgement-of-country.footer .container");
-const siteContent = document.querySelector("body > .content");
+const siteContent = document.querySelector("body > .flow-content");
 const config = {
   rootMargin: "-75% 0% 0% 0%",
 };

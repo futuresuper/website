@@ -13,14 +13,14 @@
         {% include styles %}
         {% endset %}
         <style>
-          {{ css | cssmin | safe }}
+          {{css | cssmin | safe}}
         </style>
       {% endfor %}
     {% endif %}
   </head>
 
   <body>
-    <div class="content">
+    <div class="flow-content">
       {% include "partials/site-header.html" %}
       <main tabindex="-1" id="main-content">
         {% block content %}{% endblock %}
