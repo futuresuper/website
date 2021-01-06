@@ -146,6 +146,10 @@ button.clear,
   justify-content: center;
 }
 
+body.mobile-menu-active {
+  position: fixed;
+}
+
 .container {
   max-width: 80rem;
   margin-right: auto;

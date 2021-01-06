@@ -7,7 +7,7 @@ const logoEl = document.querySelector(".logo svg");
 const navContainer = document.querySelector(".nav-container");
 const menuCloseButton = document.querySelector("#menu-close-button");
 const menuOpenButton = document.querySelector("#menu-open-button");
-const menuChangeElements = [logoEl, navContainer, menuCloseButton, menuOpenButton];
+const menuChangeElements = [document.body, logoEl, navContainer, menuCloseButton, menuOpenButton];
 
 function showMobileMenu(show) {
   if (show) {
