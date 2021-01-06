@@ -5,6 +5,7 @@ $breakpoint-lg: 80rem; //1280px
 
 body {
   &.mobile-menu-active {
+    // Stop the page content from scrolling if the full-screen menu is open
     position: fixed;
   }
 }
