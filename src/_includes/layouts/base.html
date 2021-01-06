@@ -13,7 +13,7 @@
         {% include styles %}
         {% endset %}
         <style>
-          {{css | cssmin | safe}}
+          {{ css | cssmin | safe }}
         </style>
       {% endfor %}
     {% endif %}
@@ -27,7 +27,7 @@
       </main>
       {% include "partials/site-footer.html" %}
     </div>
-    {% include "partials/acknowledgement-of-country.html" %}
+    {% include "partials/acknowledgement-of-country-footer.html" %}
 
     {# Add global script #}
     {% set globaljs %}

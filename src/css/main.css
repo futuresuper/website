@@ -118,6 +118,7 @@ button,
   padding: 1rem 2rem;
   border: 0;
   text-decoration: none;
+  transition: background-color 100ms ease-in-out;
 }
 button.primary,
 .button.primary {
@@ -392,6 +393,19 @@ table th:only-of-type {
 header[role=banner] {
   overflow: hidden;
 }
+header[role=banner] svg .fill-target {
+  fill: #000000;
+}
+header[role=banner].aoc-active {
+  color: #ffffff;
+  background-color: #0b0b0a;
+}
+header[role=banner].aoc-active svg .fill-target {
+  fill: #ffffff;
+}
+header[role=banner].aoc-active svg.mobile-menu-active .fill-target {
+  fill: #000000;
+}
 header[role=banner] .banner {
   text-align: center;
   padding: 1.5rem;
@@ -413,7 +427,7 @@ header[role=banner] .banner.critical a:hover {
 header[role=banner] section {
   padding: 2rem 0;
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: space-between;
 }
 header[role=banner] section .logo {
@@ -454,24 +468,46 @@ header[role=banner] section .show-hide-mobile-menu a img.close {
   header[role=banner] section .nav-container nav .clear:after {
     content: " ↓";
   }
-  header[role=banner] section .nav-container nav a:not(.button) {
+  header[role=banner] section .nav-container nav .non-dropdown {
     display: inline-block;
     padding: 1rem 2rem;
     text-decoration: none;
-    color: #000000;
     font-weight: 700;
     border: 1px solid transparent;
+    color: #000000;
   }
+  header[role=banner] section .nav-container nav .non-dropdown:hover {
+    color: #52524c;
+  }
+}
+@media (min-width: 1068px) and (min-width: 1068px) {
+  header[role=banner].aoc-active .nav-container nav .non-dropdown {
+    color: #ffffff;
+  }
+  header[role=banner].aoc-active .nav-container nav .non-dropdown:hover {
+    color: #76766f;
+  }
+  header[role=banner].aoc-active .nav-container nav .button.primary {
+    background-color: #52524c;
+  }
+  header[role=banner].aoc-active .nav-container nav .button.primary:hover {
+    background-color: #0a5aff;
+  }
+}
+@media (min-width: 1068px) {
   header[role=banner] section .nav-container nav .dropdown {
     border: 1px solid transparent;
   }
   header[role=banner] section .nav-container nav .dropdown:hover {
+    color: #000000;
     background-color: #ffffff;
     border: 1px solid #000000;
   }
   header[role=banner] section .nav-container nav .dropdown:hover .dropdown-content {
     display: flex;
   }
+}
+@media (min-width: 1068px) {
   header[role=banner] section .nav-container nav .dropdown-content {
     display: none;
     flex-direction: column;
@@ -510,6 +546,7 @@ header[role=banner] section .show-hide-mobile-menu a img.close {
     flex-direction: column;
   }
   header[role=banner] section .nav-container nav:first-of-type .button {
+    color: #000000;
     padding: 1.4rem 0 0.8rem 0;
   }
   header[role=banner] section .nav-container nav:first-of-type .non-dropdown {
@@ -641,10 +678,19 @@ body > .content > footer .legal-link-list li a:hover {
 .acknowledgement-of-country {
   color: #ffffff;
   background: #0b0b0a;
-  height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
+}
+.acknowledgement-of-country.header {
+  height: 60vh;
+  display: none;
+}
+.acknowledgement-of-country.header.active {
+  display: block;
+}
+.acknowledgement-of-country.footer {
+  height: 100vh;
   position: fixed;
   z-index: -1;
   bottom: 0;
@@ -654,12 +700,12 @@ body > .content > footer .legal-link-list li a:hover {
   flex-direction: column;
   height: 100%;
 }
-.js .acknowledgement-of-country .container {
+.js .acknowledgement-of-country.footer .container {
   opacity: 0;
   visibility: hidden;
-  transition: opacity 900ms ease-in-out;
+  transition: opacity 900ms 80ms ease-in-out;
 }
-.js .acknowledgement-of-country .container.active {
+.js .acknowledgement-of-country.footer .container.active {
   opacity: 1;
   visibility: visible;
 }
@@ -712,12 +758,12 @@ body > .content > footer .legal-link-list li a:hover {
     order: 1;
   }
 }
-.acknowledgement-of-country .details p#custodian {
+.acknowledgement-of-country .details p.custodian {
   color: #fac33c;
   opacity: 0;
   transition: opacity 900ms ease-in-out;
 }
-.acknowledgement-of-country .details p#custodian.active {
+.acknowledgement-of-country .details p.custodian.active {
   opacity: 1;
 }
 .acknowledgement-of-country .details p a {

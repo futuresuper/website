@@ -118,6 +118,7 @@ button,
   padding: 1rem 2rem;
   border: 0;
   text-decoration: none;
+  transition: background-color 100ms ease-in-out;
 }
 button.primary,
 .button.primary {

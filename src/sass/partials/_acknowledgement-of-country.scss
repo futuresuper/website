@@ -3,14 +3,28 @@
 .acknowledgement-of-country {
   color: $white-500;
   background: $grey-900;
-  height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
 
-  position: fixed;
-  z-index: -1;
-  bottom: 0;
+  &.header {
+    // Allow parts of page to 'bleed through'
+    // So visitor knows they can scroll to continue
+    height: 60vh;
+    // Don't display by default
+    display: none;
+    // Only display if first visit
+    &.active {
+      display: block;
+    }
+  }
+
+  &.footer {
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+    bottom: 0;
+  }
 
   .container {
     display: flex;
@@ -18,13 +32,13 @@
     height: 100%;
 
     // Traverse back up the DOM to check if the HTML tag has signaled JS is available
-    // Only hide this content in the case that JS is availalbe
+    // Only hide this content in the case that JS is available
     @at-root .js {
-      .acknowledgement-of-country {
+      .acknowledgement-of-country.footer {
         .container {
           opacity: 0;
           visibility: hidden;
-          transition: opacity 900ms ease-in-out;
+          transition: opacity 900ms 80ms ease-in-out;
 
           &.active {
             opacity: 1;
@@ -89,7 +103,7 @@
     margin-bottom: 3rem;
 
     p {
-      &#custodian {
+      &.custodian {
         color: $yellow-500;
         opacity: 0;
         transition: opacity 900ms ease-in-out;

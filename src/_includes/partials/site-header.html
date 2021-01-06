@@ -11,17 +11,13 @@
     {# Regular site header content #}
     <section>
       <a class="logo" href="/" aria-label="{{ site.name }} — Home" style="margin-right: 2rem">
-        <picture>
-          <source media="(max-width: 1067px)" srcset="/images/logo-stacked.svg">
-          <source media="(min-width: 1068px)" srcset="/images/logo-single-line.svg">
-          <img src="/images/logo-single-line.svg" alt="Future Super Logo">
-        </picture>
+        {{ '/src/images/logo-single-line.svg' | svgContents | safe }}
       </a>
       <div class="show-hide-mobile-menu">
 
         <a onclick="showMobileMenu(true)" id="menu-button">
           Menu
-          <img src="/images/icons/menu.svg" alt="Menu open icon">
+          {{ '/src/images/icons/menu.svg' | svgContents | safe }}
         </a>
         <a onclick="showMobileMenu(false)" id="menu-close-button">
           Close
@@ -32,6 +28,7 @@
       <a onclick="document.getElementById('nav-container').style.display = 'none'">Close
         <img src="/images/icons/cross.svg" class="close" alt="Menu close icon"></a> #}
       </div>
+
       <div id="nav-container" class="nav-container">
         <nav aria-label="Primary">
           {% for item in navigation.items %}
@@ -43,7 +40,7 @@
               {% else %}
                 {# Make every other item a dropdown heading #}
                 <div class="dropdown">
-                  <div class="button clear" ">
+                  <div class="button clear">
                     {{ item.text }}
                   </div>
                   <div class="dropdown-content">
@@ -60,7 +57,7 @@
           {% endfor %}
         </nav>
         <nav>
-          <a href="{{ site.signInUrl }}">Login</a>
+          <a href="{{ site.signInUrl }}" class="non-dropdown">Login</a>
           <a href="{{ site.joinUrl }}" class="button primary">Join Now</a>
         </nav>
 
