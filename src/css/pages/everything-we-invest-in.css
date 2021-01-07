@@ -146,6 +146,10 @@ button.clear,
   justify-content: center;
 }
 
+.plain {
+  list-style-type: none;
+}
+
 body.mobile-menu-active {
   position: fixed;
 }
@@ -189,6 +193,14 @@ main > article.container {
 @media (min-width: 48rem) {
   .grid {
     gap: 2rem;
+  }
+  .grid > * {
+    grid-column: span 2;
+  }
+}
+@media (min-width: 80rem) {
+  .grid {
+    gap: 3rem;
   }
   .grid > * {
     grid-column: span 2;
@@ -327,12 +339,11 @@ p.page-header-summary {
 .tooltip {
   position: relative;
   display: inline-block;
-  border-bottom: 1px dashed #140f14;
+  text-decoration: dashed underline;
 }
 .tooltip:hover {
   cursor: pointer;
   color: #0a5aff;
-  border-bottom: 1px dashed #0a5aff;
 }
 .tooltip .tooltip-text {
   font-family: "JetBrainsMono", monospace;

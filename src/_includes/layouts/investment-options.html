@@ -5,66 +5,179 @@
 
 {% block content %}
 
-<div class="investment-options">
-  <div class="container">
-    <h1 class="center">{{ pageHeaderTitle }}</h1>
-    <div class="grid">
-      {% for option in investmentOptions %}
-      <div class="option-card-full {{ option.key }}">
-        {% set iconUrl = iconsPath + option.key + ".svg" %}
-        {{ iconUrl | svgContents("fill-light") | safe }}
-        <h2>{{ option.opticalName[0] }}<br>{{ option.opticalName[1] }}</h2>
-        <p>{{ option.description }}</p>
-        <a href="{{ site.joinUrl }}/?option={{ option.key }}" class="button">Select</a>
+  {# Define reusable macro for table header row #}
+  {% macro initialTableRow(showButtons, tableTitle) %}
+    <div class="grid-row">
+      <div class="row-header">
+        {% if tableTitle %}
+          <h3>{{ tableTitle }}</h3>
+        {% endif %}
       </div>
+      {% for option in investmentOptions %}
+        <div class="row-data option-card-mini {{ option.key }}">
+          {% set iconUrl = iconsPath + option.key + ".svg" %}
+          {{ iconUrl | svgContents("fill-core") | safe }}
+          <h4>{{ option.opticalName[0] }}<br>{{ option.opticalName[1] }}</h4>
+          {% if showButtons === "true" %}
+            <a href="{{ site.joinurl }}/?option={{ option.key }}" class="button">Select</a>
+          {% endif %}
+        </div>
       {% endfor %}
     </div>
+  {% endmacro %}
 
-    <h3>Let's break things down</h3>
-    <p>Not sure what something means? Tap anything that’s
-      <a class="tooltip">
-        underlined
-        <span class="tooltip-text">You're a natural!</span>
-      </a>
-      to see a full, jargon-free, explanation.
-    </p>
-    <section>
-      <div class="grid-container">
-        <div class="details-grid">
-          <h3>Force for change</h3>
+  <div class="investment-options">
+    <div class="container">
+      <header>
+        <h1 class="center">{{ pageHeaderTitle }}</h1>
+        <div class="grid">
           {% for option in investmentOptions %}
-          <div class="option-card-mini {{ option.key }}">
-            {% set iconUrl = iconsPath + option.key + ".svg" %}
-            {{ iconUrl | svgContents("fill-core") | safe }}
-            <h4>{{ option.opticalName[0] }}<br>{{ option.opticalName[1] }}</h4>
-            <a href="{{ site.joinUrl }}/?option={{ option.key }}" class="button">Select</a>
-          </div>
-          {% endfor %}
-          <h5>Impact</h5>
-          {% for option in investmentOptions %}
-          <p>
-            <a class="tooltip">
-              {{ option.impact }}
-              <span class="tooltip-text">What this means</span>
-            </a>
-          </p>
-          {% endfor %}
-          <h5>Zero fossil fuels</h5>
-          {% for option in investmentOptions %}
-          {# <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-            aria-labelledby="tickTitle" role="img">
-            <title id="tickTitle">A tick or checkmark</title>
-            <path d="M7.5 11.7L6 13.5L10.8 17.7L18.6 8.09998L16.8 6.59998L10.5 14.4L7.5 11.7Z"
-              fill="{{ option.colour }}" />
-          </svg> #}
-          <img class="svg" src="/images/icons/tick.svg" />
+            <div class="option-card-full {{ option.key }}">
+              {% set iconUrl = iconsPath + option.key + ".svg" %}
+              {{ iconUrl | svgContents("fill-light") | safe }}
+              <h2>{{ option.opticalName[0] }}<br>{{ option.opticalName[1] }}</h2>
+              <p>{{ option.description }}</p>
+              <a href="{{ site.joinurl }}/?option={{ option.key }}" class="button">Select</a>
+            </div>
           {% endfor %}
         </div>
+      </header>
+
+      <section>
+        <div class="intro grid">
+          <div>
+            <h2>Let's break things down</h2>
+            <p>Not sure what something means? Tap anything that’s
+            <a class="tooltip">underlined<span class="tooltip-text">You're a natural!</span></a>
+            to see a full, jargon-free, explanation.
+          </p>
+          </div>
+        </div>
+
+        <div class="table-container">
+          {{ initialTableRow("false", "Force for change") }}
+
+          <div class="grid-row">
+            <div class="row-header">
+              <h5>Impact</h5>
+            </div>
+            {% for option in investmentOptions %}
+              <div class="row-data {{ option.key }}">
+                <p>
+                  <a class="tooltip">
+                    {{ option.impact }}
+                    <span class="tooltip-text">What this means</span>
+                  </a>
+                </p>
+              </div>
+            {% endfor %}
+          </div>
+
+          {% macro booleanDataStatic(dataTitle) %}
+            <div class="grid-row">
+              <div class="row-header">
+                <h5>{{ dataTitle }}</h5>
+              </div>
+              {% for option in investmentOptions %}
+                <div class="row-data {{ option.key }}">
+                  {{ "/src/images/icons/tick.svg" | svgContents("fill-core") | safe }}
+                </div>
+              {% endfor %}
+            </div>
+          {% endmacro %}
+
+          {# Render static macros #}
+          {{booleanDataStatic("Zero fossil fuels")}}
+          {{booleanDataStatic("Ethically screened")}}
+
+          {# Render dynamic data (as global parameters can't be read in a macro, e.g. `option.dataAttribute`) #}
+          <div class="grid-row">
+            <div class="row-header">
+              <h5>Fights inequality</h5>
+            </div>
+            {% for option in investmentOptions %}
+              <div class="row-data {{ option.key }}">
+                {% if option.fightsInequality %}
+                  {{ "/src/images/icons/tick.svg" | svgContents("fill-core") | safe }}
+                {% endif %}
+              </div>
+            {% endfor %}
+          </div>
+
+          <div class="grid-row">
+            <div class="row-header">
+              <h5>Invests in renewables</h5>
+            </div>
+            {% for option in investmentOptions %}
+              <div class="row-data {{ option.key }}">
+                {% if option.investsInRenewables %}
+                  {{ "/src/images/icons/tick.svg" | svgContents("fill-core") | safe }}
+                {% endif %}
+              </div>
+            {% endfor %}
+          </div>
+
+          <div class="grid-row">
+            <div class="row-header">
+              <h5>Targets 20% investment in renewable energy projects</h5>
+            </div>
+            {% for option in investmentOptions %}
+              <div class="row-data {{ option.key }}">
+                {% if option.targets20Percent %}
+                  {{ "/src/images/icons/tick.svg" | svgContents("fill-core") | safe }}
+                {% endif %}
+              </div>
+            {% endfor %}
+          </div>
+
+          <div class="grid-row">
+            <div class="row-header">
+              <h5>Highlight investments</h5>
+              <p>
+                <a href="/everything-we-invest-in">See all investments</a>
+              </p>
+            </div>
+            {% for option in investmentOptions %}
+              <div class="row-data highlight-investments {{ option.key }}">
+                <ul class="plain">
+                  {% for item in option.highlightInvestments %}
+                    <li>
+                      <a class="tooltip">
+                        {{ item.name }}
+                        <span class="tooltip-text">{{ item.description }}</span>
+                      </a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+
+        {# Table Two #}
+        <div class="table-container">
+          {{ initialTableRow("false", "Money talk") }}
+          <div class="grid-row">
+            <div class="row-header">
+              <h5>How much you pay each year</h5>
+            </div>
+            {% for option in investmentOptions %}
+              <div class="row-data {{ option.key }}">
+                {# TODO: insert row data #}
+              </div>
+            {% endfor %}
+          </div>
+          {# TODO: insert rest of table data #}
+        </div>
+
+        <div class="table-container">
+          {{ initialTableRow("true") }}
+        </div>
+
       </div>
     </section>
   </div>
-</div>
 
-{% include "partials/join-cta.html" %}
+  {% include "partials/join-cta.html" %}
 
 {% endblock %}

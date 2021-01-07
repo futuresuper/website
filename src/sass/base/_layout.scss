@@ -57,4 +57,30 @@ main > article.container {
       grid-column: span 2;
     }
   }
+  // Large screens default = 6 columns (span 2 of 12)
+  @media (min-width: $breakpoint-lg) {
+    gap: 3rem;
+    > * {
+      grid-column: span 2;
+    }
+  }
+}
+
+// Extension of above grid for common text layouts
+%set-grid-rythmn-text-a {
+  > * {
+    grid-column: span 1;
+
+    @media (min-width: $breakpoint-sm) {
+      grid-column: span 12;
+    }
+
+    @media (min-width: $breakpoint-md) {
+      grid-column: span 9;
+    }
+
+    @media (min-width: $breakpoint-lg) {
+      grid-column: span 6;
+    }
+  }
 }

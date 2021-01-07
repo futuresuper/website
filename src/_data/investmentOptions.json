@@ -5,7 +5,15 @@
     "opticalName": ["Balanced", "Index"],
     "description": "Zero fossil fuels but no impact targets. Just divestment.",
     "impact": "Low",
-    "fightsInequality": false
+    "fightsInequality": false,
+    "investsInRenewables": false,
+    "targets20Percent": false,
+    "highlightInvestments": [
+      {
+        "name": "RateSetter",
+        "description": "This is a tooltip description."
+      }
+    ]
   },
   {
     "name": "Balanced Impact",
@@ -13,7 +21,23 @@
     "opticalName": ["Balanced", "Impact"],
     "description": "Zero fossil fuels, plus investments in renewable energy and social impact projects.",
     "impact": "Medium",
-    "fightsInequality": true
+    "fightsInequality": true,
+    "investsInRenewables": true,
+    "targets20Percent": false,
+    "highlightInvestments": [
+      {
+        "name": "RateSetter",
+        "description": "This is a tooltip description."
+      },
+      {
+        "name": "Vision Fund International",
+        "description": "This is a tooltip description."
+      },
+      {
+        "name": "IIG Solar Asset Fund",
+        "description": "This is a tooltip description."
+      }
+    ]
   },
   {
     "name": "Renewables Plus Growth",
@@ -21,6 +45,22 @@
     "opticalName": ["Renewables", "Plus Growth"],
     "description": "Zero fossil fuels, highest impact. Targets 20% investment in renewable energy projects.",
     "impact": "High",
-    "fightsInequality": true
+    "fightsInequality": true,
+    "investsInRenewables": true,
+    "targets20Percent": true,
+    "highlightInvestments": [
+      {
+        "name": "New Energy Solar",
+        "description": "This is a tooltip description."
+      },
+      {
+        "name": "Infradebt Ethical Fund",
+        "description": "This is a tooltip description."
+      },
+      {
+        "name": "Green Squares Energy",
+        "description": "This is a tooltip description."
+      }
+    ]
   }
 ]

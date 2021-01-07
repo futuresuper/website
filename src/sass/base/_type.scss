@@ -1,5 +1,5 @@
 @use "colours" as *;
-$size-sm: 0.875rem; // 14px
+$font-size-small: 0.875rem; // 14px
 
 @font-face {
   font-family: "SharpGrotesk";
@@ -40,8 +40,11 @@ $size-sm: 0.875rem; // 14px
   font-display: swap;
 }
 
+$font-stack-sans-serif: "Helvetica Neue", "Helvetica", sans-serif;
+$font-stack-monospace: "JetBrainsMono", monospace;
+
 body {
-  font-family: "Helvetica Neue", "Helvetica", sans-serif;
+  font-family: $font-stack-sans-serif;
   color: $black-900;
 }
 
@@ -142,12 +145,11 @@ p {
 .tooltip {
   position: relative;
   display: inline-block;
-  border-bottom: 1px dashed $black-500;
+  text-decoration: dashed underline;
 
   &:hover {
     cursor: pointer;
     color: $blue-500;
-    border-bottom: 1px dashed $blue-500;
   }
 
   .tooltip-text {
