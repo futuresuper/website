@@ -3,22 +3,29 @@
 document.documentElement.className = "js";
 
 // Handle mobile menu navigation
+const navContainer = document.querySelector(".nav-container");
+const menuCloseButton = document.querySelector("#menu-close-button");
+const menuOpenButton = document.querySelector("#menu-open-button");
+const menuChangeElements = [document.body, navContainer, menuCloseButton, menuOpenButton];
+
 function showMobileMenu(show) {
   if (show) {
-    document.getElementById("nav-container").style.display = "flex";
-    document.getElementById("menu-close-button").style.display = "flex";
-    document.getElementById("menu-button").style.display = "none";
+    menuChangeElements.forEach((element) => {
+      element.classList.add("mobile-menu-active");
+    });
   } else {
-    document.getElementById("nav-container").style.display = "none";
-    document.getElementById("menu-close-button").style.display = "none";
-    document.getElementById("menu-button").style.display = "flex";
+    menuChangeElements.forEach((element) => {
+      element.classList.remove("mobile-menu-active");
+    });
   }
 }
 
-// Rotate custodians in footer acknowledgement of country
+// Rotate custodians in acknowledgement of country (both header and footer)
 let currentCustodianIndex = 0;
-const custodianEl = document.querySelector("p#custodian");
-custodianEl.classList.add("active");
+// There may be 2 of these custodian elements (header and footer)
+// Therefore treat as group
+const custodianEls = document.querySelectorAll("p.custodian");
+custodianEls.forEach((element) => element.classList.add("active"));
 
 async function fetchCustodianData() {
   const response = await fetch("/_data/custodians.json");
@@ -27,34 +34,38 @@ async function fetchCustodianData() {
 
 async function showNextCustodianName() {
   let custodianData = await fetchCustodianData();
-  custodianEl.textContent = custodianData[currentCustodianIndex];
-  custodianEl.classList.remove("active");
+  custodianEls.forEach((element) => {
+    element.textContent = custodianData[currentCustodianIndex];
+    element.classList.remove("active");
+  });
   currentCustodianIndex = currentCustodianIndex < custodianData.length - 1 ? currentCustodianIndex + 1 : 0;
 
-  custodianEl.ontransitionend = () => {
-    custodianEl.textContent = custodianData[currentCustodianIndex];
-    custodianEl.classList.add("active");
-  };
+  custodianEls.forEach((element) => {
+    element.ontransitionend = () => {
+      element.textContent = custodianData[currentCustodianIndex];
+      element.classList.add("active");
+    };
+  });
 
   return currentCustodianIndex;
 }
 
 setInterval(showNextCustodianName, 4000);
 
-// Watch for and animate footer acknowledgement of country
-const aocContainer = document.querySelector(".acknowledgement-of-country .container");
-const siteContent = document.querySelector("body > .content");
+// Watch for and animate acknowledgement of country (footer only)
+const aocFooter = document.querySelector(".acknowledgement-of-country.footer");
+const siteContent = document.querySelector("body > .flow-content");
 const config = {
-  rootMargin: "-60% 0% 0% 0%",
+  rootMargin: "-75% 0% 0% 0%",
 };
 
 let observer = new IntersectionObserver(
   (entries) =>
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        aocContainer.classList.remove("active");
+        aocFooter.classList.remove("active");
       } else {
-        aocContainer.classList.add("active");
+        aocFooter.classList.add("active");
       }
     }),
   config

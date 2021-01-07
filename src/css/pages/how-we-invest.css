@@ -118,6 +118,7 @@ button,
   padding: 1rem 2rem;
   border: 0;
   text-decoration: none;
+  transition: background-color 100ms ease-in-out;
 }
 button.primary,
 .button.primary {
@@ -143,6 +144,13 @@ button.clear,
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+body.mobile-menu-active {
+  position: fixed;
+}
+body.mobile-menu-active.aoc-active {
+  top: -60vh;
 }
 
 .container {

@@ -1,16 +1,44 @@
 @use "../base" as *;
 
+$transition-aoc-content: opacity 900ms 80ms ease-in-out;
+
 .acknowledgement-of-country {
   color: $white-500;
-  background: $grey-900;
-  height: 100vh;
+  background-color: $grey-900;
   width: 100%;
   display: flex;
   align-items: center;
-
   position: fixed;
-  z-index: -1;
-  bottom: 0;
+
+  &.header {
+    // Allow parts of page to 'bleed through'
+    // So visitor knows they can scroll to continue
+    z-index: -1;
+    height: $height-acknowledgement-of-country-header;
+    top: 0;
+    // Don't display by default
+    display: none;
+
+    .container {
+      opacity: 0;
+      transition: $transition-aoc-content;
+    }
+
+    // Only display if first visit
+    &.active {
+      display: block;
+
+      .container {
+        opacity: 1;
+      }
+    }
+  }
+
+  &.footer {
+    z-index: -2;
+    height: $height-acknowledgement-of-country-footer;
+    bottom: 0;
+  }
 
   .container {
     display: flex;
@@ -18,15 +46,22 @@
     height: 100%;
 
     // Traverse back up the DOM to check if the HTML tag has signaled JS is available
-    // Only hide this content in the case that JS is availalbe
+    // Only hide this content in the case that JS is available
     @at-root .js {
-      .acknowledgement-of-country {
+      .acknowledgement-of-country.footer {
         .container {
           opacity: 0;
           visibility: hidden;
-          transition: opacity 900ms ease-in-out;
+          transition: $transition-aoc-content;
+        }
 
-          &.active {
+        // Style when made active
+        &.active {
+          // Bring back above header acknowledgement of country (if applicable)
+          z-index: -1;
+
+          // fade in container elements
+          .container {
             opacity: 1;
             visibility: visible;
           }
@@ -89,7 +124,7 @@
     margin-bottom: 3rem;
 
     p {
-      &#custodian {
+      &.custodian {
         color: $yellow-500;
         opacity: 0;
         transition: opacity 900ms ease-in-out;
