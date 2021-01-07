@@ -8,6 +8,8 @@ const { minify } = require("terser");
 const CleanCSS = require("clean-css");
 // Shortcodes
 const { srcset, src } = require("./src/helpers/shortcodes");
+// Inline SVGs
+const svgContents = require("eleventy-plugin-svg-contents");
 
 module.exports = (config) => {
   // Watch for changes in /sass
@@ -17,6 +19,7 @@ module.exports = (config) => {
   config.addPassthroughCopy("./src/images/");
   config.addPassthroughCopy("./src/admin/");
   config.addPassthroughCopy("./src/css/");
+  config.addPassthroughCopy("./src/_data/custodians");
 
   // Add filters to Eleventy
   // Handle dates in areas such as blog posts
@@ -50,6 +53,8 @@ module.exports = (config) => {
   config.addFilter("cssmin", function (code) {
     return new CleanCSS({}).minify(code).styles;
   });
+
+  config.addPlugin(svgContents);
 
   config.addShortcode("src", src);
   config.addShortcode("srcset", srcset);

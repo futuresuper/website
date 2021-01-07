@@ -13,18 +13,26 @@
         {% include styles %}
         {% endset %}
         <style>
-          {{ css | cssmin | safe }}
+          {{css | cssmin | safe}}
         </style>
       {% endfor %}
     {% endif %}
   </head>
 
   <body>
-    {% include "partials/site-header.html" %}
-    <main tabindex="-1" id="main-content">
-      {% block content %}{% endblock %}
-    </main>
-    {% include "partials/site-footer.html" %}
+    {# Conditional content for the homepage #}
+    {% if title === "Home" %}
+      {% include "partials/acknowledgement-of-country-header.html" %}
+    {% endif %}
+
+    <div class="flow-content">
+      {% include "partials/site-header.html" %}
+      <main tabindex="-1" id="main-content">
+        {% block content %}{% endblock %}
+      </main>
+      {% include "partials/site-footer.html" %}
+    </div>
+    {% include "partials/acknowledgement-of-country-footer.html" %}
 
     {# Add global script #}
     {% set globaljs %}

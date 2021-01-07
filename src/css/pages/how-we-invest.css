@@ -118,6 +118,7 @@ button,
   padding: 1rem 2rem;
   border: 0;
   text-decoration: none;
+  transition: background-color 100ms ease-in-out;
 }
 button.primary,
 .button.primary {
@@ -145,6 +146,13 @@ button.clear,
   justify-content: center;
 }
 
+body.mobile-menu-active {
+  position: fixed;
+}
+body.mobile-menu-active.aoc-active {
+  top: -60vh;
+}
+
 .container {
   max-width: 80rem;
   margin-right: auto;
@@ -163,7 +171,7 @@ main > article.container {
 
 .grid {
   display: grid;
-  grid-template-columns: 100%;
+  grid-template-columns: 1fr;
   gap: 1rem;
 }
 .grid > * {

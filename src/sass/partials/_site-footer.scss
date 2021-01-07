@@ -2,7 +2,7 @@
 
 // Target only the site footer
 // (as the footer can be semantically used elsewhere)
-body > footer {
+body > .flow-content > footer {
   background-color: $off-white-500;
   font-size: $size-sm;
   padding: 3rem 0 4rem;
@@ -14,6 +14,8 @@ body > footer {
   }
 
   nav {
+    margin-bottom: 5rem;
+
     h2,
     img {
       margin-bottom: 1rem;
@@ -37,28 +39,6 @@ body > footer {
   .socials-list {
     @media (min-width: $breakpoint-md) {
       grid-column: span 4;
-    }
-  }
-
-  .acknowledgement-of-country {
-    margin: 3rem 0;
-
-    div {
-      grid-column: span 12;
-    }
-    @media (min-width: $breakpoint-md) {
-      div {
-        grid-column: span 8;
-      }
-    }
-
-    .flags {
-      display: flex;
-      margin-bottom: 1rem;
-
-      img:first-child {
-        margin-right: 1rem;
-      }
     }
   }
 
