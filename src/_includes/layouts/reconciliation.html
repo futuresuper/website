@@ -1,0 +1,25 @@
+{% extends "layouts/base.html" %}
+
+{% set pageHeaderTitle = title %}
+
+{% block content %}
+
+<article class="container">
+
+  {% include "partials/page-header.html" %}
+
+  <p>Here are one or two paragraphs that explain the importance of reconciliation, in the context of Future Super.</p>
+  <p>It's an opportunity to educate visitors (including other businesses) who may not have seen or read something like
+    this before.</p>
+
+  <h2>Our Reconciliation Action Plan</h2>
+  <p>Here are carefully chosen excerpts from our Reconciliation Action Plan (RAP) that explain what it is and why we
+    have it.</p>
+  <p>This explanation could go over a few paragraphs. All the best bits from the below RAP PDF.</p>
+  <p>Who knows, one day the full RAP could be on this webpage instead of/as well as the PDF. Until then...</p>
+
+  <a href="/rap" class="button primary">Keep Reading (PDF)</a>
+
+</article>
+
+{% endblock %}
