@@ -3,11 +3,10 @@
 document.documentElement.className = "js";
 
 // Handle mobile menu navigation
-const logoEl = document.querySelector(".logo svg");
 const navContainer = document.querySelector(".nav-container");
 const menuCloseButton = document.querySelector("#menu-close-button");
 const menuOpenButton = document.querySelector("#menu-open-button");
-const menuChangeElements = [document.body, logoEl, navContainer, menuCloseButton, menuOpenButton];
+const menuChangeElements = [document.body, navContainer, menuCloseButton, menuOpenButton];
 
 function showMobileMenu(show) {
   if (show) {
@@ -54,7 +53,7 @@ async function showNextCustodianName() {
 setInterval(showNextCustodianName, 4000);
 
 // Watch for and animate acknowledgement of country (footer only)
-const aocFooterContainer = document.querySelector(".acknowledgement-of-country.footer .container");
+const aocFooter = document.querySelector(".acknowledgement-of-country.footer");
 const siteContent = document.querySelector("body > .flow-content");
 const config = {
   rootMargin: "-75% 0% 0% 0%",
@@ -64,9 +63,9 @@ let observer = new IntersectionObserver(
   (entries) =>
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        aocFooterContainer.classList.remove("active");
+        aocFooter.classList.remove("active");
       } else {
-        aocFooterContainer.classList.add("active");
+        aocFooter.classList.add("active");
       }
     }),
   config

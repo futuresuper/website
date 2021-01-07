@@ -11,25 +11,6 @@ header[role="banner"] {
     }
   }
 
-  // Triggered if the header acknowledgement of country is shown
-  // Matches its visual style
-  &.aoc-active {
-    color: $white-500;
-    background-color: $grey-900;
-
-    svg {
-      .fill-target {
-        fill: $white-500;
-      }
-      // Reset to original fill if mobile menu is open
-      &.mobile-menu-active {
-        .fill-target {
-          fill: $black-900;
-        }
-      }
-    }
-  }
-
   // Notice banner (visually above header content) styling
   .banner {
     text-align: center;
@@ -126,30 +107,6 @@ header[role="banner"] {
 
             &:hover {
               color: $grey-500;
-            }
-            // Triggered if the header acknowledgement of country is shown
-            // Matches its visual style
-            @at-root header[role="banner"].aoc-active {
-              @media (min-width: 1068px) {
-                .nav-container {
-                  nav {
-                    .non-dropdown {
-                      color: $white-500;
-
-                      &:hover {
-                        color: $grey-400;
-                      }
-                    }
-                    .button.primary {
-                      background-color: $grey-500;
-
-                      &:hover {
-                        background-color: $blue-500;
-                      }
-                    }
-                  }
-                }
-              }
             }
           }
 

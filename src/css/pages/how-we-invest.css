@@ -149,6 +149,9 @@ button.clear,
 body.mobile-menu-active {
   position: fixed;
 }
+body.mobile-menu-active.aoc-active {
+  top: -60vh;
+}
 
 .container {
   max-width: 80rem;

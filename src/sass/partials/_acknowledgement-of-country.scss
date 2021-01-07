@@ -1,28 +1,42 @@
 @use "../base" as *;
 
+$transition-aoc-content: opacity 900ms 80ms ease-in-out;
+
 .acknowledgement-of-country {
   color: $white-500;
-  background: $grey-900;
+  background-color: $grey-900;
   width: 100%;
   display: flex;
   align-items: center;
+  position: fixed;
 
   &.header {
     // Allow parts of page to 'bleed through'
     // So visitor knows they can scroll to continue
-    height: 60vh;
+    z-index: -1;
+    height: $height-acknowledgement-of-country-header;
+    top: 0;
     // Don't display by default
     display: none;
+
+    .container {
+      opacity: 0;
+      transition: $transition-aoc-content;
+    }
+
     // Only display if first visit
     &.active {
       display: block;
+
+      .container {
+        opacity: 1;
+      }
     }
   }
 
   &.footer {
-    height: 100vh;
-    position: fixed;
-    z-index: -1;
+    z-index: -2;
+    height: $height-acknowledgement-of-country-footer;
     bottom: 0;
   }
 
@@ -38,9 +52,16 @@
         .container {
           opacity: 0;
           visibility: hidden;
-          transition: opacity 900ms 80ms ease-in-out;
+          transition: $transition-aoc-content;
+        }
 
-          &.active {
+        // Style when made active
+        &.active {
+          // Bring back above header acknowledgement of country (if applicable)
+          z-index: -1;
+
+          // fade in container elements
+          .container {
             opacity: 1;
             visibility: visible;
           }
