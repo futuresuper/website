@@ -10,6 +10,7 @@ button,
   border: 0;
   text-decoration: none;
   transition: background-color 100ms ease-in-out;
+  text-align: center;
 
   &.primary {
     color: $white-500;

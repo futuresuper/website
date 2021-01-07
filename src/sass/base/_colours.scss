@@ -26,6 +26,7 @@ $blue-800: #003cb8;
 $blue-900: #002166;
 
 $green-100: #f3fcf5;
+$green-300: #97ddab;
 $green-500: #2bb151;
 $green-700: #21873e;
 $green-900: #025018;
@@ -46,3 +47,14 @@ $pink-900: #3c1631;
 $yellow-500: #fac33c;
 $yellow-700: #9a6f04;
 $yellow-900: #322401;
+
+// Investment Options
+$option-balanced-index-light: $pink-500;
+$option-balanced-index-core: $pink-700;
+$option-balanced-index-dark: $pink-900;
+$option-balanced-impact-light: $blue-300;
+$option-balanced-impact-core: $blue-500;
+$option-balanced-impact-dark: $blue-900;
+$option-renewables-plus-growth-light: $green-300;
+$option-renewables-plus-growth-core: $green-500;
+$option-renewables-plus-growth-dark: $green-900;

@@ -5,6 +5,81 @@
 // namespace (ie '$grey-100' instead of 'base.$grey100')
 @use "../base" as *;
 
+%set-option-theme-colours {
+  // Balanced Index
+  &.balanced-index {
+    color: $option-balanced-index-dark;
+
+    svg {
+      &.fill-core {
+        .stroke-target {
+          stroke: $option-balanced-index-core;
+        }
+      }
+      &.fill-light {
+        .stroke-target {
+          stroke: $option-balanced-index-light;
+        }
+      }
+    }
+
+    .button {
+      background-color: $option-balanced-index-core;
+      &:hover {
+        background-color: $option-balanced-index-dark;
+      }
+    }
+  }
+  // Balanced Impact
+  &.balanced-impact {
+    color: $option-balanced-impact-dark;
+
+    svg {
+      &.fill-core {
+        .stroke-target {
+          stroke: $option-balanced-impact-core;
+        }
+      }
+      &.fill-light {
+        .stroke-target {
+          stroke: $option-balanced-impact-light;
+        }
+      }
+    }
+
+    .button {
+      background-color: $option-balanced-impact-core;
+      &:hover {
+        background-color: $option-balanced-impact-dark;
+      }
+    }
+  }
+  // Renewables Plus Growth
+  &.renewables-plus-growth {
+    color: $option-renewables-plus-growth-dark;
+
+    svg {
+      &.fill-core {
+        .stroke-target {
+          stroke: $option-renewables-plus-growth-core;
+        }
+      }
+      &.fill-light {
+        .stroke-target {
+          stroke: $option-renewables-plus-growth-light;
+        }
+      }
+    }
+
+    .button {
+      background-color: $option-renewables-plus-growth-core;
+      &:hover {
+        background-color: $option-renewables-plus-growth-dark;
+      }
+    }
+  }
+}
+
 .investment-options {
   background-color: $white-500;
   padding: 4rem 0 12rem;
@@ -16,68 +91,40 @@
   .grid {
     gap: 3rem;
     margin-bottom: 6rem;
-    > .optionCard {
+
+    > .option-card-full {
       @media (min-width: $breakpoint-sm) {
         grid-column: span 12;
       }
       @media (min-width: $breakpoint-lg) {
         grid-column: span 4;
       }
-    }
-  }
 
-  .optionCard {
-    padding: 3rem;
-    border: 2px solid $grey-200;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    > div {
+      padding: 3rem;
+      border: 2px solid $grey-200;
       display: flex;
       flex-direction: column;
-      text-align: center;
 
-      img {
+      text-align: center;
+      @extend %set-option-theme-colours;
+
+      svg {
+        align-self: center;
         margin-bottom: 1rem;
       }
-    }
 
-    h2 {
-      font-size: 1.8rem;
-      font-weight: 700;
-    }
+      h2 {
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+      }
 
-    button {
-      font-weight: 400;
-      color: $white-500;
-      margin-top: 1rem;
-    }
+      p {
+        flex-grow: 1;
+      }
 
-    &:first-of-type {
-      h2,
-      p {
-        color: $pink-900;
-      }
-      button {
-        background-color: $pink-700;
-      }
-    }
-    &:nth-of-type(2) {
-      h2,
-      p {
-        color: $blue-900;
-      }
-      button {
-        background-color: $blue-500;
-      }
-    }
-    &:last-of-type {
-      h2,
-      p {
-        color: $green-900;
-      }
-      button {
-        background-color: $green-500;
+      .button {
+        color: $white-500;
       }
     }
   }
@@ -95,6 +142,30 @@
 
         > * {
           grid-column: span 2;
+        }
+
+        .option-card-mini {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: stretch;
+
+          @extend %set-option-theme-colours;
+
+          svg {
+            width: 3rem;
+            height: 3rem;
+          }
+
+          h4 {
+            font-size: 1.125rem;
+          }
+
+          .button {
+            margin-top: 1rem;
+            color: $white-500;
+            font-size: 1rem;
+          }
         }
 
         // Medium screens default = 2 columns (span 6 of 12)

@@ -84,6 +84,10 @@ h3,
   font-size: min(max(1rem, 3vw), 1.8rem); // Min, Variable, Max
 }
 
+h4 {
+  line-height: 110%;
+}
+
 p {
   margin-bottom: 1rem;
   a {

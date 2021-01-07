@@ -1,6 +1,7 @@
 {% extends "layouts/base.html" %}
 
 {% set pageHeaderTitle = title %}
+{% set iconsPath = '/src/images/icons/investment-options/' %}
 
 {% block content %}
 
@@ -9,15 +10,12 @@
     <h1 class="center">{{ pageHeaderTitle }}</h1>
     <div class="grid">
       {% for option in investmentOptions %}
-      <div class="optionCard">
-        <div>
-          <img src="{{ option.icon }}" />
-          <h2>{{ option.opticalName[0] }}<br>{{ option.opticalName[1] }}</h2>
-          <p>{{ option.description }}</p>
-        </div>
-        <div>
-          <button>Select</button>
-        </div>
+      <div class="option-card-full {{ option.key }}">
+        {% set iconUrl = iconsPath + option.key + ".svg" %}
+        {{ iconUrl | svgContents("fill-light") | safe }}
+        <h2>{{ option.opticalName[0] }}<br>{{ option.opticalName[1] }}</h2>
+        <p>{{ option.description }}</p>
+        <a href="{{ site.joinUrl }}/?option={{ option.key }}" class="button">Select</a>
       </div>
       {% endfor %}
     </div>
@@ -35,9 +33,11 @@
         <div class="details-grid">
           <h3>Force for change</h3>
           {% for option in investmentOptions %}
-          <div>
-            <img src="{{ option.icon }}" />
+          <div class="option-card-mini {{ option.key }}">
+            {% set iconUrl = iconsPath + option.key + ".svg" %}
+            {{ iconUrl | svgContents("fill-core") | safe }}
             <h4>{{ option.opticalName[0] }}<br>{{ option.opticalName[1] }}</h4>
+            <a href="{{ site.joinUrl }}/?option={{ option.key }}" class="button">Select</a>
           </div>
           {% endfor %}
           <h5>Impact</h5>

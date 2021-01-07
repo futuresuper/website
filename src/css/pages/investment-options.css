@@ -118,6 +118,7 @@ button,
   border: 0;
   text-decoration: none;
   transition: background-color 100ms ease-in-out;
+  text-align: center;
 }
 button.primary,
 .button.primary {
@@ -269,6 +270,10 @@ h3,
   font-size: min(max(1rem, 3vw), 1.8rem);
 }
 
+h4 {
+  line-height: 110%;
+}
+
 p {
   margin-bottom: 1rem;
 }
@@ -372,6 +377,52 @@ table th:only-of-type {
   padding-right: 3rem;
 }
 
+.investment-options section .grid-container .details-grid .balanced-index.option-card-mini, .investment-options .grid > .balanced-index.option-card-full {
+  color: #3c1631;
+}
+.investment-options section .grid-container .details-grid .balanced-index.option-card-mini svg.fill-core .stroke-target, .investment-options .grid > .balanced-index.option-card-full svg.fill-core .stroke-target {
+  stroke: #c445a2;
+}
+.investment-options section .grid-container .details-grid .balanced-index.option-card-mini svg.fill-light .stroke-target, .investment-options .grid > .balanced-index.option-card-full svg.fill-light .stroke-target {
+  stroke: #dc91c8;
+}
+.investment-options section .grid-container .details-grid .balanced-index.option-card-mini .button, .investment-options .grid > .balanced-index.option-card-full .button {
+  background-color: #c445a2;
+}
+.investment-options section .grid-container .details-grid .balanced-index.option-card-mini .button:hover, .investment-options .grid > .balanced-index.option-card-full .button:hover {
+  background-color: #3c1631;
+}
+.investment-options section .grid-container .details-grid .balanced-impact.option-card-mini, .investment-options .grid > .balanced-impact.option-card-full {
+  color: #002166;
+}
+.investment-options section .grid-container .details-grid .balanced-impact.option-card-mini svg.fill-core .stroke-target, .investment-options .grid > .balanced-impact.option-card-full svg.fill-core .stroke-target {
+  stroke: #0a5aff;
+}
+.investment-options section .grid-container .details-grid .balanced-impact.option-card-mini svg.fill-light .stroke-target, .investment-options .grid > .balanced-impact.option-card-full svg.fill-light .stroke-target {
+  stroke: #a3c1ff;
+}
+.investment-options section .grid-container .details-grid .balanced-impact.option-card-mini .button, .investment-options .grid > .balanced-impact.option-card-full .button {
+  background-color: #0a5aff;
+}
+.investment-options section .grid-container .details-grid .balanced-impact.option-card-mini .button:hover, .investment-options .grid > .balanced-impact.option-card-full .button:hover {
+  background-color: #002166;
+}
+.investment-options section .grid-container .details-grid .renewables-plus-growth.option-card-mini, .investment-options .grid > .renewables-plus-growth.option-card-full {
+  color: #025018;
+}
+.investment-options section .grid-container .details-grid .renewables-plus-growth.option-card-mini svg.fill-core .stroke-target, .investment-options .grid > .renewables-plus-growth.option-card-full svg.fill-core .stroke-target {
+  stroke: #2bb151;
+}
+.investment-options section .grid-container .details-grid .renewables-plus-growth.option-card-mini svg.fill-light .stroke-target, .investment-options .grid > .renewables-plus-growth.option-card-full svg.fill-light .stroke-target {
+  stroke: #97ddab;
+}
+.investment-options section .grid-container .details-grid .renewables-plus-growth.option-card-mini .button, .investment-options .grid > .renewables-plus-growth.option-card-full .button {
+  background-color: #2bb151;
+}
+.investment-options section .grid-container .details-grid .renewables-plus-growth.option-card-mini .button:hover, .investment-options .grid > .renewables-plus-growth.option-card-full .button:hover {
+  background-color: #025018;
+}
+
 .investment-options {
   background-color: #ffffff;
   padding: 4rem 0 12rem;
@@ -383,60 +434,37 @@ table th:only-of-type {
   gap: 3rem;
   margin-bottom: 6rem;
 }
-@media (min-width: 40rem) {
-  .investment-options .grid > .optionCard {
-    grid-column: span 12;
-  }
-}
-@media (min-width: 80rem) {
-  .investment-options .grid > .optionCard {
-    grid-column: span 4;
-  }
-}
-.investment-options .optionCard {
+.investment-options .grid > .option-card-full {
   padding: 3rem;
   border: 2px solid #e6e6e5;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-}
-.investment-options .optionCard > div {
-  display: flex;
-  flex-direction: column;
   text-align: center;
 }
-.investment-options .optionCard > div img {
+@media (min-width: 40rem) {
+  .investment-options .grid > .option-card-full {
+    grid-column: span 12;
+  }
+}
+@media (min-width: 80rem) {
+  .investment-options .grid > .option-card-full {
+    grid-column: span 4;
+  }
+}
+.investment-options .grid > .option-card-full svg {
+  align-self: center;
   margin-bottom: 1rem;
 }
-.investment-options .optionCard h2 {
+.investment-options .grid > .option-card-full h2 {
   font-size: 1.8rem;
   font-weight: 700;
+  margin-bottom: 2rem;
 }
-.investment-options .optionCard button {
-  font-weight: 400;
+.investment-options .grid > .option-card-full p {
+  flex-grow: 1;
+}
+.investment-options .grid > .option-card-full .button {
   color: #ffffff;
-  margin-top: 1rem;
-}
-.investment-options .optionCard:first-of-type h2,
-.investment-options .optionCard:first-of-type p {
-  color: #3c1631;
-}
-.investment-options .optionCard:first-of-type button {
-  background-color: #c445a2;
-}
-.investment-options .optionCard:nth-of-type(2) h2,
-.investment-options .optionCard:nth-of-type(2) p {
-  color: #002166;
-}
-.investment-options .optionCard:nth-of-type(2) button {
-  background-color: #0a5aff;
-}
-.investment-options .optionCard:last-of-type h2,
-.investment-options .optionCard:last-of-type p {
-  color: #025018;
-}
-.investment-options .optionCard:last-of-type button {
-  background-color: #2bb151;
 }
 .investment-options section .grid-container {
   width: 100%;
@@ -450,6 +478,24 @@ table th:only-of-type {
 }
 .investment-options section .grid-container .details-grid > * {
   grid-column: span 2;
+}
+.investment-options section .grid-container .details-grid .option-card-mini {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.investment-options section .grid-container .details-grid .option-card-mini svg {
+  width: 3rem;
+  height: 3rem;
+}
+.investment-options section .grid-container .details-grid .option-card-mini h4 {
+  font-size: 1.125rem;
+}
+.investment-options section .grid-container .details-grid .option-card-mini .button {
+  margin-top: 1rem;
+  color: #ffffff;
+  font-size: 1rem;
 }
 @media (min-width: 40rem) {
   .investment-options section .grid-container .details-grid {
