@@ -520,8 +520,8 @@ table th:only-of-type {
   width: 100%;
   overflow-x: scroll;
 }
-.investment-options section .table-container:not(:last-of-type) {
-  margin-bottom: 5rem;
+.investment-options section .table-container:not(:first-of-type):not(:last-of-type) {
+  margin-top: 5rem;
 }
 .investment-options section .table-container .grid-row {
   display: grid;
@@ -532,7 +532,7 @@ table th:only-of-type {
 .investment-options section .table-container .grid-row:not(:last-of-type) {
   border-bottom: 0.125rem solid #f5f5f4;
 }
-.investment-options section .table-container .grid-row:first-of-type {
+.investment-options section .table-container .grid-row:first-of-type:not(:only-of-type) {
   border-bottom: 0.125rem solid #dadad7;
 }
 .investment-options section .table-container .grid-row .row-header,
