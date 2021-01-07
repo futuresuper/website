@@ -4,65 +4,67 @@
 
 {% block content %}
 
-  <div class="investment-options">
-    <div class="container">
-      <h1 class="center">{{ pageHeaderTitle }}</h1>
-      <div class="grid">
-        {% for option in investmentOptions %}
-          <div class="optionCard">
-            <div>
-              <img src="{{ option.icon }}"/>
-              <h2>{{ option.name }}</h2>
-              <p>{{ option.description }}</p>
-            </div>
-            <div>
-              <button>Select</button>
-            </div>
-          </div>
-        {% endfor %}
-      </div>
-
-      <h3>Let's break things down</h3>
-      <p>Not sure what something means? Tap anything that’s
-        <a class="tooltip">
-          underlined
-          <span class="tooltip-text">You're a natural!</span>
-        </a>
-        to see a full, jargon-free, explanation.
-      </p>
-      <section>
-        <div class="grid-container">
-          <div class="details-grid">
-            <h3>Force for change</h3>
-            {% for option in investmentOptions %}
-              <div>
-                <img src="{{ option.icon }}"/>
-                <h4>{{ option.name }}</h4>
-              </div>
-            {% endfor %}
-            <h5>Impact</h5>
-            {% for option in investmentOptions %}
-              <p>
-                <a class="tooltip">
-                  {{ option.impact }}
-                  <span class="tooltip-text">What this means</span>
-                </a>
-              </p>
-            {% endfor %}
-            <h5>Zero fossil fuels</h5>
-            {% for option in investmentOptions %}
-              {# <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-labelledby="tickTitle" role="img">
-                <title id="tickTitle">A tick or checkmark</title>
-                <path d="M7.5 11.7L6 13.5L10.8 17.7L18.6 8.09998L16.8 6.59998L10.5 14.4L7.5 11.7Z" fill="{{ option.colour }}"/>
-              </svg> #}
-              <img class="svg" src="/images/icons/tick.svg"/>
-            {% endfor %}
-          </div>
+<div class="investment-options">
+  <div class="container">
+    <h1 class="center">{{ pageHeaderTitle }}</h1>
+    <div class="grid">
+      {% for option in investmentOptions %}
+      <div class="optionCard">
+        <div>
+          <img src="{{ option.icon }}" />
+          <h2>{{ option.opticalName[0] }}<br>{{ option.opticalName[1] }}</h2>
+          <p>{{ option.description }}</p>
         </div>
-      </section>
+        <div>
+          <button>Select</button>
+        </div>
+      </div>
+      {% endfor %}
     </div>
-  </div>
 
-  {% include "partials/join-cta.html" %}
+    <h3>Let's break things down</h3>
+    <p>Not sure what something means? Tap anything that’s
+      <a class="tooltip">
+        underlined
+        <span class="tooltip-text">You're a natural!</span>
+      </a>
+      to see a full, jargon-free, explanation.
+    </p>
+    <section>
+      <div class="grid-container">
+        <div class="details-grid">
+          <h3>Force for change</h3>
+          {% for option in investmentOptions %}
+          <div>
+            <img src="{{ option.icon }}" />
+            <h4>{{ option.opticalName[0] }}<br>{{ option.opticalName[1] }}</h4>
+          </div>
+          {% endfor %}
+          <h5>Impact</h5>
+          {% for option in investmentOptions %}
+          <p>
+            <a class="tooltip">
+              {{ option.impact }}
+              <span class="tooltip-text">What this means</span>
+            </a>
+          </p>
+          {% endfor %}
+          <h5>Zero fossil fuels</h5>
+          {% for option in investmentOptions %}
+          {# <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+            aria-labelledby="tickTitle" role="img">
+            <title id="tickTitle">A tick or checkmark</title>
+            <path d="M7.5 11.7L6 13.5L10.8 17.7L18.6 8.09998L16.8 6.59998L10.5 14.4L7.5 11.7Z"
+              fill="{{ option.colour }}" />
+          </svg> #}
+          <img class="svg" src="/images/icons/tick.svg" />
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+{% include "partials/join-cta.html" %}
 
 {% endblock %}
