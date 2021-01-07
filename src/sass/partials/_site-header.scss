@@ -16,6 +16,10 @@ header[role="banner"] {
     text-align: center;
     padding: 1.5rem;
 
+    p {
+      margin: 0;
+    }
+
     &.advice {
       color: $grey-500;
       background-color: $off-white-500;

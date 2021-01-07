@@ -407,6 +407,9 @@ header[role=banner] .banner {
   text-align: center;
   padding: 1.5rem;
 }
+header[role=banner] .banner p {
+  margin: 0;
+}
 header[role=banner] .banner.advice {
   color: #52524c;
   background-color: #f5f0f0;

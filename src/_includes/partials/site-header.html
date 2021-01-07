@@ -1,14 +1,14 @@
 <header role="banner">
-  <div class="container">
-    {# Conditional banner #}
-    {% if site.banner.shown %}
-      <aside class="banner {{ site.banner.adviceOrCritical }}">
-        <p>This is an important banner. Find out more
-          <a href="#">here</a>.</p>
-      </aside>
-    {% endif %}
+  {# Conditional banner #}
+  {% if site.banner.shown %}
+    <aside class="banner {{ site.banner.adviceOrCritical }}">
+      <p>This is an important banner. Find out more
+        <a href="#">here</a>.</p>
+    </aside>
+  {% endif %}
 
-    {# Regular site header content #}
+  {# Regular site header content #}
+  <div class="container">
     <section>
       <a class="logo" href="/" aria-label="{{ site.name }} — Home" style="margin-right: 2rem">
         {{ '/src/images/logo-single-line.svg' | svgContents | safe }}
