@@ -1,0 +1,40 @@
+@use "../base" as *;
+
+.also-see {
+  margin-bottom: $space-section-bottom;
+
+  ul {
+    li {
+      overflow: hidden;
+      @extend %border-style-card;
+      transition: background-color 100ms ease-in-out;
+
+      &:hover {
+        background-color: $grey-100;
+      }
+
+      a {
+        display: block;
+        padding: 1.5rem 2rem;
+        text-decoration: none;
+        font-weight: bold;
+        color: $black-500;
+        white-space: nowrap;
+      }
+
+      grid-column: span 1;
+
+      @media (min-width: $breakpoint-sm) {
+        grid-column: span 12;
+      }
+
+      @media (min-width: $breakpoint-md) {
+        grid-column: span 6;
+      }
+
+      @media (min-width: $breakpoint-lg) {
+        grid-column: span 4;
+      }
+    }
+  }
+}

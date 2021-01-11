@@ -150,6 +150,11 @@ button.clear,
   list-style-type: none;
 }
 
+.everything-we-invest-in .investment-container {
+  border: 2px solid #e6e6e5;
+  background-color: #ffffff;
+}
+
 body.mobile-menu-active {
   position: fixed;
 }
@@ -448,8 +453,6 @@ table th:only-of-type {
 }
 .everything-we-invest-in .investment-container {
   padding: 2rem;
-  border: 1px solid #e6e6e5;
-  background-color: #ffffff;
 }
 .everything-we-invest-in .investment-container h4 {
   margin-top: 0.5rem;

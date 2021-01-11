@@ -102,7 +102,7 @@
 
     .option-card-full {
       padding: 3rem;
-      border: 2px solid $grey-200;
+      @extend %border-style-card;
       display: flex;
       flex-direction: column;
 
@@ -158,10 +158,6 @@
       width: 100%;
       // overflow-x: scroll;
 
-      &:not(:first-of-type):not(:last-of-type) {
-        margin-top: 5rem;
-      }
-
       .grid-row {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
@@ -191,6 +187,12 @@
 
         .row-header {
           grid-column: span 6;
+          position: relative; // Necessary to absolutely position child heading element
+
+          h3 {
+            position: absolute;
+            bottom: 0;
+          }
 
           p {
             font-size: $font-size-sm;
@@ -258,6 +260,19 @@
         @media (min-width: $breakpoint-md) {
           gap: 2rem;
         }
+      }
+    }
+
+    &.chill {
+      background-color: $off-white-300;
+      padding: 6rem 3rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      > * {
+        text-align: center;
+        max-width: $breakpoint-sm;
       }
     }
   }

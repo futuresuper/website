@@ -150,6 +150,11 @@ button.clear,
   list-style-type: none;
 }
 
+.investment-options .grid .option-card-full {
+  border: 2px solid #e6e6e5;
+  background-color: #ffffff;
+}
+
 body.mobile-menu-active {
   position: fixed;
 }
@@ -475,7 +480,6 @@ table th:only-of-type {
 }
 .investment-options .grid .option-card-full {
   padding: 3rem;
-  border: 2px solid #e6e6e5;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -520,9 +524,6 @@ table th:only-of-type {
 .investment-options section .table-container {
   width: 100%;
 }
-.investment-options section .table-container:not(:first-of-type):not(:last-of-type) {
-  margin-top: 5rem;
-}
 .investment-options section .table-container .grid-row {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -550,6 +551,11 @@ table th:only-of-type {
 }
 .investment-options section .table-container .grid-row .row-header {
   grid-column: span 6;
+  position: relative;
+}
+.investment-options section .table-container .grid-row .row-header h3 {
+  position: absolute;
+  bottom: 0;
 }
 .investment-options section .table-container .grid-row .row-header p {
   font-size: 0.875rem;
@@ -606,6 +612,17 @@ table th:only-of-type {
   .investment-options section .table-container .grid-row {
     gap: 2rem;
   }
+}
+.investment-options section.chill {
+  background-color: #fbf9f9;
+  padding: 6rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.investment-options section.chill > * {
+  text-align: center;
+  max-width: 40rem;
 }
 
 /*# sourceMappingURL=investment-options.css.map */
