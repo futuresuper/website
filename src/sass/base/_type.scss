@@ -146,6 +146,7 @@ p {
   position: relative;
   display: inline-block;
   text-decoration: dashed underline;
+  -webkit-text-decoration: dashed underline;
 
   &:hover {
     cursor: pointer;

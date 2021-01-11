@@ -359,6 +359,7 @@ p.page-header-summary {
   position: relative;
   display: inline-block;
   text-decoration: dashed underline;
+  -webkit-text-decoration: dashed underline;
 }
 .tooltip:hover {
   cursor: pointer;

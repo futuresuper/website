@@ -1,66 +1,111 @@
 [
   {
-    "name": "Balanced Index",
-    "key": "balanced-index",
-    "opticalName": ["Balanced", "Index"],
-    "description": "Zero fossil fuels but no impact targets. Just divestment.",
+    "label": "Balanced Index",
+    "slug": "balanced-index",
+    "opticalLabel": ["Balanced", "Index"],
+    "subtitle": "Zero fossil fuels but no impact targets. Just divestment.",
     "impact": "Low",
     "fightsInequality": false,
     "investsInRenewables": false,
     "targets20Percent": false,
     "highlightInvestments": [
       {
-        "name": "RateSetter",
+        "label": "RateSetter",
         "description": "This is a tooltip description."
       }
-    ]
+    ],
+    "fee": {
+      "perAnnumPercentage": 1.478,
+      "perYearPrice": 93.6
+    },
+    "investmentObjective": 2.5,
+    "assetAllocation": {
+      "growth": 0.7,
+      "defensive": 0.3
+    },
+    "management": "passive",
+    "performance": {
+      "lastYear": 0.0679,
+      "sinceInception": 0.1077
+    },
+    "inceptionDate": "Nov 2016"
   },
   {
-    "name": "Balanced Impact",
-    "key": "balanced-impact",
-    "opticalName": ["Balanced", "Impact"],
-    "description": "Zero fossil fuels, plus investments in renewable energy and social impact projects.",
+    "label": "Balanced Impact",
+    "slug": "balanced-impact",
+    "opticalLabel": ["Balanced", "Impact"],
+    "subtitle": "Zero fossil fuels, plus investments in renewable energy and social impact projects.",
     "impact": "Medium",
     "fightsInequality": true,
     "investsInRenewables": true,
     "targets20Percent": false,
     "highlightInvestments": [
       {
-        "name": "RateSetter",
+        "label": "RateSetter",
         "description": "This is a tooltip description."
       },
       {
-        "name": "Vision Fund International",
+        "label": "Vision Fund International",
         "description": "This is a tooltip description."
       },
       {
-        "name": "IIG Solar Asset Fund",
+        "label": "IIG Solar Asset Fund",
         "description": "This is a tooltip description."
       }
-    ]
+    ],
+    "fee": {
+      "perAnnumPercentage": 1.478,
+      "perYearPrice": 93.6
+    },
+    "investmentObjective": 2.5,
+    "assetAllocation": {
+      "growth": 0.7,
+      "defensive": 0.3
+    },
+    "management": "active",
+    "performance": {
+      "lastYear": 0.0551,
+      "sinceInception": 0.0702
+    },
+    "inceptionDate": "Sept 2014"
   },
   {
-    "name": "Renewables Plus Growth",
-    "key": "renewables-plus-growth",
-    "opticalName": ["Renewables", "Plus Growth"],
-    "description": "Zero fossil fuels, highest impact. Targets 20% investment in renewable energy projects.",
+    "label": "Renewables Plus Growth",
+    "slug": "renewables-plus-growth",
+    "opticalLabel": ["Renewables", "Plus Growth"],
+    "subtitle": "Zero fossil fuels, highest impact. Targets 20% investment in renewable energy projects.",
     "impact": "High",
     "fightsInequality": true,
     "investsInRenewables": true,
     "targets20Percent": true,
     "highlightInvestments": [
       {
-        "name": "New Energy Solar",
+        "label": "New Energy Solar",
         "description": "This is a tooltip description."
       },
       {
-        "name": "Infradebt Ethical Fund",
+        "label": "Infradebt Ethical Fund",
         "description": "This is a tooltip description."
       },
       {
-        "name": "Green Squares Energy",
+        "label": "Green Squares Energy",
         "description": "This is a tooltip description."
       }
-    ]
+    ],
+    "fee": {
+      "perAnnumPercentage": 1.478,
+      "perYearPrice": 93.6
+    },
+    "investmentObjective": 2.5,
+    "assetAllocation": {
+      "growth": 0.7,
+      "defensive": 0.3
+    },
+    "management": "active",
+    "performance": {
+      "lastYear": 0.0595,
+      "sinceInception": 0.0838
+    },
+    "inceptionDate": "May 2018"
   }
 ]

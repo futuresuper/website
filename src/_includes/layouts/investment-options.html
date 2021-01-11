@@ -14,12 +14,12 @@
         {% endif %}
       </div>
       {% for option in investmentOptions %}
-        <div class="row-data option-card-mini {{ option.key }}">
-          {% set iconUrl = iconsPath + option.key + ".svg" %}
+        <div class="row-data option-card-mini {{ option.slug }}">
+          {% set iconUrl = iconsPath + option.slug + ".svg" %}
           {{ iconUrl | svgContents("fill-core") | safe }}
-          <h4>{{ option.opticalName[0] }}<br>{{ option.opticalName[1] }}</h4>
+          <h4>{{ option.opticalLabel[0] }}<br>{{ option.opticalLabel[1] }}</h4>
           {% if showButtons === "true" %}
-            <a href="{{ site.joinurl }}/?option={{ option.key }}" class="button">Select</a>
+            <a href="{{ site.joinurl }}/?option={{ option.slug }}" class="button">Select</a>
           {% endif %}
         </div>
       {% endfor %}
@@ -32,12 +32,12 @@
         <h1 class="center">{{ pageHeaderTitle }}</h1>
         <div class="grid">
           {% for option in investmentOptions %}
-            <div class="option-card-full {{ option.key }}">
-              {% set iconUrl = iconsPath + option.key + ".svg" %}
+            <div class="option-card-full {{ option.slug }}">
+              {% set iconUrl = iconsPath + option.slug + ".svg" %}
               {{ iconUrl | svgContents("fill-light") | safe }}
-              <h2>{{ option.opticalName[0] }}<br>{{ option.opticalName[1] }}</h2>
-              <p>{{ option.description }}</p>
-              <a href="{{ site.joinurl }}/?option={{ option.key }}" class="button">Select</a>
+              <h2>{{ option.opticalLabel[0] }}<br>{{ option.opticalLabel[1] }}</h2>
+              <p>{{ option.subtitle }}</p>
+              <a href="{{ site.joinurl }}/?option={{ option.slug }}" class="button">Select</a>
             </div>
           {% endfor %}
         </div>
@@ -48,21 +48,21 @@
           <div>
             <h2>Let's break things down</h2>
             <p>Not sure what something means? Tap anything that’s
-            <a class="tooltip">underlined<span class="tooltip-text">You're a natural!</span></a>
-            to see a full, jargon-free, explanation.
-          </p>
+              <a class="tooltip">underlined<span class="tooltip-text">You're a natural!</span></a>
+              to see a full, jargon-free, explanation.
+            </p>
           </div>
         </div>
 
         <div class="table-container">
-          {{ initialTableRow("false", "Force for change") }}
+          {{ initialTableRow("true", "Force for change") }}
 
           <div class="grid-row">
             <div class="row-header">
               <h5>Impact</h5>
             </div>
             {% for option in investmentOptions %}
-              <div class="row-data {{ option.key }}">
+              <div class="row-data {{ option.slug }}">
                 <p>
                   <a class="tooltip">
                     {{ option.impact }}
@@ -79,7 +79,7 @@
                 <h5>{{ dataTitle }}</h5>
               </div>
               {% for option in investmentOptions %}
-                <div class="row-data {{ option.key }}">
+                <div class="row-data {{ option.slug }}">
                   {{ "/src/images/icons/tick.svg" | svgContents("fill-core") | safe }}
                 </div>
               {% endfor %}
@@ -96,7 +96,7 @@
               <h5>Fights inequality</h5>
             </div>
             {% for option in investmentOptions %}
-              <div class="row-data {{ option.key }}">
+              <div class="row-data {{ option.slug }}">
                 {% if option.fightsInequality %}
                   {{ "/src/images/icons/tick.svg" | svgContents("fill-core") | safe }}
                 {% endif %}
@@ -109,7 +109,7 @@
               <h5>Invests in renewables</h5>
             </div>
             {% for option in investmentOptions %}
-              <div class="row-data {{ option.key }}">
+              <div class="row-data {{ option.slug }}">
                 {% if option.investsInRenewables %}
                   {{ "/src/images/icons/tick.svg" | svgContents("fill-core") | safe }}
                 {% endif %}
@@ -122,7 +122,7 @@
               <h5>Targets 20% investment in renewable energy projects</h5>
             </div>
             {% for option in investmentOptions %}
-              <div class="row-data {{ option.key }}">
+              <div class="row-data {{ option.slug }}">
                 {% if option.targets20Percent %}
                   {{ "/src/images/icons/tick.svg" | svgContents("fill-core") | safe }}
                 {% endif %}
@@ -138,12 +138,12 @@
               </p>
             </div>
             {% for option in investmentOptions %}
-              <div class="row-data highlight-investments {{ option.key }}">
+              <div class="row-data highlight-investments {{ option.slug }}">
                 <ul class="plain">
                   {% for item in option.highlightInvestments %}
                     <li>
                       <a class="tooltip">
-                        {{ item.name }}
+                        {{ item.label }}
                         <span class="tooltip-text">{{ item.description }}</span>
                       </a>
                     </li>
@@ -162,7 +162,7 @@
               <h5>How much you pay each year</h5>
             </div>
             {% for option in investmentOptions %}
-              <div class="row-data {{ option.key }}">
+              <div class="row-data {{ option.slug }}">
                 {# TODO: insert row data #}
               </div>
             {% endfor %}
