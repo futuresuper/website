@@ -338,7 +338,7 @@ p.page-header-summary {
 
 .tooltip {
   position: relative;
-  display: inline-block;
+  display: inline;
   text-decoration: dashed underline;
   -webkit-text-decoration: dashed underline;
 }
@@ -355,13 +355,13 @@ p.page-header-summary {
   color: #ffffff;
   text-align: center;
   font-size: 0.75rem;
-  padding: 0.75rem 0.5rem;
+  padding: 0.75rem;
   position: absolute;
   z-index: 1;
-  width: 10rem;
-  bottom: 100%;
+  width: 16rem;
+  margin-left: -8rem;
   left: 50%;
-  margin-left: -5rem;
+  bottom: 100%;
 }
 .tooltip .tooltip-text::after {
   content: " ";

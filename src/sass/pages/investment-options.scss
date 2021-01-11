@@ -146,17 +146,17 @@
   }
 
   section {
-    margin-top: 6rem;
+    margin-top: 12rem;
 
     .intro {
-      margin-bottom: 1.5rem;
+      margin-bottom: 1rem;
 
       @extend %set-grid-rythmn-text-a;
     }
 
     .table-container {
       width: 100%;
-      overflow-x: scroll;
+      // overflow-x: scroll;
 
       &:not(:first-of-type):not(:last-of-type) {
         margin-top: 5rem;
@@ -193,7 +193,7 @@
           grid-column: span 6;
 
           p {
-            font-size: $font-size-small;
+            font-size: $font-size-sm;
             color: $grey-400;
             margin-top: 1rem;
           }
@@ -205,10 +205,23 @@
           @extend %set-option-theme-colours;
 
           &.highlight-investments {
-            font-size: $font-size-small;
+            font-size: $font-size-sm;
 
             li:not(:last-of-type) {
               margin-bottom: 1rem;
+            }
+          }
+
+          p.caption {
+            margin-top: 0.25rem;
+            &:not(:last-of-type) {
+              margin-bottom: 2rem;
+            }
+
+            small {
+              font-size: $font-size-xs;
+              line-height: $line-height-xs;
+              color: $grey-500;
             }
           }
         }

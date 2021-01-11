@@ -1,5 +1,7 @@
 @use "colours" as *;
-$font-size-small: 0.875rem; // 14px
+$font-size-xs: 0.75rem; // 12px
+$line-height-xs: 115%;
+$font-size-sm: 0.875rem; // 14px
 
 @font-face {
   font-family: "SharpGrotesk";
@@ -144,7 +146,7 @@ p {
 
 .tooltip {
   position: relative;
-  display: inline-block;
+  display: inline;
   text-decoration: dashed underline;
   -webkit-text-decoration: dashed underline;
 
@@ -162,13 +164,13 @@ p {
     color: $white-500;
     text-align: center;
     font-size: 0.75rem;
-    padding: 0.75rem 0.5rem;
+    padding: 0.75rem;
     position: absolute;
     z-index: 1;
-    width: 10rem;
-    bottom: 100%;
+    width: 16rem;
+    margin-left: -8rem;
     left: 50%;
-    margin-left: -5rem;
+    bottom: 100%;
 
     &::after {
       content: " ";

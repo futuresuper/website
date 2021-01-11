@@ -4,29 +4,32 @@
     "slug": "balanced-index",
     "opticalLabel": ["Balanced", "Index"],
     "subtitle": "Zero fossil fuels but no impact targets. Just divestment.",
-    "impact": "Low",
+    "impact": {
+      "label": "Low",
+      "definition": "Takes your money out of harmful companies by divesting, making it more expensive for those companies to make money"
+    },
     "fightsInequality": false,
     "investsInRenewables": false,
     "targets20Percent": false,
     "highlightInvestments": [
       {
         "label": "RateSetter",
-        "description": "This is a tooltip description."
+        "definition": "Provides green loans to fund the purchase and installation of approved clean energy products, such as solar panels and home batteries"
       }
     ],
     "fee": {
-      "perAnnumPercentage": 1.478,
+      "perAnnumPercentage": 0.874,
       "perYearPrice": 93.6
     },
     "investmentObjective": 2.5,
     "assetAllocation": {
-      "growth": 0.7,
-      "defensive": 0.3
+      "growth": 70,
+      "defensive": 30
     },
     "management": "passive",
     "performance": {
-      "lastYear": 0.0679,
-      "sinceInception": 0.1077
+      "lastYear": 6.79,
+      "sinceInception": 10.77
     },
     "inceptionDate": "Nov 2016"
   },
@@ -35,22 +38,25 @@
     "slug": "balanced-impact",
     "opticalLabel": ["Balanced", "Impact"],
     "subtitle": "Zero fossil fuels, plus investments in renewable energy and social impact projects.",
-    "impact": "Medium",
+    "impact": {
+      "label": "Medium",
+      "definition": "Takes your money out of harmful companies by divesting, and directs it to companies and projects fighting inequality"
+    },
     "fightsInequality": true,
     "investsInRenewables": true,
     "targets20Percent": false,
     "highlightInvestments": [
       {
         "label": "RateSetter",
-        "description": "This is a tooltip description."
+        "definition": "Provides green loans to fund the purchase and installation of clean energy products"
       },
       {
         "label": "Vision Fund International",
-        "description": "This is a tooltip description."
+        "definition": "Micro-finance products that promote financial inclusion in rural areas, particularly for people living in poverty"
       },
       {
         "label": "IIG Solar Asset Fund",
-        "description": "This is a tooltip description."
+        "definition": "An unlisted portfolio of up to $180m in Australian solar infrastructure"
       }
     ],
     "fee": {
@@ -59,13 +65,13 @@
     },
     "investmentObjective": 2.5,
     "assetAllocation": {
-      "growth": 0.7,
-      "defensive": 0.3
+      "growth": 65,
+      "defensive": 35
     },
     "management": "active",
     "performance": {
-      "lastYear": 0.0551,
-      "sinceInception": 0.0702
+      "lastYear": 5.51,
+      "sinceInception": 7.02
     },
     "inceptionDate": "Sept 2014"
   },
@@ -74,37 +80,40 @@
     "slug": "renewables-plus-growth",
     "opticalLabel": ["Renewables", "Plus Growth"],
     "subtitle": "Zero fossil fuels, highest impact. Targets 20% investment in renewable energy projects.",
-    "impact": "High",
+    "impact": {
+      "label": "High",
+      "definition": "Takes your money out of harmful companies by divesting, and directs it to wind farms, solar farms and other companies fighting climate change"
+    },
     "fightsInequality": true,
     "investsInRenewables": true,
     "targets20Percent": true,
     "highlightInvestments": [
       {
         "label": "New Energy Solar",
-        "description": "This is a tooltip description."
+        "definition": "Owns and manages large scale solar generation facilities across Australia and the United States"
       },
       {
         "label": "Infradebt Ethical Fund",
-        "description": "This is a tooltip description."
+        "definition": "Provides loans to renewable energy and social infrastructure projects in Australia"
       },
       {
         "label": "Green Squares Energy",
-        "description": "This is a tooltip description."
+        "definition": "Organises leases, loans, and rentals of solar energy"
       }
     ],
     "fee": {
-      "perAnnumPercentage": 1.478,
+      "perAnnumPercentage": 1.488,
       "perYearPrice": 93.6
     },
     "investmentObjective": 2.5,
     "assetAllocation": {
-      "growth": 0.7,
-      "defensive": 0.3
+      "growth": 75,
+      "defensive": 25
     },
     "management": "active",
     "performance": {
-      "lastYear": 0.0595,
-      "sinceInception": 0.0838
+      "lastYear": 5.95,
+      "sinceInception": 8.38
     },
     "inceptionDate": "May 2018"
   }

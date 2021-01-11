@@ -357,7 +357,7 @@ p.page-header-summary {
 
 .tooltip {
   position: relative;
-  display: inline-block;
+  display: inline;
   text-decoration: dashed underline;
   -webkit-text-decoration: dashed underline;
 }
@@ -374,13 +374,13 @@ p.page-header-summary {
   color: #ffffff;
   text-align: center;
   font-size: 0.75rem;
-  padding: 0.75rem 0.5rem;
+  padding: 0.75rem;
   position: absolute;
   z-index: 1;
-  width: 10rem;
-  bottom: 100%;
+  width: 16rem;
+  margin-left: -8rem;
   left: 50%;
-  margin-left: -5rem;
+  bottom: 100%;
 }
 .tooltip .tooltip-text::after {
   content: " ";
@@ -512,14 +512,13 @@ table th:only-of-type {
   color: #ffffff;
 }
 .investment-options section {
-  margin-top: 6rem;
+  margin-top: 12rem;
 }
 .investment-options section .intro {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 .investment-options section .table-container {
   width: 100%;
-  overflow-x: scroll;
 }
 .investment-options section .table-container:not(:first-of-type):not(:last-of-type) {
   margin-top: 5rem;
@@ -566,6 +565,17 @@ table th:only-of-type {
 }
 .investment-options section .table-container .grid-row .row-data.highlight-investments li:not(:last-of-type) {
   margin-bottom: 1rem;
+}
+.investment-options section .table-container .grid-row .row-data p.caption {
+  margin-top: 0.25rem;
+}
+.investment-options section .table-container .grid-row .row-data p.caption:not(:last-of-type) {
+  margin-bottom: 2rem;
+}
+.investment-options section .table-container .grid-row .row-data p.caption small {
+  font-size: 0.75rem;
+  line-height: 115%;
+  color: #52524c;
 }
 .investment-options section .table-container .grid-row .option-card-mini {
   display: flex;
