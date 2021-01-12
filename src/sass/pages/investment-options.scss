@@ -180,14 +180,14 @@
       }
 
       .grid-row {
-        padding: 2rem 0;
+        padding: 1.5rem 0;
         display: grid;
-        gap: 2rem;
+        gap: 2.5rem;
 
         &:not(.solo) {
           @media (max-width: $breakpoint-sm) {
             grid-template-columns: repeat(4, 25vw);
-            width: calc(25vw * 4 + 3 * 2rem);
+            width: calc(25vw * 4 + 3 * 2.5rem);
           }
         }
 
@@ -223,10 +223,14 @@
 
           h5,
           p {
-            font-size: 1rem;
+            font-size: $font-size-sm;
             line-height: 100%;
             margin: 0;
             padding: 0;
+
+            @media (min-width: $breakpoint-sm) {
+              font-size: 1rem;
+            }
           }
         }
 

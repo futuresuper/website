@@ -554,14 +554,14 @@ table th:only-of-type {
   }
 }
 .investment-options section .table-container .grid-row {
-  padding: 2rem 0;
+  padding: 1.5rem 0;
   display: grid;
-  gap: 2rem;
+  gap: 2.5rem;
 }
 @media (max-width: 40rem) {
   .investment-options section .table-container .grid-row:not(.solo) {
     grid-template-columns: repeat(4, 25vw);
-    width: calc(25vw * 4 + 3 * 2rem);
+    width: calc(25vw * 4 + 3 * 2.5rem);
   }
 }
 @media (min-width: 40rem) {
@@ -594,10 +594,18 @@ table th:only-of-type {
 .investment-options section .table-container .grid-row .row-header p,
 .investment-options section .table-container .grid-row .row-data h5,
 .investment-options section .table-container .grid-row .row-data p {
-  font-size: 1rem;
+  font-size: 0.875rem;
   line-height: 100%;
   margin: 0;
   padding: 0;
+}
+@media (min-width: 40rem) {
+  .investment-options section .table-container .grid-row .row-header h5,
+.investment-options section .table-container .grid-row .row-header p,
+.investment-options section .table-container .grid-row .row-data h5,
+.investment-options section .table-container .grid-row .row-data p {
+    font-size: 1rem;
+  }
 }
 .investment-options section .table-container .grid-row .row-header {
   grid-column: span 1;
