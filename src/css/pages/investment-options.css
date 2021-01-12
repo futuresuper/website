@@ -529,9 +529,11 @@ table th:only-of-type {
 .investment-options section .table-container {
   position: relative;
 }
-.investment-options section .table-container:not(.solo) {
-  overflow-x: scroll;
-  padding-left: 1rem;
+@media (max-width: 40rem) {
+  .investment-options section .table-container:not(.solo) {
+    overflow-x: scroll;
+    padding-left: 1rem;
+  }
 }
 .investment-options section .table-container.solo {
   overflow-x: visible;
@@ -556,9 +558,11 @@ table th:only-of-type {
   display: grid;
   gap: 2rem;
 }
-.investment-options section .table-container .grid-row:not(.solo) {
-  grid-template-columns: repeat(4, 25vw);
-  width: calc(25vw * 4 + 3 * 2rem);
+@media (max-width: 40rem) {
+  .investment-options section .table-container .grid-row:not(.solo) {
+    grid-template-columns: repeat(4, 25vw);
+    width: calc(25vw * 4 + 3 * 2rem);
+  }
 }
 @media (min-width: 40rem) {
   .investment-options section .table-container .grid-row {
@@ -711,11 +715,16 @@ table th:only-of-type {
   transition: opacity 200ms ease-in-out;
   animation: bobble 1.5s infinite alternate;
 }
+@media (min-width: 40rem) {
+  .investment-options section .table-container .scroll-hint {
+    display: none;
+  }
+}
 .investment-options section .table-container .scroll-hint.active {
   opacity: 0.9;
 }
 .investment-options section .table-container .scroll-hint.hidden {
-  visibility: hidden;
+  display: none;
 }
 @keyframes bobble {
   0% {
