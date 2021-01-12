@@ -120,6 +120,10 @@ button,
   transition: background-color 100ms ease-in-out;
   text-align: center;
 }
+button.full-width,
+.button.full-width {
+  padding: 1rem 0;
+}
 button.primary,
 .button.primary {
   color: #ffffff;

@@ -140,6 +140,7 @@
 
     .button {
       color: $white-500;
+      // padding: 1rem 0;
     }
   }
 
@@ -153,50 +154,24 @@
     }
 
     .table-container {
-      position: relative; // Required for scroll-hint positioning
-
-      &:not(.solo) {
-        @media (max-width: $breakpoint-sm) {
-          overflow-x: scroll;
-          padding-left: $space-page-padding-x-sm;
-        }
-      }
-
-      &.solo {
-        overflow-x: visible;
-        padding: 0 $space-page-padding-x-sm;
-      }
-
-      @media (min-width: $breakpoint-sm) {
-        overflow-x: visible;
-        max-width: $breakpoint-lg;
-        margin-right: auto;
-        margin-left: auto;
-        padding: 0 $space-page-padding-x-sm;
-      }
+      overflow-x: visible;
+      max-width: $breakpoint-lg;
+      margin-right: auto;
+      margin-left: auto;
+      padding: 0 $space-page-padding-x-sm;
 
       @media (min-width: $breakpoint-md) {
         padding: 0 $space-page-padding-x-md;
       }
 
       .grid-row {
-        padding: 1.5rem 0;
+        padding: 2rem 0;
         display: grid;
-        gap: 2.5rem;
-
-        &:not(.solo) {
-          @media (max-width: $breakpoint-sm) {
-            grid-template-columns: repeat(4, 25vw);
-            width: calc(25vw * 4 + 3 * 2.5rem);
-          }
-        }
+        grid-template-columns: repeat(12, 1fr);
+        gap: 1.5rem;
 
         @media (min-width: $breakpoint-sm) {
           padding: 1.5rem 0;
-
-          grid-template-columns: repeat(12, 1fr);
-          gap: 1.5rem;
-          width: auto;
         }
 
         &:not(:last-of-type) {
@@ -209,8 +184,6 @@
 
         &.solo {
           @media (max-width: $breakpoint-sm) {
-            grid-template-columns: repeat(3, 1fr);
-
             .row-header {
               display: none;
             }
@@ -235,7 +208,8 @@
         }
 
         .row-header {
-          grid-column: span 1;
+          grid-column: span 12;
+          grid-row: 1;
           @media (min-width: $breakpoint-sm) {
             grid-column: span 3;
           }
@@ -258,9 +232,11 @@
         }
 
         .row-data {
-          grid-column: span 1;
+          grid-column: span 4;
+          grid-row: 2;
           @media (min-width: $breakpoint-sm) {
             grid-column: span 3;
+            grid-row: 1;
           }
           @media (min-width: $breakpoint-md) {
             grid-column: span 2;
@@ -315,7 +291,7 @@
           .button {
             color: $white-500;
             font-size: 1rem;
-            display: none;
+            // display: none;
 
             @media (min-width: $breakpoint-md) {
               display: initial;
@@ -325,8 +301,8 @@
         &.solo {
           .option-card-mini {
             .button {
-              display: initial;
-              padding: 1rem 0;
+              // display: initial;
+              // padding: 1rem 0;
             }
           }
         }
@@ -338,52 +314,6 @@
         // Large screens default = 6 columns (span 2 of 12)
         @media (min-width: $breakpoint-md) {
           gap: 2rem;
-        }
-      }
-
-      .scroll-hint {
-        z-index: 2;
-        position: absolute;
-        opacity: 0;
-        background-color: $yellow-500;
-        top: calc(10rem - 10rem / 2);
-        right: 0;
-        width: 10rem;
-        height: 10rem;
-        padding: 2.5rem 2.5rem 2.5rem 3.5rem;
-        border-radius: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        transition: opacity 200ms ease-in-out;
-        animation: bobble 1.5s infinite alternate;
-
-        @media (min-width: $breakpoint-sm) {
-          display: none;
-        }
-
-        &.active {
-          opacity: 0.9;
-        }
-
-        &.hidden {
-          display: none;
-        }
-
-        @keyframes bobble {
-          0% {
-            transform: translateX(1rem);
-          }
-          100% {
-            transform: translateX(2rem);
-          }
-        }
-
-        p {
-          margin: 0;
-          font-size: $font-size-xs;
-          font-family: $font-stack-monospace;
-          line-height: 110%;
         }
       }
     }
