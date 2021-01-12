@@ -45,8 +45,8 @@
     <div class="intro grid container">
       <div>
         <h2>Let's break things down</h2>
-        <p>Not sure what something means? Tap anything that’s
-          <a class="tooltip">underlined<span class="tooltip-text">You're a natural!</span></a>
+        <p>Not sure what something means? Tap anything with a
+          <a class="tooltip">dotted underline<span class="tooltip-text">You're a natural!</span></a>
           to see a full, jargon-free, explanation.
         </p>
       </div>
@@ -168,7 +168,7 @@
             </p>
             <p class="caption">
               {% set yearlyFee = 50000 * (option.fee.perAnnumPercentage / 100) + option.fee.perYearPrice %}
-              <small>${{ yearlyFee | currency }} smaller year on a balance of $50,000</small>
+              <small>${{ yearlyFee | currency }} per year on a balance of $50,000</small>
             </p>
           </div>
         {% endfor %}
