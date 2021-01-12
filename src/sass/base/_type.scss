@@ -173,7 +173,10 @@ p {
     margin-left: -8rem;
     left: 50%;
     bottom: 100%;
-    display: none; //TODO remove temp
+    @media (max-width: 639px) {
+      //TODO remove temp
+      display: none;
+    }
 
     &::after {
       content: " ";

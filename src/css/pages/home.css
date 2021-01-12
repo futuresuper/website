@@ -371,7 +371,11 @@ p.page-header-summary {
   margin-left: -8rem;
   left: 50%;
   bottom: 100%;
-  display: none;
+}
+@media (max-width: 639px) {
+  .tooltip .tooltip-text {
+    display: none;
+  }
 }
 .tooltip .tooltip-text::after {
   content: " ";

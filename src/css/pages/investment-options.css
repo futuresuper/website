@@ -154,7 +154,7 @@ button.clear,
   list-style-type: none;
 }
 
-.investment-options .option-card-full {
+.investment-options header .option-card-full {
   border: 2px solid #e6e6e5;
   background-color: #ffffff;
 }
@@ -221,21 +221,21 @@ main > article.container {
   }
 }
 
-.investment-options section .intro > * {
+.investment-options .intro > * {
   grid-column: span 1;
 }
 @media (min-width: 40rem) {
-  .investment-options section .intro > * {
+  .investment-options .intro > * {
     grid-column: span 12;
   }
 }
 @media (min-width: 48rem) {
-  .investment-options section .intro > * {
+  .investment-options .intro > * {
     grid-column: span 9;
   }
 }
 @media (min-width: 80rem) {
-  .investment-options section .intro > * {
+  .investment-options .intro > * {
     grid-column: span 6;
   }
 }
@@ -395,7 +395,11 @@ p.page-header-summary {
   margin-left: -8rem;
   left: 50%;
   bottom: 100%;
-  display: none;
+}
+@media (max-width: 639px) {
+  .tooltip .tooltip-text {
+    display: none;
+  }
 }
 .tooltip .tooltip-text::after {
   content: " ";
@@ -423,266 +427,304 @@ table th:only-of-type {
   padding-right: 3rem;
 }
 
-.investment-options section .table-container .grid-row .balanced-index.row-data, .investment-options .balanced-index.option-card-full {
+.investment-options .table-container .grid-row .balanced-index.row-data, .investment-options header .balanced-index.option-card-full {
   color: #3c1631;
 }
-.investment-options section .table-container .grid-row .balanced-index.row-data svg.fill-core .fill-target, .investment-options .balanced-index.option-card-full svg.fill-core .fill-target {
+.investment-options .table-container .grid-row .balanced-index.row-data svg.fill-core .fill-target, .investment-options header .balanced-index.option-card-full svg.fill-core .fill-target {
   fill: #c445a2;
 }
-.investment-options section .table-container .grid-row .balanced-index.row-data svg.fill-core .stroke-target, .investment-options .balanced-index.option-card-full svg.fill-core .stroke-target {
+.investment-options .table-container .grid-row .balanced-index.row-data svg.fill-core .stroke-target, .investment-options header .balanced-index.option-card-full svg.fill-core .stroke-target {
   stroke: #c445a2;
 }
-.investment-options section .table-container .grid-row .balanced-index.row-data svg.fill-light .stroke-target, .investment-options .balanced-index.option-card-full svg.fill-light .stroke-target {
+.investment-options .table-container .grid-row .balanced-index.row-data svg.fill-light .stroke-target, .investment-options header .balanced-index.option-card-full svg.fill-light .stroke-target {
   stroke: #dc91c8;
 }
-.investment-options section .table-container .grid-row .balanced-index.row-data .button, .investment-options .balanced-index.option-card-full .button {
+.investment-options .table-container .grid-row .balanced-index.row-data .button, .investment-options header .balanced-index.option-card-full .button {
   background-color: #c445a2;
 }
-.investment-options section .table-container .grid-row .balanced-index.row-data .button:hover, .investment-options .balanced-index.option-card-full .button:hover {
+.investment-options .table-container .grid-row .balanced-index.row-data .button:hover, .investment-options header .balanced-index.option-card-full .button:hover {
   background-color: #3c1631;
 }
-.investment-options section .table-container .grid-row .balanced-impact.row-data, .investment-options .balanced-impact.option-card-full {
+.investment-options .table-container .grid-row .balanced-impact.row-data, .investment-options header .balanced-impact.option-card-full {
   color: #002166;
 }
-.investment-options section .table-container .grid-row .balanced-impact.row-data svg.fill-core .fill-target, .investment-options .balanced-impact.option-card-full svg.fill-core .fill-target {
+.investment-options .table-container .grid-row .balanced-impact.row-data svg.fill-core .fill-target, .investment-options header .balanced-impact.option-card-full svg.fill-core .fill-target {
   fill: #0a5aff;
 }
-.investment-options section .table-container .grid-row .balanced-impact.row-data svg.fill-core .stroke-target, .investment-options .balanced-impact.option-card-full svg.fill-core .stroke-target {
+.investment-options .table-container .grid-row .balanced-impact.row-data svg.fill-core .stroke-target, .investment-options header .balanced-impact.option-card-full svg.fill-core .stroke-target {
   stroke: #0a5aff;
 }
-.investment-options section .table-container .grid-row .balanced-impact.row-data svg.fill-light .stroke-target, .investment-options .balanced-impact.option-card-full svg.fill-light .stroke-target {
+.investment-options .table-container .grid-row .balanced-impact.row-data svg.fill-light .stroke-target, .investment-options header .balanced-impact.option-card-full svg.fill-light .stroke-target {
   stroke: #a3c1ff;
 }
-.investment-options section .table-container .grid-row .balanced-impact.row-data .button, .investment-options .balanced-impact.option-card-full .button {
+.investment-options .table-container .grid-row .balanced-impact.row-data .button, .investment-options header .balanced-impact.option-card-full .button {
   background-color: #0a5aff;
 }
-.investment-options section .table-container .grid-row .balanced-impact.row-data .button:hover, .investment-options .balanced-impact.option-card-full .button:hover {
+.investment-options .table-container .grid-row .balanced-impact.row-data .button:hover, .investment-options header .balanced-impact.option-card-full .button:hover {
   background-color: #002166;
 }
-.investment-options section .table-container .grid-row .renewables-plus-growth.row-data, .investment-options .renewables-plus-growth.option-card-full {
+.investment-options .table-container .grid-row .renewables-plus-growth.row-data, .investment-options header .renewables-plus-growth.option-card-full {
   color: #025018;
 }
-.investment-options section .table-container .grid-row .renewables-plus-growth.row-data svg.fill-core .fill-target, .investment-options .renewables-plus-growth.option-card-full svg.fill-core .fill-target {
+.investment-options .table-container .grid-row .renewables-plus-growth.row-data svg.fill-core .fill-target, .investment-options header .renewables-plus-growth.option-card-full svg.fill-core .fill-target {
   fill: #2bb151;
 }
-.investment-options section .table-container .grid-row .renewables-plus-growth.row-data svg.fill-core .stroke-target, .investment-options .renewables-plus-growth.option-card-full svg.fill-core .stroke-target {
+.investment-options .table-container .grid-row .renewables-plus-growth.row-data svg.fill-core .stroke-target, .investment-options header .renewables-plus-growth.option-card-full svg.fill-core .stroke-target {
   stroke: #2bb151;
 }
-.investment-options section .table-container .grid-row .renewables-plus-growth.row-data svg.fill-light .stroke-target, .investment-options .renewables-plus-growth.option-card-full svg.fill-light .stroke-target {
+.investment-options .table-container .grid-row .renewables-plus-growth.row-data svg.fill-light .stroke-target, .investment-options header .renewables-plus-growth.option-card-full svg.fill-light .stroke-target {
   stroke: #97ddab;
 }
-.investment-options section .table-container .grid-row .renewables-plus-growth.row-data .button, .investment-options .renewables-plus-growth.option-card-full .button {
+.investment-options .table-container .grid-row .renewables-plus-growth.row-data .button, .investment-options header .renewables-plus-growth.option-card-full .button {
   background-color: #2bb151;
 }
-.investment-options section .table-container .grid-row .renewables-plus-growth.row-data .button:hover, .investment-options .renewables-plus-growth.option-card-full .button:hover {
+.investment-options .table-container .grid-row .renewables-plus-growth.row-data .button:hover, .investment-options header .renewables-plus-growth.option-card-full .button:hover {
   background-color: #025018;
 }
 
-.investment-options h1 {
+.investment-options header {
+  margin-bottom: 6rem;
+}
+.investment-options header h1 {
   padding: 3rem 0;
 }
-.investment-options .option-card-full {
+.investment-options header .option-card-full {
   padding: 3rem;
   display: flex;
   flex-direction: column;
   text-align: center;
 }
-.investment-options .option-card-full svg {
+.investment-options header .option-card-full svg {
   align-self: center;
   margin-bottom: 1rem;
   width: 6rem;
   height: 6rem;
 }
 @media (min-width: 40rem) {
-  .investment-options .option-card-full {
+  .investment-options header .option-card-full {
     grid-column: span 12;
     padding: 1.5rem;
   }
 }
 @media (min-width: 48rem) {
-  .investment-options .option-card-full {
+  .investment-options header .option-card-full {
     grid-column: span 4;
   }
-  .investment-options .option-card-full svg {
+  .investment-options header .option-card-full svg {
     width: 9rem;
     height: 9rem;
   }
 }
 @media (min-width: 80rem) {
-  .investment-options .option-card-full {
+  .investment-options header .option-card-full {
     padding: 3rem;
   }
 }
-.investment-options .option-card-full h2 {
+.investment-options header .option-card-full h2 {
   font-size: 1.8rem;
   font-weight: 700;
   margin-bottom: 2rem;
 }
-.investment-options .option-card-full p {
+.investment-options header .option-card-full p {
   flex-grow: 1;
 }
-.investment-options .option-card-full .button {
+.investment-options header .option-card-full .button {
   color: #ffffff;
 }
-.investment-options section {
-  margin-top: 12rem;
-}
-.investment-options section .intro {
+.investment-options .intro {
   margin-bottom: 1rem;
 }
-.investment-options section .table-container {
+.investment-options .table-container {
   overflow-x: visible;
   max-width: 80rem;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 6rem;
   padding: 0 1rem;
 }
 @media (min-width: 48rem) {
-  .investment-options section .table-container {
+  .investment-options .table-container {
     padding: 0 2rem;
   }
 }
-.investment-options section .table-container .grid-row {
-  padding: 2rem 0;
+.investment-options .table-container:last-of-type {
+  display: none;
+}
+@media (min-width: 40rem) {
+  .investment-options .table-container:last-of-type {
+    display: block;
+    margin-top: -6rem;
+  }
+}
+.investment-options .table-container .grid-row {
+  padding: 1.5rem 0;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 1.5rem;
 }
-@media (min-width: 40rem) {
-  .investment-options section .table-container .grid-row {
-    padding: 1.5rem 0;
-  }
-}
-.investment-options section .table-container .grid-row:not(:last-of-type) {
+.investment-options .table-container .grid-row:not(:last-of-type) {
   border-bottom: 0.125rem solid #f5f5f4;
 }
-.investment-options section .table-container .grid-row:first-of-type:not(:only-of-type) {
+.investment-options .table-container .grid-row:first-of-type:not(:only-of-type) {
+  position: sticky;
+  top: -2rem;
+  background-color: #ffffff;
+  z-index: 2;
   border-bottom: 0.125rem solid #dadad7;
 }
-@media (max-width: 40rem) {
-  .investment-options section .table-container .grid-row.solo .row-header {
-    display: none;
+@media (min-width: 40rem) {
+  .investment-options .table-container .grid-row:first-of-type:not(:only-of-type) {
+    position: static;
+    top: 0;
+    background-color: none;
+    z-index: auto;
   }
 }
-.investment-options section .table-container .grid-row .row-header,
-.investment-options section .table-container .grid-row .row-data {
+.investment-options .table-container .grid-row .row-header,
+.investment-options .table-container .grid-row .row-data {
   justify-items: start;
 }
-.investment-options section .table-container .grid-row .row-header h5,
-.investment-options section .table-container .grid-row .row-header p,
-.investment-options section .table-container .grid-row .row-data h5,
-.investment-options section .table-container .grid-row .row-data p {
+.investment-options .table-container .grid-row .row-header h5,
+.investment-options .table-container .grid-row .row-header p,
+.investment-options .table-container .grid-row .row-data h5,
+.investment-options .table-container .grid-row .row-data p {
   font-size: 0.875rem;
-  line-height: 100%;
+  line-height: 125%;
   margin: 0;
   padding: 0;
 }
 @media (min-width: 40rem) {
-  .investment-options section .table-container .grid-row .row-header h5,
-.investment-options section .table-container .grid-row .row-header p,
-.investment-options section .table-container .grid-row .row-data h5,
-.investment-options section .table-container .grid-row .row-data p {
+  .investment-options .table-container .grid-row .row-header h5,
+.investment-options .table-container .grid-row .row-header p,
+.investment-options .table-container .grid-row .row-data h5,
+.investment-options .table-container .grid-row .row-data p {
     font-size: 1rem;
+    line-height: 100%;
   }
 }
-.investment-options section .table-container .grid-row .row-header {
+.investment-options .table-container .grid-row .row-header h5,
+.investment-options .table-container .grid-row .row-data h5 {
+  font-size: 1rem;
+}
+.investment-options .table-container .grid-row .row-header {
   grid-column: span 12;
   grid-row: 1;
   position: relative;
 }
 @media (min-width: 40rem) {
-  .investment-options section .table-container .grid-row .row-header {
+  .investment-options .table-container .grid-row .row-header {
     grid-column: span 3;
   }
 }
 @media (min-width: 48rem) {
-  .investment-options section .table-container .grid-row .row-header {
+  .investment-options .table-container .grid-row .row-header {
     grid-column: span 6;
   }
 }
-.investment-options section .table-container .grid-row .row-header h3 {
+.investment-options .table-container .grid-row .row-header h3 {
   position: absolute;
   bottom: 0;
 }
-.investment-options section .table-container .grid-row .row-header p {
+.investment-options .table-container .grid-row .row-header p {
   font-size: 0.875rem;
   color: #76766f;
   margin-top: 1rem;
 }
-.investment-options section .table-container .grid-row .row-data {
+.investment-options .table-container .grid-row .row-data {
   grid-column: span 4;
   grid-row: 2;
   font-family: "JetBrainsMono", monospace;
 }
 @media (min-width: 40rem) {
-  .investment-options section .table-container .grid-row .row-data {
+  .investment-options .table-container .grid-row .row-data {
     grid-column: span 3;
     grid-row: 1;
   }
 }
 @media (min-width: 48rem) {
-  .investment-options section .table-container .grid-row .row-data {
+  .investment-options .table-container .grid-row .row-data {
     grid-column: span 2;
   }
 }
-.investment-options section .table-container .grid-row .row-data.highlight-investments {
-  font-size: 0.875rem;
+.investment-options .table-container .grid-row .row-data.highlight-investments {
+  font-size: 0.75rem;
 }
-.investment-options section .table-container .grid-row .row-data.highlight-investments li:not(:last-of-type) {
+@media (min-width: 40rem) {
+  .investment-options .table-container .grid-row .row-data.highlight-investments {
+    font-size: 0.875rem;
+  }
+}
+.investment-options .table-container .grid-row .row-data.highlight-investments li:not(:last-of-type) {
   margin-bottom: 1rem;
 }
-.investment-options section .table-container .grid-row .row-data p.caption {
+.investment-options .table-container .grid-row .row-data p.caption {
   margin-top: 0.25rem;
 }
-.investment-options section .table-container .grid-row .row-data p.caption:not(:last-of-type) {
+.investment-options .table-container .grid-row .row-data p.caption:not(:last-of-type) {
   margin-bottom: 2rem;
 }
-.investment-options section .table-container .grid-row .row-data p.caption small {
-  font-size: 0.75rem;
-  line-height: 115%;
-  color: #52524c;
+.investment-options .table-container .grid-row .row-data p.caption small {
+  font-size: 0.6875rem;
+  line-height: 102%;
+  color: #76766f;
 }
-.investment-options section .table-container .grid-row .option-card-mini {
+@media (min-width: 40rem) {
+  .investment-options .table-container .grid-row .row-data p.caption small {
+    font-size: 0.75rem;
+    line-height: 115%;
+    color: #52524c;
+  }
+}
+.investment-options .table-container .grid-row .option-card-mini {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: stretch;
   font-family: "Helvetica Neue", "Helvetica", sans-serif;
 }
-.investment-options section .table-container .grid-row .option-card-mini svg {
-  width: 3rem;
-  height: 3rem;
-  margin-bottom: 0.25rem;
+.investment-options .table-container .grid-row .option-card-mini svg {
+  width: 2rem;
+  height: 2rem;
+  margin-bottom: 0.1rem;
 }
-.investment-options section .table-container .grid-row .option-card-mini h4 {
+@media (min-width: 40rem) {
+  .investment-options .table-container .grid-row .option-card-mini svg {
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 0.25rem;
+  }
+}
+.investment-options .table-container .grid-row .option-card-mini h4 {
   margin-bottom: 1rem;
   font-size: 0.875rem;
 }
 @media (min-width: 48rem) {
-  .investment-options section .table-container .grid-row .option-card-mini h4 {
+  .investment-options .table-container .grid-row .option-card-mini h4 {
     font-size: 1.125rem;
   }
 }
-.investment-options section .table-container .grid-row .option-card-mini .button {
+.investment-options .table-container .grid-row .option-card-mini .button {
   color: #ffffff;
-  font-size: 1rem;
+  font-size: 0.875rem;
+  padding: 0.75rem 0;
 }
-@media (min-width: 48rem) {
-  .investment-options section .table-container .grid-row .option-card-mini .button {
-    display: initial;
+@media (min-width: 40rem) {
+  .investment-options .table-container .grid-row .option-card-mini .button {
+    font-size: 1rem;
+    padding: 1rem 0;
   }
 }
 @media (min-width: 40rem) {
-  .investment-options section .table-container .grid-row {
+  .investment-options .table-container .grid-row {
     gap: 1.5rem;
   }
 }
 @media (min-width: 48rem) {
-  .investment-options section .table-container .grid-row {
+  .investment-options .table-container .grid-row {
     gap: 2rem;
   }
 }
-.investment-options section.chill {
+.investment-options .chill {
   margin-bottom: 6rem;
   background-color: #fbf9f9;
   padding: 6rem 3rem;
@@ -690,7 +732,7 @@ table th:only-of-type {
   flex-direction: column;
   align-items: center;
 }
-.investment-options section.chill > * {
+.investment-options .chill > * {
   text-align: center;
   max-width: 40rem;
 }
