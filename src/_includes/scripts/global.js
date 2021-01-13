@@ -87,12 +87,10 @@ pageTooltips.forEach((tooltip) => {
 
     // Left side is out of viewoprt
     if (bounding.left < 0) {
-      console.log("Left side is out of viewport");
       tooltipText.classList.add("left");
     }
     // Right side is out of viewport
     if (bounding.right > (window.innerWidth || document.documentElement.clientWidth)) {
-      console.log("Right side is out of viewport");
       tooltipText.classList.add("right");
     }
   }
