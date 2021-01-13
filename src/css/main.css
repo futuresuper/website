@@ -361,27 +361,25 @@ p.page-header-summary {
   cursor: pointer;
   color: #0a5aff;
 }
+.tooltip:hover .tooltip-text {
+  display: block;
+}
 .tooltip .tooltip-text {
   font-family: "JetBrainsMono", monospace;
   font-weight: 600;
   letter-spacing: -1%;
-  visibility: hidden;
+  display: none;
   background-color: #000000;
   color: #ffffff;
   text-align: center;
   font-size: 0.75rem;
   padding: 0.75rem;
   position: absolute;
-  z-index: 1;
+  z-index: 3;
   width: 16rem;
   margin-left: -8rem;
   left: 50%;
   bottom: 100%;
-}
-@media (max-width: 639px) {
-  .tooltip .tooltip-text {
-    display: none;
-  }
 }
 .tooltip .tooltip-text::after {
   content: " ";
@@ -393,9 +391,6 @@ p.page-header-summary {
   border-width: 5px;
   border-style: solid;
   border-color: #140f14 transparent transparent transparent;
-}
-.tooltip:hover .tooltip-text {
-  visibility: visible;
 }
 
 table {
