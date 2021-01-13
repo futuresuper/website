@@ -364,7 +364,7 @@ table th:only-of-type {
   -webkit-text-decoration: dotted underline;
 }
 .tooltip:hover {
-  cursor: pointer;
+  cursor: help;
   color: #0a5aff;
 }
 .tooltip:hover .tooltip-text {
@@ -421,31 +421,6 @@ table th:only-of-type {
   /* Style the speech bubbles */
   /* Speech bubble arrows */
   /* Style the example bullets */
-}
-.how-we-invest h1 {
-  font-size: 10rem;
-  line-height: 100%;
-}
-.how-we-invest header {
-  height: 80vh;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.how-we-invest section.loud p {
-  font-size: 4rem;
-  line-height: 110%;
-  font-weight: 500;
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-.how-we-invest section#part-one {
-  margin-top: 20vh;
-}
-.how-we-invest section#part-two {
-  margin-top: 20vh;
-  height: 90vh;
 }
 .how-we-invest article > header {
   text-align: center;
