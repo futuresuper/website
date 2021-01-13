@@ -87,8 +87,8 @@ pageTooltips.forEach((tooltip) => {
     if (bounding.left < 0) {
       tooltipText.classList.add("left");
     }
-    // Right side is out of viewport
-    if (bounding.right > (window.innerWidth || document.documentElement.clientWidth)) {
+    // Right side is out of viewport (including scrollbar)
+    if (bounding.right > document.documentElement.clientWidth) {
       tooltipText.classList.add("right");
     }
   }
