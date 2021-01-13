@@ -351,6 +351,17 @@ p.page-header-summary {
   color: #f04b23;
 }
 
+table {
+  text-align: left;
+  border-collapse: separate;
+  border-spacing: 0 1rem;
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+}
+table th:only-of-type {
+  padding-right: 3rem;
+}
+
 .tooltip {
   position: relative;
   display: inline;
@@ -366,7 +377,7 @@ p.page-header-summary {
 }
 .tooltip .tooltip-text {
   font-family: "JetBrainsMono", monospace;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: -1%;
   display: none;
   background-color: #000000;
@@ -376,8 +387,8 @@ p.page-header-summary {
   padding: 0.75rem;
   position: absolute;
   z-index: 3;
-  width: 16rem;
-  margin-left: -8rem;
+  width: 13rem;
+  transform: translate(-50%, 0);
   left: 50%;
   bottom: 100%;
 }
@@ -392,16 +403,22 @@ p.page-header-summary {
   border-style: solid;
   border-color: #140f14 transparent transparent transparent;
 }
-
-table {
+.tooltip .tooltip-text.left {
   text-align: left;
-  border-collapse: separate;
-  border-spacing: 0 1rem;
-  margin-top: -1rem;
-  margin-bottom: -1rem;
+  transform: translate(-0.5rem, 0);
+  left: 0;
 }
-table th:only-of-type {
-  padding-right: 3rem;
+.tooltip .tooltip-text.left::after {
+  left: 2.5rem;
+}
+.tooltip .tooltip-text.right {
+  text-align: right;
+  transform-origin: top right;
+  transform: translate(0, 0);
+  left: -7.75rem;
+}
+.tooltip .tooltip-text.right::after {
+  left: calc(100% - 2.5rem);
 }
 
 .also-see {

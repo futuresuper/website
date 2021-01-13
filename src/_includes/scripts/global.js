@@ -72,3 +72,37 @@ let observer = new IntersectionObserver(
 );
 
 observer.observe(siteContent);
+
+// Keep tooltips within viewport bounds
+const pageTooltips = Array.from(document.querySelectorAll(".tooltip"));
+
+pageTooltips.forEach((tooltip) => {
+  const tooltipText = tooltip.querySelector(".tooltip-text");
+
+  tooltip.onmouseover = checkBounds;
+  tooltip.onmouseout = removeClassNames;
+
+  function checkBounds() {
+    const bounding = tooltipText.getBoundingClientRect();
+
+    // Left side is out of viewoprt
+    if (bounding.left < 0) {
+      console.log("Left side is out of viewport");
+      tooltipText.classList.add("left");
+    }
+    // Right side is out of viewport
+    if (bounding.right > (window.innerWidth || document.documentElement.clientWidth)) {
+      console.log("Right side is out of viewport");
+      tooltipText.classList.add("right");
+    }
+  }
+
+  function removeClassNames() {
+    const classNames = ["left", "right"];
+    classNames.forEach((className) => {
+      if (tooltipText.classList.contains(className)) {
+        tooltipText.classList.remove(className);
+      }
+    });
+  }
+});

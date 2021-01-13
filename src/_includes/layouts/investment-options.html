@@ -31,7 +31,7 @@
       <h1 class="center">{{ pageHeaderTitle }}</h1>
       <div class="grid">
         {% for option in investmentOptions %}
-          <div class="option-card-full {{ option.slug }}">
+          <div class="option-card-full {{ option.slug }}" onclick="testFunc()">
             {% set iconUrl = iconsPath + option.slug + ".svg" %}
             {{ iconUrl | svgContents("fill-light") | safe }}
             <h2>{{ option.opticalLabel[0] }}<br>{{ option.opticalLabel[1] }}</h2>
