@@ -1,5 +1,7 @@
-<svg height="16" viewBox="0 0 342 214" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect class="fill-target" width="342" height="43" fill="black"/>
-<rect class="fill-target" y="85" width="256" height="43" fill="black"/>
-<rect class="fill-target" y="171" width="299" height="43" fill="black"/>
+<!-- <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path class="fill-target" fill-rule="evenodd" clip-rule="evenodd" d="M4 7h16v2H4V7zm0 4h12v2H4v-2zm14 4H4v2h14v-2z" fill="#000"/>
+</svg> -->
+
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+  <path class="fill-target" fill="#000" fill-rule="evenodd" d="M4 7h16v2H4V7zm0 4h12v2H4v-2zm14 4H4v2h14v-2z" clip-rule="evenodd"/>
 </svg>

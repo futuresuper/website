@@ -369,7 +369,7 @@ table th:only-of-type {
   -webkit-text-decoration: dotted underline;
 }
 .tooltip:hover {
-  cursor: pointer;
+  cursor: help;
   color: #0a5aff;
 }
 .tooltip:hover .tooltip-text {
@@ -483,9 +483,6 @@ table th:only-of-type {
 header[role=banner] {
   overflow: hidden;
 }
-header[role=banner] svg .fill-target {
-  fill: #000000;
-}
 header[role=banner] .banner {
   text-align: center;
   padding: 1.5rem;
@@ -508,38 +505,59 @@ header[role=banner] .banner.critical a:hover {
   color: #9a6f04;
 }
 header[role=banner] section {
-  padding: 2rem 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
 }
+header[role=banner] section .logo,
+header[role=banner] section .show-hide-mobile-menu {
+  height: 2.5rem;
+}
+header[role=banner] section .logo svg .fill-target,
+header[role=banner] section .show-hide-mobile-menu svg .fill-target {
+  fill: #000000;
+  transition: fill 100ms ease-in-out;
+}
+header[role=banner] section .logo:hover svg .fill-target,
+header[role=banner] section .show-hide-mobile-menu:hover svg .fill-target {
+  fill: #52524c;
+}
 header[role=banner] section .logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin-right: 2rem;
   z-index: 2;
+}
+header[role=banner] section .logo svg {
+  height: 1.25rem;
+  width: auto;
 }
 header[role=banner] section .show-hide-mobile-menu {
   z-index: 2;
 }
-header[role=banner] section .show-hide-mobile-menu a {
-  display: flex;
-  align-items: center;
+header[role=banner] section .show-hide-mobile-menu .menu-button {
   cursor: pointer;
+  height: 2.5rem;
+  width: 2.5rem;
 }
-header[role=banner] section .show-hide-mobile-menu a#menu-open-button.mobile-menu-active {
+header[role=banner] section .show-hide-mobile-menu .menu-button svg {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+header[role=banner] section .show-hide-mobile-menu .menu-button#menu-button-open {
+  display: block;
+}
+header[role=banner] section .show-hide-mobile-menu .menu-button#menu-button-open.mobile-menu-active {
   display: none;
 }
-header[role=banner] section .show-hide-mobile-menu a#menu-close-button {
+header[role=banner] section .show-hide-mobile-menu .menu-button#menu-button-close {
   display: none;
 }
-header[role=banner] section .show-hide-mobile-menu a#menu-close-button.mobile-menu-active {
-  display: flex;
-}
-header[role=banner] section .show-hide-mobile-menu a img {
-  display: inline-block;
-  margin-left: 0.5rem;
-}
-header[role=banner] section .show-hide-mobile-menu a img.close {
-  margin-left: 0.2rem;
+header[role=banner] section .show-hide-mobile-menu .menu-button#menu-button-close.mobile-menu-active {
+  display: block;
 }
 @media (min-width: 1068px) {
   header[role=banner] section .show-hide-mobile-menu {
@@ -608,7 +626,7 @@ header[role=banner] section .show-hide-mobile-menu a img.close {
     display: none;
     height: 100%;
     width: 100%;
-    padding: 8rem 2rem 3rem;
+    padding: 8rem 1rem 3rem;
     position: fixed;
     z-index: 1;
     left: 0;
@@ -636,12 +654,15 @@ header[role=banner] section .show-hide-mobile-menu a img.close {
   }
   header[role=banner] section .nav-container nav:first-of-type .dropdown-content a {
     display: block;
-    padding: 0.3rem 0;
+    padding: 1rem 0;
     color: #000000;
     text-decoration: none;
   }
   header[role=banner] section .nav-container nav:first-of-type .dropdown-content a:hover {
     color: #0a5aff;
+  }
+  header[role=banner] section .nav-container nav:first-of-type .dropdown-content a:not(:last-of-type) {
+    border-bottom: 1px solid #e6e6e5;
   }
   header[role=banner] section .nav-container nav:last-of-type a {
     display: block;

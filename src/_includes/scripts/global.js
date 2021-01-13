@@ -4,8 +4,8 @@ document.documentElement.className = "js";
 
 // Handle mobile menu navigation
 const navContainer = document.querySelector(".nav-container");
-const menuCloseButton = document.querySelector("#menu-close-button");
-const menuOpenButton = document.querySelector("#menu-open-button");
+const menuCloseButton = document.querySelector("#menu-button-close");
+const menuOpenButton = document.querySelector("#menu-button-open");
 const menuChangeElements = [document.body, navContainer, menuCloseButton, menuOpenButton];
 
 function showMobileMenu(show) {

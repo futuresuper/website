@@ -11,7 +11,7 @@ $tooltip-padding: 0.75rem;
   -webkit-text-decoration: dotted underline;
 
   &:hover {
-    cursor: pointer;
+    cursor: help;
     color: $blue-500;
 
     .tooltip-text {

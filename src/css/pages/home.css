@@ -363,7 +363,7 @@ table th:only-of-type {
   -webkit-text-decoration: dotted underline;
 }
 .tooltip:hover {
-  cursor: pointer;
+  cursor: help;
   color: #0a5aff;
 }
 .tooltip:hover .tooltip-text {

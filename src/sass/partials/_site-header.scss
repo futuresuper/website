@@ -4,13 +4,6 @@
 header[role="banner"] {
   overflow: hidden;
 
-  // Set a default branded fill colour for icons
-  svg {
-    .fill-target {
-      fill: $black-900;
-    }
-  }
-
   // Notice banner (visually above header content) styling
   .banner {
     text-align: center;
@@ -40,40 +33,76 @@ header[role="banner"] {
   }
 
   section {
-    padding: 2rem 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
     display: flex;
-    align-items: baseline;
+    align-items: center;
     justify-content: space-between;
 
+    // .strip {
+    // display: flex;
+    // align-items: center;
+    // justify-content: space-between;
+
+    .logo,
+    .show-hide-mobile-menu {
+      height: 2.5rem;
+
+      // Set a default branded fill colour for icons
+      svg {
+        .fill-target {
+          fill: $black-900;
+          transition: fill 100ms ease-in-out;
+        }
+      }
+
+      &:hover {
+        svg {
+          .fill-target {
+            fill: $grey-500;
+          }
+        }
+      }
+    }
+
     .logo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       margin-right: 2rem;
       z-index: 2; // Show even when mobile popup menu open
+
+      svg {
+        height: 1.25rem;
+        width: auto;
+      }
     }
 
     .show-hide-mobile-menu {
       z-index: 2;
-      a {
-        display: flex;
-        align-items: center;
-        cursor: pointer;
 
-        &#menu-open-button {
+      .menu-button {
+        cursor: pointer;
+        height: 2.5rem;
+        width: 2.5rem;
+
+        svg {
+          height: 2.5rem;
+          width: 2.5rem;
+        }
+
+        &#menu-button-open {
+          display: block;
           &.mobile-menu-active {
             display: none;
           }
         }
 
-        &#menu-close-button {
+        &#menu-button-close {
           display: none;
           &.mobile-menu-active {
-            display: flex;
-          }
-        }
-        img {
-          display: inline-block;
-          margin-left: 0.5rem;
-          &.close {
-            margin-left: 0.2rem;
+            display: block;
           }
         }
       }
@@ -167,7 +196,7 @@ header[role="banner"] {
 
         height: 100%;
         width: 100%;
-        padding: 8rem 2rem 3rem;
+        padding: 8rem $space-page-padding-x-dynamic 3rem;
         position: fixed;
         z-index: 1;
         left: 0;
@@ -196,11 +225,15 @@ header[role="banner"] {
           .dropdown-content {
             a {
               display: block;
-              padding: 0.3rem 0;
+              padding: 1rem 0;
               color: $black-900;
               text-decoration: none;
               &:hover {
                 color: $blue-500;
+              }
+
+              &:not(:last-of-type) {
+                border-bottom: 1px solid $grey-200;
               }
             }
           }
@@ -233,8 +266,5 @@ header[role="banner"] {
         }
       }
     }
-    // @media (max-width: $breakpoint-sm) {
-    //   padding: 2rem;
-    // }
   }
 }

@@ -8,59 +8,50 @@
   {% endif %}
 
   {# Regular site header content #}
-  <div class="container">
-    <section>
-      <a class="logo" href="/" aria-label="{{ site.name }} — Home" style="margin-right: 2rem">
-        {{ '/src/images/logo-single-line.svg' | svgContents | safe }}
+  <section class="container">
+    <a class="logo" href="/" aria-label="{{ site.name }} — Home">
+      {{ '/src/images/logo-single-line.svg' | svgContents | safe }}
+    </a>
+    <div class="show-hide-mobile-menu">
+      <a onclick="showMobileMenu(true)" id="menu-button-open" class="menu-button">
+        {{ '/src/images/icons/menu.svg' | svgContents | safe }}
       </a>
-      <div class="show-hide-mobile-menu">
-        <a onclick="showMobileMenu(true)" id="menu-open-button">
-          Menu
-          {{ '/src/images/icons/menu.svg' | svgContents | safe }}
-        </a>
-        <a onclick="showMobileMenu(false)" id="menu-close-button">
-          Close
-          {{ '/src/images/icons/cross.svg' | svgContents | safe }}
-        </a>
-        {# <a onclick="document.getElementById('nav-container').style.display = 'flex'">Menu
-        <img src="/images/icons/menu.svg" alt="Menu open icon"></a>
-      <a onclick="document.getElementById('nav-container').style.display = 'none'">Close
-        <img src="/images/icons/cross.svg" class="close" alt="Menu close icon"></a> #}
-      </div>
+      <a onclick="showMobileMenu(false)" id="menu-button-close" class="menu-button">
+        {{ '/src/images/icons/cross.svg' | svgContents | safe }}
+      </a>
+    </div>
 
-      <div class="nav-container">
-        <nav aria-label="Primary">
-          {% for item in navigation.items %}
-            {# Not all items will go in site header, so check them #}
-            {% if item.inSiteHeader %}
-              {# Show the COVID shortcut link differently #}
-              {% if item.url %}
-                <a class="non-dropdown" href="{{ item.url }}">{{ item.text }}</a>
-              {% else %}
-                {# Make every other item a dropdown heading #}
-                <div class="dropdown">
-                  <div class="button clear">
-                    {{ item.text }}
-                  </div>
-                  <div class="dropdown-content">
-                    {% for subItem in item.subItems %}
-                      {% if subItem.inSiteHeader %}
-                        {# Not all subitems will go in site header (even if their parent does), so check them #}
-                        <a href="{{ subItem.url }}">{{ subItem.text }}</a>
-                      {% endif %}
-                    {% endfor %}
-                  </div>
+    <div class="nav-container">
+      <nav aria-label="Primary">
+        {% for item in navigation.items %}
+          {# Not all items will go in site header, so check them #}
+          {% if item.inSiteHeader %}
+            {# Show the COVID shortcut link differently #}
+            {% if item.url %}
+              <a class="non-dropdown" href="{{ item.url }}">{{ item.text }}</a>
+            {% else %}
+              {# Make every other item a dropdown heading #}
+              <div class="dropdown">
+                <div class="button clear">
+                  {{ item.text }}
                 </div>
-              {% endif %}
+                <div class="dropdown-content">
+                  {% for subItem in item.subItems %}
+                    {% if subItem.inSiteHeader %}
+                      {# Not all subitems will go in site header (even if their parent does), so check them #}
+                      <a href="{{ subItem.url }}">{{ subItem.text }}</a>
+                    {% endif %}
+                  {% endfor %}
+                </div>
+              </div>
             {% endif %}
-          {% endfor %}
-        </nav>
-        <nav>
-          <a href="{{ site.signInUrl }}" class="non-dropdown">Login</a>
-          <a href="{{ site.joinUrl }}" class="button primary">Join Now</a>
-        </nav>
-
-      </div>
-    </section>
-  </div>
+          {% endif %}
+        {% endfor %}
+      </nav>
+      <nav>
+        <a href="{{ site.signInUrl }}" class="non-dropdown">Login</a>
+        <a href="{{ site.joinUrl }}" class="button primary">Join Now</a>
+      </nav>
+    </div>
+  </section>
 </header>
