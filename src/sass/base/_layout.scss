@@ -1,9 +1,25 @@
+@use "colours" as *;
+
 // Breakpoints
 $breakpoint-sm: 40rem; //640px
 $breakpoint-md: 48rem; //768px
 $breakpoint-lg: 80rem; //1280px
 
-// Often-referenced component sizes
+// Often-referenced spacing units
+$space-section-bottom: 6rem;
+$space-page-padding-x-sm: 1rem;
+$space-page-padding-x-md: 2rem;
+$space-page-padding-x-lg: 3rem;
+
+// Often-referened layout styles
+$border-style-colour: $grey-200;
+
+%border-style-card {
+  border: 2px solid $border-style-colour;
+  background-color: $white-500;
+}
+
+// Specific component sizes that other elements also rely on
 $height-acknowledgement-of-country-header: 60vh;
 $height-acknowledgement-of-country-footer: 100vh;
 
@@ -22,16 +38,20 @@ body {
   max-width: $breakpoint-lg;
   margin-right: auto;
   margin-left: auto;
-  padding: 0 2rem;
+  padding: 0 $space-page-padding-x-sm;
 
   @media (min-width: $breakpoint-md) {
-    padding: 0 3rem;
+    padding: 0 $space-page-padding-x-md;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    padding: 0 $space-page-padding-x-lg;
   }
 }
 
 main > article.container {
   // Add padding to containers when used for page articles
-  padding-bottom: 6rem;
+  padding-bottom: $space-section-bottom;
 }
 
 .grid {

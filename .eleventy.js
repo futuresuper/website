@@ -25,6 +25,10 @@ module.exports = (config) => {
   // Handle dates in areas such as blog posts
   config.addFilter("dateFilter", dateFilter);
   config.addFilter("w3DateFilter", w3DateFilter);
+  // Custom currency filter for fees
+  config.addFilter("currency", (stringOrNumber) => {
+    return parseFloat(stringOrNumber).toFixed(2);
+  });
 
   // Return a collection of blog posts in reverse date order
   config.addCollection("blog", (collection) => {

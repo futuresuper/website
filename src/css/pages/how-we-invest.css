@@ -121,6 +121,10 @@ button,
   transition: background-color 100ms ease-in-out;
   text-align: center;
 }
+button.full-width,
+.button.full-width {
+  padding: 1rem 0;
+}
 button.primary,
 .button.primary {
   color: #ffffff;
@@ -162,9 +166,14 @@ body.mobile-menu-active.aoc-active {
   max-width: 80rem;
   margin-right: auto;
   margin-left: auto;
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 @media (min-width: 48rem) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+@media (min-width: 80rem) {
   .container {
     padding: 0 3rem;
   }
@@ -339,8 +348,9 @@ p.page-header-summary {
 
 .tooltip {
   position: relative;
-  display: inline-block;
-  text-decoration: dashed underline;
+  display: inline;
+  text-decoration: dotted underline;
+  -webkit-text-decoration: dotted underline;
 }
 .tooltip:hover {
   cursor: pointer;
@@ -355,13 +365,18 @@ p.page-header-summary {
   color: #ffffff;
   text-align: center;
   font-size: 0.75rem;
-  padding: 0.75rem 0.5rem;
+  padding: 0.75rem;
   position: absolute;
   z-index: 1;
-  width: 10rem;
-  bottom: 100%;
+  width: 16rem;
+  margin-left: -8rem;
   left: 50%;
-  margin-left: -5rem;
+  bottom: 100%;
+}
+@media (max-width: 639px) {
+  .tooltip .tooltip-text {
+    display: none;
+  }
 }
 .tooltip .tooltip-text::after {
   content: " ";

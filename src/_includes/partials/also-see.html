@@ -1,0 +1,14 @@
+{% if alsoSee %}
+  <footer class="container also-see">
+    <h2>Also see</h2>
+    <ul class="grid plain">
+      {% for item in alsoSee %}
+        <li>
+          <a href="/{{ item | slug }}">{{ item }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+</footer>
+{% endif %}
