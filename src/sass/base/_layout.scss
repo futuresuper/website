@@ -7,6 +7,9 @@ $breakpoint-lg: 80rem; //1280px
 
 // Often-referenced spacing units
 $space-section-bottom: 6rem;
+$space-page-padding-x-sm: 1rem;
+$space-page-padding-x-md: 2rem;
+$space-page-padding-x-lg: 3rem;
 
 // Often-referened layout styles
 $border-style-colour: $grey-200;
@@ -35,16 +38,20 @@ body {
   max-width: $breakpoint-lg;
   margin-right: auto;
   margin-left: auto;
-  padding: 0 2rem;
+  padding: 0 $space-page-padding-x-sm;
 
   @media (min-width: $breakpoint-md) {
-    padding: 0 3rem;
+    padding: 0 $space-page-padding-x-md;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    padding: 0 $space-page-padding-x-lg;
   }
 }
 
 main > article.container {
   // Add padding to containers when used for page articles
-  padding-bottom: 6rem;
+  padding-bottom: $space-section-bottom;
 }
 
 .grid {

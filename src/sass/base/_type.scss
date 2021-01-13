@@ -2,6 +2,8 @@
 $font-size-xs: 0.75rem; // 12px
 $line-height-xs: 115%;
 $font-size-sm: 0.875rem; // 14px
+// Medium is default: 1rem // 16px
+$font-size-lg: 1.125rem; // 18px
 
 @font-face {
   font-family: "SharpGrotesk";
@@ -147,8 +149,8 @@ p {
 .tooltip {
   position: relative;
   display: inline;
-  text-decoration: dashed underline;
-  -webkit-text-decoration: dashed underline;
+  text-decoration: dotted underline;
+  -webkit-text-decoration: dotted underline;
 
   &:hover {
     cursor: pointer;
@@ -171,6 +173,10 @@ p {
     margin-left: -8rem;
     left: 50%;
     bottom: 100%;
+    @media (max-width: 639px) {
+      //TODO remove temp
+      display: none;
+    }
 
     &::after {
       content: " ";
