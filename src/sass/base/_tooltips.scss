@@ -61,7 +61,10 @@ $tooltip-padding: 0.75rem;
       text-align: right;
       transform-origin: top right;
       transform: translate(0, 0);
+      // Although mathematically correct, renders with additional margin on iOS
       left: -$tooltip-width / 2 - 1.25rem;
+      // Works on iOS but causes bleed on macOS:
+      // left: -$tooltip-width / 2;
 
       &::after {
         left: calc(100% - 2.5rem);

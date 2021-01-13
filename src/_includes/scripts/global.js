@@ -78,13 +78,11 @@ const pageTooltips = Array.from(document.querySelectorAll(".tooltip"));
 
 pageTooltips.forEach((tooltip) => {
   const tooltipText = tooltip.querySelector(".tooltip-text");
-
   tooltip.onmouseover = checkBounds;
   tooltip.onmouseout = removeClassNames;
 
   function checkBounds() {
     const bounding = tooltipText.getBoundingClientRect();
-
     // Left side is out of viewoprt
     if (bounding.left < 0) {
       tooltipText.classList.add("left");
