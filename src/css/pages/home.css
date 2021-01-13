@@ -345,6 +345,17 @@ p.page-header-summary {
   color: #f04b23;
 }
 
+table {
+  text-align: left;
+  border-collapse: separate;
+  border-spacing: 0 1rem;
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+}
+table th:only-of-type {
+  padding-right: 3rem;
+}
+
 .tooltip {
   position: relative;
   display: inline;
@@ -355,27 +366,25 @@ p.page-header-summary {
   cursor: pointer;
   color: #0a5aff;
 }
+.tooltip:hover .tooltip-text {
+  display: block;
+}
 .tooltip .tooltip-text {
   font-family: "JetBrainsMono", monospace;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: -1%;
-  visibility: hidden;
+  display: none;
   background-color: #000000;
   color: #ffffff;
   text-align: center;
   font-size: 0.75rem;
   padding: 0.75rem;
   position: absolute;
-  z-index: 1;
-  width: 16rem;
-  margin-left: -8rem;
+  z-index: 3;
+  width: 13rem;
+  transform: translate(-50%, 0);
   left: 50%;
   bottom: 100%;
-}
-@media (max-width: 639px) {
-  .tooltip .tooltip-text {
-    display: none;
-  }
 }
 .tooltip .tooltip-text::after {
   content: " ";
@@ -388,19 +397,22 @@ p.page-header-summary {
   border-style: solid;
   border-color: #140f14 transparent transparent transparent;
 }
-.tooltip:hover .tooltip-text {
-  visibility: visible;
-}
-
-table {
+.tooltip .tooltip-text.left {
   text-align: left;
-  border-collapse: separate;
-  border-spacing: 0 1rem;
-  margin-top: -1rem;
-  margin-bottom: -1rem;
+  transform: translate(-0.5rem, 0);
+  left: 0;
 }
-table th:only-of-type {
-  padding-right: 3rem;
+.tooltip .tooltip-text.left::after {
+  left: 2.5rem;
+}
+.tooltip .tooltip-text.right {
+  text-align: right;
+  transform-origin: top right;
+  transform: translate(0, 0);
+  left: -7.75rem;
+}
+.tooltip .tooltip-text.right::after {
+  left: calc(100% - 2.5rem);
 }
 
 .home {
