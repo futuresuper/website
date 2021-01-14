@@ -521,6 +521,7 @@ table th:only-of-type {
   text-align: center;
   font-family: "JetBrainsMono", monospace;
   font-size: 0.75rem;
+  color: #1d1d1b;
 }
 .investment-options header .option-card-full-container .option-card-full {
   flex-grow: 1;

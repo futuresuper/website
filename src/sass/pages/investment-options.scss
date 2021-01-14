@@ -116,6 +116,7 @@
         text-align: center;
         font-family: $font-stack-monospace;
         font-size: $font-size-xs;
+        color: $grey-800;
       }
 
       .option-card-full {
@@ -128,6 +129,7 @@
         @extend %set-option-theme-colours;
         text-align: center;
 
+        // Match space left by option-card(s) with leading-stat
         &:not(.with-leading-stat) {
           @media (min-width: $breakpoint-md) {
             margin-top: 4rem;
