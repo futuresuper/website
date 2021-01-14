@@ -505,11 +505,16 @@ header[role=banner] .banner.critical a:hover {
   color: #9a6f04;
 }
 header[role=banner] section {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 6rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+@media (min-width: 1068px) {
+  header[role=banner] section {
+    margin-top: 2rem;
+  }
 }
 header[role=banner] section .logo,
 header[role=banner] section .show-hide-mobile-menu {
@@ -626,7 +631,7 @@ header[role=banner] section .show-hide-mobile-menu .menu-button#menu-button-clos
     display: none;
     height: 100%;
     width: 100%;
-    padding: 8rem 1rem 3rem;
+    padding: 5rem 1rem 3rem;
     position: fixed;
     z-index: 1;
     left: 0;
