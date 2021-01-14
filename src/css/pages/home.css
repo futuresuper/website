@@ -495,12 +495,22 @@ main > article.container {
 .product-review-carousel figure blockquote .review-title {
   line-height: 130%;
   margin-right: 4rem;
+  text-indent: -0.5rem;
 }
 @media (min-width: 40rem) {
   .product-review-carousel figure blockquote .review-title {
     margin-right: 0;
     line-height: 120%;
+    text-indent: 0;
   }
+}
+.product-review-carousel figure blockquote .review-title:before {
+  content: open-quote;
+  color: #c445a2;
+}
+.product-review-carousel figure blockquote .review-title:after {
+  content: close-quote;
+  color: #c445a2;
 }
 .product-review-carousel figure figcaption cite {
   font-style: normal;

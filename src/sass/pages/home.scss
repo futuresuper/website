@@ -87,9 +87,21 @@
       .review-title {
         line-height: 130%;
         margin-right: 4rem;
+        // Offset open-quote
+        text-indent: -0.5rem;
         @media (min-width: $breakpoint-sm) {
           margin-right: 0;
           line-height: 120%;
+          text-indent: 0;
+        }
+
+        &:before {
+          content: open-quote;
+          color: $pink-700;
+        }
+        &:after {
+          content: close-quote;
+          color: $pink-700;
         }
       }
     }
