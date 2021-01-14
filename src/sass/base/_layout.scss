@@ -10,8 +10,8 @@ $space-section-bottom: 6rem;
 $space-page-padding-x-sm: 1rem;
 $space-page-padding-x-md: 2rem;
 $space-page-padding-x-lg: 3rem;
-
 $space-page-padding-x-dynamic: 1rem;
+
 @media (min-width: $breakpoint-md) {
   $space-page-padding-x-dynamic: $space-page-padding-x-md;
 }

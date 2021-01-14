@@ -108,138 +108,6 @@ details p {
   border-top: 1px solid #000000;
 }
 
-button,
-.button {
-  display: inline-block;
-  cursor: pointer;
-  font-size: 1.125rem;
-  font-weight: 700;
-  padding: 1rem 2rem;
-  border: 0;
-  text-decoration: none;
-  transition: background-color 100ms ease-in-out;
-  text-align: center;
-}
-button.full-width,
-.button.full-width {
-  padding: 1rem 0;
-}
-button.primary,
-.button.primary {
-  color: #ffffff;
-  background-color: #000000;
-}
-button.primary.inverted,
-.button.primary.inverted {
-  color: #000000;
-  background-color: #ffffff;
-}
-button.primary:hover,
-.button.primary:hover {
-  background-color: #0a5aff;
-}
-button.clear,
-.button.clear {
-  color: inherit;
-  background-color: inherit;
-}
-
-.flex-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.plain {
-  list-style-type: none;
-}
-
-.investment-options header .option-card-full-container .option-card-full {
-  border: 2px solid #e6e6e5;
-  background-color: #ffffff;
-}
-
-body.mobile-menu-active {
-  position: fixed;
-}
-body.mobile-menu-active.aoc-active {
-  top: -60vh;
-}
-
-.container {
-  max-width: 80rem;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 0 1rem;
-}
-@media (min-width: 48rem) {
-  .container {
-    padding: 0 2rem;
-  }
-}
-@media (min-width: 80rem) {
-  .container {
-    padding: 0 3rem;
-  }
-}
-
-main > article.container {
-  padding-bottom: 6rem;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-}
-.grid > * {
-  grid-column: span 1;
-}
-@media (min-width: 40rem) {
-  .grid {
-    grid-template-columns: repeat(12, 1fr);
-    gap: 1.5rem;
-  }
-  .grid > * {
-    grid-column: span 6;
-  }
-}
-@media (min-width: 48rem) {
-  .grid {
-    gap: 2rem;
-  }
-  .grid > * {
-    grid-column: span 2;
-  }
-}
-@media (min-width: 80rem) {
-  .grid {
-    gap: 3rem;
-  }
-  .grid > * {
-    grid-column: span 2;
-  }
-}
-
-.investment-options .intro > * {
-  grid-column: span 1;
-}
-@media (min-width: 40rem) {
-  .investment-options .intro > * {
-    grid-column: span 12;
-  }
-}
-@media (min-width: 48rem) {
-  .investment-options .intro > * {
-    grid-column: span 9;
-  }
-}
-@media (min-width: 80rem) {
-  .investment-options .intro > * {
-    grid-column: span 6;
-  }
-}
-
 @font-face {
   font-family: "SharpGrotesk";
   src: url("../fonts/SharpGroteskBook19-subset.woff2") format("woff2");
@@ -378,6 +246,138 @@ table {
 }
 table th:only-of-type {
   padding-right: 3rem;
+}
+
+button,
+.button {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1.125rem;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  border: 0;
+  text-decoration: none;
+  transition: background-color 100ms ease-in-out;
+  text-align: center;
+}
+button.full-width,
+.button.full-width {
+  padding: 1rem 0;
+}
+button.primary,
+.button.primary {
+  color: #ffffff;
+  background-color: #000000;
+}
+button.primary.inverted,
+.button.primary.inverted {
+  color: #000000;
+  background-color: #ffffff;
+}
+button.primary:hover,
+.button.primary:hover {
+  background-color: #0a5aff;
+}
+button.clear,
+.button.clear {
+  color: inherit;
+  background-color: inherit;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.plain {
+  list-style-type: none;
+}
+
+.investment-options header .option-card-full-container .option-card-full {
+  border: 2px solid #e6e6e5;
+  background-color: #ffffff;
+}
+
+body.mobile-menu-active {
+  position: fixed;
+}
+body.mobile-menu-active.aoc-active {
+  top: -60vh;
+}
+
+.container {
+  max-width: 80rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 1rem;
+}
+@media (min-width: 48rem) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+@media (min-width: 80rem) {
+  .container {
+    padding: 0 3rem;
+  }
+}
+
+main > article.container {
+  padding-bottom: 6rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+.grid > * {
+  grid-column: span 1;
+}
+@media (min-width: 40rem) {
+  .grid {
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1.5rem;
+  }
+  .grid > * {
+    grid-column: span 6;
+  }
+}
+@media (min-width: 48rem) {
+  .grid {
+    gap: 2rem;
+  }
+  .grid > * {
+    grid-column: span 2;
+  }
+}
+@media (min-width: 80rem) {
+  .grid {
+    gap: 3rem;
+  }
+  .grid > * {
+    grid-column: span 2;
+  }
+}
+
+.investment-options .intro > * {
+  grid-column: span 1;
+}
+@media (min-width: 40rem) {
+  .investment-options .intro > * {
+    grid-column: span 12;
+  }
+}
+@media (min-width: 48rem) {
+  .investment-options .intro > * {
+    grid-column: span 9;
+  }
+}
+@media (min-width: 80rem) {
+  .investment-options .intro > * {
+    grid-column: span 6;
+  }
 }
 
 .tooltip {
@@ -542,15 +542,18 @@ table th:only-of-type {
   }
 }
 .investment-options header .option-card-full-container .option-card-full svg {
-  margin-bottom: 1rem;
+  margin-bottom: 0.25rem;
   width: 3rem;
   height: 3rem;
+  margin-left: -0.4rem;
 }
 @media (min-width: 48rem) {
   .investment-options header .option-card-full-container .option-card-full svg {
     align-self: center;
+    margin-bottom: 1rem;
     width: 5rem;
     height: 5rem;
+    margin-left: 0;
   }
 }
 @media (min-width: 80rem) {
@@ -574,8 +577,17 @@ table th:only-of-type {
   flex-grow: 1;
 }
 .investment-options header .option-card-full-container .option-card-full .button {
-  margin-top: 1rem;
   color: #ffffff;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  padding: 0.75rem 0;
+}
+@media (min-width: 48rem) {
+  .investment-options header .option-card-full-container .option-card-full .button {
+    margin-top: 1rem;
+    font-size: 1.125rem;
+    padding: 1rem 0;
+  }
 }
 .investment-options .intro {
   margin-bottom: 1rem;
@@ -732,12 +744,14 @@ table th:only-of-type {
   width: 2rem;
   height: 2rem;
   margin-bottom: 0.1rem;
+  margin-left: -0.25rem;
 }
 @media (min-width: 40rem) {
   .investment-options .table-container .grid-row .option-card-mini svg {
     width: 3rem;
     height: 3rem;
     margin-bottom: 0.25rem;
+    margin-left: 0;
   }
 }
 .investment-options .table-container .grid-row .option-card-mini h4 {

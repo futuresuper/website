@@ -140,14 +140,18 @@
         }
 
         svg {
-          margin-bottom: 1rem;
+          margin-bottom: 0.25rem;
           width: 3rem;
           height: 3rem;
+          // Optical aligment
+          margin-left: -0.4rem;
 
           @media (min-width: $breakpoint-md) {
             align-self: center;
+            margin-bottom: 1rem;
             width: 5rem;
             height: 5rem;
+            margin-left: 0;
           }
 
           @media (min-width: $breakpoint-lg) {
@@ -172,8 +176,16 @@
         }
 
         .button {
-          margin-top: 1rem;
           color: $white-500;
+          margin-top: 0.5rem;
+          font-size: 1rem;
+          padding: $space-button-padding-y-sm 0;
+
+          @media (min-width: $breakpoint-md) {
+            margin-top: 1rem;
+            font-size: $font-size-lg;
+            padding: $space-button-padding-y-md 0;
+          }
         }
       }
     }
@@ -331,11 +343,14 @@
           width: 2rem;
           height: 2rem;
           margin-bottom: 0.1rem;
+          // Optical aligment
+          margin-left: -0.25rem;
 
           @media (min-width: $breakpoint-sm) {
             width: 3rem;
             height: 3rem;
             margin-bottom: 0.25rem;
+            margin-left: 0;
           }
         }
 
