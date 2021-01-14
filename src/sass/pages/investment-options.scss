@@ -93,10 +93,6 @@
   header {
     margin-bottom: $space-section-bottom;
 
-    h1 {
-      padding: 3rem 0; // TODO replace with universal site header styles
-    }
-
     .option-card-full-container {
       @media (min-width: $breakpoint-sm) {
         grid-column: span 12;
@@ -169,6 +165,7 @@
         }
 
         .button {
+          margin-top: 1rem;
           color: $white-500;
         }
       }

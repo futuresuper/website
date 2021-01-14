@@ -33,17 +33,16 @@ header[role="banner"] {
   }
 
   section {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    margin-top: 1rem;
+    margin-bottom: $space-section-bottom;
+
+    @media (min-width: 1068px) {
+      margin-top: 2rem;
+    }
 
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    // .strip {
-    // display: flex;
-    // align-items: center;
-    // justify-content: space-between;
 
     .logo,
     .show-hide-mobile-menu {
@@ -196,7 +195,7 @@ header[role="banner"] {
 
         height: 100%;
         width: 100%;
-        padding: 8rem $space-page-padding-x-dynamic 3rem;
+        padding: 5rem $space-page-padding-x-dynamic 3rem;
         position: fixed;
         z-index: 1;
         left: 0;

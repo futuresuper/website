@@ -497,9 +497,6 @@ table th:only-of-type {
 .investment-options header {
   margin-bottom: 6rem;
 }
-.investment-options header h1 {
-  padding: 3rem 0;
-}
 .investment-options header .option-card-full-container {
   display: flex;
   flex-direction: column;
@@ -566,6 +563,7 @@ table th:only-of-type {
   flex-grow: 1;
 }
 .investment-options header .option-card-full-container .option-card-full .button {
+  margin-top: 1rem;
   color: #ffffff;
 }
 .investment-options .intro {

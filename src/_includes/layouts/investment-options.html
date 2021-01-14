@@ -27,8 +27,10 @@
 {% endmacro %}
 
 <article class="investment-options">
-  <header class="container">
-    <h1 class="center">{{ pageHeaderTitle }}</h1>
+  <header class="container center">
+
+    {% include "partials/page-header.html" %}
+
     <div class="grid">
       {% for option in investmentOptions %}
       <div class="option-card-full-container">
