@@ -522,31 +522,18 @@ table th:only-of-type {
 }
 .investment-options header .option-card-full-container .option-card-full {
   flex-grow: 1;
-  padding: 3rem;
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
-  text-align: center;
 }
 @media (min-width: 48rem) {
   .investment-options header .option-card-full-container .option-card-full:not(.with-leading-stat) {
     margin-top: 4rem;
   }
 }
-.investment-options header .option-card-full-container .option-card-full svg {
-  align-self: center;
-  margin-bottom: 1rem;
-  width: 6rem;
-  height: 6rem;
-}
-@media (min-width: 40rem) {
-  .investment-options header .option-card-full-container .option-card-full {
-    padding: 1.5rem;
-  }
-}
 @media (min-width: 48rem) {
-  .investment-options header .option-card-full-container .option-card-full svg {
-    width: 9rem;
-    height: 9rem;
+  .investment-options header .option-card-full-container .option-card-full {
+    text-align: center;
   }
 }
 @media (min-width: 80rem) {
@@ -554,10 +541,34 @@ table th:only-of-type {
     padding: 3rem;
   }
 }
+.investment-options header .option-card-full-container .option-card-full svg {
+  margin-bottom: 1rem;
+  width: 3rem;
+  height: 3rem;
+}
+@media (min-width: 48rem) {
+  .investment-options header .option-card-full-container .option-card-full svg {
+    align-self: center;
+    width: 5rem;
+    height: 5rem;
+  }
+}
+@media (min-width: 80rem) {
+  .investment-options header .option-card-full-container .option-card-full svg {
+    width: 9rem;
+    height: 9rem;
+  }
+}
 .investment-options header .option-card-full-container .option-card-full h2 {
-  font-size: 1.8rem;
+  font-size: 1.125rem;
   font-weight: 700;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+}
+@media (min-width: 48rem) {
+  .investment-options header .option-card-full-container .option-card-full h2 {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+  }
 }
 .investment-options header .option-card-full-container .option-card-full p {
   flex-grow: 1;

@@ -117,13 +117,12 @@
 
       .option-card-full {
         flex-grow: 1;
-        padding: 3rem;
+        padding: 1.5rem;
         @extend %border-style-card;
         display: flex;
         flex-direction: column;
 
         @extend %set-option-theme-colours;
-        text-align: center;
 
         // Match space left by option-card(s) with leading-stat
         &:not(.with-leading-stat) {
@@ -132,32 +131,40 @@
           }
         }
 
-        svg {
-          align-self: center;
-          margin-bottom: 1rem;
-          width: 6rem;
-          height: 6rem;
-        }
-
-        @media (min-width: $breakpoint-sm) {
-          padding: 1.5rem;
-        }
-
         @media (min-width: $breakpoint-md) {
-          svg {
-            width: 9rem;
-            height: 9rem;
-          }
+          text-align: center;
         }
 
         @media (min-width: $breakpoint-lg) {
           padding: 3rem;
         }
 
+        svg {
+          margin-bottom: 1rem;
+          width: 3rem;
+          height: 3rem;
+
+          @media (min-width: $breakpoint-md) {
+            align-self: center;
+            width: 5rem;
+            height: 5rem;
+          }
+
+          @media (min-width: $breakpoint-lg) {
+            width: 9rem;
+            height: 9rem;
+          }
+        }
+
         h2 {
-          font-size: 1.8rem;
+          font-size: $font-size-lg;
           font-weight: 700;
-          margin-bottom: 2rem;
+          margin-bottom: 1rem;
+
+          @media (min-width: $breakpoint-md) {
+            font-size: $font-size-xl;
+            margin-bottom: 2rem;
+          }
         }
 
         p {
