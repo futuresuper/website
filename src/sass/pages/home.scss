@@ -51,3 +51,99 @@
     }
   }
 }
+
+.product-review-carousel {
+  padding: 4rem 0;
+  color: $white-500;
+  background-color: $pink-900;
+
+  @media (min-width: $breakpoint-sm) {
+    text-align: center;
+  }
+
+  h2,
+  .stars,
+  .see-all-reviews {
+    color: $pink-700;
+  }
+
+  h2 {
+    font-size: $font-size-24;
+  }
+
+  figure {
+    padding-top: $space-section-bottom / 2;
+    padding-bottom: $space-section-bottom;
+
+    blockquote {
+      .stars,
+      .review-title {
+        font-size: 1.75rem;
+        @media (min-width: $breakpoint-sm) {
+          font-size: 3rem;
+        }
+      }
+
+      .review-title {
+        line-height: 130%;
+        margin-right: 4rem;
+        // Offset open-quote
+        text-indent: -0.5rem;
+        @media (min-width: $breakpoint-sm) {
+          margin-right: 0;
+          line-height: 120%;
+          text-indent: 0;
+        }
+
+        &:before {
+          content: open-quote;
+          color: $pink-700;
+        }
+        &:after {
+          content: close-quote;
+          color: $pink-700;
+        }
+      }
+    }
+    figcaption {
+      cite {
+        font-style: normal;
+
+        a {
+          color: inherit;
+
+          &:hover {
+            color: $pink-500;
+          }
+        }
+      }
+    }
+  }
+
+  .see-all-reviews {
+    @media (min-width: $breakpoint-sm) {
+      font-size: $font-size-24;
+    }
+
+    a {
+      color: inherit;
+
+      &:hover {
+        color: $pink-500;
+      }
+    }
+  }
+
+  .stars {
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+  }
+
+  .overall-rating {
+    color: $pink-500;
+
+    span {
+      color: $white-500;
+    }
+  }
+}

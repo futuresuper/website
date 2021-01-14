@@ -460,4 +460,87 @@ main > article.container {
   }
 }
 
+.product-review-carousel {
+  padding: 4rem 0;
+  color: #ffffff;
+  background-color: #3c1631;
+}
+@media (min-width: 40rem) {
+  .product-review-carousel {
+    text-align: center;
+  }
+}
+.product-review-carousel h2,
+.product-review-carousel .stars,
+.product-review-carousel .see-all-reviews {
+  color: #c445a2;
+}
+.product-review-carousel h2 {
+  font-size: 1.5rem;
+}
+.product-review-carousel figure {
+  padding-top: 3rem;
+  padding-bottom: 6rem;
+}
+.product-review-carousel figure blockquote .stars,
+.product-review-carousel figure blockquote .review-title {
+  font-size: 1.75rem;
+}
+@media (min-width: 40rem) {
+  .product-review-carousel figure blockquote .stars,
+.product-review-carousel figure blockquote .review-title {
+    font-size: 3rem;
+  }
+}
+.product-review-carousel figure blockquote .review-title {
+  line-height: 130%;
+  margin-right: 4rem;
+  text-indent: -0.5rem;
+}
+@media (min-width: 40rem) {
+  .product-review-carousel figure blockquote .review-title {
+    margin-right: 0;
+    line-height: 120%;
+    text-indent: 0;
+  }
+}
+.product-review-carousel figure blockquote .review-title:before {
+  content: open-quote;
+  color: #c445a2;
+}
+.product-review-carousel figure blockquote .review-title:after {
+  content: close-quote;
+  color: #c445a2;
+}
+.product-review-carousel figure figcaption cite {
+  font-style: normal;
+}
+.product-review-carousel figure figcaption cite a {
+  color: inherit;
+}
+.product-review-carousel figure figcaption cite a:hover {
+  color: #dc91c8;
+}
+@media (min-width: 40rem) {
+  .product-review-carousel .see-all-reviews {
+    font-size: 1.5rem;
+  }
+}
+.product-review-carousel .see-all-reviews a {
+  color: inherit;
+}
+.product-review-carousel .see-all-reviews a:hover {
+  color: #dc91c8;
+}
+.product-review-carousel .stars {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+}
+.product-review-carousel .overall-rating {
+  color: #dc91c8;
+}
+.product-review-carousel .overall-rating span {
+  color: #ffffff;
+}
+
 /*# sourceMappingURL=home.css.map */

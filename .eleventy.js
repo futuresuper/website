@@ -2,6 +2,7 @@
 // Date filters
 const dateFilter = require("./src/filters/date-filter.js");
 const w3DateFilter = require("./src/filters/w3-date-filter.js");
+const timeSinceFilter = require("./src/filters/time-since-filter.js");
 // JS minification filter
 const { minify } = require("terser");
 // CSS minification filter
@@ -25,6 +26,7 @@ module.exports = (config) => {
   // Handle dates in areas such as blog posts
   config.addFilter("dateFilter", dateFilter);
   config.addFilter("w3DateFilter", w3DateFilter);
+  config.addFilter("timeSinceFilter", timeSinceFilter);
   // Custom currency filter for fees
   config.addFilter("currency", (stringOrNumber) => {
     return parseFloat(stringOrNumber).toFixed(2);
