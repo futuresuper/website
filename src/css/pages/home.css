@@ -479,8 +479,8 @@ main > article.container {
   font-size: 1.5rem;
 }
 .product-review-carousel figure {
-  margin-top: 3rem;
-  margin-bottom: 6rem;
+  padding-top: 3rem;
+  padding-bottom: 6rem;
 }
 .product-review-carousel figure blockquote .stars,
 .product-review-carousel figure blockquote .review-title {
