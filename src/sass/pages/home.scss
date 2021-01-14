@@ -63,11 +63,36 @@
 
   h2,
   .stars,
-  .all-reviews {
+  .see-all-reviews {
     color: $pink-700;
   }
 
+  h2 {
+    font-size: $font-size-24;
+  }
+
   figure {
+    margin-top: $space-section-bottom / 2;
+    margin-bottom: $space-section-bottom;
+
+    blockquote {
+      .stars,
+      .review-title {
+        font-size: 1.75rem;
+        @media (min-width: $breakpoint-sm) {
+          font-size: 3rem;
+        }
+      }
+
+      .review-title {
+        line-height: 130%;
+        margin-right: 4rem;
+        @media (min-width: $breakpoint-sm) {
+          margin-right: 0;
+          line-height: 120%;
+        }
+      }
+    }
     figcaption {
       cite {
         font-style: normal;
@@ -83,7 +108,11 @@
     }
   }
 
-  .all-reviews {
+  .see-all-reviews {
+    @media (min-width: $breakpoint-sm) {
+      font-size: $font-size-24;
+    }
+
     a {
       color: inherit;
 
@@ -91,6 +120,11 @@
         color: $pink-500;
       }
     }
+  }
+
+  .stars {
+    margin-top: 1.5rem;
+    margin-bottom: 0;
   }
 
   .overall-rating {

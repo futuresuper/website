@@ -472,8 +472,35 @@ main > article.container {
 }
 .product-review-carousel h2,
 .product-review-carousel .stars,
-.product-review-carousel .all-reviews {
+.product-review-carousel .see-all-reviews {
   color: #c445a2;
+}
+.product-review-carousel h2 {
+  font-size: 1.5rem;
+}
+.product-review-carousel figure {
+  margin-top: 3rem;
+  margin-bottom: 6rem;
+}
+.product-review-carousel figure blockquote .stars,
+.product-review-carousel figure blockquote .review-title {
+  font-size: 1.75rem;
+}
+@media (min-width: 40rem) {
+  .product-review-carousel figure blockquote .stars,
+.product-review-carousel figure blockquote .review-title {
+    font-size: 3rem;
+  }
+}
+.product-review-carousel figure blockquote .review-title {
+  line-height: 130%;
+  margin-right: 4rem;
+}
+@media (min-width: 40rem) {
+  .product-review-carousel figure blockquote .review-title {
+    margin-right: 0;
+    line-height: 120%;
+  }
 }
 .product-review-carousel figure figcaption cite {
   font-style: normal;
@@ -484,11 +511,20 @@ main > article.container {
 .product-review-carousel figure figcaption cite a:hover {
   color: #dc91c8;
 }
-.product-review-carousel .all-reviews a {
+@media (min-width: 40rem) {
+  .product-review-carousel .see-all-reviews {
+    font-size: 1.5rem;
+  }
+}
+.product-review-carousel .see-all-reviews a {
   color: inherit;
 }
-.product-review-carousel .all-reviews a:hover {
+.product-review-carousel .see-all-reviews a:hover {
   color: #dc91c8;
+}
+.product-review-carousel .stars {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
 }
 .product-review-carousel .overall-rating {
   color: #dc91c8;

@@ -3,11 +3,25 @@
   "reviews": 629,
   "latestReviews": [
     {
-      "stars": 2,
+      "stars": 5,
       "title": "Ethical Investing at it's best!",
       "author": "Kate Ringvall",
       "date": "2021-01-13",
       "url": "https://www.productreview.com.au/reviews/c91cfc55-9db4-4284-a808-f697a0bad051"
+    },
+    {
+      "stars": 5,
+      "title": "An excellent super fund - I recommend them to everyone!",
+      "author": "Zoe",
+      "date": "2021-01-12",
+      "url": "https://www.productreview.com.au/reviews/9eaf7423-54cc-402a-aab3-916c1bcac2b4"
+    },
+    {
+      "stars": 5,
+      "title": "Cause it's real",
+      "author": "damien w.",
+      "date": "2021-01-09",
+      "url": "https://www.productreview.com.au/reviews/5d6190da-8c85-48b7-99ac-d83a89f32333"
     },
     {
       "stars": 5,
