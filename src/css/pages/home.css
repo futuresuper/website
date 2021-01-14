@@ -460,4 +460,41 @@ main > article.container {
   }
 }
 
+.product-review-carousel {
+  padding: 4rem 0;
+  color: #ffffff;
+  background-color: #3c1631;
+}
+@media (min-width: 40rem) {
+  .product-review-carousel {
+    text-align: center;
+  }
+}
+.product-review-carousel h2,
+.product-review-carousel .stars,
+.product-review-carousel .all-reviews {
+  color: #c445a2;
+}
+.product-review-carousel figure figcaption cite {
+  font-style: normal;
+}
+.product-review-carousel figure figcaption cite a {
+  color: inherit;
+}
+.product-review-carousel figure figcaption cite a:hover {
+  color: #dc91c8;
+}
+.product-review-carousel .all-reviews a {
+  color: inherit;
+}
+.product-review-carousel .all-reviews a:hover {
+  color: #dc91c8;
+}
+.product-review-carousel .overall-rating {
+  color: #dc91c8;
+}
+.product-review-carousel .overall-rating span {
+  color: #ffffff;
+}
+
 /*# sourceMappingURL=home.css.map */

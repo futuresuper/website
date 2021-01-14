@@ -51,3 +51,53 @@
     }
   }
 }
+
+.product-review-carousel {
+  padding: 4rem 0;
+  color: $white-500;
+  background-color: $pink-900;
+
+  @media (min-width: $breakpoint-sm) {
+    text-align: center;
+  }
+
+  h2,
+  .stars,
+  .all-reviews {
+    color: $pink-700;
+  }
+
+  figure {
+    figcaption {
+      cite {
+        font-style: normal;
+
+        a {
+          color: inherit;
+
+          &:hover {
+            color: $pink-500;
+          }
+        }
+      }
+    }
+  }
+
+  .all-reviews {
+    a {
+      color: inherit;
+
+      &:hover {
+        color: $pink-500;
+      }
+    }
+  }
+
+  .overall-rating {
+    color: $pink-500;
+
+    span {
+      color: $white-500;
+    }
+  }
+}

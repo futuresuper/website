@@ -1,0 +1,20 @@
+{
+  "rating": 4.8,
+  "reviews": 629,
+  "latestReviews": [
+    {
+      "stars": 2,
+      "title": "Ethical Investing at it's best!",
+      "author": "Kate Ringvall",
+      "date": "2021-01-13",
+      "url": "https://www.productreview.com.au/reviews/c91cfc55-9db4-4284-a808-f697a0bad051"
+    },
+    {
+      "stars": 5,
+      "title": "very happy with returns and ethics",
+      "author": "Lewis C.",
+      "date": "2021-01-08",
+      "url": "https://www.productreview.com.au/reviews/545d4315-dffd-4e6d-b00d-3ef7c9473e1b"
+    }
+  ]
+}
