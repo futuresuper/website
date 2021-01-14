@@ -294,7 +294,7 @@ button.clear,
   list-style-type: none;
 }
 
-.investment-options header .option-card-full-container .option-card-full {
+.investment-options .top .option-card-full-container .option-card-full {
   border: 2px solid #e6e6e5;
   background-color: #ffffff;
 }
@@ -439,79 +439,79 @@ main > article.container {
   left: calc(100% - 2.5rem);
 }
 
-.investment-options .table-container .grid-row .balanced-index.row-data, .investment-options header .option-card-full-container .balanced-index.option-card-full {
+.investment-options .table-container .grid-row .balanced-index.row-data, .investment-options .top .option-card-full-container .balanced-index.option-card-full {
   color: #3c1631;
 }
-.investment-options .table-container .grid-row .balanced-index.row-data svg.fill-core .fill-target, .investment-options header .option-card-full-container .balanced-index.option-card-full svg.fill-core .fill-target {
+.investment-options .table-container .grid-row .balanced-index.row-data svg.fill-core .fill-target, .investment-options .top .option-card-full-container .balanced-index.option-card-full svg.fill-core .fill-target {
   fill: #c445a2;
 }
-.investment-options .table-container .grid-row .balanced-index.row-data svg.fill-core .stroke-target, .investment-options header .option-card-full-container .balanced-index.option-card-full svg.fill-core .stroke-target {
+.investment-options .table-container .grid-row .balanced-index.row-data svg.fill-core .stroke-target, .investment-options .top .option-card-full-container .balanced-index.option-card-full svg.fill-core .stroke-target {
   stroke: #c445a2;
 }
-.investment-options .table-container .grid-row .balanced-index.row-data svg.fill-light .stroke-target, .investment-options header .option-card-full-container .balanced-index.option-card-full svg.fill-light .stroke-target {
+.investment-options .table-container .grid-row .balanced-index.row-data svg.fill-light .stroke-target, .investment-options .top .option-card-full-container .balanced-index.option-card-full svg.fill-light .stroke-target {
   stroke: #dc91c8;
 }
-.investment-options .table-container .grid-row .balanced-index.row-data .button, .investment-options header .option-card-full-container .balanced-index.option-card-full .button {
+.investment-options .table-container .grid-row .balanced-index.row-data .button, .investment-options .top .option-card-full-container .balanced-index.option-card-full .button {
   background-color: #c445a2;
 }
-.investment-options .table-container .grid-row .balanced-index.row-data .button:hover, .investment-options header .option-card-full-container .balanced-index.option-card-full .button:hover {
+.investment-options .table-container .grid-row .balanced-index.row-data .button:hover, .investment-options .top .option-card-full-container .balanced-index.option-card-full .button:hover {
   background-color: #3c1631;
 }
-.investment-options .table-container .grid-row .balanced-impact.row-data, .investment-options header .option-card-full-container .balanced-impact.option-card-full {
+.investment-options .table-container .grid-row .balanced-impact.row-data, .investment-options .top .option-card-full-container .balanced-impact.option-card-full {
   color: #002166;
 }
-.investment-options .table-container .grid-row .balanced-impact.row-data svg.fill-core .fill-target, .investment-options header .option-card-full-container .balanced-impact.option-card-full svg.fill-core .fill-target {
+.investment-options .table-container .grid-row .balanced-impact.row-data svg.fill-core .fill-target, .investment-options .top .option-card-full-container .balanced-impact.option-card-full svg.fill-core .fill-target {
   fill: #0a5aff;
 }
-.investment-options .table-container .grid-row .balanced-impact.row-data svg.fill-core .stroke-target, .investment-options header .option-card-full-container .balanced-impact.option-card-full svg.fill-core .stroke-target {
+.investment-options .table-container .grid-row .balanced-impact.row-data svg.fill-core .stroke-target, .investment-options .top .option-card-full-container .balanced-impact.option-card-full svg.fill-core .stroke-target {
   stroke: #0a5aff;
 }
-.investment-options .table-container .grid-row .balanced-impact.row-data svg.fill-light .stroke-target, .investment-options header .option-card-full-container .balanced-impact.option-card-full svg.fill-light .stroke-target {
+.investment-options .table-container .grid-row .balanced-impact.row-data svg.fill-light .stroke-target, .investment-options .top .option-card-full-container .balanced-impact.option-card-full svg.fill-light .stroke-target {
   stroke: #a3c1ff;
 }
-.investment-options .table-container .grid-row .balanced-impact.row-data .button, .investment-options header .option-card-full-container .balanced-impact.option-card-full .button {
+.investment-options .table-container .grid-row .balanced-impact.row-data .button, .investment-options .top .option-card-full-container .balanced-impact.option-card-full .button {
   background-color: #0a5aff;
 }
-.investment-options .table-container .grid-row .balanced-impact.row-data .button:hover, .investment-options header .option-card-full-container .balanced-impact.option-card-full .button:hover {
+.investment-options .table-container .grid-row .balanced-impact.row-data .button:hover, .investment-options .top .option-card-full-container .balanced-impact.option-card-full .button:hover {
   background-color: #002166;
 }
-.investment-options .table-container .grid-row .renewables-plus-growth.row-data, .investment-options header .option-card-full-container .renewables-plus-growth.option-card-full {
+.investment-options .table-container .grid-row .renewables-plus-growth.row-data, .investment-options .top .option-card-full-container .renewables-plus-growth.option-card-full {
   color: #025018;
 }
-.investment-options .table-container .grid-row .renewables-plus-growth.row-data svg.fill-core .fill-target, .investment-options header .option-card-full-container .renewables-plus-growth.option-card-full svg.fill-core .fill-target {
+.investment-options .table-container .grid-row .renewables-plus-growth.row-data svg.fill-core .fill-target, .investment-options .top .option-card-full-container .renewables-plus-growth.option-card-full svg.fill-core .fill-target {
   fill: #2bb151;
 }
-.investment-options .table-container .grid-row .renewables-plus-growth.row-data svg.fill-core .stroke-target, .investment-options header .option-card-full-container .renewables-plus-growth.option-card-full svg.fill-core .stroke-target {
+.investment-options .table-container .grid-row .renewables-plus-growth.row-data svg.fill-core .stroke-target, .investment-options .top .option-card-full-container .renewables-plus-growth.option-card-full svg.fill-core .stroke-target {
   stroke: #2bb151;
 }
-.investment-options .table-container .grid-row .renewables-plus-growth.row-data svg.fill-light .stroke-target, .investment-options header .option-card-full-container .renewables-plus-growth.option-card-full svg.fill-light .stroke-target {
+.investment-options .table-container .grid-row .renewables-plus-growth.row-data svg.fill-light .stroke-target, .investment-options .top .option-card-full-container .renewables-plus-growth.option-card-full svg.fill-light .stroke-target {
   stroke: #97ddab;
 }
-.investment-options .table-container .grid-row .renewables-plus-growth.row-data .button, .investment-options header .option-card-full-container .renewables-plus-growth.option-card-full .button {
+.investment-options .table-container .grid-row .renewables-plus-growth.row-data .button, .investment-options .top .option-card-full-container .renewables-plus-growth.option-card-full .button {
   background-color: #2bb151;
 }
-.investment-options .table-container .grid-row .renewables-plus-growth.row-data .button:hover, .investment-options header .option-card-full-container .renewables-plus-growth.option-card-full .button:hover {
+.investment-options .table-container .grid-row .renewables-plus-growth.row-data .button:hover, .investment-options .top .option-card-full-container .renewables-plus-growth.option-card-full .button:hover {
   background-color: #025018;
 }
 
-.investment-options header {
+.investment-options .top {
   margin-bottom: 6rem;
 }
-.investment-options header .option-card-full-container {
+.investment-options .top .option-card-full-container {
   display: flex;
   flex-direction: column;
 }
 @media (min-width: 40rem) {
-  .investment-options header .option-card-full-container {
+  .investment-options .top .option-card-full-container {
     grid-column: span 12;
   }
 }
 @media (min-width: 48rem) {
-  .investment-options header .option-card-full-container {
+  .investment-options .top .option-card-full-container {
     grid-column: span 4;
   }
 }
-.investment-options header .option-card-full-container .leading-stat {
+.investment-options .top .option-card-full-container .leading-stat {
   height: 4rem;
   line-height: 4rem;
   background-color: #fbf9f9;
@@ -520,35 +520,35 @@ main > article.container {
   font-size: 0.75rem;
   color: #1d1d1b;
 }
-.investment-options header .option-card-full-container .option-card-full {
+.investment-options .top .option-card-full-container .option-card-full {
   flex-grow: 1;
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
 }
 @media (min-width: 48rem) {
-  .investment-options header .option-card-full-container .option-card-full:not(.with-leading-stat) {
+  .investment-options .top .option-card-full-container .option-card-full:not(.with-leading-stat) {
     margin-top: 4rem;
   }
 }
 @media (min-width: 48rem) {
-  .investment-options header .option-card-full-container .option-card-full {
+  .investment-options .top .option-card-full-container .option-card-full {
     text-align: center;
   }
 }
 @media (min-width: 80rem) {
-  .investment-options header .option-card-full-container .option-card-full {
+  .investment-options .top .option-card-full-container .option-card-full {
     padding: 3rem;
   }
 }
-.investment-options header .option-card-full-container .option-card-full svg {
+.investment-options .top .option-card-full-container .option-card-full svg {
   margin-bottom: 0.25rem;
   width: 3rem;
   height: 3rem;
   margin-left: -0.4rem;
 }
 @media (min-width: 48rem) {
-  .investment-options header .option-card-full-container .option-card-full svg {
+  .investment-options .top .option-card-full-container .option-card-full svg {
     align-self: center;
     margin-bottom: 1rem;
     width: 5rem;
@@ -557,33 +557,33 @@ main > article.container {
   }
 }
 @media (min-width: 80rem) {
-  .investment-options header .option-card-full-container .option-card-full svg {
+  .investment-options .top .option-card-full-container .option-card-full svg {
     width: 9rem;
     height: 9rem;
   }
 }
-.investment-options header .option-card-full-container .option-card-full h2 {
-  font-size: 1.125rem;
+.investment-options .top .option-card-full-container .option-card-full h2 {
+  font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
 }
 @media (min-width: 48rem) {
-  .investment-options header .option-card-full-container .option-card-full h2 {
+  .investment-options .top .option-card-full-container .option-card-full h2 {
     font-size: 1.75rem;
     margin-bottom: 2rem;
   }
 }
-.investment-options header .option-card-full-container .option-card-full p {
+.investment-options .top .option-card-full-container .option-card-full p {
   flex-grow: 1;
 }
-.investment-options header .option-card-full-container .option-card-full .button {
+.investment-options .top .option-card-full-container .option-card-full .button {
   color: #ffffff;
   margin-top: 0.5rem;
   font-size: 1rem;
   padding: 0.75rem 0;
 }
 @media (min-width: 48rem) {
-  .investment-options header .option-card-full-container .option-card-full .button {
+  .investment-options .top .option-card-full-container .option-card-full .button {
     margin-top: 1rem;
     font-size: 1.125rem;
     padding: 1rem 0;

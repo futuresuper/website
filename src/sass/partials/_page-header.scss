@@ -1,0 +1,5 @@
+@use "../base" as *;
+
+header[role="heading"] {
+  margin-bottom: $space-section-bottom;
+}

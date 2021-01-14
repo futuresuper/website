@@ -776,6 +776,10 @@ body > .flow-content > footer .legal-link-list li a:hover {
   }
 }
 
+header[role=heading] {
+  margin-bottom: 6rem;
+}
+
 .acknowledgement-of-country {
   color: #ffffff;
   background-color: #0b0b0a;

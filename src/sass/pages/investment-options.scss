@@ -90,7 +90,7 @@
 }
 
 .investment-options {
-  header {
+  .top {
     margin-bottom: $space-section-bottom;
 
     .option-card-full-container {
@@ -161,7 +161,7 @@
         }
 
         h2 {
-          font-size: $font-size-lg;
+          font-size: $font-size-24;
           font-weight: 700;
           margin-bottom: 1rem;
 
