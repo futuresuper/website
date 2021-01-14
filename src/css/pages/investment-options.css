@@ -500,6 +500,10 @@ table th:only-of-type {
 .investment-options header h1 {
   padding: 3rem 0;
 }
+.investment-options header .option-card-full-container {
+  display: flex;
+  flex-direction: column;
+}
 @media (min-width: 40rem) {
   .investment-options header .option-card-full-container {
     grid-column: span 12;
@@ -512,16 +516,23 @@ table th:only-of-type {
 }
 .investment-options header .option-card-full-container .leading-stat {
   height: 4rem;
+  line-height: 4rem;
   background-color: #fbf9f9;
   text-align: center;
   font-family: "JetBrainsMono", monospace;
   font-size: 0.75rem;
 }
 .investment-options header .option-card-full-container .option-card-full {
+  flex-grow: 1;
   padding: 3rem;
   display: flex;
   flex-direction: column;
   text-align: center;
+}
+@media (min-width: 48rem) {
+  .investment-options header .option-card-full-container .option-card-full:not(.with-leading-stat) {
+    margin-top: 4rem;
+  }
 }
 .investment-options header .option-card-full-container .option-card-full svg {
   align-self: center;

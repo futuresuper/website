@@ -105,8 +105,13 @@
         grid-column: span 4;
       }
 
+      // Required to have each column/card take on the size of its largest sibling
+      display: flex;
+      flex-direction: column;
+
       .leading-stat {
         height: 4rem;
+        line-height: 4rem;
         background-color: $off-white-300;
         text-align: center;
         font-family: $font-stack-monospace;
@@ -114,6 +119,7 @@
       }
 
       .option-card-full {
+        flex-grow: 1;
         padding: 3rem;
         @extend %border-style-card;
         display: flex;
@@ -121,6 +127,12 @@
 
         @extend %set-option-theme-colours;
         text-align: center;
+
+        &:not(.with-leading-stat) {
+          @media (min-width: $breakpoint-md) {
+            margin-top: 4rem;
+          }
+        }
 
         svg {
           align-self: center;

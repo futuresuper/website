@@ -37,7 +37,7 @@
           <p>65% of new members choose this option</p>
         </div>
         {% endif %}
-        <div class="option-card-full {{ option.slug }}">
+        <div class="option-card-full {{ option.slug }}{% if option.leadingStat %} with-leading-stat{% endif %}">
           {% set iconUrl = iconsPath + option.slug + ".svg" %}
           {{ iconUrl | svgContents("fill-light") | safe }}
           <h2>{{ option.opticalLabel[0] }}<br>{{ option.opticalLabel[1] }}</h2>
