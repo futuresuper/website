@@ -1,0 +1,5 @@
+{
+  "layout": "layouts/article.html",
+  "permalink": "/faqs/{{ category | slug }}/{{ title | slug }}/index.html",
+  "pageStyles": ["src/css/pages/post.css"]
+}

@@ -1,7 +1,6 @@
 {% extends "layouts/base.html" %}
 
 {% set pageHeaderTitle = title %}
-{% set summary = content %}
 
 {% block content %}
 
@@ -12,6 +11,11 @@
     <div class="article-content">
       <section>
         <h2>Support</h2>
+        <p>
+          Check out our
+          <a href="/support-and-faqs">Support & FAQs</a>
+          page if you think your question might be a common one. Otherwise, feel free to reach out to our friendly Member Advocates:
+        </p>
 
         <address>
           <dl class="grid">
@@ -25,7 +29,8 @@
               <dt class="heading-three">Phone</dt>
               <dd>
                 <a href="tel:{{ contact.support.phone.number }}">{{ contact.support.phone.number }}</a>
-                <p>Monday&hairsp;–&hairsp;Friday<br>{{ contact.support.phone.openingTime }}&hairsp;–&hairsp;{{ contact.support.phone.closingTime }}<br>
+                <p>
+                  Monday&hairsp;–&hairsp;Friday<br>{{ contact.support.phone.openingTime }}&hairsp;–&hairsp;{{ contact.support.phone.closingTime }}<br>
                   <span class="text-tertiary">Sydney local time</span></p>
               </dd>
             </div>
@@ -41,10 +46,20 @@
 
       <section>
         <h2>Media enquiries</h2>
-        <a href="mailto:{{ contact.media.email }}">{{ contact.media.email }}</a>
+        <address>
+          <dl>
+            <dt class="heading-three">Email</dt>
+            <dd>
+              <a href="mailto:{{ contact.media.email }}">{{ contact.media.email }}</a>
+            </dd>
+          </dl>
+        </address>
+
       </section>
     </div>
 
   </article>
+
+  {% include "partials/also-see.html" %}
 
 {% endblock %}

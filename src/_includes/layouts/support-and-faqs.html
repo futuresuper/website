@@ -4,6 +4,29 @@
 
 {% block content %}
 
+<article class="container">
+
   {% include "partials/page-header.html" %}
+
+  <div class="article-content">
+
+    <section>
+      <h2>Superannuation basics</h2>
+
+      {% for item in collections.faqs %}
+      <details>
+        <summary>{{ item.data.title }}</summary>
+        <div class="contents">
+          {{ item.templateContent | safe }}
+          <a href="{{ item.url }}">Permalink</a>
+        </div>
+      </details>
+      {% endfor %}
+    </section>
+
+  </div>
+</article>
+
+{% include "partials/also-see.html" %}
 
 {% endblock %}

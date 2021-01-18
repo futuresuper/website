@@ -62,24 +62,23 @@
           </div>
         </div>
       </div>
-    </div>
 
-    <script>
-      function showScreen(screen) {
-        const screenContainers = document.getElementsByClassName("screen-container");
-        for (let i = 0; i < screenContainers.length; i++) {
-          screenContainers[i].style.display = "none";
+      <script>
+        function showScreen(screen) {
+          const screenContainers = document.getElementsByClassName("screen-container");
+          for (let i = 0; i < screenContainers.length; i++) {
+            screenContainers[i].style.display = "none";
+          }
+          document
+            .getElementById(screen)
+            .style
+            .display = "block";
         }
-        document
-          .getElementById(screen)
-          .style
-          .display = "block";
-      }
-    </script>
-  </article>
+      </script>
+    </article>
 
-  {% include "partials/join-cta.html" %}
+    {% include "partials/join-cta.html" %}
 
-</div>
+  </div>
 
 {% endblock %}

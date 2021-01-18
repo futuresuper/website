@@ -37,10 +37,10 @@ module.exports = (config) => {
     return [...collection.getFilteredByGlob("./src/posts/*.md")].reverse();
   });
 
-  // Return a collection of homepage sections
-  // TODO: why is this collection being shown in reverse order locally but not externally?
-  config.addCollection("homeSections", (collection) => {
-    return [...collection.getFilteredByGlob("./src/home-sections/*.md")];
+  // Return a collection of FAQs
+  // TODO; replace with dynamic collection from Groove Knowledge Base
+  config.addCollection("faqs", (collection) => {
+    return [...collection.getFilteredByGlob("./src/faqs/*.md")];
   });
 
   // Allow JavaScript to be minified via the jsmin Nunjucks filter

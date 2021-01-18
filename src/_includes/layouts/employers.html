@@ -7,8 +7,8 @@
   <article class="container">
 
     {% include "partials/page-header.html" %}
-    <div class="article-content">
 
+    <div class="article-content">
       <p>
         The easiest way to manage your employees' super is by clearing house. Using a clearing house ensures your payments are SuperStream compliant, and makes them easier to track.
       </p>
@@ -40,9 +40,8 @@
         </table>
       </section>
 
-      {% if faqs %}
-        {% set pageFaqs = faqs %}
-        {% include "partials/faqs.html" %}
+      {% if pageFaqs %}
+        {% include "partials/page-faqs.html" %}
       {% endif %}
     </div>
 
