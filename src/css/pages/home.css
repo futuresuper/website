@@ -196,9 +196,6 @@ p a {
 p a:hover {
   color: #0a5aff;
 }
-p.page-header-summary {
-  font-size: 2rem;
-}
 
 .disclaimer {
   color: #76766f;

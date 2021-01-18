@@ -1,6 +1,7 @@
 {% extends "layouts/base.html" %}
 
 {% set pageHeaderTitle = title %}
+{# TODO: Remove pageHeaderAlign if default becomes center #}
 {% set pageHeaderAlign = "center" %}
 {% set iconsPath = '/src/images/icons/investment-options/' %}
 
@@ -37,7 +38,9 @@
       <div class="option-card-full-container">
         {% if option.leadingStat %}
         <div class="leading-stat">
-          <p><strong>65%</strong> of new members choose this option</p>
+          <p>
+            <strong>65%</strong>
+            of new members choose this option</p>
         </div>
         {% endif %}
         <div class="option-card-full {{ option.slug }}{% if option.leadingStat %} with-leading-stat{% endif %}">
@@ -178,7 +181,8 @@
         </p>
         <p class="caption">
           {% set yearlyFee = 50000 * (option.fee.perAnnumPercentage / 100) + option.fee.perYearPrice %}
-          <small>${{ yearlyFee | currency }} per year on a balance of $50,000</small>
+          <small>${{ yearlyFee | currency }}
+            per year on a balance of $50,000</small>
         </p>
       </div>
       {% endfor %}
@@ -187,8 +191,8 @@
     <div class="grid-row">
       <div class="row-header">
         <h5>
-          <a class="tooltip">Investment objectives<span class="tooltip-text">How much we aim for your money to grow
-              each year</span></a>
+          <a class="tooltip">Investment objectives<span class="tooltip-text">How much we aim for your money to grow each
+              year</span></a>
         </h5>
       </div>
       {% for option in investmentOptions %}
@@ -200,8 +204,8 @@
         </p>
         <p class="caption">
           <small>Per annum over
-            <a class="tooltip">rolling ten-year periods<span class="tooltip-text">Across 10 consecutive
-                years</span></a> (after fees and taxes)
+            <a class="tooltip">rolling ten-year periods<span class="tooltip-text">Across 10 consecutive years</span></a>
+            (after fees and taxes)
           </small>
         </p>
       </div>
@@ -231,13 +235,13 @@
       <div class="row-data {{ option.slug }}">
         {% if option.management === "active" %}
         <p>
-          <a class="tooltip">Active<span class="tooltip-text">We actively manage the alternative allocation of
-              this option’s investments</span></a>
+          <a class="tooltip">Active<span class="tooltip-text">We actively manage the alternative allocation of this
+              option’s investments</span></a>
         </p>
         {% elseif option.management === "passive" %}
         <p>
-          <a class="tooltip">Passive<span class="tooltip-text">This option automatically tracks the market index
-              through exchange traded funds</span></a>
+          <a class="tooltip">Passive<span class="tooltip-text">This option automatically tracks the market index through
+              exchange traded funds</span></a>
         </p>
         {% endif %}
       </div>
@@ -275,8 +279,8 @@
 
   <section class="chill container">
     <h2>Not sure? No stress.</h2>
-    <p>You can change your investment option any time after joining, up to four times a year. Learn more <a
-        href="#todo">here</a>.</p>
+    <p>You can change your investment option any time after joining, up to four times a year. Learn more
+      <a href="#todo">here</a>.</p>
   </section>
 </article>
 

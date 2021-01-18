@@ -1,0 +1,17 @@
+address {
+  dl {
+    .item {
+      grid-column: span 4;
+
+      dt {
+        line-height: 100%;
+      }
+
+      dd {
+        > *:not(:first-child) {
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+}

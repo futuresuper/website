@@ -4,6 +4,35 @@
 
 {% block content %}
 
+<article class="container">
   {% include "partials/page-header.html" %}
+  <div class="article-content">
+    {% if currentJobOpenings %}
+    <h2>Our current job openings</h2>
+    <ul class="plain">
+      {% for item in currentJobOpenings %}
+      <li>
+        <h3>{{ item.title }}</h3>
+        <p>
+          {{ item.location }}<br>
+          {{ item.closeDate }}<br>
+          <a href="/career/{{ item.slug }}">Read more →</a>
+        </p>
+      </li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <p>We don't have any job openings at the moment. Please check back soon!</p>
+    {% endif %}
 
+    <h2>Our efforts to make working here fair for all</h2>
+    <ul>
+      <li>14 weeks paid parental leave</li>
+      <li>Flexible working arrangements</li>
+      <li>Additional super for staff earning under $80,000 p.a.</li>
+      <li>Safe place for trans and non-binary employees</li>
+    </ul>
+  </div>
+</article>
+{% include "partials/also-see.html" %}
 {% endblock %}

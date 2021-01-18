@@ -197,9 +197,6 @@ p a {
 p a:hover {
   color: #0a5aff;
 }
-p.page-header-summary {
-  font-size: 2rem;
-}
 
 .disclaimer {
   color: #76766f;
@@ -824,6 +821,12 @@ body > .flow-content > footer .legal-link-list li a:hover {
 
 header[role=heading] {
   margin-bottom: 6rem;
+  text-align: center;
+}
+header[role=heading] .page-header-summary {
+  font-size: 2rem;
+  max-width: 48rem;
+  margin: 0 auto;
 }
 
 .acknowledgement-of-country {

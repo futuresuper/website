@@ -1,0 +1,50 @@
+{% extends "layouts/base.html" %}
+
+{% set pageHeaderTitle = title %}
+{% set summary = content %}
+
+{% block content %}
+
+  <article class="container">
+
+    {% include "partials/page-header.html" %}
+
+    <div class="article-content">
+      <section>
+        <h2>Support</h2>
+
+        <address>
+          <dl class="grid">
+            <div class="item">
+              <dt class="heading-three">Email</dt>
+              <dd>
+                <a href="mailto:{{ contact.support.email }}">{{ contact.support.email }}</a>
+              </dd>
+            </div>
+            <div class="item">
+              <dt class="heading-three">Phone</dt>
+              <dd>
+                <a href="tel:{{ contact.support.phone.number }}">{{ contact.support.phone.number }}</a>
+                <p>Monday&hairsp;–&hairsp;Friday<br>{{ contact.support.phone.openingTime }}&hairsp;–&hairsp;{{ contact.support.phone.closingTime }}<br>
+                  <span class="text-tertiary">Sydney local time</span></p>
+              </dd>
+            </div>
+            <div class="item">
+              <dt class="heading-three">Post</dt>
+              <dd>
+                <p>PO Box 1282<br>Albury<br>NSW 2640</p>
+              </dd>
+            </div>
+          </dl>
+        </address>
+      </section>
+
+      <section>
+        <h2>Media enquiries</h2>
+        <a href="mailto:{{ contact.media.email }}">{{ contact.media.email }}</a>
+      </section>
+    </div>
+
+  </article>
+
+{% endblock %}

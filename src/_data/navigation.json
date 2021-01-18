@@ -72,11 +72,11 @@
       "subItems": [
         {
           "text": "Contact Us",
-          "url": "/contact/"
+          "url": "/contact-us/"
         },
         {
           "text": "About Us",
-          "url": "/about/"
+          "url": "/about-us/"
         },
         {
           "text": "Work With Us",

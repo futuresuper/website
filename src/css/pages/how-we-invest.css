@@ -197,9 +197,6 @@ p a {
 p a:hover {
   color: #0a5aff;
 }
-p.page-header-summary {
-  font-size: 2rem;
-}
 
 .disclaimer {
   color: #76766f;
@@ -437,9 +434,6 @@ main > article.container {
   /* Style the speech bubbles */
   /* Speech bubble arrows */
   /* Style the example bullets */
-}
-.how-we-invest article > header {
-  text-align: center;
 }
 .how-we-invest .screens-container {
   background-color: #ffffff;

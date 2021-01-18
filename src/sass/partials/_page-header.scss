@@ -2,4 +2,11 @@
 
 header[role="heading"] {
   margin-bottom: $space-section-bottom;
+  text-align: center;
+
+  .page-header-summary {
+    font-size: 2rem;
+    max-width: $breakpoint-md;
+    margin: 0 auto;
+  }
 }
