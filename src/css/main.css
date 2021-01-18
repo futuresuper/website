@@ -595,7 +595,7 @@ header[role=banner] section .show-hide-mobile-menu .menu-button#menu-button-clos
     align-items: center;
   }
   header[role=banner] section .nav-container nav .clear:after {
-    content: " ↓";
+    content: " ▾";
   }
   header[role=banner] section .nav-container nav .non-dropdown {
     display: inline-block;
@@ -740,29 +740,59 @@ body > .flow-content > footer nav ul > li a:hover {
     grid-column: span 4;
   }
 }
-body > .flow-content > footer .by-the-way img {
-  grid-row: 1/1;
+body > .flow-content > footer .legal-section {
+  margin-top: 3rem;
 }
-body > .flow-content > footer .by-the-way p {
+@media (min-width: 40rem) {
+  body > .flow-content > footer .legal-section {
+    margin-top: 10rem;
+  }
+}
+body > .flow-content > footer .legal-section img {
+  grid-row: 1/1;
+  margin-bottom: 3rem;
+}
+body > .flow-content > footer .legal-section table.essential-fund-info {
   grid-row: 2/2;
-  grid-column: span 12;
+  border-spacing: 0;
+}
+@media (min-width: 40rem) {
+  body > .flow-content > footer .legal-section table.essential-fund-info {
+    grid-column: span 6;
+  }
 }
 @media (min-width: 48rem) {
-  body > .flow-content > footer .by-the-way p {
+  body > .flow-content > footer .legal-section table.essential-fund-info {
+    grid-column: span 4;
+  }
+}
+body > .flow-content > footer .legal-section p {
+  grid-row: 3/3;
+  grid-column: span 12;
+  margin-top: 1rem;
+}
+@media (min-width: 48rem) {
+  body > .flow-content > footer .legal-section p {
     grid-column: span 8;
   }
 }
 @media (min-width: 80rem) {
-  body > .flow-content > footer .by-the-way p,
-body > .flow-content > footer .by-the-way img {
+  body > .flow-content > footer .legal-section table.essential-fund-info {
     grid-row: 1/1;
+    grid-column: span 3;
   }
-  body > .flow-content > footer .by-the-way p {
+  body > .flow-content > footer .legal-section p,
+body > .flow-content > footer .legal-section img {
+    grid-row: 2/2;
+  }
+  body > .flow-content > footer .legal-section p {
     grid-column: span 6;
+    margin-top: 0;
   }
-  body > .flow-content > footer .by-the-way img {
+  body > .flow-content > footer .legal-section img {
     justify-self: end;
     grid-column: 12/12;
+    margin-bottom: 0;
   }
 }
 body > .flow-content > footer .legal-link-list {

@@ -42,35 +42,60 @@ body > .flow-content > footer {
     }
   }
 
-  .by-the-way {
+  .legal-section {
+    margin-top: 3rem;
+    @media (min-width: $breakpoint-sm) {
+      margin-top: 10rem;
+    }
+
     img {
       grid-row: 1 / 1;
+      margin-bottom: 3rem;
+    }
+
+    table.essential-fund-info {
+      grid-row: 2 / 2;
+      border-spacing: 0;
+
+      @media (min-width: $breakpoint-sm) {
+        grid-column: span 6;
+      }
+
+      @media (min-width: $breakpoint-md) {
+        grid-column: span 4;
+      }
     }
 
     p {
-      grid-row: 2 / 2;
+      grid-row: 3 / 3;
       grid-column: span 12;
-    }
+      margin-top: 1rem;
 
-    @media (min-width: $breakpoint-md) {
-      p {
+      @media (min-width: $breakpoint-md) {
         grid-column: span 8;
       }
     }
 
     @media (min-width: $breakpoint-lg) {
+      table.essential-fund-info {
+        grid-row: 1 / 1;
+        grid-column: span 3;
+      }
+
       p,
       img {
-        grid-row: 1 / 1;
+        grid-row: 2 / 2;
       }
 
       p {
         grid-column: span 6;
+        margin-top: 0;
       }
 
       img {
         justify-self: end;
         grid-column: 12 / 12;
+        margin-bottom: 0;
       }
     }
   }
