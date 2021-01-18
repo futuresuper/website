@@ -9,34 +9,35 @@
 {% endset %}
 
 {% block content %}
-<article class="container">
-  {# TODO: replace manual breadcrumb with automatic one from something linke 11ty-navigation #}
-  {# https://www.11ty.dev/docs/plugins/navigation/ #}
-  <p>
-    <a class="breadcrumb" href="/blog">Blog</a> /
-  </p>
+  <article class="container">
+    {# TODO: replace manual breadcrumb with automatic one from something linke 11ty-navigation #}
+    {# https://www.11ty.dev/docs/plugins/navigation/ #}
+    <p>
+      <a class="breadcrumb" href="/blog">Blog</a>
+      /
+    </p>
 
-  {% include "partials/page-header.html" %}
-  <div class="post-content">
-    {{ content | safe }}
+    {% include "partials/page-header.html" %}
+    <div class="article-content">
+      {{ content | safe }}
 
-    {% if tags %}
-    <footer>
-      <section>
-        <p>Tags:</p>
-        <ul class="tags-list" aria-describedby="tags-desc">
-          {% for tag in tags %}
-          <li>
-            #{{ tag | title | replace(' ', '') }}
-          </li>
-          {% endfor %}
-        </ul>
-      </section>
-    </footer>
-    {% endif %}
-  </div>
+      {% if tags %}
+        <footer>
+          <section>
+            <p>Tags:</p>
+            <ul class="tags-list" aria-describedby="tags-desc">
+              {% for tag in tags %}
+                <li>
+                  #{{ tag | title | replace(' ', '') }}
+                </li>
+              {% endfor %}
+            </ul>
+          </section>
+        </footer>
+      {% endif %}
+    </div>
 
-</article>
+  </article>
 
-{% include "partials/join-cta.html" %}
+  {% include "partials/join-cta.html" %}
 {% endblock %}

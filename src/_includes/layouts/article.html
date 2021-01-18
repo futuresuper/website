@@ -1,0 +1,21 @@
+{# A layout for any simple, container-based, Markdown files #}
+
+{% extends "layouts/base.html" %}
+
+{% set pageHeaderTitle = title %}
+
+{% block content %}
+
+  <article class="container">
+
+    {% include "partials/page-header.html" %}
+
+    <div class="article-content">
+      {{ content | safe }}
+    </div>
+
+  </article>
+
+  {% include "partials/also-see.html" %}
+
+{% endblock %}

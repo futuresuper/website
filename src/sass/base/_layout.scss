@@ -1,4 +1,5 @@
 @use "colours" as *;
+@use "type" as *;
 
 // Breakpoints
 $breakpoint-sm: 40rem; //640px
@@ -54,6 +55,29 @@ body {
 
   @media (min-width: $breakpoint-lg) {
     padding: 0 $space-page-padding-x-lg;
+  }
+
+  // Blog posts and other simple pages (e.g. Terms and Conditions)
+  .article-content {
+    margin: 0 auto;
+    max-width: $breakpoint-md;
+
+    // Set larger font-size for p, li, etc
+    > p,
+    > ul,
+    > ol {
+      font-size: $font-size-lg;
+      line-height: $line-height-lg;
+    }
+
+    img {
+      margin: 3rem 0;
+    }
+
+    // Allow in-post sections to breathe
+    h2 {
+      margin-top: 3rem;
+    }
   }
 }
 
