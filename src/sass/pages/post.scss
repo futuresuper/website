@@ -2,26 +2,7 @@
 
 @use "../base" as *;
 
-.post-content {
-  margin: 0 auto;
-  max-width: $breakpoint-md;
-
-  // Set larger font-size for p, li, etc
-  > p,
-  > ul,
-  > ol {
-    font-size: $font-size-lg;
-  }
-
-  img {
-    margin: 3rem 0;
-  }
-
-  // Allow in-post sections to breathe
-  h2 {
-    margin-top: 3rem;
-  }
-
+.article-content {
   footer {
     margin-top: $space-section-bottom;
     color: $grey-500;

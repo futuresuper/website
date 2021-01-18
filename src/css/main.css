@@ -323,6 +323,22 @@ body.mobile-menu-active.aoc-active {
     padding: 0 3rem;
   }
 }
+.container .article-content {
+  margin: 0 auto;
+  max-width: 48rem;
+}
+.container .article-content > p,
+.container .article-content > ul,
+.container .article-content > ol {
+  font-size: 1.125rem;
+  line-height: 170%;
+}
+.container .article-content img {
+  margin: 3rem 0;
+}
+.container .article-content h2 {
+  margin-top: 3rem;
+}
 
 main > article.container {
   padding-bottom: 6rem;
