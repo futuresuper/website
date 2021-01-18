@@ -4,24 +4,39 @@
 
 {# Render post date and any tags that this post has been filed under #}
 {% set summary %}
-<time datetime="{{ date | w3DateFilter }}">{{ date | dateFilter }}</time>
-{% if tags %}
-  <p>Tags:</p>
-  <ul class="tags-list" aria-describedby="tags-desc">
-    {% for tag in tags %}
-      <li>
-        #{{ tag | title | replace(' ', '') }}
-      </li>
-    {% endfor %}
-  </ul>
-{% endif %}
+<time itemprop="dateCreated datePublished" datetime="{{ date | w3DateFilter }}">{{ date | dateFilter }}</time>
+<p rel="author">{{ author }}</p>
 {% endset %}
 
 {% block content %}
-  <article class="container">
-    {% include "partials/page-header.html" %}
-    {{ content | safe }}
-  </article>
+<article class="container">
+  {# TODO: replace manual breadcrumb with automatic one from something linke 11ty-navigation #}
+  {# https://www.11ty.dev/docs/plugins/navigation/ #}
+  <p>
+    <a class="breadcrumb" href="/blog">Blog</a> /
+  </p>
 
-  {% include "partials/join-cta.html" %}
+  {% include "partials/page-header.html" %}
+  <div class="post-content">
+    {{ content | safe }}
+
+    {% if tags %}
+    <footer>
+      <section>
+        <p>Tags:</p>
+        <ul class="tags-list" aria-describedby="tags-desc">
+          {% for tag in tags %}
+          <li>
+            #{{ tag | title | replace(' ', '') }}
+          </li>
+          {% endfor %}
+        </ul>
+      </section>
+    </footer>
+    {% endif %}
+  </div>
+
+</article>
+
+{% include "partials/join-cta.html" %}
 {% endblock %}
