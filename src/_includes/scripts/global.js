@@ -52,10 +52,6 @@ async function showNextCustodianName() {
 
 setInterval(showNextCustodianName, 4000);
 
-// Animate the yellow text on 'Traditional Custodians' in the header
-const traditionalCustodiansInHeader = document.querySelector(".acknowledgement-of-country.header p span.traditional-custodians");
-traditionalCustodiansInHeader.classList.add("active");
-
 // Watch for and animate acknowledgement of country (footer only)
 const aocFooter = document.querySelector(".acknowledgement-of-country.footer");
 const siteContent = document.querySelector("body > .flow-content");
