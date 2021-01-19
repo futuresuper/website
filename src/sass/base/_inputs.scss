@@ -1,0 +1,16 @@
+@use "layout" as *;
+@use "type" as *;
+
+input {
+  &.search {
+    width: 100%;
+    padding: 1rem 1rem 1rem 3.5rem;
+    background-image: url(/images/icons/search.svg);
+    background-position: 0.75rem;
+    background-repeat: no-repeat;
+    background-size: 2rem auto;
+    @extend %border-style-card;
+    margin-bottom: $space-section-bottom;
+    font-size: $font-size-lg;
+  }
+}

@@ -292,7 +292,7 @@ button.clear,
   list-style-type: none;
 }
 
-.also-see ul li {
+.also-see ul li, input.search {
   border: 2px solid #e6e6e5;
   background-color: #ffffff;
 }
@@ -375,6 +375,17 @@ main > article.container {
   }
 }
 
+input.search {
+  width: 100%;
+  padding: 1rem 1rem 1rem 3.5rem;
+  background-image: url(/images/icons/search.svg);
+  background-position: 0.75rem;
+  background-repeat: no-repeat;
+  background-size: 2rem auto;
+  margin-bottom: 6rem;
+  font-size: 1.125rem;
+}
+
 .tooltip {
   position: relative;
   display: inline;
@@ -435,6 +446,7 @@ main > article.container {
 }
 
 .also-see {
+  margin-top: 6rem;
   margin-bottom: 6rem;
 }
 .also-see ul li {

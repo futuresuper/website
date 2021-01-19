@@ -291,7 +291,7 @@ button.clear,
   list-style-type: none;
 }
 
-.everything-we-invest-in .investment-container {
+.everything-we-invest-in .investment-container, input.search {
   border: 2px solid #e6e6e5;
   background-color: #ffffff;
 }
@@ -372,6 +372,17 @@ main > article.container {
   .grid > * {
     grid-column: span 2;
   }
+}
+
+input.search {
+  width: 100%;
+  padding: 1rem 1rem 1rem 3.5rem;
+  background-image: url(/images/icons/search.svg);
+  background-position: 0.75rem;
+  background-repeat: no-repeat;
+  background-size: 2rem auto;
+  margin-bottom: 6rem;
+  font-size: 1.125rem;
 }
 
 .tooltip {

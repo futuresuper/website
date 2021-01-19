@@ -1,6 +1,7 @@
 @use "../base" as *;
 
 .also-see {
+  margin-top: $space-section-bottom;
   margin-bottom: $space-section-bottom;
 
   ul {

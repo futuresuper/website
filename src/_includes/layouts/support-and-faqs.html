@@ -4,29 +4,44 @@
 
 {% block content %}
 
-<article class="container">
+  <article class="container">
 
-  {% include "partials/page-header.html" %}
+    {% include "partials/page-header.html" %}
 
-  <div class="article-content">
+    <div class="article-content">
+      <input class="search" type="text" placeholder="what do you need help with?" value="">
 
-    <section>
-      <h2>Superannuation basics</h2>
+      {# Temporary place for no results front-end #}
+      {% if results === false %}
+        <p>Sorry, we don't have any results for <span>''</span>. Feel free to <a href="/contact-us">reach out</a> to one of
+      our friendly Member Advocates for help.</p>
+      {% endif %}
+      {# Temporary place for true results front-end #}
+      {% if results %}
+        <p>Here's what we've found for <span>''</span>:</p>
+      {% endif %}
 
-      {% for item in collections.faqs %}
-      <details>
-        <summary>{{ item.data.title }}</summary>
-        <div class="contents">
-          {{ item.templateContent | safe }}
-          <a href="{{ item.url }}">Permalink</a>
-        </div>
-      </details>
-      {% endfor %}
-    </section>
+      {# Dynamically create a new section for each Groove Knowledge Base category #}
+      {# Mirror the order of these sections (and their children) from the Groove Knowledge Base or our current page #}
+      {# We likely need some logic to do the above categorisation #}
+      <section>
+        <h2>Superannuation basics</h2>
 
-  </div>
-</article>
+        {# Reading from temporary faqs collection #}
+        {% for item in collections.faqs %}
+          <details>
+            <summary>{{ item.data.title }}</summary>
+            <div class="contents">
+              {{ item.templateContent | safe }}
+              <a href="{{ item.url }}">Permalink</a>
+            </div>
+          </details>
+        {% endfor %}
+      </section>
 
-{% include "partials/also-see.html" %}
+    </div>
+  </article>
+
+  {% include "partials/also-see.html" %}
 
 {% endblock %}
