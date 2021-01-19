@@ -762,6 +762,7 @@ body > .flow-content > footer .legal-section img {
   margin-bottom: 3rem;
 }
 body > .flow-content > footer .legal-section table.essential-fund-info {
+  grid-column: span 4;
   grid-row: 2/2;
   border-spacing: 0;
 }

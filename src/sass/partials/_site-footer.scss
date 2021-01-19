@@ -54,6 +54,7 @@ body > .flow-content > footer {
     }
 
     table.essential-fund-info {
+      grid-column: span 4;
       grid-row: 2 / 2;
       border-spacing: 0;
 

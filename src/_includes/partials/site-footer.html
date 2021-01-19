@@ -8,33 +8,33 @@
           <img src="/images/logo-single-line.svg" alt="Future Super Logo">
           <ul class="plain">
             {% for item in socials.items %}
-            {% if item.inSiteFooter %}
-            <li>
-              <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.platform}}</a>
-            </li>
-            {% endif %}
+              {% if item.inSiteFooter %}
+                <li>
+                  <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.platform}}</a>
+                </li>
+              {% endif %}
             {% endfor %}
           </ul>
         </a>
       </div>
 
       {% for item in navigation.items %}
-      {# Not all items will go in site header, so check them #}
-      {% if item.inSiteFooter %}
-      {# Don't include the COVID shortcut link #}
-      {% if not item.url %}
-      <div>
-        <h2>{{ item.text }}</h2>
-        <ul class="plain">
-          {% for subItem in item.subItems %}
-          <li>
-            <a href="{{ subItem.url }}">{{ subItem.text }}</a>
-          </li>
-          {% endfor %}
-        </ul>
-      </div>
-      {% endif %}
-      {% endif %}
+        {# Not all items will go in site header, so check them #}
+        {% if item.inSiteFooter %}
+          {# Don't include the COVID shortcut link #}
+          {% if not item.url %}
+            <div>
+              <h2>{{ item.text }}</h2>
+              <ul class="plain">
+                {% for subItem in item.subItems %}
+                  <li>
+                    <a href="{{ subItem.url }}">{{ subItem.text }}</a>
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+          {% endif %}
+        {% endif %}
       {% endfor %}
     </nav>
 
@@ -43,31 +43,29 @@
       <table class="essential-fund-info text-tertiary">
         <tr>
           <th>ABN</th>
-          <td>45 960 194 277</td>
+          {# Zero-width joiner (&zwj;) necessary to stop iOS formatting as phone number #}
+          <td>&zwj;45 &zwj;960 &zwj;194 &zwj;277</td>
         </tr>
         <tr>
           <th>USI</th>
-          <td>45 960 194 277 010</td>
+          {# Zero-width joiner (&zwj;) necessary to stop iOS formatting as phone number #}
+          <td>&zwj;45 &zwj;960 &zwj;194 &zwj;277 &zwj;010</td>
         </tr>
       </table>
       <p class="text-tertiary">
-        All information provided is general in nature only. We recommend you seek financial advice when considering if
-        Future Super is right for your objectives and needs. When considering returns, past performance is not
-        indicative of future performance.
+        All information provided is general in nature only. We recommend you seek financial advice when considering if Future Super is right for your objectives and needs. When considering returns, past performance is not indicative of future performance.
       </p>
     </section>
 
-
-
     <ul class="legal-link-list text-tertiary">
       {% for item in navigation.items %}
-      {% if "Legal" in item.text %}
-      {% for subItem in item.subItems %}
-      <li>
-        <a href="{{ subItem.url }}">{{ subItem.text }}</a>
-      </li>
-      {% endfor %}
-      {% endif %}
+        {% if "Legal" in item.text %}
+          {% for subItem in item.subItems %}
+            <li>
+              <a href="{{ subItem.url }}">{{ subItem.text }}</a>
+            </li>
+          {% endfor %}
+        {% endif %}
       {% endfor %}
     </ul>
   </div>
