@@ -52,9 +52,16 @@ async function showNextCustodianName() {
 
 setInterval(showNextCustodianName, 4000);
 
+// Animate the yellow text on 'Traditional Custodians' in the header
+const traditionalCustodiansInHeader = document.querySelector(".acknowledgement-of-country.header p span.traditional-custodians");
+traditionalCustodiansInHeader.classList.add("active");
+
 // Watch for and animate acknowledgement of country (footer only)
 const aocFooter = document.querySelector(".acknowledgement-of-country.footer");
 const siteContent = document.querySelector("body > .flow-content");
+// Use this to also control the animation of yellow text on 'Traditional Custodians'
+const traditionalCustodiansInFooter = document.querySelector(".acknowledgement-of-country.footer p span.traditional-custodians");
+
 const config = {
   rootMargin: "-75% 0% 0% 0%",
 };
@@ -64,8 +71,10 @@ let observer = new IntersectionObserver(
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         aocFooter.classList.remove("active");
+        traditionalCustodiansInFooter.classList.remove("active");
       } else {
         aocFooter.classList.add("active");
+        traditionalCustodiansInFooter.classList.add("active");
       }
     }),
   config

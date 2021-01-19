@@ -98,6 +98,22 @@ $transition-aoc-content: opacity 900ms 80ms ease-in-out;
 
           p {
             font-size: 1.125rem;
+
+            .traditional-custodians {
+              &.active {
+                color: $yellow-500;
+                animation: fadeOutYellow 3s ease-in-out 2s 1 forwards;
+              }
+
+              @keyframes fadeOutYellow {
+                0% {
+                  color: $yellow-500;
+                }
+                100% {
+                  color: $white-500;
+                }
+              }
+            }
           }
         }
       }

@@ -907,6 +907,18 @@ header[role=heading] .page-header-summary {
 .acknowledgement-of-country .container article .statement .content p {
   font-size: 1.125rem;
 }
+.acknowledgement-of-country .container article .statement .content p .traditional-custodians.active {
+  color: #fac33c;
+  animation: fadeOutYellow 3s ease-in-out 2s 1 forwards;
+}
+@keyframes fadeOutYellow {
+  0% {
+    color: #fac33c;
+  }
+  100% {
+    color: #ffffff;
+  }
+}
 .acknowledgement-of-country .details {
   display: flex;
   flex-direction: column;
