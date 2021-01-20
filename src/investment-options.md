@@ -6,6 +6,6 @@ pageStyles: ["src/css/pages/investment-options.css"]
 alsoSee:
   - Everything We Invest In
   - Performance And Returns
-  - How We Invest
   - Pension Fund
+  - How We Invest
 ---

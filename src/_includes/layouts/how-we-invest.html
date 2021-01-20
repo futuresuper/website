@@ -6,79 +6,123 @@
 {# Template HTML #}
 {% block content %}
 
-  <div class="how-we-invest">
+  <article class="container">
 
-    <article class="container">
+    {% include "partials/page-header.html" %}
 
-      {% include "partials/page-header.html" %}
+    <div class="article-content">
 
-      <div class="article-content">
-        <section id="part-one" class="loud">
-          <p>The super industry’s purpose is to invest and
-            <span class="text-green">grow</span>
-            Australia’s retirement savings.</p>
-        </section>
+      <section>
+        <p>The super industry’s purpose is to invest and grow Australia’s retirement savings. But super funds have consistently invested money in fossil fuels and other harmful industries that have set us on a path towards climate change.
+        </p>
+        <p>Future Super offers a better way to invest super for your future.</p>
+      </section>
 
-        <div id="shape"></div>
-
-        <section id="part-two" class="loud">
-          <p class="target">But super funds have consistently invested money in fossil fuels and other
-            <span class="text-red">harmful</span>
-            industries that have set us on a path towards climate change.</p>
-        </section>
-
+      <section>
         <div>
-          <h2>Ethical screens</h2>
-          <p>We apply industry-leading ethical screens to all our super portfolios. Investments must pass every screen to qualify.</p>
+          <h2>Our mission</h2>
+          <p>We grow retirement savings by investing in a future free from climate change and inequality.</p>
         </div>
-        <div style="padding: 6rem 0">
-          <div class="screens-container">
-            <div class="buttons-container">
-              {% for screen in screens %}
-                <button onclick="showScreen('{{ screen.name }}')">{{ screen.name }}</button>
-              {% endfor %}
-            </div>
+        <div>
+          <h2>What that means</h2>
+          <p>Your money will invest for your financial benefit and for the quality of your future as you save for retirement.</p>
+        </div>
+      </section>
+
+      <section>
+        <p>
+          <span>We seek</span>
+          impactful investments creating a better future.</p>
+      </section>
+      <section>
+        <p>
+          <span>We exclude</span>
+          investments with harmful impacts on people and the planet.</p>
+      </section>
+
+      <section>
+        <h2>Investing for impact</h2>
+        <p>Impact investing is what makes Future Super unique. These are investments we seek out that provide financial value to our members and also make a direct contribution to action on climate change or inequality.</p>
+        <p>Many of these involve the creation of new clean energy, while others create the infrastructure for a more equal future, like the building of disability housing.</p>
+        <p>These investments create tangible systems change that may not happen without our investment.</p>
+        <h3>We seek impact investments</h3>
+        <p>Choosing impact investments isn’t a cut-and-dry process, because each opportunity is unique. We seek investments that have a significant climate or social benefit, whatever it may be, in addition to financial performance now and in the future. Although that can be anything, there are some categories we keep a close eye on.</p>
+
+        <ul>
+          <li>Clean energy</li>
+          <li>Speciality housing</li>
+          <li>Recycling and waste</li>
+          <li>Social impact</li>
+          <li>Healthcare</li>
+          <li>Sustainable agriculture</li>
+          <li>Preservation of biodiversity</li>
+        </ul>
+
+      </section>
+
+      <section>
+        <h3>We exclude harmful investments</h3>
+        <p>We have industry-leading ethical screens to help exclude harm from your super. Investments must pass every screen to be included. This means they don’t work against our mission.</p>
+        <p>Explore to see how we screen and which companies fail our criteria.</p>
+
+        {# Todo: JS fallback #}
+        <div class="screens-container">
+          <div class="buttons-container">
             {% for screen in screens %}
-              <div class="screen-container criteria-intro" id="{{ screen.name }}" style="{% if loop.first %}display:block;{% else %}display:none;{% endif %}">
-                <!-- TODO: Format as SVG for fill colour https://stackoverflow.com/a/11978996 -->
-                <img class="screen-icon" src="/images/icons/screens/{{ screen.name | slug }}.svg" alt="Icon for {{ screen.name }}">
-                <h3>{{ screen.name }}</h3>
-                <p class="is-screened">Is screened for through the following criteria...</p>
-                {% for criteria in screen.criteria %}
-                  <div class="criteria-container">
-                    <div class="criteria">
-                      <p class="question">{{ criteria.question }}</p>
-                      <p class="example-label">Failing examples include...</p>
-                      <ul class="examples">
-                        {% for example in criteria.examples %}
-                          <li>{{ example }}</li>
-                        {% endfor %}
-                      </ul>
-                    </div>
-                  </div>
-                {% endfor %}
-              </div>
+              <button onclick="showScreen('{{ screen.name }}')">{{ screen.name }}</button>
             {% endfor %}
           </div>
+          {% for screen in screens %}
+            <div class="screen-container criteria-intro" id="{{ screen.name }}" style="{% if loop.first %}display:block;{% else %}display:none;{% endif %}">
+              <!-- TODO: Format as SVG for fill colour https://stackoverflow.com/a/11978996 -->
+              <img class="screen-icon" src="/images/icons/screens/{{ screen.name | slug }}.svg" alt="Icon for {{ screen.name }}">
+              <h3>{{ screen.name }}</h3>
+              <p class="is-screened">Is screened for through the following criteria...</p>
+              {% for criteria in screen.criteria %}
+                <div class="criteria-container">
+                  <div class="criteria">
+                    <p class="question">{{ criteria.question }}</p>
+                    <p class="example-label">Failing examples include...</p>
+                    <ul class="examples">
+                      {% for example in criteria.examples %}
+                        <li>{{ example }}</li>
+                      {% endfor %}
+                    </ul>
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+          {% endfor %}
         </div>
-      </div>
+      </section>
 
-      <script>
-        function showScreen(screen) {
-          const screenContainers = document.getElementsByClassName("screen-container");
-          for (let i = 0; i < screenContainers.length; i++) {
-            screenContainers[i].style.display = "none";
-          }
-          document
-            .getElementById(screen)
-            .style
-            .display = "block";
+      <section class="chill container">
+        <h2>Everything we invest in</h2>
+        <p>There are plenty of regular investments that pass our above screens. Some are companies you’d recognise, like Netflix and Telstra.
+        </p>
+        <p>We don’t expect every investment to change the world, but we do make all our investments public so that anyone can see where the money goes.</p>
+        <p>
+          <a href="/everything-we-invest-in">Explore Our Investments</a>.</p>
+      </section>
+
+    </div>
+
+    <script>
+      function showScreen(screen) {
+        const screenContainers = document.getElementsByClassName("screen-container");
+        for (let i = 0; i < screenContainers.length; i++) {
+          screenContainers[i].style.display = "none";
         }
-      </script>
-    </article>
+        document
+          .getElementById(screen)
+          .style
+          .display = "block";
+      }
+    </script>
+  </article>
 
-    {% include "partials/join-cta.html" %}
+  {% include "partials/also-see.html" %}
 
-  </div>
+  {% include "partials/join-cta.html" %}
 
 {% endblock %}
