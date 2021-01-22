@@ -4,7 +4,9 @@
   {% for item in pageFaqs %}
     <details>
       <summary>{{ item.question }}</summary>
-      <p>{{ item.answer }}</p>
+      <div class="contents">
+        <p>{{ item.answer }}</p>
+      </div>
     </details>
   {% endfor %}
 </section>
