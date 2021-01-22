@@ -1,0 +1,67 @@
+@use "colours" as *;
+@use "type" as *;
+
+details,
+.forms-and-docs li {
+  border: 1px solid $black-900;
+  background-color: $white-500;
+
+  &:not(:last-of-type) {
+    margin-bottom: -1px;
+  }
+}
+
+details {
+  summary {
+    cursor: pointer;
+    padding: 1.5rem;
+    font-weight: 500;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      background-color: $grey-100;
+    }
+  }
+
+  .contents {
+    padding: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 160%;
+    border-top: 1px solid $black-900;
+  }
+}
+
+.forms-and-docs {
+  li {
+    a {
+      display: block;
+      padding: 1.5rem;
+      text-decoration: none;
+      color: inherit;
+
+      padding: 1.5rem 1.5rem 1.5rem 5rem;
+      background-image: url(/images/icons/download.svg);
+      background-position: 1.5rem;
+      background-repeat: no-repeat;
+      background-size: 2rem auto;
+
+      &:hover {
+        background-color: $grey-100;
+      }
+
+      h2 {
+        margin: 0 0 0.5rem 0 !important; //TODO: why are rules in type.scss overriding this?
+        font-size: 1rem;
+      }
+
+      p {
+        font-size: $font-size-sm;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
