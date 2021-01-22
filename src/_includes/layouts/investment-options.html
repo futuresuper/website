@@ -172,6 +172,32 @@
 
       <div class="grid-row">
         <div class="row-header">
+          <h5>Entry fee</h5>
+        </div>
+        {% for option in investmentOptions %}
+          <div class="row-data {{ option.slug }}">
+            <p>
+              Free
+            </p>
+          </div>
+        {% endfor %}
+      </div>
+
+      <div class="grid-row">
+        <div class="row-header">
+          <h5>Exit fee</h5>
+        </div>
+        {% for option in investmentOptions %}
+          <div class="row-data {{ option.slug }}">
+            <p>
+              Free
+            </p>
+          </div>
+        {% endfor %}
+      </div>
+
+      <div class="grid-row">
+        <div class="row-header">
           <h5>Fees per year</h5>
         </div>
         {% for option in investmentOptions %}
