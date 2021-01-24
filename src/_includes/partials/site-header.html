@@ -26,7 +26,7 @@
         {% for item in navigation.items %}
           {# Not all items will go in site header, so check them #}
           {% if item.inSiteHeader %}
-            {# Show the COVID shortcut link differently #}
+            {# Show any direct links differently to dropdowns #}
             {% if item.url %}
               <a class="non-dropdown" href="{{ item.url }}">{{ item.text }}</a>
             {% else %}

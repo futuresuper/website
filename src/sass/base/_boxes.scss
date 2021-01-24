@@ -51,6 +51,10 @@ details {
 
       &:hover {
         background-color: $grey-100;
+
+        h2 {
+          color: $blue-500;
+        }
       }
 
       h2 {

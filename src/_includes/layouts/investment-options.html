@@ -8,7 +8,7 @@
 {% block content %}
 
   {# Define reusable macro for table header row #}
-  {% macro initialTableRow(showSelectButtonsOnMdBreakpoint, tableTitle) %}
+  {% macro initialTableRow(showJoinButtonsOnMdBreakpoint, tableTitle) %}
     <div class="grid-row">
       <div class="row-header">
         {% if tableTitle %}
@@ -20,8 +20,8 @@
           {% set iconUrl = iconsPath + option.slug + ".svg" %}
           {{ iconUrl | svgContents("fill-core") | safe }}
           <h4>{{ option.opticalLabel[0] }}<br>{{ option.opticalLabel[1] }}</h4>
-          {% if showSelectButtonsOnMdBreakpoint === "true" %}
-            <a href="{{ site.joinUrl }}/?option={{ option.slug }}" class="button full-width">Select</a>
+          {% if showJoinButtonsOnMdBreakpoint === "true" %}
+            <a href="{{ site.joinUrl }}/?option={{ option.slug }}" class="button full-width">Join</a>
           {% endif %}
         </div>
       {% endfor %}
@@ -48,7 +48,7 @@
               {{ iconUrl | svgContents("fill-light") | safe }}
               <h2>{{ option.opticalLabel[0] }}<br>{{ option.opticalLabel[1] }}</h2>
               <p>{{ option.subtitle }}</p>
-              <a href="{{ site.joinUrl }}/?option={{ option.slug }}" class="button full-width">Select</a>
+              <a href="{{ site.joinUrl }}/?option={{ option.slug }}" class="button full-width">Join</a>
             </div>
           </div>
         {% endfor %}
@@ -169,6 +169,32 @@
     {# Table two of two #}
     <div class="table-container">
       {{ initialTableRow("true", "Money talk") }}
+
+      <div class="grid-row">
+        <div class="row-header">
+          <h5>Entry fee</h5>
+        </div>
+        {% for option in investmentOptions %}
+          <div class="row-data {{ option.slug }}">
+            <p>
+              Free
+            </p>
+          </div>
+        {% endfor %}
+      </div>
+
+      <div class="grid-row">
+        <div class="row-header">
+          <h5>Exit fee</h5>
+        </div>
+        {% for option in investmentOptions %}
+          <div class="row-data {{ option.slug }}">
+            <p>
+              Free
+            </p>
+          </div>
+        {% endfor %}
+      </div>
 
       <div class="grid-row">
         <div class="row-header">
