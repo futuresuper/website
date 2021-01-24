@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Super fund documents & forms",
+    "items": [
+      {
+        "title": "Product Disclosure Statement",
+        "description": "Contains all the important information needed to make an informed decision about joining Future Super.",
+        "type": "PDF",
+        "slug": "pds"
+      },
+      {
+        "title": "Financial Services Guide",
+        "description": "Contains important information about who we are and your rights as a client.",
+        "type": "PDF",
+        "slug": "fsg"
+      }
+    ]
+  },
+  {
+    "title": "Forms for individuals",
+    "description": "Forms you will need to become a member of Future Super, as well as forms regarding rollovers, withdrawals, insurance and other transactions with the fund.",
+    "items": [
+      {
+        "title": "Application Form (Online)",
+        "description": "<p>Complete this form to become a member of the Future Super fund. Alternatively, you can <a href=\"/contact-us\">contact us</a> for a copy of our paper application form.</p>",
+        "type": "Online",
+        "url": "https://join.futuresuper.com.au/"
+      },
+      {
+        "title": "General Compliance Certificate",
+        "description": "Employers may require this form to be completed when an employee chooses to join Future Super. It states we are a compliant fund and can accept super contributions on member's behalf.",
+        "type": "PDF",
+        "slug": "generalcompliancecertificate"
+      }
+    ]
+  }
+]

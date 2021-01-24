@@ -4,6 +4,46 @@
 
 {% block content %}
 
+<article class="container">
+
   {% include "partials/page-header.html" %}
 
+  <div class="article-content">
+    {% for section in documentsAndForms %}
+    <section>
+      <h2> {{ section.title }}</h2>
+      {% if section.description %}
+      <p>{{ section.description }}</p>
+      {% endif %}
+
+      <ul class="plain forms-and-docs">
+        {% for item in section.items %}
+        <li><a href="{{ site.url }}/{{ item.slug }}" target="_blank" rel="noopener noreferrer">
+            <h2>{{ item.title }}</h2>
+            {% if item.description %}
+            {{ item.description | safe }}
+            {% endif %}
+          </a></li>
+        {% endfor %}
+      </ul>
+    </section>
+
+    <h2>Begin manual content...</h2>
+    {# Reading from temporary faqs collection #}
+    <ul class="plain forms-and-docs">
+      {% for item in collections.documentsAndFormsCollection %}
+
+      <li>
+        <a href="{{ site.url }}/{{ item.data.slug }}" target="_blank" rel="noopener noreferrer">
+          <h2>{{ item.data.title }}</h2>
+        </a>
+        {{ item.templateContent | safe }}
+      </li>
+
+      {% endfor %}
+    </ul>
+
+    {% endfor %}
+  </div>
+</article>
 {% endblock %}

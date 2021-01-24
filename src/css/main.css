@@ -249,7 +249,7 @@ details .contents {
   border-top: 1px solid #000000;
 }
 
-.forms-and-docs li a {
+.forms-and-docs li > a {
   display: block;
   padding: 1.5rem;
   text-decoration: none;
@@ -260,14 +260,14 @@ details .contents {
   background-repeat: no-repeat;
   background-size: 2rem auto;
 }
-.forms-and-docs li a:hover {
+.forms-and-docs li > a:hover {
   background-color: #f5f5f4;
 }
-.forms-and-docs li a h2 {
+.forms-and-docs li > a h2 {
   margin: 0 0 0.5rem 0 !important;
   font-size: 1rem;
 }
-.forms-and-docs li a p {
+.forms-and-docs li > a p {
   font-size: 0.875rem;
   margin-bottom: 0;
 }

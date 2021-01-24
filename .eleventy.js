@@ -43,6 +43,12 @@ module.exports = (config) => {
     return [...collection.getFilteredByGlob("./src/faqs/*.md")];
   });
 
+  // Return a collection of FAQs
+  // TODO; replace with dynamic collection from Groove Knowledge Base
+  config.addCollection("documentsAndFormsCollection", (collection) => {
+    return [...collection.getFilteredByGlob("./src/documentsAndForms/*.md")];
+  });
+
   // Allow JavaScript to be minified via the jsmin Nunjucks filter
   // https://www.11ty.dev/docs/quicktips/inline-js/
   config.addNunjucksAsyncFilter("jsmin", async function (code, callback) {
