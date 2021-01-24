@@ -60,12 +60,6 @@
       ]
     },
     {
-      "text": "COVID-19",
-      "url": "/contact/",
-      "inSiteHeader": true,
-      "inSiteFooter": false
-    },
-    {
       "text": "Company",
       "inSiteHeader": false,
       "inSiteFooter": true,
