@@ -1,6 +1,7 @@
 @use "colours" as *;
 
 $line-height-xs: 115%;
+$line-height-sm: 140%;
 $line-height-lg: 170%;
 
 $font-size-xs: 0.75rem; // 12px
@@ -9,6 +10,8 @@ $font-size-sm: 0.875rem; // 14px
 $font-size-lg: 1.125rem; // 18px
 $font-size-24: 1.5rem; // 24px
 $font-size-xl: 1.75rem; // 28px
+
+$transition-text-hover: all 125ms ease-in-out;
 
 @font-face {
   font-family: "SharpGrotesk";
@@ -104,6 +107,7 @@ p {
   margin-bottom: 1rem;
   a {
     color: inherit;
+    transition: $transition-text-hover;
     &:hover {
       color: $blue-500;
     }

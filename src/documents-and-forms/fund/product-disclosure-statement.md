@@ -1,9 +1,8 @@
 ---
-title: "Product Disclosure Statement"
+title: "Product Disclosure Statement*"
+url: "https://www.futuresuper.com.au/pds"
 type: "PDF"
-slug: "pds"
-sections:
-  - essentials
+order: 1
 ---
 
 Contains all the important information needed to make an informed decision about joining Future Super.
