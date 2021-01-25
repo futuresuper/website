@@ -1,10 +1,13 @@
 ---
-title: "How de-identified recruitment is improving the diversity of our team"
-date: "2021-01-18"
-tags:
-  - "recruitment"
-  - "diversity"
-author: "Veronica Sherwood-Meares"
+title: How de-identified recruitment is improving the diversity of our team
+date: 2021-01-18T00:20:01.928Z
+tags: 
+  - Equality
+  - News
+author: Veronica Sherwood-Meares
+canonical: "https://www.linkedin.com/pulse/how-de-identified-recruitment-improving-diversity-our-veronica/"
+summary: People were generally pretty surprised when I responded telling them we don’t look at CVs at Future Super. So how do we hire?
+image: 
 ---
 
 In the days and weeks after posting a job ad for a role in my team a couple of months ago, my LinkedIn inbox was flooded with people sending me their CVs and asking if they would be a good fit for the role.
@@ -21,9 +24,9 @@ In just under two years, we’ve transformed these figures. Of the 15 new hires 
 
 We made this improvement in the absence of any specific policies or quotas - it’s been a result of a shift in our recruitment platform and approach.
 
-We adopted a new recruitment platform, [Applied](https://www.beapplied.com/), in February 2019. The theory behind the platform is simple - to reduce the risk of unconscious bias, and improve the quality of hiring decisions. This is done through features which include building application screening and interview questions based on testing the skills required for the job rather than a candidate’s CV, de-identified application screening, and assessing applications by question rather than by candidate.
+We adopted a new recruitment platform, [**Applied**](https://www.beapplied.com/), in February 2019. The theory behind the platform is simple - to reduce the risk of unconscious bias, and improve the quality of hiring decisions. This is done through features which include building application screening and interview questions based on testing the skills required for the job rather than a candidate’s CV, de-identified application screening, and assessing applications by question rather than by candidate.
 
-It definitely took us a bit of time to get used to the new approach. It’s really tempting to ask someone where they’ve worked in the past instead of crafting questions which test for the skills required for the job, but we’ve gotten used to sticking to the theory over time.
+It definitely took us a bit of time to get used to the new approach. It’s _really_ tempting to ask someone where they’ve worked in the past instead of crafting questions which test for the skills required for the job, but we’ve gotten used to sticking to the theory over time.
 
 We recognise that diversity can’t exist without inclusion (otherwise it’s just tokenism), and improving the diversity of the people who walk in the door is only part of the puzzle. We are on the on-going journey of making Future Super more accountable for the inclusion of our team, and we acknowledge that we’ve still got a huge amount of work to do.
 
@@ -31,6 +34,7 @@ As an impact superfund that strives for a future free from inequality, I was sho
 
 However, making the change has transformed the diversity and quality of the people we bring onto our team, and we haven’t looked back.
 
-So don’t send us your CV! Instead, encourage your employer to consider making the switch to deidentified recruitment - it’s a no brainer. For any businesses wanting to talk to us about how to start this process, we’d be happy to put you in touch with our wonderful COO, [Leigh](https://www.linkedin.com/in/leigh-dunlop-9b127bb8/).
+So don’t send us your CV! Instead, encourage your employer to consider making the switch to deidentified recruitment - it’s a no brainer. For any businesses wanting to talk to us about how to start this process, we’d be happy to put you in touch with our wonderful COO, [**Leigh**](https://www.linkedin.com/in/leigh-dunlop-9b127bb8/).
 
-_This was originally posted [on LinkedIn](https://www.linkedin.com/pulse/how-de-identified-recruitment-improving-diversity-our-veronica/s)._
+_This was originally posted_ [_on LinkedIn_](https://www.linkedin.com/pulse/how-de-identified-recruitment-improving-diversity-our-veronica/)_._
+
