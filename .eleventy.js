@@ -12,6 +12,25 @@ const { srcset, src } = require("./src/helpers/shortcodes");
 // Inline SVGs
 const svgContents = require("eleventy-plugin-svg-contents");
 
+// Slugify required the below options to work properly
+// https://github.com/11ty/eleventy/issues/278#issuecomment-453777880
+const slugify = require("slugify");
+let opts = {
+  permalink: true,
+  permalinkClass: "direct-link",
+  permalinkSymbol: "#",
+
+  // this is the same function shared above
+  slugify: function (input) {
+    const options = {
+      replacement: "-",
+      remove: /[&,+()$~%.'":*?<>{}]/g,
+      lower: true,
+    };
+    return slugify(input, options);
+  },
+};
+
 module.exports = (config) => {
   // Watch for changes in /sass
   config.addWatchTarget("./src/sass/");
