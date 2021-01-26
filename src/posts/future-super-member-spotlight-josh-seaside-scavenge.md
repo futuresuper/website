@@ -1,12 +1,14 @@
 ---
-title: Future Super Member Spotlight&#58; Josh @ Seaside Scavenge
+title: "Future Super Member Spotlight: Josh @ Seaside Scavenge"
+slug: future-super-member-spotlight-josh-seaside-scavenge
 date: 2019-07-16T05:09:13.860Z
 tags: 
   - Community
   - Environment
 author: James Wanjura
 canonical: 
-summary: We chat with passionate climate activist and proud Future Super member Josh about an impressive waterway cleanup project.
+summary: >-
+  We chat with passionate climate activist and proud Future Super member Josh about an impressive waterway cleanup project.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834011622cd3dac_team-sea-scavenge-tiny.jpg
 ---
 

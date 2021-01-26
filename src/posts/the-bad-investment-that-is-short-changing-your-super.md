@@ -1,5 +1,6 @@
 ---
-title: The bad investment that is short-changing your super
+title: "The bad investment that is short-changing your super"
+slug: the-bad-investment-that-is-short-changing-your-super
 date: 2019-02-05T19:17:14.241Z
 tags: 
   - Divestment
@@ -9,7 +10,8 @@ tags:
   - Superannuation
 author: Adam Verwey
 canonical: 
-summary: As Australians await further changes to the superannuation industry, there’s one key area where regulators can help protect Australians from losing thousands of dollars from their super savings.
+summary: >-
+  As Australians await further changes to the superannuation industry, there’s one key area where regulators can help protect Australians from losing thousands of dollars from their super savings.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc483401bd03cd3ddc_Coal-Mine-Trucks-Aerial-compressor%20(1)%20(1).jpeg
 ---
 

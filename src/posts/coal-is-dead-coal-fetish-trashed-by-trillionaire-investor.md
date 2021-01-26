@@ -1,5 +1,6 @@
 ---
-title: “Coal Is Dead”&#58; Political Fetish with Little Black Rock Trashed By Trillionaire Investor
+title: "“Coal Is Dead”: Political Fetish with Little Black Rock Trashed By Trillionaire Investor"
+slug: coal-is-dead-coal-fetish-trashed-by-trillionaire-investor
 date: 2020-01-17T02:58:33.598Z
 tags: 
   - Renewable Energy
@@ -7,7 +8,8 @@ tags:
   - Disruption
 author: Michael Bones
 canonical: 
-summary: The Australian government has been ridiculed by a trillion dollar global fund manager for “denying gravity” on coal investment.
+summary: >-
+  The Australian government has been ridiculed by a trillion dollar global fund manager for “denying gravity” on coal investment.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc48340105a4cd3e3b_Bye_Coal_Blog_960x400%20(1).png
 ---
 

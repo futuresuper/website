@@ -1,12 +1,14 @@
 ---
-title: Why Mark is suing REST super for failing on climate
+title: "Why Mark is suing REST super for failing on climate"
+slug: why-mark-is-suing-his-super-fund
 date: 2019-02-05T19:11:23.902Z
 tags: 
   - Activism
   - Divestment
 author: Michael Bones
 canonical: 
-summary: This legend is suing a $50 billion super fund for climate inaction. 
+summary: >-
+  This legend is suing a $50 billion super fund for climate inaction. 
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc483401e275cd3db7_Why%20Mark%20is%20suing%20REST%20super%20for%20failing%20on%20climate%20(1).png
 ---
 

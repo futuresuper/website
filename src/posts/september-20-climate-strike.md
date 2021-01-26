@@ -1,11 +1,13 @@
 ---
-title: The September 20 Climate Strike&#58; A Retrospective
+title: "The September 20 Climate Strike: A Retrospective"
+slug: september-20-climate-strike
 date: 2020-07-13T08:17:46.400Z
 tags: 
   - Activism
 author: Brett Morgan
 canonical: 
-summary: Future Super Member Advocate and climate activist Brett Morgan reflects on the recent global climate strike on September 20.
+summary: >-
+  Future Super Member Advocate and climate activist Brett Morgan reflects on the recent global climate strike on September 20.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc483401ac9ccd3e1a_Blog%20-%20Header%20Image%20(1).jpg
 ---
 

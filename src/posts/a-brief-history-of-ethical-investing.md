@@ -1,5 +1,6 @@
 ---
-title: A Brief History of Ethical Investing
+title: "A Brief History of Ethical Investing"
+slug: a-brief-history-of-ethical-investing
 date: 2019-02-06T12:40:59.057Z
 tags: 
   - Ethical Investing
@@ -7,7 +8,8 @@ tags:
   - Divestment
 author: Michael Bones
 canonical: 
-summary: Over the past few years ethical investing has taken off, but it’s much more than a recent fad. Here to catch you up on the long and fascinating history is Australia's ethical investing pioneer, James Thier. 
+summary: >-
+  Over the past few years ethical investing has taken off, but it’s much more than a recent fad. Here to catch you up on the long and fascinating history is Australia's ethical investing pioneer, James Thier. 
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834017765cd3d91_History%20of%20Ethical%20Investing%20(1).png
 ---
 

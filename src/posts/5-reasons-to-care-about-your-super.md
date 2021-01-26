@@ -1,5 +1,6 @@
 ---
-title: 5 Reasons to Care About Your Super
+title: "5 Reasons to Care About Your Super"
+slug: 5-reasons-to-care-about-your-super
 date: 2019-02-06T10:28:21.410Z
 tags: 
   - Environment
@@ -7,7 +8,8 @@ tags:
   - Disruption
 author: Noelle Greenwood
 canonical: 
-summary: Why should you care about your super? Future Super shows how your superannuation choices can make the world a better place – now and in the future.
+summary: >-
+  Why should you care about your super? Future Super shows how your superannuation choices can make the world a better place – now and in the future.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834016550cd3ce8_5-reasons-to-care_main-image.jpg
 ---
 

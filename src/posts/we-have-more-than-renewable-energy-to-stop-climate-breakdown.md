@@ -1,11 +1,13 @@
 ---
-title: We have more than renewable energy to stop climate breakdown
+title: "We have more than renewable energy to stop climate breakdown"
+slug: we-have-more-than-renewable-energy-to-stop-climate-breakdown
 date: 2021-01-11T22:55:43.077Z
 tags: 
   - Environment
 author: James Alexander
 canonical: 
-summary: Renewable energy alone will not avoid dangerous climate change.
+summary: >-
+  Renewable energy alone will not avoid dangerous climate change.
 image: 
 ---
 

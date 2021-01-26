@@ -1,11 +1,13 @@
 ---
-title: A message from our Chief Investment Officer on the recent market volatility
+title: "A message from our Chief Investment Officer on the recent market volatility"
+slug: market-volatility-2020
 date: 2020-07-13T08:22:58.806Z
 tags: 
   - News
 author: Dan East
 canonical: 
-summary: Our Chief Investment Officer, Dan East, explains what to expect and what we're doing in response to the recent market volatility.
+summary: >-
+  Our Chief Investment Officer, Dan East, explains what to expect and what we're doing in response to the recent market volatility.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834014339cd3e44_Market%20Volatility%20Hero%20Image.jpg
 ---
 

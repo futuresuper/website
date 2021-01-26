@@ -1,10 +1,12 @@
 ---
-title: Future Super's COVID-19 response
+title: "Future Super's COVID-19 response"
+slug: covid-19-response
 date: 2020-07-13T08:16:58.372Z
 tags: 
 author: Kirstin Hunter
 canonical: 
-summary: We’re announcing a number of initiatives to put people before profit during this crisis. 
+summary: >-
+  We’re announcing a number of initiatives to put people before profit during this crisis. 
 image: 
 ---
 

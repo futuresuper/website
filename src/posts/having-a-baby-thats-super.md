@@ -1,12 +1,14 @@
 ---
-title: Having a baby? That’s super!
+title: "Having a baby? That’s super!"
+slug: having-a-baby-thats-super
 date: 2019-02-05T19:23:53.261Z
 tags: 
   - Equality
   - Ethical Investing
 author: Kirstin Hunter
 canonical: 
-summary: Introducing BabyBump, Future Super's new initiative to make super more fair for parents.
+summary: >-
+  Introducing BabyBump, Future Super's new initiative to make super more fair for parents.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834014ad9cd3e36_having%20a%20baby%20(1).png
 ---
 

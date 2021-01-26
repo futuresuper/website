@@ -1,12 +1,14 @@
 ---
-title: Fact checking our favourite impact stats
+title: "Fact checking our favourite impact stats"
+slug: future-super-impact-and-resources
 date: 2020-08-03T05:17:21.845Z
 tags: 
   - Divestment
   - Ethical Investing
 author: Mariela Powell Thomas
 canonical: 
-summary: Saw a fun fact about Future Super's impact? Curious to know the working behind it? Here's what you need to know.
+summary: >-
+  Saw a fun fact about Future Super's impact? Curious to know the working behind it? Here's what you need to know.
 image: 
 ---
 

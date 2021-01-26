@@ -1,5 +1,6 @@
 ---
-title: Why You Should Snoop On Your Super Fund
+title: "Why You Should Snoop On Your Super Fund"
+slug: why-you-should-snoop-on-your-super-fund
 date: 2019-02-06T03:57:53.930Z
 tags: 
   - Superannuation
@@ -7,7 +8,8 @@ tags:
   - Ethical Investing
 author: Michael Bones
 canonical: 
-summary: Ever wondered why super funds make discovering your actual investments so hard? We think you should know what you’re money’s being invested in. Here’s why.
+summary: >-
+  Ever wondered why super funds make discovering your actual investments so hard? We think you should know what you’re money’s being invested in. Here’s why.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834016f89cd3d7b_why-snoop-your-super-OG-tiny.jpg
 ---
 

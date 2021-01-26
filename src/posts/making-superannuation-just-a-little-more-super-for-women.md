@@ -1,5 +1,6 @@
 ---
-title: Making superannuation just a little more super for women
+title: "Making superannuation just a little more super for women"
+slug: making-superannuation-just-a-little-more-super-for-women
 date: 2019-02-06T07:52:56.814Z
 tags: 
   - Activism
@@ -7,7 +8,8 @@ tags:
   - Equality
 author: Kirstin Hunter
 canonical: 
-summary: It’s no secret that superannuation kinda sucks for women. Super, it turns out, is where a lifetime of workforce inequality can be seen loud and clear. But there are some great examples being set by businesses who see this inequality and want to do something about it... and some of them might surprise you.
+summary: >-
+  It’s no secret that superannuation kinda sucks for women. Super, it turns out, is where a lifetime of workforce inequality can be seen loud and clear. But there are some great examples being set by businesses who see this inequality and want to do something about it... and some of them might surprise you.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc483401d0bacd3e22_Super-for-women_main%20(1).jpg
 ---
 

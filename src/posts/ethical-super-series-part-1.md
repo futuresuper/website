@@ -1,12 +1,14 @@
 ---
-title: Ethical Super Series - Part 1
+title: "Ethical Super Series - Part 1"
+slug: ethical-super-series-part-1
 date: 2019-02-06T09:26:30.752Z
 tags: 
   - Disruption
   - Divestment
 author: Michael Bones
 canonical: 
-summary: Everyone is talking about ethical super these days, but what does it really mean? Explore the ins and outs of ethical superannuation and investment with Future Super’s Ethical Super Series. In this 10 part series exploring everything from ‘what is fossil fuel free’ to ‘how to analyse a company’, we’ll be looking at how ordinary Australians can be empowered to invest more ethically.
+summary: >-
+  Everyone is talking about ethical super these days, but what does it really mean? Explore the ins and outs of ethical superannuation and investment with Future Super’s Ethical Super Series. In this 10 part series exploring everything from ‘what is fossil fuel free’ to ‘how to analyse a company’, we’ll be looking at how ordinary Australians can be empowered to invest more ethically.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc483401acf3cd3d8a_ethical-investment-part1-main%20(1).jpg
 ---
 

@@ -1,5 +1,6 @@
 ---
-title: Queensland + Adani 4EVA&#58; A broken heart waiting to happen.
+title: "Queensland + Adani 4EVA: A broken heart waiting to happen."
+slug: queensland-adani-4eva-a-broken-heart-waiting-to-happen
 date: 2019-02-06T12:15:03.613Z
 tags: 
   - Activism
@@ -7,7 +8,8 @@ tags:
   - Environment
 author: Noelle Greenwood
 canonical: 
-summary: As a Queenslander, it disturbs me deeply what our government is agreeing to in our name, in considering an allegiance with Mr Adani to be in our state’s best interest. And I have the strong sense that we are the ones being played for fools.
+summary: >-
+  As a Queenslander, it disturbs me deeply what our government is agreeing to in our name, in considering an allegiance with Mr Adani to be in our state’s best interest. And I have the strong sense that we are the ones being played for fools.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc48340136d6cd3dd5_adani-4eva-main%20(1).png
 ---
 

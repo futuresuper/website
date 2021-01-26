@@ -1,5 +1,6 @@
 ---
-title: New research reveals that 7.7% of Australia’s retirement savings could fund 100% renewable power by 2030
+title: "New research reveals that 7.7% of Australia’s retirement savings could fund 100% renewable power by 2030"
+slug: new-research-reveals-that-7-7-of-australias-retirement-savings-could-fund-100-renewable-power-by-2030
 date: 2019-02-05T19:30:30.550Z
 tags: 
   - Activism
@@ -8,7 +9,8 @@ tags:
   - Renewable Energy
 author: Michael Bones
 canonical: 
-summary: Today, brand new research by UTS Institute of Sustainable Futures (ISF) and Future Super reveals that funding Australia’s transition to 100% renewable energy could be easier than once thought.
+summary: >-
+  Today, brand new research by UTS Institute of Sustainable Futures (ISF) and Future Super reveals that funding Australia’s transition to 100% renewable energy could be easier than once thought.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc483401fac7cd3d52_UTS%20Report%20Chart%203%20(1).png
 ---
 

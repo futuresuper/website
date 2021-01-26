@@ -1,12 +1,14 @@
 ---
-title: Why Coal is a Dying Investment
+title: "Why Coal is a Dying Investment"
+slug: why-coal-is-a-dying-investment
 date: 2019-02-06T08:54:36.923Z
 tags: 
   - Environment
   - Renewable Energy
 author: Future Super
 canonical: 
-summary: Coal is a dying investment and we've got the proof. Future Super gives the full story on why Australians are steering clear from fossil fuel investments. 
+summary: >-
+  Coal is a dying investment and we've got the proof. Future Super gives the full story on why Australians are steering clear from fossil fuel investments. 
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc48340154b0cd3d29_Blog%20-%20main%20images%20_2.0.png
 ---
 

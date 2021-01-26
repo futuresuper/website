@@ -1,11 +1,13 @@
 ---
-title: Investing in the Explosion of Data, the Clean Energy Way (NEXTDC Profile)
+title: "Investing in the Explosion of Data, the Clean Energy Way (NEXTDC Profile)"
+slug: investing-in-the-explosion-of-data-the-clean-energy-way-nextdc-profile
 date: 2019-02-06T12:35:24.467Z
 tags: 
   - Ethical Investing
 author: Michael Bones
 canonical: 
-summary: When you think of ethical investments, data centers are unlikely to be the first sector that comes to mind. However, it’s Australian listed companies like NEXTDC that are providing critical sustainability leadership by reducing the carbon footprint connected to our digital activities.
+summary: >-
+  When you think of ethical investments, data centers are unlikely to be the first sector that comes to mind. However, it’s Australian listed companies like NEXTDC that are providing critical sustainability leadership by reducing the carbon footprint connected to our digital activities.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834018790cd3e27_DataCentreWoman-compressor%20(1).jpeg
 ---
 

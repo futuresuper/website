@@ -1,5 +1,6 @@
 ---
-title: Coal Billionaire Secretly Funds Pro-Coal Propaganda, And No One Is Surprised
+title: "Coal Billionaire Secretly Funds Pro-Coal Propaganda, And No One Is Surprised"
+slug: coal-billionaire-secretly-funds-pro-coal-propaganda-and-no-one-is-surprised
 date: 2019-02-05T19:12:33.184Z
 tags: 
   - Ethical Investing
@@ -9,7 +10,8 @@ tags:
   - Superannuation
 author: Michael Bones
 canonical: 
-summary: It's amazing what you find when you follow the money...
+summary: >-
+  It's amazing what you find when you follow the money...
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc483401ca75cd3bf7_Blog%201200x630%20(11).png
 ---
 

@@ -1,12 +1,14 @@
 ---
-title: How de-identified recruitment is improving the diversity of our team
+title: "How de-identified recruitment is improving the diversity of our team"
+slug: how-de-identified-recruitment-is-improving-the-diversity-of-our-team
 date: 2021-01-18T00:20:01.928Z
 tags: 
   - Equality
   - News
 author: Veronica Sherwood-Meares
 canonical: "https://www.linkedin.com/pulse/how-de-identified-recruitment-improving-diversity-our-veronica/"
-summary: People were generally pretty surprised when I responded telling them we don’t look at CVs at Future Super. So how do we hire?
+summary: >-
+  People were generally pretty surprised when I responded telling them we don’t look at CVs at Future Super. So how do we hire?
 image: 
 ---
 

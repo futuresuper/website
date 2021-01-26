@@ -1,11 +1,13 @@
 ---
-title: Giving it back
+title: "Giving it back"
+slug: giving-it-back
 date: 2020-07-14T07:43:01.141Z
 tags: 
   - News
 author: James Wanjura
 canonical: 
-summary: Future Super has decided to pay our government stimulus forward to members who have been hit hardest by the current economic crisis.
+summary: >-
+  Future Super has decided to pay our government stimulus forward to members who have been hit hardest by the current economic crisis.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc483401fb9ecd3e48_Giving%20It%20Back%20-%20Hero.jpg
 ---
 

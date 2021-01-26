@@ -1,12 +1,14 @@
 ---
-title: $200 Million In 2 years&#58; How Future Super Helped Thousand Of Aussies Divest Their Superannuation
+title: "$200 Million In 2 years: How Future Super Helped Thousand Of Aussies Divest Their Superannuation"
+slug: how-future-super-grew-by-200-million-in-just-2-years
 date: 2018-11-20T06:40:24.114Z
 tags: 
   - Environment
   - Ethical Investing
 author: Michael Bones
 canonical: 
-summary: Imagine the power of all of us moving our super money out of fossil fuels and into funding climate solutions. Superannuation is mandatory, but investing in fossil fuels shouldn’t be. Australians deserve a choice. This is the story of how two guys decided to do something about it.
+summary: >-
+  Imagine the power of all of us moving our super money out of fossil fuels and into funding climate solutions. Superannuation is mandatory, but investing in fossil fuels shouldn’t be. Australians deserve a choice. This is the story of how two guys decided to do something about it.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc483401711dcd3c05_Outback_Solar_and_Turbine-compressor.jpeg
 ---
 

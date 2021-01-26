@@ -1,11 +1,13 @@
 ---
-title: The Plastic-Free Lunchbox Project&#58; kids showing Coles how it’s done
+title: "The Plastic-Free Lunchbox Project: kids showing Coles how it’s done"
+slug: the-plastic-free-lunchbox-project-kids-showing-coles-how-its-done
 date: 2019-02-05T19:06:46.967Z
 tags: 
   - Community
 author: Michael Bones
 canonical: 
-summary: As the big grocers dilly dally over single use plastic bags, Sarah and the Taroona community are proving that ending plastic is child's play.
+summary: >-
+  As the big grocers dilly dally over single use plastic bags, Sarah and the Taroona community are proving that ending plastic is child's play.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc48340111b9cd3dc4_The%20Plastic%20Free%20Lunchbox%20Project%20(1).png
 ---
 

@@ -1,12 +1,14 @@
 ---
-title: What is the Real Economic Cost of Climate Change?
+title: "What is the Real Economic Cost of Climate Change?"
+slug: what-is-the-real-economic-cost-of-climate-change
 date: 2019-02-06T12:18:41.637Z
 tags: 
   - Politics
   - Environment
 author: Future Super
 canonical: 
-summary: Think addressing climate change is too expensive? The real cost of letting it happen unchecked will astound you. Future Super give the facts need to know.
+summary: >-
+  Think addressing climate change is too expensive? The real cost of letting it happen unchecked will astound you. Future Super give the facts need to know.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834016a50cd3d9e_main%20images%20_2.0%20(2)%20(1).png
 ---
 

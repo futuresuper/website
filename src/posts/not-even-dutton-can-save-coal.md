@@ -1,5 +1,6 @@
 ---
-title: Not Even Dutton Can Save Coal
+title: "Not Even Dutton Can Save Coal"
+slug: not-even-dutton-can-save-coal
 date: 2019-02-05T18:59:48.568Z
 tags: 
   - Divestment
@@ -7,7 +8,8 @@ tags:
   - Activism
 author: Michael Bones
 canonical: 
-summary: Energy policy has politicians are squabbling for the top job like seagulls scrapping for chips. But not even Dutton can stop the surge in renewable energy.
+summary: >-
+  Energy policy has politicians are squabbling for the top job like seagulls scrapping for chips. But not even Dutton can stop the surge in renewable energy.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc48340102b0cd3bfc_Blog%201200x630.png
 ---
 

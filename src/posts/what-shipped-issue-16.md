@@ -1,10 +1,12 @@
 ---
-title: What Shipped&#58; Issue 16
+title: "What Shipped: Issue 16"
+slug: what-shipped-issue-16
 date: 2020-11-18T06:59:08.122Z
 tags: 
 author: Danny White
 canonical: 
-summary: We’re building our product and brand in-house and documenting what we learn in the process. Here’s what we’ve done in the past few weeks.
+summary: >-
+  We’re building our product and brand in-house and documenting what we learn in the process. Here’s what we’ve done in the past few weeks.
 image: 
 ---
 

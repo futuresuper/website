@@ -1,5 +1,6 @@
 ---
-title: Turnbull’s energy policy is a nationwide NEG hit
+title: "Turnbull’s energy policy is a nationwide NEG hit"
+slug: turnbulls-energy-policy-is-a-nationwide-neg-hit
 date: 2019-02-06T07:42:50.556Z
 tags: 
   - Disruption
@@ -9,7 +10,8 @@ tags:
   - Activism
 author: Michael Bones
 canonical: 
-summary: This sleazy pick-up strategy explains everything about the Turnbull government’s energy talk.
+summary: >-
+  This sleazy pick-up strategy explains everything about the Turnbull government’s energy talk.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834014209cd3e08_turbulls-neg-hit_main%20(1).jpg
 ---
 

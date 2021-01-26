@@ -1,11 +1,13 @@
 ---
-title: NYC vs Fossil Fuels&#58; the Big Apple’s clever plan to take down Big Polluters
+title: "NYC vs Fossil Fuels: the Big Apple’s clever plan to take down Big Polluters"
+slug: nyc-vs-fossil-fuels-the-big-apples-clever-plan-to-take-down-big-polluters
 date: 2019-02-06T09:14:17.951Z
 tags: 
   - Disruption
 author: Michael Bones
 canonical: 
-summary: New York City is suing 5 fossil fuel giants and divesting billions from big polluters
+summary: >-
+  New York City is suing 5 fossil fuel giants and divesting billions from big polluters
 
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834017884cd3dbd_nyc%20(1).png
 ---

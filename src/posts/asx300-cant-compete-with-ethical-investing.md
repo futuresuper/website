@@ -1,12 +1,14 @@
 ---
-title: ASX300 can’t compete with ethical investing
+title: "ASX300 can’t compete with ethical investing"
+slug: asx300-cant-compete-with-ethical-investing
 date: 2019-02-05T18:20:25.717Z
 tags: 
   - Ethical Investing
   - Superannuation
 author: Nick Lyons
 canonical: 
-summary: Investment analyst Nick Lyons discusses how our members were protected through market volatility in the last 6 months. Future Super has returned above-market returns for the year. We have proven the value of ethical investing by protecting and growing our members’ retirement savings… Again.
+summary: >-
+  Investment analyst Nick Lyons discusses how our members were protected through market volatility in the last 6 months. Future Super has returned above-market returns for the year. We have proven the value of ethical investing by protecting and growing our members’ retirement savings… Again.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834017489cd3e03_m6Tiov4X0T0Dz52D0zDWJE0sSHUnxir2DesoCIlbOlWLyyO2Rj1nFW0En-T5j1PgbkdD_4RVrkMmj_Mq62hXjbZegPcAOcp2Wlp9mSaFb2l-tGpgpwRmetU4QxB6QONLrRS6FoPX%20(1).jpg
 ---
 

@@ -1,5 +1,6 @@
 ---
-title: Super Funds Detention&#58; why the refugee rights movement should embrace divestment
+title: "Super Funds Detention: why the refugee rights movement should embrace divestment"
+slug: super-funds-detention-why-the-refugee-rights-movement-should-embrace-divestment
 date: 2019-02-06T09:02:37.496Z
 tags: 
   - Equality
@@ -7,7 +8,8 @@ tags:
   - Divestment
 author: Kirstin Hunter
 canonical: 
-summary: Australian pro-refugee activists have unknowingly been investing in companies that profit from the suffering of refugees. 
+summary: >-
+  Australian pro-refugee activists have unknowingly been investing in companies that profit from the suffering of refugees. 
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834013feacd3cca_Blog%20-%20main%20images%20_2.0.png
 ---
 

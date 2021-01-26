@@ -1,5 +1,6 @@
 ---
-title: Five years of Future Super
+title: "Five years of Future Super"
+slug: five-years-of-future-super
 date: 2020-08-11T01:58:33.101Z
 tags: 
   - Ethical Investing
@@ -8,7 +9,8 @@ tags:
   - Superannuation
 author: Simon Sheikh
 canonical: 
-summary: When we opened Future Super’s doors five years ago, it was the best way I could see to help Australia progress on climate change.
+summary: >-
+  When we opened Future Super’s doors five years ago, it was the best way I could see to help Australia progress on climate change.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5f2ceb8ae5063fded1e53956_image-simonblog.jpg
 ---
 

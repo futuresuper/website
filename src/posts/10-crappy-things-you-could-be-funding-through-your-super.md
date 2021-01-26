@@ -1,5 +1,6 @@
 ---
-title: 10 crappy things you could be funding through your super (and might want to stop)
+title: "10 crappy things you could be funding through your super (and might want to stop)"
+slug: 10-crappy-things-you-could-be-funding-through-your-super
 date: 2019-02-06T09:57:25.228Z
 tags: 
   - Activism
@@ -8,7 +9,8 @@ tags:
   - Environment
 author: Noelle Greenwood
 canonical: 
-summary: Did you know your super could be funding harmful industries like nuclear arms and tobacco? Future Super reveals 10 damaging industries to avoid investing in. 
+summary: >-
+  Did you know your super could be funding harmful industries like nuclear arms and tobacco? Future Super reveals 10 damaging industries to avoid investing in. 
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc48340112dccd3dc5_10-descructive-industries_main%20(1)%20(1).jpg
 ---
 

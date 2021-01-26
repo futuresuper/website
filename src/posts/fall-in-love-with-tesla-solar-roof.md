@@ -1,5 +1,6 @@
 ---
-title: I just can’t help falling in love (with Tesla solar roofs)
+title: "I just can’t help falling in love (with Tesla solar roofs)"
+slug: fall-in-love-with-tesla-solar-roof
 date: 2019-02-06T09:45:59.727Z
 tags: 
   - Renewable Energy
@@ -7,7 +8,8 @@ tags:
   - Ethical Investing
 author: Michael Bones
 canonical: 
-summary: Tesla first wowed crowds with solar roof demos last October and started taking orders earlier this year. Future Super members are proud investors in Tesla and Solar Roofs. Read how together, we’re making the clean energy revolution happen.
+summary: >-
+  Tesla first wowed crowds with solar roof demos last October and started taking orders earlier this year. Future Super members are proud investors in Tesla and Solar Roofs. Read how together, we’re making the clean energy revolution happen.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834010cd5cd3e2b_5c1443dba80838e07d0d225b_Tesla-Solar-Roofs_main%20(1).png
 ---
 

@@ -1,5 +1,6 @@
 ---
-title: Impact Spotlight&#58; How Climates Is Building Climate Resilience In The Pacific
+title: "Impact Spotlight: How Climates Is Building Climate Resilience In The Pacific"
+slug: climates-building-climate-resilience-in-the-pacific
 date: 2019-02-06T10:24:31.229Z
 tags: 
   - Activism
@@ -8,7 +9,8 @@ tags:
   - Renewable Energy
 author: Farah Muharam
 canonical: 
-summary: Future Super are proud to work with and support organisations leading the way to address climate action. Climates is a not-for-profit organisation empowering our neighbours in the Pacific to build climate resilience. They’ve just come back from COP23 in Bonn, check out our interview with them.
+summary: >-
+  Future Super are proud to work with and support organisations leading the way to address climate action. Climates is a not-for-profit organisation empowering our neighbours in the Pacific to build climate resilience. They’ve just come back from COP23 in Bonn, check out our interview with them.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834019e5ccd3de9_5c1443dba808388aa40d2240_Climates-Spotlight-Main%20(1).png
 ---
 

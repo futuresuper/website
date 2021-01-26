@@ -1,5 +1,6 @@
 ---
-title: 11 Ways to Reduce your Carbon Footprint in Under 5 Minutes
+title: "11 Ways to Reduce your Carbon Footprint in Under 5 Minutes"
+slug: 11-ways-to-reduce-your-carbon-footprint-in-under-5-minutes
 date: 2019-02-06T10:07:38.225Z
 tags: 
   - Environment
@@ -7,7 +8,8 @@ tags:
   - Renewable Energy
 author: Noelle Greenwood
 canonical: 
-summary: We’d all love to go zero carbon, but it’s not always so simple with our busy lives. Future Super shows eleven easy, five-minute strategies to cut back right away.
+summary: >-
+  We’d all love to go zero carbon, but it’s not always so simple with our busy lives. Future Super shows eleven easy, five-minute strategies to cut back right away.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834016c2acd3d7f_11-ways-to-reduce-carbon-footprint_main%20(1).jpg
 ---
 

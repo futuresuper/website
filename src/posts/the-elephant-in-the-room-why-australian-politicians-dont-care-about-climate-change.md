@@ -1,5 +1,6 @@
 ---
-title: The Elephant in the Room&#58; Why Australian Politicians Don’t Care about Climate Change
+title: "The Elephant in the Room: Why Australian Politicians Don’t Care about Climate Change"
+slug: the-elephant-in-the-room-why-australian-politicians-dont-care-about-climate-change
 date: 2019-02-06T08:04:09.410Z
 tags: 
   - Activism
@@ -8,7 +9,8 @@ tags:
   - Renewable Energy
 author: Noelle Greenwood
 canonical: 
-summary: Ever wondered why politicians don’t seem to care about climate change? Find out why they’re not telling the whole truth in this article by Future Super. 
+summary: >-
+  Ever wondered why politicians don’t seem to care about climate change? Find out why they’re not telling the whole truth in this article by Future Super. 
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834019a3ecd3d8e_elephant-in-the-room_main2%20(1).jpg
 ---
 
