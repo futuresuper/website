@@ -1,10 +1,13 @@
 @use "colours" as *;
 @use "type" as *;
 
+$transition-box-background: background-color 150ms ease-in-out;
+
 details,
 .forms-and-docs li {
   border: 1px solid $black-900;
   background-color: $white-500;
+  transition: $transition-box-background;
 
   &:not(:last-of-type) {
     margin-bottom: -1px;
@@ -36,34 +39,55 @@ details {
 }
 
 .forms-and-docs {
+  margin-bottom: 1rem !important; //TODO: why are rules in reset.scss overriding this?
   li {
-    a {
-      display: block;
-      padding: 1.5rem;
-      text-decoration: none;
-      color: inherit;
+    display: flex;
+    padding: 1.5rem;
+    &:hover {
+      background-color: $grey-100;
+    }
 
-      padding: 1.5rem 1.5rem 1.5rem 5rem;
-      background-image: url(/images/icons/download.svg);
-      background-position: 1.5rem;
-      background-repeat: no-repeat;
-      background-size: 2rem auto;
+    .icon {
+      align-self: center;
+      width: 2rem;
+      margin-right: 2rem;
 
-      &:hover {
-        background-color: $grey-100;
-
-        h2 {
-          color: $blue-500;
+      svg {
+        width: 2rem;
+        height: 2rem;
+        .fill-target {
+          transition: $transition-text-hover;
+        }
+        &:hover {
+          .fill-target {
+            fill: $blue-500;
+          }
         }
       }
+    }
+
+    .text {
+      flex: 1;
+      align-self: center;
 
       h2 {
         margin: 0 0 0.5rem 0 !important; //TODO: why are rules in type.scss overriding this?
         font-size: 1rem;
+
+        a {
+          color: inherit;
+          // text-decoration-color: transparent;
+          transition: $transition-text-hover;
+          &:hover {
+            color: $blue-500;
+            text-decoration-color: $blue-500;
+          }
+        }
       }
 
       p {
         font-size: $font-size-sm;
+        line-height: $line-height-sm;
         margin-bottom: 0;
       }
     }

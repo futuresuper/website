@@ -1,0 +1,23 @@
+<div class="icon">
+  <a href="{{ item.data.url }}" target="_blank" rel="noopener noreferrer">
+    {% if item.data.type === "Online" %}
+      {{ "/src/images/icons/globe.svg" | svgContents("fill-light") | safe }}
+    {% elseif item.data.type === "Contact" %}
+      {{ "/src/images/icons/tick.svg" | svgContents("fill-light") | safe }}
+    {% else %}
+      {{ "/src/images/icons/download.svg" | svgContents("fill-light") | safe }}
+    {% endif %}
+  </a>
+</div>
+<div class="text">
+  <h2>
+    {% if item.data.url %}
+      <a href="{{ item.data.url }}" target="_blank" rel="noopener noreferrer">{{ item.data.title
+      }}</a>
+    {% else %}
+      {{ item.data.title }}
+      {% endif%}
+    </h2>
+
+    {{ item.templateContent | safe }}
+  </div>

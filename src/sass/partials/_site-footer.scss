@@ -25,11 +25,13 @@ body > .flow-content > footer {
       margin-bottom: 1rem;
 
       a {
-        text-decoration: none;
+        // text-decoration: none;
         color: $grey-800;
+        text-decoration-color: transparent;
+        transition: $transition-text-hover;
 
         &:hover {
-          text-decoration: underline;
+          text-decoration-color: $blue-500;
           color: $blue-500;
         }
       }

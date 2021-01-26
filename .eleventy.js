@@ -43,6 +43,39 @@ module.exports = (config) => {
     return [...collection.getFilteredByGlob("./src/faqs/*.md")];
   });
 
+  // TODO: Map through every repeated collection below, dynamically
+  // Return a collection of just the documents and forms for the fund
+  config.addCollection("fundDocumentsAndForms", (collection) => {
+    return collection
+      .getFilteredByGlob("./src/documents-and-forms/fund/*.md")
+      .sort((a, b) => b.data.order - a.data.order)
+      .reverse();
+  });
+
+  // Return a collection of just the documents and forms for individuals
+  config.addCollection("individualsDocumentsAndForms", (collection) => {
+    return collection
+      .getFilteredByGlob("./src/documents-and-forms/individuals/*.md")
+      .sort((a, b) => b.data.order - a.data.order)
+      .reverse();
+  });
+
+  // Return a collection of just the documents for pension plan
+  config.addCollection("pensionDocuments", (collection) => {
+    return collection
+      .getFilteredByGlob("./src/documents-and-forms/pension-documents/*.md")
+      .sort((a, b) => b.data.order - a.data.order)
+      .reverse();
+  });
+
+  // Return a collection of just the forms for pension plan
+  config.addCollection("pensionForms", (collection) => {
+    return collection
+      .getFilteredByGlob("./src/documents-and-forms/pension-forms/*.md")
+      .sort((a, b) => b.data.order - a.data.order)
+      .reverse();
+  });
+
   // Allow JavaScript to be minified via the jsmin Nunjucks filter
   // https://www.11ty.dev/docs/quicktips/inline-js/
   config.addNunjucksAsyncFilter("jsmin", async function (code, callback) {
