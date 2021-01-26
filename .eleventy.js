@@ -91,11 +91,11 @@ module.exports = (config) => {
   });
 
   // Override default 'Slug' filter with below options required to work properly
-  // https://github.com/11ty/eleventy/issues/278#issuecomment-453777880
+  // https://github.com/11ty/eleventy/issues/278#issuecomment-451105828
   config.addFilter("slug", (input) => {
     const options = {
       replacement: "-",
-      remove: /[&,+()$~%.'":*?<>{}]/g,
+      remove: /[&,+()$~%.'":*?<>{}#]/g,
       lower: true,
     };
     return slugify(input, options);
