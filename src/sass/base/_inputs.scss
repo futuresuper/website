@@ -10,7 +10,7 @@ input {
     background-repeat: no-repeat;
     background-size: 2rem auto;
     @extend %border-style-card;
-    margin-bottom: $space-section-bottom;
+    margin-bottom: $space-section-y-dynamic;
     font-size: $font-size-lg;
   }
 }

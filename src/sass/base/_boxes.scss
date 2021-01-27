@@ -58,9 +58,14 @@ details {
         .fill-target {
           transition: $transition-text-hover;
         }
-        &:hover {
-          .fill-target {
-            fill: $blue-500;
+      }
+      // Only add hover styles to the SVGs within links
+      a {
+        svg {
+          &:hover {
+            .fill-target {
+              fill: $blue-500;
+            }
           }
         }
       }
@@ -73,6 +78,7 @@ details {
       h2 {
         margin: 0 0 0.5rem 0 !important; //TODO: why are rules in type.scss overriding this?
         font-size: 1rem;
+        line-height: 100%;
 
         a {
           color: inherit;

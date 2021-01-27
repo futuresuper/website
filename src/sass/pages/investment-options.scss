@@ -91,7 +91,7 @@
 
 .investment-options {
   .top {
-    margin-bottom: $space-section-bottom;
+    margin-bottom: $space-section-y-dynamic;
 
     .option-card-full-container {
       @media (min-width: $breakpoint-sm) {
@@ -201,7 +201,7 @@
     max-width: $breakpoint-lg;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: $space-section-bottom;
+    margin-bottom: $space-section-y-dynamic;
     padding: 0 $space-page-padding-x-sm;
 
     @media (min-width: $breakpoint-md) {
@@ -212,7 +212,7 @@
       display: none;
       @media (min-width: $breakpoint-sm) {
         display: block;
-        margin-top: -$space-section-bottom;
+        margin-top: -$space-section-y-dynamic;
       }
     }
 
@@ -386,7 +386,7 @@
   }
 
   .chill {
-    margin-bottom: $space-section-bottom;
+    margin-bottom: $space-section-y-dynamic;
     background-color: $off-white-300;
     padding: 6rem 3rem;
     display: flex;

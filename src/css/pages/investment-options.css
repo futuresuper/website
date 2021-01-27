@@ -175,6 +175,7 @@ p a:hover {
 .disclaimer {
   color: #76766f;
   font-size: 0.75rem;
+  line-height: 140%;
 }
 
 .bold {
@@ -272,7 +273,7 @@ details .contents {
 .forms-and-docs li .icon svg .fill-target {
   transition: all 125ms ease-in-out;
 }
-.forms-and-docs li .icon svg:hover .fill-target {
+.forms-and-docs li .icon a svg:hover .fill-target {
   fill: #0a5aff;
 }
 .forms-and-docs li .text {
@@ -282,6 +283,7 @@ details .contents {
 .forms-and-docs li .text h2 {
   margin: 0 0 0.5rem 0 !important;
   font-size: 1rem;
+  line-height: 100%;
 }
 .forms-and-docs li .text h2 a {
   color: inherit;
@@ -385,7 +387,7 @@ body.mobile-menu-active.aoc-active {
   margin: 3rem 0;
 }
 .container .article-content h2 {
-  margin-top: 3rem;
+  margin-top: 9rem;
 }
 
 main > article.container {

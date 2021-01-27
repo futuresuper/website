@@ -7,18 +7,25 @@ $breakpoint-md: 48rem; //768px
 $breakpoint-lg: 80rem; //1280px
 
 // Often-referenced spacing units
-$space-section-bottom: 6rem;
+$space-section-y-sm: 6rem;
+$space-section-y-md: 9rem;
+$space-section-y-lg: 12rem;
+$space-section-y-dynamic: $space-section-y-sm;
+
 $space-page-padding-x-sm: 1rem;
 $space-page-padding-x-md: 2rem;
 $space-page-padding-x-lg: 3rem;
-$space-page-padding-x-dynamic: 1rem;
+$space-page-padding-x-dynamic: $space-page-padding-x-sm;
 
-@media (min-width: $breakpoint-md) {
-  $space-page-padding-x-dynamic: $space-page-padding-x-md;
-}
-@media (min-width: $breakpoint-lg) {
-  $space-page-padding-x-dynamic: $space-page-padding-x-lg;
-}
+// TODO: Have Sass variables update depending on breakpoint
+// @media (min-width: $breakpoint-md) {
+//   $space-page-padding-x-dynamic: $space-page-padding-x-md !global;
+//   $space-section-y-dynamic: $space-section-y-md !global;
+// }
+// @media (min-width: $breakpoint-lg) {
+//   $space-page-padding-x-dynamic: $space-page-padding-x-lg !global;
+//   $space-section-y-dynamic: $space-section-y-lg !global;
+// }
 
 // Often-referened layout styles
 $border-style-colour: $grey-200;
@@ -76,14 +83,14 @@ body {
 
     // Allow in-post sections to breathe
     h2 {
-      margin-top: 3rem;
+      margin-top: 9rem;
     }
   }
 }
 
 main > article.container {
   // Add padding to containers when used for page articles
-  padding-bottom: $space-section-bottom;
+  padding-bottom: $space-section-y-dynamic;
 }
 
 .grid {
