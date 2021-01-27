@@ -7,20 +7,24 @@
 <article class="container">
   {% include "partials/page-header.html" %}
   <div class="article-content">
-    {% if currentJobOpenings %}
     <h2>Our current job openings</h2>
-    <ul class="plain">
-      {% for item in currentJobOpenings %}
+    {# Only show list if there is more than one active job #}
+    {% if collections.careers.length %}
+    <ul class="plain career-item">
+      {% for item in collections.careers %}
       <li>
-        <h3>{{ item.title }}</h3>
-        <p>
-          {{ item.location }}<br>
-          {{ item.closeDate }}<br>
-          <a href="/career/{{ item.slug }}">Read more →</a>
-        </p>
+        <a href="{{ item.url }}">
+          <h3>{{ item.data.title }}</h3>
+          <p>
+            {{ item.data.salary }}<br>
+            {{ item.data.location }}<br>
+            Closes {{ item.data.endDate | dateFilter }}
+          </p>
+        </a>
       </li>
       {% endfor %}
     </ul>
+    {# Otherwise show fallback #}
     {% else %}
     <p>We don't have any job openings at the moment. Please check back soon!</p>
     {% endif %}

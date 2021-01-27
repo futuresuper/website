@@ -136,6 +136,13 @@ p {
   color: $grey-400;
 }
 
+.breadcrumb {
+  color: $grey-300;
+  a {
+    color: $grey-400;
+  }
+}
+
 .pink {
   color: $pink-700;
 }

@@ -1,0 +1,22 @@
+@use "../base" as *;
+
+.career-summary {
+  @extend %border-style-card;
+  padding: 3rem;
+  margin-top: $space-section-y-dynamic;
+  text-align: center;
+
+  dl {
+    margin-bottom: 3rem;
+
+    dt {
+      color: $grey-400;
+      font-weight: bold;
+      line-height: 100%;
+    }
+
+    dd:not(last-of-type) {
+      margin-bottom: 2rem;
+    }
+  }
+}

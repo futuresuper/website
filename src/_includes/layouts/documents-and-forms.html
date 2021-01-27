@@ -4,39 +4,6 @@
 
 {% block content %}
 
-  {# Define reusable macro for row icon #}
-  {% macro rowIcon() %}
-    <div class="icon">
-      <a href="{{ item.data.slug }}" target="_blank" rel="noopener noreferrer">
-        {% if item.data.type === "Online" %}
-          {{ "/src/images/icons/globe.svg" | svgContents("fill-light") | safe }}
-        {% else %}
-          {{ "/src/images/icons/download.svg" | svgContents("fill-light") | safe }}
-        {% endif %}
-      </a>
-    </div>
-  {% endmacro %}
-
-  {% macro rowRichText() %}
-    <div class="icon">
-      <a href="{{ item.data.slug }}" target="_blank" rel="noopener noreferrer">
-        {% if item.data.type === "Online" %}
-          {{ "/src/images/icons/globe.svg" | svgContents("fill-light") | safe }}
-        {% else %}
-          {{ "/src/images/icons/download.svg" | svgContents("fill-light") | safe }}
-        {% endif %}
-      </a>
-    </div>
-    <div class="text">
-      <h2>
-        <a href="{{ item.data.url }}" target="_blank" rel="noopener noreferrer">{{ item.data.title
-      }}</a>
-      </h2>
-
-      {{ item.templateContent | safe }}
-    </div>
-  {% endmacro %}
-
   <article class="container">
 
     {% include "partials/page-header.html" %}
@@ -45,7 +12,7 @@
       <section>
         <h2>Super fund documents</h2>
 
-        <ul class="plain docs-and-forms">
+        <ul class="plain doc-or-form-item">
           {% for item in collections.fundDocumentsAndForms %}
             <li>
               {% include "partials/documents-and-forms/rich-text-block.html" %}
@@ -66,7 +33,7 @@
       <section>
         <h2>Forms for individuals</h2>
         <p>Forms you will need to become a member of Future Super, as well as forms regarding rollovers, withdrawals, insurance and other transactions with the fund.</p>
-        <ul class="plain docs-and-forms">
+        <ul class="plain doc-or-form-item">
           {% for item in collections.individualsDocumentsAndForms %}
             <li>
               {% include "partials/documents-and-forms/rich-text-block.html" %}
@@ -84,7 +51,7 @@
 
       <section>
         <h2>Fund annual reports</h2>
-        <ul class="plain docs-and-forms">
+        <ul class="plain doc-or-form-item">
           {% for item in annualReports %}
             <li>
               <div class="icon">
@@ -93,7 +60,7 @@
                 </a>
               </div>
               <div class="text">
-                <h2>
+                <h3>
                   <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">30 June
                     {{ item.year }}
                     {% if item.title %}{{
@@ -102,7 +69,7 @@
                     {% else %}
                       Fund Annual Report{% endif %}
                   </a>
-                </h2>
+                </h3>
               </div>
             </li>
           {% endfor %}
@@ -111,7 +78,7 @@
 
       <section>
         <h2>Pension plan documents</h2>
-        <ul class="plain docs-and-forms">
+        <ul class="plain doc-or-form-item">
           {% for item in collections.pensionDocuments %}
             <li>
               {% include "partials/documents-and-forms/rich-text-block.html" %}
@@ -123,7 +90,7 @@
       <section>
         <h2>Pension plan forms</h2>
         <p>Forms you will need to become a member of the Future Super Pension Plan, as well as forms regarding withdrawals, beneficiaries, advisers and other transactions relating to your account.</p>
-        <ul class="plain docs-and-forms">
+        <ul class="plain doc-or-form-item">
           {% for item in collections.pensionForms %}
             <li>
               {% include "partials/documents-and-forms/rich-text-block.html" %}
@@ -135,7 +102,7 @@
       <section>
         <h2>Impact reports</h2>
 
-        <ul class="plain docs-and-forms">
+        <ul class="plain doc-or-form-item">
           {% for item in impactReports %}
             <li>
               <div class="icon">
@@ -144,10 +111,10 @@
                 </a>
               </div>
               <div class="text">
-                <h2>
+                <h3>
                   <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.year }}
                     Impact Report</a>
-                </h2>
+                </h3>
               </div>
             </li>
           {% endfor %}

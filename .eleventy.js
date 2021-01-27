@@ -38,8 +38,16 @@ module.exports = (config) => {
     return [...collection.getFilteredByGlob("./src/posts/*.md")].reverse();
   });
 
+  // Return a collection of careers
+  config.addCollection("careers", (collection) => {
+    return [...collection.getFilteredByGlob("./src/careers/*.md")];
+    // TODO: filter-out items that have an endDate older than today
+    // ...or a startDate in the future
+    // TODO: rerun this function automatically, often
+  });
+
   // Return a collection of FAQs
-  // TODO; replace with dynamic collection from Groove Knowledge Base
+  // TODO: replace with dynamic collection from Groove Knowledge Base
   config.addCollection("faqs", (collection) => {
     return [...collection.getFilteredByGlob("./src/faqs/*.md")];
   });

@@ -4,7 +4,8 @@
 $transition-box-background: background-color 150ms ease-in-out;
 
 details,
-.docs-and-forms li {
+.doc-or-form-item li,
+.career-item li {
   border: 1px solid $black-900;
   background-color: $white-500;
   transition: $transition-box-background;
@@ -38,14 +39,44 @@ details {
   }
 }
 
-.docs-and-forms {
+.doc-or-form-item,
+.career-item {
+  li {
+    &:hover {
+      background-color: $grey-100;
+    }
+
+    h3 {
+      font-size: $font-size-lg;
+      margin: 0 0 0.5rem 0 !important; //TODO: why are rules in type.scss overriding this?
+      line-height: 100%;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.career-item {
+  a {
+    display: block;
+    padding: 1.5rem;
+    color: inherit;
+    text-decoration: none;
+
+    p {
+      font-size: 1rem;
+      line-height: $line-height-sm;
+    }
+  }
+}
+
+.doc-or-form-item {
   margin-bottom: 1rem !important; //TODO: why are rules in reset.scss overriding this?
   li {
     display: flex;
     padding: 1.5rem;
-    &:hover {
-      background-color: $grey-100;
-    }
 
     .icon {
       align-self: center;
@@ -75,11 +106,7 @@ details {
       flex: 1;
       align-self: center;
 
-      h2 {
-        margin: 0 0 0.5rem 0 !important; //TODO: why are rules in type.scss overriding this?
-        font-size: 1rem;
-        line-height: 100%;
-
+      h3 {
         a {
           color: inherit;
           // text-decoration-color: transparent;
@@ -94,7 +121,6 @@ details {
       p {
         font-size: $font-size-sm;
         line-height: $line-height-sm;
-        margin-bottom: 0;
       }
     }
   }
