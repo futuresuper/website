@@ -1,0 +1,5 @@
+{
+  "layout": "layouts/career.html",
+  "permalink": "/career/{{ title | slug }}/index.html",
+  "pageStyles": ["src/css/pages/career.css"]
+}

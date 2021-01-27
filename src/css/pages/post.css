@@ -194,6 +194,13 @@ p a:hover {
   color: #76766f;
 }
 
+.breadcrumb {
+  color: #dadad7;
+}
+.breadcrumb a {
+  color: #76766f;
+}
+
 .pink {
   color: #c445a2;
 }
@@ -222,13 +229,15 @@ table th:only-of-type {
 }
 
 details,
-.docs-and-forms li {
+.doc-or-form-item li,
+.career-item li {
   border: 1px solid #000000;
   background-color: #ffffff;
   transition: background-color 150ms ease-in-out;
 }
 details:not(:last-of-type),
-.docs-and-forms li:not(:last-of-type) {
+.doc-or-form-item li:not(:last-of-type),
+.career-item li:not(:last-of-type) {
   margin-bottom: -1px;
 }
 
@@ -251,98 +260,69 @@ details .contents {
   border-top: 1px solid #000000;
 }
 
-.docs-and-forms {
+.doc-or-form-item li:hover,
+.career-item li:hover {
+  background-color: #f5f5f4;
+}
+.doc-or-form-item li h3,
+.career-item li h3 {
+  font-size: 1.125rem;
+  margin: 0 0 0.5rem 0 !important;
+  line-height: 100%;
+}
+.doc-or-form-item li p,
+.career-item li p {
+  margin-bottom: 0;
+}
+
+.career-item a {
+  display: block;
+  padding: 1.5rem;
+  color: inherit;
+  text-decoration: none;
+}
+.career-item a p {
+  font-size: 1rem;
+  line-height: 140%;
+}
+
+.doc-or-form-item {
   margin-bottom: 1rem !important;
 }
-.docs-and-forms li {
+.doc-or-form-item li {
   display: flex;
   padding: 1.5rem;
 }
-.docs-and-forms li:hover {
-  background-color: #f5f5f4;
-}
-.docs-and-forms li .icon {
+.doc-or-form-item li .icon {
   align-self: center;
   width: 2rem;
   margin-right: 2rem;
 }
-.docs-and-forms li .icon svg {
+.doc-or-form-item li .icon svg {
   width: 2rem;
   height: 2rem;
 }
-.docs-and-forms li .icon svg .fill-target {
+.doc-or-form-item li .icon svg .fill-target {
   transition: all 125ms ease-in-out;
 }
-.docs-and-forms li .icon a svg:hover .fill-target {
+.doc-or-form-item li .icon a svg:hover .fill-target {
   fill: #0a5aff;
 }
-.docs-and-forms li .text {
+.doc-or-form-item li .text {
   flex: 1;
   align-self: center;
 }
-.docs-and-forms li .text h2 {
-  margin: 0 0 0.5rem 0 !important;
-  font-size: 1rem;
-  line-height: 100%;
-}
-.docs-and-forms li .text h2 a {
+.doc-or-form-item li .text h3 a {
   color: inherit;
   transition: all 125ms ease-in-out;
 }
-.docs-and-forms li .text h2 a:hover {
+.doc-or-form-item li .text h3 a:hover {
   color: #0a5aff;
   text-decoration-color: #0a5aff;
 }
-.docs-and-forms li .text p {
+.doc-or-form-item li .text p {
   font-size: 0.875rem;
   line-height: 140%;
-  margin-bottom: 0;
-}
-
-button,
-.button {
-  display: inline-block;
-  cursor: pointer;
-  font-size: 1.125rem;
-  font-weight: 700;
-  padding: 1rem 2rem;
-  border: 0;
-  text-decoration: none;
-  transition: background-color 100ms ease-in-out;
-  text-align: center;
-}
-button.full-width,
-.button.full-width {
-  padding: 1rem 0;
-}
-button.primary,
-.button.primary {
-  color: #ffffff;
-  background-color: #000000;
-}
-button.primary.inverted,
-.button.primary.inverted {
-  color: #000000;
-  background-color: #ffffff;
-}
-button.primary:hover,
-.button.primary:hover {
-  background-color: #0a5aff;
-}
-button.clear,
-.button.clear {
-  color: inherit;
-  background-color: inherit;
-}
-
-.flex-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.plain {
-  list-style-type: none;
 }
 
 input.search {
@@ -426,6 +406,52 @@ main > article.container {
   .grid > * {
     grid-column: span 2;
   }
+}
+
+button,
+.button {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1.125rem;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  border: 0;
+  text-decoration: none;
+  transition: background-color 100ms ease-in-out;
+  text-align: center;
+}
+button.full-width,
+.button.full-width {
+  padding: 1rem 0;
+}
+button.primary,
+.button.primary {
+  color: #ffffff;
+  background-color: #000000;
+}
+button.primary.inverted,
+.button.primary.inverted {
+  color: #000000;
+  background-color: #ffffff;
+}
+button.primary:hover,
+.button.primary:hover {
+  background-color: #0a5aff;
+}
+button.clear,
+.button.clear {
+  color: inherit;
+  background-color: inherit;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.plain {
+  list-style-type: none;
 }
 
 input.search {

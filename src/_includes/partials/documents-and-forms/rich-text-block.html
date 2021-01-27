@@ -13,14 +13,14 @@
 </a>
 </div>
 <div class="text">
-<h2>
+<h3>
   {% if item.data.url %}
     <a href="{{ item.data.url }}" target="_blank" rel="noopener noreferrer">{{ item.data.title
       }}</a>
   {% else %}
     {{ item.data.title }}
-    {% endif%}
-  </h2>
+  {% endif %}
+</h3>
 
-  {{ item.templateContent | safe }}
+{{ item.templateContent | safe }}
 </div>

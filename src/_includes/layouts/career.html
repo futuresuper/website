@@ -1,0 +1,59 @@
+{% extends "layouts/base.html" %}
+
+{% set pageHeaderTitle = title %}
+
+{% set careerSummaryBlock %}
+<div class="career-summary">
+  <dl>
+    <dt>Salary</dt>
+    <dd>{{ salary }}</dd>
+    <dt>Location</dt>
+    <dd>{{ location }}</dd>
+    <dt>Closes</dt>
+    <dd>{{ endDate | dateFilter }}</dd>
+  </dl>
+  <a class="button primary" href="{{ url }}">Apply for this role</a>
+</div>
+{% endset %}
+
+{% block content %}
+
+<article class="container">
+  {# TODO: replace manual breadcrumb with automatic one from something like 11ty-navigation #}
+  {# https://www.11ty.dev/docs/plugins/navigation/ #}
+  <p class="breadcrumb center">
+    <a href="/work-with-us">Work with Us</a>
+    /
+  </p>
+
+  {% include "partials/page-header.html" %}
+
+  <div class="article-content">
+    {{ careerSummaryBlock | safe }}
+
+    {{ content | safe }}
+
+    <p>
+      The application will require answering short questions so give yourself time to complete it. Once started, you
+      can save and return to your application before submitting.
+    </p>
+    <p>
+      We use Applied as our de-identified recruitment platform, helping us reduce the risk of unconscious bias in our
+      hiring process. If you are curious to know more about how it works, <a
+        href="/blog/how-de-identified-recruitment-is-improving-the-diversity-of-our-team/">check out this blog
+        post</a> from our Head of Group Strategy, Veronica!
+    </p>
+    <p>
+      Questions? Please reach out to Khaila (Khi), HR Coordinator, at <a
+        href="mailto:careers@futuresuper.com.au?subject={{ title }}">careers@futuresuper.com.au</a>.
+    </p>
+
+
+    {{ careerSummaryBlock | safe }}
+  </div>
+
+</article>
+
+{% include "partials/also-see.html" %}
+
+{% endblock %}

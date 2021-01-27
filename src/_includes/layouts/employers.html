@@ -44,7 +44,7 @@
 
       <section>
         <h2>Related documents and forms</h2>
-        <ul class="plain docs-and-forms">
+        <ul class="plain doc-or-form-item">
           {% for selectedItem in pageDocsAndForms %}
             {# Construct a file path that will match the url of the below collection items #}
             {% set selectedItemFilePath %}/documents-and-forms/{{ selectedItem.section }}/{{ selectedItem.slug }}/{% endset %}
