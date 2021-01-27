@@ -1,6 +1,6 @@
 ---
 title: "Blog"
-summary: "What’s new at Future Super"
+summary: "What’s new at Future Super."
 layout: "layouts/blog.html"
 pageStyles: ["src/css/pages/blog.css"]
 data: collections.blog
