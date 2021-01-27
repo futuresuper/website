@@ -1,12 +1,14 @@
 ---
-title: 5 Renewable Energy Growth Trends to Watch in 2017
+title: "5 Renewable Energy Growth Trends to Watch in 2017"
+slug: 5-renewable-energy-growth-trends-to-watch-in-2017
 date: 2019-02-06T09:30:08.862Z
 tags: 
   - Environment
   - Renewable Energy
 author: Michael Bones
 canonical: 
-summary: We looked at the growth of renewable energy in Australia from the Clean Energy Regulator's recently released report. Here's what we found.
+summary: >-
+  We looked at the growth of renewable energy in Australia from the Clean Energy Regulator's recently released report. Here's what we found.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834015537cd3c4c_20161006_Majura_Solar_0166-compressor.png
 ---
 

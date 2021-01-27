@@ -1,5 +1,6 @@
 ---
-title: How three climate heroes rode 1000km to address the elephant in the (Parliamentary) room
+title: "How three climate heroes rode 1000km to address the elephant in the (Parliamentary) room"
+slug: climate-cycle-2018-how-three-climate-heroes-rode-1000km
 date: 2019-02-05T18:30:49.028Z
 tags: 
   - Community
@@ -8,7 +9,8 @@ tags:
   - Renewable Energy
 author: Farah Muharam
 canonical: 
-summary: 
+summary: >-
+  
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834011ed9cd3e06_three%20climate%20heros.jpg
 ---
 

@@ -1,5 +1,6 @@
 ---
-title: The Adani Grinch is trying to steal Christmas - four things you can do to stop him
+title: "The Adani Grinch is trying to steal Christmas - four things you can do to stop him"
+slug: the-adani-grinch-is-trying-to-steal-christmas-fours-things-you-can-do-to-stop-him
 date: 2019-02-05T18:26:42.747Z
 tags: 
   - Disruption
@@ -7,7 +8,8 @@ tags:
   - Community
 author: James Alexander
 canonical: 
-summary: Adani is going ahead with its mine, a Christmas present Aussies don’t want, and neither major party will stop it. We need to let our politicians know it’s unacceptable to build new coal mines. Here are 4 ways you can help.
+summary: >-
+  Adani is going ahead with its mine, a Christmas present Aussies don’t want, and neither major party will stop it. We need to let our politicians know it’s unacceptable to build new coal mines. Here are 4 ways you can help.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834017254cd3dbf_coal-kills-stop-adani.jpg
 ---
 

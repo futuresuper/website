@@ -1,11 +1,13 @@
 ---
-title: Is Energy Poverty the new buzzword or a real problem?
+title: "Is Energy Poverty the new buzzword or a real problem?"
+slug: is-energy-poverty-the-new-buzzword-or-a-real-problem
 date: 2019-02-05T18:22:06.043Z
 tags: 
   - Activism
 author: Tara James
 canonical: 
-summary: Energy poverty is both a national and global challenge impacting climate change prevention efforts and basic human survival - a problem that can only be solved by increasing awareness and demanding investment and focus on its solution.
+summary: >-
+  Energy poverty is both a national and global challenge impacting climate change prevention efforts and basic human survival - a problem that can only be solved by increasing awareness and demanding investment and focus on its solution.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834010a48cd3da3_AdobeStock_96317960%20(1).jpeg
 ---
 

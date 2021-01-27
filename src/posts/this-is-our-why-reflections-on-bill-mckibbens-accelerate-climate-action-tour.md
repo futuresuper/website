@@ -1,5 +1,6 @@
 ---
-title: This Is Our Why&#58; reflections on Bill McKibben's Accelerate Climate Action Tour
+title: "This Is Our Why: reflections on Bill McKibben's Accelerate Climate Action Tour"
+slug: this-is-our-why-reflections-on-bill-mckibbens-accelerate-climate-action-tour
 date: 2018-05-16T03:18:10.815Z
 tags: 
   - Activism
@@ -8,7 +9,8 @@ tags:
   - Ethical Investing
 author: Kirstin Hunter
 canonical: 
-summary: If you missed it Bill McKibben's Accelerate Climate Action Tour, here's what you need to know. 
+summary: >-
+  If you missed it Bill McKibben's Accelerate Climate Action Tour, here's what you need to know. 
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834018910cd3baa_this-is-our-why-blog-post%20(1).png
 ---
 

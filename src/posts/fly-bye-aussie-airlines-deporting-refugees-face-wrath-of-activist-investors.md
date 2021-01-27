@@ -1,11 +1,13 @@
 ---
-title: Fly Bye&#58; Aussie Airlines Deporting Refugees Face Wrath of Activist Investors
+title: "Fly Bye: Aussie Airlines Deporting Refugees Face Wrath of Activist Investors"
+slug: fly-bye-aussie-airlines-deporting-refugees-face-wrath-of-activist-investors
 date: 2019-02-05T19:00:48.920Z
 tags: 
   - Activism
 author: Michael Bones
 canonical: 
-summary: Why ethical investors are targeting Qantas
+summary: >-
+  Why ethical investors are targeting Qantas
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc483401e473cd3c32_Blog%201200x630.png
 ---
 

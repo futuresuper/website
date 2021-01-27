@@ -1,11 +1,13 @@
 ---
-title: How activism lends itself to other decisions you make in your life
+title: "How activism lends itself to other decisions you make in your life"
+slug: activism-and-self-development
 date: 2020-07-13T08:19:24.068Z
 tags: 
   - Activism
 author: Brett Morgan
 canonical: 
-summary: Future Super Member Advocate Brett Morgan argues that activism is a necessary part of living a truly meaningful life.
+summary: >-
+  Future Super Member Advocate Brett Morgan argues that activism is a necessary part of living a truly meaningful life.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834010ca8cd3e3f_Hero%20Image.jpg
 ---
 

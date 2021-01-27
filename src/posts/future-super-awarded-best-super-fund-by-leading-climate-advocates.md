@@ -1,11 +1,13 @@
 ---
-title:  Future Super awarded ‘Best Super Fund’ by leading climate advocates
+title: " Future Super awarded ‘Best Super Fund’ by leading climate advocates"
+slug: future-super-awarded-best-super-fund-by-leading-climate-advocates
 date: 2019-02-05T12:52:19.573Z
 tags: 
   - Community
 author: Michael Bones
 canonical: 
-summary: Future Super to be recognised as Australia’s best super fund on the issue of climate change by 350.org, the world’s leading climate advocacy organisation.
+summary: >-
+  Future Super to be recognised as Australia’s best super fund on the issue of climate change by 350.org, the world’s leading climate advocacy organisation.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc48340172d5cd3e33_Future%20Super%20awarded%20%E2%80%98Best%20Super%20Fund%E2%80%99%20by%20leading%20climate%20advocates.png
 ---
 

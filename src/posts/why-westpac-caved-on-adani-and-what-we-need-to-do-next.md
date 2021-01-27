@@ -1,11 +1,13 @@
 ---
-title: Why Westpac Caved On Adani, And What We Need To Do Next
+title: "Why Westpac Caved On Adani, And What We Need To Do Next"
+slug: why-westpac-caved-on-adani-and-what-we-need-to-do-next
 date: 2019-02-06T10:08:07.527Z
 tags: 
   - Activism
 author: Michael Bones
 canonical: 
-summary: Thousands of Australians are celebrating today with the news that Westpac has all but ruled out funding Adani’s controversial Carmichael mine. On Friday, Westpac released a new climate change action policy which effectively rules them out from funding Adani’s monster mine.
+summary: >-
+  Thousands of Australians are celebrating today with the news that Westpac has all but ruled out funding Adani’s controversial Carmichael mine. On Friday, Westpac released a new climate change action policy which effectively rules them out from funding Adani’s monster mine.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834017b5ccd3ba6_Dirty-hands-compressor.jpeg
 ---
 

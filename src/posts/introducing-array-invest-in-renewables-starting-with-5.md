@@ -1,5 +1,6 @@
 ---
-title: Introducing Array - Invest in renewables starting with $5
+title: "Introducing Array - Invest in renewables starting with $5"
+slug: introducing-array-invest-in-renewables-starting-with-5
 date: 2019-07-12T03:09:04.131Z
 tags: 
   - Community
@@ -7,7 +8,8 @@ tags:
   - Renewable Energy
 author: Andrew Sellen
 canonical: 
-summary: Array brings renewable energy investment into the palm of your hand, and you can invest as little as $5. It’s a people-powered energy revolution. And it’s coming to your app store later this year.
+summary: >-
+  Array brings renewable energy investment into the palm of your hand, and you can invest as little as $5. It’s a people-powered energy revolution. And it’s coming to your app store later this year.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834012fbfcd3de4_arrayMain.png
 ---
 

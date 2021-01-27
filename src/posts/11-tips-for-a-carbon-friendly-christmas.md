@@ -1,5 +1,6 @@
 ---
-title: 11 Tips for a Carbon-Friendly Christmas
+title: "11 Tips for a Carbon-Friendly Christmas"
+slug: 11-tips-for-a-carbon-friendly-christmas
 date: 2019-02-06T10:39:40.631Z
 tags: 
   - Disruption
@@ -7,7 +8,8 @@ tags:
   - Environment
 author: Future Super
 canonical: 
-summary: Among all the holiday cheer, many forget that christmas time can be tough on the environment. Future Super give 11 unique tips for a carbon-friendly christmas.
+summary: >-
+  Among all the holiday cheer, many forget that christmas time can be tough on the environment. Future Super give 11 unique tips for a carbon-friendly christmas.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834013463cd3d5e_11-tips-carbon-friendly-christmas%20(1).png
 ---
 

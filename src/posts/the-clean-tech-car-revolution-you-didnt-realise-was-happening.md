@@ -1,12 +1,14 @@
 ---
-title: The Clean Tech Car Revolution You Didn't Realise Was Happening 
+title: "The Clean Tech Car Revolution You Didn't Realise Was Happening "
+slug: the-clean-tech-car-revolution-you-didnt-realise-was-happening
 date: 2019-02-06T09:19:03.973Z
 tags: 
   - Disruption
   - Renewable Energy
 author: Michael Bones
 canonical: 
-summary: The man who predicted "solar will eat everything" has a new warning for investors, which includes every working Australian with a super fund.
+summary: >-
+  The man who predicted "solar will eat everything" has a new warning for investors, which includes every working Australian with a super fund.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834015ec2cd3dfd_ev%20car%20(1).png
 ---
 

@@ -1,5 +1,6 @@
 ---
-title: California Dreamin’ (of board diversity)
+title: "California Dreamin’ (of board diversity)"
+slug: california-dreamin-of-board-diversity
 date: 2019-02-05T18:54:59.912Z
 tags: 
   - Politics
@@ -7,7 +8,8 @@ tags:
   - Opinion
 author: Emily Flood
 canonical: 
-summary: Having women in the boardroom produces better results for businesses as well as women. It takes a company determined to thumb their nose at women to choose to maintain an all-male board even at a proven cost to their business performance. California has joined voices with ethics-led investors like Future Super in calling for a smarter and fairer boardroom.
+summary: >-
+  Having women in the boardroom produces better results for businesses as well as women. It takes a company determined to thumb their nose at women to choose to maintain an all-male board even at a proven cost to their business performance. California has joined voices with ethics-led investors like Future Super in calling for a smarter and fairer boardroom.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834013312cd3da9_California%20Dreamin%E2%80%99%20(of%20board%20diversity)%20(1).png
 ---
 

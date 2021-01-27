@@ -1,11 +1,13 @@
 ---
-title: How to read your Annual Member Statement
+title: "How to read your Annual Member Statement"
+slug: how-to-read-your-annual-member-statement
 date: 2020-12-08T05:30:49.773Z
 tags: 
   - Superannuation
 author: James Alexander
 canonical: 
-summary: We've written a helpful explainer to equip you with what you need to read (and understand) your member statement.
+summary: >-
+  We've written a helpful explainer to equip you with what you need to read (and understand) your member statement.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834015250cd3e0f_Blog%20Header%20(1).jpg
 ---
 

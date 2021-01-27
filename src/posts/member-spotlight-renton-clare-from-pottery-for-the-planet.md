@@ -1,10 +1,12 @@
 ---
-title: Member spotlight&#58; Renton & Clare from Pottery For The Planet
+title: "Member spotlight: Renton & Clare from Pottery For The Planet"
+slug: member-spotlight-renton-clare-from-pottery-for-the-planet
 date: 2019-02-05T18:17:40.813Z
 tags: 
 author: James Wanjura
 canonical: 
-summary: We are so proud to have so many members doing amazing work in their communities and professional lives. We spoke with Renton and Clare from Pottery For The Planet, a Queensland couple who are tackling single-use plastic head on with beautiful ceramic alternatives.
+summary: >-
+  We are so proud to have so many members doing amazing work in their communities and professional lives. We spoke with Renton and Clare from Pottery For The Planet, a Queensland couple who are tackling single-use plastic head on with beautiful ceramic alternatives.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834012cbccd3dc0_Renton210717_lowR022%20(1).jpg
 ---
 

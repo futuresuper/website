@@ -1,11 +1,13 @@
 ---
-title: FAQs&#58; Early release of super due to COVID-19
+title: "FAQs: Early release of super due to COVID-19"
+slug: covid-19-early-release-faqs
 date: 2020-12-11T03:03:13.808Z
 tags: 
   - News
 author: Brett Morgan
 canonical: 
-summary: Answers to the most common questions we have received on the COVID-19 early release of super process.
+summary: >-
+  Answers to the most common questions we have received on the COVID-19 early release of super process.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5f0681762b3d630a7c2bf5ac_5ef42d8336d373633078f935_Early%20Release%20FAQs%20-%20Hero.jpg
 ---
 

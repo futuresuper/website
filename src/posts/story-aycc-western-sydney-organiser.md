@@ -1,5 +1,6 @@
 ---
-title: The story of AYCC’s first Western Sydney Organiser
+title: "The story of AYCC’s first Western Sydney Organiser"
+slug: story-aycc-western-sydney-organiser
 date: 2020-01-19T22:24:24.549Z
 tags: 
   - Community
@@ -7,7 +8,8 @@ tags:
   - Activism
 author: Mariela Powell Thomas
 canonical: 
-summary: From Botswana to Western Sydney to Future Super and beyond — this is the story of committed climate activist, Grace Vegesana.
+summary: >-
+  From Botswana to Western Sydney to Future Super and beyond — this is the story of committed climate activist, Grace Vegesana.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834013943cd3dd9_D8CB3C61-8EFE-468A-AFFA-408380C27C52.JPG
 ---
 

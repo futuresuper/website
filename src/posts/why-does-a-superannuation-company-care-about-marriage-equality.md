@@ -1,11 +1,13 @@
 ---
-title: Why does a superannuation company care about marriage equality?
+title: "Why does a superannuation company care about marriage equality?"
+slug: why-does-a-superannuation-company-care-about-marriage-equality
 date: 2018-11-20T06:39:56.859Z
 tags: 
   - Activism
 author: Kirstin Hunter
 canonical: 
-summary: Find out why marriage equality is an important issue for a superannuation fund. It might not be the answer you'd expect.
+summary: >-
+  Find out why marriage equality is an important issue for a superannuation fund. It might not be the answer you'd expect.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834018023cd3d4a_Blog%20-%20main%20images.png
 ---
 

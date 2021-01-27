@@ -1,5 +1,6 @@
 ---
-title: Protecting Your Super
+title: "Protecting Your Super"
+slug: protecting-your-super
 date: 2019-07-12T03:19:34.816Z
 tags: 
   - Ethical Investing
@@ -7,7 +8,8 @@ tags:
   - Superannuation
 author: James Wanjura
 canonical: 
-summary: Ok, so there’s a big industry shake-up going on right now called Protecting Your Super Package (PYSP, for short). Here's what you need to know.
+summary: >-
+  Ok, so there’s a big industry shake-up going on right now called Protecting Your Super Package (PYSP, for short). Here's what you need to know.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834013633cd3e0d_relaxed-woman-sunny.jpg
 ---
 

@@ -1,5 +1,6 @@
 ---
-title: Solar Pilgrimage&#58; Seeing Your Super Power In Action
+title: "Solar Pilgrimage: Seeing Your Super Power In Action"
+slug: solar-pilgrimage-seeing-your-super-power-in-action
 date: 2019-02-06T07:45:08.648Z
 tags: 
   - Renewable Energy
@@ -8,7 +9,8 @@ tags:
   - Member stories
 author: Michael Bones
 canonical: 
-summary: On a warm and windy Thursday, an unlikely group gathered for a pilgrimage 30 minutes south of Canberra. 
+summary: >-
+  On a warm and windy Thursday, an unlikely group gathered for a pilgrimage 30 minutes south of Canberra. 
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc483401a5cfcd3d8b_Williamsdale-solar_main%20(1).png
 ---
 

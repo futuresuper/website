@@ -11,6 +11,7 @@ const CleanCSS = require("clean-css");
 const { srcset, src } = require("./src/helpers/shortcodes");
 // Inline SVGs
 const svgContents = require("eleventy-plugin-svg-contents");
+const slugify = require("slugify");
 
 module.exports = (config) => {
   // Watch for changes in /sass
@@ -99,6 +100,17 @@ module.exports = (config) => {
       // Fail gracefully.
       callback(null, code);
     }
+  });
+
+  // Override default 'Slug' filter with below options required to work properly
+  // https://github.com/11ty/eleventy/issues/278#issuecomment-451105828
+  config.addFilter("slug", (input) => {
+    const options = {
+      replacement: "-",
+      remove: /[&,+()$~%.'":*?<>{}#]/g,
+      lower: true,
+    };
+    return slugify(input, options);
   });
 
   config.addFilter("cssmin", function (code) {

@@ -1,5 +1,6 @@
 ---
-title: Teller me the Truth&#58; CommBank’s dirty laundry to finally get aired
+title: "Teller me the Truth: CommBank’s dirty laundry to finally get aired"
+slug: teller-me-the-truth-commbanks-dirty-laundry-to-finally-get-aired
 date: 2020-01-17T03:00:38.415Z
 tags: 
   - Disruption
@@ -7,7 +8,8 @@ tags:
   - Ethical Investing
 author: Michael Bones
 canonical: 
-summary: Commonwealth Bank has been in hot water lately over a number of issues. But the really interesting story is at risk of getting lost in all the noise. Find out about the Aussie legends who are taking on the banking giant.
+summary: >-
+  Commonwealth Bank has been in hot water lately over a number of issues. But the really interesting story is at risk of getting lost in all the noise. Find out about the Aussie legends who are taking on the banking giant.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834015709cd3df5_teller-me-the-truth-main%20(1).png
 ---
 

@@ -1,5 +1,6 @@
 ---
-title: Top 3 Ethical Investments in 2017
+title: "Top 3 Ethical Investments in 2017"
+slug: top-3-ethical-investments-in-2017
 date: 2019-02-06T09:22:57.036Z
 tags: 
   - Disruption
@@ -7,7 +8,8 @@ tags:
   - Renewable Energy
 author: Michael Bones
 canonical: 
-summary: Ethical superannuation is not just about avoiding harmful industries. It’s also about investing to make a positive impact and generate a strong return. Here’s how Future Super’s top 3 ethical investments for the 2016-17 financial year stack up for investment impact and return potential. 
+summary: >-
+  Ethical superannuation is not just about avoiding harmful industries. It’s also about investing to make a positive impact and generate a strong return. Here’s how Future Super’s top 3 ethical investments for the 2016-17 financial year stack up for investment impact and return potential. 
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834012e86cd3e37_top%203%20ethical%20investments%20(1).png
 ---
 

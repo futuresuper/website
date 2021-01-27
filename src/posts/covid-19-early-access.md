@@ -1,11 +1,13 @@
 ---
-title: Early access to super due to COVID-19
+title: "Early access to super due to COVID-19"
+slug: covid-19-early-access
 date: 2020-10-20T23:09:41.335Z
 tags: 
   - News
 author: Brett Morgan
 canonical: 
-summary: There have been some recent changes to the way that individuals can access their super due to the COVID-19 outbreak.
+summary: >-
+  There have been some recent changes to the way that individuals can access their super due to the COVID-19 outbreak.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc483401ee1fcd3e45_COVID-19%20Blog%20Image.jpg
 ---
 

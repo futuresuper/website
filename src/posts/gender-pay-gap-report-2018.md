@@ -1,5 +1,6 @@
 ---
-title: Short-change women and you short-change the world&#58; Why we should all care more about the gender pay gap in Australia
+title: "Short-change women and you short-change the world: Why we should all care more about the gender pay gap in Australia"
+slug: gender-pay-gap-report-2018
 date: 2019-02-05T19:19:12.995Z
 tags: 
   - Ethical Investing
@@ -7,7 +8,8 @@ tags:
   - Activism
 author: Kirstin Hunter
 canonical: 
-summary: If a generation of poverty-stricken grandmas isn’t enough to make us stop and think, then maybe this will. 
+summary: >-
+  If a generation of poverty-stricken grandmas isn’t enough to make us stop and think, then maybe this will. 
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc48340119b7cd3dce_gender%20pay%20gap%20(1).png
 ---
 

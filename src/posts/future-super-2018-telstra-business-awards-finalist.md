@@ -1,5 +1,6 @@
 ---
-title: Future Super named 2018 Telstra Business Awards&#58; Social Change Maker Finalist!
+title: "Future Super named 2018 Telstra Business Awards: Social Change Maker Finalist!"
+slug: future-super-2018-telstra-business-awards-finalist
 date: 2019-02-05T19:22:50.417Z
 tags: 
   - Renewable Energy
@@ -12,7 +13,8 @@ tags:
   - Superannuation
 author: Kirstin Hunter
 canonical: 
-summary: Future Super has been listed as a 2018 Telstra Business Awards&#58; Social Change Maker Finalist in the ACT.
+summary: >-
+  Future Super has been listed as a 2018 Telstra Business Awards: Social Change Maker Finalist in the ACT.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834018008cd3daa_Future%20Super%20members%20(1)%20(1).jpg
 ---
 

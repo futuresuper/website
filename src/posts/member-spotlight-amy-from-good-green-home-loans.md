@@ -1,5 +1,6 @@
 ---
-title: Member Spotlight&#58; Amy from Good Green Home Loans
+title: "Member Spotlight: Amy from Good Green Home Loans"
+slug: member-spotlight-amy-from-good-green-home-loans
 date: 2019-04-17T02:25:24.004Z
 tags: 
   - Member stories
@@ -7,7 +8,8 @@ tags:
   - Ethical Investing
 author: James Wanjura
 canonical: 
-summary: We were lucky enough to speak with Future Super member and founding director of Good Green Home Loans Amy Beattie. Amy puts mortgages where her mouth is, divesting home loans from fossil fuels and their lenders. Here’s what she had to say. 
+summary: >-
+  We were lucky enough to speak with Future Super member and founding director of Good Green Home Loans Amy Beattie. Amy puts mortgages where her mouth is, divesting home loans from fossil fuels and their lenders. Here’s what she had to say. 
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc483401481bcd3d92_Amy%20Beattie%20Good%20Green%20Home%20Loans-web-tiny.jpg
 ---
 

@@ -1,11 +1,13 @@
 ---
-title: How we are setting our women up for super success
+title: "How we are setting our women up for super success"
+slug: how-we-are-setting-our-women-up-for-super-success
 date: 2019-02-06T09:43:51.262Z
 tags: 
   - Equality
 author: Kirstin Hunter
 canonical: 
-summary: Women in Australia typically retire with 47% less super than men, and we're proud to be doing our bit to make sure that's not going to be true for our female staff.
+summary: >-
+  Women in Australia typically retire with 47% less super than men, and we're proud to be doing our bit to make sure that's not going to be true for our female staff.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834013d8ecd3e2c_Super%20women%20-%20our%20policies%20-%20main%20(1).jpg
 ---
 

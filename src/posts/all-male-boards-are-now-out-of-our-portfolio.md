@@ -1,10 +1,12 @@
 ---
-title: All-male boards are now out of our portfolio
+title: "All-male boards are now out of our portfolio"
+slug: all-male-boards-are-now-out-of-our-portfolio
 date: 2019-05-03T06:59:50.729Z
 tags: 
 author: Emily Flood
 canonical: 
-summary: On 1 May 2019, Future Super became the first super fund to completely exclude investments in companies that have no women on their boards.
+summary: >-
+  On 1 May 2019, Future Super became the first super fund to completely exclude investments in companies that have no women on their boards.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834014a40cd3dc8_All-male-board-divested-tiny.jpg
 ---
 

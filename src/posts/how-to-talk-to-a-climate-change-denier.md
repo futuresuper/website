@@ -1,12 +1,14 @@
 ---
-title: How to Talk to a Climate Change Denier
+title: "How to Talk to a Climate Change Denier"
+slug: how-to-talk-to-a-climate-change-denier
 date: 2019-02-06T12:29:14.185Z
 tags: 
   - Activism
   - Environment
 author: Noelle Greenwood
 canonical: 
-summary: Having productive conversations with climate deniers can feel like an insurmountable challenge. Find out how with this fact-filled guide.
+summary: >-
+  Having productive conversations with climate deniers can feel like an insurmountable challenge. Find out how with this fact-filled guide.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc483401736ccd3e2f_How-To-Talk-to-a-Denier_main%20(1).png
 ---
 

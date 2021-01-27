@@ -1,5 +1,6 @@
 ---
-title: 11 Important Reasons to Help Us #StopAdani
+title: "11 Important Reasons to Help Us #StopAdani"
+slug: 11-important-reasons-to-help-us-stopadani
 date: 2019-02-06T09:51:31.275Z
 tags: 
   - Activism
@@ -7,7 +8,8 @@ tags:
   - Environment
 author: Future Super
 canonical: 
-summary: Adani’s Carmichael coal mine will be a massive disaster for Australians everywhere, and you can help Future Super stop it. Find out more. 
+summary: >-
+  Adani’s Carmichael coal mine will be a massive disaster for Australians everywhere, and you can help Future Super stop it. Find out more. 
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc48340173a0cd3dad_stop%20adani%20(1).jpg
 ---
 

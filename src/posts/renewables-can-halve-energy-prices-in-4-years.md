@@ -1,5 +1,6 @@
 ---
-title: Renewables Can Halve Energy Prices In 4 Years
+title: "Renewables Can Halve Energy Prices In 4 Years"
+slug: renewables-can-halve-energy-prices-in-4-years
 date: 2019-02-05T18:58:49.281Z
 tags: 
   - Disruption
@@ -8,7 +9,8 @@ tags:
   - Renewable Energy
 author: Michael Bones
 canonical: 
-summary: Good news for everyone, really
+summary: >-
+  Good news for everyone, really
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc48340150eecd3cb9_Blog%201200x630%20(1).png
 ---
 

@@ -1,11 +1,13 @@
 ---
-title: 3 Solar Farms That Prove Everyday Aussies Can Supercharge The Renewables Revolution
+title: "3 Solar Farms That Prove Everyday Aussies Can Supercharge The Renewables Revolution"
+slug: 3-solar-farms-that-prove-everyday-aussies-can-supercharge-the-renewables-revolution
 date: 2019-02-05T19:27:37.674Z
 tags: 
   - Renewable Energy
 author: Michael Bones
 canonical: 
-summary: Why wait for fossil fools when we can build renewables ourselves?
+summary: >-
+  Why wait for fossil fools when we can build renewables ourselves?
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834018063cd3d55_Blog%201200x630%20(7).png
 ---
 
