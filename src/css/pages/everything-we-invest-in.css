@@ -345,8 +345,7 @@ button.clear,
   list-style-type: none;
 }
 
-.everything-we-invest-in .investment-container,
-input.search {
+.everything-we-invest-in .investment-container, input.search {
   border: 2px solid #e6e6e5;
   background-color: #ffffff;
 }

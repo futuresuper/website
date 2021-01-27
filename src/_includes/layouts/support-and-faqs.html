@@ -13,12 +13,15 @@
 
       {# Temporary place for no results front-end #}
       {% if results === false %}
-        <p>Sorry, we don't have any results for <span>''</span>. Feel free to <a href="/contact-us">reach out</a> to one of
-      our friendly Member Advocates for help.</p>
+        <p>Sorry, we don't have any results for
+          <span>''</span>. Feel free to
+          <a href="/contact-us">reach out</a>
+          to one of our friendly Member Advocates for help.</p>
       {% endif %}
       {# Temporary place for true results front-end #}
       {% if results %}
-        <p>Here's what we've found for <span>''</span>:</p>
+        <p>Here's what we've found for
+          <span>''</span>:</p>
       {% endif %}
 
       {# Dynamically create a new section for each Groove Knowledge Base category #}
@@ -33,7 +36,7 @@
             <summary>{{ item.data.title }}</summary>
             <div class="contents">
               {{ item.templateContent | safe }}
-              <a href="{{ item.url }}">Permalink</a>
+              <a class="text-tertiary disclaimer" href="{{ item.url }}">Permalink</a>
             </div>
           </details>
         {% endfor %}

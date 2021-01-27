@@ -537,7 +537,7 @@ input.search {
     grid-gap: 2rem;
   }
   .home section img,
-  .home section .image {
+.home section .image {
     grid-row-start: 1;
     grid-row-end: span 1;
   }
@@ -571,7 +571,7 @@ input.search {
 }
 @media (min-width: 40rem) {
   .product-review-carousel figure blockquote .stars,
-  .product-review-carousel figure blockquote .review-title {
+.product-review-carousel figure blockquote .review-title {
     font-size: 3rem;
   }
 }
