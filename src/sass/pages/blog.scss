@@ -1,0 +1,40 @@
+// BLOG LIST - PAGE-SPECIFIC STYLES
+
+@use "../base" as *;
+
+article > div {
+  display: grid;
+  grid-template-columns: 12rem 12rem 12rem 1fr;
+  row-gap: 2rem;
+  column-gap: 2rem;
+
+  img,
+  .image-placeholder {
+    height: 8rem;
+    width: 100%;
+    background-color: $grey-200;
+  }
+
+  a {
+    color: $black-500;
+    text-decoration: none;
+
+    //Author
+    p:nth-of-type(2) {
+      color: $grey-400;
+    }
+
+    // Tags
+    p:nth-of-type(3) {
+      color: $grey-500;
+      font-size: 0.7rem;
+    }
+  }
+
+  .hr {
+    width: 100%;
+    height: 1px;
+    background-color: $grey-300;
+    grid-column: span 3;
+  }
+}

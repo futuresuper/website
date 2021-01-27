@@ -2,24 +2,23 @@
 title: "10 crappy things you could be funding through your super (and might want to stop)"
 slug: 10-crappy-things-you-could-be-funding-through-your-super
 date: 2019-02-06T09:57:25.228Z
-tags: 
+tags:
   - Activism
   - Divestment
   - Disruption
   - Environment
 author: Noelle Greenwood
-canonical: 
+canonical:
 summary: >-
-  Did you know your super could be funding harmful industries like nuclear arms and tobacco? Future Super reveals 10 damaging industries to avoid investing in. 
+  Did you know your super could be funding harmful industries like nuclear arms and tobacco? Future Super reveals 10 damaging industries to avoid investing in.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc48340112dccd3dc5_10-descructive-industries_main%20(1)%20(1).jpg
 ---
 
 > Ethical super might be gaining momentum due to greater social awareness of unethical investments, but it’s still not always easy to find out which companies your super fund is putting your money in. Standard super funds invest in at least one of [many harmful industries](https://www.choice.com.au/money/financial-planning-and-investing/superannuation/articles/australian-ethical-super-funds#ethical-definition), so you’ll want to do your due diligence and make sure you’re aware of where exactly your money is going, as well as whether your super fund is an ethical one.
 
-![Image fire and huge amount of smoke with caption: 10 destructive industries you could be funding through your super.](https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc48340112dccd3dc5_10-descructive-industries_main%20(1)%20(1).jpg)
+![Image fire and huge amount of smoke with caption: 10 destructive industries you could be funding through your super.](<https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc48340112dccd3dc5_10-descructive-industries_main%20(1)%20(1).jpg>)
 
-The industries you’ll want to avoid
------------------------------------
+## The industries you’ll want to avoid
 
 While the question of ethics can be subjective, there’s general consensus about [what’s ethical and not ethical in an investment](https://www.choice.com.au/money/financial-planning-and-investing/superannuation/articles/australian-ethical-super-funds#ethical-definition). Some of the most harmful sectors and issues are fossil fuels, animal cruelty, gambling, tobacco, big banks, offshore detention, nuclear weapons, and old growth forest logging. These industries cause direct harm - such as fossil fuels with pollution and greenhouse gases - or they enable a harmful industry through funding, such as nuclear weapons and uranium.
 
@@ -37,7 +36,7 @@ The big four banks continue to support the destructive fossil fuel industry by f
 
 ### 3\. Tobacco
 
- 
+
 
 Around [50 percent of super funds](https://www.acosh.org/superannuation-invested-tobacco/) invest in tobacco, despite the fact that 15,000 Aussies die due to tobacco-related illnesses every year. The negative impact of tobacco is profound; not only is smoking the leading cause of preventable death worldwide, but the environmental impacts of tobacco production are far-reaching, with all phases of cigarette production [contributing to GHG emissions](http://www.tobaccoinaustralia.org.au/chapter-10-tobacco-industry/10-14-the-environmental-impact-of-tobacco-producti#x44.).
 
@@ -47,7 +46,7 @@ Non-profit groups like [Tobacco Free Portfolios](http://www.tobaccofreeportfolio
 
 ### 4\. Offshore detention
 
- 
+
 
 Your money could be [invested in private service providers](http://rightnow.org.au/opinion-3/is-your-super-invested-in-australias-detention-of-children/) that enable and profit from the detention of people seeking asylum, if your super fund hasn’t already divested from such companies. Companies like Serco, Transfield Services, Wilson Security, and OTOC are well known for profiting from Australia’s offshore-detention policy.
 
@@ -55,7 +54,7 @@ Your money could be [invested in private service providers](http://rightnow.org.
 
 ### 5\. Nuclear and uranium
 
- 
+
 
 Nuclear-supporting industries such as uranium are unethical as they impede [non-proliferation efforts](https://www.un.org/disarmament/wmd/nuclear/npt/) to prevent the spread of nuclear weapons and weapons technology. Big Australian banks like ANZ, Commonwealth Bank, Macquarie Group and Westpac are among the [financial institutions investing in the manufacture of nuclear weapons](http://www.medianet.com.au/releases/release-details.aspx/?id=871086), through companies such as General Dynamics, BAE Systems, Northrop Grumman and more, that provide the infrastructure to develop or modernise nuclear weapons.
 
@@ -71,7 +70,7 @@ The live exports industry is notorious for its cruelty, but even the most dedica
 
 ### 8\. Old growth logging
 
- 
+
 
 Old growth forests are recognised as having [very high aesthetic, cultural and natural conservation values](http://www.environment.nsw.gov.au/resources/nature/landholderNotes10OldGrowthForests.pdf). Their protection and management is hugely important in the maintenance of Australia’s biodiversity and ecological functions. Old growth logging is considered a damaging practice because old-growth trees are [essential for native and endangered species](https://theconversation.com/victorian-forestry-is-definitely-not-ecologically-sustainable-11392).
 
@@ -85,8 +84,7 @@ Forced labor and human trafficking remain major problems in the world, with [21 
 
 Australians are the [biggest gamblers in the world](http://www.abc.net.au/news/2016-08-23/sports-betting-losses-on-the-rise/7777388) on a per capita basis, losing $23 billion in the past year. Options like pokies can be highly addictive, and online bookies and gambling also contributed to problem gambling. [One in six](http://www.smh.com.au/business/consumer-affairs/gambling-is-killing-one-australian-a-day-but-it-rakes-in-billions-in-tax-20160927-grpypl.html) Australians is a problem gambler, and gambling is estimated to cause 400 Australians to take their lives each year. As one of the industries widely considered unethical, gambling is another major sector to avoid investing your super in.
 
-How to find out if your super is ethically invested
----------------------------------------------------
+## How to find out if your super is ethically invested
 
 Transparency is a challenge when it comes to super funds, and this is reflected the industry anxiety surrounding [proposed portfolio disclosure holdings arrangements](http://www.moneymanagement.com.au/news/superannuation/super-funds-anxious-about-unlisted-portfolio-disclosures) for super funds. Future Super has conducted research into the publicly disclosed holdings of the top 50 Australian super funds, to provide a sense of transparency for consumers looking to find whether their super is invested in unethical industries.
 
@@ -98,10 +96,8 @@ Note this tool is based on publicly disclosed holdings only. Your super fund cou
 
 Finding an ethical super fund gives you the peace of mind that growing your retirement nest egg isn’t going to cause harm to others. Whether it’s avoiding fossil fuel industries or child labour, ethical funds can applying strict screening criteria [without compromising on growth and financial performance](http://www.abc.net.au/news/2017-07-25/ethical-investment-funds-outperforming-mainstream-counterparts/8742104). By choosing Future Super, you can secure your future without causing damage. [Switch to Future Super in two minutes](https://www.myfuturesuper.com.au/switch/join-futures-super) today, or [contact us](https://www.myfuturesuper.com.au/about/contact) for more information.
 
-Make the switch to help #StopAdani
-----------------------------------
+## Make the switch to help #StopAdani
 
 October is #StopAdani month. [Help us to #StopAdani by switching your super in October](/switch/stopadani). For everyone who joins during the month, we'll donate $50 to the #StopAdani campaign^. If you're already a member, for every friend you refer who joins during the month, you'll get a 3 month supply for Who Gives A Crap toilet paper. Just check your emails to find out more.
 
-![Image of coal trucks parked next to each other - Join Australia's first fossil fuel free super fund. ](https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834016bd6cd3e15_5c1443dba808382a4b0d2239_StopAdani_OG%20(2).png)
-
+![Image of coal trucks parked next to each other - Join Australia's first fossil fuel free super fund. ](<https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834016bd6cd3e15_5c1443dba808382a4b0d2239_StopAdani_OG%20(2).png>)
