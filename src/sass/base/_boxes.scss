@@ -4,7 +4,7 @@
 $transition-box-background: background-color 150ms ease-in-out;
 
 details,
-.forms-and-docs li {
+.docs-and-forms li {
   border: 1px solid $black-900;
   background-color: $white-500;
   transition: $transition-box-background;
@@ -38,7 +38,7 @@ details {
   }
 }
 
-.forms-and-docs {
+.docs-and-forms {
   margin-bottom: 1rem !important; //TODO: why are rules in reset.scss overriding this?
   li {
     display: flex;

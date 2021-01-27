@@ -76,6 +76,18 @@ module.exports = (config) => {
       .reverse();
   });
 
+  // Return a collection of all Markdown documents and forms
+  // For use when cross-linking to documents and forms from other pages such as Employers
+  config.addCollection("allDocumentsAndForms", (collection) => {
+    return (
+      collection
+        .getFilteredByGlob("./src/documents-and-forms/*/*.md")
+        // TODO: sort by section (subfolder), then data.order
+        .sort((a, b) => b.data.order - a.data.order)
+        .reverse()
+    );
+  });
+
   // Allow JavaScript to be minified via the jsmin Nunjucks filter
   // https://www.11ty.dev/docs/quicktips/inline-js/
   config.addNunjucksAsyncFilter("jsmin", async function (code, callback) {

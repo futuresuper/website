@@ -4,69 +4,69 @@
 
 {% block content %}
 
-<article class="container">
+  <article class="container">
 
-  {% include "partials/page-header.html" %}
+    {% include "partials/page-header.html" %}
 
-  <div class="article-content">
-    <p>
-      The easiest way to manage your employees' super is by clearing house. Using a clearing house ensures your payments
-      are SuperStream compliant, and makes them easier to track.
-    </p>
-    <p>You might already have access to a clearing house through your accounting software. If not, the ATO's
-      <a href="https://www.ato.gov.au/Business/Super-for-employers/Paying-super-contributions/Small-Business-Superannuation-Clearing-House/"
-        target="_blank" rel="noopener noreferrer">Small Business Superannuation Clearing House</a>
-      is free for small businesses with less than 20 employees.
-    </p>
+    <div class="article-content">
+      <p>
+        The easiest way to manage your employees' super is by clearing house. Using a clearing house ensures your payments are SuperStream compliant, and makes them easier to track.
+      </p>
+      <p>You might already have access to a clearing house through your accounting software. If not, the ATO's
+        <a href="https://www.ato.gov.au/Business/Super-for-employers/Paying-super-contributions/Small-Business-Superannuation-Clearing-House/" target="_blank" rel="noopener noreferrer">Small Business Superannuation Clearing House</a>
+        is free for small businesses with less than 20 employees.
+      </p>
 
-    <section>
-      <h2>Our clearing house details</h2>
-      <table>
-        <tr>
-          <th>Fund name</th>
-          <td>Future Super
-            <span class="text-tertiary">or</span>
-            Future Super Fund
-          </td>
-        </tr>
-        <tr>
-          <th>ABN</th>
-          <td>45 960 194 277</td>
-        </tr>
-        <tr>
-          <th>USI</th>
-          <td>45 960 194 277 010</td>
-        </tr>
-        <tr>
-          <th>SPIN</th>
-          <td>We do not have a SPIN number. Use our USI instead.</td>
-        </tr>
-      </table>
-    </section>
+      <section>
+        <h2>Our clearing house details</h2>
+        <table>
+          <tr>
+            <th>Fund name</th>
+            <td>Future Super
+              <span class="text-tertiary">or</span>
+              Future Super Fund
+            </td>
+          </tr>
+          <tr>
+            <th>ABN</th>
+            <td>45 960 194 277</td>
+          </tr>
+          <tr>
+            <th>USI</th>
+            <td>45 960 194 277 010</td>
+          </tr>
+          <tr>
+            <th>SPIN</th>
+            <td>We do not have a SPIN number. Use our USI instead.</td>
+          </tr>
+        </table>
+      </section>
 
-    <section>
-      <h2>Related forms and documents</h2>
+      <section>
+        <h2>Related documents and forms</h2>
+        <ul class="plain docs-and-forms">
+          {% for selectedItem in pageDocsAndForms %}
+            {# Construct a file path that will match the url of the below collection items #}
+            {% set selectedItemFilePath %}/documents-and-forms/{{ selectedItem.section }}/{{ selectedItem.slug }}/{% endset %}
+            {# Loop through all the documents and forms #}
+            {% for item in collections.allDocumentsAndForms %}
+              {# Compare the two file paths #}
+              {% if selectedItemFilePath === item.url %}
+                {# If there's a match, include it on the page #}
+                <li>
+                  {% include "partials/documents-and-forms/rich-text-block.html" %}
+                </li>
+              {% endif %}
+            {% endfor %}
+          {% endfor %}
+        </ul>
+      </section>
 
-      <ul class="plain forms-and-docs">
-        <li><a href="#todo" rel="noopener noreferrer">
-            <h2>General Compliance Certificate</h2>
-            <p>Employers may require this form to be completed when an employee chooses to join Future Super. It states
-              we are a compliant fund and can accept super
-              contributions on member's behalf.</p>
-          </a></li>
-        <li><a href="#todo">
-            <h2>Standard Choice Form</h2>
-            <p>Employers may require this form to be completed when an employee chooses to join Future Super. Broader
-              description TODO...</p>
-          </a></li>
-      </ul>
-    </section>
+      {% if pageFaqs %}
+        {% include "partials/page-faqs.html" %}
+      {% endif %}
+    </div>
 
-    {% if pageFaqs %}
-    {% include "partials/page-faqs.html" %}
-    {% endif %}
-  </div>
-
-</article>
+  </article>
 
 {% endblock %}
