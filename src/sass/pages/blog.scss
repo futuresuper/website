@@ -2,39 +2,151 @@
 
 @use "../base" as *;
 
-article > div {
-  display: grid;
-  grid-template-columns: 12rem 12rem 12rem 1fr;
-  row-gap: 2rem;
-  column-gap: 2rem;
+$transition-section-hover: opacity 250ms ease-in-out;
 
-  img,
-  .image-placeholder {
-    height: 8rem;
-    width: 100%;
-    background-color: $grey-200;
+.post-item {
+  > h2,
+  > h3 {
+    grid-column: span 1;
+    @media (min-width: $breakpoint-sm) {
+      grid-column: span 12;
+    }
+    @media (min-width: $breakpoint-md) {
+      grid-column: span 2;
+      position: sticky;
+      top: 0;
+    }
+  }
+
+  > h2,
+  > h3 {
+    font-size: $font-size-xl;
+    vertical-align: baseline; //TODO
+  }
+
+  h3.month-only {
+    font-size: $font-size-lg;
+  }
+
+  // Don't show month unless on breakpoint-md or higher
+  > h2.year-only,
+  > h3.month-only {
+    display: none;
+
+    @media (min-width: $breakpoint-md) {
+      display: block;
+    }
+  }
+
+  h2.month-and-year {
+    color: $grey-400;
+
+    @media (min-width: $breakpoint-md) {
+      display: none;
+    }
   }
 
   a {
-    color: $black-500;
+    color: inherit;
     text-decoration: none;
+    grid-column: span 1;
+    grid-row: 2;
 
-    //Author
-    p:nth-of-type(2) {
-      color: $grey-400;
+    transition: $transition-section-hover;
+    &:hover {
+      opacity: 0.75;
     }
 
-    // Tags
-    p:nth-of-type(3) {
-      color: $grey-500;
-      font-size: 0.7rem;
+    img,
+    .image-placeholder {
+      height: 8rem;
+      width: 100%;
+      object-fit: cover;
+      background-color: $grey-200;
+      display: none;
+    }
+
+    .post-text {
+      h4 {
+        display: none;
+      }
+
+      .details {
+        //Author
+        .author {
+          color: $grey-400;
+        }
+
+        // Tags
+        .tags {
+          margin-top: 0.75rem;
+          color: $grey-500;
+          font-size: $font-size-xs;
+        }
+      }
+
+      @media (min-width: $breakpoint-md) {
+        p {
+          margin: 0;
+          line-height: 100%;
+        }
+      }
+    }
+
+    @media (min-width: $breakpoint-sm) {
+      grid-column: span 12;
+    }
+
+    @media (min-width: $breakpoint-md) {
+      grid-column: 5/13;
+      grid-row: 1;
+
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: $grid-gap-md;
+
+      img,
+      .image-placeholder {
+        display: block;
+        grid-column: span 3;
+      }
+
+      .post-text {
+        grid-column: span 9;
+
+        @media (min-width: $breakpoint-md) {
+          // Span full height of area to match image
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+
+        // Don't show month unless on breakpoint-md or higher
+        h3 {
+          display: none;
+        }
+        h4 {
+          display: block;
+          font-size: $font-size-lg;
+        }
+      }
+    }
+
+    @media (min-width: $breakpoint-lg) {
+      gap: $grid-gap-lg;
     }
   }
 
-  .hr {
-    width: 100%;
-    height: 1px;
-    background-color: $grey-300;
-    grid-column: span 3;
+  // Apply a bottom border to all except the last clickable element
+  &:not(:last-of-type) {
+    a {
+      border-bottom: 1px solid $grey-300;
+      padding-bottom: 2rem;
+      margin-bottom: 2rem;
+      @media (min-width: $breakpoint-md) {
+        padding-bottom: 3rem;
+        margin-bottom: 3rem;
+      }
+    }
   }
 }

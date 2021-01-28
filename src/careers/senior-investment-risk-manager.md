@@ -46,7 +46,7 @@ You will thrive in this role if your passion, strengths, and approach to work ar
 - 5+ years experience in asset management consulting or related;
 - Tertiary qualifications in mathematics based degrees such as econometrics or finance.
 
-## You'll love working here with:
+## You'll love working here with
 
 - A purpose-oriented organisation, spend your days working on making this world a better place! The more we grow, the bigger the impact we are making on climate change and inequality.
 - A close-knit team that embraces learning, openness and transparency - focusing on delivering quality outcomes and enabling the company vision.

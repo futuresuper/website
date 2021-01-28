@@ -17,6 +17,9 @@ $space-page-padding-x-md: 2rem;
 $space-page-padding-x-lg: 3rem;
 $space-page-padding-x-dynamic: $space-page-padding-x-sm;
 
+$grid-gap-md: 2rem;
+$grid-gap-lg: 3rem;
+
 // TODO: Have Sass variables update depending on breakpoint
 // @media (min-width: $breakpoint-md) {
 //   $space-page-padding-x-dynamic: $space-page-padding-x-md !global;
@@ -111,14 +114,14 @@ main > article.container {
   }
   // Large screens default = 6 columns (span 2 of 12)
   @media (min-width: $breakpoint-md) {
-    gap: 2rem;
+    gap: $grid-gap-md;
     > * {
       grid-column: span 2;
     }
   }
   // Large screens default = 6 columns (span 2 of 12)
   @media (min-width: $breakpoint-lg) {
-    gap: 3rem;
+    gap: $grid-gap-lg;
     > * {
       grid-column: span 2;
     }

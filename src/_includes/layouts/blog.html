@@ -12,25 +12,20 @@
   <article class="container">
     {% include "partials/page-header.html" %}
     <!-- Loops through and presents posts, such as blog posts -->
-    <div>
-      {% for post in collections.blog %}
+    {% for post in collections.blog %}
+      <div class="post-item grid">
         {# SET YEAR & MONTH VALS #}
         {% set year = post.date | year %}
         {% set month = post.date | month %}
-
-        {# HORIZONTAL LINE FOR NEW MONTH #}
-        {% if loop.index !== 1 %}
-          {% if month !== lastMonth %}
-            <div></div>
-            <div class="hr"></div>
-          {% endif %}
-        {% endif %}
 
         {# PRINT YEAR IF NOT REPEAT OF PREVIOUS #}
         {% if year === lastYear %}
           <div></div>
         {% else %}
-          <h2>{{ year }}</h2>
+          <h2 class="year-only">{{ year }}</h2>
+          <h2 class="month-and-year">{{ month }}
+            {{ year }}</h2>
+
         {% endif %}
         {% set lastYear = post.date | year %}
 
@@ -38,36 +33,43 @@
         {% if month === lastMonth %}
           <div></div>
         {% else %}
-          <h3>{{ month }}</h3>
+          <h3 class="month-only">{{ month }}</h3>
         {% endif %}
         {% set lastMonth = post.date | month %}
 
         {# IMAGE #}
-        {% if post.data.image %}
-          <a href="{{ post.url }}">
-            <img src="{{ post.data.image }}" alt="{{ post.data.title }}" loading="lazy">
-          </a>
-        {% else %}
-          <div class="image-placeholder"></div>
-        {% endif %}
-
-        {# TITLE + TEXT #}
         <a href="{{ post.url }}">
-          <h3>{{ post.data.title }}</h3>
-          <p>{{ post.data.summary }}</p>
-          <p>{{ post.data.author }}</p>
-          <p>
-            {% for tag in post.data.tags %}
-              {{ tag }}
-              {% if loop.last === false %}
-                {{ " • " }}
-              {% endif %}
-            {% endfor %}
-          </p>
+          {% if post.data.image %}
+            <img src="{{ post.data.image }}" alt="{{ post.data.title }}" loading="lazy">
+          {% else %}
+            <div class="image-placeholder"></div>
+          {% endif %}
+          {# </a> #}
 
+          {# TITLE + TEXT #}
+          {# For smaller breakpoints #}
+          <div class="post-text">
+            <h3>{{ post.data.title }}</h3>
+            {# For larger breakpoints #}
+            <h4>{{ post.data.title }}</h4>
+            <p class="summary">{{ post.data.summary }}</p>
+            <div class="details">
+              <p class="author">{{ post.data.author }}</p>
+              {% if post.data.tags %}
+                <p class="tags">
+                  {% for tag in post.data.tags %}
+                    {{ tag }}
+                    {% if loop.last === false %}
+                      {{ " • " }}
+                    {% endif %}
+                  {% endfor %}
+                {% endif %}
+              </p>
+            </div>
+          </div>
         </a>
-      {% endfor %}
-    </div>
+      </div>
+    {% endfor %}
 
   </article>
 
