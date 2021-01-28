@@ -612,9 +612,20 @@ header[role=banner] .banner.critical a:hover {
 header[role=banner] section {
   margin-top: 1rem;
   margin-bottom: 6rem;
+  padding: 0 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+@media (min-width: 48rem) {
+  header[role=banner] section {
+    padding: 0 2rem;
+  }
+}
+@media (min-width: 80rem) {
+  header[role=banner] section {
+    padding: 0 3rem;
+  }
 }
 @media (min-width: 1068px) {
   header[role=banner] section {

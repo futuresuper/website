@@ -1,8 +1,6 @@
 {% extends "layouts/base.html" %}
 
 {% set pageHeaderTitle = title %}
-{# TODO: Remove pageHeaderAlign if default becomes center #}
-{% set pageHeaderAlign = "center" %}
 {% set iconsPath = '/src/images/icons/investment-options/' %}
 
 {% block content %}
@@ -28,9 +26,8 @@
     </div>
   {% endmacro %}
 
-  <article class="investment-options">
+  <article>
     <div class="top container">
-
       {% include "partials/page-header.html" %}
 
       <div class="grid">

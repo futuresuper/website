@@ -35,6 +35,16 @@ header[role="banner"] {
   section {
     margin-top: 1rem;
     margin-bottom: $space-section-y-dynamic;
+    // Mimic padding from .container
+    padding: 0 $space-page-padding-x-sm;
+
+    @media (min-width: $breakpoint-md) {
+      padding: 0 $space-page-padding-x-md;
+    }
+
+    @media (min-width: $breakpoint-lg) {
+      padding: 0 $space-page-padding-x-lg;
+    }
 
     @media (min-width: 1068px) {
       margin-top: 2rem;
