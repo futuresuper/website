@@ -5,95 +5,62 @@
 {% set iconsPath = '/src/images/icons/investment-options/' %}
 
 {% block content %}
-<article class="container">
-  {% include "partials/page-header.html" %}
+  <article class="container">
+    {% include "partials/page-header.html" %}
 
-  <div class="table-container">
+    <div class="table-container">
 
-    <div class="grid-row">
-      <div class="row-header"></div>
-      <!-- TODO: merge pension into investmentOptions and flag 'false' for investment-options page -->
-      {% for option in investmentOptions %}
-      <div class="row-data option-card-mini {{ option.slug }}">
-        {% set iconUrl = iconsPath + option.slug + ".svg" %}
-        {{ iconUrl | svgContents("fill-core") | safe }}
-        <h4>{{ option.opticalLabel[0] }}<br>{{ option.opticalLabel[1] }}</h4>
+      <div class="grid-row">
+        <div class="row-header"></div>
+        <!-- TODO: merge pension into investmentOptions and flag 'false' for investment-options page -->
+        {% for option in investmentOptions %}
+          <div class="row-data option-card-mini {{ option.slug }}">
+            {% set iconUrl = iconsPath + option.slug + ".svg" %}
+            {{ iconUrl | svgContents("fill-core") | safe }}
+            <h4>{{ option.opticalLabel[0] }}<br>{{ option.opticalLabel[1] }}</h4>
+          </div>
+        {% endfor %}
       </div>
+
+      {% for row in performanceReturns.table %}
+        <div class="grid-row">
+          <div class="row-header">
+            <h5>{{row.rowHeading}}</h5>
+            {% if row.rowSubHeading %}
+              <p>{{ row.rowSubHeading }}</p>
+            {% endif %}
+          </div>
+          <div class="row-data balanced-index">
+            <p>
+              {{row.balancedIndex}}
+            </p>
+          </div>
+          <div class="row-data balanced-impact">
+            <p>
+              {{row.balancedImpact}}
+            </p>
+          </div>
+          <div class="row-data renewables-plus-growth">
+            <p>
+              {{row.renewablesPlusGrowth}}
+            </p>
+          </div>
+        </div>
       {% endfor %}
+
     </div>
 
-    <div class="grid-row">
-      <div class="row-header">
-        <h5>Launch date</h5>
-      </div>
-      {% for option in investmentOptions %}
-      <div class="row-data {{ option.slug }}">
-        <p>
-          XX Nov 2016
-        </p>
-      </div>
-      {% endfor %}
+    <div class="article-content">
+      <p class="disclaimer">
+        Returns provided are after investment fees, percentage-based administration fees and taxes but before dollar-based administration fees have been taken out. Returns for periods of greater than one year are on a per annum compound basis. Return of capital and the performance of your investment in the Fund are not guaranteed. Past performance is not a reliable indicator of future performance.
+      </p>
+
+      {% if pageFaqs %}
+        {% include "partials/page-faqs.html" %}
+      {% endif %}
     </div>
+  </article>
 
-    <div class="grid-row">
-      <div class="row-header">
-        <h5>Returns in the last month</h5>
-      </div>
-      {% for option in investmentOptions %}
-      <div class="row-data {{ option.slug }}">
-        <p>
-          X.XX%
-        </p>
-      </div>
-      {% endfor %}
-    </div>
-
-    <div class="grid-row">
-      <div class="row-header">
-        <h5>Returns in the last two months</h5>
-      </div>
-      {% for option in investmentOptions %}
-      <div class="row-data {{ option.slug }}">
-        <p>
-          X.XX%
-        </p>
-      </div>
-      {% endfor %}
-    </div>
-
-    <div class="grid-row">
-      <div class="row-header">
-        <h5>Returns since inception</h5>
-        <p>Relative to fund launch date</p>
-      </div>
-      {% for option in investmentOptions %}
-      <div class="row-data {{ option.slug }}">
-        <p>
-          XX.XX%
-        </p>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-
-
-  <div class="article-content">
-    <p class="disclaimer">
-      Returns provided are after investment fees, percentage-based administration fees and taxes but before
-      dollar-based
-      administration fees have been taken out. Returns for periods of greater than one year are on a per annum
-      compound
-      basis. Return of capital and the performance of your investment in the Fund are not guaranteed. Past performance
-      is
-      not a reliable indicator of future performance.
-    </p>
-
-    {% if pageFaqs %}
-    {% include "partials/page-faqs.html" %}
-    {% endif %}
-  </div>
-</article>
-
-{% include "partials/also-see.html" %}
+  {% include "partials/also-see.html" %}
 
 {% endblock %}
