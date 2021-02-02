@@ -53,7 +53,7 @@
     {{ singlePensionOptionCard | safe }}
   </div>
 
-  <div class="intro grid container">
+  <div class="table-intro grid container">
     <div>
       <h2>Let's break things down</h2>
       <p>Not sure what something means? Tap anything with a
@@ -149,7 +149,7 @@
 
     <div class="grid-row">
       <div class="row-header">
-        <h5>Fees per year</h5>
+        <h5>Fees per year<span class="text-tertiary">&thinsp;*</span></h5>
       </div>
       {% for option in investmentOptions %}
       {% if option.type === "pension" %}
@@ -248,6 +248,15 @@
           {% endfor %}
         </p>
       </div>
+    </div>
+  </div>
+
+  <div class="table-disclaimers grid container">
+    <div>
+      <p class="disclaimer">*&thinsp;Read our <a href="https://www.futuresuper.com.au/pppds">Pension Product Disclosure
+          Statement</a> for full details on how fees apply to your Future Super account. The fees shown above are the
+        total Investment Fees, Administration Fees and Indirect Cost
+        Ratio payable for our pension option. Other fees and costs may apply to your account.</p>
     </div>
   </div>
 

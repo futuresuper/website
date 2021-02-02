@@ -2,8 +2,7 @@
 title: "Pension Fund"
 layout: "layouts/pension-fund.html"
 summary: "Free your pension from fossil fuels."
-# TODO: just pension-fund, with shared investment-options styling living in tables.scss
-pageStyles: ["src/css/pages/pension-fund.css", "src/css/pages/investment-options.css"]
+pageStyles: ["src/css/pages/investment-options.css"]
 pageFaqs:
   - question: "This is a placeholder question"
     answer: "This is a placeholder answer. Both this question and answer should come from our Knowledge Base."

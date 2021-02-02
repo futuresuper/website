@@ -1,9 +1,6 @@
 ---
 title: "Performance and Returns"
 layout: "layouts/performance-and-returns.html"
-# TODO: extract universal table styles into something shared by investment-options, pension-fund, and performance-and-returns
-# TODO: just performance-and-returns, with shared investment-options styling living in tables.scss
-pageStyles: ["src/css/pages/performance-and-returns.css", "src/css/pages/investment-options.css"]
 data: performanceReturns
 pageFaqs:
   - question: "This is a placeholder question"

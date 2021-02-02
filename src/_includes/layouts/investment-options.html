@@ -38,7 +38,7 @@
       <div class="option-card-large-container">
         {% if option.leadingStat %}
         <div class="leading-stat">
-          <p><strong>65%</strong>of new members choose this option</p>
+          <p><strong>65%</strong> of new members choose this option</p>
         </div>
         {% endif %}
         <div class="option-card-large {{ option.slug }}{% if option.leadingStat %} with-leading-stat{% endif %}">
@@ -54,7 +54,7 @@
     </div>
   </div>
 
-  <div class="intro grid container">
+  <div class="table-intro grid container">
     <div>
       <h2>Let's break things down</h2>
       <p>Not sure what something means? Tap anything with a
@@ -213,7 +213,7 @@
 
     <div class="grid-row">
       <div class="row-header">
-        <h5>Fees per year</h5>
+        <h5>Fees per year<span class="text-tertiary">&thinsp;*</span></h5>
       </div>
       {% for option in investmentOptions %}
       {% if option.type === "accumulation" %}
@@ -367,6 +367,16 @@
 
   <div class="table-container">
     {{ initialTableRow("true") }}
+  </div>
+
+  <div class="table-disclaimers grid container">
+    <div>
+      <p class="disclaimer">*&thinsp;Read our <a href="https://www.futuresuper.com.au/pds">Product Disclosure
+          Statement</a> full details on how fees apply to your Future Super account. The fees shown above are the total
+        Investment Fees, Administration Fees and Indirect Cost Ratio payable for each of our investment options. Other
+        fees and costs may apply to your account. There's no dollar-based admin fee when your balance is below $6,000.
+      </p>
+    </div>
   </div>
 
   <section class="chill container">
