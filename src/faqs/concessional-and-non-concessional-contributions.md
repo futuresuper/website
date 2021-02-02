@@ -1,1 +1,18 @@
-"---\ntitle: \"Concessional and non-concessional contributions\"\nslug: concessional-and-non-concessional-contributions\ndate: 2020-08-13T05:17:16Z\ncategory: Contributions and payments to your super\n---\n\n**Non-concessional contributions**\n\nNon-concessional contributions are able to be made to your account from your after-tax income and are not taxed when entering the fund. \n\nThere is a non-concessional contribution cap of $100,000 per financial year. You can read more [here](https://www.ato.gov.au/super/self-managed-super-funds/contributions-and-rollovers/contribution-caps/).\n\n**Concessional contributions**\n\nConcessional contributions are taxed at a 15% rate and are made to your account from pre-tax income. These contributions include those made by employers from your pre-tax income and self-employed people who may wish to make contributions from their pre-tax income and claim a tax deduction for those contributions. Members of other types of employment can also make personal concessional contributions.\n\nThe general concessional contributions cap is $25,000 per financial year. You can read more [here](https://www.ato.gov.au/super/self-managed-super-funds/contributions-and-rollovers/contribution-caps/).\n"
+---
+title: "Concessional and non-concessional contributions"
+slug: concessional-and-non-concessional-contributions
+date: 2020-08-13T05:17:16Z
+category: Contributions and payments to your super
+---
+
+**Non-concessional contributions**
+
+Non-concessional contributions are able to be made to your account from your after-tax income and are not taxed when entering the fund. 
+
+There is a non-concessional contribution cap of $100,000 per financial year. You can read more [here](https://www.ato.gov.au/super/self-managed-super-funds/contributions-and-rollovers/contribution-caps/).
+
+**Concessional contributions**
+
+Concessional contributions are taxed at a 15% rate and are made to your account from pre-tax income. These contributions include those made by employers from your pre-tax income and self-employed people who may wish to make contributions from their pre-tax income and claim a tax deduction for those contributions. Members of other types of employment can also make personal concessional contributions.
+
+The general concessional contributions cap is $25,000 per financial year. You can read more [here](https://www.ato.gov.au/super/self-managed-super-funds/contributions-and-rollovers/contribution-caps/).

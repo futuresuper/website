@@ -1,1 +1,17 @@
-"---\ntitle: \"I’m self-employed. How do I make contributions?\"\nslug: im-self-employed-how-do-i-make-contributions\ndate: 2020-12-15T04:29:48Z\ncategory: Contributions and payments to your super\n---\n\nTo contribute to your super as a self-employed person, simply:\n\n1.  Submit the online **Personal Contribution Form** from your **[Member Portal](https://portal.myfuturesuper.com.au/member/login_1)**. This allows our administrators to allocate your payment into your account, as all payments go into the one bank account. Alternatively, you can submit our downloadable [Personal Contribution Form](https://www.futuresuper.com.au/personalcontributionsform).\n2.  **Transfer the money** to us using the bank account or BPAY details in the personal contributions form. You can either pay using BPAY or direct deposit if you're paying from an Australian bank account. \n\nTo claim your personal contributions for tax purposes, you need to complete the [Notice of intent to claim or vary a deduction for personal super contributions form](https://www.ato.gov.au/Forms/Notice-of-intent-to-claim-or-vary-a-deduction-for-personal-super-contributions/). You'll need to do this once per financial year for all the contributions during that financial year.\n\nYou have one year from the end of the relevant financial year within which to submit your notice of intent.\n\nFor more information, [this blog article](https://www.futuresuper.com.au/blog/faqs-personal-contributions) contains a handy guide to making personal contributions to your Future Super account.\n"
+---
+title: "I’m self-employed. How do I make contributions?"
+slug: im-self-employed-how-do-i-make-contributions
+date: 2020-12-15T04:29:48Z
+category: Contributions and payments to your super
+---
+
+To contribute to your super as a self-employed person, simply:
+
+1.  Submit the online **Personal Contribution Form** from your **[Member Portal](https://portal.myfuturesuper.com.au/member/login_1)**. This allows our administrators to allocate your payment into your account, as all payments go into the one bank account. Alternatively, you can submit our downloadable [Personal Contribution Form](https://www.futuresuper.com.au/personalcontributionsform).
+2.  **Transfer the money** to us using the bank account or BPAY details in the personal contributions form. You can either pay using BPAY or direct deposit if you're paying from an Australian bank account. 
+
+To claim your personal contributions for tax purposes, you need to complete the [Notice of intent to claim or vary a deduction for personal super contributions form](https://www.ato.gov.au/Forms/Notice-of-intent-to-claim-or-vary-a-deduction-for-personal-super-contributions/). You'll need to do this once per financial year for all the contributions during that financial year.
+
+You have one year from the end of the relevant financial year within which to submit your notice of intent.
+
+For more information, [this blog article](https://www.futuresuper.com.au/blog/faqs-personal-contributions) contains a handy guide to making personal contributions to your Future Super account.
