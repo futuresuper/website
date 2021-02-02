@@ -1,1 +1,8 @@
-"---\ntitle: \"Does Future Super allow salary sacrifice contributions?\"\nslug: does-future-super-allow-salary-sacrifice-contributions\ndate: 2020-12-15T04:32:58Z\ncategory: Contributions and payments to your super\n---\n\nYes. You need to organise salary sacrifice contributions directly with your employer. They will likely pay your salary sacrifice when they make your regular super guarantee contributions.\n"
+---
+title: "Does Future Super allow salary sacrifice contributions?"
+slug: does-future-super-allow-salary-sacrifice-contributions
+date: 2020-12-15T04:32:58Z
+category: Contributions and payments to your super
+---
+
+Yes. You need to organise salary sacrifice contributions directly with your employer. They will likely pay your salary sacrifice when they make your regular super guarantee contributions.
