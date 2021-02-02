@@ -7,8 +7,8 @@
 <div class="grid">
   {% for option in investmentOptions %}
   {% if option.type === "pension" %}
-  <div class="option-card-full-container">
-    <div class="option-card-full {{ option.slug }}">
+  <div class="option-card-large-container one-up">
+    <div class="option-card-large {{ option.slug }}">
       {% set iconUrl = iconsPath + option.slug + ".svg" %}
       {{ iconUrl | svgContents("fill-light") | safe }}
       <h2>{{ option.opticalLabel[0] }}<br>{{ option.opticalLabel[1] }}</h2>
@@ -46,215 +46,226 @@
 </div>
 {% endmacro %}
 
-<article class="container">
+<article>
   <div class="top container">
     {% include "partials/page-header.html" %}
 
     {{ singlePensionOptionCard | safe }}
+  </div>
 
-    {# Table one of one #}
-    <div class="table-container">
-      {{ initialTableRow("true", "Force for change") }}
-
-      {% macro booleanDataStatic(dataTitle) %}
-      <div class="grid-row">
-        <div class="row-header">
-          <h5>{{ dataTitle }}</h5>
-        </div>
-        {% for option in investmentOptions %}
-        {% if option.type === "pension" %}
-        <div class="row-data {{ option.slug }}">
-          {{ "/src/images/icons/tick.svg" | svgContents("fill-core") | safe }}
-        </div>
-        {% endif %}
-        {% endfor %}
-      </div>
-      {% endmacro %}
-
-      {# Render static macros #}
-      {{booleanDataStatic("Zero fossil fuels")}}
-      {{booleanDataStatic("Ethically screened")}}
-
-      {# Render dynamic data (as global parameters can't be read in a macro, e.g. `option.dataAttribute`) #}
-      <div class="grid-row">
-        <div class="row-header">
-          <h5>Fights inequality</h5>
-        </div>
-        {% for option in investmentOptions %}
-        {% if option.type === "pension" %}
-        <div class="row-data {{ option.slug }}">
-          {% if option.fightsInequality %}
-          {{ "/src/images/icons/tick.svg" | svgContents("fill-core") | safe }}
-          {% endif %}
-        </div>
-        {% endif %}
-        {% endfor %}
-      </div>
-
-      <div class="grid-row">
-        <div class="row-header">
-          <h5>Invests in renewables</h5>
-        </div>
-        {% for option in investmentOptions %}
-        {% if option.type === "pension" %}
-        <div class="row-data {{ option.slug }}">
-          {% if option.investsInRenewables %}
-          {{ "/src/images/icons/tick.svg" | svgContents("fill-core") | safe }}
-          {% endif %}
-        </div>
-        {% endif %}
-        {% endfor %}
-      </div>
-
-      <div class="grid-row">
-        <div class="row-header">
-          <h5>Entry fee</h5>
-        </div>
-        {% for option in investmentOptions %}
-        {% if option.type === "pension" %}
-        <div class="row-data {{ option.slug }}">
-          <p>
-            Free
-          </p>
-        </div>
-        {% endif %}
-        {% endfor %}
-      </div>
-
-      <div class="grid-row">
-        <div class="row-header">
-          <h5>Exit fee</h5>
-        </div>
-        {% for option in investmentOptions %}
-        {% if option.type === "pension" %}
-        <div class="row-data {{ option.slug }}">
-          <p>
-            Free
-          </p>
-        </div>
-        {% endif %}
-        {% endfor %}
-      </div>
-
-      <div class="grid-row">
-        <div class="row-header">
-          <h5>Fees per year</h5>
-        </div>
-        {% for option in investmentOptions %}
-        {% if option.type === "pension" %}
-        <div class="row-data {{ option.slug }}">
-          <p>
-            {{ option.fee.perAnnumPercentage }}% + ${{ option.fee.perYearPrice | currency }}
-          </p>
-          <p class="caption">
-            {% set yearlyFee = 50000 * (option.fee.perAnnumPercentage / 100) + option.fee.perYearPrice %}
-            <small>${{ yearlyFee | currency }}
-              per year on a balance of $50,000</small>
-          </p>
-        </div>
-        {% endif %}
-        {% endfor %}
-      </div>
-
-      <div class="grid-row">
-        <div class="row-header">
-          <h5>
-            <a class="tooltip">Investment objectives<span class="tooltip-text">How much we aim for your money to grow
-                each
-                year</span></a>
-          </h5>
-        </div>
-        {% for option in investmentOptions %}
-        {% if option.type === "pension" %}
-        <div class="row-data {{ option.slug }}">
-          <p>
-            <a class="tooltip">CPI<span class="tooltip-text">Consumer Price Index</span></a>
-            +
-            {{ option.investmentObjective }}%
-          </p>
-          <p class="caption">
-            <small>Per annum over
-              <a class="tooltip">rolling ten-year periods<span class="tooltip-text">Across 10 consecutive
-                  years</span></a>
-              (after fees and taxes)
-            </small>
-          </p>
-        </div>
-        {% endif %}
-        {% endfor %}
-      </div>
-
-      <div class="grid-row">
-        <div class="row-header">
-          <h5>
-            <a class="tooltip">Asset allocation<span class="tooltip-text">How we balance risk and reward in order to
-                achieve investment objectives</span></a>
-          </h5>
-        </div>
-        {% for option in investmentOptions %}
-        {% if option.type === "pension" %}
-        <div class="row-data {{ option.slug }}">
-          <p>{{ option.assetAllocation.growth }}% Growth</p>
-          <p>{{ option.assetAllocation.defensive }}% Defensive</p>
-        </div>
-        {% endif %}
-        {% endfor %}
-      </div>
-
-      <div class="grid-row">
-        <div class="row-header">
-          <h5>Recent returns</h5>
-          <p>
-            <a href="/performance-and-returns">See full performance and returns</a>
-          </p>
-        </div>
-
-        {# TODO: Change structure of performanceReturns.json (via ReturnsToGithub.js serverless function) so the below
-        repeated markup can be done through a loop as above #}
-        {# Cannot use macro as macro variables are referenced from within loops #}
-        {# Balanced Growth Pension #}
-        <div class="row-data balanced-growth-pension">
-          {% for row in performanceReturns.table %}
-          {% if row.rowHeading === "1 Year" %}
-          <p>{{ row.balancedGrowthPension }}</p>
-          {% endif %}
-          {% endfor %}
-          <p class="caption">
-            <small>Over the last year</small>
-          </p>
-
-          {% for row in performanceReturns.table %}
-          {% if row.rowHeading === "Since inception" %}
-          <p>{{ row.balancedGrowthPension }}</p>
-          {% endif %}
-          {% endfor %}
-          <p class="caption">
-            <small>Since inception<br>
-              {% for row in performanceReturns.table %}
-              {% if row.rowHeading === "Launch date" %}
-              <span class="text-tertiary">({{ row.balancedGrowthPension }})</span></small>
-            {% endif %}
-            {% endfor %}
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="article-content">
-      {% if pageFaqs %}
-      {% include "partials/page-faqs.html" %}
-      {% endif %}
-    </div>
-
-    {{ singlePensionOptionCard | safe }}
-
-    <section class="chill container">
-      <h2>Looking for super?</h2>
-      <p>Check out our <a href="/investment-options">Investment Options</a>.
+  <div class="intro grid container">
+    <div>
+      <h2>Let's break things down</h2>
+      <p>Not sure what something means? Tap anything with a
+        <a class="tooltip">dotted underline<span class="tooltip-text">You're a natural!</span></a>
+        to see a full, jargon-free, explanation.
       </p>
-    </section>
+    </div>
+  </div>
 
+  {# Table one of one #}
+  <div class="table-container one-up">
+    {{ initialTableRow("false") }}
 
+    {% macro booleanDataStatic(dataTitle) %}
+    <div class="grid-row">
+      <div class="row-header">
+        <h5>{{ dataTitle }}</h5>
+      </div>
+      {% for option in investmentOptions %}
+      {% if option.type === "pension" %}
+      <div class="row-data {{ option.slug }}">
+        {{ "/src/images/icons/tick.svg" | svgContents("fill-core") | safe }}
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+    {% endmacro %}
+
+    {# Render static macros #}
+    {{booleanDataStatic("Zero fossil fuels")}}
+    {{booleanDataStatic("Ethically screened")}}
+
+    {# Render dynamic data (as global parameters can't be read in a macro, e.g. `option.dataAttribute`) #}
+    <div class="grid-row">
+      <div class="row-header">
+        <h5>Fights inequality</h5>
+      </div>
+      {% for option in investmentOptions %}
+      {% if option.type === "pension" %}
+      <div class="row-data {{ option.slug }}">
+        {% if option.fightsInequality %}
+        {{ "/src/images/icons/tick.svg" | svgContents("fill-core") | safe }}
+        {% endif %}
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+
+    <div class="grid-row">
+      <div class="row-header">
+        <h5>Invests in renewables</h5>
+      </div>
+      {% for option in investmentOptions %}
+      {% if option.type === "pension" %}
+      <div class="row-data {{ option.slug }}">
+        {% if option.investsInRenewables %}
+        {{ "/src/images/icons/tick.svg" | svgContents("fill-core") | safe }}
+        {% endif %}
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+
+    <div class="grid-row">
+      <div class="row-header">
+        <h5>Entry fee</h5>
+      </div>
+      {% for option in investmentOptions %}
+      {% if option.type === "pension" %}
+      <div class="row-data {{ option.slug }}">
+        <p>
+          Free
+        </p>
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+
+    <div class="grid-row">
+      <div class="row-header">
+        <h5>Exit fee</h5>
+      </div>
+      {% for option in investmentOptions %}
+      {% if option.type === "pension" %}
+      <div class="row-data {{ option.slug }}">
+        <p>
+          Free
+        </p>
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+
+    <div class="grid-row">
+      <div class="row-header">
+        <h5>Fees per year</h5>
+      </div>
+      {% for option in investmentOptions %}
+      {% if option.type === "pension" %}
+      <div class="row-data {{ option.slug }}">
+        <p>
+          {{ option.fee.perAnnumPercentage }}% + ${{ option.fee.perYearPrice | currency }}
+        </p>
+        <p class="caption">
+          {% set yearlyFee = 50000 * (option.fee.perAnnumPercentage / 100) + option.fee.perYearPrice %}
+          <small>${{ yearlyFee | currency }}
+            per year on a balance of $50,000</small>
+        </p>
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+
+    <div class="grid-row">
+      <div class="row-header">
+        <h5>
+          <a class="tooltip">Investment objectives<span class="tooltip-text">How much we aim for your money to grow
+              each
+              year</span></a>
+        </h5>
+      </div>
+      {% for option in investmentOptions %}
+      {% if option.type === "pension" %}
+      <div class="row-data {{ option.slug }}">
+        <p>
+          <a class="tooltip">CPI<span class="tooltip-text">Consumer Price Index</span></a>
+          +
+          {{ option.investmentObjective }}%
+        </p>
+        <p class="caption">
+          <small>Per annum over
+            <a class="tooltip">rolling ten-year periods<span class="tooltip-text">Across 10 consecutive
+                years</span></a>
+            (after fees and taxes)
+          </small>
+        </p>
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+
+    <div class="grid-row">
+      <div class="row-header">
+        <h5>
+          <a class="tooltip">Asset allocation<span class="tooltip-text">How we balance risk and reward in order to
+              achieve investment objectives</span></a>
+        </h5>
+      </div>
+      {% for option in investmentOptions %}
+      {% if option.type === "pension" %}
+      <div class="row-data {{ option.slug }}">
+        <p>{{ option.assetAllocation.growth }}% Growth</p>
+        <p>{{ option.assetAllocation.defensive }}% Defensive</p>
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+
+    <div class="grid-row">
+      <div class="row-header">
+        <h5>Recent returns</h5>
+        <p>
+          <a href="/performance-and-returns">See full performance and returns</a>
+        </p>
+      </div>
+
+      {# TODO: Change structure of performanceReturns.json (via ReturnsToGithub.js serverless function) so the below
+      repeated markup can be done through a loop as above #}
+      {# Cannot use macro as macro variables are referenced from within loops #}
+      {# Balanced Growth Pension #}
+      <div class="row-data balanced-growth-pension">
+        {% for row in performanceReturns.table %}
+        {% if row.rowHeading === "1 Year" %}
+        <p>{{ row.balancedGrowthPension }}</p>
+        {% endif %}
+        {% endfor %}
+        <p class="caption">
+          <small>Over the last year</small>
+        </p>
+
+        {% for row in performanceReturns.table %}
+        {% if row.rowHeading === "Since inception" %}
+        <p>{{ row.balancedGrowthPension }}</p>
+        {% endif %}
+        {% endfor %}
+        <p class="caption">
+          <small>Since inception<br>
+            {% for row in performanceReturns.table %}
+            {% if row.rowHeading === "Launch date" %}
+            <span class="text-tertiary">({{ row.balancedGrowthPension }})</span></small>
+          {% endif %}
+          {% endfor %}
+        </p>
+      </div>
+    </div>
+  </div>
+
+  {{ singlePensionOptionCard | safe }}
+
+  {% if pageFaqs %}
+  <div class="container">
+    <div class="article-content">
+      {% include "partials/page-faqs.html" %}
+    </div>
+  </div>
+  {% endif %}
+
+  <section class="chill container">
+    <h2>Looking for super?</h2>
+    <p>Check out our <a href="/investment-options">Investment Options</a>.
+    </p>
+  </section>
 </article>
 
 {% include "partials/also-see.html" %}

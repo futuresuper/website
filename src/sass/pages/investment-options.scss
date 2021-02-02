@@ -117,100 +117,113 @@
 }
 .top {
   margin-bottom: $space-section-y-dynamic;
+}
 
-  .option-card-full-container {
-    @media (min-width: $breakpoint-sm) {
-      grid-column: span 12;
-    }
-    @media (min-width: $breakpoint-md) {
-      grid-column: span 4;
-    }
+.option-card-large-container {
+  @media (min-width: $breakpoint-sm) {
+    grid-column: span 12;
+  }
+  @media (min-width: $breakpoint-md) {
+    grid-column: span 4;
+  }
 
-    // Required to have each column/card take on the size of its largest sibling
+  // Required to have each column/card take on the size of its largest sibling
+  display: flex;
+  flex-direction: column;
+
+  .leading-stat {
+    height: 4rem;
+    line-height: 4rem;
+    background-color: $off-white-300;
+    text-align: center;
+    font-family: $font-stack-monospace;
+    font-size: $font-size-xs;
+    color: $grey-800;
+  }
+
+  .option-card-large {
+    flex-grow: 1;
+    padding: 1.5rem;
+    @extend %border-style-card;
     display: flex;
     flex-direction: column;
 
-    .leading-stat {
-      height: 4rem;
-      line-height: 4rem;
-      background-color: $off-white-300;
-      text-align: center;
-      font-family: $font-stack-monospace;
-      font-size: $font-size-xs;
-      color: $grey-800;
+    @extend %set-option-theme-colours;
+
+    // Match space left by option-card(s) with leading-stat
+    &:not(.with-leading-stat) {
+      @media (min-width: $breakpoint-md) {
+        margin-top: 4rem;
+      }
     }
 
-    .option-card-full {
-      flex-grow: 1;
-      padding: 1.5rem;
-      @extend %border-style-card;
-      display: flex;
-      flex-direction: column;
+    @media (min-width: $breakpoint-md) {
+      text-align: center;
+    }
 
-      @extend %set-option-theme-colours;
+    @media (min-width: $breakpoint-lg) {
+      padding: 3rem;
+    }
 
-      // Match space left by option-card(s) with leading-stat
-      &:not(.with-leading-stat) {
-        @media (min-width: $breakpoint-md) {
-          margin-top: 4rem;
-        }
-      }
+    svg {
+      margin-bottom: 0.25rem;
+      width: 3rem;
+      height: 3rem;
+      // Optical aligment
+      margin-left: -0.4rem;
 
       @media (min-width: $breakpoint-md) {
-        text-align: center;
+        align-self: center;
+        margin-bottom: 1rem;
+        width: 5rem;
+        height: 5rem;
+        margin-left: 0;
       }
 
       @media (min-width: $breakpoint-lg) {
-        padding: 3rem;
+        width: 9rem;
+        height: 9rem;
       }
+    }
 
-      svg {
-        margin-bottom: 0.25rem;
-        width: 3rem;
-        height: 3rem;
-        // Optical aligment
-        margin-left: -0.4rem;
+    h2 {
+      font-size: $font-size-24;
+      font-weight: 700;
+      margin-bottom: 1rem;
 
-        @media (min-width: $breakpoint-md) {
-          align-self: center;
-          margin-bottom: 1rem;
-          width: 5rem;
-          height: 5rem;
-          margin-left: 0;
-        }
-
-        @media (min-width: $breakpoint-lg) {
-          width: 9rem;
-          height: 9rem;
-        }
+      @media (min-width: $breakpoint-md) {
+        font-size: $font-size-xl;
+        margin-bottom: 2rem;
       }
+    }
 
-      h2 {
-        font-size: $font-size-24;
-        font-weight: 700;
-        margin-bottom: 1rem;
+    p {
+      flex-grow: 1;
+    }
 
-        @media (min-width: $breakpoint-md) {
-          font-size: $font-size-xl;
-          margin-bottom: 2rem;
-        }
+    .button {
+      color: $white-500;
+      margin-top: 0.5rem;
+      font-size: 1rem;
+      padding: $space-button-padding-y-sm 0;
+
+      @media (min-width: $breakpoint-md) {
+        margin-top: 1rem;
+        font-size: $font-size-lg;
+        padding: $space-button-padding-y-md 0;
       }
+    }
+  }
 
-      p {
-        flex-grow: 1;
-      }
-
-      .button {
-        color: $white-500;
-        margin-top: 0.5rem;
-        font-size: 1rem;
-        padding: $space-button-padding-y-sm 0;
-
-        @media (min-width: $breakpoint-md) {
-          margin-top: 1rem;
-          font-size: $font-size-lg;
-          padding: $space-button-padding-y-md 0;
-        }
+  // Overrides for when comparing one item instead of three
+  // Such as the Pension Fund
+  &.one-up {
+    @media (min-width: $breakpoint-md) {
+      grid-column: 4 / 10;
+    }
+    .option-card-large {
+      @media (min-width: $breakpoint-md) {
+        margin-top: 0;
       }
     }
   }
@@ -410,7 +423,53 @@
   }
 }
 
+// Overrides for when comparing one item only
+// Such as on Pension Fund page
+.table-container.one-up {
+  .grid-row {
+    .row-header {
+      @media (min-width: $breakpoint-sm) {
+        grid-column: span 4;
+      }
+      @media (min-width: $breakpoint-md) {
+        grid-column: span 6;
+      }
+    }
+    .row-data {
+      grid-column: span 12;
+      @media (min-width: $breakpoint-sm) {
+        grid-column: span 8;
+      }
+      @media (min-width: $breakpoint-md) {
+        grid-column: span 6;
+      }
+    }
+  }
+}
+
+// Overrides for when comparing four items instead of three
+// Such as on Performance and Returns page
+.table-container.four-up {
+  .grid-row {
+    .row-header {
+      @media (min-width: $breakpoint-sm) {
+        grid-column: span 4;
+      }
+      @media (min-width: $breakpoint-md) {
+        grid-column: span 4;
+      }
+    }
+    .row-data {
+      grid-column: span 3;
+      @media (min-width: $breakpoint-sm) {
+        grid-column: span 2;
+      }
+    }
+  }
+}
+
 .chill {
+  margin-top: $space-section-y-dynamic;
   margin-bottom: $space-section-y-dynamic;
   background-color: $off-white-300;
   padding: 6rem 3rem;

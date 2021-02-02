@@ -26,12 +26,7 @@
     "assetAllocation": {
       "growth": 70,
       "defensive": 30
-    },
-    "performance": {
-      "lastYear": 6.79,
-      "sinceInception": 10.77
-    },
-    "inceptionDate": "Nov 2016"
+    }
   },
   {
     "label": "Balanced Impact",
@@ -68,13 +63,7 @@
     "assetAllocation": {
       "growth": 65,
       "defensive": 35
-    },
-    "management": "active",
-    "performance": {
-      "lastYear": 5.51,
-      "sinceInception": 7.02
-    },
-    "inceptionDate": "Sept 2014"
+    }
   },
   {
     "label": "Renewables Plus Growth",
@@ -112,11 +101,6 @@
       "growth": 75,
       "defensive": 25
     },
-    "performance": {
-      "lastYear": 5.95,
-      "sinceInception": 8.38
-    },
-    "inceptionDate": "May 2018",
     "leadingStat": "65% of new members choose this option"
   },
   {
@@ -135,10 +119,6 @@
     "assetAllocation": {
       "growth": 70,
       "defensive": 30
-    },
-    "performance": {
-      "lastYear": 10.23,
-      "sinceInception": 8.19
     },
     "inceptionDate": "July 2015"
   }

@@ -1,13 +1,13 @@
 {
   "dateAsAt": "2021-01-29",
   "table": [
-    { "rowHeading": "5 Years", "balancedIndex": "-", "balancedImpact": "-", "renewablesPlusGrowth": "-", "balancedGrowthPension": "-" },
-    { "rowHeading": "3 Years", "balancedIndex": "-", "balancedImpact": "-", "renewablesPlusGrowth": "-", "balancedGrowthPension": "-" },
-    { "rowHeading": "1 Year", "balancedIndex": "-", "balancedImpact": "-", "renewablesPlusGrowth": "-", "balancedGrowthPension": "-" },
-    { "rowHeading": "6 Months", "balancedIndex": "-", "balancedImpact": "-", "renewablesPlusGrowth": "-", "balancedGrowthPension": "-" },
-    { "rowHeading": "3 Months", "balancedIndex": "-", "balancedImpact": "-", "renewablesPlusGrowth": "-", "balancedGrowthPension": "-" },
-    { "rowHeading": "1 Month", "balancedIndex": "-", "balancedImpact": "-", "renewablesPlusGrowth": "-", "balancedGrowthPension": "-" },
-    { "rowHeading": "Since inception", "rowSubHeading": "Relative to launch date", "balancedIndex": "-", "balancedImpact": "-", "renewablesPlusGrowth": "-", "balancedGrowthPension": "-" },
+    { "rowHeading": "5 Years", "balancedIndex": "X.XX%", "balancedImpact": "X.XX%", "renewablesPlusGrowth": "X.XX%", "balancedGrowthPension": "X.XX%" },
+    { "rowHeading": "3 Years", "balancedIndex": "X.XX%", "balancedImpact": "X.XX%", "renewablesPlusGrowth": "X.XX%", "balancedGrowthPension": "X.XX%" },
+    { "rowHeading": "1 Year", "balancedIndex": "X.XX%", "balancedImpact": "X.XX%", "renewablesPlusGrowth": "X.XX%", "balancedGrowthPension": "X.XX%" },
+    { "rowHeading": "6 Months", "balancedIndex": "X.XX%", "balancedImpact": "X.XX%", "renewablesPlusGrowth": "X.XX%", "balancedGrowthPension": "X.XX%" },
+    { "rowHeading": "3 Months", "balancedIndex": "X.XX%", "balancedImpact": "X.XX%", "renewablesPlusGrowth": "X.XX%", "balancedGrowthPension": "X.XX%" },
+    { "rowHeading": "1 Month", "balancedIndex": "X.XX%", "balancedImpact": "X.XX%", "renewablesPlusGrowth": "X.XX%", "balancedGrowthPension": "X.XX%" },
+    { "rowHeading": "Since inception", "rowSubHeading": "Relative to launch date", "balancedIndex": "X.XX%", "balancedImpact": "X.XX%", "renewablesPlusGrowth": "X.XX%", "balancedGrowthPension": "X.XX%" },
     { "rowHeading": "Launch date", "balancedIndex": "16 Nov 2018", "balancedImpact": "1 Sep 2014", "renewablesPlusGrowth": "1 May 2018", "balancedGrowthPension": "15 July 2015" }
   ]
 }
