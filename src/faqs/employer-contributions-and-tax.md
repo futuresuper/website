@@ -1,5 +1,7 @@
 ---
-title: Employer contributions & tax
+title: "Employer contributions & tax "
+slug: employer-contributions-and-tax
+date: 2020-07-28T05:19:24Z
 category: Contributions and payments to your super
 ---
 
@@ -15,6 +17,6 @@ Your employer’s super contributions may be shown on your payslip but often emp
 
 Many people have multiple accounts, so it is important to tell your employer about your Future Super account if you want your employer’s contributions to be invested with us on your behalf.
 
-Contributions made by your employer (including salary sacrifice) are taxed at 15%. As this rate is lower than most people’s marginal income tax rate, these contributions are called Concessional Contributions.
+Contributions made by your employer (including salary sacrifice) are taxed at 15%. As this rate is lower than most people’s marginal income tax rate, these contributions are called **Concessional Contributions**.
 
 Read more about contributions tax [here](https://www.ato.gov.au/Individuals/Super/Growing-your-super/Adding-to-your-super/Tax-on-contributions/).
