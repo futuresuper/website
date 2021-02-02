@@ -4,6 +4,7 @@
     "slug": "balanced-index",
     "opticalLabel": ["Balanced", "Index"],
     "subtitle": "Zero fossil fuels but no impact targets. Just divestment.",
+    "type": "accumulation",
     "impact": {
       "label": "Low",
       "definition": "Takes your money out of harmful companies by divesting, making it more expensive for those companies to make money"
@@ -25,19 +26,14 @@
     "assetAllocation": {
       "growth": 70,
       "defensive": 30
-    },
-    "management": "passive",
-    "performance": {
-      "lastYear": 6.79,
-      "sinceInception": 10.77
-    },
-    "inceptionDate": "Nov 2016"
+    }
   },
   {
     "label": "Balanced Impact",
     "slug": "balanced-impact",
     "opticalLabel": ["Balanced", "Impact"],
     "subtitle": "Zero fossil fuels, plus investments in renewable energy and social impact projects.",
+    "type": "accumulation",
     "impact": {
       "label": "Medium",
       "definition": "Takes your money out of harmful companies by divesting, and directs it to companies and projects fighting inequality"
@@ -67,19 +63,14 @@
     "assetAllocation": {
       "growth": 65,
       "defensive": 35
-    },
-    "management": "active",
-    "performance": {
-      "lastYear": 5.51,
-      "sinceInception": 7.02
-    },
-    "inceptionDate": "Sept 2014"
+    }
   },
   {
     "label": "Renewables Plus Growth",
     "slug": "renewables-plus-growth",
     "opticalLabel": ["Renewables", "Plus Growth"],
     "subtitle": "Zero fossil fuels, highest impact. Targets 20% investment in renewable energy projects.",
+    "type": "accumulation",
     "impact": {
       "label": "High",
       "definition": "Takes your money out of harmful companies by divesting, and directs it to wind farms, solar farms and other companies fighting climate change"
@@ -110,12 +101,25 @@
       "growth": 75,
       "defensive": 25
     },
-    "management": "active",
-    "performance": {
-      "lastYear": 5.95,
-      "sinceInception": 8.38
-    },
-    "inceptionDate": "May 2018",
     "leadingStat": "65% of new members choose this option"
+  },
+  {
+    "label": "Balanced Growth Pension",
+    "slug": "balanced-growth-pension",
+    "opticalLabel": ["Balanced", "Growth Pension"],
+    "subtitle": "Zero fossil fuels, plus investments in renewable energy and social impact projects.",
+    "type": "pension",
+    "fightsInequality": true,
+    "investsInRenewables": true,
+    "fee": {
+      "perAnnumPercentage": 0.874,
+      "perYearPrice": 93.6
+    },
+    "investmentObjective": 2.5,
+    "assetAllocation": {
+      "growth": 70,
+      "defensive": 30
+    },
+    "inceptionDate": "July 2015"
   }
 ]

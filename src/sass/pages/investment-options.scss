@@ -1,389 +1,126 @@
-// HOW WE INVEST - PAGE-SPECIFIC STYLES
+// INVESTMENT OPTIONS - PAGE-SPECIFIC STYLES
 
 // Includes colours, type and everything else in "sass > base" folder
 // the "as *" is so that we can reference colours etc, without the
 // namespace (ie '$grey-100' instead of 'base.$grey100')
 @use "../base" as *;
 
-%set-option-theme-colours {
-  // Balanced Index
-  &.balanced-index {
-    color: $option-balanced-index-dark;
-
-    svg {
-      &.fill-core {
-        .fill-target {
-          fill: $option-balanced-index-core;
-        }
-        .stroke-target {
-          stroke: $option-balanced-index-core;
-        }
-      }
-      &.fill-light {
-        .stroke-target {
-          stroke: $option-balanced-index-light;
-        }
-      }
-    }
-
-    .button {
-      background-color: $option-balanced-index-core;
-      &:hover {
-        background-color: $option-balanced-index-dark;
-      }
-    }
-  }
-  // Balanced Impact
-  &.balanced-impact {
-    color: $option-balanced-impact-dark;
-
-    svg {
-      &.fill-core {
-        .fill-target {
-          fill: $option-balanced-impact-core;
-        }
-        .stroke-target {
-          stroke: $option-balanced-impact-core;
-        }
-      }
-      &.fill-light {
-        .stroke-target {
-          stroke: $option-balanced-impact-light;
-        }
-      }
-    }
-
-    .button {
-      background-color: $option-balanced-impact-core;
-      &:hover {
-        background-color: $option-balanced-impact-dark;
-      }
-    }
-  }
-  // Renewables Plus Growth
-  &.renewables-plus-growth {
-    color: $option-renewables-plus-growth-dark;
-
-    svg {
-      &.fill-core {
-        .fill-target {
-          fill: $option-renewables-plus-growth-core;
-        }
-        .stroke-target {
-          stroke: $option-renewables-plus-growth-core;
-        }
-      }
-      &.fill-light {
-        .stroke-target {
-          stroke: $option-renewables-plus-growth-light;
-        }
-      }
-    }
-
-    .button {
-      background-color: $option-renewables-plus-growth-core;
-      &:hover {
-        background-color: $option-renewables-plus-growth-dark;
-      }
-    }
-  }
-}
 .top {
   margin-bottom: $space-section-y-dynamic;
+}
 
-  .option-card-full-container {
-    @media (min-width: $breakpoint-sm) {
-      grid-column: span 12;
-    }
-    @media (min-width: $breakpoint-md) {
-      grid-column: span 4;
-    }
+.option-card-large-container {
+  @media (min-width: $breakpoint-sm) {
+    grid-column: span 12;
+  }
+  @media (min-width: $breakpoint-md) {
+    grid-column: span 4;
+  }
 
-    // Required to have each column/card take on the size of its largest sibling
+  // Required to have each column/card take on the size of its largest sibling
+  display: flex;
+  flex-direction: column;
+
+  .leading-stat {
+    height: 4rem;
+    line-height: 4rem;
+    background-color: $off-white-300;
+    text-align: center;
+    font-family: $font-stack-monospace;
+    font-size: $font-size-xs;
+    color: $grey-800;
+  }
+
+  .option-card-large {
+    flex-grow: 1;
+    padding: 1.5rem;
+    @extend %border-style-card;
     display: flex;
     flex-direction: column;
 
-    .leading-stat {
-      height: 4rem;
-      line-height: 4rem;
-      background-color: $off-white-300;
-      text-align: center;
-      font-family: $font-stack-monospace;
-      font-size: $font-size-xs;
-      color: $grey-800;
+    @extend %set-option-theme-colours;
+
+    // Match space left by option-card(s) with leading-stat
+    &:not(.with-leading-stat) {
+      @media (min-width: $breakpoint-md) {
+        margin-top: 4rem;
+      }
     }
 
-    .option-card-full {
-      flex-grow: 1;
-      padding: 1.5rem;
-      @extend %border-style-card;
-      display: flex;
-      flex-direction: column;
+    @media (min-width: $breakpoint-md) {
+      text-align: center;
+    }
 
-      @extend %set-option-theme-colours;
+    @media (min-width: $breakpoint-lg) {
+      padding: 3rem;
+    }
 
-      // Match space left by option-card(s) with leading-stat
-      &:not(.with-leading-stat) {
-        @media (min-width: $breakpoint-md) {
-          margin-top: 4rem;
-        }
-      }
+    svg {
+      margin-bottom: 0.25rem;
+      width: 3rem;
+      height: 3rem;
+      // Optical aligment
+      margin-left: -0.4rem;
 
       @media (min-width: $breakpoint-md) {
-        text-align: center;
+        align-self: center;
+        margin-bottom: 1rem;
+        width: 5rem;
+        height: 5rem;
+        margin-left: 0;
       }
 
       @media (min-width: $breakpoint-lg) {
-        padding: 3rem;
-      }
-
-      svg {
-        margin-bottom: 0.25rem;
-        width: 3rem;
-        height: 3rem;
-        // Optical aligment
-        margin-left: -0.4rem;
-
-        @media (min-width: $breakpoint-md) {
-          align-self: center;
-          margin-bottom: 1rem;
-          width: 5rem;
-          height: 5rem;
-          margin-left: 0;
-        }
-
-        @media (min-width: $breakpoint-lg) {
-          width: 9rem;
-          height: 9rem;
-        }
-      }
-
-      h2 {
-        font-size: $font-size-24;
-        font-weight: 700;
-        margin-bottom: 1rem;
-
-        @media (min-width: $breakpoint-md) {
-          font-size: $font-size-xl;
-          margin-bottom: 2rem;
-        }
-      }
-
-      p {
-        flex-grow: 1;
-      }
-
-      .button {
-        color: $white-500;
-        margin-top: 0.5rem;
-        font-size: 1rem;
-        padding: $space-button-padding-y-sm 0;
-
-        @media (min-width: $breakpoint-md) {
-          margin-top: 1rem;
-          font-size: $font-size-lg;
-          padding: $space-button-padding-y-md 0;
-        }
-      }
-    }
-  }
-}
-
-.intro {
-  margin-bottom: 1rem;
-  @extend %set-grid-rythmn-text-a;
-}
-
-.table-container {
-  overflow-x: visible;
-  max-width: $breakpoint-lg;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: $space-section-y-dynamic;
-  padding: 0 $space-page-padding-x-sm;
-
-  @media (min-width: $breakpoint-md) {
-    padding: 0 $space-page-padding-x-md;
-  }
-
-  &:last-of-type {
-    display: none;
-    @media (min-width: $breakpoint-sm) {
-      display: block;
-      margin-top: -$space-section-y-dynamic;
-    }
-  }
-
-  .grid-row {
-    padding: 1.5rem 0;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 1.5rem;
-
-    &:not(:last-of-type) {
-      border-bottom: 0.125rem solid $grey-100;
-    }
-
-    &:first-of-type:not(:only-of-type) {
-      position: sticky;
-      top: -2rem;
-      background-color: $white-500;
-      z-index: 2;
-      @media (min-width: $breakpoint-sm) {
-        position: static;
-        top: 0;
-        background-color: none;
-        z-index: auto;
-      }
-
-      border-bottom: 0.125rem solid $grey-300;
-    }
-
-    .row-header,
-    .row-data {
-      justify-items: start;
-
-      h5,
-      p {
-        font-size: $font-size-sm;
-        line-height: 125%;
-        margin: 0;
-        padding: 0;
-
-        @media (min-width: $breakpoint-sm) {
-          font-size: 1rem;
-          line-height: 100%;
-        }
-      }
-
-      h5 {
-        font-size: 1rem;
+        width: 9rem;
+        height: 9rem;
       }
     }
 
-    .row-header {
-      grid-column: span 12;
-      grid-row: 1;
-      @media (min-width: $breakpoint-sm) {
-        grid-column: span 3;
-      }
+    h2 {
+      font-size: $font-size-24;
+      font-weight: 700;
+      margin-bottom: 1rem;
+
       @media (min-width: $breakpoint-md) {
-        grid-column: span 6;
+        font-size: $font-size-xl;
+        margin-bottom: 2rem;
       }
+    }
 
-      position: relative; // Necessary to absolutely position child heading element
+    p {
+      flex-grow: 1;
+    }
 
-      h3 {
-        position: absolute;
-        bottom: 0;
-      }
+    .button {
+      color: $white-500;
+      margin-top: 0.5rem;
+      font-size: 1rem;
+      padding: $space-button-padding-y-sm 0;
 
-      p {
-        font-size: $font-size-sm;
-        color: $grey-400;
+      @media (min-width: $breakpoint-md) {
         margin-top: 1rem;
+        font-size: $font-size-lg;
+        padding: $space-button-padding-y-md 0;
       }
     }
+  }
 
-    .row-data {
-      grid-column: span 4;
-      grid-row: 2;
-      @media (min-width: $breakpoint-sm) {
-        grid-column: span 3;
-        grid-row: 1;
-      }
-      @media (min-width: $breakpoint-md) {
-        grid-column: span 2;
-      }
-
-      font-family: $font-stack-monospace;
-      @extend %set-option-theme-colours;
-
-      &.highlight-investments {
-        font-size: $font-size-xs;
-        @media (min-width: $breakpoint-sm) {
-          font-size: $font-size-sm;
-        }
-
-        li:not(:last-of-type) {
-          margin-bottom: 1rem;
-        }
-      }
-
-      p.caption {
-        margin-top: 0.25rem;
-        &:not(:last-of-type) {
-          margin-bottom: 2rem;
-        }
-
-        small {
-          font-size: 0.6875rem;
-          line-height: 102%;
-          color: $grey-400;
-
-          @media (min-width: $breakpoint-sm) {
-            font-size: $font-size-xs;
-            line-height: $line-height-xs;
-            color: $grey-500;
-          }
-        }
-      }
-    }
-
-    .option-card-mini {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: stretch;
-      font-family: $font-stack-sans-serif;
-
-      svg {
-        width: 2rem;
-        height: 2rem;
-        margin-bottom: 0.1rem;
-        // Optical aligment
-        margin-left: -0.25rem;
-
-        @media (min-width: $breakpoint-sm) {
-          width: 3rem;
-          height: 3rem;
-          margin-bottom: 0.25rem;
-          margin-left: 0;
-        }
-      }
-
-      h4 {
-        margin-bottom: 1rem;
-        font-size: $font-size-sm;
-        @media (min-width: $breakpoint-md) {
-          font-size: $font-size-lg;
-        }
-      }
-
-      .button {
-        color: $white-500;
-        font-size: $font-size-sm;
-        padding: 0.75rem 0;
-
-        @media (min-width: $breakpoint-sm) {
-          font-size: 1rem;
-          padding: 1rem 0;
-        }
-      }
-    }
-
-    // Medium screens default = 2 columns (span 6 of 12)
-    @media (min-width: $breakpoint-sm) {
-      gap: 1.5rem;
-    }
-    // Large screens default = 6 columns (span 2 of 12)
+  // Overrides for when comparing one item instead of three
+  // Such as the Pension Fund
+  &.one-up {
     @media (min-width: $breakpoint-md) {
-      gap: 2rem;
+      grid-column: 4 / 10;
+    }
+    .option-card-large {
+      @media (min-width: $breakpoint-md) {
+        margin-top: 0;
+      }
     }
   }
 }
 
 .chill {
+  margin-top: $space-section-y-dynamic;
   margin-bottom: $space-section-y-dynamic;
   background-color: $off-white-300;
   padding: 6rem 3rem;

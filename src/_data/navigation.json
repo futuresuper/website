@@ -11,14 +11,14 @@
           "inSiteHeader": true
         },
         {
-          "text": "Pension Fund",
-          "url": "/pension-fund/",
-          "inSiteHeader": false
-        },
-        {
           "text": "Investment Options",
           "url": "/investment-options/",
           "inSiteHeader": true
+        },
+        {
+          "text": "Pension Fund",
+          "url": "/pension-fund/",
+          "inSiteHeader": false
         },
         {
           "text": "Performance & Returns",

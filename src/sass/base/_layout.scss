@@ -73,7 +73,7 @@ body {
     max-width: $breakpoint-md;
 
     // Set larger font-size for p, li, etc
-    > p,
+    > p:not(.disclaimer),
     > ul,
     > ol {
       font-size: $font-size-lg;
@@ -139,6 +139,24 @@ main > article.container {
 
     @media (min-width: $breakpoint-md) {
       grid-column: span 9;
+    }
+
+    @media (min-width: $breakpoint-lg) {
+      grid-column: span 6;
+    }
+  }
+}
+// Extension of above grid for common text layouts
+%set-grid-rythmn-text-b {
+  > * {
+    grid-column: span 1;
+
+    @media (min-width: $breakpoint-sm) {
+      grid-column: span 9;
+    }
+
+    @media (min-width: $breakpoint-md) {
+      grid-column: span 6;
     }
 
     @media (min-width: $breakpoint-lg) {
