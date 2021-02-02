@@ -1,0 +1,1 @@
+"---\ntitle: \"What is my preservation age? \"\nslug: what-is-my-preservation-age\ndate: 2019-02-05T02:04:31Z\ncategory: Withdrawing from your super\n---\n\nYou can find out your preservation age [here](https://www.ato.gov.au/rates/key-superannuation-rates-and-thresholds/?page=11).\n"
