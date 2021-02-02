@@ -22,8 +22,5 @@
   },
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
-  },
-  "files.associations": {
-    "*.html": "njk"
   }
 }

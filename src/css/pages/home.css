@@ -83,34 +83,6 @@ address {
 }
 
 @font-face {
-  font-family: "SharpGrotesk";
-  src: url("../fonts/SharpGroteskBook19-subset.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "SharpGrotesk";
-  src: url("../fonts/SharpGroteskMedium19-subset.woff2") format("woff2");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "SharpGrotesk";
-  src: url("../fonts/SharpGroteskMedium19-subset.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "SharpGrotesk";
-  src: url("../fonts/SharpGroteskSmBold19-subset.woff2") format("woff2");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
   font-family: "JetBrainsMono";
   src: url("../fonts/JetBrainsMonoVariable.ttf") format("truetype");
   font-weight: 1 999;
@@ -357,9 +329,9 @@ body.mobile-menu-active.aoc-active {
   margin: 0 auto;
   max-width: 48rem;
 }
-.container .article-content > p:not(.disclaimer),
-.container .article-content > ul,
-.container .article-content > ol {
+.container .article-content p:not(.disclaimer),
+.container .article-content ul,
+.container .article-content ol {
   font-size: 1.125rem;
   line-height: 170%;
 }
@@ -444,6 +416,20 @@ main > article.container {
   .table-disclaimers > * {
     grid-column: span 6;
   }
+}
+
+.callout {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  background-color: #fbf9f9;
+  padding: 6rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.callout > * {
+  text-align: center;
+  max-width: 40rem;
 }
 
 button,

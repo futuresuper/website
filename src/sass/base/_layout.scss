@@ -73,9 +73,9 @@ body {
     max-width: $breakpoint-md;
 
     // Set larger font-size for p, li, etc
-    > p:not(.disclaimer),
-    > ul,
-    > ol {
+    p:not(.disclaimer),
+    ul,
+    ol {
       font-size: $font-size-lg;
       line-height: $line-height-lg;
     }
@@ -162,5 +162,20 @@ main > article.container {
     @media (min-width: $breakpoint-lg) {
       grid-column: span 6;
     }
+  }
+}
+
+.callout {
+  margin-top: $space-section-y-dynamic;
+  margin-bottom: $space-section-y-dynamic;
+  background-color: $off-white-300;
+  padding: 6rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  > * {
+    text-align: center;
+    max-width: $breakpoint-sm;
   }
 }
