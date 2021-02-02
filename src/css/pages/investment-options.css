@@ -597,6 +597,24 @@ input.search {
 .table-container .grid-row .renewables-plus-growth.row-data .button:hover, .top .option-card-full-container .renewables-plus-growth.option-card-full .button:hover {
   background-color: #025018;
 }
+.table-container .grid-row .balanced-growth-pension.row-data, .top .option-card-full-container .balanced-growth-pension.option-card-full {
+  color: #322401;
+}
+.table-container .grid-row .balanced-growth-pension.row-data svg.fill-core .fill-target, .top .option-card-full-container .balanced-growth-pension.option-card-full svg.fill-core .fill-target {
+  fill: #9a6f04;
+}
+.table-container .grid-row .balanced-growth-pension.row-data svg.fill-core .stroke-target, .top .option-card-full-container .balanced-growth-pension.option-card-full svg.fill-core .stroke-target {
+  stroke: #9a6f04;
+}
+.table-container .grid-row .balanced-growth-pension.row-data svg.fill-light .stroke-target, .top .option-card-full-container .balanced-growth-pension.option-card-full svg.fill-light .stroke-target {
+  stroke: #fac33c;
+}
+.table-container .grid-row .balanced-growth-pension.row-data .button, .top .option-card-full-container .balanced-growth-pension.option-card-full .button {
+  background-color: #9a6f04;
+}
+.table-container .grid-row .balanced-growth-pension.row-data .button:hover, .top .option-card-full-container .balanced-growth-pension.option-card-full .button:hover {
+  background-color: #322401;
+}
 
 .top {
   margin-bottom: 6rem;

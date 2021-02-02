@@ -87,6 +87,33 @@
       }
     }
   }
+  // Balanced Growth Pension
+  &.balanced-growth-pension {
+    color: $option-balanced-growth-pension-dark;
+
+    svg {
+      &.fill-core {
+        .fill-target {
+          fill: $option-balanced-growth-pension-core;
+        }
+        .stroke-target {
+          stroke: $option-balanced-growth-pension-core;
+        }
+      }
+      &.fill-light {
+        .stroke-target {
+          stroke: $option-balanced-growth-pension-light;
+        }
+      }
+    }
+
+    .button {
+      background-color: $option-balanced-growth-pension-core;
+      &:hover {
+        background-color: $option-balanced-growth-pension-dark;
+      }
+    }
+  }
 }
 .top {
   margin-bottom: $space-section-y-dynamic;
