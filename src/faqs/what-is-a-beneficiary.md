@@ -1,0 +1,1 @@
+"---\ntitle: \"What is a beneficiary?\"\nslug: what-is-a-beneficiary\ndate: 2020-08-19T06:27:04Z\ncategory: Beneficiaries \n---\n\nA beneficiary is someone you want to receive the money in your super account if you die. You can make a binding or non-binding nomination.\n"
