@@ -1,0 +1,48 @@
+// SUPPORT AND FAQS - PAGE-SPECIFIC STYLES
+
+@use "../base" as *;
+
+.search-container {
+  position: relative;
+  height: 100%;
+  border: 2px solid $grey-200;
+
+  #faq-search-box {
+    border: 0;
+    margin: 0;
+    outline: none;
+  }
+
+  #clear-button {
+    position: absolute;
+    right: 1rem;
+    top: -2rem;
+  }
+
+  #faqs-container {
+    padding-bottom: 0.5rem;
+  }
+
+  #divider {
+    padding: 0 1rem 0.5rem 3.5rem;
+    #inner {
+      width: 100%;
+      height: 2px;
+      background-color: $grey-200;
+    }
+  }
+
+  .faq-result {
+    width: 100%;
+    padding: 0.5rem 1rem 0.5rem 3.5rem;
+    text-decoration: none;
+    color: $black-500;
+    &:hover {
+      background: $grey-100;
+    }
+  }
+
+  #no-matches-found {
+    padding: 0.5rem 1rem 0rem 3.5rem;
+  }
+}
