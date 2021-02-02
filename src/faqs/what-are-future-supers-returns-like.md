@@ -1,0 +1,1 @@
+"---\ntitle: \"What are Future Super's returns like?\"\nslug: what-are-future-supers-returns-like\ndate: 2020-08-13T05:37:35Z\ncategory: Investments and returns\n---\n\nRead about our most recent returns [here](https://www.futuresuper.com.au/performance-and-returns).\n"
