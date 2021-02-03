@@ -15,6 +15,7 @@ button,
   padding: $space-button-padding-y-md $space-button-padding-x-md;
   &.full-width {
     padding: $space-button-padding-y-md 0;
+    width: 100%;
   }
   border: 0;
   text-decoration: none;

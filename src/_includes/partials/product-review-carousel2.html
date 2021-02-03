@@ -1,0 +1,28 @@
+<section class="product-review-carousel">
+  <div class="glide">
+    <div data-glide-el="track" class="glide__track">
+      <div class="glide__slides">
+        {% for item in productReviewSubset.latestReviews %}
+        {% set reviewStarRating %}
+        {% for i in range(0, item.stars) %}★{% endfor %}
+        {% endset %}
+
+        <figure class="glide__slide">
+          <blockquote cite={{ item.url }}">
+            <p class="stars">{{ reviewStarRating }}</p>
+            <p class="review-title">{{ item.title }}</p>
+          </blockquote>
+          <figcaption>{{ item.author }}, <cite><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer"><time
+                  datetime="{{ item.date | w3DateFilter }}">{{ item.date | timeSinceFilter }}</time></a></cite>
+          </figcaption>
+        </figure>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+  <footer class="container">
+    <p class="see-all-reviews">See all reviews on <br><a href="https://www.productreview.com.au/listings/future-super"
+        target="_blank" rel="noopener noreferrer">ProductReview.com.au</a></p>
+  </footer>
+</section>

@@ -447,6 +447,7 @@ button,
 button.full-width,
 .button.full-width {
   padding: 1rem 0;
+  width: 100%;
 }
 button.primary,
 .button.primary {

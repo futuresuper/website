@@ -865,43 +865,165 @@ input.search {
   left: calc(100% - 2.5rem);
 }
 
-.search-container {
-  position: relative;
-  height: 100%;
-  border: 2px solid #e6e6e5;
-}
-.search-container #faq-search-box {
-  border: 0;
-  margin: 0;
-  outline: none;
-}
-.search-container #clear-button {
-  position: absolute;
-  right: 1rem;
-  top: -2rem;
-}
-.search-container #faqs-container {
-  padding-bottom: 0.5rem;
-}
-.search-container #divider {
-  padding: 0 1rem 0.5rem 3.5rem;
-}
-.search-container #divider #inner {
-  width: 100%;
-  height: 2px;
-  background-color: #e6e6e5;
-}
-.search-container .faq-result {
-  width: 100%;
-  padding: 0.5rem 1rem 0.5rem 3.5rem;
-  text-decoration: none;
-  color: #140f14;
-}
-.search-container .faq-result:hover {
-  background: #f5f5f4;
-}
-.search-container #no-matches-found {
-  padding: 0.5rem 1rem 0rem 3.5rem;
+.flow-content {
+  background-color: #ddffe7 !important;
 }
 
-/*# sourceMappingURL=support-and-faqs.css.map */
+article header,
+.tidbit h2 {
+  text-align: center;
+}
+
+article header h1,
+.tidbit h2 {
+  margin: 0 auto;
+  font-weight: normal;
+  line-height: 100%;
+  text-transform: uppercase;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+article header {
+  background-color: #ddffe7;
+  background-image: url("/images/dithered/smoke-stack.png");
+  padding-bottom: 4rem;
+}
+article header h1 {
+  background-color: #ddffe7;
+  color: #2bb151;
+  max-width: 75vw;
+  height: 48vh;
+}
+
+.tidbit {
+  padding-top: 4rem;
+}
+.tidbit h2 {
+  background-color: #f04b23;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 62vw;
+  height: 40vh;
+}
+.tidbit p:not(.disclaimer) {
+  text-indent: 1.75rem;
+  font-size: 1.75rem;
+  line-height: 125%;
+}
+.tidbit p:not(.disclaimer) span {
+  color: #52524c;
+}
+.tidbit .disclaimer {
+  font-family: "JetBrainsMono", monospace;
+  font-size: 0.75rem;
+}
+.tidbit.give-fossil-fuels-the-flick {
+  background-color: #ffe6e1;
+  padding-bottom: 4rem;
+}
+.tidbit.give-fossil-fuels-the-flick h2 {
+  background-color: #f04b23;
+}
+.tidbit.your-money-talks {
+  background-color: #ffebb9;
+}
+.tidbit.your-money-talks h2 {
+  background-color: #fac33c;
+}
+.tidbit.your-money-talks .button {
+  color: #140f14;
+  background-color: #fac33c;
+}
+.tidbit.join-in-a-few-taps {
+  background-color: #ddffe7;
+}
+.tidbit.join-in-a-few-taps h2 {
+  background-color: #2bb151;
+}
+
+.product-review-carousel {
+  padding: 4rem 0;
+  color: #000000;
+  background-color: #f9ecf5;
+}
+@media (min-width: 40rem) {
+  .product-review-carousel {
+    text-align: center;
+  }
+}
+.product-review-carousel h2,
+.product-review-carousel .stars,
+.product-review-carousel .see-all-reviews {
+  color: #c445a2;
+}
+.product-review-carousel h2 {
+  font-size: 1.5rem;
+}
+.product-review-carousel figure {
+  padding-top: 3rem;
+  padding-bottom: 6rem;
+}
+.product-review-carousel figure blockquote .stars,
+.product-review-carousel figure blockquote .review-title {
+  font-size: 1.75rem;
+}
+@media (min-width: 40rem) {
+  .product-review-carousel figure blockquote .stars,
+.product-review-carousel figure blockquote .review-title {
+    font-size: 3rem;
+  }
+}
+.product-review-carousel figure blockquote .review-title {
+  line-height: 130%;
+  margin-right: 4rem;
+  text-indent: -0.5rem;
+}
+@media (min-width: 40rem) {
+  .product-review-carousel figure blockquote .review-title {
+    margin-right: 0;
+    line-height: 120%;
+    text-indent: 0;
+  }
+}
+.product-review-carousel figure blockquote .review-title:before {
+  content: open-quote;
+  color: #c445a2;
+}
+.product-review-carousel figure blockquote .review-title:after {
+  content: close-quote;
+  color: #c445a2;
+}
+.product-review-carousel figure figcaption cite {
+  font-style: normal;
+}
+.product-review-carousel figure figcaption cite a {
+  color: inherit;
+}
+.product-review-carousel figure figcaption cite a:hover {
+  color: #dc91c8;
+}
+@media (min-width: 40rem) {
+  .product-review-carousel .see-all-reviews {
+    font-size: 1.5rem;
+  }
+}
+.product-review-carousel .see-all-reviews a {
+  color: inherit;
+}
+.product-review-carousel .see-all-reviews a:hover {
+  color: #dc91c8;
+}
+.product-review-carousel .stars {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+}
+.product-review-carousel .overall-rating {
+  color: #dc91c8;
+}
+.product-review-carousel .overall-rating span {
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=home2.css.map */

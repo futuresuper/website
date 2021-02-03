@@ -1,6 +1,7 @@
 @use "colours" as *;
 
 $line-height-xs: 115%;
+$line-height-125: 125%;
 $line-height-sm: 140%;
 $line-height-lg: 170%;
 
@@ -10,6 +11,7 @@ $font-size-sm: 0.875rem; // 14px
 $font-size-lg: 1.125rem; // 18px
 $font-size-24: 1.5rem; // 24px
 $font-size-xl: 1.75rem; // 28px
+$font-size-48: 3rem; // 48px
 
 $transition-text-hover: all 125ms ease-in-out;
 
