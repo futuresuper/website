@@ -876,7 +876,7 @@ article header,
 
 article header h1,
 .tidbit h2 {
-  margin: 0 auto;
+  margin: 0 auto 4rem;
   font-weight: normal;
   line-height: 100%;
   text-transform: uppercase;
@@ -887,8 +887,12 @@ article header h1,
 }
 
 article header {
+  margin-top: -12rem;
+  padding-top: 12rem;
   background-color: #ddffe7;
   background-image: url("/images/dithered/smoke-stack.png");
+  background-repeat: repeat-x;
+  background-position: bottom 12rem left 0px;
   padding-bottom: 4rem;
 }
 article header h1 {

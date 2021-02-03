@@ -11,7 +11,7 @@ article header,
 
 article header h1,
 .tidbit h2 {
-  margin: 0 auto;
+  margin: 0 auto 4rem;
   font-weight: normal;
   line-height: 100%;
   text-transform: uppercase;
@@ -22,8 +22,17 @@ article header h1,
 }
 
 article header {
+  // Bleed into site-header above
+  $site-header-height-temp: 12rem; // TODO: calc height of site-header, offset by that amount
+  margin-top: -$site-header-height-temp;
+  padding-top: $site-header-height-temp;
+
   background-color: $mint-300;
   background-image: url("/images/dithered/smoke-stack.png");
+  background-repeat: repeat-x;
+  // background-size: cover;
+  background-position: bottom $site-header-height-temp left 0px;
+
   padding-bottom: 4rem;
 
   h1 {
