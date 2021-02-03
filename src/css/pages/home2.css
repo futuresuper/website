@@ -875,9 +875,14 @@ article header,
 }
 
 article header h1,
+.tidbit h2,
+.button {
+  font-weight: normal;
+}
+
+article header h1,
 .tidbit h2 {
   margin: 0 auto 4rem;
-  font-weight: normal;
   line-height: 100%;
   text-transform: uppercase;
   font-size: 3rem;
@@ -904,6 +909,7 @@ article header h1 {
 
 .tidbit {
   padding-top: 4rem;
+  background-repeat: no-repeat;
 }
 .tidbit h2 {
   background-color: #f04b23;
@@ -924,14 +930,18 @@ article header h1 {
   font-size: 0.75rem;
 }
 .tidbit.give-fossil-fuels-the-flick {
-  background-color: #ffe6e1;
   padding-bottom: 4rem;
+  background-color: #ffe6e1;
+  background-image: url("/images/dithered/coal.png"), url("/images/dithered/smoke-stack-small.png"), url("/images/dithered/barrel.png");
+  background-position: top -2rem right -2rem, top 40vh right 50%, top 50vh right 0;
 }
 .tidbit.give-fossil-fuels-the-flick h2 {
   background-color: #f04b23;
 }
 .tidbit.your-money-talks {
   background-color: #ffebb9;
+  background-image: url("/images/dithered/dollar-coin.png"), url("/images/dithered/earth.png");
+  background-position: top -2vh right -20%, top 40vh left -20%;
 }
 .tidbit.your-money-talks h2 {
   background-color: #fac33c;
@@ -942,6 +952,8 @@ article header h1 {
 }
 .tidbit.join-in-a-few-taps {
   background-color: #ddffe7;
+  background-image: url("/images/dithered/wind-turbine.png"), url("/images/dithered/sunflower.png");
+  background-position: top 2rem left 2rem, bottom 2rem right 2rem;
 }
 .tidbit.join-in-a-few-taps h2 {
   background-color: #2bb151;

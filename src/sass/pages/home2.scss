@@ -9,10 +9,16 @@ article header,
   text-align: center;
 }
 
+// Override default bolded buttons
+article header h1,
+.tidbit h2,
+.button {
+  font-weight: normal;
+}
+
 article header h1,
 .tidbit h2 {
   margin: 0 auto 4rem;
-  font-weight: normal;
   line-height: 100%;
   text-transform: uppercase;
   font-size: $font-size-48;
@@ -46,6 +52,8 @@ article header {
 
 .tidbit {
   padding-top: 4rem;
+  background-repeat: no-repeat;
+
   h2 {
     background-color: $fraise-500;
     color: rgba(255, 255, 255, 0.8);
@@ -70,14 +78,21 @@ article header {
 
   // Begin section-specific styling
   &.give-fossil-fuels-the-flick {
-    background-color: $fraise-300;
     padding-bottom: 4rem;
+
+    background-color: $fraise-300;
+    background-image: url("/images/dithered/coal.png"), url("/images/dithered/smoke-stack-small.png"), url("/images/dithered/barrel.png");
+    background-position: top -2rem right -2rem, top 40vh right 50%, top 50vh right 0;
+
     h2 {
       background-color: $fraise-500;
     }
   }
   &.your-money-talks {
     background-color: $mango-300;
+    background-image: url("/images/dithered/dollar-coin.png"), url("/images/dithered/earth.png");
+    background-position: top -2vh right -20%, top 40vh left -20%;
+
     h2 {
       background-color: $mango-500;
     }
@@ -89,6 +104,9 @@ article header {
   }
   &.join-in-a-few-taps {
     background-color: $mint-300;
+    background-image: url("/images/dithered/wind-turbine.png"), url("/images/dithered/sunflower.png");
+    background-position: top 2rem left 2rem, bottom 2rem right 2rem;
+
     h2 {
       background-color: $mint-500;
     }
