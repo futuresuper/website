@@ -929,6 +929,9 @@ article header h1 {
   font-family: "JetBrainsMono", monospace;
   font-size: 0.75rem;
 }
+.tidbit .button {
+  margin-bottom: 3rem;
+}
 .tidbit.give-fossil-fuels-the-flick {
   padding-bottom: 4rem;
   background-color: #ffe6e1;
