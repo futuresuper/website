@@ -1,7 +1,7 @@
 @use "colours" as *;
 @use "type" as *;
 
-$transition-box-background: background-color 150ms ease-in-out;
+$transition-box-background: background-color 550ms ease-in-out;
 
 details,
 .doc-or-form-item li,
@@ -36,6 +36,11 @@ details {
     margin-bottom: 0;
     line-height: 160%;
     border-top: 1px solid $black-900;
+
+    :last-child {
+      // Clear the bottom margin that is usually present on paragraph elements
+      margin-bottom: 0;
+    }
   }
 }
 
