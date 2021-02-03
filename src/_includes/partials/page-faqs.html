@@ -1,12 +1,16 @@
 <section>
   <h2>You might be wondering...</h2>
 
-  {% for item in pageFaqs %}
-    <details>
-      <summary>{{ item.question }}</summary>
-      <div class="contents">
-        <p>{{ item.answer }}</p>
-      </div>
-    </details>
+  {% for item in collections.faqs %}
+    {% if item.data.category === faqCategory %}
+      <details>
+        <summary>{{ item.data.title }}</summary>
+
+        <div class="contents">
+          {{ item.templateContent | safe }}
+        </div>
+
+      </details>
+    {% endif %}
   {% endfor %}
 </section>
