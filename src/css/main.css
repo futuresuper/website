@@ -921,9 +921,6 @@ input.search {
   font-size: 1rem;
   font-size: min(max(1rem, 3vw), 1.8rem);
 }
-.join-cta p:last-of-type {
-  font-size: 0.875rem;
-}
 
 header[role=banner] {
   overflow: hidden;

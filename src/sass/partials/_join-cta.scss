@@ -21,9 +21,5 @@
       font-size: 1rem; // Fallback
       font-size: min(max(1rem, 3vw), 1.8rem); // Min, Variable, Max
     }
-
-    &:last-of-type {
-      font-size: $font-size-sm;
-    }
   }
 }
