@@ -205,7 +205,7 @@ details,
 .career-item li {
   border: 1px solid #000000;
   background-color: #ffffff;
-  transition: background-color 150ms ease-in-out;
+  transition: background-color 550ms ease-in-out;
 }
 details:not(:last-of-type),
 .doc-or-form-item li:not(:last-of-type),
@@ -230,6 +230,9 @@ details .contents {
   margin-bottom: 0;
   line-height: 160%;
   border-top: 1px solid #000000;
+}
+details .contents :last-child {
+  margin-bottom: 0;
 }
 
 .doc-or-form-item li:hover,
@@ -329,9 +332,10 @@ body.mobile-menu-active.aoc-active {
   margin: 0 auto;
   max-width: 48rem;
 }
-.container .article-content p:not(.disclaimer),
-.container .article-content ul,
-.container .article-content ol {
+.container .article-content > p:not(.disclaimer),
+.container .article-content > section > p,
+.container .article-content > ul,
+.container .article-content > ol {
   font-size: 1.125rem;
   line-height: 170%;
 }
