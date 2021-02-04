@@ -3,6 +3,7 @@ title: "What is superannuation? "
 slug: what-is-superannuation
 date: 2020-07-30T00:58:28Z
 category: Superannuation Basics
+order: 0
 ---
 
 Superannuation is a compulsory government scheme to help you save for retirement. Your employer makes contributions and you can contribute to it yourself if you like. This money is then invested on your behalf by your super fund.
