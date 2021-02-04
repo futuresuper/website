@@ -3,6 +3,7 @@ title: "When can I access my super?"
 slug: when-can-i-access-my-super
 date: 2019-01-25T03:32:27Z
 category: Withdrawing from your super
+order: 6
 ---
 
 Super is intended to fund your retirement, so you can generally only access it once you have retired from working and have met a condition of release. To satisfy a condition of release you will need to meet one of the following:
