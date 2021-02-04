@@ -3,6 +3,7 @@ title: "Can I choose my super fund?"
 slug: can-i-choose-my-super-fund
 date: 2020-07-30T01:01:09Z
 category: Superannuation Basics
+order: 7
 ---
 
 Most people have the option of choosing their own super fund. All you need to do is [provide your employer with the details of your preferred super fund](https://futuresuper.groovehq.com/help/how-do-i-get-my-employer-to-pay-to-future-super). If you don’t specify a super fund, your employer will likely create an account for you with their default super fund. 
