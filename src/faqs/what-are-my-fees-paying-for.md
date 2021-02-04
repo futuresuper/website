@@ -3,6 +3,7 @@ title: "What are my fees paying for?"
 slug: what-are-my-fees-paying-for
 date: 2020-08-18T00:43:52Z
 category: Fees
+order: 117
 ---
 
 Like all super funds, Future Super needs to charge fees so that we can run our business and ensure that your money is having the most impact that it can. Fees pay for things like establishing and administering your account, investing your money, running our tech systems, and our wonderful Member Advocacy team.
