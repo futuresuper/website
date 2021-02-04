@@ -3,6 +3,7 @@ title: "Can I access my super under the First Home Super Saver scheme? "
 slug: can-i-access-my-super-under-the-first-home-super-saver-scheme
 date: 2020-07-29T00:00:30Z
 category: Withdrawing from your super
+order: 7
 ---
 
 We do participate in the First Home Super Saver Scheme. This means that voluntary contributions made after 1 July 2017 may be released from 1 July 2018. Members can save up to $15,000 per year in this way and can withdraw a maximum of $30,000.
