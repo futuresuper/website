@@ -3,6 +3,7 @@ title: "Employer contributions & tax "
 slug: employer-contributions-and-tax
 date: 2020-07-28T05:19:24Z
 category: Contributions and payments to your super
+order: 5
 ---
 
 Australian employers are required by Government legislation to make superannuation contributions for their eligible employees. These are called **Employer Superannuation Guarantee (SG) contributions**.
