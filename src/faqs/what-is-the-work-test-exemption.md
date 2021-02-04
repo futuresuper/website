@@ -3,6 +3,7 @@ title: "What is the work test exemption?"
 slug: what-is-the-work-test-exemption
 date: 2020-12-29T03:47:14Z
 category: Contributions and payments to your super
+order: 120
 ---
 
 If you are between 65-74 years old and wish to make additional contributions to your super, and do not meet the work test, you may be required to meet the conditions for the work test exemption. From 2020-21 financial year onwards, this will apply for people between 67-74 years old. 
