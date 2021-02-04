@@ -3,6 +3,7 @@ title: "How does super work for temporary residents of Australia?"
 slug: how-does-super-work-for-temporary-residents-of-australia
 date: 2020-07-27T22:38:18Z
 category: General
+order: 89
 ---
 
 If you have worked in Australia as a temporary resident and you have permanently left the country, you may be eligible to claim the super benefit you have accumulated while working here, less any tax. The payment is called a Departing Australia Superannuation Payment (DASP). A DASP can be claimed if:
