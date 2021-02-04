@@ -3,6 +3,7 @@ title: "How are the premiums paid?"
 slug: how-are-the-premiums-paid
 date: 2020-08-27T00:03:55Z
 category: Insurance
+order: 48
 ---
 
 Insurance premiums are deducted monthly (in arrears) from the balance of your super. The premiums will be deducted automatically once your cover commences.
