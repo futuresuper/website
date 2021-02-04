@@ -3,6 +3,7 @@ title: "What is an Account-Based Pension?"
 slug: what-is-an-account-based-pension
 date: 2020-08-20T06:22:36Z
 category: Pension 
+order: 2
 ---
 
 An Account-Based Pension is a simple, single account for those who have met a condition of release and will no longer be making contributions to their super. You can receive flexible payments (subject to age-based minimums) on a timeline that suits you, and make lump sum withdrawals at any time.
