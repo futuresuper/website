@@ -3,6 +3,7 @@ title: "What is a condition of release? "
 slug: what-is-a-condition-of-release
 date: 2019-02-01T00:07:15Z
 category: Withdrawing from your super
+order: 3
 ---
 
 To withdraw some or all of your superannuation, you will need to satisfy a condition of release. 
