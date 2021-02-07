@@ -3,6 +3,7 @@ title: "Common issues when paying by clearing house "
 slug: common-issues-when-paying-by-clearing-house
 date: 2020-12-15T06:55:01Z
 category: Employers
+order: 129
 ---
 
 **Where do I find all the payment information?**

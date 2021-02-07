@@ -3,6 +3,7 @@ title: "Can I access my super early? "
 slug: can-i-access-my-super-early
 date: 2020-09-02T00:18:12Z
 category: Withdrawing from your super
+order: 4
 ---
 
 Superannuation is designed to help you save for retirement, however, there are some limited circumstances where you may be able to access your super early. 

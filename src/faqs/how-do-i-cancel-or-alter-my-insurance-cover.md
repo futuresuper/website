@@ -3,6 +3,7 @@ title: "How do I cancel or alter my insurance cover?"
 slug: how-do-i-cancel-or-alter-my-insurance-cover
 date: 2020-08-26T23:53:40Z
 category: Insurance
+order: 49
 ---
 
 We require written confirmation for all cancellations. You can, at any time, cancel your cover by writing to us at [info@futuresuper.com.au](mailto:info@futuresuper.com.au) and we will send you a confirmation letter when your insurance cover is ceased.

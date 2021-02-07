@@ -3,6 +3,7 @@ title: "How to transfer your old super"
 slug: how-to-transfer-your-old-super
 date: 2020-11-18T06:12:28Z
 category: Rolling over
+order: 94
 ---
 
 If you have super with another fund and you would like to move this money to Future Super, here’s how to do it:

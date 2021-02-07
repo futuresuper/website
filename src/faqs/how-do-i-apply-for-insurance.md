@@ -3,6 +3,7 @@ title: "How do I apply for Insurance?"
 slug: how-do-i-apply-for-insurance
 date: 2020-08-27T00:02:01Z
 category: Insurance
+order: 42
 ---
 
 There are three ways you can apply for insurance with Future Super! 

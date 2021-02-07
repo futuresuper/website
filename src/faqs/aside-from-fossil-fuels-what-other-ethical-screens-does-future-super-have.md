@@ -3,6 +3,7 @@ title: "Aside from fossil fuels, what other ethical screens does Future Super ha
 slug: aside-from-fossil-fuels-what-other-ethical-screens-does-future-super-have
 date: 2020-09-02T10:20:57Z
 category: Divestment
+order: 50
 ---
 
 We take a wholistic approach to investing that covers a wide range of ethical issues. We do not invest in companies or activities that cause social or environmental harm, such as detention centres, live animal export, tobacco, and armaments, to name a few. This is known as ‘negatively screening’ companies.

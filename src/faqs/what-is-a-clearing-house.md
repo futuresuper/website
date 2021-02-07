@@ -3,6 +3,7 @@ title: "What is a clearing house?"
 slug: what-is-a-clearing-house
 date: 2020-12-15T07:06:30Z
 category: Employers
+order: 1
 ---
 
 A superannuation clearing house is an electronic gateway that allows you to make all your super contributions for all your employees in one single payment. Using a clearing house is a [SuperStream compliant way](https://www.ato.gov.au/Super/SuperStream/Employers/Are-you-paying-the-SuperStream-way-/) to pay super contributions. 

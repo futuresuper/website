@@ -3,6 +3,7 @@ title: "How much super do I need to pay? "
 slug: how-much-super-do-i-need-to-pay
 date: 2020-12-15T06:00:21Z
 category: Employers
+order: 124
 ---
 
 Generally, Australian employers are required by Government legislation to make superannuation contributions for employees who are paid $450 or more before tax in a calendar month.  It doesn’t matter whether the employee is full time, part time or casual, or if they are a temporary resident of Australia.

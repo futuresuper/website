@@ -3,6 +3,7 @@ title: "What does Future Super invest in? "
 slug: what-does-future-super-invest-in
 date: 2020-08-27T04:11:52Z
 category: Investments and returns
+order: 36
 ---
 
 When we launched in 2014, Future Super was the first super fund to not invest in fossil fuel companies and remains the only super fund to screen out diversified fossil fuel companies and companies providing significant services and financing to the fossil fuel industry. 

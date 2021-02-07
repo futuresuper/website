@@ -3,6 +3,7 @@ title: "How can I certify my ID?"
 slug: how-can-i-certify-my-id
 date: 2019-02-07T03:06:43Z
 category: Withdrawing from your super
+order: 1
 ---
 
 To certify your ID, you will need to scan and print a copy of photo ID, like your passport or drivers licence. You will then need to get the copy certified by an authorised person.

@@ -3,6 +3,7 @@ title: "How do I join Future Super?"
 slug: how-do-i-join-future-super
 date: 2020-08-13T05:21:26Z
 category: Joining 
+order: 9
 ---
 
 The easiest way to join Future Super is through our [online join form](https://join.myfuturesuper.com.au/). It takes just a couple of minutes. You can also join over the phone on 1300 658 422.

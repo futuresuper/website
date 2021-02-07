@@ -3,6 +3,7 @@ title: "What information do I need to pay employer contributions via a clearing 
 slug: what-information-do-i-need-to-pay-employer-contributions-via-a-clearing-house
 date: 2020-12-15T06:43:33Z
 category: Employers
+order: 127
 ---
 
 To set up contribution payments for a Future Super member in a clearing house, you will just need the following:

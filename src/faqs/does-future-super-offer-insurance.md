@@ -3,6 +3,7 @@ title: "Does Future Super offer insurance?"
 slug: does-future-super-offer-insurance
 date: 2020-08-27T00:07:53Z
 category: Insurance
+order: 37
 ---
 
 Future Super offers opt-in insurance. You can apply for cover for the following types of insurance: 

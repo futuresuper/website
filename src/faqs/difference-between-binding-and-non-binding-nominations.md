@@ -3,6 +3,7 @@ title: "Difference between binding and non-binding nominations"
 slug: difference-between-binding-and-non-binding-nominations
 date: 2020-08-19T06:29:32Z
 category: Beneficiaries 
+order: 119
 ---
 
 A binding death benefit nomination is a written direction made by you to the Trustee that sets out the dependants and/or legal personal representative, as decided by you, who are to receive your benefit in the event of your death. So long as the binding death benefit nomination is valid, the Trustee is bound to follow it.

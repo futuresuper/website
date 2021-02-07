@@ -3,6 +3,7 @@ title: "How do I update my contact details?"
 slug: how-do-i-update-my-contact-details
 date: 2020-07-28T03:58:40Z
 category: Managing your account
+order: 77
 ---
 
 You can update your residential address and mobile number via the [Member Portal](https://portal.myfuturesuper.com.au/member/details).

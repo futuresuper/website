@@ -3,6 +3,7 @@ title: "How do I nominate a beneficiary? "
 slug: how-do-i-nominate-a-beneficiary
 date: 2020-08-13T05:12:02Z
 category: Beneficiaries 
+order: 81
 ---
 
 ### **Binding beneficiary**

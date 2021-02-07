@@ -3,6 +3,7 @@ title: "How does divestment work?"
 slug: how-does-divestment-work
 date: 2020-09-02T10:20:57Z
 category: Divestment
+order: 58
 ---
 
 Divestment serves two purposes. Firstly, divestment delegitimises those businesses that use the power of money to cause harm. For example, in countries where the fossil fuel industry has a firm hold on all parts of society (through political lobbying, the funding of policy think tanks, etc.), divestment erodes the industry's dominance and creates the space needed for change to happen.
