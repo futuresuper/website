@@ -3,6 +3,7 @@ title: "How to roll over your existing super through MyGov"
 slug: how-to-roll-over-your-existing-super-through-mygov
 date: 2020-07-30T01:39:21Z
 category: Rolling over
+order: 99
 ---
 
 If you have super with another fund and you would like to move this money to Future Super, here’s how to do it:

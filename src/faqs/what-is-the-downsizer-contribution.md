@@ -3,6 +3,7 @@ title: "What is the Downsizer contribution?"
 slug: what-is-the-downsizer-contribution
 date: 2020-12-29T03:49:11Z
 category: Contributions and payments to your super
+order: 114
 ---
 
 If you are aged 65 or over and have recently sold your home, you may be able to make a voluntary super contribution of up to $300,000 from the proceeds of sale.

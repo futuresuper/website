@@ -3,6 +3,7 @@ title: "How much superannuation is my employer required to pay?"
 slug: how-much-superannuation-is-my-employer-required-to-pay
 date: 2020-08-13T05:15:09Z
 category: Contributions and payments to your super
+order: 61
 ---
 
 **Employer Superannuation Guarantee (SG) contributions** are presently 9.5% of a person’s ordinary time earnings (subject to a maximum dollar limit).

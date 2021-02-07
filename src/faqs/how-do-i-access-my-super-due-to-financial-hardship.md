@@ -3,6 +3,7 @@ title: "How do I access my super due to financial hardship? "
 slug: how-do-i-access-my-super-due-to-financial-hardship
 date: 2020-08-13T05:33:19Z
 category: Withdrawing from your super
+order: 5
 ---
 
 If you are finding that you are unable to meet immediate family living expenses, and you have outstanding debts, you may be able to access some of your super due to severe financial hardship. 

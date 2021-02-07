@@ -3,6 +3,7 @@ title: "Can I pay multiple employees’ super contributions in one payment?"
 slug: can-i-pay-multiple-employees-super-contributions-in-one-payment
 date: 2020-12-15T06:48:20Z
 category: Employers
+order: 3
 ---
 
 Yes, however this varies depending on how you make your payment.

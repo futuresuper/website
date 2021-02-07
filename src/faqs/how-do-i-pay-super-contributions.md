@@ -3,6 +3,7 @@ title: "How do I pay super contributions? "
 slug: how-do-i-pay-super-contributions
 date: 2020-12-15T06:11:23Z
 category: Employers
+order: 125
 ---
 
 There are some rules around how employers must pay super:

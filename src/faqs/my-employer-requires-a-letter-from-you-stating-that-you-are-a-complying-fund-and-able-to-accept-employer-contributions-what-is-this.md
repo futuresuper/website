@@ -3,6 +3,7 @@ title: "My employer requires a letter from you stating that you are a complying 
 slug: my-employer-requires-a-letter-from-you-stating-that-you-are-a-complying-fund-and-able-to-accept-employer-contributions-what-is-this
 date: 2020-08-13T05:18:05Z
 category: Contributions and payments to your super
+order: 76
 ---
 
 To be able to pay super contributions on your behalf, your employer may ask you to provide a letter from us stating that we are a complying fund and that we can accept employer contributions. This document is also known as the General Compliance Certificate. 

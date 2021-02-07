@@ -52,9 +52,11 @@ module.exports = (config) => {
   });
 
   // Return a collection of FAQs
-  // TODO: replace with dynamic collection from Groove Knowledge Base
   config.addCollection("faqs", (collection) => {
-    return [...collection.getFilteredByGlob("./src/faqs/*.md")];
+    return collection
+      .getFilteredByGlob("./src/faqs/*.md")
+      .sort((a, b) => b.data.order - a.data.order)
+      .reverse();
   });
 
   // TODO: Map through every repeated collection below, dynamically

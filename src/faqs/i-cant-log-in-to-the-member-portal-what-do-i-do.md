@@ -3,6 +3,7 @@ title: "I can't log in to the Member Portal. What do I do? "
 slug: i-cant-log-in-to-the-member-portal-what-do-i-do
 date: 2020-07-27T04:38:18Z
 category: Member portal instructions
+order: 3
 ---
 
 You can log in using your member number, email or phone number. If you cannot log in on one browser try using a different browser (e.g. Google Chrome, Firefox, etc.). 

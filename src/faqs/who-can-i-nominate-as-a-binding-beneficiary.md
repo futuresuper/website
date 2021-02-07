@@ -3,6 +3,7 @@ title: "Who can I nominate as a binding beneficiary? "
 slug: who-can-i-nominate-as-a-binding-beneficiary
 date: 2020-08-13T05:10:55Z
 category: Beneficiaries 
+order: 41
 ---
 
 You can nominate a dependant or your legal personal representative as a binding beneficiary. If you nominate your Legal Personal Representative it is important that you have a valid Will and keep it up-to-date, as the Trustee may pay your death benefit to your estate.

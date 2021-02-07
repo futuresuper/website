@@ -3,6 +3,7 @@ title: "Concessional and non-concessional contributions"
 slug: concessional-and-non-concessional-contributions
 date: 2020-08-13T05:17:16Z
 category: Contributions and payments to your super
+order: 63
 ---
 
 **Non-concessional contributions**
