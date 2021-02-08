@@ -6,7 +6,7 @@ media_library:
   name: cloudinary
   config:
     cloud_name: future-super
-    api_key: 749866111487797
+    api_key: 749866111487797 # Public Key
 
 collections:
   - name: "posts"
