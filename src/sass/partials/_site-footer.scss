@@ -25,8 +25,8 @@ body > .flow-content > footer {
       margin-bottom: 1rem;
 
       a {
-        // text-decoration: none;
         color: $grey-800;
+        // text-decoration: none;
         text-decoration-color: transparent;
         transition: $transition-text-hover;
 
@@ -56,7 +56,7 @@ body > .flow-content > footer {
     }
 
     table.essential-fund-info {
-      grid-column: span 8;
+      // grid-column: span 8;
       grid-row: 2 / 2;
       border-spacing: 0;
       border-collapse: collapse;

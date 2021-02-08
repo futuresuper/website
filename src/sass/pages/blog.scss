@@ -7,10 +7,6 @@ $transition-section-hover: opacity 250ms ease-in-out;
 .post-item {
   > h2,
   > h3 {
-    grid-column: span 1;
-    @media (min-width: $breakpoint-sm) {
-      grid-column: span 12;
-    }
     @media (min-width: $breakpoint-md) {
       grid-column: span 2;
       position: sticky;
@@ -21,14 +17,14 @@ $transition-section-hover: opacity 250ms ease-in-out;
   > h2,
   > h3 {
     font-size: $font-size-xl;
-    vertical-align: baseline; //TODO
+    vertical-align: baseline; // TODO: have these align on $breakpoint-md  and larger
   }
 
   h3.month-only {
     font-size: $font-size-lg;
   }
 
-  // Don't show month unless on breakpoint-md or higher
+  // Don't show month unless on $breakpoint-md or higher
   > h2.year-only,
   > h3.month-only {
     display: none;
@@ -49,7 +45,6 @@ $transition-section-hover: opacity 250ms ease-in-out;
   a {
     color: inherit;
     text-decoration: none;
-    grid-column: span 1;
     grid-row: 2;
 
     transition: $transition-section-hover;
@@ -72,12 +67,10 @@ $transition-section-hover: opacity 250ms ease-in-out;
       }
 
       .details {
-        //Author
         .author {
           color: $grey-400;
         }
 
-        // Tags
         .tags {
           margin-top: 0.75rem;
           color: $grey-500;
@@ -91,10 +84,6 @@ $transition-section-hover: opacity 250ms ease-in-out;
           line-height: 100%;
         }
       }
-    }
-
-    @media (min-width: $breakpoint-sm) {
-      grid-column: span 12;
     }
 
     @media (min-width: $breakpoint-md) {

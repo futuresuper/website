@@ -128,19 +128,3 @@ p {
 .red {
   color: $red-500;
 }
-
-table {
-  text-align: left;
-
-  // Add visual row gaps
-  border-collapse: separate;
-  border-spacing: 0 1rem;
-  // Remove byproduct visual gap above and below table
-  margin-top: -1rem;
-  margin-bottom: -1rem;
-
-  // Only apply horizontal padding if table has vertical headers, not horizontal
-  th:only-of-type {
-    padding-right: 3rem;
-  }
-}

@@ -190,17 +190,6 @@ p a:hover {
   color: #f04b23;
 }
 
-table {
-  text-align: left;
-  border-collapse: separate;
-  border-spacing: 0 1rem;
-  margin-top: -1rem;
-  margin-bottom: -1rem;
-}
-table th:only-of-type {
-  padding-right: 3rem;
-}
-
 details,
 .doc-or-form-item li,
 .career-item li {
@@ -333,8 +322,8 @@ body.mobile-menu-active.aoc-active {
   margin: 0 auto;
   max-width: 48rem;
 }
+.container .article-content > section > p:not(.disclaimer),
 .container .article-content > p:not(.disclaimer),
-.container .article-content > section > p,
 .container .article-content > ul,
 .container .article-content > ol {
   font-size: 1.125rem;
@@ -419,6 +408,24 @@ main > article.container {
 @media (min-width: 80rem) {
   .table-disclaimers > * {
     grid-column: span 6;
+  }
+}
+
+table {
+  text-align: left;
+  border-collapse: separate;
+  border-spacing: 0 1rem;
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+}
+@media (min-width: 40rem) {
+  table th:only-of-type {
+    padding-right: 1rem;
+  }
+}
+@media (min-width: 48rem) {
+  table th:only-of-type {
+    padding-right: 3rem;
   }
 }
 
@@ -569,6 +576,14 @@ input.search {
 
 .table-intro {
   margin-bottom: 1rem;
+}
+.table-intro > * {
+  grid-column: span 12;
+}
+@media (min-width: 48rem) {
+  .table-intro > * {
+    grid-column: span 6;
+  }
 }
 
 .table-container {
@@ -809,6 +824,14 @@ input.search {
   margin-top: -3rem;
   margin-bottom: 6rem;
 }
+.table-disclaimers > * {
+  grid-column: span 12;
+}
+@media (min-width: 48rem) {
+  .table-disclaimers > * {
+    grid-column: span 5;
+  }
+}
 
 .tooltip {
   position: relative;
@@ -876,7 +899,6 @@ input.search {
 .also-see ul li {
   overflow: hidden;
   transition: background-color 100ms ease-in-out;
-  grid-column: span 1;
 }
 .also-see ul li:hover {
   background-color: #f5f5f4;
@@ -888,11 +910,6 @@ input.search {
   font-weight: bold;
   color: #140f14;
   white-space: nowrap;
-}
-@media (min-width: 40rem) {
-  .also-see ul li {
-    grid-column: span 12;
-  }
 }
 @media (min-width: 48rem) {
   .also-see ul li {
@@ -1195,7 +1212,6 @@ body > .flow-content > footer .legal-section img {
   margin-bottom: 3rem;
 }
 body > .flow-content > footer .legal-section table.essential-fund-info {
-  grid-column: span 8;
   grid-row: 2/2;
   border-spacing: 0;
   border-collapse: collapse;
