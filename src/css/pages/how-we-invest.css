@@ -150,6 +150,9 @@ p a:hover {
   font-size: 0.75rem;
   line-height: 140%;
 }
+.disclaimer a:hover {
+  color: #140f14;
+}
 
 .bold {
   font-weight: 700;
@@ -457,7 +460,7 @@ button,
 }
 button.full-width,
 .button.full-width {
-  padding: 1rem 0;
+  padding: 2rem 0;
   width: 100%;
 }
 button.primary,

@@ -34,7 +34,10 @@ header[role="banner"] {
 
   section {
     margin-top: 1rem;
-    margin-bottom: $space-section-y-dynamic;
+    margin-bottom: $space-section-y-sm;
+    @media (min-width: $breakpoint-md) {
+      margin-bottom: $space-section-y-sm;
+    }
     // Mimic padding from .container
     padding: 0 $space-page-padding-x-sm;
 

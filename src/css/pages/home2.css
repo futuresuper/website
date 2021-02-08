@@ -149,6 +149,9 @@ p a:hover {
   font-size: 0.75rem;
   line-height: 140%;
 }
+.disclaimer a:hover {
+  color: #140f14;
+}
 
 .bold {
   font-weight: 700;
@@ -456,7 +459,7 @@ button,
 }
 button.full-width,
 .button.full-width {
-  padding: 1rem 0;
+  padding: 2rem 0;
   width: 100%;
 }
 button.primary,
@@ -898,6 +901,15 @@ input.search {
 article header .button,
 .tidbit .button {
   font-size: 1.75rem;
+  padding: 1rem 0;
+  width: 100%;
+}
+@media (min-width: 40rem) {
+  article header .button,
+.tidbit .button {
+    width: inherit;
+    padding: 1rem 10rem;
+  }
 }
 
 article header,
@@ -907,7 +919,8 @@ article header,
 
 article header h1,
 .tidbit h2,
-.button {
+article header .button,
+.tidbit .button {
   font-weight: normal;
 }
 
@@ -916,111 +929,181 @@ article header h1,
   margin: 0 auto 4rem;
   line-height: 100%;
   text-transform: uppercase;
-  font-size: 3rem;
+  font-size: clamp(3rem, 5vh, 5rem);
   display: flex;
   justify-content: center;
   align-items: center;
 }
+@media (min-width: 48rem) {
+  article header h1,
+.tidbit h2 {
+    font-size: clamp(3rem, 9vh, 5rem);
+  }
+}
 
 article header {
-  margin-top: -12rem;
-  padding-top: 12rem;
+  margin-top: -16rem;
+  padding-top: 16rem;
+  padding-bottom: 6vh;
   background-color: #ddffe7;
   background-image: url("/images/dithered/smoke-stack.png");
   background-size: cover;
-  background-repeat: repeat-x;
-  background-position: bottom 12rem left 0px;
-  padding-bottom: 6vh;
+  background-repeat: no-repeat;
+  background-position: top -16rem center;
+}
+@media (min-width: 48rem) {
+  article header {
+    background-image: url(/images/dithered/smoke-stack.png), url(/images/dithered/smoke-stack.png);
+    background-size: 32vh;
+    background-position: top 13rem left 25%, top 21rem right 25%;
+  }
 }
 article header h1 {
   background-color: #ddffe7;
   color: #2bb151;
-  max-width: 75vw;
-  height: 48vh;
-  margin-bottom: 2vh;
+  margin-bottom: 0;
+  width: clamp(16rem, 62vw, 28rem);
+  height: clamp(22rem, 48vh, 50vh);
+}
+@media (min-width: 48rem) {
+  article header h1 {
+    width: clamp(28rem, 40vw, 28rem);
+    height: clamp(10rem, 56vh, 60rem);
+  }
 }
 article header .button {
   position: relative;
   top: 3rem;
 }
 article header p {
-  margin-top: 5.5rem;
+  margin-top: 4.5rem;
   margin-bottom: 2rem;
   padding-left: 3rem;
   padding-right: 3rem;
+  line-height: 125%;
 }
 
 .tidbit {
   padding-top: 5rem;
+  padding-bottom: 4rem;
   background-repeat: no-repeat;
 }
 .tidbit h2 {
   background-color: #f04b23;
-  color: rgba(255, 255, 255, 0.8);
-  max-width: 62vw;
-  height: 40vh;
+  color: rgba(255, 255, 255, 0.9);
+  width: clamp(16rem, 62vw, 21rem);
+  height: clamp(18rem, 48vh, 30rem);
+}
+@media (min-width: 48rem) {
+  .tidbit h2 {
+    width: clamp(16rem, 64vw, 24rem);
+    height: clamp(18rem, 54vh, 40rem);
+  }
 }
 .tidbit p:not(.disclaimer) {
   text-indent: 1.75rem;
   font-size: 1.75rem !important;
   line-height: 115% !important;
 }
+@media (min-width: 48rem) {
+  .tidbit p:not(.disclaimer) {
+    font-size: 2.5rem !important;
+    text-indent: 3.5rem;
+  }
+}
 .tidbit p:not(.disclaimer) span {
   font-family: "JetBrainsMono", monospace;
   font-size: 0.75rem;
   color: #30302c;
-  margin-left: -5px;
   vertical-align: top;
   position: relative;
   top: -2px;
+  left: -2px;
 }
 .tidbit aside {
   margin-top: 2rem;
 }
 .tidbit aside .disclaimer {
   font-family: "JetBrainsMono", monospace;
-  color: #30302c;
-  grid-column: 7/13;
+  color: #52524c;
 }
 .tidbit .button {
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
 .tidbit.give-fossil-fuels-the-flick {
-  padding-bottom: 4rem;
   background-color: #ffe6e1;
   background-image: url("/images/dithered/barrel.png"), url("/images/dithered/smoke-stack-small-red.png"), url("/images/dithered/coal.png");
   background-position: top 75vh right 0, top 40vh right 50%, top -2rem right -2rem;
 }
+@media (min-width: 48rem) {
+  .tidbit.give-fossil-fuels-the-flick {
+    background-position: top 50vh left 20%, top 30vh right 20%, top -2rem left 30%;
+  }
+}
 .tidbit.give-fossil-fuels-the-flick h2 {
   background-color: #f04b23;
-  margin-bottom: 62vh;
+  margin-bottom: 54vh;
+}
+@media (min-width: 48rem) {
+  .tidbit.give-fossil-fuels-the-flick h2 {
+    margin-top: 6vh;
+    margin-bottom: 24vh;
+  }
+}
+.tidbit.give-fossil-fuels-the-flick .disclaimer {
+  grid-column: 5/13;
 }
 .tidbit.your-money-talks {
-  padding-bottom: 3rem;
   background-color: #ffebb9;
   background-image: url("/images/dithered/dollar-coin.png"), url("/images/dithered/earth.png");
   background-position: top -2vh right -5rem, top 40vh left -20%;
 }
+@media (min-width: 48rem) {
+  .tidbit.your-money-talks {
+    background-position: top 4vh right 32%, top 50vh left 28%;
+  }
+}
 .tidbit.your-money-talks h2 {
   background-color: #fac33c;
-  margin-bottom: 23vh;
+  margin-bottom: 15vh;
+}
+@media (min-width: 48rem) {
+  .tidbit.your-money-talks h2 {
+    margin-top: 6vh;
+    margin-bottom: 24vh;
+  }
 }
 .tidbit.your-money-talks .button {
   color: #140f14;
   background-color: #fac33c;
 }
+.tidbit.your-money-talks .button:hover {
+  color: #ffffff;
+  background-color: #0a5aff;
+}
+.tidbit.your-money-talks .disclaimer {
+  grid-column: 4/13;
+}
 .tidbit.join-in-a-few-taps {
   background-color: #ddffe7;
   background-image: url("/images/dithered/wind-turbine.png"), url("/images/dithered/sunflower.png");
-  background-position: top 2rem left -3rem, top 26vh right -4rem;
+  background-position: top 2rem left -5rem, top 34vh right -6rem;
+}
+@media (min-width: 48rem) {
+  .tidbit.join-in-a-few-taps {
+    background-position: top 10vh left 32%, top 48vh right 28%;
+  }
 }
 .tidbit.join-in-a-few-taps h2 {
   background-color: #2bb151;
   margin-bottom: 10vh;
 }
-.tidbit.join-in-a-few-taps .button {
-  margin-bottom: 3rem;
+@media (min-width: 48rem) {
+  .tidbit.join-in-a-few-taps h2 {
+    margin-top: 6vh;
+    margin-bottom: 24vh;
+  }
 }
 
 .product-review-carousel {
@@ -1028,12 +1111,12 @@ article header p {
   color: #000000;
   background-color: #f9ecf5;
   background-image: url("/images/dithered/coal.png"), url("/images/dithered/smoke-stack-small-green.png");
-  background-position: top 0 left -4rem, bottom 2rem right -2rem;
+  background-position: top 0 left -4rem, bottom 7rem right -2rem;
   background-repeat: no-repeat;
   position: relative;
 }
 .product-review-carousel figure {
-  padding: 2rem 2rem 4rem 2rem;
+  padding: 2rem 2rem 6rem 2rem;
   background-color: #f9ecf5;
 }
 .product-review-carousel figure .stars {

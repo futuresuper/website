@@ -1,12 +1,21 @@
 @use "../base" as *;
 
+// Override body background
 .flow-content {
   background-color: $mint-300 !important; // TODO fix @use or whatever else is blocking this for cascading properly
 }
 
+// Override site header margins
+
 article header .button,
 .tidbit .button {
   font-size: $font-size-xl;
+  padding: $space-button-padding-y-md 0;
+  width: 100%;
+  @media (min-width: $breakpoint-sm) {
+    width: inherit;
+    padding: 1rem 10rem;
+  }
 }
 
 article header,
@@ -17,7 +26,8 @@ article header,
 // Override default bolded buttons
 article header h1,
 .tidbit h2,
-.button {
+article header .button,
+.tidbit .button {
   font-weight: normal;
 }
 
@@ -26,33 +36,46 @@ article header h1,
   margin: 0 auto 4rem;
   line-height: 100%;
   text-transform: uppercase;
-  font-size: $font-size-48;
+  font-size: clamp($font-size-48, 5vh, 5rem);
+  @media (min-width: $breakpoint-md) {
+    font-size: clamp($font-size-48, 9vh, 5rem);
+  }
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 article header {
-  // Bleed into site-header above
-  $site-header-height-temp: 12rem; // TODO: calc height of site-header, offset by that amount
-  margin-top: -$site-header-height-temp;
-  padding-top: $site-header-height-temp;
+  // Bleed into site-header (can be any amount)
+  $site-header-y-offset: 16rem;
+  margin-top: -$site-header-y-offset;
+  padding-top: $site-header-y-offset;
+  padding-bottom: 6vh;
 
   background-color: $mint-300;
   background-image: url("/images/dithered/smoke-stack.png");
   background-size: cover;
-  background-repeat: repeat-x;
-  background-position: bottom $site-header-height-temp left 0px;
+  background-repeat: no-repeat;
+  background-position: top (-$site-header-y-offset) center;
 
-  padding-bottom: 6vh;
+  @media (min-width: $breakpoint-md) {
+    background-image: url(/images/dithered/smoke-stack.png), url(/images/dithered/smoke-stack.png);
+    background-size: 32vh;
+    background-position: top 13rem left 25%, top 21rem right 25%;
+  }
 
   h1 {
     background-color: $mint-300;
     color: $mint-500;
+    margin-bottom: 0;
 
-    max-width: 75vw;
-    height: 48vh;
-    margin-bottom: 2vh;
+    width: clamp(16rem, 62vw, 28rem);
+    height: clamp(22rem, 48vh, 50vh);
+
+    @media (min-width: $breakpoint-md) {
+      width: clamp(28rem, 40vw, 28rem);
+      height: clamp(10rem, 56vh, 60rem);
+    }
   }
 
   .button {
@@ -61,23 +84,30 @@ article header {
   }
 
   p {
-    margin-top: 5.5rem;
+    margin-top: 4.5rem;
     margin-bottom: 2rem;
     // Add optical padding
     padding-left: 3rem;
     padding-right: 3rem;
+    line-height: $line-height-125;
   }
 }
 
 .tidbit {
   padding-top: 5rem;
+  padding-bottom: 4rem;
   background-repeat: no-repeat;
 
   h2 {
     background-color: $fraise-500;
-    color: rgba(255, 255, 255, 0.8);
-    max-width: 62vw; // TODO: clamp this or use for desktop
-    height: 40vh;
+    color: rgba(255, 255, 255, 0.9);
+    width: clamp(16rem, 62vw, 21rem);
+    height: clamp(18rem, 48vh, 30rem);
+
+    @media (min-width: $breakpoint-md) {
+      width: clamp(16rem, 64vw, 24rem);
+      height: clamp(18rem, 54vh, 40rem);
+    }
   }
 
   p:not(.disclaimer) {
@@ -85,14 +115,19 @@ article header {
     font-size: $font-size-xl !important; // TODO: reorder CSS cascade so we don't need to use !important
     line-height: $line-height-xs !important; // TODO: reorder CSS cascade so we don't need to use !important
 
+    @media (min-width: $breakpoint-md) {
+      font-size: $font-size-40 !important;
+      text-indent: 3.5rem;
+    }
+
     span {
       font-family: $font-stack-monospace;
       font-size: $font-size-xs;
       color: $grey-700;
-      margin-left: -5px;
       vertical-align: top;
       position: relative;
       top: -2px;
+      left: -2px;
     }
   }
 
@@ -101,8 +136,7 @@ article header {
 
     .disclaimer {
       font-family: $font-stack-monospace;
-      color: $grey-700;
-      grid-column: 7/13;
+      color: $grey-500;
     }
   }
 
@@ -113,46 +147,72 @@ article header {
 
   // Begin section-specific styling
   &.give-fossil-fuels-the-flick {
-    padding-bottom: 4rem;
-
     background-color: $fraise-300;
     background-image: url("/images/dithered/barrel.png"), url("/images/dithered/smoke-stack-small-red.png"), url("/images/dithered/coal.png");
     background-position: top 75vh right 0, top 40vh right 50%, top -2rem right -2rem;
+    @media (min-width: $breakpoint-md) {
+      background-position: top 50vh left 20%, top 30vh right 20%, top -2rem left 30%;
+    }
 
     h2 {
       background-color: $fraise-500;
-      margin-bottom: 62vh;
+      margin-bottom: 54vh;
+      @media (min-width: $breakpoint-md) {
+        margin-top: 6vh;
+        margin-bottom: 24vh;
+      }
+    }
+
+    .disclaimer {
+      grid-column: 5/13;
     }
   }
   &.your-money-talks {
-    padding-bottom: 3rem;
-
     background-color: $mango-300;
     background-image: url("/images/dithered/dollar-coin.png"), url("/images/dithered/earth.png");
     background-position: top -2vh right -5rem, top 40vh left -20%;
+    @media (min-width: $breakpoint-md) {
+      background-position: top 4vh right 32%, top 50vh left 28%;
+    }
 
     h2 {
       background-color: $mango-500;
-      margin-bottom: 23vh;
+      margin-bottom: 15vh;
+      @media (min-width: $breakpoint-md) {
+        margin-top: 6vh;
+        margin-bottom: 24vh;
+      }
     }
 
     .button {
       color: $black-500;
       background-color: $mango-500;
+
+      &:hover {
+        color: $white-500;
+        background-color: $blue-500;
+      }
+    }
+
+    .disclaimer {
+      grid-column: 4/13;
     }
   }
   &.join-in-a-few-taps {
     background-color: $mint-300;
     background-image: url("/images/dithered/wind-turbine.png"), url("/images/dithered/sunflower.png");
-    background-position: top 2rem left -3rem, top 26vh right -4rem;
+    background-position: top 2rem left -5rem, top 34vh right -6rem;
+    @media (min-width: $breakpoint-md) {
+      background-position: top 10vh left 32%, top 48vh right 28%;
+    }
 
     h2 {
       background-color: $mint-500;
       margin-bottom: 10vh;
-    }
-
-    .button {
-      margin-bottom: 3rem;
+      @media (min-width: $breakpoint-md) {
+        margin-top: 6vh;
+        margin-bottom: 24vh;
+      }
     }
   }
 }
@@ -162,14 +222,14 @@ article header {
   color: $black-900;
   background-color: $fig-300;
   background-image: url("/images/dithered/coal.png"), url("/images/dithered/smoke-stack-small-green.png");
-  background-position: top 0 left -4rem, bottom 2rem right -2rem;
+  background-position: top 0 left -4rem, bottom 7rem right -2rem;
   background-repeat: no-repeat;
 
   // For aligning footer
   position: relative;
 
   figure {
-    padding: 2rem 2rem 4rem 2rem;
+    padding: 2rem 2rem 6rem 2rem;
     background-color: $fig-300;
 
     .stars {
