@@ -1119,9 +1119,35 @@ article header p {
   padding: 2rem 2rem 6rem 2rem;
   background-color: #f9ecf5;
 }
-.product-review-carousel figure .stars {
+.product-review-carousel figure .star-container {
   display: flex;
   margin-bottom: 2rem;
+}
+.product-review-carousel figure .star-container .star {
+  width: 42px;
+  height: 38px;
+  background-image: url("/images/dithered/starburst-sprite.png");
+  animation: moveStarX 1000ms steps(7) infinite;
+}
+.product-review-carousel figure .star-container .star:nth-of-type(2) {
+  animation-delay: 25ms;
+}
+.product-review-carousel figure .star-container .star:nth-of-type(3) {
+  animation-delay: 50ms;
+}
+.product-review-carousel figure .star-container .star:nth-of-type(4) {
+  animation-delay: 75ms;
+}
+.product-review-carousel figure .star-container .star:nth-of-type(5) {
+  animation-delay: 100ms;
+}
+@keyframes moveStarX {
+  from {
+    background-position-x: 0px;
+  }
+  to {
+    background-position-x: -294px;
+  }
 }
 .product-review-carousel figure blockquote .review-title {
   font-size: 1.75rem;

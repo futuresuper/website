@@ -232,9 +232,36 @@ article header {
     padding: 2rem 2rem 6rem 2rem;
     background-color: $fig-300;
 
-    .stars {
+    .star-container {
       display: flex;
       margin-bottom: 2rem;
+
+      .star {
+        width: 42px;
+        height: 38px;
+        background-image: url("/images/dithered/starburst-sprite.png");
+        animation: moveStarX 1000ms steps(7) infinite;
+        &:nth-of-type(2) {
+          animation-delay: 25ms;
+        }
+        &:nth-of-type(3) {
+          animation-delay: 50ms;
+        }
+        &:nth-of-type(4) {
+          animation-delay: 75ms;
+        }
+        &:nth-of-type(5) {
+          animation-delay: 100ms;
+        }
+      }
+      @keyframes moveStarX {
+        from {
+          background-position-x: 0px;
+        }
+        to {
+          background-position-x: -294px;
+        }
+      }
     }
 
     blockquote {
