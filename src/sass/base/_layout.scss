@@ -99,15 +99,14 @@ main > article.container {
 
 .grid {
   display: grid;
-  // Small screens default = 1 column
-  grid-template-columns: 1fr;
+  // Small screens default = 1 column (span 12 of 12)
+  grid-template-columns: repeat(12, 1fr);
   gap: 1rem;
   > * {
-    grid-column: span 1;
+    grid-column: span 12;
   }
   // Medium screens default = 2 columns (span 6 of 12)
   @media (min-width: $breakpoint-sm) {
-    grid-template-columns: repeat(12, 1fr);
     gap: 1.5rem;
     > * {
       grid-column: span 6;

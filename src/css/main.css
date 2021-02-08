@@ -353,15 +353,14 @@ main > article.container {
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(12, 1fr);
   gap: 1rem;
 }
 .grid > * {
-  grid-column: span 1;
+  grid-column: span 12;
 }
 @media (min-width: 40rem) {
   .grid {
-    grid-template-columns: repeat(12, 1fr);
     gap: 1.5rem;
   }
   .grid > * {
@@ -1196,9 +1195,10 @@ body > .flow-content > footer .legal-section img {
   margin-bottom: 3rem;
 }
 body > .flow-content > footer .legal-section table.essential-fund-info {
-  grid-column: span 4;
+  grid-column: span 8;
   grid-row: 2/2;
   border-spacing: 0;
+  border-collapse: collapse;
 }
 @media (min-width: 40rem) {
   body > .flow-content > footer .legal-section table.essential-fund-info {
@@ -1252,9 +1252,13 @@ body > .flow-content > footer .legal-link-list li a:hover {
   text-decoration: underline;
   color: #52524c;
 }
+body > .flow-content > footer .legal-link-list li:not(:last-of-type) {
+  margin-bottom: 0.5rem;
+}
 @media (min-width: 40rem) {
   body > .flow-content > footer .legal-link-list {
     flex-direction: row;
+    margin-bottom: 0;
   }
   body > .flow-content > footer .legal-link-list li:not(:last-of-type) {
     margin-right: 1.15rem;

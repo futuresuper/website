@@ -4,6 +4,11 @@
   background-color: $mint-300 !important; // TODO fix @use or whatever else is blocking this for cascading properly
 }
 
+article header .button,
+.tidbit .button {
+  font-size: $font-size-xl;
+}
+
 article header,
 .tidbit h2 {
   text-align: center;
@@ -35,11 +40,11 @@ article header {
 
   background-color: $mint-300;
   background-image: url("/images/dithered/smoke-stack.png");
+  background-size: cover;
   background-repeat: repeat-x;
-  // background-size: cover;
   background-position: bottom $site-header-height-temp left 0px;
 
-  padding-bottom: 4rem;
+  padding-bottom: 6vh;
 
   h1 {
     background-color: $mint-300;
@@ -47,11 +52,25 @@ article header {
 
     max-width: 75vw;
     height: 48vh;
+    margin-bottom: 2vh;
+  }
+
+  .button {
+    position: relative;
+    top: 3rem;
+  }
+
+  p {
+    margin-top: 5.5rem;
+    margin-bottom: 2rem;
+    // Add optical padding
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 }
 
 .tidbit {
-  padding-top: 4rem;
+  padding-top: 5rem;
   background-repeat: no-repeat;
 
   h2 {
@@ -63,21 +82,33 @@ article header {
 
   p:not(.disclaimer) {
     text-indent: 1.75rem;
-    font-size: $font-size-xl;
-    line-height: $line-height-125;
+    font-size: $font-size-xl !important; // TODO: reorder CSS cascade so we don't need to use !important
+    line-height: $line-height-xs !important; // TODO: reorder CSS cascade so we don't need to use !important
 
     span {
-      color: $grey-500;
+      font-family: $font-stack-monospace;
+      font-size: $font-size-xs;
+      color: $grey-700;
+      margin-left: -5px;
+      vertical-align: top;
+      position: relative;
+      top: -2px;
     }
   }
 
-  .disclaimer {
-    font-family: $font-stack-monospace;
-    font-size: $font-size-xs;
+  aside {
+    margin-top: 2rem;
+
+    .disclaimer {
+      font-family: $font-stack-monospace;
+      color: $grey-700;
+      grid-column: 7/13;
+    }
   }
 
   .button {
-    margin-bottom: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
   }
 
   // Begin section-specific styling
@@ -85,20 +116,24 @@ article header {
     padding-bottom: 4rem;
 
     background-color: $fraise-300;
-    background-image: url("/images/dithered/coal.png"), url("/images/dithered/smoke-stack-small.png"), url("/images/dithered/barrel.png");
-    background-position: top -2rem right -2rem, top 40vh right 50%, top 50vh right 0;
+    background-image: url("/images/dithered/barrel.png"), url("/images/dithered/smoke-stack-small-red.png"), url("/images/dithered/coal.png");
+    background-position: top 75vh right 0, top 40vh right 50%, top -2rem right -2rem;
 
     h2 {
       background-color: $fraise-500;
+      margin-bottom: 62vh;
     }
   }
   &.your-money-talks {
+    padding-bottom: 3rem;
+
     background-color: $mango-300;
     background-image: url("/images/dithered/dollar-coin.png"), url("/images/dithered/earth.png");
-    background-position: top -2vh right -20%, top 40vh left -20%;
+    background-position: top -2vh right -5rem, top 40vh left -20%;
 
     h2 {
       background-color: $mango-500;
+      margin-bottom: 23vh;
     }
 
     .button {
@@ -109,43 +144,44 @@ article header {
   &.join-in-a-few-taps {
     background-color: $mint-300;
     background-image: url("/images/dithered/wind-turbine.png"), url("/images/dithered/sunflower.png");
-    background-position: top 2rem left 2rem, bottom 2rem right 2rem;
+    background-position: top 2rem left -3rem, top 26vh right -4rem;
 
     h2 {
       background-color: $mint-500;
+      margin-bottom: 10vh;
+    }
+
+    .button {
+      margin-bottom: 3rem;
     }
   }
 }
 
 .product-review-carousel {
-  padding: 4rem 0;
+  padding: 8rem 0;
   color: $black-900;
   background-color: $fig-300;
+  background-image: url("/images/dithered/coal.png"), url("/images/dithered/smoke-stack-small-green.png");
+  background-position: top 0 left -4rem, bottom 2rem right -2rem;
+  background-repeat: no-repeat;
 
-  @media (min-width: $breakpoint-sm) {
-    text-align: center;
-  }
-
-  h2,
-  .stars,
-  .see-all-reviews {
-    color: $pink-700;
-  }
-
-  h2 {
-    font-size: $font-size-24;
-  }
+  // For aligning footer
+  position: relative;
 
   figure {
-    padding-top: $space-section-y-dynamic / 2;
-    padding-bottom: $space-section-y-dynamic;
+    padding: 2rem 2rem 4rem 2rem;
+    background-color: $fig-300;
+
+    .stars {
+      display: flex;
+      margin-bottom: 2rem;
+    }
 
     blockquote {
-      .stars,
       .review-title {
-        font-size: 1.75rem;
+        font-size: $font-size-xl;
         @media (min-width: $breakpoint-sm) {
-          font-size: 3rem;
+          font-size: $font-size-48;
         }
       }
 
@@ -162,11 +198,9 @@ article header {
 
         &:before {
           content: open-quote;
-          color: $pink-700;
         }
         &:after {
           content: close-quote;
-          color: $pink-700;
         }
       }
     }
@@ -178,7 +212,7 @@ article header {
           color: inherit;
 
           &:hover {
-            color: $pink-500;
+            color: $fig-500;
           }
         }
       }
@@ -186,6 +220,9 @@ article header {
   }
 
   .see-all-reviews {
+    position: absolute;
+    bottom: 1rem;
+
     @media (min-width: $breakpoint-sm) {
       font-size: $font-size-24;
     }
@@ -194,21 +231,13 @@ article header {
       color: inherit;
 
       &:hover {
-        color: $pink-500;
+        color: $fig-500;
       }
     }
   }
+}
 
-  .stars {
-    margin-top: 1.5rem;
-    margin-bottom: 0;
-  }
-
-  .overall-rating {
-    color: $pink-500;
-
-    span {
-      color: $white-500;
-    }
-  }
+// Override default footer styling, just on homepage
+body > .flow-content > footer {
+  background: $white-500;
 }

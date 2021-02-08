@@ -352,15 +352,14 @@ main > article.container {
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(12, 1fr);
   gap: 1rem;
 }
 .grid > * {
-  grid-column: span 1;
+  grid-column: span 12;
 }
 @media (min-width: 40rem) {
   .grid {
-    grid-template-columns: repeat(12, 1fr);
     gap: 1.5rem;
   }
   .grid > * {
@@ -873,6 +872,11 @@ input.search {
   background-color: #ddffe7 !important;
 }
 
+article header .button,
+.tidbit .button {
+  font-size: 1.75rem;
+}
+
 article header,
 .tidbit h2 {
   text-align: center;
@@ -900,19 +904,31 @@ article header {
   padding-top: 12rem;
   background-color: #ddffe7;
   background-image: url("/images/dithered/smoke-stack.png");
+  background-size: cover;
   background-repeat: repeat-x;
   background-position: bottom 12rem left 0px;
-  padding-bottom: 4rem;
+  padding-bottom: 6vh;
 }
 article header h1 {
   background-color: #ddffe7;
   color: #2bb151;
   max-width: 75vw;
   height: 48vh;
+  margin-bottom: 2vh;
+}
+article header .button {
+  position: relative;
+  top: 3rem;
+}
+article header p {
+  margin-top: 5.5rem;
+  margin-bottom: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .tidbit {
-  padding-top: 4rem;
+  padding-top: 5rem;
   background-repeat: no-repeat;
 }
 .tidbit h2 {
@@ -923,35 +939,49 @@ article header h1 {
 }
 .tidbit p:not(.disclaimer) {
   text-indent: 1.75rem;
-  font-size: 1.75rem;
-  line-height: 125%;
+  font-size: 1.75rem !important;
+  line-height: 115% !important;
 }
 .tidbit p:not(.disclaimer) span {
-  color: #52524c;
-}
-.tidbit .disclaimer {
   font-family: "JetBrainsMono", monospace;
   font-size: 0.75rem;
+  color: #30302c;
+  margin-left: -5px;
+  vertical-align: top;
+  position: relative;
+  top: -2px;
+}
+.tidbit aside {
+  margin-top: 2rem;
+}
+.tidbit aside .disclaimer {
+  font-family: "JetBrainsMono", monospace;
+  color: #30302c;
+  grid-column: 7/13;
 }
 .tidbit .button {
-  margin-bottom: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 .tidbit.give-fossil-fuels-the-flick {
   padding-bottom: 4rem;
   background-color: #ffe6e1;
-  background-image: url("/images/dithered/coal.png"), url("/images/dithered/smoke-stack-small.png"), url("/images/dithered/barrel.png");
-  background-position: top -2rem right -2rem, top 40vh right 50%, top 50vh right 0;
+  background-image: url("/images/dithered/barrel.png"), url("/images/dithered/smoke-stack-small-red.png"), url("/images/dithered/coal.png");
+  background-position: top 75vh right 0, top 40vh right 50%, top -2rem right -2rem;
 }
 .tidbit.give-fossil-fuels-the-flick h2 {
   background-color: #f04b23;
+  margin-bottom: 62vh;
 }
 .tidbit.your-money-talks {
+  padding-bottom: 3rem;
   background-color: #ffebb9;
   background-image: url("/images/dithered/dollar-coin.png"), url("/images/dithered/earth.png");
-  background-position: top -2vh right -20%, top 40vh left -20%;
+  background-position: top -2vh right -5rem, top 40vh left -20%;
 }
 .tidbit.your-money-talks h2 {
   background-color: #fac33c;
+  margin-bottom: 23vh;
 }
 .tidbit.your-money-talks .button {
   color: #140f14;
@@ -960,41 +990,38 @@ article header h1 {
 .tidbit.join-in-a-few-taps {
   background-color: #ddffe7;
   background-image: url("/images/dithered/wind-turbine.png"), url("/images/dithered/sunflower.png");
-  background-position: top 2rem left 2rem, bottom 2rem right 2rem;
+  background-position: top 2rem left -3rem, top 26vh right -4rem;
 }
 .tidbit.join-in-a-few-taps h2 {
   background-color: #2bb151;
+  margin-bottom: 10vh;
+}
+.tidbit.join-in-a-few-taps .button {
+  margin-bottom: 3rem;
 }
 
 .product-review-carousel {
-  padding: 4rem 0;
+  padding: 8rem 0;
   color: #000000;
   background-color: #f9ecf5;
-}
-@media (min-width: 40rem) {
-  .product-review-carousel {
-    text-align: center;
-  }
-}
-.product-review-carousel h2,
-.product-review-carousel .stars,
-.product-review-carousel .see-all-reviews {
-  color: #c445a2;
-}
-.product-review-carousel h2 {
-  font-size: 1.5rem;
+  background-image: url("/images/dithered/coal.png"), url("/images/dithered/smoke-stack-small-green.png");
+  background-position: top 0 left -4rem, bottom 2rem right -2rem;
+  background-repeat: no-repeat;
+  position: relative;
 }
 .product-review-carousel figure {
-  padding-top: 3rem;
-  padding-bottom: 6rem;
+  padding: 2rem 2rem 4rem 2rem;
+  background-color: #f9ecf5;
 }
-.product-review-carousel figure blockquote .stars,
+.product-review-carousel figure .stars {
+  display: flex;
+  margin-bottom: 2rem;
+}
 .product-review-carousel figure blockquote .review-title {
   font-size: 1.75rem;
 }
 @media (min-width: 40rem) {
-  .product-review-carousel figure blockquote .stars,
-.product-review-carousel figure blockquote .review-title {
+  .product-review-carousel figure blockquote .review-title {
     font-size: 3rem;
   }
 }
@@ -1012,11 +1039,9 @@ article header h1 {
 }
 .product-review-carousel figure blockquote .review-title:before {
   content: open-quote;
-  color: #c445a2;
 }
 .product-review-carousel figure blockquote .review-title:after {
   content: close-quote;
-  color: #c445a2;
 }
 .product-review-carousel figure figcaption cite {
   font-style: normal;
@@ -1025,7 +1050,11 @@ article header h1 {
   color: inherit;
 }
 .product-review-carousel figure figcaption cite a:hover {
-  color: #dc91c8;
+  color: #c851a3;
+}
+.product-review-carousel .see-all-reviews {
+  position: absolute;
+  bottom: 1rem;
 }
 @media (min-width: 40rem) {
   .product-review-carousel .see-all-reviews {
@@ -1036,17 +1065,11 @@ article header h1 {
   color: inherit;
 }
 .product-review-carousel .see-all-reviews a:hover {
-  color: #dc91c8;
+  color: #c851a3;
 }
-.product-review-carousel .stars {
-  margin-top: 1.5rem;
-  margin-bottom: 0;
-}
-.product-review-carousel .overall-rating {
-  color: #dc91c8;
-}
-.product-review-carousel .overall-rating span {
-  color: #ffffff;
+
+body > .flow-content > footer {
+  background: #ffffff;
 }
 
 /*# sourceMappingURL=home2.css.map */

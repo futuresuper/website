@@ -352,15 +352,14 @@ main > article.container {
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(12, 1fr);
   gap: 1rem;
 }
 .grid > * {
-  grid-column: span 1;
+  grid-column: span 12;
 }
 @media (min-width: 40rem) {
   .grid {
-    grid-template-columns: repeat(12, 1fr);
     gap: 1.5rem;
   }
   .grid > * {

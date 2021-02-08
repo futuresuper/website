@@ -4,12 +4,14 @@
       <div class="glide__slides">
         {% for item in productReviewSubset.latestReviews %}
         {% set reviewStarRating %}
-        {% for i in range(0, item.stars) %}★{% endfor %}
+        {% for i in range(0, item.stars) %}
+        <img src="/images/dithered/starburst.png" alt="A starburst">
+        {% endfor %}
         {% endset %}
 
         <figure class="glide__slide">
+          <div class="stars">{{ reviewStarRating | safe }}</div>
           <blockquote cite={{ item.url }}">
-            <p class="stars">{{ reviewStarRating }}</p>
             <p class="review-title">{{ item.title }}</p>
           </blockquote>
           <figcaption>{{ item.author }}, <cite><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer"><time
