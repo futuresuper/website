@@ -1,6 +1,7 @@
 @use "colours" as *;
 
 $line-height-xs: 115%;
+$line-height-125: 125%;
 $line-height-sm: 140%;
 $line-height-lg: 170%;
 
@@ -10,6 +11,8 @@ $font-size-sm: 0.875rem; // 14px
 $font-size-lg: 1.125rem; // 18px
 $font-size-24: 1.5rem; // 24px
 $font-size-xl: 1.75rem; // 28px
+$font-size-40: 2.5rem; // 40px
+$font-size-48: 3rem; // 48px
 
 $transition-text-hover: all 125ms ease-in-out;
 
@@ -86,6 +89,10 @@ p {
   color: $grey-400;
   font-size: 0.75rem;
   line-height: $line-height-sm;
+
+  a:hover {
+    color: $black-500;
+  }
 }
 
 .bold {
@@ -125,20 +132,4 @@ p {
 
 .red {
   color: $red-500;
-}
-
-table {
-  text-align: left;
-
-  // Add visual row gaps
-  border-collapse: separate;
-  border-spacing: 0 1rem;
-  // Remove byproduct visual gap above and below table
-  margin-top: -1rem;
-  margin-bottom: -1rem;
-
-  // Only apply horizontal padding if table has vertical headers, not horizontal
-  th:only-of-type {
-    padding-right: 3rem;
-  }
 }

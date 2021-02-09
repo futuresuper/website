@@ -14,7 +14,8 @@ button,
   font-weight: 700;
   padding: $space-button-padding-y-md $space-button-padding-x-md;
   &.full-width {
-    padding: $space-button-padding-y-md 0;
+    padding: $space-button-padding-x-md 0;
+    width: 100%;
   }
   border: 0;
   text-decoration: none;

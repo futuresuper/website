@@ -73,9 +73,10 @@ body {
     max-width: $breakpoint-md;
 
     // Set larger font-size for p, li, etc
-    p:not(.disclaimer),
-    ul,
-    ol {
+    > section > p:not(.disclaimer),
+    > p:not(.disclaimer),
+    > ul,
+    > ol {
       font-size: $font-size-lg;
       line-height: $line-height-lg;
     }
@@ -98,15 +99,14 @@ main > article.container {
 
 .grid {
   display: grid;
-  // Small screens default = 1 column
-  grid-template-columns: 1fr;
+  // Small screens default = 1 column (span 12 of 12)
+  grid-template-columns: repeat(12, 1fr);
   gap: 1rem;
   > * {
-    grid-column: span 1;
+    grid-column: span 12;
   }
   // Medium screens default = 2 columns (span 6 of 12)
   @media (min-width: $breakpoint-sm) {
-    grid-template-columns: repeat(12, 1fr);
     gap: 1.5rem;
     > * {
       grid-column: span 6;
@@ -161,6 +161,27 @@ main > article.container {
 
     @media (min-width: $breakpoint-lg) {
       grid-column: span 6;
+    }
+  }
+}
+
+table {
+  text-align: left;
+
+  // Add visual row gaps
+  border-collapse: separate;
+  border-spacing: 0 1rem;
+  // Remove byproduct visual gap above and below table
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+
+  // Only apply horizontal padding if table has horizontal headers, not vertical
+  th:only-of-type {
+    @media (min-width: $breakpoint-sm) {
+      padding-right: 1rem;
+    }
+    @media (min-width: $breakpoint-md) {
+      padding-right: 3rem;
     }
   }
 }

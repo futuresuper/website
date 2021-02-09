@@ -25,8 +25,8 @@ body > .flow-content > footer {
       margin-bottom: 1rem;
 
       a {
-        // text-decoration: none;
         color: $grey-800;
+        // text-decoration: none;
         text-decoration-color: transparent;
         transition: $transition-text-hover;
 
@@ -56,9 +56,10 @@ body > .flow-content > footer {
     }
 
     table.essential-fund-info {
-      grid-column: span 4;
+      // grid-column: span 8;
       grid-row: 2 / 2;
       border-spacing: 0;
+      border-collapse: collapse;
 
       @media (min-width: $breakpoint-sm) {
         grid-column: span 6;
@@ -118,10 +119,15 @@ body > .flow-content > footer {
           color: $grey-500;
         }
       }
+      &:not(:last-of-type) {
+        margin-bottom: 0.5rem;
+      }
     }
 
     @media (min-width: $breakpoint-sm) {
       flex-direction: row;
+      margin-bottom: 0;
+
       li:not(:last-of-type) {
         margin-right: 1.15rem;
 

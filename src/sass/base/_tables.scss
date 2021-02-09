@@ -116,6 +116,14 @@
 .table-intro {
   margin-bottom: 1rem;
   @extend %set-grid-rythmn-text-a;
+
+  > * {
+    grid-column: span 12;
+
+    @media (min-width: $breakpoint-md) {
+      grid-column: span 6;
+    }
+  }
 }
 
 .table-container {
@@ -356,4 +364,12 @@
   margin-top: -($space-section-y-dynamic / 2);
   margin-bottom: $space-section-y-dynamic;
   @extend %set-grid-rythmn-text-b;
+
+  > * {
+    grid-column: span 12;
+
+    @media (min-width: $breakpoint-md) {
+      grid-column: span 5;
+    }
+  }
 }
