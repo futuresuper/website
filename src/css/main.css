@@ -1202,8 +1202,23 @@ body > .flow-content > footer nav ul > li a:hover {
   text-decoration-color: #0a5aff;
   color: #0a5aff;
 }
+body > .flow-content > footer nav div:first-of-type .logo {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+}
+body > .flow-content > footer nav div:first-of-type .logo svg {
+  height: 1rem;
+  width: auto;
+}
+body > .flow-content > footer nav div:first-of-type .logo svg .fill-target {
+  fill: #000000;
+  transition: fill 100ms ease-in-out;
+}
+body > .flow-content > footer nav div:first-of-type .logo:hover svg .fill-target {
+  fill: #52524c;
+}
 @media (min-width: 48rem) {
-  body > .flow-content > footer .socials-list {
+  body > .flow-content > footer nav div:first-of-type {
     grid-column: span 4;
   }
 }

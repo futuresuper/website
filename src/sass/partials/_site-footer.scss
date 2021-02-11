@@ -38,9 +38,36 @@ body > .flow-content > footer {
     }
   }
 
-  .socials-list {
-    @media (min-width: $breakpoint-md) {
-      grid-column: span 4;
+  nav {
+    // Target only the socials list
+    // BUG: iPadOS removes this grid-column if this div has a class name beginning with "social"
+    // Such as the previous "socials-list"
+    div:first-of-type {
+      .logo {
+        display: inline-block;
+        margin-bottom: 0.75rem;
+
+        svg {
+          height: 1rem;
+          width: auto;
+
+          .fill-target {
+            fill: $black-900;
+            transition: fill 100ms ease-in-out;
+          }
+        }
+
+        &:hover {
+          svg {
+            .fill-target {
+              fill: $grey-500;
+            }
+          }
+        }
+      }
+      @media (min-width: $breakpoint-md) {
+        grid-column: span 4;
+      }
     }
   }
 
@@ -56,7 +83,6 @@ body > .flow-content > footer {
     }
 
     table.essential-fund-info {
-      // grid-column: span 8;
       grid-row: 2 / 2;
       border-spacing: 0;
       border-collapse: collapse;
