@@ -1016,6 +1016,7 @@ header[role=banner] section {
 header[role=banner] section .logo,
 header[role=banner] section .show-hide-mobile-menu {
   height: 2.5rem;
+  z-index: 5;
 }
 header[role=banner] section .logo svg .fill-target,
 header[role=banner] section .show-hide-mobile-menu svg .fill-target {
@@ -1031,14 +1032,10 @@ header[role=banner] section .logo {
   flex-direction: column;
   justify-content: center;
   margin-right: 2rem;
-  z-index: 2;
 }
 header[role=banner] section .logo svg {
   height: 1.25rem;
   width: auto;
-}
-header[role=banner] section .show-hide-mobile-menu {
-  z-index: 2;
 }
 header[role=banner] section .show-hide-mobile-menu .menu-button {
   cursor: pointer;
@@ -1130,7 +1127,7 @@ header[role=banner] section .show-hide-mobile-menu .menu-button#menu-button-clos
     width: 100%;
     padding: 5rem 1rem 3rem;
     position: fixed;
-    z-index: 1;
+    z-index: 4;
     left: 0;
     top: 0;
     background-color: #fbf9f9;
