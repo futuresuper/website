@@ -894,9 +894,313 @@ input.search {
   left: calc(100% - 2.5rem);
 }
 
-.article-content footer {
-  margin-top: 6rem;
-  color: #52524c;
+.flow-content {
+  background-color: #ddffe7 !important;
 }
 
-/*# sourceMappingURL=post.css.map */
+article header .button,
+.tidbit .button {
+  font-size: 1.75rem;
+  padding: 1rem 0;
+  width: 100%;
+}
+@media (min-width: 40rem) {
+  article header .button,
+.tidbit .button {
+    width: inherit;
+    padding: 1rem 10rem;
+  }
+}
+
+article header,
+.tidbit h2 {
+  text-align: center;
+}
+
+article header h1,
+.tidbit h2,
+article header .button,
+.tidbit .button {
+  font-weight: normal;
+}
+
+article header h1,
+.tidbit h2 {
+  margin: 0 auto 4rem;
+  line-height: 100%;
+  text-transform: uppercase;
+  font-size: clamp(3rem, 5vh, 5rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 48rem) {
+  article header h1,
+.tidbit h2 {
+    font-size: clamp(3rem, 9vh, 5rem);
+  }
+}
+
+article header {
+  margin-top: -16rem;
+  padding-top: 16rem;
+  padding-bottom: 6vh;
+  background-color: #ddffe7;
+  background-image: url("/images/dithered/smoke-stack.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top -16rem center;
+}
+@media (min-width: 48rem) {
+  article header {
+    background-image: url(/images/dithered/smoke-stack.png), url(/images/dithered/smoke-stack.png);
+    background-size: 32vh;
+    background-position: top 13rem left 25%, top 21rem right 25%;
+  }
+}
+article header h1 {
+  background-color: #ddffe7;
+  color: #2bb151;
+  margin-bottom: 0;
+  width: clamp(16rem, 62vw, 28rem);
+  height: clamp(22rem, 48vh, 50vh);
+}
+@media (min-width: 48rem) {
+  article header h1 {
+    width: clamp(28rem, 40vw, 28rem);
+    height: clamp(10rem, 56vh, 60rem);
+  }
+}
+article header .button {
+  position: relative;
+  top: 3rem;
+}
+article header p {
+  margin-top: 4.5rem;
+  margin-bottom: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  line-height: 125%;
+}
+
+.tidbit {
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+  background-repeat: no-repeat;
+}
+.tidbit h2 {
+  background-color: #f04b23;
+  color: rgba(255, 255, 255, 0.9);
+  width: clamp(16rem, 62vw, 21rem);
+  height: clamp(18rem, 48vh, 30rem);
+}
+@media (min-width: 48rem) {
+  .tidbit h2 {
+    width: clamp(16rem, 64vw, 24rem);
+    height: clamp(18rem, 54vh, 40rem);
+  }
+}
+.tidbit p:not(.disclaimer) {
+  text-indent: 1.75rem;
+  font-size: 1.75rem !important;
+  line-height: 115% !important;
+}
+@media (min-width: 48rem) {
+  .tidbit p:not(.disclaimer) {
+    font-size: 2.5rem !important;
+    text-indent: 3.5rem;
+  }
+}
+.tidbit p:not(.disclaimer) span {
+  font-family: "JetBrainsMono", monospace;
+  font-size: 0.75rem;
+  color: #30302c;
+  vertical-align: top;
+  position: relative;
+  top: -2px;
+}
+.tidbit aside {
+  margin-top: 2rem;
+}
+.tidbit aside .disclaimer {
+  font-family: "JetBrainsMono", monospace;
+  color: #52524c;
+}
+.tidbit .button {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.tidbit.give-fossil-fuels-the-flick {
+  background-color: #ffe6e1;
+  background-image: url("/images/dithered/barrel.png"), url("/images/dithered/smoke-stack-small-red.png"), url("/images/dithered/coal.png");
+  background-position: top 75vh right 0, top 40vh right 50%, top -2rem right -2rem;
+}
+@media (min-width: 48rem) {
+  .tidbit.give-fossil-fuels-the-flick {
+    background-position: top 50vh left 20%, top 30vh right 20%, top -2rem left 30%;
+  }
+}
+.tidbit.give-fossil-fuels-the-flick h2 {
+  background-color: #f04b23;
+  margin-bottom: 54vh;
+}
+@media (min-width: 48rem) {
+  .tidbit.give-fossil-fuels-the-flick h2 {
+    margin-top: 6vh;
+    margin-bottom: 24vh;
+  }
+}
+.tidbit.give-fossil-fuels-the-flick .disclaimer {
+  grid-column: 5/13;
+}
+.tidbit.your-money-talks {
+  background-color: #ffebb9;
+  background-image: url("/images/dithered/dollar-coin.png"), url("/images/dithered/earth.png");
+  background-position: top -2vh right -5rem, top 40vh left -20%;
+}
+@media (min-width: 48rem) {
+  .tidbit.your-money-talks {
+    background-position: top 4vh right 32%, top 50vh left 28%;
+  }
+}
+.tidbit.your-money-talks h2 {
+  background-color: #fac33c;
+  margin-bottom: 15vh;
+}
+@media (min-width: 48rem) {
+  .tidbit.your-money-talks h2 {
+    margin-top: 6vh;
+    margin-bottom: 24vh;
+  }
+}
+.tidbit.your-money-talks .button {
+  color: #140f14;
+  background-color: #fac33c;
+}
+.tidbit.your-money-talks .button:hover {
+  color: #ffffff;
+  background-color: #0a5aff;
+}
+.tidbit.your-money-talks .disclaimer {
+  grid-column: 4/13;
+}
+.tidbit.join-in-a-few-taps {
+  background-color: #ddffe7;
+  background-image: url("/images/dithered/wind-turbine.png"), url("/images/dithered/sunflower.png");
+  background-position: top 2rem left -5rem, top 34vh right -6rem;
+}
+@media (min-width: 48rem) {
+  .tidbit.join-in-a-few-taps {
+    background-position: top 10vh left 32%, top 48vh right 28%;
+  }
+}
+.tidbit.join-in-a-few-taps h2 {
+  background-color: #2bb151;
+  margin-bottom: 10vh;
+}
+@media (min-width: 48rem) {
+  .tidbit.join-in-a-few-taps h2 {
+    margin-top: 6vh;
+    margin-bottom: 24vh;
+  }
+}
+
+.product-review-carousel {
+  padding: 8rem 0;
+  color: #000000;
+  background-color: #f9ecf5;
+  background-image: url("/images/dithered/coal.png"), url("/images/dithered/smoke-stack-small-green.png");
+  background-position: top 0 left -4rem, bottom 7rem right -2rem;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.product-review-carousel figure {
+  padding: 2rem 2rem 6rem 2rem;
+  background-color: #f9ecf5;
+}
+.product-review-carousel figure .star-container {
+  display: flex;
+  margin-bottom: 2rem;
+}
+.product-review-carousel figure .star-container .star {
+  width: 42px;
+  height: 38px;
+  background-image: url("/images/dithered/starburst-sprite.png");
+  animation: moveStarX 1000ms steps(7) infinite;
+}
+.product-review-carousel figure .star-container .star:nth-of-type(2) {
+  animation-delay: 25ms;
+}
+.product-review-carousel figure .star-container .star:nth-of-type(3) {
+  animation-delay: 50ms;
+}
+.product-review-carousel figure .star-container .star:nth-of-type(4) {
+  animation-delay: 75ms;
+}
+.product-review-carousel figure .star-container .star:nth-of-type(5) {
+  animation-delay: 100ms;
+}
+@keyframes moveStarX {
+  from {
+    background-position-x: 0px;
+  }
+  to {
+    background-position-x: -294px;
+  }
+}
+.product-review-carousel figure blockquote .review-title {
+  font-size: 1.75rem;
+}
+@media (min-width: 40rem) {
+  .product-review-carousel figure blockquote .review-title {
+    font-size: 3rem;
+  }
+}
+.product-review-carousel figure blockquote .review-title {
+  line-height: 130%;
+  margin-right: 4rem;
+  text-indent: -0.5rem;
+}
+@media (min-width: 40rem) {
+  .product-review-carousel figure blockquote .review-title {
+    margin-right: 0;
+    line-height: 120%;
+    text-indent: 0;
+  }
+}
+.product-review-carousel figure blockquote .review-title:before {
+  content: open-quote;
+}
+.product-review-carousel figure blockquote .review-title:after {
+  content: close-quote;
+}
+.product-review-carousel figure figcaption cite {
+  font-style: normal;
+}
+.product-review-carousel figure figcaption cite a {
+  color: inherit;
+}
+.product-review-carousel figure figcaption cite a:hover {
+  color: #c851a3;
+}
+.product-review-carousel .see-all-reviews {
+  position: absolute;
+  bottom: 1rem;
+}
+@media (min-width: 40rem) {
+  .product-review-carousel .see-all-reviews {
+    font-size: 1.5rem;
+  }
+}
+.product-review-carousel .see-all-reviews a {
+  color: inherit;
+}
+.product-review-carousel .see-all-reviews a:hover {
+  color: #c851a3;
+}
+
+body > .flow-content > footer {
+  background: #ffffff;
+}
+
+/*# sourceMappingURL=home2.css.map */

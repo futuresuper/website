@@ -10,9 +10,8 @@
 }
 
 .option-card-large-container {
-  @media (min-width: $breakpoint-sm) {
-    grid-column: span 12;
-  }
+  grid-column: span 12;
+
   @media (min-width: $breakpoint-md) {
     grid-column: span 4;
   }

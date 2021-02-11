@@ -1,0 +1,15 @@
+{% extends "layouts/base.html" %}
+
+{% set pageHeaderTitle = title %}
+
+{% block content %}
+<article class="container">
+  {% include "partials/page-header.html" %}
+
+  <div class="article-content">
+    <h2>Uh oh. Looks like we divested from this URL too...</h2>
+    <p>We can't find a page here. Try going back to the previous page or see our <a href="/support-and-faqs">Support and
+        FAQs</a> for more info.</p>
+  </div>
+</article>
+{% endblock %}

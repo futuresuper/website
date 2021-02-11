@@ -3,11 +3,7 @@ title: "Performance and Returns"
 layout: "layouts/performance-and-returns.html"
 data: performanceReturns
 description: See the competitive performance of our funds over the short, medium and long term.
-pageFaqs:
-  - question: "This is a placeholder question"
-    answer: "This is a placeholder answer. Both this question and answer should come from our Knowledge Base."
-  - question: "This is another placeholder question"
-    answer: "This is a placeholder answer. Both this question and answer should come from our Knowledge Base."
+faqCategory: "Investments and returns"
 alsoSee:
   - Investment Options
   - Pension Fund

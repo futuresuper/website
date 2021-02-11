@@ -149,6 +149,9 @@ p a:hover {
   font-size: 0.75rem;
   line-height: 140%;
 }
+.disclaimer a:hover {
+  color: #140f14;
+}
 
 .bold {
   font-weight: 700;
@@ -189,23 +192,12 @@ p a:hover {
   color: #f04b23;
 }
 
-table {
-  text-align: left;
-  border-collapse: separate;
-  border-spacing: 0 1rem;
-  margin-top: -1rem;
-  margin-bottom: -1rem;
-}
-table th:only-of-type {
-  padding-right: 3rem;
-}
-
 details,
 .doc-or-form-item li,
 .career-item li {
   border: 1px solid #000000;
   background-color: #ffffff;
-  transition: background-color 150ms ease-in-out;
+  transition: background-color 550ms ease-in-out;
 }
 details:not(:last-of-type),
 .doc-or-form-item li:not(:last-of-type),
@@ -230,6 +222,9 @@ details .contents {
   margin-bottom: 0;
   line-height: 160%;
   border-top: 1px solid #000000;
+}
+details .contents :last-child {
+  margin-bottom: 0;
 }
 
 .doc-or-form-item li:hover,
@@ -329,9 +324,10 @@ body.mobile-menu-active.aoc-active {
   margin: 0 auto;
   max-width: 48rem;
 }
-.container .article-content p:not(.disclaimer),
-.container .article-content ul,
-.container .article-content ol {
+.container .article-content > section > p:not(.disclaimer),
+.container .article-content > p:not(.disclaimer),
+.container .article-content > ul,
+.container .article-content > ol {
   font-size: 1.125rem;
   line-height: 170%;
 }
@@ -348,15 +344,14 @@ main > article.container {
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(12, 1fr);
   gap: 1rem;
 }
 .grid > * {
-  grid-column: span 1;
+  grid-column: span 12;
 }
 @media (min-width: 40rem) {
   .grid {
-    grid-template-columns: repeat(12, 1fr);
     gap: 1.5rem;
   }
   .grid > * {
@@ -418,6 +413,24 @@ main > article.container {
   }
 }
 
+table {
+  text-align: left;
+  border-collapse: separate;
+  border-spacing: 0 1rem;
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+}
+@media (min-width: 40rem) {
+  table th:only-of-type {
+    padding-right: 1rem;
+  }
+}
+@media (min-width: 48rem) {
+  table th:only-of-type {
+    padding-right: 3rem;
+  }
+}
+
 .callout {
   margin-top: 6rem;
   margin-bottom: 6rem;
@@ -446,7 +459,8 @@ button,
 }
 button.full-width,
 .button.full-width {
-  padding: 1rem 0;
+  padding: 2rem 0;
+  width: 100%;
 }
 button.primary,
 .button.primary {
@@ -564,6 +578,14 @@ input.search {
 
 .table-intro {
   margin-bottom: 1rem;
+}
+.table-intro > * {
+  grid-column: span 12;
+}
+@media (min-width: 48rem) {
+  .table-intro > * {
+    grid-column: span 6;
+  }
 }
 
 .table-container {
@@ -804,6 +826,14 @@ input.search {
   margin-top: -3rem;
   margin-bottom: 6rem;
 }
+.table-disclaimers > * {
+  grid-column: span 12;
+}
+@media (min-width: 48rem) {
+  .table-disclaimers > * {
+    grid-column: span 5;
+  }
+}
 
 .tooltip {
   position: relative;
@@ -869,13 +899,9 @@ input.search {
 }
 
 .option-card-large-container {
+  grid-column: span 12;
   display: flex;
   flex-direction: column;
-}
-@media (min-width: 40rem) {
-  .option-card-large-container {
-    grid-column: span 12;
-  }
 }
 @media (min-width: 48rem) {
   .option-card-large-container {

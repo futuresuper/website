@@ -1,9 +1,16 @@
+@use "../base" as *;
+
 address {
   margin-top: 3rem;
 
   dl {
     .item {
-      grid-column: span 4;
+      margin-bottom: 2rem;
+
+      @media (min-width: $breakpoint-md) {
+        grid-column: span 4;
+        margin-bottom: 0;
+      }
 
       dt {
         line-height: 100%;
