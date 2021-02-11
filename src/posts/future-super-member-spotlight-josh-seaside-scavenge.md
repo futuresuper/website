@@ -2,18 +2,17 @@
 title: "Future Super Member Spotlight: Josh @ Seaside Scavenge"
 slug: future-super-member-spotlight-josh-seaside-scavenge
 date: 2019-07-16T05:09:13.860Z
-tags: 
+tags:
   - Community
   - Environment
 author: James Wanjura
-canonical: 
-summary: >-
+canonical:
+description: >-
   We chat with passionate climate activist and proud Future Super member Josh about an impressive waterway cleanup project.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834011622cd3dac_team-sea-scavenge-tiny.jpg
 ---
 
-Seaside Scavenge is a waterway cleanup and clothes swap event where litter becomes the currency to purchase pre-loved clothes, books and more at our pop-up market.
--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## Seaside Scavenge is a waterway cleanup and clothes swap event where litter becomes the currency to purchase pre-loved clothes, books and more at our pop-up market.
 
 ### The Scavenge invites local musicians to create a friendly vibe, facilitate plastic-free living and marine debris talks by local environmental leaders.
 
@@ -37,13 +36,13 @@ This led me to start a small business, [The Developing Clean](http://www.thedeve
 
 When I arrived in Sydney at the beginning of 2017 I didn’t really know anyone and so I quickly sought to make connections. Since I had recently started my own journey into the world of environmental do-goodery it was easy for me to find some of the local heroes. I came across [AJ Linke](https://www.linkedin.com/in/anna-jane-linke-49745813b/) who is the founder of Seaside Scavenge.
 
-I reached out to AJ and before long was volunteering my time with the Seaside Scavenge. I was tasked with business engagement and also helped volunteer at a couple of local events. 
+I reached out to AJ and before long was volunteering my time with the Seaside Scavenge. I was tasked with business engagement and also helped volunteer at a couple of local events.
 
 Skip forward to the end of 2018 and AJ was ready to bring on a Seaside Scavenge employee. I was humbled that she thought of me.
 
 #### What does Seaside Scavenge do? What impact has it had?
 
-Seaside Scavenge is a waterway cleanup and clothes swap event where litter becomes the currency to purchase pre-loved clothes, books and more at our pop-up market. 
+Seaside Scavenge is a waterway cleanup and clothes swap event where litter becomes the currency to purchase pre-loved clothes, books and more at our pop-up market.
 
 Seaside Scavenge includes the community by inviting local musicians to create a friendly vibe throughout the day as well as asking local community groups to facilitate plastic-free living and marine conservation talks.
 
@@ -65,23 +64,22 @@ Sea Scavenge volunteers showing off their hard work!
 
 > **36** communities where we’ve hosted a Scavenge
 
-Seaside Scavenge has recently launched the ‘Spring Into Scavenge’ program which will empower communities around the globe to run their own Seaside Scavenge and become custodians of the ocean. 
+Seaside Scavenge has recently launched the ‘Spring Into Scavenge’ program which will empower communities around the globe to run their own Seaside Scavenge and become custodians of the ocean.
 
 #### Seaside Scavenge is a creative solution to the problem of waste - what's something you would tell someone who thinks we can't do anything about the problems we face?
 
-I would tell them that we can do a lot about the problems we face! Indeed we are doing a lot. 
+I would tell them that we can do a lot about the problems we face! Indeed we are doing a lot.
 
 Here’s a couple of pointers for the do-gooders who are keen to create a positive impact:
 
-*   Educate yourself about the current issues we are facing as a species.
-*   [Write letters to, and visit your local council or government.](https://www.aph.gov.au/Senators_and_Members/Parliamentarian_Search_Results?q=&mem=1&par=-1&gen=0&ps=0)
-*   [Support local community groups.](http://www.seasidescavenge.org/support-the-scavenge/)
-*   Consider eating less meat & dairy.
-*   Ride your bike or walk when you can.
-*   Try to reduce consumption.
-*   Use renewable energy if you can.
-*   [Shop Locally.](https://www.thedevelopingclean.com/shop)
-*   [Carry Reusables](https://www.thedevelopingclean.com/shop)
+- Educate yourself about the current issues we are facing as a species.
+- [Write letters to, and visit your local council or government.](https://www.aph.gov.au/Senators_and_Members/Parliamentarian_Search_Results?q=&mem=1&par=-1&gen=0&ps=0)
+- [Support local community groups.](http://www.seasidescavenge.org/support-the-scavenge/)
+- Consider eating less meat & dairy.
+- Ride your bike or walk when you can.
+- Try to reduce consumption.
+- Use renewable energy if you can.
+- [Shop Locally.](https://www.thedevelopingclean.com/shop)
+- [Carry Reusables](https://www.thedevelopingclean.com/shop)
 
 Visit [Support The Scavenge](https://www.seasidescavenge.org/support-the-scavenge) to find out more.
-

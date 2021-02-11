@@ -2,11 +2,11 @@
 title: "NYC vs Fossil Fuels: the Big Apple’s clever plan to take down Big Polluters"
 slug: nyc-vs-fossil-fuels-the-big-apples-clever-plan-to-take-down-big-polluters
 date: 2019-02-06T09:14:17.951Z
-tags: 
+tags:
   - Disruption
 author: Michael Bones
-canonical: 
-summary: >-
+canonical:
+description: >-
   New York City is suing 5 fossil fuel giants and divesting billions from big polluters
 
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834017884cd3dbd_nyc%20(1).png
@@ -18,8 +18,7 @@ The iconic city’s decision to divest comes with an added kick in the teeth to 
 
 ‍
 
-Why NYC Is Suing Fossil Fuel Companies
---------------------------------------
+## Why NYC Is Suing Fossil Fuel Companies
 
 In an extraordinary step, New York City will take to court five fossil fuel heavyweights - BP, Exxon Mobil, Chevron, ConocoPhillips and Shell - for their contribution to climate change.
 
@@ -29,7 +28,7 @@ The cost of climate pollution is being carried by ordinary people and local gove
 
 New Yorkers face serious threats from bigger, more frequent storms and rising seas. The cost of protecting low-lying areas like JFK airport and lower Manhattan will be astronomical, requiring tens of billions of dollars from the Big Apple’s budget.
 
-**Mayor de Blasio is adamant big polluters should pay.** 
+**Mayor de Blasio is adamant big polluters should pay.**
 
 > “It’s up to the fossil fuel companies whose greed put us in this position to shoulder the cost of making New York safer and more resilient,” he says.
 
@@ -37,16 +36,15 @@ The mayor’s core argument is that [fossil fuel companies have known for decad
 
 ‍
 
-Why is NYC divesting from fossil fuels?
----------------------------------------
+## Why is NYC divesting from fossil fuels?
 
-[Divestment](https://www.myfuturesuper.com.au/blog/the-climate-solution-millions-are-missing) is the act of selling shares or assets in a particular company or industry. 
+[Divestment](https://www.myfuturesuper.com.au/blog/the-climate-solution-millions-are-missing) is the act of selling shares or assets in a particular company or industry.
 
 The case for divesting from fossil fuels has two main arguments: moral and financial.
 
 ### The moral argument for divestment
 
-The moral case for divesting from fossil fuels is clear. Climate change is one of the biggest threats to human and environmental wellbeing, and burning fossil fuels is the leading cause of dangerous warming. 
+The moral case for divesting from fossil fuels is clear. Climate change is one of the biggest threats to human and environmental wellbeing, and burning fossil fuels is the leading cause of dangerous warming.
 
 Bill McKibben, author and environmentalist, puts it perfectly: “If it is wrong to wreck the planet, then it is wrong to profit from that wreckage.”
 
@@ -62,8 +60,7 @@ The emerging Renewable Age means fossil fuel companies risk becoming stranded as
 
 ‍
 
-Australians as global leaders in divestment
--------------------------------------------
+## Australians as global leaders in divestment
 
 New York City’s impressive divestment announcement is part of a [global trend](https://gofossilfree.org/divestment/commitments/). Money is pouring out of fossil fuels. Already more than 800 institutions and 58,000 individuals have divested roughly $6 trillion from coal, oil, gas, and the banks that finance them.
 
@@ -75,7 +72,7 @@ Australia has a unique mandatory savings initiative called superannuation.
 
 Thanks to super, nearly 10% of every paycheck goes to a special account where it is invested throughout our entire lives.
 
-The Australian stock market has been described as “[a carbon bomb waiting to explode](http://reneweconomy.com.au/australian-stock-market-resembles-carbon-bomb-waiting-explode-83036/),” and unfortunately almost all mainstream super funds invest in fossil fuels. That means most people are exposed to fossil fuel assets. 
+The Australian stock market has been described as “[a carbon bomb waiting to explode](http://reneweconomy.com.au/australian-stock-market-resembles-carbon-bomb-waiting-explode-83036/),” and unfortunately almost all mainstream super funds invest in fossil fuels. That means most people are exposed to fossil fuel assets.
 
 The good news is that through super we have a lot of financial muscle to flex, and almost everyone can [easily divest from fossil fuels!](https://www.myfuturesuper.com.au/switch/go-fossil-free?utm_source=blog&utm_medium=website&utm_campaign=NYC%20vs%20Fossil%20Fuels&utm_content=)
 
@@ -98,4 +95,3 @@ It’s all online, and with our smart technology you can find all your old acco
 With New York City’s explosive divestment announcement today, 2018 is shaping up to become the year that fossil fuels divestment goes mainstream. If you care about action on climate change, you can make sure your super is free from coal, oil and gas.
 
 > [**Click here to join the fossil free movement today**](https://www.myfuturesuper.com.au/switch/go-fossil-free?utm_source=blog&utm_medium=website&utm_campaign=NYC%20vs%20Fossil%20Fuels&utm_content=)
-

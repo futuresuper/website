@@ -1,6 +1,7 @@
 ---
 title: "Blog"
 summary: "What’s new at Future Super."
+description: Stories and articles from the Future Super blog. Read about the clean energy revolution, the divestment movement, super industry and more.
 layout: "layouts/blog.html"
 pageStyles: ["src/css/pages/blog.css"]
 data: collections.blog

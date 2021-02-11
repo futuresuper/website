@@ -2,11 +2,11 @@
 title: "How activism lends itself to other decisions you make in your life"
 slug: activism-and-self-development
 date: 2020-07-13T08:19:24.068Z
-tags: 
+tags:
   - Activism
 author: Brett Morgan
-canonical: 
-summary: >-
+canonical:
+description: >-
   Future Super Member Advocate Brett Morgan argues that activism is a necessary part of living a truly meaningful life.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834010ca8cd3e3f_Hero%20Image.jpg
 ---
@@ -40,4 +40,3 @@ Further to this, we also know that activism strengthens one’s sense of agency 
 The kind of self-determination that comes along with being an activist is the kind that leads to a more fulfilling life. By engaging in activism, we are actively practicing and therefore living out our values, meaning that we are more inclined to make decisions in life that align with these values. This is what it means to close the value-action gap; by fighting for the world that we believe in, us activists are able to overcome the cognitive dissonance experienced when our vision of the world doesn’t quite line up with how we act within it.
 
 #### **If you want to live a truly satisfying life, stand up for what you believe in. Live out your values. Go on. Do it.**
-

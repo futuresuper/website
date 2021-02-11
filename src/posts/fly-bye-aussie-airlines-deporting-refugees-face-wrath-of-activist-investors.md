@@ -2,11 +2,11 @@
 title: "Fly Bye: Aussie Airlines Deporting Refugees Face Wrath of Activist Investors"
 slug: fly-bye-aussie-airlines-deporting-refugees-face-wrath-of-activist-investors
 date: 2019-02-05T19:00:48.920Z
-tags: 
+tags:
   - Activism
 author: Michael Bones
-canonical: 
-summary: >-
+canonical:
+description: >-
   Why ethical investors are targeting Qantas
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc483401e473cd3c32_Blog%201200x630.png
 ---
@@ -15,7 +15,7 @@ image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc483401e4
 
 Their clever marketers have spent millions on emotive ads designed to tug at your heartstrings.
 
- 
+
 
 ‍
 
@@ -43,14 +43,13 @@ _It’s good to know where your journey ends_
 
 ‍
 
-Go Back To Where You Came From
-------------------------------
+## Go Back To Where You Came From
 
 In 2018 there’s nothing more Australian than imprisoning refugees indefinitely or sending them back into harm’s way.
 
 Just Google “refugee death Australia” and prepare to be sickened.
 
-[2006](https://www.smh.com.au/world/rejected-refugees-sent-home-to-die-families-tell-harrowing-stories-20060808-gdo4q7.html). [2009](https://www.smh.com.au/national/the-asylum-seeker-we-sent-home-to-his-death-20141112-9l57.html). [2018](https://www.themonthly.com.au/today/paddy-manning/2018/24/2018/1527140474/death-manus). 
+[2006](https://www.smh.com.au/world/rejected-refugees-sent-home-to-die-families-tell-harrowing-stories-20060808-gdo4q7.html). [2009](https://www.smh.com.au/national/the-asylum-seeker-we-sent-home-to-his-death-20141112-9l57.html). [2018](https://www.themonthly.com.au/today/paddy-manning/2018/24/2018/1527140474/death-manus).
 
 Dead refugees are becoming our legacy, a tragedy built upon the white-ant foundations of colonialism and racist immigration policy.
 
@@ -72,8 +71,7 @@ Abdul, another Hazara Afghan deported after 16 months on Christmas Island and Na
 
 _\*Quotes originally reported in the_ [_SMH_](https://www.smh.com.au/world/rejected-refugees-sent-home-to-die-families-tell-harrowing-stories-20060808-gdo4q7.html)_._
 
-Why Ethical Investors are Targeting Airlines
---------------------------------------------
+## Why Ethical Investors are Targeting Airlines
 
 People like Ghulam and Abdul don’t fly themselves back home. Airlines like Qantas and Virgin do.
 
@@ -95,16 +93,15 @@ Qantas is digging in their heels, saying: “The government and courts are best 
 
 However, airlines in the [US](https://qz.com/1311588/which-us-airlines-are-not-working-with-ice/) and [UK](https://www.independent.co.uk/news/business/virgin-atlantic-deportations-uk-home-office-windrush-scandal-latest-airline-a8423886.html) have taken a stand on this very issue, refusing to deport refugees and immigrants against their will.
 
-4\. Things You Can Do
----------------------
+## 4\. Things You Can Do
 
 ### 1\. Give Qantas a piece of your mind
 
 Reach out to Qantas and tell them what you think about their role in sending refugees back into danger.
 
-*   Facebook: [https://www.facebook.com/Qantas/](https://www.facebook.com/Qantas/)
-*   Twitter: [https://twitter.com/Qantas](https://twitter.com/Qantas)
-*   Instagram: [https://www.instagram.com/Qantas/](https://www.instagram.com/Qantas/)
+- Facebook: [https://www.facebook.com/Qantas/](https://www.facebook.com/Qantas/)
+- Twitter: [https://twitter.com/Qantas](https://twitter.com/Qantas)
+- Instagram: [https://www.instagram.com/Qantas/](https://www.instagram.com/Qantas/)
 
 ### 2\. Contact your super fund
 
@@ -121,4 +118,3 @@ Future Super already does not invest in Qantas or Virgin because we completely e
 If you do own shares in Qantas and Virgin and don’t want to sell them, you can lobby these companies to change their refugee policy by [joining the ACCR shareholder resolution here](https://accr.org.au/qantas/).
 
 **Whichever action you choose, thank you for showing the better side of the Australian spirit.**
-

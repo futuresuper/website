@@ -2,14 +2,14 @@
 title: "Top 3 Ethical Investments in 2017"
 slug: top-3-ethical-investments-in-2017
 date: 2019-02-06T09:22:57.036Z
-tags: 
+tags:
   - Disruption
   - Divestment
   - Renewable Energy
 author: Michael Bones
-canonical: 
-summary: >-
-  Ethical superannuation is not just about avoiding harmful industries. It’s also about investing to make a positive impact and generate a strong return. Here’s how Future Super’s top 3 ethical investments for the 2016-17 financial year stack up for investment impact and return potential. 
+canonical:
+description: >-
+  Ethical superannuation is not just about avoiding harmful industries. It’s also about investing to make a positive impact and generate a strong return. Here’s how Future Super’s top 3 ethical investments for the 2016-17 financial year stack up for investment impact and return potential.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834012e86cd3e37_top%203%20ethical%20investments%20(1).png
 ---
 
@@ -21,14 +21,13 @@ Future Super members get this. That’s why they’ve joined Australia’s first
 
 However, ethical superannuation is not just about avoiding harmful industries. It’s also about investing to make a positive impact and generate a strong return.
 
-#### _[Want your super invested in clean energy and other ethical industries? Switch to Future Super in just 2 minutes.](https://join.myfuturesuper.com.au/)_   
+#### *[Want your super invested in clean energy and other ethical industries? Switch to Future Super in just 2 minutes.](https://join.myfuturesuper.com.au/)* 
 
 Here’s how Future Super’s top 3 ethical investments for the 2016-17 financial year stack up for investment impact and return potential.
 
-![Future Super image of solar panels and wind farm](https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834012e86cd3e37_top%203%20ethical%20investments%20(1).png)
+![Future Super image of solar panels and wind farm](<https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834012e86cd3e37_top%203%20ethical%20investments%20(1).png>)
 
-**1\. IIG Solar Income Fund**
------------------------------
+## **1\. IIG Solar Income Fund**
 
 Thanks to renewable energy, humanity is finally breaking its addiction to burning fossil fuels.
 
@@ -38,15 +37,15 @@ Through the Impact Investment Group Solar Income Fund, Future Super members are 
 
 The $100 million Solar Income Fund will finance up to 7 new solar farms across the country. Some solar farms have already come online, like projects at Mt Majura in the ACT and Karratha in WA.
 
- 
+
 
 ### **Powering 9,000 homes**
 
 Here are just some of the positive impacts to come from these solar developments (according to research by IIG):
 
-*   Reduction in carbon dioxide emissions by 1.2 million tonnes
-*   Power 9,000 homes with clean energy
-*   Save 16,000 Australians from pollution-related disease and generate $57 million in health and environmental savings by displacing harmful fossil fuels
+- Reduction in carbon dioxide emissions by 1.2 million tonnes
+- Power 9,000 homes with clean energy
+- Save 16,000 Australians from pollution-related disease and generate $57 million in health and environmental savings by displacing harmful fossil fuels
 
 ### **Target return of 10% per annum**
 
@@ -54,8 +53,7 @@ Renewable energy infrastructure developments stack up ethically and financially.
 
 Each solar farm has long-term, reliable revenue streams at fixed prices from counterparties of high credit quality including territory and local government.
 
-**2\. Artesian Clean Energy Seed Fund**
----------------------------------------
+## **2\. Artesian Clean Energy Seed Fund**
 
 While the Solar Income Fund is building new renewable infrastructure today, we know that’s not enough. Climate change is a complex problem, and new solutions are needed quickly if we’re to keep warming below 2 degrees.
 
@@ -83,8 +81,7 @@ By investing in new clean tech startups challenging the business-as-usual approa
 
 The Clean Energy Seed Fund is unique in offering a broad exposure to the early stage clean energy industry in Australia. There is likely an early mover advantage to access premium deals and conditions with the incubators. However, given the current rapid evolution of energy technology, picking winning technologies is inherently difficult. The Seed Fund’s diversification across 30-50 startups spreads this risk, as does the structure of selecting opportunities that have already passed through an incubation period with Australia’s leading start-up labs. This structure is an optimal method for controlling risk and supporting the growth of Australia’s clean energy industry.
 
-**3\. Aspire Social Impact Bond**
----------------------------------
+## **3\. Aspire Social Impact Bond**
 
 While other super funds invest in fossil fuels, tobacco and poker machines, Future Super looks for investments that have strong return potential _and_ do good.
 
@@ -108,7 +105,7 @@ Under the Aspire service model, participants are provided stable accommodation, 
 
 It is anticipated that around 600 adults who are experiencing homelessness will be referred to the Aspire Program over a four year period. Each person will be offered support for up to three years.
 
- 
+
 
 ### **Direct positive impact for 600 Australian’s needing help**
 
@@ -129,4 +126,3 @@ People experiencing homelessness visit hospitals and get caught up in the crimin
 By funding programs to reduce homelessness, investors can earn a return by creating savings for the government. That’s why the Aspire Social Impact Bond is backed by the South Australian government. Through the bond, investors like Future Super provide up-front capital to help the Aspire program expand. The more effective the Aspire program is at reducing homelessness, the higher the return to investors.
 
 Another exciting thing about social impact bonds is that they help money flow to social programs that work. As the benefits of healthy people and a healthy society are more widely recognised, the social services sector will be able to unlock more investment. This will lead to increased innovation in social programs, and an incentive to find ways to genuinely improve people’s lives.
-

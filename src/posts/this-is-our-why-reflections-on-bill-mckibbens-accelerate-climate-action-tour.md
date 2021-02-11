@@ -2,15 +2,15 @@
 title: "This Is Our Why: reflections on Bill McKibben's Accelerate Climate Action Tour"
 slug: this-is-our-why-reflections-on-bill-mckibbens-accelerate-climate-action-tour
 date: 2018-05-16T03:18:10.815Z
-tags: 
+tags:
   - Activism
   - Divestment
   - Environment
   - Ethical Investing
 author: Kirstin Hunter
-canonical: 
-summary: >-
-  If you missed it Bill McKibben's Accelerate Climate Action Tour, here's what you need to know. 
+canonical:
+description: >-
+  If you missed it Bill McKibben's Accelerate Climate Action Tour, here's what you need to know.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834018910cd3baa_this-is-our-why-blog-post%20(1).png
 ---
 
@@ -18,11 +18,11 @@ Last week Future Super was proud team up with [Impact Investment Group](https:
 
 ### Who Is Bill McKibben?
 
-For those who don’t know, nearly 30 years ago Bill wrote _The End of Nature,_ the world’s first book for public consumption on climate change_._ Bill has since gone on to write many more books, and founded 350.org, a global movement spanning 188 countries and hundreds of thousands of people demanding action from governments and corporations to divest from fossil fuels and move towards a zero-carbon economy.
+For those who don’t know, nearly 30 years ago Bill wrote _The End of Nature,_ the world’s first book for public consumption on climate change*.* Bill has since gone on to write many more books, and founded 350.org, a global movement spanning 188 countries and hundreds of thousands of people demanding action from governments and corporations to divest from fossil fuels and move towards a zero-carbon economy.
 
 These events have been a powerful call to action. The Sydney leg was opened by 350.org Australia’s founder Blair Palese, followed by Sydney’s Deputy Lord Mayor [Jess Miller](https://www.smh.com.au/national/nsw/jess-miller-becomes-youngest-deputy-lord-mayor-of-city-of-sydney-20170919-gyk2ns.html), who spoke about the reality that local government will increasingly be called upon to respond to the climate-related weather events.
 
-Next up, the man himself – Bill McKibben, who gave some background on his role in the climate movement, and what it takes to build a global movement. 
+Next up, the man himself – Bill McKibben, who gave some background on his role in the climate movement, and what it takes to build a global movement.
 
 ### **McKibben laid out three principles for stopping climate pollution**
 
@@ -34,7 +34,7 @@ Next up, the man himself – Bill McKibben, who gave some background on his role
 
 These points were illustrated by Joseph Scales from [Repower Port Augusta](http://repowerportaugusta.org/) and Zane Sikulu from [Pacific Climate Warriors](https://350pacific.org/pacific-climate-warriors/). In the middle, we heard from Jo Dodds who survived the recent bushfires in Tathra. Jo spoke with anger and passion about her response to the Prime Minister’s statement (taking a leaf out of the NRA’s playbook) that the aftermath of the bushfires was not the time to discuss climate change politics. The next morning Jo sent a message to the PM from the smouldering ashes of the bush behind her home – it is visceral, powerful, and well worth a watch.
 
- 
+
 
 While the content of the night was sobering, the message was one of hope – we can still stop the rise of CO2 and the destruction of our planet, but we must act now, and we must act quickly.
 
@@ -67,7 +67,7 @@ Our superannuation has huge potential to shape our future world. Groundbreaking 
 
 Future Super's cofounder, Simon Sheikh, managed to grab a moment with Bill McKibben to discuss the report, the role of super in investing in Australia's clean energy transition, and Future Super's new renewables-focused investment option.
 
- 
+
 
 ### **THIS. IS. WHY.**
 
@@ -78,4 +78,3 @@ Not only do we passionately believe that divesting from fossil fuels and reinves
 > [**Want to be part of the fossil-free super movement? Join today in 2 minutes.**](http://www.myfuturesuper.com.au)
 
 ‍
-

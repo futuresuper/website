@@ -2,13 +2,13 @@
 title: "5 Reasons to Care About Your Super"
 slug: 5-reasons-to-care-about-your-super
 date: 2019-02-06T10:28:21.410Z
-tags: 
+tags:
   - Environment
   - Divestment
   - Disruption
 author: Noelle Greenwood
-canonical: 
-summary: >-
+canonical:
+description: >-
   Why should you care about your super? Future Super shows how your superannuation choices can make the world a better place – now and in the future.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834016550cd3ce8_5-reasons-to-care_main-image.jpg
 ---
@@ -21,14 +21,13 @@ Did you know that many super funds actually invest in some pretty terrible thing
 
 ### [_Do you care about a sustainable future? Make the switch to Future Super in only 2 minutes._](https://join.myfuturesuper.com.au/)
 
-1\. Super is **real** money. And it’s yours.
---------------------------------------------
+## 1\. Super is **real** money. And it’s yours.
 
 Need a good reason to care about your superannuation? Reason number 1: Super is _your_ money, so you should be able to choose where it goes.
 
- 
 
-Even though you can’t access it until closer to retirement, superannuation is money _you earned_ that gets invested on your behalf. It can be easy to forget that _super is your money_, but ultimately, you have more control over it than you think.  
+
+Even though you can’t access it until closer to retirement, superannuation is money _you earned_ that gets invested on your behalf. It can be easy to forget that _super is your money_, but ultimately, you have more control over it than you think.
 
 While you don't have much say over where individual superannuation funds choose to invest your hard earned cash, you can choose which super fund is right for you based on your beliefs and values.
 
@@ -36,37 +35,35 @@ Do you want to invest in a world with more coal mines, offshore detention centre
 
 By taking the time to choose which super fund aligns with your personal values, you can play a part in changing how the world does business.
 
-2\. There’s literally **billions** in unclaimed super
------------------------------------------------------
+## 2\. There’s literally **billions** in unclaimed super
 
 That’s not an exaggeration. According to the ATO, there could be [as much as $14 billion](https://www.ato.gov.au/Media-centre/Media-releases/New-statistics-reveal-$14-billion-in-lost-super/) in unclaimed super floating around in various funds. And because that super is unclaimed, the owners of that money probably don’t even know where it’s being invested. That’s a BIG reason to care.
 
 How does this happen?
 
-*   You forget to update your address details when you move
-*   Your employer doesn’t enter your details correctly
-*   You worked for a short period with an employer and didn’t nominate a fund.
+- You forget to update your address details when you move
+- Your employer doesn’t enter your details correctly
+- You worked for a short period with an employer and didn’t nominate a fund.
 
 Beyond that unclaimed super, there’s also $8 billion sitting in super funds that haven’t received contributions in more than 5 years. Some of that super could be yours, and you could be using it to make the world a better place.
 
 If you’ve been working for a few years and aren’t sure where all your super is, don’t despair - it no longer takes a 3-page paper form faxed to a government agency to find it. In fact, when you [switch to Future Super](/switch/stopadani), we can find and rollover your lost and unclaimed super in just the click of a button.
 
- 
+
 
 _Rolling over your super isn’t quite this fun, but it’s certainly this easy! (And it will give you warm fuzzies just like this does)._
 
-3\. Your super can help support ethical industries
---------------------------------------------------
+## 3\. Your super can help support ethical industries
 
 By investing in clean energy, efficient transport and ethical businesses, super funds can help Australia build a future that’s more sustainable. At Future Super we invest in industries like:
 
-*   Innovative technologies
-*   Healthcare and wellbeing
-*   Recycling
-*   Aged care
-*   Responsible banking
-*   Clean energy
-*   Sustainable manufacturing
+- Innovative technologies
+- Healthcare and wellbeing
+- Recycling
+- Aged care
+- Responsible banking
+- Clean energy
+- Sustainable manufacturing
 
 ### Here are some companies that care about the environment
 
@@ -86,28 +83,26 @@ With a strict policy against financing greenhouse gas pollution projects, Teache
 
 ![Image of my hear resting, exercising and in a diversified, future focused portfolio of investments. ](https://lh4.googleusercontent.com/OgwTOZ5kmMCi5-h2o453XZvaJpydz5JG1mSs5eAkeJOxdkpRX7o2atyCLQVcCKJCPxW6aYsxJ3lOx7dK7QIbnQIPBGoteKghi4FMgQiED8TTgPCEg1-Caba3sTSdYizni7IJnIjI)
 
-4\. And put a stop to unethical business practices
---------------------------------------------------
+## 4\. And put a stop to unethical business practices
 
 Where your super is invested can greatly affect how successful businesses and industries are in Australia and abroad. As long as we continue pouring money into unethical industries, the longer they will thrive.
 
 Whilst the question of ethics is complex and multifaceted, these are some investments that we consider unethical:
 
-*   **Coal, oil and other fossil fuels. This one speaks for itself.**
-*   **Weapons.** Don’t support regressive regimes or the superfunds who back them.
-*   **Tobacco.** Up to [50% of superannuation funds](https://www.acosh.org/superannuation-invested-tobacco/) invest in tobacco. Don't let your money be invested in the leading cause of preventable death worldwide.
-*   **Logging and deforestation.** Australia has a delicate and rich ecosystem - support superfunds that look for ethical ways to produce materials.
-*   **Gambling.** We lose [around $23 billion a year](http://www.abc.net.au/news/2016-08-23/sports-betting-losses-on-the-rise/7777388) on gambling, not to mention the social problems, illness and suicide that accompanies gambling addiction. That’s why Future Super never invests in gambling related industries.
-*   **Live animal export and animal cruelty. In December 2015, Australia’s largest live animal export company, Wellard Group, listed on the Australian stock exchange and already appears in the portfolios of most super funds. At Future Super, We say “no” to companies that farm specifically for live export and those that operate live export ports or transport live animals.**
-*   **Companies that engage in human rights abuses**. Slave labour might seem far away from Australia, but even innocuous chocolate companies have been caught red handed.
-*   **Big Banks.** Between 2008 and 2016, the Big 4 in Australia have loaned [over $70 billion to fossil fuel companies](https://www.marketforces.org.au/info/fuelingthefire/) around the globe.
+- **Coal, oil and other fossil fuels. This one speaks for itself.**
+- **Weapons.** Don’t support regressive regimes or the superfunds who back them.
+- **Tobacco.** Up to [50% of superannuation funds](https://www.acosh.org/superannuation-invested-tobacco/) invest in tobacco. Don't let your money be invested in the leading cause of preventable death worldwide.
+- **Logging and deforestation.** Australia has a delicate and rich ecosystem - support superfunds that look for ethical ways to produce materials.
+- **Gambling.** We lose [around $23 billion a year](http://www.abc.net.au/news/2016-08-23/sports-betting-losses-on-the-rise/7777388) on gambling, not to mention the social problems, illness and suicide that accompanies gambling addiction. That’s why Future Super never invests in gambling related industries.
+- **Live animal export and animal cruelty. In December 2015, Australia’s largest live animal export company, Wellard Group, listed on the Australian stock exchange and already appears in the portfolios of most super funds. At Future Super, We say “no” to companies that farm specifically for live export and those that operate live export ports or transport live animals.**
+- **Companies that engage in human rights abuses**. Slave labour might seem far away from Australia, but even innocuous chocolate companies have been caught red handed.
+- **Big Banks.** Between 2008 and 2016, the Big 4 in Australia have loaned [over $70 billion to fossil fuel companies](https://www.marketforces.org.au/info/fuelingthefire/) around the globe.
 
 It’s no question all these things are bad. That’s why we don’t invest in them.
 
-Want to help heal the planet and put a stop to the things listed above? [Start with switching your super.](/switch/stopadani) 
+Want to help heal the planet and put a stop to the things listed above? [Start with switching your super.](/switch/stopadani)
 
-5\. Ethical super safeguards your future and your retirement
-------------------------------------------------------------
+## 5\. Ethical super safeguards your future and your retirement
 
 Super in Australia is mandatory - and for good reason. Many Aussies underestimate how much money they need put aside for retirement, or might not even think about it before it’s too late. However, once you hit retirement, your main income streams may stop or reduce, so it’s important that you have a healthy nest egg put aside to cover your retirement.
 
@@ -123,10 +118,8 @@ A high performing super fund is only half the equation. You also need a sustaina
 
 By caring about where you invest your super, you’re not only getting better financial return from your superannuation, but also investing in businesses and enterprises that safeguard the future of our planet. Want to grow your nest egg AND save the planet at the same time? It’s a no-brainer.
 
-Now is the time to care about your super
-----------------------------------------
+## Now is the time to care about your super
 
-![Image of coal trucks parked next to each other with headline: Join the fight to #StopAdani](https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc48340148ddcd3e07_stop%20adani%20campaign%20donation%20(1).png)
+![Image of coal trucks parked next to each other with headline: Join the fight to #StopAdani](<https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc48340148ddcd3e07_stop%20adani%20campaign%20donation%20(1).png>)
 
 There’s never been a better time to switch to an ethical super fund. That’s why we’re partnering with Who Gives A Crap - 100% forest friendly toilet paper so soft it will make your bottom smile. [Switch to Future Super during the month of October](/switch/stopadani) and we’ll donate $50 to the [#StopAdani](http://www.stopadani.com/) campaign\* for everyone who switches on the day. And if you convince a friend to join too, you’ll get a box of environmentally friendly toilet paper^. Not only will you be using your investment to support ethical and progressive industries, you're making a better choice for your future (and your bum).
-

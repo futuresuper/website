@@ -6,7 +6,7 @@ tags:
   - Divestment
 author: Future Super
 canonical:
-summary: >-
+description: >-
   Superannuation is essential for the future of every Aussie. Get the lowdown on how super works and why it’s important, in this useful guide from Future Super.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834010fcecd3da8_Plain-English-Guide-Super%20(1).png
 ---
@@ -18,8 +18,6 @@ Superannuation. Every working Australian has it, but many aren’t sure exactly 
 Superannuation is money set aside by your employer over your working life that acts as a savings system for retirement. The money that is held in your super account is then invested in assets to yield returns for your eventual retirement. What your money is actually invested in during that time depends on your super fund’s portfolio of investments.
 
 > [_Want to a secure a healthy retirement and a sustainable future? Make the switch to Future Super today._](https://join.myfuturesuper.com.au/)
-
-
 
 ## Why is super important for every Australian?
 
@@ -64,8 +62,6 @@ When you work, a portion of your earnings are contributed by your employer direc
 Your super contributions are invested by the managers of your super fund into things like shares, property, government bonds and cash deposits.
 
 While you don't have direct control over these investments, their growth means greater financial gain in the future. A good super fund grows its investment, meaning more money in retirement.
-
-
 
 ## How to choose a super fund
 
@@ -115,8 +111,6 @@ The best way to discover if your super fund is an ethical fund is to look at whe
 You should also look at what they screen out. At Future Super, every company that makes it onto our portfolio goes through a rigorous ethical screening process. We won’t invest in companies engaged in a number of activities, such as fossil fuel production, live animal exports, gambling, tobacco, nuclear and armaments, corruption, slave labour and [more](https://www.myfuturesuper.com.au/ethicalscreens).
 
 It’s important to look for transparency, too. Many super funds will only disclose their 10 largest holdings, meaning there are entire areas of their portfolio kept in secrecy.
-
-
 
 ## Understand super to secure your future
 

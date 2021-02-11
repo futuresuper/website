@@ -2,14 +2,14 @@
 title: "A Brief History of Ethical Investing"
 slug: a-brief-history-of-ethical-investing
 date: 2019-02-06T12:40:59.057Z
-tags: 
+tags:
   - Ethical Investing
   - Environment
   - Divestment
 author: Michael Bones
-canonical: 
-summary: >-
-  Over the past few years ethical investing has taken off, but it’s much more than a recent fad. Here to catch you up on the long and fascinating history is Australia's ethical investing pioneer, James Thier. 
+canonical:
+description: >-
+  Over the past few years ethical investing has taken off, but it’s much more than a recent fad. Here to catch you up on the long and fascinating history is Australia's ethical investing pioneer, James Thier.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834017765cd3d91_History%20of%20Ethical%20Investing%20(1).png
 ---
 
@@ -47,11 +47,11 @@ Integrating values with financial choices has been practiced throughout history.
 
 In the 18th and 19th centuries, Quakers and Methodists practiced what we now call ethical investing. Quakers prohibited their members from participating in the slave trade, citing the buying and selling of humans as immoral. Methodist founder John Welsey wrote a sermon called ‘The Use of Money’, in which he advocated maximising profit, but only through businesses that do not harm physical or mental health. In the 20th Century, such ideals were given voice by avoiding investment in so-called 'sin stocks', typically alcohol, tobacco and gambling. Such exclusion or screening-out is now called negative-screening.
 
-More recent roots are evident in the 1960s and '70s when US College (University) endowment or trust funds excluded investment in companies producing weapons during the Vietnam war, for instance _Dow Chemical's_ Agent Orange defoliant_._ In the case of South African apartheid, opposition took place via boycotts and divestment from companies supplying the racist regime. The screening-out of weaponry led to the establishment of the first publicly available ethical investment fund of its kind in the US, called _Pax,_ which in Latin means peace.
+More recent roots are evident in the 1960s and '70s when US College (University) endowment or trust funds excluded investment in companies producing weapons during the Vietnam war, for instance _Dow Chemical's_ Agent Orange defoliant*.* In the case of South African apartheid, opposition took place via boycotts and divestment from companies supplying the racist regime. The screening-out of weaponry led to the establishment of the first publicly available ethical investment fund of its kind in the US, called _Pax,_ which in Latin means peace.
 
 **When did Australians start embracing ethical investing?**
 
-In Australia, the 1980s and early '90s saw a handful of ethical funds in what essentially was a cottage industry. One of the earliest funds emerged from the _Earthbank Society_ which itself grew out of _Permaculture._ Almost all have since disappeared, except Australian Ethical, which I helped establish. At that time the terminology chosen was Ethical Investment; this was more in keeping with UK nomenclature in contrast to America where Socially Responsible Investment (SRI) was typical. 
+In Australia, the 1980s and early '90s saw a handful of ethical funds in what essentially was a cottage industry. One of the earliest funds emerged from the _Earthbank Society_ which itself grew out of _Permaculture._ Almost all have since disappeared, except Australian Ethical, which I helped establish. At that time the terminology chosen was Ethical Investment; this was more in keeping with UK nomenclature in contrast to America where Socially Responsible Investment (SRI) was typical.
 
 By the early 2000s big conventional fund managers and financial institutions\* like _BT_, _Colonial_, _Westpac_ and _AMP_ showed interest in the sector. More marketing spin than anything, new products were often labeled Socially Responsible, Sustainable, Green, Eco or Environmental.
 
@@ -73,7 +73,7 @@ In this context, [Future Super](https://www.myfuturesuper.com.au/switch/go-fossi
 
 **Ok so we’ve heard a lot about the nuance of ethical investment. Can you summarise the core similarities for us?**
 
-> Despite all the potential differences, it is helpful to keep in mind that at its core ethical investment is simply about knowing what your money is doing. 
+> Despite all the potential differences, it is helpful to keep in mind that at its core ethical investment is simply about knowing what your money is doing.
 
 Understanding what practices and activities your money is supporting or avoiding. Knowing this means you can be assured your values are being fully respected and represented. Sadly, greenwashing (a cynical marketing ploy where companies promote their products as ethical when they are not) is still out there, alive and well. That’s why, unlike conventional super funds, true ethical funds like Future Super are fully transparent about their investments.
 
@@ -83,7 +83,7 @@ When financial benefit integrates with social and environmentally positive activ
 
 **Thanks so much for your time today, James. Do you have any final thoughts you’d like to leave with our members?**
 
-> One thing always worth remembering is that aligning our investment decisions with our values can have a positive impact on financial performance. 
+> One thing always worth remembering is that aligning our investment decisions with our values can have a positive impact on financial performance.
 
 Investing with our beliefs does not mean returns need be sacrificed. As mentioned above, research consistently finds that, over the longer-term, ethical investments perform as well as, if not better than, alternatives.
 
@@ -95,9 +95,8 @@ It may seem like common sense from a personal viewpoint, but it also makes sound
 
 ‍
 
-James' Footnotes 
+James' Footnotes
 
 \*It’s always struck me as surprising when conventional fund managers or major superannuation funds create and promote one or more 'ethical' products, yet the rest of their investments remain the same. It treats ethical investing as perfunctory and optional, rather than the fully-fledged paradigm shift it is.
 
 \*\* When presenting at the ASFONZ conference in New Zealand 2008, I conveyed the importance of climate change as the biggest issue facing this generation - some would say it's the most important issue to face all generations. The scope and potential impact of climate change in environmental, humanitarian, health, and political terms makes it an overarching issue with consequences to rival the magnitude of war.
-

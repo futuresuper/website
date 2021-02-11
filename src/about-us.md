@@ -2,6 +2,7 @@
 title: "About Us"
 layout: "layouts/article.html"
 summary: Future Super exists to create a prosperous future free from climate change and inequality.
+description: Future Super exists to create a prosperous future free from climate change and inequality.
 ---
 
 ## Super for impact

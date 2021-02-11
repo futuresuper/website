@@ -2,18 +2,18 @@
 title: "3 Solar Farms That Prove Everyday Aussies Can Supercharge The Renewables Revolution"
 slug: 3-solar-farms-that-prove-everyday-aussies-can-supercharge-the-renewables-revolution
 date: 2019-02-05T19:27:37.674Z
-tags: 
+tags:
   - Renewable Energy
 author: Michael Bones
-canonical: 
-summary: >-
+canonical:
+description: >-
   Why wait for fossil fools when we can build renewables ourselves?
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834018063cd3d55_Blog%201200x630%20(7).png
 ---
 
 ### Solar is amazing.
 
- 
+
 
 It turns sunlight into power. It doesn’t dump carbon dioxide pollution into our fragile atmosphere. With battery technology, sun power can be stored for later and deployed in microseconds. And now, it's cheaper and easier to build than dirty coal.
 
@@ -27,8 +27,7 @@ Where possible, we arrange for [members to visit new solar farms](https://www.my
 
 And now with Renewables Plus - the new growth option by Future Super - you can choose to have up to 20% of your super invested in renewables.
 
-3 Solar Farms Future Super Members Invest In
---------------------------------------------
+## 3 Solar Farms Future Super Members Invest In
 
 Last year Future Super teamed up with boutique infrastructure fund [Infradebt](https://www.infradebt.com.au/) to create the Infradebt Ethical Fund (IEF). With an initial cornerstone commitment of $50 million from Future Super, the IEF lends to infrastructure projects that make a positive and sustainable difference to our society.
 
@@ -72,14 +71,12 @@ When Chinchilla Solar Farm is complete, it is expected to power the equivalent o
 
 ‍
 
-How can I help accelerate renewable energy in Australia?
---------------------------------------------------------
+## How can I help accelerate renewable energy in Australia?
 
 [Research by UTS](https://www.myfuturesuper.com.au/blog/new-research-reveals-that-7-7-of-australias-retirement-savings-could-fund-100-renewable-power-by-2030) shows just 7.7% of all super could get Australia's power sector to 100% renewables by 2030.
 
-Future Super's aim is to empower everyday Australians to grow their super and accelerate Australia's clean energy transition at the same time. Now, in an Australian first, you can join a super fund which has a 20% renewables investment target. 
+Future Super's aim is to empower everyday Australians to grow their super and accelerate Australia's clean energy transition at the same time. Now, in an Australian first, you can join a super fund which has a 20% renewables investment target.
 
 **If you haven't joined Future Super yet and want more of your super investing in renewables energy, you can** [**make the switch in just 2 minutes today**](http://www.myfuturesuper.com.au)**.**
 
 **For current Future Super members, simply** [**head to your member portal to easily switch from Balanced Growth to Growth (Renewables Plus).**](http://portal.myfuturesuper.com.au/)
-

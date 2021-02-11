@@ -2,13 +2,13 @@
 title: "“Coal Is Dead”: Political Fetish with Little Black Rock Trashed By Trillionaire Investor"
 slug: coal-is-dead-coal-fetish-trashed-by-trillionaire-investor
 date: 2020-01-17T02:58:33.598Z
-tags: 
+tags:
   - Renewable Energy
   - Divestment
   - Disruption
 author: Michael Bones
-canonical: 
-summary: >-
+canonical:
+description: >-
   The Australian government has been ridiculed by a trillion dollar global fund manager for “denying gravity” on coal investment.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc48340105a4cd3e3b_Bye_Coal_Blog_960x400%20(1).png
 ---
@@ -27,8 +27,7 @@ Mr Barry, who is scoping out Australian renewable investments, is quoted as sayi
 
 Beyond Adani, the assessment of coal’s investment risk should ring alarm bells for all working Australians with super.
 
-**Super Funds Risking Member’s Money on Coal**
-----------------------------------------------
+## **Super Funds Risking Member’s Money on Coal**
 
 The renewable energy boom means coal is on the way out.
 
@@ -44,8 +43,7 @@ Most Australians are unaware that [super funds invest their retirement savings i
 
 Here at Future Super HQ, we worry that super funds are gambling their member’s money on coal, choosing short-term opportunism over long-term thinking.
 
-**Fossil Fuel Free Investing and the Renewable Revolution**
------------------------------------------------------------
+## **Fossil Fuel Free Investing and the Renewable Revolution**
 
 The Future Super investment philosophy reflects both the climate and investment reality that “coal is dead”.
 
@@ -63,8 +61,7 @@ Using a custom-designed investment vehicle, our members are investing in excitin
 
 ‍
 
-**Next Steps**
---------------
+## **Next Steps**
 
 Getting your super out of coal, oil and gas is easy.
 
@@ -73,4 +70,3 @@ Thousands have made the switch to Future Super in just a few minutes using our [
 We’re already investing nearly $250 million on behalf of thousands of everyday Australians.
 
 If you want your super to be out of coal and into renewables, [join the Future Super movement today](https://www.myfuturesuper.com.au/switch/join-future-super?utm_campaign=FSblog_CoalDead&utm_medium=Website&utm_source=Blog&utm_safe=).
-
