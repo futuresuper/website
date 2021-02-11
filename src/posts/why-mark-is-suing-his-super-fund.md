@@ -2,13 +2,13 @@
 title: "Why Mark is suing REST super for failing on climate"
 slug: why-mark-is-suing-his-super-fund
 date: 2019-02-05T19:11:23.902Z
-tags: 
+tags:
   - Activism
   - Divestment
 author: Michael Bones
-canonical: 
-summary: >-
-  This legend is suing a $50 billion super fund for climate inaction. 
+canonical:
+description: >-
+  This legend is suing a $50 billion super fund for climate inaction.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc483401e275cd3db7_Why%20Mark%20is%20suing%20REST%20super%20for%20failing%20on%20climate%20(1).png
 ---
 
@@ -20,20 +20,19 @@ The problem is most super funds don’t really want to talk about it. Instead o
 
 Well, we do want to talk about it.
 
- 
+
 
 ‍
 
-**Why is Mark suing his super fund over climate change?**
----------------------------------------------------------
+## **Why is Mark suing his super fund over climate change?**
 
 Mark is suing REST super because, he argues, they don’t have a plan for climate change.
 
-Super funds invest in lots of things – company shares, loans, infrastructure, property – many of which could be severely affected by climate change.  
+Super funds invest in lots of things – company shares, loans, infrastructure, property – many of which could be severely affected by climate change.
 
 He wants answers to good questions like, for example, how much of his super is in fossil fuels? How is climate risk being handled? What's the plan for aligning investments with a sustainable future?
 
- 
+
 
 Super funds take your money, almost $100 of every $1,000 you earn, and invest it on your behalf.
 
@@ -47,8 +46,7 @@ Mark simply wanted information on how his super fund plans to phase out inves
 
 “They haven’t given any real information and they haven’t supplied any real strategy or plan that they have for climate change and the risks involved,” he said to the ABC.
 
-**Do you have to sue your super fund, or is there another way?**
-----------------------------------------------------------------
+## **Do you have to sue your super fund, or is there another way?**
 
 A lawsuit is a pretty big deal, especially if it’s against a super fund.
 
@@ -58,8 +56,7 @@ But, if you’re an average person, you probably don’t want the hassle that co
 
 The good news is, in just 2 minutes, you can join thousands of Australians who are already investing their super in a safe climate future.
 
-**Future Super, Australia’s first 100% fossil-free super fund**
----------------------------------------------------------------
+## **Future Super, Australia’s first 100% fossil-free super fund**
 
 Since 2014, Future Super has been helping thousands of Australians invest their super sustainably.
 
@@ -69,12 +66,10 @@ With Future Super you’ll be investing in global sustainability leaders and [re
 
 And even better, you can always [see](https://www.myfuturesuper.com.au/ethicalscreens) what your super is investing in.
 
-**How to Take action**
-----------------------
+## **How to Take action**
 
 You don’t have to wait for mainstream super funds to see the light and do the right thing on climate.
 
 You can choose to invest your super in a fossil-free future today. It literally takes 2 minutes. All you need is a computer or your phone, and to click the link below.
 
 **[Join Future Super in 2 mins today](https://go.futrsupr.com/restoped)**
-

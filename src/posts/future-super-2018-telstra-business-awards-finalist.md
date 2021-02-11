@@ -2,7 +2,7 @@
 title: "Future Super named 2018 Telstra Business Awards: Social Change Maker Finalist!"
 slug: future-super-2018-telstra-business-awards-finalist
 date: 2019-02-05T19:22:50.417Z
-tags: 
+tags:
   - Renewable Energy
   - Disruption
   - Activism
@@ -12,16 +12,15 @@ tags:
   - News
   - Superannuation
 author: Kirstin Hunter
-canonical: 
-summary: >-
+canonical:
+description: >-
   Future Super has been listed as a 2018 Telstra Business Awards: Social Change Maker Finalist in the ACT.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834018008cd3daa_Future%20Super%20members%20(1)%20(1).jpg
 ---
 
-Future Super has been recognised as one of Australia’s most innovative social change businesses - and we couldn’t have done it without you!
--------------------------------------------------------------------------------------------------------------------------------------------
+## Future Super has been recognised as one of Australia’s most innovative social change businesses - and we couldn’t have done it without you!
 
-![Future Super members at Mount Majura Solar Farm, ACT (Renewable Energy Day, 2016)](https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834018008cd3daa_Future%20Super%20members%20(1)%20(1).jpg)
+![Future Super members at Mount Majura Solar Farm, ACT (Renewable Energy Day, 2016)](<https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834018008cd3daa_Future%20Super%20members%20(1)%20(1).jpg>)
 
 Future Super members at Mount Majura Solar Farm, ACT (Renewable Energy Day, 2016)
 
@@ -41,12 +40,12 @@ We know super is powerful, and that it’s yours. That’s why we aim provide ou
 
 Here’s just a few of the things we’re proud to have delivered on behalf of our community of values-driven investors:
 
-*   [3 solar farms](https://www.myfuturesuper.com.au/blog/3-solar-farms-that-prove-everyday-aussies-can-supercharge-the-renewables-revolution) that prove everyday Aussies can supercharge the renewable revolution,
-*   Research that shows [an allocation of just 7.7% of super could get Australia to 100% renewable power by 2030](https://www.myfuturesuper.com.au/blog/new-research-reveals-that-7-7-of-australias-retirement-savings-could-fund-100-renewable-power-by-2030),
-*   [BabyBump](https://www.myfuturesuper.com.au/blog/having-a-baby-thats-super) - a fee-rebate for new parents to make super more fair for parents and help address some of the structural inequality in the super system,
-*   Supported author and climate hero [Bill McKibben’s recent Accelerate Climate Action tour](https://www.myfuturesuper.com.au/blog/this-is-our-why-reflections-on-bill-mckibbens-accelerate-climate-action-tour),
-*   Advocating to [increase gender diversity](https://www.myfuturesuper.com.au/blog/divest-from-the-patriarchy-why-future-super-is-advocating-for-gender-diversity-in-the-boardroom) in company boards,
-*   Awarded “Best in the World” by [BCorp](http://bcorporation.com.au/).
+- [3 solar farms](https://www.myfuturesuper.com.au/blog/3-solar-farms-that-prove-everyday-aussies-can-supercharge-the-renewables-revolution) that prove everyday Aussies can supercharge the renewable revolution,
+- Research that shows [an allocation of just 7.7% of super could get Australia to 100% renewable power by 2030](https://www.myfuturesuper.com.au/blog/new-research-reveals-that-7-7-of-australias-retirement-savings-could-fund-100-renewable-power-by-2030),
+- [BabyBump](https://www.myfuturesuper.com.au/blog/having-a-baby-thats-super) - a fee-rebate for new parents to make super more fair for parents and help address some of the structural inequality in the super system,
+- Supported author and climate hero [Bill McKibben’s recent Accelerate Climate Action tour](https://www.myfuturesuper.com.au/blog/this-is-our-why-reflections-on-bill-mckibbens-accelerate-climate-action-tour),
+- Advocating to [increase gender diversity](https://www.myfuturesuper.com.au/blog/divest-from-the-patriarchy-why-future-super-is-advocating-for-gender-diversity-in-the-boardroom) in company boards,
+- Awarded “Best in the World” by [BCorp](http://bcorporation.com.au/).
 
 And, of course, [competitive returns](https://www.myfuturesuper.com.au/choosing/performanceandreturns).
 
@@ -77,4 +76,3 @@ We are proud to be a finalist in the Telstra Business Awards. We truly could not
 ### Want to join Future Super and be part of the movement to create a renewables powered future?
 
 Switching away from fossil fuels is quick and easy. [Click here to learn more about joining.](https://www.myfuturesuper.com.au/super#sign-up)
-

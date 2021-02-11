@@ -2,10 +2,10 @@
 title: "All-male boards are now out of our portfolio"
 slug: all-male-boards-are-now-out-of-our-portfolio
 date: 2019-05-03T06:59:50.729Z
-tags: 
+tags:
 author: Emily Flood
-canonical: 
-summary: >-
+canonical:
+description: >-
   On 1 May 2019, Future Super became the first super fund to completely exclude investments in companies that have no women on their boards.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834014a40cd3dc8_All-male-board-divested-tiny.jpg
 ---
@@ -30,9 +30,8 @@ That’s why we began the process early last year, by removing all Australian co
 
 While culture and historical context can influence diversity performance for companies, we shared information and resources with them to show the value of making the change. We also gave them a clear deadline for when we expected them to make change.
 
-This week marks the final deadline, and as a result we’ve **divested** from 7 companies that **did not make any changes** or share plans to improve the diversity in their boardroom.  
+This week marks the final deadline, and as a result we’ve **divested** from 7 companies that **did not make any changes** or share plans to improve the diversity in their boardroom.
 
 We’re proud to stand by our members and partners in investing in a fair and equal future.
 
 This step supplements our other strategies to use our power as an employer, investor, and superannuation fund to improve equality. This includes sponsoring the ASX 100 gender pay gap [Leaders and Laggards report](https://accr.org.au/gender-pay-equity-report/), our [BabyBump program](https://www.myfuturesuper.com.au/babybump) to support primary caregivers who take a career break to care for a child, and our internal policies and pay gap reporting for staff.
-

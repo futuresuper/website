@@ -2,18 +2,18 @@
 title: "California Dreamin’ (of board diversity)"
 slug: california-dreamin-of-board-diversity
 date: 2019-02-05T18:54:59.912Z
-tags: 
+tags:
   - Politics
   - Activism
   - Opinion
 author: Emily Flood
-canonical: 
-summary: >-
+canonical:
+description: >-
   Having women in the boardroom produces better results for businesses as well as women. It takes a company determined to thumb their nose at women to choose to maintain an all-male board even at a proven cost to their business performance. California has joined voices with ethics-led investors like Future Super in calling for a smarter and fairer boardroom.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834013312cd3da9_California%20Dreamin%E2%80%99%20(of%20board%20diversity)%20(1).png
 ---
 
-Some of the changes Governor Jerry Brown has recently signed into legislation on his way out the door after his fourth term as Californian Governor could give you whiplash (or worse, hope) when compared to some of what’s going on in Washington at the moment.  
+Some of the changes Governor Jerry Brown has recently signed into legislation on his way out the door after his fourth term as Californian Governor could give you whiplash (or worse, hope) when compared to some of what’s going on in Washington at the moment.
 
 Mr. Brown has been in the spotlight over recent years (even if his name doesn’t ring a bell) pushing for ‘[sanctuary state](http://www.latimes.com/politics/la-pol-ca-sanctuary-law-ruling-20180705-story.html)’ status, directing state law enforcement to refuse assistance to federal immigration agents and inspect immigration detention centres. Over the past few months he’s been building up a solid portfolio of justice reform and has been a beacon of hope for climate change activists frustrated by the Federal Government’s stance on the fossil fuel industry, [signing a number of bills](https://www.nytimes.com/2018/10/01/us/governor-jerry-brown-california-last-bill-signing.html) to incentivise clean energy and electric car usage, as well as requiring all electricity in [California to be carbon-free by 2045](https://qz.com/1409065/californias-2018-legislative-blitzkrieg-delivered-its-most-ambitious-climate-policies-ever/).
 
@@ -25,14 +25,13 @@ The fact he sent that same statement to the Committee that voted to recommend th
 
 ![Brett Kavanaugh testifying before Senate Judiciary Committee on September 27 2018](https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc483401237dcd3cfc_c855f854efc40437ce2a36021d49ecd5.jpg)
 
-_Source: Jim Bourg, Reuters (Brett Kavanaugh testifying before Senate Judiciary Committee on September 27 2018)_  
+_Source: Jim Bourg, Reuters (Brett Kavanaugh testifying before Senate Judiciary Committee on September 27 2018)_
 
-Women’s voices need to be heard
--------------------------------
+## Women’s voices need to be heard
 
 The idea that women’s opinions hold less value has been taken apart a thousand times before. What we’re here to talk about isn’t simply an argument about the immorality of excluding people whether for their age, gender, race or sexual orientation.
 
-It’s the power of diverse experiences and viewpoints to help companies perform better.  
+It’s the power of diverse experiences and viewpoints to help companies perform better.
 
 MSCI runs a series of reports ([Women on Boards Progress](https://www.msci.com/documents/10199/fd1f8228-cc07-4789-acee-3f9ed97ee8bb)) which have shown consistently that companies deliver better returns for shareholders when boards have at least 3 female directors. AXA IM also found a link between [boardroom gender diversity](https://www.axa-im.com/documents/23818/206774/180808+Rosenberg+equities+Does+diversity+provide+a+profitability+moat/12535ce3-1535-2a83-19eb-09f58e8d4de5) and the ability of companies to maintain an ongoing competitive edge, which means that those companies are able to consistently deliver products and services that are more appealing and profitable than their competitors.
 
@@ -46,10 +45,9 @@ It turns out the answer is: **way more effective.**
 
 Facebook’s ideological echo chambers haven’t got anything on an all-male board.
 
-How can a company be trusted to work through the harder issues of inequality, like gender pay gaps and ensuring their products have broad appeal, if they refuse to engage with the most simple and easy wins like ensuring their boards are a diversified group of qualified people? Especially with well established business cases for making this change?  
+How can a company be trusted to work through the harder issues of inequality, like gender pay gaps and ensuring their products have broad appeal, if they refuse to engage with the most simple and easy wins like ensuring their boards are a diversified group of qualified people? Especially with well established business cases for making this change?
 
-Boardroom gender diversity translates to returns – for Californians and for your superannuation
------------------------------------------------------------------------------------------------
+## Boardroom gender diversity translates to returns – for Californians and for your superannuation
 
 When you look at the financial repercussions of insisting on keeping boardrooms pale, male and stale, it makes sense for the Governor in charge of the 5th largest economy (beating most countries including the UK) to stack the odds in favour of stronger local performance.
 
@@ -57,10 +55,9 @@ It also makes sense for investors from all walks of life to consider board compo
 
 Our co-founder and Director (and my boss) Adam Verwey reflected on this at the start of the year and made a number of commitments to our members as to how Future Super planned to address this issue (read the article [here](https://www.myfuturesuper.com.au/blog/divest-from-the-patriarchy-why-future-super-is-advocating-for-gender-diversity-in-the-boardroom)). At the time we committed to engaging with companies, divesting from Australian companies with all-male boards, and supporting the creation of ethical investment products with gender diversity screens.
 
-We’ve done all of that and more.  
+We’ve done all of that and more.
 
-What we’ve achieved so far in 2018
-----------------------------------
+## What we’ve achieved so far in 2018
 
 ### No Australian companies invested in by Future Super have all-male boards
 
@@ -83,4 +80,3 @@ One example of this is the gender pay gap, which is still alive and kicking in 2
 ### Leading by example
 
 At Future Super we also keep our own house in order, so we’ve been looking at what we can do better. As part of that project we’ve completed an audit on our hiring process, [internal superannuation policies](https://www.betashares.com.au/fund/global-sustainability-leaders-etf/), and gender pay gap to ensure our processes are supporting staff from all walks of life and Future Super is benefiting from a diversity of experiences and knowledge.  We’re also happy to have recently confirmed Kirstin Hunter as a Director, which brings our board composition to 33% women. We’ve even developed and rolled out a new offering for our members, [BabyBump](https://www.myfuturesuper.com.au/babybump), which supports new parents on parental leave and is designed to help address the gender inequality endemic to superannuation.
-

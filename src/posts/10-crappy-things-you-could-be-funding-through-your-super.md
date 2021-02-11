@@ -9,7 +9,7 @@ tags:
   - Environment
 author: Noelle Greenwood
 canonical:
-summary: >-
+description: >-
   Did you know your super could be funding harmful industries like nuclear arms and tobacco? Future Super reveals 10 damaging industries to avoid investing in.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc48340112dccd3dc5_10-descructive-industries_main%20(1)%20(1).jpg
 ---
@@ -36,8 +36,6 @@ The big four banks continue to support the destructive fossil fuel industry by f
 
 ### 3\. Tobacco
 
-
-
 Around [50 percent of super funds](https://www.acosh.org/superannuation-invested-tobacco/) invest in tobacco, despite the fact that 15,000 Aussies die due to tobacco-related illnesses every year. The negative impact of tobacco is profound; not only is smoking the leading cause of preventable death worldwide, but the environmental impacts of tobacco production are far-reaching, with all phases of cigarette production [contributing to GHG emissions](http://www.tobaccoinaustralia.org.au/chapter-10-tobacco-industry/10-14-the-environmental-impact-of-tobacco-producti#x44.).
 
 “The [harmful impact of the tobacco industry](http://www.tobaccoatlas.org/topic/environmental-harm/) on deforestation, climate change, litter, and forest fires is enormous and growing.”
@@ -46,15 +44,11 @@ Non-profit groups like [Tobacco Free Portfolios](http://www.tobaccofreeportfolio
 
 ### 4\. Offshore detention
 
-
-
 Your money could be [invested in private service providers](http://rightnow.org.au/opinion-3/is-your-super-invested-in-australias-detention-of-children/) that enable and profit from the detention of people seeking asylum, if your super fund hasn’t already divested from such companies. Companies like Serco, Transfield Services, Wilson Security, and OTOC are well known for profiting from Australia’s offshore-detention policy.
 
 [Several major super funds have already divested](http://www.smh.com.au/business/banking-and-finance/transfield-in-the-heart-of-hot-debate-on-ethical-investment-20150821-gj4ngq.html) from these companies as a result of public backlash against these types of unethical investments, however there are still dozens of funds which still invest in companies that – directly or indirectly – fund Australia’s offshore detention programs.
 
 ### 5\. Nuclear and uranium
-
-
 
 Nuclear-supporting industries such as uranium are unethical as they impede [non-proliferation efforts](https://www.un.org/disarmament/wmd/nuclear/npt/) to prevent the spread of nuclear weapons and weapons technology. Big Australian banks like ANZ, Commonwealth Bank, Macquarie Group and Westpac are among the [financial institutions investing in the manufacture of nuclear weapons](http://www.medianet.com.au/releases/release-details.aspx/?id=871086), through companies such as General Dynamics, BAE Systems, Northrop Grumman and more, that provide the infrastructure to develop or modernise nuclear weapons.
 
@@ -69,8 +63,6 @@ Related to the nuclear and uranium sectors is the armaments industry. These comp
 The live exports industry is notorious for its cruelty, but even the most dedicated ban-live-export campaigner might be unaware his or her super is invested in companies [like Zhoushan Fanda Australia Cattle Co](http://www.abc.net.au/news/rural/rural-news/2017-06-01/elders-exits-live-exports-ncaa-sale/8578456) or other major players in the sector. Also, related are companies that engage in unnecessarily cruel treatment of animals, such as forcing animals to perform for entertainment, cosmetic animal testing, factory farming, and intensive animal agriculture.
 
 ### 8\. Old growth logging
-
-
 
 Old growth forests are recognised as having [very high aesthetic, cultural and natural conservation values](http://www.environment.nsw.gov.au/resources/nature/landholderNotes10OldGrowthForests.pdf). Their protection and management is hugely important in the maintenance of Australia’s biodiversity and ecological functions. Old growth logging is considered a damaging practice because old-growth trees are [essential for native and endangered species](https://theconversation.com/victorian-forestry-is-definitely-not-ecologically-sustainable-11392).
 

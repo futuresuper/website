@@ -2,20 +2,19 @@
 title: "Renewables Can Halve Energy Prices In 4 Years"
 slug: renewables-can-halve-energy-prices-in-4-years
 date: 2019-02-05T18:58:49.281Z
-tags: 
+tags:
   - Disruption
   - Ethical Investing
   - Environment
   - Renewable Energy
 author: Michael Bones
-canonical: 
-summary: >-
+canonical:
+description: >-
   Good news for everyone, really
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc48340150eecd3cb9_Blog%201200x630%20(1).png
 ---
 
-Renewables are the answer to energy prices.
--------------------------------------------
+## Renewables are the answer to energy prices.
 
 Can someone tell the government?
 
@@ -23,8 +22,7 @@ Australia’s new energy minister, [Angus Taylor](https://reneweconomy.com.au/mo
 
 Here’s a simple equation Australia’s new energy minister either can’t understand, or chooses to ignore. **‍**
 
-**More renewable energy = lower energy costs**‍
------------------------------------------------
+## **More renewable energy = lower energy costs**‍
 
 This economic fact has bamboozled a fair chunk of the Liberal party’s conservative MPs. Or, as Malcolm Turnbull’s son recently [pointed out](http://www.abc.net.au/news/2018-08-28/alex-turnbull-says-coal-miners-have-undue-influence-on-liberals/10170908), coal-eyed pollies are ignoring reality at our expense.
 
@@ -32,8 +30,7 @@ In the words of Alex Turnbull, rich people who own a lot of coal are “exercisi
 
 While that much has been clear for many years, a recent study suggests even politics can’t stay in the way of the renewables forever.
 
-Renewables Can Halve Energy Price In Just Four Years[‍](https://www.theguardian.com/australia-news/2018/aug/30/renewables-forecast-to-halve-wholesale-energy-prices-over-four-years)
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## Renewables Can Halve Energy Price In Just Four Years[‍](https://www.theguardian.com/australia-news/2018/aug/30/renewables-forecast-to-halve-wholesale-energy-prices-over-four-years)
 
 [Reported](https://www.theguardian.com/australia-news/2018/aug/30/renewables-forecast-to-halve-wholesale-energy-prices-over-four-years) today in the The Guardian, research by [Green Energy Markets](http://greenmarkets.com.au/) shows that the closure of coal-fired power stations over the near-term (which has to happen, because they’re old, and coal-power stations can’t live forever) will pave the way for 7,200 MW of renewables to be added to the grid.
 
@@ -55,8 +52,7 @@ After the price spike from Hazelwood and Northern going offline, high energy pri
 
 Edis’ analysis says price reductions are because the market is expecting more renewable projects. “Prices have since continued to decline in anticipation of increasing amounts of renewable energy supply reaching construction completion and contributing power to the grid.”
 
-What’s the Take Home Message?
------------------------------
+## What’s the Take Home Message?
 
 Politicians that protect the fossil fuel industry can stir up antipathy towards renewable energy and dethrone prime ministers. But they can’t fight good sense forever.
 
@@ -66,8 +62,7 @@ By 2050 coal power will be all but extinct in Australia. Thanks to clean tech di
 
 In the meantime, we can savour the sweetness of this thought - hasten coal’s end today, get cleaner and cheaper power along the way.
 
-Want to Join a Community of Renewable Investors?
-------------------------------------------------
+## Want to Join a Community of Renewable Investors?
 
 Since 2014, Future Super has been leading the movement of capital away from fossil fuels and into renewable energy.
 
@@ -92,4 +87,3 @@ Don't take our word for it. Hear from our members, who are visiting a solar farm
 ‍
 
 ### [**Learn More Now**](https://www.myfuturesuper.com.au/switch/renewables-revolution?utm_campaign=RenewablesHalvePrices2018&utm_medium=Website&utm_source=FSBlog)
-

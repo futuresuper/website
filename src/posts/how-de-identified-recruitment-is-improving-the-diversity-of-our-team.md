@@ -2,14 +2,14 @@
 title: "How de-identified recruitment is improving the diversity of our team"
 slug: how-de-identified-recruitment-is-improving-the-diversity-of-our-team
 date: 2021-01-18T00:20:01.928Z
-tags: 
+tags:
   - Equality
   - News
 author: Veronica Sherwood-Meares
 canonical: "https://www.linkedin.com/pulse/how-de-identified-recruitment-improving-diversity-our-veronica/"
-summary: >-
+description: >-
   People were generally pretty surprised when I responded telling them we don’t look at CVs at Future Super. So how do we hire?
-image: 
+image:
 ---
 
 In the days and weeks after posting a job ad for a role in my team a couple of months ago, my LinkedIn inbox was flooded with people sending me their CVs and asking if they would be a good fit for the role.
@@ -39,4 +39,3 @@ However, making the change has transformed the diversity and quality of the peop
 So don’t send us your CV! Instead, encourage your employer to consider making the switch to deidentified recruitment - it’s a no brainer. For any businesses wanting to talk to us about how to start this process, we’d be happy to put you in touch with our wonderful COO, [**Leigh**](https://www.linkedin.com/in/leigh-dunlop-9b127bb8/).
 
 _This was originally posted_ [_on LinkedIn_](https://www.linkedin.com/pulse/how-de-identified-recruitment-improving-diversity-our-veronica/)_._
-

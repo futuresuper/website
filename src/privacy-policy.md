@@ -1,6 +1,7 @@
 ---
 title: "Privacy Policy"
 layout: "layouts/article.html"
+description: We will always respect your privacy. Read our privacy policy to find out more.
 alsoSee:
   - Terms and Conditions
 ---
@@ -156,8 +157,8 @@ please contact us at:
 
 ### Future Super Privacy Officer
 
-Call: 1300 658 422  
-Email: [privacy@futuresuper.com.au](mailto:privacy@futuresuper.com.au)  
+Call: 1300 658 422
+Email: [privacy@futuresuper.com.au](mailto:privacy@futuresuper.com.au)
 Mail: Level 3, 2 Bulletin Place, Sydney NSW 2000
 
 We take complaints or access and correction requests seriously and endeavour to respond within 30
@@ -170,8 +171,8 @@ like more information, you can contact the Office of the Australian Information 
 
 Online: ​[https://www.oaic.gov.au/individuals/](​https://www.oaic.gov.au/individuals/)
 
-Call: 1300 363 992  
-Email: [enquiries@oaic.gov.au](mailto:enquiries@oaic.gov.au)  
+Call: 1300 363 992
+Email: [enquiries@oaic.gov.au](mailto:enquiries@oaic.gov.au)
 Fax: +61 2 9284 9666
 
 Mail: Office of the Australian Information Commissioner, GPO Box 5218, Sydney NSW 2001, Australia (or

@@ -2,29 +2,28 @@
 title: "What Shipped: Issue 16"
 slug: what-shipped-issue-16
 date: 2020-11-18T06:59:08.122Z
-tags: 
+tags:
 author: Danny White
-canonical: 
-summary: >-
+canonical:
+description: >-
   We’re building our product and brand in-house and documenting what we learn in the process. Here’s what we’ve done in the past few weeks.
-image: 
+image:
 ---
 
-‍_Future Super is a superannuation fund that helps people use the power of their money to build a future worth retiring into. We’re building our product and brand in-house and documenting what we learn in the process._
+‍*Future Super is a superannuation fund that helps people use the power of their money to build a future worth retiring into. We’re building our product and brand in-house and documenting what we learn in the process.*
 
 Here’s what we’ve been up to in the past few weeks:
 
-1.  **New join form**  
+1.  **New join form**
     Who dis? We launched our new join form, which will underpin more frequent future product updates.
-2.  **Emergent strategy and buy-in, in-house**  
+2.  **Emergent strategy and buy-in, in-house**
     We’re taking a full team, hands-on approach to defining our strategy.
-3.  **Inclusive Language Guide  
+3.  **Inclusive Language Guide
     **We’ve put out an open-source, collaborative piece of work.
-4.  **System sprints  
+4.  **System sprints
     **We’re testing and developing our typography across disciplines.
 
-**New join form**
------------------
+## **New join form**
 
 _Who dis? We launched our new join form, which will underpin more frequent future product updates._
 
@@ -42,8 +41,7 @@ We’re keen to share more about our process soon. Until then, you can find more
 
 — Danny
 
-Emergent strategy and buy-in, in-house
---------------------------------------
+## Emergent strategy and buy-in, in-house
 
 _We’re taking a full team, hands-on approach to defining our strategy._
 
@@ -51,8 +49,7 @@ Strategy is only ever as good as execution. But if the strategy process doesn’
 
 — Amanda
 
-Inclusive Language Guide
-------------------------
+## Inclusive Language Guide
 
 _We’ve put out an open-source, collaborative piece of work._
 
@@ -62,8 +59,7 @@ For the full write-up of how we got to this point, pop over [here](https://marie
 
 — Mariela
 
-System sprints
---------------
+## System sprints
 
 _We’re testing and developing our typography across disciplines._
 
@@ -80,4 +76,3 @@ Yep, we have brand guidelines, but as we continue to make our point of view on t
 There’s a chance these small tweaks won’t have a huge impact on how we look and feel, but it will give us a more measurable goal to look back on.
 
 — Nick
-

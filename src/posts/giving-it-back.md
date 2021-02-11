@@ -2,17 +2,16 @@
 title: "Giving it back"
 slug: giving-it-back
 date: 2020-07-14T07:43:01.141Z
-tags: 
+tags:
   - News
 author: James Wanjura
-canonical: 
-summary: >-
+canonical:
+description: >-
   Future Super has decided to pay our government stimulus forward to members who have been hit hardest by the current economic crisis.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc483401fb9ecd3e48_Giving%20It%20Back%20-%20Hero.jpg
 ---
 
-**What and why**‍
------------------
+## **What and why**‍
 
 We want to do something for Future Super members who have withdrawn their super. Our mission is to use the power of your money to create a future worth retiring into, but recently we have turned our focus to how we can use our money to support members.
 
@@ -20,22 +19,19 @@ Future Super has decided to pay our government stimulus forward to members who h
 
 Over 1,000 Future Super members have withdrawn from their super so far due to COVID-19. Although our subsidy will not cover the amount withdrawn by all our members, it's a small step to help you on your way as you rebuild your savings.**‍**
 
-**How it will work**‍
----------------------
+## **How it will work**‍
 
 If you are eligible for this payment, you will have been sent an email from us asking you to confirm your interest in receiving it. With your confirmation, we will make a lump sum payment into your Future Super account. You can expect to see this payment in your account transaction history in the coming weeks. All you need to do is let us know you’re interested before Tuesday the 19th ofMay. You can leave the rest to us!
 
-‍**Eligibility**‍
------------------
+## ‍**Eligibility**‍
 
 The eligibility criteria for this payment are as follows:
 
-*   You have applied for an early release super payment due to COVID-19 before the 1st of May, and;
-*   Your remaining account balance is under $10,000 after withdrawal.
-*   Your Future Super account is open (and you can [log into your account](https://portal.myfuturesuper.com.au/member/login_1)). If your account is closed, send us an email at [info@myfuturesuper.com.au](mailto:info@myfuturesuper.com.au) and our Member Advocacy team will re-open it.
+- You have applied for an early release super payment due to COVID-19 before the 1st of May, and;
+- Your remaining account balance is under $10,000 after withdrawal.
+- Your Future Super account is open (and you can [log into your account](https://portal.myfuturesuper.com.au/member/login_1)). If your account is closed, send us an email at [info@myfuturesuper.com.au](mailto:info@myfuturesuper.com.au) and our Member Advocacy team will re-open it.
 
-‍**Important things to consider**
----------------------------------
+## ‍**Important things to consider**
 
 This payment will arrive in your account as an “Other contribution” and will count toward your non-concessional contribution cap\*. This offer is made by Future Super Services Pty Ltd ex gratia and in good faith, and does not create any obligation or liability upon the assets of the Fund or its Trustee, Diversa Trustees Limited.
 
@@ -45,12 +41,11 @@ It may take up to several weeks for this payment to arrive in your account. You�
 
 This blog post contains general information only and does not take into account any person’s financial objectives, situation or needs. We recommend that you seek professional financial advice tailored to your own personal circumstances before taking any financial action. You should read the [Product Disclosure Statement](https://www.myfuturesuper.com.au/pds), [Additional Information Booklet](https://www.myfuturesuper.com.au/aib), [Insurance Guide](https://www.myfuturesuper.com.au/insuranceguide) and [Financial Services Guide](http://myfuturesuper.com.au/fsg) before making any financial decisions regarding the Future Super super fund.**‍**
 
-**FAQ**_‍_
-----------
+## **FAQ**_‍_
 
 ### Why did I miss out on the payment?
 
-We believe in both equity and equality. To us, equity means equal outcomes and not always equal treatment. Future Super determined that members left with low balances (under $10,000) would benefit most from this support and that the impact of these payments would be increased significantly by means-testing the recipients. If you feel you that you meet the eligibility criteria and that you should have received this payment you can get in contact with our member team before the 19th of May at info@myfuturesuper.com.au._‍_
+We believe in both equity and equality. To us, equity means equal outcomes and not always equal treatment. Future Super determined that members left with low balances (under $10,000) would benefit most from this support and that the impact of these payments would be increased significantly by means-testing the recipients. If you feel you that you meet the eligibility criteria and that you should have received this payment you can get in contact with our member team before the 19th of May at info@myfuturesuper.com.au._‍\_
 
 ### Why not just freeze/cancel member fees?
 

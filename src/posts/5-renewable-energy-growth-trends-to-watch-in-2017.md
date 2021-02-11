@@ -2,12 +2,12 @@
 title: "5 Renewable Energy Growth Trends to Watch in 2017"
 slug: 5-renewable-energy-growth-trends-to-watch-in-2017
 date: 2019-02-06T09:30:08.862Z
-tags: 
+tags:
   - Environment
   - Renewable Energy
 author: Michael Bones
-canonical: 
-summary: >-
+canonical:
+description: >-
   We looked at the growth of renewable energy in Australia from the Clean Energy Regulator's recently released report. Here's what we found.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834015537cd3c4c_20161006_Majura_Solar_0166-compressor.png
 ---
@@ -24,7 +24,7 @@ Our conclusion - the renewable energy revolution is here, and it’s just gettin
 
 #### **[_Care about a clean and sustainable future? Make the switch to Future Super. It only takes 2 minutes._](https://join.myfuturesuper.com.au/?_ga=2.23651898.1843708388.1512532685-971669223.1505892204&_gac=1.241896118.1511912641.EAIaIQobChMI8p7jubni1wIVRyQrCh0eJQCgEAAYASAAEgKSl_D_BwE)**
 
- 
+
 
 #### **1\. There was a 500% increase in large-scale renewable energy capacity commitments in 2016**
 
@@ -40,7 +40,7 @@ A total of 1,350 megawatts of new large-scale renewable power capacity was commi
 
 ‍
 
-#### **2\. Renewables attracted over $4 billion of investment last year**  
+#### **2\. Renewables attracted over $4 billion of investment last year**
 
 ‍
 
@@ -78,11 +78,9 @@ _A new record for small-scale renewables in Australia_
 
 Australia tops the world for the highest small-scale solar panel rooftop penetration per capita.
 
-A total of 182,173 small-scale renewable energy systems were installed in 2016, meaning 15% of Aussie households now have solar on the roof!  
+A total of 182,173 small-scale renewable energy systems were installed in 2016, meaning 15% of Aussie households now have solar on the roof!
 
-  
-
-#### **5\. Cost per watt of grant funding reduced by 800% in just 2 years**  
+#### **5\. Cost per watt of grant funding reduced by 800% in just 2 years**
 
 ‍
 
@@ -114,7 +112,7 @@ Now, more than ever, we need to continue our fight against fossil fuels and show
 
 #### **Invest In Renewables**
 
-Here at Future Super, we’re passionate about investing in the clean energy revolution. 
+Here at Future Super, we’re passionate about investing in the clean energy revolution.
 
 Future Super already invests in renewable energy assets and companies here in Australia and around the world. Right now, our team is investigating a further 21 energy projects including battery storage projects in South Australia and Victoria.
 
@@ -123,4 +121,3 @@ From solar farms powering Parliament in Canberra to clean tech start ups and glo
 Learn more at [www.myfuturesuper.com.au](http://www.myfuturesuper.com.au)
 
 ‍
-

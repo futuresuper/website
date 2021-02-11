@@ -2,14 +2,14 @@
 title: "Super Funds Detention: why the refugee rights movement should embrace divestment"
 slug: super-funds-detention-why-the-refugee-rights-movement-should-embrace-divestment
 date: 2019-02-06T09:02:37.496Z
-tags: 
+tags:
   - Equality
   - Disruption
   - Divestment
 author: Kirstin Hunter
-canonical: 
-summary: >-
-  Australian pro-refugee activists have unknowingly been investing in companies that profit from the suffering of refugees. 
+canonical:
+description: >-
+  Australian pro-refugee activists have unknowingly been investing in companies that profit from the suffering of refugees.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834013feacd3cca_Blog%20-%20main%20images%20_2.0.png
 ---
 
@@ -25,23 +25,21 @@ And yet, in the busyness of the everyday, many of us have unknowingly been inves
 
 ![Image of people walking in the city](https://d3e54v103j8qbb.cloudfront.net/img/image-placeholder.svg)
 
-Super Funds Detention
-=====================
+# Super Funds Detention
 
 Most of us would find it absurd that the people managing our super think Australia’s despicable mandatory offshore detention regime is an appropriate investment.
 
 But that’s because few realise super fund managers start from a position of ‘anything goes’. They explicitly ignore social, environmental and ethical issues when making investment decisions, as if financial markets and the real world do not interact.
 
-Sometimes these managers jump on trends and create “socially responsible” investment options. But as soon as you take a look under the covers, you see it for what it is - marketing spin to lull people of conscience into staying put. 
+Sometimes these managers jump on trends and create “socially responsible” investment options. But as soon as you take a look under the covers, you see it for what it is - marketing spin to lull people of conscience into staying put.
 
- 
+
 
 Companies that profit from environmental or social harm are frequently found in the "socially responsible" portfolios for these large, mainstream super funds. How does BHP and ExxonMobil, whose products drive dangerous climate change, pass the social responsibility test? What about asbestos producer James Hardie? Or Ferrovial - the Spanish company that took over Transfield/Broadspectrum - which has been a major contractor for Australia’s detention regime on Manus and Nauru?
 
 It's hard to see how any reasonable person could think these companies are "socially responsible" investments. That's why thousands of Australians have chosen to switch to a true-to-label ethical fund.
 
-Embracing Divestment
-====================
+# Embracing Divestment
 
 Divestment is the act of moving money, shares or assets out of an industry or company. It’s a way for individuals to align their investments with their values, and for movements to erode the social licence of harmful activities.
 
@@ -53,8 +51,7 @@ Divestment creates positive economic and a moral pressure for change. And, as a 
 
 It is time for the refugee movement to embrace divestment, too.\*
 
-Future Super Supports #Season4Justice
-=====================================
+# Future Super Supports #Season4Justice
 
 [Mums 4 Refugees](http://www.mums4refugees.org/) is an organisation dedicated to standing up for refugee rights. These powerful women are fundraising for a legal team to sue the government for human rights abuses on behalf of people seeking asylum.
 
@@ -84,10 +81,8 @@ Or share this link with your friends: **www.myfuturesuper.com.au/support/mums4r
 
 It takes just a few minutes to [make the switch online](https://www.myfuturesuper.com.au/support/mums4refugees?utm_source=blog&utm_medium=organic&utm_campaign=mums-4-refugees&utm_content=), and we can help find all your forgotten accounts, too.
 
-Investing in A Better World
-===========================
+# Investing in A Better World
 
 We often don’t think of super as our money at work in the world, but it is. Through super we are part-owners of companies that have real world impacts. Do we want to profit from business models that lock up refugees, degrade the environment and give people cancer? Or do we want to profit from social good through smart investments in education, renewable energy and healthcare?
 
 ### [**Invest in a better world today and stand up for refugee rights**](https://www.myfuturesuper.com.au/support/mums4refugees?utm_source=blog&utm_medium=organic&utm_campaign=mums-4-refugees&utm_content=)
-

@@ -2,22 +2,22 @@
 title: "Turnbull’s energy policy is a nationwide NEG hit"
 slug: turnbulls-energy-policy-is-a-nationwide-neg-hit
 date: 2019-02-06T07:42:50.556Z
-tags: 
+tags:
   - Disruption
   - Renewable Energy
   - Environment
   - Divestment
   - Activism
 author: Michael Bones
-canonical: 
-summary: >-
+canonical:
+description: >-
   This sleazy pick-up strategy explains everything about the Turnbull government’s energy talk.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834014209cd3e08_turbulls-neg-hit_main%20(1).jpg
 ---
 
 > Turnbull’s energy policy is a nationwide NEG hit
 
-![Turnbull's Nation wide neg hit red boxing gloves ](https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834014209cd3e08_turbulls-neg-hit_main%20(1).jpg)
+![Turnbull's Nation wide neg hit red boxing gloves ](<https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834014209cd3e08_turbulls-neg-hit_main%20(1).jpg>)
 
 Let me explain.
 
@@ -29,7 +29,7 @@ While they may gain traction in alt-right sub-reddits and other spaces where vil
 
 Of course it’s not limited to the context of men trying to pick up women.
 
- 
+
 
 ### So what’s this got to do with Australia’s energy ‘debate’?
 
@@ -49,7 +49,7 @@ But, for some reason - which couldn’t possibly have anything to do with [donat
 
 Instead, they’d prefer to neg hit renewables. If you listened to our government, this world-saving technology is too ‘unreliable’, ‘intermittent’ and ‘expensive’ to bother supporting.
 
- 
+
 
 Just think back to the South Australian blackouts last year - blaming the power outage on renewables instead of the massive storm that ripped up electricity poles and wires? Slick moves, sleezeballs.
 
@@ -86,4 +86,3 @@ So in support of the important work these organisations do, this month we are [c
 If you’re sick of the government’s climate denialism, you can vote for a safe climate every day. It takes just 2 minutes to break ties with the coal, oil and gas companies other super funds love. Instead, can put your super to work building Australia’s clean energy future.
 
 ‍
-

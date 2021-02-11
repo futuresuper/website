@@ -2,29 +2,28 @@
 title: "Teller me the Truth: CommBank’s dirty laundry to finally get aired"
 slug: teller-me-the-truth-commbanks-dirty-laundry-to-finally-get-aired
 date: 2020-01-17T03:00:38.415Z
-tags: 
+tags:
   - Disruption
   - Activism
   - Ethical Investing
 author: Michael Bones
-canonical: 
-summary: >-
+canonical:
+description: >-
   Commonwealth Bank has been in hot water lately over a number of issues. But the really interesting story is at risk of getting lost in all the noise. Find out about the Aussie legends who are taking on the banking giant.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834015709cd3df5_teller-me-the-truth-main%20(1).png
 ---
 
 > Lately the Commonwealth Bank has been getting smashed more than avocado on toast.
 
- 
+
 
 Since it came to light that the bank failed to notify regulators of more than 53,000 large cash transactions, CommBank has been [raked over hot coals](https://www.theguardian.com/commentisfree/2017/aug/09/comm-bank-scandal-what-happens-when-too-much-power-is-placed-in-too-few-hands?CMP=share_btn_fb). Allegedly, their mistake enabled criminals to easily scrub their dirty dollars and launder it in offshore accounts. While the bank’s executives will have their exorbitant salary bonus trimmed, and the CEO is on the way out, the bank is blaming a computer coding error in the hope of avoiding a [potential $1 trillion dollar](http://www.businessreviewaustralia.com/finance/2485/Could-Commonwealth-Bank-be-fined-a-trillion-dollars-for-systemic-law-breaching) fine.
 
- 
+
 
 ‍
 
-**Don’t miss the real story**
------------------------------
+## **Don’t miss the real story**
 
 The laundering issue is a genuine scandal, for sure. [One of many](http://www.news.com.au/finance/business/banking/commonwealth-bank-lists-some-of-the-ways-it-has-failed-customers/news-story/40fe479370a629329fedc949375c7e9d) for the bank. But if you’ve been stuck tumble drying in this corner of the news cycle, you may have missed the bigger CommBank story that broke last week.
 
@@ -36,8 +35,7 @@ How about this.
 
 It’s huge news. Here’s why.
 
-**A corporation is (finally) getting sued over climate change**
----------------------------------------------------------------
+## **A corporation is (finally) getting sued over climate change**
 
 Guy Abrahams is an art consultant and valuer, Kim Abrahams a medical practitioner.
 
@@ -51,10 +49,10 @@ So why is this heroic couple are stepping up and taking Australia’s biggest ba
 
 Environmental Justice Australia’s [media release](http://envirojustice.org.au/media/shareholders-lodge-climate-change-case-against-cth-bank) digs into the legal basis for the case:
 
-_The claim alleges that by not disclosing the risks climate change poses to its business, the bank failed to give a true and fair view of its financial position and performance, as required by the Corporations Act. The shareholders also claim the 2016 directors’ report did not adequately inform investors of climate change risks._  
-  
-_The claim seeks an injunction to stop the bank making the same omissions in future annual reports._  
-  
+_The claim alleges that by not disclosing the risks climate change poses to its business, the bank failed to give a true and fair view of its financial position and performance, as required by the Corporations Act. The shareholders also claim the 2016 directors’ report did not adequately inform investors of climate change risks._
+
+_The claim seeks an injunction to stop the bank making the same omissions in future annual reports._
+
 _The action raises concerns about the risks, including reputational risks, to the Commonwealth Bank regarding funding required for Adani’s proposed Carmichael coal mine project._
 
 To translate from legalese to English...
@@ -63,14 +61,13 @@ To translate from legalese to English...
 
 Check out what Future Super staffer Michael has to say about it:
 
- 
 
-**WTF is climate risk?**
-------------------------
+
+## **WTF is climate risk?**
 
 I’m assuming you have an interesting life full of fun activities.
 
- 
+
 
 So it’s understandable if you don’t spend your precious time on this beautiful planet trawling bank reports or reading the statements of finance industry watchdogs.
 
@@ -78,7 +75,7 @@ You’re not alone.
 
 It’s almost like the finance industry deliberately makes itself as boring as possible to turn us off from taking a closer look.
 
- 
+
 
 Well, it’s time to wake up.
 
@@ -99,7 +96,7 @@ Here’s some stats to ponder:
 
 Banks and super funds only invest in something if they think it will make money. That means they’re betting on a big future for fossil fuels.
 
- 
+
 
 But as anyone who’s seen the Big Short or lived through the GFC will know, sometimes everyone gets it very wrong.
 
@@ -113,12 +110,12 @@ Well, newsflash, keeping warming below 2 degrees means keeping most fossil fuels
 
 A few years ago an organisation called [Carbon Tracker](http://www.carbontracker.org/report/carbon-bubble/) did some digging (of the research variety). They wanted to find out:
 
-*   How much coal, oil and gas reserves fossil fuel companies have on their books
-*   What’s our carbon budget, i.e. how much more fossil fuel can be burned before the world’s thermostat blows past 2 degrees
+- How much coal, oil and gas reserves fossil fuel companies have on their books
+- What’s our carbon budget, i.e. how much more fossil fuel can be burned before the world’s thermostat blows past 2 degrees
 
 The answer was astounding.
 
-[Up to 80% of current thermal coal reserves can’t be burned](http://www.nature.com/nature/journal/v517/n7533/full/nature14016.html?foxtrotcallback=true) if we’re to have have a coin toss chance of staying below the 2 degree ‘safe’ limit.  
+[Up to 80% of current thermal coal reserves can’t be burned](http://www.nature.com/nature/journal/v517/n7533/full/nature14016.html?foxtrotcallback=true) if we’re to have have a coin toss chance of staying below the 2 degree ‘safe’ limit.
 
 That means that the fossil fuel industry’s business model (to find and burn as much coal, oil and gas as possible) is dangerous and fundamentally flawed. Not just for the people and planet bearing the brunt of climate impacts, but for investors, too.
 
@@ -136,8 +133,7 @@ A big transition risk is that fossil fuels may become a ‘stranded asset’. A 
 
 Think about what happened to Blockbuster when Netflix took off, or the fax machine when everyone moved to email. Well, it could be happening all over again, but this time it’s renewables vs fossil fuels.
 
-**Where do we go from here?**
------------------------------
+## **Where do we go from here?**
 
 What happens when the market realises thermal coal, oil and gas are too expensive, from an environmental, social and financial perspective?
 
@@ -147,5 +143,4 @@ Future Super is Australia’s first 100% fossil fuel free super fund. Our approa
 
 Super funds are designed to invest over long time horizons. When we look forward 10, 20 or 30 years, we see a world that’s increasingly powered by clean, renewable energy. So we’re investing in a renewably powered future, and that starts by being fossil fuel free.
 
- If you’d like to join thousands of Australians investing their super in a safe climate future, [find out more here](/switch/join-future-super).
-
+If you’d like to join thousands of Australians investing their super in a safe climate future, [find out more here](/switch/join-future-super).
