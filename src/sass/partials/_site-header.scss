@@ -38,17 +38,9 @@ header[role="banner"] {
     @media (min-width: $breakpoint-md) {
       margin-bottom: $space-section-y-sm;
     }
-    // Mimic padding from .container
-    padding: 0 $space-page-padding-x-sm;
 
-    @media (min-width: $breakpoint-md) {
-      padding: 0 $space-page-padding-x-md;
-    }
-
-    @media (min-width: $breakpoint-lg) {
-      padding: 0 $space-page-padding-x-lg;
-    }
-
+    // TODO: investigate if this style is still necessary
+    // Unsure what for. AoC? Banner?
     @media (min-width: 1068px) {
       margin-top: 2rem;
     }

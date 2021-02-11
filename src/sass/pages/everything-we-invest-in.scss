@@ -6,12 +6,6 @@
 @use "../base" as *;
 
 .everything-we-invest-in {
-  h1 {
-    font-size: 4rem;
-    text-align: center;
-    margin-bottom: 2rem;
-  }
-
   fieldset {
     display: inline-block;
     border: 0;
@@ -26,44 +20,68 @@
     border: 1px solid $grey-500;
     outline: none;
   }
-
-  .top-section-container {
-    padding: 8rem;
-    background-color: $white-500;
+  .selectors {
+    margin-bottom: $space-section-y-sm;
+    @media (min-width: $breakpoint-md) {
+      margin-bottom: $space-section-y-md;
+    }
+    @media (min-width: $breakpoint-lg) {
+      margin-bottom: $space-section-y-lg;
+    }
   }
-
-  .selectors-container {
-    text-align: center;
+  .selectors-row {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    text-align: center;
   }
 
-  .investment-card-section-container {
-    padding: 3rem 3rem 10rem 3rem;
+  .investment-card-section {
+    margin-bottom: $space-section-y-sm;
 
     .info-at-top {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
       margin-bottom: 3rem;
+      align-items: center;
 
       select {
         background-color: $white-500;
       }
     }
 
-    .sorting-container {
+    .sort-item {
+      grid-column: span 6;
+      @media (min-width: $breakpoint-md) {
+        grid-column: span 3;
+      }
+
       display: flex;
       align-items: center;
-    }
-  }
 
-  .grid-of-cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 1rem;
+      h5 {
+        font-weight: normal;
+        flex: 1;
+        margin: 0;
+      }
+
+      fieldset {
+        flex: 3;
+        margin: 0;
+        padding: 0;
+      }
+    }
+
+    .as-at-date {
+      margin: 1rem 0 0 0;
+      line-height: 100%;
+      color: $grey-500;
+      grid-row: 2 / 2;
+      @media (min-width: $breakpoint-md) {
+        margin: 0;
+        grid-row: 1 / 1;
+        grid-column: 1 / 7;
+      }
+    }
   }
 
   .grid-options-weight {
@@ -77,6 +95,18 @@
   .investment-container {
     padding: 2rem;
     @extend %border-style-card;
+    // Prevent titles from spilling out of container
+    overflow-wrap: break-word;
+    // And just in case...
+    overflow: hidden;
+
+    @media (min-width: $breakpoint-md) {
+      grid-column: span 4;
+    }
+
+    @media (min-width: $breakpoint-lg) {
+      grid-column: span 3;
+    }
 
     h4 {
       margin-top: 0.5rem;
