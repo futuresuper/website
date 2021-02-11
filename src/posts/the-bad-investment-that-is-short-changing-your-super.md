@@ -2,24 +2,24 @@
 title: "The bad investment that is short-changing your super"
 slug: the-bad-investment-that-is-short-changing-your-super
 date: 2019-02-05T19:17:14.241Z
-tags: 
+tags:
   - Divestment
   - Disruption
   - Ethical Investing
   - News
   - Superannuation
 author: Adam Verwey
-canonical: 
-summary: >-
+canonical:
+description: >-
   As Australians await further changes to the superannuation industry, there’s one key area where regulators can help protect Australians from losing thousands of dollars from their super savings.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc483401bd03cd3ddc_Coal-Mine-Trucks-Aerial-compressor%20(1)%20(1).jpeg
 ---
 
-As Australians await further changes to the superannuation industry, there’s one key area where regulators can help protect Australians from losing thousands of dollars from their super savings. That’s by fighting the super industry’s addiction to investing in fossil fuels.   
+As Australians await further changes to the superannuation industry, there’s one key area where regulators can help protect Australians from losing thousands of dollars from their super savings. That’s by fighting the super industry’s addiction to investing in fossil fuels.
 
 > Analysis from our investment team shows that the average Australian with a super balance of $100,000 may be $8,200 worse off because of their super fund’s investment in fossil fuel companies over the last 5 years.
 
-![Coal Mine Trucks in mine](https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc483401bd03cd3ddc_Coal-Mine-Trucks-Aerial-compressor%20(1)%20(1).jpeg)
+![Coal Mine Trucks in mine](<https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc483401bd03cd3ddc_Coal-Mine-Trucks-Aerial-compressor%20(1)%20(1).jpeg>)
 
 Super funds invested in fossil fuels may not have performed as well as funds with no fossil fuel investments. Image: AdobeStock
 
@@ -35,7 +35,7 @@ The average Australian super fund has 50% of its portfolio invested in shares of
 
 The investment managers for our super funds have no excuses for continuing to invest in this way. The financial risks of climate change and the fossil fuel industry are well known.
 
-Among the voices who have been warning about these risks has been the super fund regulator itself. Last year the executive board member of APRA, Geoff Summerhayes, warned super fund trustees to account for the “prudential threat” of climate change in their investment decisions. 
+Among the voices who have been warning about these risks has been the super fund regulator itself. Last year the executive board member of APRA, Geoff Summerhayes, warned super fund trustees to account for the “prudential threat” of climate change in their investment decisions.
 
 > Summerhayes warned that climate risks are “distinctly financial” in nature, with many of these risks being “foreseeable, material and actionable now”.
 
@@ -54,4 +54,3 @@ Rather than gambling the retirement savings of Australians on the fossil fuel in
 #### Interested in Future Super?
 
 Switching away from fossil fuels is quick and easy. [Click here to learn more about joining.](https://www.myfuturesuper.com.au/super#sign-up)
-

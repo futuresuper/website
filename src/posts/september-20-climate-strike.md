@@ -2,11 +2,11 @@
 title: "The September 20 Climate Strike: A Retrospective"
 slug: september-20-climate-strike
 date: 2020-07-13T08:17:46.400Z
-tags: 
+tags:
   - Activism
 author: Brett Morgan
-canonical: 
-summary: >-
+canonical:
+description: >-
   Future Super Member Advocate and climate activist Brett Morgan reflects on the recent global climate strike on September 20.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc483401ac9ccd3e1a_Blog%20-%20Header%20Image%20(1).jpg
 ---
@@ -52,4 +52,3 @@ We all know that large-scale social change doesn’t happen overnight. But that�
 The Sydney school strikers. _Image credit: Marcus Coblyn (_[_CC BY 2.0_](https://creativecommons.org/licenses/by/2.0/?ref=ccsearch&atype=rich)_)_
 
 ‍
-

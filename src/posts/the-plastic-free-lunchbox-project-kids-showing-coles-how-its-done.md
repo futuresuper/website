@@ -2,11 +2,11 @@
 title: "The Plastic-Free Lunchbox Project: kids showing Coles how it’s done"
 slug: the-plastic-free-lunchbox-project-kids-showing-coles-how-its-done
 date: 2019-02-05T19:06:46.967Z
-tags: 
+tags:
   - Community
 author: Michael Bones
-canonical: 
-summary: >-
+canonical:
+description: >-
   As the big grocers dilly dally over single use plastic bags, Sarah and the Taroona community are proving that ending plastic is child's play.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc48340111b9cd3dc4_The%20Plastic%20Free%20Lunchbox%20Project%20(1).png
 ---
@@ -17,10 +17,9 @@ It is home to one of Australia’s most famous environmental protests, which sav
 
 What you might not know is that today Taroona, just a few clicks south of Hobart, boasts one of Australia’s most active communities working for a plastic-free future.
 
-![Woman and girl showing a plastic free future](https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834014f87cd3e0b_a%20plastic%20free%20future%20(1).jpg)
+![Woman and girl showing a plastic free future](<https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834014f87cd3e0b_a%20plastic%20free%20future%20(1).jpg>)
 
-Getting Plasticwise
--------------------
+## Getting Plasticwise
 
 [Plasticwise](https://plasticwise.net/) is a network of volunteer run community organisations dedicated to reducing the amount of plastic waste ending up in our oceans and landfill.
 
@@ -34,10 +33,9 @@ In just one year, a powerful team of over 200 volunteers has made over 1,500 reu
 
 ‍
 
-That’s a (Beeswax) Wrap
------------------------
+## That’s a (Beeswax) Wrap
 
-![Colorful beeswax wrap](https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834015b89cd3dc3_Colorful%20beeswax%20wrap%20(1).jpg)
+![Colorful beeswax wrap](<https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834015b89cd3dc3_Colorful%20beeswax%20wrap%20(1).jpg>)
 
 The Plastic Free Lunchbox Project is the latest idea to come out of the Taroona Plasticwise group.
 
@@ -49,8 +47,7 @@ Plasticwise Taroona ran the workshops at the local Taroona Primary School, and t
 
 As this is a volunteer group, Plasticwise Taroona is now fundraising so they can dedicate more resources to help Tasmanian kids become more sustainable and reduce plastic waste.
 
-How you can help
-----------------
+## How you can help
 
 ### Plasticwise Taroona are fundraising right now.
 
@@ -63,4 +60,3 @@ If you have already donated or are looking for another way to support, there is 
 Future Super is donating $125 to Plasticwise Taroona on behalf of anyone who makes the switch via their partnership page.\*
 
 [**Find out more about how you can switch your super and support Plasticwise Taroona here**](https://www.myfuturesuper.com.au/support/plasticwise-taroona)
-

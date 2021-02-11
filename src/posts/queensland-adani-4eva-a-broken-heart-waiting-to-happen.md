@@ -2,20 +2,20 @@
 title: "Queensland + Adani 4EVA: A broken heart waiting to happen."
 slug: queensland-adani-4eva-a-broken-heart-waiting-to-happen
 date: 2019-02-06T12:15:03.613Z
-tags: 
+tags:
   - Activism
   - Disruption
   - Environment
 author: Noelle Greenwood
-canonical: 
-summary: >-
+canonical:
+description: >-
   As a Queenslander, it disturbs me deeply what our government is agreeing to in our name, in considering an allegiance with Mr Adani to be in our state’s best interest. And I have the strong sense that we are the ones being played for fools.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc48340136d6cd3dd5_adani-4eva-main%20(1).png
 ---
 
 > With the latest news that Commonwealth Bank has ruled out funding the divisive Adani Carmichael mine, adding their name to a list of big Australian banks refusing to fund the controversial project, there's very little indication from our government that they're listening to what their constituents, and even now the finance industry, are saying...
 
-![Queensland + Adani 4 Eva - a broken heart waiting to happen](https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc48340136d6cd3dd5_adani-4eva-main%20(1).png)
+![Queensland + Adani 4 Eva - a broken heart waiting to happen](<https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc48340136d6cd3dd5_adani-4eva-main%20(1).png>)
 
 As a Queenslander, it disturbs me deeply what our government is agreeing to in our name, in considering an allegiance with Mr Adani to be in our state’s best interest.
 
@@ -27,15 +27,13 @@ But there are [so many reasons](https://newmatilda.com/2016/12/07/delusion-or-co
 
 And it _is_ [irresponsible](https://www.echo.net.au/2017/05/exploding-myth-adani-good-queensland/). Deeply. But what strikes me strongly today is this primal sense that we are the ones being played for fools.
 
-I can’t be the only one thinking this
--------------------------------------
+## I can’t be the only one thinking this
 
 Perhaps it’s the underdog mentality that’s part of my North Queensland upbringing. Perhaps it’s the subtle cynicism toward government that comes from growing up in a family who attended every rally, reconciliation day, earth day, walk against want and Amnesty march in our small town. Perhaps it’s my primary school memory of our leaders choosing the word ‘reconciliation’ instead of just ‘sorry’. Perhaps it’s the general distrust that comes with being a passionate advocator of human rights and climate justice in a world that often seems to be ignoring us.
 
 Whatever it is, there’s this indignant voice in my mind, as I pass the GetUp! billboard about the Adani mine on my way to the train station, that tells me in no uncertain terms, “Queensland is going to look like such idiots for doing this.”
 
-The building blocks for a fool’s errand
----------------------------------------
+## The building blocks for a fool’s errand
 
 It’s not hard to picture the scenario broken down into simple pieces.
 
@@ -47,8 +45,7 @@ It’s not hard to picture the scenario broken down into simple pieces.
 
 I can just see Mr Adani sitting behind his desk thinking, “I just need one group of idiots to fall for my beautiful powerpoint slides with their classy clip art. I just need one fool to say ‘yes’. I just need one sucker to let me build it in their backyard. I’ll worry about the future when I get one more coal mine.”
 
-Hook, line and sinker
----------------------
+## Hook, line and sinker
 
 And we are the idiots. We are the fools. We are the suckers.
 
@@ -56,7 +53,7 @@ We fell for it.
 
 Hook. Line. Sinker.
 
-![Queensland fell for Adani - hook line and sinker](https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834012ed5cd3e16_adani-fishing%20(1).png)
+![Queensland fell for Adani - hook line and sinker](<https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834012ed5cd3e16_adani-fishing%20(1).png>)
 
 “How could you and your generation let that happen, Mum?”
 
@@ -68,8 +65,7 @@ So… how do we stop it from happening?
 
 We **stop it from happening**.
 
-What I can do, what you can do
-------------------------------
+## What I can do, what you can do
 
 We [move our energy provider](http://ethicalswitch.com/ethicalpower) to one that offers genuine green options.
 
@@ -83,13 +79,12 @@ We make our voices heard.
 
 We stand together, side by side, saying ‘No. Not in my name’.
 
-![Adani Carmichael mine - not in my name](https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc483401656acd3dd6_adani-x%20(1).png)
+![Adani Carmichael mine - not in my name](<https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc483401656acd3dd6_adani-x%20(1).png>)
 
-We find our inner activist who's been a little pre-occupied with life lately. We remind her that this is one worth fighting for. That it’s _our_ backyard_._ That it’s _our_ children’s future.
+We find our inner activist who's been a little pre-occupied with life lately. We remind her that this is one worth fighting for. That it’s _our_ backyard*.* That it’s _our_ children’s future.
 
 We pencil in half an hour on the weekend to write an email to our state MP. We sign the petitions that are making the rounds. We call our local member to voice our sincere concerns.
 
 We don’t sit still. We can’t. That’s the worst thing we could do.
 
 But if we all stand up, they’ll take notice. They’ll have to.
-

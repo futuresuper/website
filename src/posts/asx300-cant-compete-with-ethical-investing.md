@@ -2,12 +2,12 @@
 title: "ASX300 can’t compete with ethical investing"
 slug: asx300-cant-compete-with-ethical-investing
 date: 2019-02-05T18:20:25.717Z
-tags: 
+tags:
   - Ethical Investing
   - Superannuation
 author: Nick Lyons
-canonical: 
-summary: >-
+canonical:
+description: >-
   Investment analyst Nick Lyons discusses how our members were protected through market volatility in the last 6 months. Future Super has returned above-market returns for the year. We have proven the value of ethical investing by protecting and growing our members’ retirement savings… Again.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834017489cd3e03_m6Tiov4X0T0Dz52D0zDWJE0sSHUnxir2DesoCIlbOlWLyyO2Rj1nFW0En-T5j1PgbkdD_4RVrkMmj_Mq62hXjbZegPcAOcp2Wlp9mSaFb2l-tGpgpwRmetU4QxB6QONLrRS6FoPX%20(1).jpg
 ---
@@ -24,13 +24,10 @@ For the calendar year to December 2018, the Future Super Australian Shares Index
 
 ![Future Super Performance for 12 months vs ASX 300](https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc483401115ccd3dc1_Screen%20Shot%202019-01-24%20at%207.51.15%20am.png)
 
-‍  
+‍
 
 ![Growth in $1 invested - Future Super vs ASX 300](https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834017055cd3de6_KbfuRB1e2YnPN-ZEacaPYBY-8CuXa97spNcVIpsjNuXWUkL4cY0wMjSJ4gCoLtyWul5zz7OpHfQJX4DUN0yAkMjcK1l7wOTryN_WJkgWcoq0kAIfFDjbDCCYGUWHoJVBoFyjnUro.png)
-
-  
 
 At the end of the 12-month period, $1 invested into the Future Super Global Shares Index would now be worth $1.09. $1 invested in the Future Super Australian Shares Index is now worth $1.02.
 
 As evidenced above, investing ethically does not have to come at the expense of financial performance and instead can lead to greater performance over the long-term.
-

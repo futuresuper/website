@@ -2,22 +2,21 @@
 title: "Ethical Super Series - Part 1"
 slug: ethical-super-series-part-1
 date: 2019-02-06T09:26:30.752Z
-tags: 
+tags:
   - Disruption
   - Divestment
 author: Michael Bones
-canonical: 
-summary: >-
+canonical:
+description: >-
   Everyone is talking about ethical super these days, but what does it really mean? Explore the ins and outs of ethical superannuation and investment with Future Super’s Ethical Super Series. In this 10 part series exploring everything from ‘what is fossil fuel free’ to ‘how to analyse a company’, we’ll be looking at how ordinary Australians can be empowered to invest more ethically.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc483401acf3cd3d8a_ethical-investment-part1-main%20(1).jpg
 ---
 
 > _Ethical Super Series: A how-to-series to help you align your money with your values_
 
-![Image of woman sitting on wooden floor - Ethical Investment, Part 1: Super makes investors of us all](https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc483401acf3cd3d8a_ethical-investment-part1-main%20(1).jpg)
+![Image of woman sitting on wooden floor - Ethical Investment, Part 1: Super makes investors of us all](<https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc483401acf3cd3d8a_ethical-investment-part1-main%20(1).jpg>)
 
-Part 1: Super Makes Investors Of Us All
-=======================================
+# Part 1: Super Makes Investors Of Us All
 
 ‍
 
@@ -27,8 +26,7 @@ Future Super’s Ethical Super Series will explore the ins and outs of ethical s
 
 With over $2 trillion being invested through superannuation, acknowledging that we all are investors is the first step on the path towards a more sustainable, ethical and prosperous future.
 
-Australia is a nation of super investors
-----------------------------------------
+## Australia is a nation of super investors
 
 If you live and work in Australia, chances are you’re an investor.
 
@@ -48,8 +46,7 @@ It’s easy to disengage with superannuation. Lots of people struggle to find ac
 
 But that doesn’t change the fact that _your super is your money_. And it’s doing things in the real world, right now.
 
-Ethical Superannuation and Investment: applying the values you live by to the money you’ll live on
---------------------------------------------------------------------------------------------------
+## Ethical Superannuation and Investment: applying the values you live by to the money you’ll live on
 
 Congratulations. Thanks to superannuation, you’re an investor.
 
@@ -73,8 +70,7 @@ When we make an investment, we’re also making an investment in the type of fut
 
 > Do you want a future with more coal mines, nuclear weapons and poker machines? Or a world with more clean energy, affordable medicine and accessible education?
 
-Ethical Screening
------------------
+## Ethical Screening
 
 Some super funds are called 'ethical' or have a 'sustainable' option, but it’s not easy to work out what this means.
 
@@ -82,22 +78,21 @@ We think it’s important that super funds be upfront about their values, and tr
 
 At Future Super we use a two-step ethical screening process to ensure your money is invested in companies that can both grow your super savings and build a better world.
 
-> Step 1 - **“negative screening”**.  
->   
-> Out with the bad: a negative screen rules out harmful and destructive industries like fossil fuels, detention centres, live animal export, nuclear, tobacco and more.  
->   
-> For many super funds, this is where they stop. They rule out a few ‘unethical’ investments that aren’t great for their reputation, and call it a day.  
->   
+> Step 1 - **“negative screening”**.
+>
+> Out with the bad: a negative screen rules out harmful and destructive industries like fossil fuels, detention centres, live animal export, nuclear, tobacco and more.
+>
+> For many super funds, this is where they stop. They rule out a few ‘unethical’ investments that aren’t great for their reputation, and call it a day.
+>
 > If you don’t think that’s good enough, look for a super fund that also includes a positive screen.
 
-> Step 2 - **“positive screening”**.  
->   
-> In with the good: a positive screen ensures we actively seek out companies that are doing social and environmental good, such as renewable energy, healthcare, education and IT.  
->   
+> Step 2 - **“positive screening”**.
+>
+> In with the good: a positive screen ensures we actively seek out companies that are doing social and environmental good, such as renewable energy, healthcare, education and IT.
+>
 > At Future Super, our ethical research team constantly monitor the companies in our portfolio to make sure they match our values.
 
-How to make your Super Ethical
-------------------------------
+## How to make your Super Ethical
 
 ### **Step 1: Know your values**
 
@@ -105,12 +100,12 @@ Make a quick list of the issues you care about.
 
 Here’s a few things we care about at Future Super.
 
-*   Eliminating reliance on fossil fuels
-*   Increasing clean energy
-*   Supporting new clean technology startups
-*   Investing in programs that create social good, such as the Aspire Social Impact Bond for people experiencing homelessness
-*   Reducing animal cruelty (no live animal export, cosmetic animal testing or factory farming)
-*   Supporting human rights by avoiding companies involved in running mandatory detention centres, for example
+- Eliminating reliance on fossil fuels
+- Increasing clean energy
+- Supporting new clean technology startups
+- Investing in programs that create social good, such as the Aspire Social Impact Bond for people experiencing homelessness
+- Reducing animal cruelty (no live animal export, cosmetic animal testing or factory farming)
+- Supporting human rights by avoiding companies involved in running mandatory detention centres, for example
 
 ‍
 
@@ -163,4 +158,3 @@ As ethical investing grows, there’s less resources going to harmful industries
 And the great news is that investing ethically can provide competitive returns. In fact, the most recent [benchmark report](http://responsibleinvestment.org/resources/benchmark-report/) from the Responsible Investment Association Australasia shows ‘core’ responsibly invested Australian share funds and balanced multi-sector funds have outperformed their equivalent mainstream funds over three, five and 10-year horizons.
 
 Stay tuned to our Ethical Super series to learn more about how ethics can lead to superior returns.
-

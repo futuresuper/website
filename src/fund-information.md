@@ -1,5 +1,6 @@
 ---
 title: "Fund Information"
+description: Fund Information for the Future Super Fund
 layout: "layouts/article.html"
 alsoSee:
   - Employers

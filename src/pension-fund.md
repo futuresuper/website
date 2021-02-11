@@ -2,6 +2,7 @@
 title: "Pension Fund"
 layout: "layouts/pension-fund.html"
 summary: "Free your pension from fossil fuels."
+description: Free your pension from fossil fuels.
 pageStyles: ["src/css/pages/investment-options.css"]
 faqCategory: "Pension"
 alsoSee:

@@ -2,11 +2,11 @@
 title: "Why does a superannuation company care about marriage equality?"
 slug: why-does-a-superannuation-company-care-about-marriage-equality
 date: 2018-11-20T06:39:56.859Z
-tags: 
+tags:
   - Activism
 author: Kirstin Hunter
-canonical: 
-summary: >-
+canonical:
+description: >-
   Find out why marriage equality is an important issue for a superannuation fund. It might not be the answer you'd expect.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834018023cd3d4a_Blog%20-%20main%20images.png
 ---
@@ -25,10 +25,9 @@ So it’s all good then, right? If only it were this simple.
 
 Legally speaking, it’s true that same sex couples in de facto relationships have the same rights as heterosexual couples in de facto relationships. However, those de facto rights differ from marriage rights in a number of respects, and the impact of these differences is often experienced more by same sex couples.
 
-Let me illustrate this by returning to our topic: superannuation. 
+Let me illustrate this by returning to our topic: superannuation.
 
-Let’s take an imaginary couple, Sam and Chris. 
------------------------------------------------
+## Let’s take an imaginary couple, Sam and Chris. 
 
 Sadly for Sam, Chris has just died.
 
@@ -57,4 +56,3 @@ It sounds far-fetched, but it’s not. There are [many stories](https://www.theg
 > So YES, we’re a superannuation fund, and YES we’re supporting marriage equality.
 
 So if you haven't already done so, get your YES vote in. Don't let it slip another day.
-

@@ -2,18 +2,18 @@
 title: "Follow The Money: The fight to #StopAdani brings banks and super funds into focus"
 slug: stop-adani-follow-the-money-to-super-funds-and-banks
 date: 2019-02-06T10:31:25.462Z
-tags: 
+tags:
   - Activism
 author: Michael Bones
-canonical: 
-summary: >-
+canonical:
+description: >-
   The fight to #StopAdani brings banks and super funds into focus.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc48340176e9cd3d80_follow_the_money%20(1).jpg
 ---
 
 The #StopAdani campaign ramped up last weekend with protesters crashing Westpac’s 200th birthday party in Redfern on Saturday night.
 
-![Image of people protesting: Westpac it's time to #STOPADANI](https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834015e7bcd3e09_da_stopadaniwestpac1%20(1).jpg)
+![Image of people protesting: Westpac it's time to #STOPADANI](<https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834015e7bcd3e09_da_stopadaniwestpac1%20(1).jpg>)
 
 ‍
 
@@ -43,7 +43,7 @@ One protester, Shaun Murray, made his way inside to the main hall, climbed scaff
 
 ### **Banks and Super Funds in the Spotlight**
 
-It takes money to make a mine. More often than not, that money comes from ordinary Australians via the banks and super funds we use every day. 
+It takes money to make a mine. More often than not, that money comes from ordinary Australians via the banks and super funds we use every day.
 
 Despite paying lip service to helping Australia transition to a low carbon economy, banks are propping up the polluters causing climate change.
 
@@ -67,7 +67,7 @@ In response, thousands of Australians have been wielding their consumer power by
 
 ### **Banking on a Better Future**
 
-Banks and super funds that fund fossil fuels are ignoring climate reality. 
+Banks and super funds that fund fossil fuels are ignoring climate reality.
 
 Over 80% of current fossil fuel reserves must to stay in the ground for a chance to halt warming at 2 degrees. Meanwhile, renewable energy is becoming cheaper and more effective. Economists, energy experts and APRA, Australia’s finance industry watchdog, have [warned that fossil fuels risk becoming ‘stranded’ (i.e. worthless) assets](http://www.afr.com/news/policy/climate/climate-change-is-a-financial-risk-says-apra-20170217-gufnnf).
 
@@ -76,4 +76,3 @@ If you’re concerned about the impact fossil fuels are having on our planet and
 Find out more information about fossil free banking at [www.marketforces.org.au](http://www.marketforces.org.au)
 
 Compare super fund exposure to fossil fuels at [www.superswitch.org.au](http://www.superswitch.org.au)
-

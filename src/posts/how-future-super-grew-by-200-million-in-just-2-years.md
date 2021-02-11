@@ -2,12 +2,12 @@
 title: "$200 Million In 2 years: How Future Super Helped Thousand Of Aussies Divest Their Superannuation"
 slug: how-future-super-grew-by-200-million-in-just-2-years
 date: 2018-11-20T06:40:24.114Z
-tags: 
+tags:
   - Environment
   - Ethical Investing
 author: Michael Bones
-canonical: 
-summary: >-
+canonical:
+description: >-
   Imagine the power of all of us moving our super money out of fossil fuels and into funding climate solutions. Superannuation is mandatory, but investing in fossil fuels shouldn’t be. Australians deserve a choice. This is the story of how two guys decided to do something about it.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc483401711dcd3c05_Outback_Solar_and_Turbine-compressor.jpeg
 ---
@@ -35,4 +35,3 @@ In September 2014, Future Super officially launched. By the start of 2017 over 6
 Future Super’s returns have regularly outperformed,\* showing that you don’t have to destroy the planet to make a dollar. Our diversified, fossil free portfolio is investing millions in new renewable projects across Australia and around the world. We’re continually developing new ways to track the financial impact of fossil fuels in local and global markets. And, most importantly, we’re connecting everyday Australians to their super power (pun intended) with the knowledge that your retirement savings can make a real difference in the real world, right now.
 
 By working together, we can use super to build a better, fossil free future.
-

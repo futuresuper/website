@@ -2,11 +2,11 @@
 title: "Is Energy Poverty the new buzzword or a real problem?"
 slug: is-energy-poverty-the-new-buzzword-or-a-real-problem
 date: 2019-02-05T18:22:06.043Z
-tags: 
+tags:
   - Activism
 author: Tara James
-canonical: 
-summary: >-
+canonical:
+description: >-
   Energy poverty is both a national and global challenge impacting climate change prevention efforts and basic human survival - a problem that can only be solved by increasing awareness and demanding investment and focus on its solution.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834010a48cd3da3_AdobeStock_96317960%20(1).jpeg
 ---
@@ -36,4 +36,3 @@ There are some great Australian initiatives currently raising awareness and figh
 ![SolarBuddy, for example, provides innovative school education and corporate engagement programs. ](https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834016cafcd3ded_Screen%20Shot%202019-01-16%20at%2012.02.42%20pm.png)
 
 Energy poverty is a global energy equity challenge; equity in the sense of evening the playing field for the opportunity to benefit from clean electricity across both developed and developing nations. We need to start with a complete shift to renewable energy. Improved housing standards will also help to prevent further deaths and displacement of people. Well developed countries, such as ours, need to lead the fight to preserve our planet for future generations as well as stand up for those facing energy poverty today.
-

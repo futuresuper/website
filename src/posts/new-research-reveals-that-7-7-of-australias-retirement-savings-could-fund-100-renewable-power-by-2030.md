@@ -2,14 +2,14 @@
 title: "New research reveals that 7.7% of Australia’s retirement savings could fund 100% renewable power by 2030"
 slug: new-research-reveals-that-7-7-of-australias-retirement-savings-could-fund-100-renewable-power-by-2030
 date: 2019-02-05T19:30:30.550Z
-tags: 
+tags:
   - Activism
   - Disruption
   - Ethical Investing
   - Renewable Energy
 author: Michael Bones
-canonical: 
-summary: >-
+canonical:
+description: >-
   Today, brand new research by UTS Institute of Sustainable Futures (ISF) and Future Super reveals that funding Australia’s transition to 100% renewable energy could be easier than once thought.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc483401fac7cd3d52_UTS%20Report%20Chart%203%20(1).png
 ---
@@ -34,8 +34,7 @@ The research findings also reveal that the total investment required to transiti
 
 ‍
 
-A New Way to Invest in Renewables
----------------------------------
+## A New Way to Invest in Renewables
 
 Off the back of this report, Future Super is preparing to launch a new renewable energy focussed investment option to enable everyday Australians to increase their exposure to the rapidly growing renewable energy industry. [Future Super Growth (Renewables Plus)](http://www.myfuturesuper.com.au/renewables-plus) will be Australia’s first diversified, fossil-free portfolio with renewable energy at its core.
 
@@ -48,4 +47,3 @@ Off the back of this report, Future Super is preparing to launch a new renewable
 “Activists have urged divestment for what you might call moral reasons: if it’s wrong to wreck the planet, it’s wrong to profit from the wreckage,” said McKIbben, “But pension funds are willing to divest because they’ve come to believe that the future is not about coal and oil and gas—that these are now on the decline. The future lies elsewhere.”
 
 ### [Join the waitlist for Future Super Growth (Renewables Plus)](http://www.myfuturesuper.com.au/renewables-plus)
-

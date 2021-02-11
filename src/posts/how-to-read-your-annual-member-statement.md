@@ -2,16 +2,16 @@
 title: "How to read your Annual Member Statement"
 slug: how-to-read-your-annual-member-statement
 date: 2020-12-08T05:30:49.773Z
-tags: 
+tags:
   - Superannuation
 author: James Alexander
-canonical: 
-summary: >-
+canonical:
+description: >-
   We've written a helpful explainer to equip you with what you need to read (and understand) your member statement.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834015250cd3e0f_Blog%20Header%20(1).jpg
 ---
 
-![](https://uploads-ssl.webflow.com/5c1443dba808385e680d18e4/5dd36083b443cc541d35e5b7_siora-photography-hgFY1mZY-Y0-unsplash%20(1)%20(1).jpg)
+![](<https://uploads-ssl.webflow.com/5c1443dba808385e680d18e4/5dd36083b443cc541d35e5b7_siora-photography-hgFY1mZY-Y0-unsplash%20(1)%20(1).jpg>)
 
 **We know that annual superannuation statements aren’t the easiest things in the world to understand, so we wrote this handy blog article to guide you through.**
 
@@ -55,7 +55,7 @@ The **percentage-based fees** are deducted when calculating your investment earn
 
 Fee information.
 
-#### Accessing your super  
+#### Accessing your super
 
 Your account balance is broken into different components in the ‘Access Your Money’ section.
 
@@ -90,4 +90,3 @@ Beneficiary information.
 If you have any further questions you can find answers on our [Knowledge Base](https://futuresuper.groovehq.com/help), email us at [info@myfuturesuper.com.au](mailto:info@myfuturesuper.com.au) or call us on **1300 658 422.**
 
 **You should read the important information in our** [**Product Disclosure Statement**](https://www.myfuturesuper.com.au/pds) **and** [**Additional Information Booklet**](https://www.myfuturesuper.com.au/aib) **before making any financial decisions with Future Super.**
-

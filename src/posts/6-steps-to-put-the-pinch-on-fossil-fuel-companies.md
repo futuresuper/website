@@ -2,14 +2,14 @@
 title: "6 Steps to Put the Pinch on Fossil Fuel Companies"
 slug: 6-steps-to-put-the-pinch-on-fossil-fuel-companies
 date: 2019-02-06T09:35:02.730Z
-tags: 
+tags:
   - Activism
   - Divestment
   - Environment
   - Renewable Energy
 author: Michael Bones
-canonical: 
-summary: >-
+canonical:
+description: >-
   Sick of dirty energy destroying this environment? Be part of the solution with these 6 steps from Future Super, and help put an end to fossil fuel companies.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834016a1acd3ddd_5c1443dba80838ac280d220b_Blog%20-%20main%20images%20_2.0%20(3)%20(1).png
 ---

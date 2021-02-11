@@ -2,15 +2,15 @@
 title: "Solar Pilgrimage: Seeing Your Super Power In Action"
 slug: solar-pilgrimage-seeing-your-super-power-in-action
 date: 2019-02-06T07:45:08.648Z
-tags: 
+tags:
   - Renewable Energy
   - Environment
   - Divestment
   - Member stories
 author: Michael Bones
-canonical: 
-summary: >-
-  On a warm and windy Thursday, an unlikely group gathered for a pilgrimage 30 minutes south of Canberra. 
+canonical:
+description: >-
+  On a warm and windy Thursday, an unlikely group gathered for a pilgrimage 30 minutes south of Canberra.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc483401a5cfcd3d8b_Williamsdale-solar_main%20(1).png
 ---
 
@@ -22,8 +22,7 @@ So what compelled a bunch of strangers - two law students, a jetlagged but jovia
 
 A desire to experience their superannuation power in action.
 
-**Super Builds Solar**
-----------------------
+## **Super Builds Solar**
 
 The occasion was the official Williamsdale Solar Farm opening.
 
@@ -35,9 +34,8 @@ After the formalities, site manager Rosie gave a short tour. We walked between r
 
 Before we jumped on the bus back to Canberra, a few Future Super members shared their thoughts on the experience.
 
- 
+
 
 Thanks to everyone who made the day possible, including Impact Investment Group, Shane Rattenbury and, of course, our members.
 
 > The Williamsdale Solar Farm is one of many renewable energy projects in which Future Super invests. If you’d like be part of a community genuinely connected to their super, [find out how today](/archived/join-future-super-old1).
-

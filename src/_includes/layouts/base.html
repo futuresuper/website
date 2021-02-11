@@ -2,23 +2,46 @@
 <html lang="en">
 
   <head>
+    {% if title === "home" %}
+      {% set pageTitle = "Future Super | Ethical & Sustainable Superannuation" %}
+    {% elif title %}
+      {% set pageTitle = title + " | Future Super" %}
+    {% else %}
+      {% set pageTitle = "Future Super" %}
+    {% endif %}
+
+    {% if image %}
+      {% set ogImage = image %}
+    {% else %}
+      {% set ogImage = "https://assets-global.website-files.com/5ec37dbb4834011cb8cd3469/5efacd0c3672ef40a9d5b739_FutureSuperOGimage.png" %}
+    {% endif %}
+
+    {% if description %}
+      {% set ogDescription = description %}
+    {% else %}
+      {% set ogDescription = "Build the future you want to see. Your super has the power to combat climate change, let’s put it to work." %}
+    {% endif %}
+
+    <title>{{ pageTitle }}</title>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" shrink-to-fit="no"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <meta name="description" content="{{ ogDescription }}"/>
+    <meta property="og:title" content="{{ pageTitle }}"/>
+    <meta property="og:description" content="{{ ogDescription }}"/>
+    <meta property="og:image" content="{{ ogImage }}"/>
+    <meta property="og:type" content="website"/>
+    <meta property="twitter:title" content="{{ pageTitle }}"/>
+    <meta property="twitter:description" content="{{ ogDescription }}"/>
+    <meta property="twitter:image" content="{{ ogImage }}"/>
+    <meta name="twitter:card" content="summary_large_image"/>
 
     {# Favicons #}
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32.png">
     <link rel="apple-touch-icon" href="/images/favicon/apple-touch-icon.png">
     {# https://web.dev/add-manifest/ #}
-    <link rel="manifest" href="/manifest.json" />
+    <link rel="manifest" href="/manifest.json"/>
 
-    {# Conditional content for the homepage #}
-    {% if title === "Home" %}
-      <title>Future Super | Ethical & Sustainable Superannuation</title>
-    {% else %}
-      <title>{{ title }}
-        | Future Super</title>
-    {% endif %}
     <link rel="stylesheet" href="{{ '/css/main.css' | url }}">
     {% if pageStyles %}
       {% for styles in pageStyles %}
@@ -26,7 +49,7 @@
         {% include styles %}
         {% endset %}
         <style>
-          {{ css | cssmin | safe }}
+          {{css | cssmin | safe}}
         </style>
       {% endfor %}
     {% endif %}
