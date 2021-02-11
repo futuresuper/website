@@ -38,17 +38,9 @@ header[role="banner"] {
     @media (min-width: $breakpoint-md) {
       margin-bottom: $space-section-y-sm;
     }
-    // Mimic padding from .container
-    padding: 0 $space-page-padding-x-sm;
 
-    @media (min-width: $breakpoint-md) {
-      padding: 0 $space-page-padding-x-md;
-    }
-
-    @media (min-width: $breakpoint-lg) {
-      padding: 0 $space-page-padding-x-lg;
-    }
-
+    // TODO: investigate if this style is still necessary
+    // Unsure what for. AoC? Banner?
     @media (min-width: 1068px) {
       margin-top: 2rem;
     }
@@ -60,6 +52,7 @@ header[role="banner"] {
     .logo,
     .show-hide-mobile-menu {
       height: 2.5rem;
+      z-index: 5; // Show even when mobile popup menu open
 
       // Set a default branded fill colour for icons
       svg {
@@ -83,7 +76,6 @@ header[role="banner"] {
       flex-direction: column;
       justify-content: center;
       margin-right: 2rem;
-      z-index: 2; // Show even when mobile popup menu open
 
       svg {
         height: 1.25rem;
@@ -92,8 +84,6 @@ header[role="banner"] {
     }
 
     .show-hide-mobile-menu {
-      z-index: 2;
-
       .menu-button {
         cursor: pointer;
         height: 2.5rem;
@@ -210,7 +200,7 @@ header[role="banner"] {
         width: 100%;
         padding: 5rem $space-page-padding-x-dynamic 3rem;
         position: fixed;
-        z-index: 1;
+        z-index: 4;
         left: 0;
         top: 0;
         background-color: $off-white-300;

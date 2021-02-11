@@ -342,6 +342,11 @@
   // Such as on Performance and Returns page
   &.four-up {
     .grid-row {
+      gap: 0.75rem;
+      @media (min-width: 376px) {
+        gap: 1.5rem;
+      }
+
       .row-header {
         @media (min-width: $breakpoint-sm) {
           grid-column: span 4;
@@ -354,6 +359,14 @@
         grid-column: span 3;
         @media (min-width: $breakpoint-sm) {
           grid-column: span 2;
+        }
+
+        &.option-card-mini {
+          overflow: hidden;
+          h4 {
+            // overflow-wrap: anywhere;
+            font-size: $font-size-xs;
+          }
         }
       }
     }

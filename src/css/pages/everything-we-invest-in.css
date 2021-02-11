@@ -104,16 +104,16 @@ body {
 
 h1 {
   font-weight: 900;
-  line-height: 110%;
+  line-height: 115%;
   margin-bottom: 1.8rem;
   font-size: 2.8rem;
-  font-size: min(max(2rem, 7vw), 5rem);
+  font-size: clamp(2rem, 15vw, 5rem);
   letter-spacing: -0.09rem;
 }
 
 h2 {
   font-weight: 900;
-  line-height: 110%;
+  line-height: 115%;
   margin-bottom: 1.4rem;
   font-size: 1.6rem;
   font-size: min(max(1.5rem, 4vw), 5rem);
@@ -123,14 +123,20 @@ h2 {
 h3,
 .heading-three {
   font-weight: 700;
-  line-height: 110%;
+  line-height: 115%;
   margin-bottom: 1rem;
   font-size: 1rem;
   font-size: min(max(1rem, 3vw), 1.8rem);
 }
 
 h4 {
-  line-height: 110%;
+  line-height: 115%;
+}
+
+h5,
+.heading-five {
+  font-size: 0.875rem;
+  line-height: 115%;
 }
 
 p {
@@ -304,21 +310,27 @@ body.mobile-menu-active.aoc-active {
   top: -60vh;
 }
 
-.container {
-  max-width: 80rem;
+.container,
+.container-unlimited {
   margin-right: auto;
   margin-left: auto;
   padding: 0 1rem;
 }
 @media (min-width: 48rem) {
-  .container {
+  .container,
+.container-unlimited {
     padding: 0 2rem;
   }
 }
 @media (min-width: 80rem) {
-  .container {
+  .container,
+.container-unlimited {
     padding: 0 3rem;
   }
+}
+
+.container {
+  max-width: 80rem;
 }
 .container .article-content {
   margin: 0 auto;
@@ -803,6 +815,14 @@ input.search {
     grid-column: span 6;
   }
 }
+.table-container.four-up .grid-row {
+  gap: 0.75rem;
+}
+@media (min-width: 376px) {
+  .table-container.four-up .grid-row {
+    gap: 1.5rem;
+  }
+}
 @media (min-width: 40rem) {
   .table-container.four-up .grid-row .row-header {
     grid-column: span 4;
@@ -820,6 +840,12 @@ input.search {
   .table-container.four-up .grid-row .row-data {
     grid-column: span 2;
   }
+}
+.table-container.four-up .grid-row .row-data.option-card-mini {
+  overflow: hidden;
+}
+.table-container.four-up .grid-row .row-data.option-card-mini h4 {
+  font-size: 0.75rem;
 }
 
 .table-disclaimers {
@@ -894,11 +920,6 @@ input.search {
   left: calc(100% - 2.5rem);
 }
 
-.everything-we-invest-in h1 {
-  font-size: 4rem;
-  text-align: center;
-  margin-bottom: 2rem;
-}
 .everything-we-invest-in fieldset {
   display: inline-block;
   border: 0;
@@ -912,37 +933,68 @@ input.search {
   border: 1px solid #52524c;
   outline: none;
 }
-.everything-we-invest-in .top-section-container {
-  padding: 8rem;
-  background-color: #ffffff;
+.everything-we-invest-in .selectors {
+  margin-bottom: 6rem;
 }
-.everything-we-invest-in .selectors-container {
-  text-align: center;
+@media (min-width: 48rem) {
+  .everything-we-invest-in .selectors {
+    margin-bottom: 9rem;
+  }
+}
+@media (min-width: 80rem) {
+  .everything-we-invest-in .selectors {
+    margin-bottom: 12rem;
+  }
+}
+.everything-we-invest-in .selectors-row {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  text-align: center;
 }
-.everything-we-invest-in .investment-card-section-container {
-  padding: 3rem 3rem 10rem 3rem;
+.everything-we-invest-in .investment-card-section {
+  margin-bottom: 6rem;
 }
-.everything-we-invest-in .investment-card-section-container .info-at-top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.everything-we-invest-in .investment-card-section .info-at-top {
   margin-bottom: 3rem;
+  align-items: center;
 }
-.everything-we-invest-in .investment-card-section-container .info-at-top select {
+.everything-we-invest-in .investment-card-section .info-at-top select {
   background-color: #ffffff;
 }
-.everything-we-invest-in .investment-card-section-container .sorting-container {
+.everything-we-invest-in .investment-card-section .sort-item {
+  grid-column: span 6;
   display: flex;
   align-items: center;
 }
-.everything-we-invest-in .grid-of-cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 1rem;
+@media (min-width: 48rem) {
+  .everything-we-invest-in .investment-card-section .sort-item {
+    grid-column: span 3;
+  }
+}
+.everything-we-invest-in .investment-card-section .sort-item h5 {
+  font-weight: normal;
+  flex: 1;
+  margin: 0;
+}
+.everything-we-invest-in .investment-card-section .sort-item fieldset {
+  flex: 3;
+  margin: 0;
+  padding: 0;
+}
+.everything-we-invest-in .investment-card-section .as-at-date {
+  margin: 1rem 0 0 0;
+  line-height: 100%;
+  color: #52524c;
+  grid-row: 2/2;
+}
+@media (min-width: 48rem) {
+  .everything-we-invest-in .investment-card-section .as-at-date {
+    margin: 0;
+    grid-row: 1/1;
+    grid-column: 1/7;
+  }
 }
 .everything-we-invest-in .grid-options-weight {
   display: grid;
@@ -953,6 +1005,18 @@ input.search {
 }
 .everything-we-invest-in .investment-container {
   padding: 2rem;
+  overflow-wrap: break-word;
+  overflow: hidden;
+}
+@media (min-width: 48rem) {
+  .everything-we-invest-in .investment-container {
+    grid-column: span 4;
+  }
+}
+@media (min-width: 80rem) {
+  .everything-we-invest-in .investment-container {
+    grid-column: span 3;
+  }
 }
 .everything-we-invest-in .investment-container h4 {
   margin-top: 0.5rem;

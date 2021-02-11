@@ -53,8 +53,10 @@ body {
   }
 }
 
-.container {
-  max-width: $breakpoint-lg;
+.container,
+// Include an "unlimited" container for wide-screen content
+// Such as Site Header and  Everything We Invest In table
+.container-unlimited {
   margin-right: auto;
   margin-left: auto;
   padding: 0 $space-page-padding-x-sm;
@@ -66,6 +68,11 @@ body {
   @media (min-width: $breakpoint-lg) {
     padding: 0 $space-page-padding-x-lg;
   }
+}
+
+// Define styles for a container that provides constraints for most basic page content
+.container {
+  max-width: $breakpoint-lg;
 
   // Blog posts and other simple pages (e.g. Terms and Conditions)
   .article-content {

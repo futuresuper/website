@@ -1,14 +1,15 @@
 <header role="banner">
   {# Conditional banner #}
   {% if site.banner.shown %}
-    <aside class="banner {{ site.banner.adviceOrCritical }}">
-      <p>This is an important banner. Find out more
-        <a href="#">here</a>.</p>
-    </aside>
+  <aside class="banner {{ site.banner.adviceOrCritical }}">
+    <p>This is an important banner. Find out more
+      <a href="#">here</a>.
+    </p>
+  </aside>
   {% endif %}
 
   {# Regular site header content #}
-  <section>
+  <section class="container-unlimited">
     <a class="logo" href="/" aria-label="{{ site.name }} — Home">
       {{ '/src/images/logo-single-line.svg' | svgContents | safe }}
     </a>
@@ -24,28 +25,28 @@
     <div class="nav-container">
       <nav aria-label="Primary">
         {% for item in navigation.items %}
-          {# Not all items will go in site header, so check them #}
-          {% if item.inSiteHeader %}
-            {# Show any direct links differently to dropdowns #}
-            {% if item.url %}
-              <a class="non-dropdown" href="{{ item.url }}">{{ item.text }}</a>
-            {% else %}
-              {# Make every other item a dropdown heading #}
-              <div class="dropdown">
-                <div class="button clear">
-                  {{ item.text }}
-                </div>
-                <div class="dropdown-content">
-                  {% for subItem in item.subItems %}
-                    {% if subItem.inSiteHeader %}
-                      {# Not all subitems will go in site header (even if their parent does), so check them #}
-                      <a href="{{ subItem.url }}">{{ subItem.text }}</a>
-                    {% endif %}
-                  {% endfor %}
-                </div>
-              </div>
+        {# Not all items will go in site header, so check them #}
+        {% if item.inSiteHeader %}
+        {# Show any direct links differently to dropdowns #}
+        {% if item.url %}
+        <a class="non-dropdown" href="{{ item.url }}">{{ item.text }}</a>
+        {% else %}
+        {# Make every other item a dropdown heading #}
+        <div class="dropdown">
+          <div class="button clear">
+            {{ item.text }}
+          </div>
+          <div class="dropdown-content">
+            {% for subItem in item.subItems %}
+            {% if subItem.inSiteHeader %}
+            {# Not all subitems will go in site header (even if their parent does), so check them #}
+            <a href="{{ subItem.url }}">{{ subItem.text }}</a>
             {% endif %}
-          {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+        {% endif %}
+        {% endif %}
         {% endfor %}
       </nav>
       <nav>
