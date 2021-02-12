@@ -49,18 +49,14 @@
         {% include styles %}
         {% endset %}
         <style>
-          {{css | cssmin | safe}}
+          {{ css | cssmin | safe }}
         </style>
       {% endfor %}
     {% endif %}
   </head>
 
   <body>
-    {# Conditional content for the homepage #}
-    {% if title === "Home" %}
-      {% include "partials/acknowledgement-of-country-header.html" %}
-    {% endif %}
-
+    {% include "partials/acknowledgement-of-country-header.html" %}
     <div class="flow-content">
       {% include "partials/site-header.html" %}
       <main tabindex="-1" id="main-content">

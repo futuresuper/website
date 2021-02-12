@@ -52,7 +52,7 @@ async function showNextCustodianName() {
 
 setInterval(showNextCustodianName, 4000);
 
-// Watch for and animate acknowledgement of country (footer only)
+// Watch for and animate acknowledgement of country *in footer only*
 const aocFooter = document.querySelector(".acknowledgement-of-country.footer");
 const siteContent = document.querySelector("body > .flow-content");
 // Use this to also control the animation of yellow text on 'Traditional Custodians'
@@ -77,6 +77,28 @@ let observer = new IntersectionObserver(
 );
 
 observer.observe(siteContent);
+
+// Show and animate acknowledgement of country *in header only*
+// ...only on first visit
+const aocHeader = document.querySelector(".acknowledgement-of-country.header");
+// siteContent already declared above
+
+// Local storage
+const visited = localStorage.getItem("visited");
+// If visiting for the first time...
+if (!visited) {
+  // Show acknowledgement of country in the header
+  aocHeader.classList.add("active");
+  // Tell siteContent to make room for it
+  siteContent.classList.add("aoc-active");
+  // Prepare the body so the mobile menu also makes room for it
+  document.body.classList.add("aoc-active");
+  // Animate the yellow text on 'Traditional Custodians' in the header
+  const traditionalCustodiansInHeader = document.querySelector(".acknowledgement-of-country.header p span.traditional-custodians");
+  traditionalCustodiansInHeader.classList.add("active");
+  // Then set visited to true so it doesn't show next time
+  localStorage.setItem("visited", true);
+}
 
 // Keep tooltips within viewport bounds
 const pageTooltips = Array.from(document.querySelectorAll(".tooltip"));

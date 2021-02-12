@@ -1458,8 +1458,8 @@ body .flow-content {
   background-color: #ffffff;
   margin-bottom: 100vh;
 }
-body .flow-content.aoc-active {
-  margin-top: 60vh;
+body.aoc-active {
+  margin-top: 60vh !important;
   box-shadow: 0 -1rem 5rem #0b0b0a;
 }
 
