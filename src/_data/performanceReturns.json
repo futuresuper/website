@@ -1,5 +1,5 @@
 {
-  "date-as-at": "2020-12-31",
+  "dateAsAt": "2020-12-31",
   "table": [
     { "rowHeading": "5 Years", "balancedIndex": "-", "balancedImpact": "6.73%", "renewablesPlusGrowth": "-", "balancedGrowthPension": "8.14%" },
     { "rowHeading": "3 Years", "balancedIndex": "-", "balancedImpact": "7.15%", "renewablesPlusGrowth": "-", "balancedGrowthPension": "9.40%" },
