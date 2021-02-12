@@ -8,7 +8,7 @@ author: James Alexander
 canonical:
 description: >-
   Renewable energy alone will not avoid dangerous climate change.
-image:
+image: https://res.cloudinary.com/future-super/image/upload/c_scale,w_240/v1613108533/town-forest-hills.jpg
 ---
 
 #### _As a child who grew up playing video games I loved the idea of a silver bullet for difficult challenges (in the Nintendo 64 Bond game GoldenEye, it’s the golden gun with a one-shot kill). But reality is more complex than a game._

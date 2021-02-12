@@ -6,10 +6,10 @@ tags:
   - Divestment
   - Ethical Investing
 author: Mariela Powell Thomas
+image: "https://res.cloudinary.com/future-super/image/upload/c_scale,w_240/v1613108541/books.jpg"
 canonical:
 description: >-
   Saw a fun fact about Future Super's impact? Curious to know the working behind it? Here's what you need to know.
-image:
 ---
 
 Saw a fun fact about Future Super's impact? Curious to know the working behind it? Here's what you need to know.

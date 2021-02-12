@@ -7,7 +7,7 @@ author: Kirstin Hunter
 canonical:
 description: >-
   We’re announcing a number of initiatives to put people before profit during this crisis.
-image:
+image: "https://res.cloudinary.com/future-super/image/upload/c_scale,w_240/v1613108539/covid-research.jpg"
 ---
 
 At Future Super, we use the power of money to invest in, campaign and advocate for a prosperous future free from climate change and inequality. We stand for creating an economic system that puts people before profit in a crisis.
