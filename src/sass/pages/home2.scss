@@ -1,12 +1,18 @@
 @use "../base" as *;
 
+%background-crisp {
+  image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming)*/
+  image-rendering: crisp-edges;
+  image-rendering: -moz-crisp-edges; /* Firefox */
+  image-rendering: -o-crisp-edges; /* Opera */
+}
+
 // Override body background
 .flow-content {
   background-color: $mint-300 !important; // TODO fix @use or whatever else is blocking this for cascading properly
 }
 
 // Override site header margins
-
 article header .button,
 .tidbit .button {
   font-size: $font-size-xl;
@@ -46,22 +52,24 @@ article header h1,
 }
 
 article header {
-  // Bleed into site-header
-  $site-header-background-y-offset: 16rem;
-  // margin-top: -$site-header-background-y-offset;
-  // padding-top: $site-header-background-y-offset;
+  margin-top: -5rem;
+  padding-top: 3rem;
   padding-bottom: 6vh;
 
   background-color: $mint-300;
   background-image: url("/images/dithered/smoke-stack.png");
+  @extend %background-crisp;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top (-$site-header-background-y-offset) center;
+  background-position: top -16rem center;
 
   @media (min-width: $breakpoint-md) {
+    margin-top: 0;
+    padding-top: 0;
+
     background-image: url(/images/dithered/smoke-stack.png), url(/images/dithered/smoke-stack.png);
     background-size: 32vh;
-    background-position: top 13rem left 25%, top 21rem right 25%;
+    background-position: top -4rem left 25%, top 8rem right 25%;
   }
 
   h1 {
@@ -97,6 +105,10 @@ article header {
   padding-top: 5rem;
   padding-bottom: 4rem;
   background-repeat: no-repeat;
+  // Allow for inline child images to be positioned absolutely
+  position: relative;
+  // Stop these images from causing overflow-x
+  overflow: hidden;
 
   h2 {
     background-color: $fraise-500;
@@ -108,6 +120,11 @@ article header {
       width: clamp(16rem, 64vw, 24rem);
       height: clamp(18rem, 54vh, 40rem);
     }
+  }
+
+  .article-content {
+    // Ensure text stays above any parallax elements
+    position: relative;
   }
 
   p:not(.disclaimer) {
@@ -130,6 +147,25 @@ article header {
     }
   }
 
+  .img-container {
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    @media (min-width: $breakpoint-md) {
+      width: 30rem;
+      height: 30rem;
+    }
+
+    img {
+      width: 80%;
+      height: 80%;
+      position: absolute;
+      top: 10%;
+      left: 10%;
+      @extend %background-crisp;
+    }
+  }
+
   aside {
     margin-top: 2rem;
 
@@ -148,6 +184,7 @@ article header {
   &.give-fossil-fuels-the-flick {
     background-color: $fraise-300;
     background-image: url("/images/dithered/barrel.png"), url("/images/dithered/smoke-stack-small-red.png"), url("/images/dithered/coal.png");
+    @extend %background-crisp;
     background-position: top 75vh right 0, top 40vh right 50%, top -2rem right -2rem;
     @media (min-width: $breakpoint-md) {
       background-position: top 50vh left 20%, top 30vh right 20%, top -2rem left 30%;
@@ -169,6 +206,7 @@ article header {
   &.your-money-talks {
     background-color: $mango-300;
     background-image: url("/images/dithered/dollar-coin.png"), url("/images/dithered/earth.png");
+    @extend %background-crisp;
     background-position: top -2vh right -5rem, top 40vh left -20%;
     @media (min-width: $breakpoint-md) {
       background-position: top 4vh right 32%, top 50vh left 28%;
@@ -200,6 +238,7 @@ article header {
   &.join-in-a-few-taps {
     background-color: $mint-300;
     background-image: url("/images/dithered/wind-turbine.png"), url("/images/dithered/sunflower.png");
+    @extend %background-crisp;
     background-position: top 2rem left -5rem, top 34vh right -6rem;
     @media (min-width: $breakpoint-md) {
       background-position: top 10vh left 32%, top 48vh right 28%;
@@ -213,6 +252,17 @@ article header {
         margin-bottom: 24vh;
       }
     }
+
+    #sunflower {
+      background-color: $fig-300;
+      top: 34vh;
+      right: -6rem;
+
+      @media (min-width: $breakpoint-md) {
+        top: 40vh;
+        right: 28%;
+      }
+    }
   }
 }
 
@@ -221,6 +271,7 @@ article header {
   color: $black-900;
   background-color: $fig-300;
   background-image: url("/images/dithered/coal.png"), url("/images/dithered/smoke-stack-small-green.png");
+  @extend %background-crisp;
   background-position: top 0 left -4rem, bottom 7rem right -2rem;
   background-repeat: no-repeat;
 
@@ -239,6 +290,7 @@ article header {
         width: 42px;
         height: 38px;
         background-image: url("/images/dithered/starburst-sprite.png");
+        @extend %background-crisp;
         animation: moveStarX 1000ms steps(7) infinite;
         &:nth-of-type(2) {
           animation-delay: 25ms;

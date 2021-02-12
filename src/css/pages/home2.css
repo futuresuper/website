@@ -920,6 +920,16 @@ input.search {
   left: calc(100% - 2.5rem);
 }
 
+.product-review-carousel figure .star-container .star, .product-review-carousel, .tidbit.join-in-a-few-taps, .tidbit.your-money-talks, .tidbit.give-fossil-fuels-the-flick, .tidbit .img-container img, article header {
+  image-rendering: -webkit-optimize-contrast;
+  /* Webkit (non-standard naming)*/
+  image-rendering: crisp-edges;
+  image-rendering: -moz-crisp-edges;
+  /* Firefox */
+  image-rendering: -o-crisp-edges;
+  /* Opera */
+}
+
 .flow-content {
   background-color: #ddffe7 !important;
 }
@@ -968,6 +978,8 @@ article header h1,
 }
 
 article header {
+  margin-top: -5rem;
+  padding-top: 3rem;
   padding-bottom: 6vh;
   background-color: #ddffe7;
   background-image: url("/images/dithered/smoke-stack.png");
@@ -977,9 +989,11 @@ article header {
 }
 @media (min-width: 48rem) {
   article header {
+    margin-top: 0;
+    padding-top: 0;
     background-image: url(/images/dithered/smoke-stack.png), url(/images/dithered/smoke-stack.png);
     background-size: 32vh;
-    background-position: top 13rem left 25%, top 21rem right 25%;
+    background-position: top -4rem left 25%, top 8rem right 25%;
   }
 }
 article header h1 {
@@ -1011,6 +1025,8 @@ article header p {
   padding-top: 5rem;
   padding-bottom: 4rem;
   background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
 }
 .tidbit h2 {
   background-color: #f04b23;
@@ -1023,6 +1039,9 @@ article header p {
     width: clamp(16rem, 64vw, 24rem);
     height: clamp(18rem, 54vh, 40rem);
   }
+}
+.tidbit .article-content {
+  position: relative;
 }
 .tidbit p:not(.disclaimer) {
   text-indent: 1.75rem;
@@ -1042,6 +1061,24 @@ article header p {
   vertical-align: top;
   position: relative;
   top: -2px;
+}
+.tidbit .img-container {
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+}
+@media (min-width: 48rem) {
+  .tidbit .img-container {
+    width: 30rem;
+    height: 30rem;
+  }
+}
+.tidbit .img-container img {
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  top: 10%;
+  left: 10%;
 }
 .tidbit aside {
   margin-top: 2rem;
@@ -1126,6 +1163,17 @@ article header p {
   .tidbit.join-in-a-few-taps h2 {
     margin-top: 6vh;
     margin-bottom: 24vh;
+  }
+}
+.tidbit.join-in-a-few-taps #sunflower {
+  background-color: #f9ecf5;
+  top: 34vh;
+  right: -6rem;
+}
+@media (min-width: 48rem) {
+  .tidbit.join-in-a-few-taps #sunflower {
+    top: 40vh;
+    right: 28%;
   }
 }
 
