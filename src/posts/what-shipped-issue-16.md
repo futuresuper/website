@@ -7,7 +7,7 @@ author: Danny White
 canonical:
 description: >-
   We’re building our product and brand in-house and documenting what we learn in the process. Here’s what we’ve done in the past few weeks.
-image:
+image: https://res.cloudinary.com/future-super/image/upload/c_scale,w_240/v1613108534/join-form-preview.png
 ---
 
 ‍*Future Super is a superannuation fund that helps people use the power of their money to build a future worth retiring into. We’re building our product and brand in-house and documenting what we learn in the process.*
