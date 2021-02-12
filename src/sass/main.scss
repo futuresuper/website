@@ -12,11 +12,11 @@ body {
     background-color: $white-500;
     // Match height of below element acknowledgement-of-country (footer)
     margin-bottom: $height-acknowledgement-of-country-footer;
+  }
 
-    &.aoc-active {
-      // Match height of above element acknowledgement-of-country (header)
-      margin-top: $height-acknowledgement-of-country-header;
-      box-shadow: 0 -1rem 5rem $grey-900;
-    }
+  &.aoc-active {
+    // Match height of above element acknowledgement-of-country (header)
+    margin-top: $height-acknowledgement-of-country-header !important;
+    box-shadow: 0 -1rem 5rem $grey-900;
   }
 }

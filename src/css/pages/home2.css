@@ -968,8 +968,6 @@ article header h1,
 }
 
 article header {
-  margin-top: -16rem;
-  padding-top: 16rem;
   padding-bottom: 6vh;
   background-color: #ddffe7;
   background-image: url("/images/dithered/smoke-stack.png");

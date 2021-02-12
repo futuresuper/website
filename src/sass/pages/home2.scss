@@ -46,17 +46,17 @@ article header h1,
 }
 
 article header {
-  // Bleed into site-header (can be any amount)
-  $site-header-y-offset: 16rem;
-  margin-top: -$site-header-y-offset;
-  padding-top: $site-header-y-offset;
+  // Bleed into site-header
+  $site-header-background-y-offset: 16rem;
+  // margin-top: -$site-header-background-y-offset;
+  // padding-top: $site-header-background-y-offset;
   padding-bottom: 6vh;
 
   background-color: $mint-300;
   background-image: url("/images/dithered/smoke-stack.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top (-$site-header-y-offset) center;
+  background-position: top (-$site-header-background-y-offset) center;
 
   @media (min-width: $breakpoint-md) {
     background-image: url(/images/dithered/smoke-stack.png), url(/images/dithered/smoke-stack.png);
