@@ -5,388 +5,331 @@
 
 {% block content %}
 
-{# Define macro for table header row #}
-{% macro initialTableRow(showJoinButtonsOnMdBreakpoint, tableTitle) %}
-<div class="grid-row">
-  <div class="row-header">
-    {% if tableTitle %}
-    <h3>{{ tableTitle }}</h3>
-    {% endif %}
-  </div>
-  {% for option in investmentOptions %}
-  {% if option.type === "accumulation" %}
-  <div class="row-data option-card-mini {{ option.slug }}">
-    {% set iconUrl = iconsPath + option.slug + ".svg" %}
-    {{ iconUrl | svgContents("fill-core") | safe }}
-    <h4>{{ option.opticalLabel[0] }}<br>{{ option.opticalLabel[1] }}</h4>
-    {% if showJoinButtonsOnMdBreakpoint === "true" %}
-    <a href="{{ site.joinUrl }}/?option={{ option.slug }}" class="button full-width">Join</a>
-    {% endif %}
-  </div>
-  {% endif %}
-  {% endfor %}
-</div>
-{% endmacro %}
-
-<article>
-  <div class="top container">
-    {% include "partials/page-header.html" %}
-
-    <div class="grid">
-      {% for option in investmentOptions %}
-      {% if option.type === "accumulation" %}
-      <div class="option-card-large-container">
-        {% if option.leadingStat %}
-        <div class="leading-stat">
-          <p><strong>65%</strong> of new members choose this option</p>
-        </div>
-        {% endif %}
-        <div class="option-card-large {{ option.slug }}{% if option.leadingStat %} with-leading-stat{% endif %}">
-          {% set iconUrl = iconsPath + option.slug + ".svg" %}
-          {{ iconUrl | svgContents("fill-light") | safe }}
-          <h2>{{ option.opticalLabel[0] }}<br>{{ option.opticalLabel[1] }}</h2>
-          <p>{{ option.subtitle }}</p>
-          <a href="{{ site.joinUrl }}/?option={{ option.slug }}" class="button full-width">Join</a>
-        </div>
-      </div>
-      {% endif %}
-      {% endfor %}
-    </div>
-  </div>
-
-  <div class="table-intro grid container">
-    <div>
-      <h2>Let's break things down</h2>
-      <p>Not sure what something means? Tap anything with a
-        <a class="tooltip">dotted underline<span class="tooltip-text">You're a natural!</span></a>
-        to see a full, jargon-free, explanation.
-      </p>
-    </div>
-  </div>
-
-  {# Table one of two #}
-  <div class="table-container">
-    {{ initialTableRow("true", "Force for change") }}
-
+  {# Define macro for table header row #}
+  {% macro initialTableRow(showJoinButtonsOnMdBreakpoint, tableTitle) %}
     <div class="grid-row">
       <div class="row-header">
-        <h5>Impact</h5>
+        {% if tableTitle %}
+          <h3>{{ tableTitle }}</h3>
+        {% endif %}
       </div>
       {% for option in investmentOptions %}
-      {% if option.type === "accumulation" %}
-      <div class="row-data {{ option.slug }}">
-        <p>
-          <a class="tooltip">
-            {{ option.impact.label }}
-            <span class="tooltip-text">{{ option.impact.definition }}</span>
-          </a>
+        {% if option.type === "accumulation" %}
+          <div class="row-data option-card-mini {{ option.slug }}">
+            {% set iconUrl = iconsPath + option.slug + ".svg" %}
+            {{ iconUrl | svgContents("fill-core") | safe }}
+            <h4>{{ option.opticalLabel[0] }}<br>{{ option.opticalLabel[1] }}</h4>
+            {% if showJoinButtonsOnMdBreakpoint === "true" %}
+              <a href="{{ site.joinUrl }}/?option={{ option.slug }}" class="button full-width">Join</a>
+            {% endif %}
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  {% endmacro %}
+
+  <article>
+    <div class="top container">
+      {% include "partials/page-header.html" %}
+
+      <div class="grid">
+        {% for option in investmentOptions %}
+          {% if option.type === "accumulation" %}
+            <div class="option-card-large-container">
+              {% if option.leadingStat %}
+                <div class="leading-stat">
+                  <p>
+                    <strong>{{ option.leadingStat }}</strong>
+                  </p>
+                </div>
+              {% endif %}
+              <div class="option-card-large {{ option.slug }}{% if option.leadingStat %} with-leading-stat{% endif %}">
+                {% set iconUrl = iconsPath + option.slug + ".svg" %}
+                {{ iconUrl | svgContents("fill-light") | safe }}
+                <h2>{{ option.opticalLabel[0] }}<br>{{ option.opticalLabel[1] }}</h2>
+                <p>{{ option.subtitle }}</p>
+                <a href="{{ site.joinUrl }}/?option={{ option.slug }}" class="button full-width">Join</a>
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="table-intro grid container">
+      <div>
+        <h2>Let's break things down</h2>
+        <p>Don’t speak finance? Super is full of jargon that hurts our brains. Hover over anything with a
+          <a class="tooltip">dotted underline<span class="tooltip-text">You're a natural!</span></a>
+          to see a normal human explanation.
         </p>
       </div>
-      {% endif %}
-      {% endfor %}
     </div>
 
-    {% macro booleanDataStatic(dataTitle) %}
-    <div class="grid-row">
-      <div class="row-header">
-        <h5>{{ dataTitle }}</h5>
-      </div>
-      {% for option in investmentOptions %}
-      {% if option.type === "accumulation" %}
-      <div class="row-data {{ option.slug }}">
-        {{ "/src/images/icons/tick.svg" | svgContents("fill-core") | safe }}
-      </div>
-      {% endif %}
-      {% endfor %}
-    </div>
-    {% endmacro %}
+    {# Table one of two #}
+    <div class="table-container">
+      {{ initialTableRow("true", "Impact talk") }}
 
-    {# Render static macros #}
-    {{booleanDataStatic("Zero fossil fuels")}}
-    {{booleanDataStatic("Ethically screened")}}
-
-    {# Render dynamic data (as global parameters can't be read in a macro, e.g. `option.dataAttribute`) #}
-    <div class="grid-row">
-      <div class="row-header">
-        <h5>Fights inequality</h5>
-      </div>
-      {% for option in investmentOptions %}
-      {% if option.type === "accumulation" %}
-      <div class="row-data {{ option.slug }}">
-        {% if option.fightsInequality %}
-        {{ "/src/images/icons/tick.svg" | svgContents("fill-core") | safe }}
-        {% endif %}
-      </div>
-      {% endif %}
-      {% endfor %}
-    </div>
-
-    <div class="grid-row">
-      <div class="row-header">
-        <h5>Invests in renewables</h5>
-      </div>
-      {% for option in investmentOptions %}
-      {% if option.type === "accumulation" %}
-      <div class="row-data {{ option.slug }}">
-        {% if option.investsInRenewables %}
-        {{ "/src/images/icons/tick.svg" | svgContents("fill-core") | safe }}
-        {% endif %}
-      </div>
-      {% endif %}
-      {% endfor %}
-    </div>
-
-    <div class="grid-row">
-      <div class="row-header">
-        <h5>Targets 20% investment in renewable energy projects</h5>
-      </div>
-      {% for option in investmentOptions %}
-      {% if option.type === "accumulation" %}
-      <div class="row-data {{ option.slug }}">
-        {% if option.targets20Percent %}
-        {{ "/src/images/icons/tick.svg" | svgContents("fill-core") | safe }}
-        {% endif %}
-      </div>
-      {% endif %}
-      {% endfor %}
-    </div>
-
-    <div class="grid-row">
-      <div class="row-header">
-        <h5>Highlight investments</h5>
-        <p>
-          <a href="/everything-we-invest-in">See all investments</a>
-        </p>
-      </div>
-      {% for option in investmentOptions %}
-      {% if option.type === "accumulation" %}
-      <div class="row-data highlight-investments {{ option.slug }}">
-        <ul class="plain">
-          {% for item in option.highlightInvestments %}
-          <li>
-            <a class="tooltip">
-              {{ item.label }}
-              <span class="tooltip-text">{{ item.definition }}</span>
-            </a>
-          </li>
+      {% macro booleanDataStatic(dataTitle) %}
+        <div class="grid-row">
+          <div class="row-header">
+            <h5>{{ dataTitle }}</h5>
+          </div>
+          {% for option in investmentOptions %}
+            {% if option.type === "accumulation" %}
+              <div class="row-data {{ option.slug }}">
+                {{ "/src/images/icons/tick.svg" | svgContents("fill-core") | safe }}
+              </div>
+            {% endif %}
           {% endfor %}
-        </ul>
-      </div>
-      {% endif %}
-      {% endfor %}
-    </div>
-  </div>
+        </div>
+      {% endmacro %}
 
-  {# Table two of two #}
-  <div class="table-container">
-    {{ initialTableRow("true", "Money talk") }}
+      {# Render static macros #}
+      {{booleanDataStatic("Zero fossil fuels")}}
+      {{booleanDataStatic("Ethically screened")}}
 
-    <div class="grid-row">
-      <div class="row-header">
-        <h5>Entry fee</h5>
+      {# Render dynamic data (as global parameters can't be read in a macro, e.g. `option.dataAttribute`) #}
+      <div class="grid-row">
+        <div class="row-header">
+          <h5>Invests for impact</h5>
+        </div>
+        {% for option in investmentOptions %}
+          {% if option.type === "accumulation" %}
+            <div class="row-data {{ option.slug }}">
+              {% if option.investsInRenewables %}
+                {{ "/src/images/icons/tick.svg" | svgContents("fill-core") | safe }}
+              {% endif %}
+            </div>
+          {% endif %}
+        {% endfor %}
       </div>
-      {% for option in investmentOptions %}
-      {% if option.type === "accumulation" %}
-      <div class="row-data {{ option.slug }}">
-        <p>
-          Free
-        </p>
-      </div>
-      {% endif %}
-      {% endfor %}
-    </div>
 
-    <div class="grid-row">
-      <div class="row-header">
-        <h5>Exit fee</h5>
+      <div class="grid-row">
+        <div class="row-header">
+          <h5>Targets 20% investment in climate change solutions</h5>
+        </div>
+        {% for option in investmentOptions %}
+          {% if option.type === "accumulation" %}
+            <div class="row-data {{ option.slug }}">
+              {% if option.targets20Percent %}
+                {{ "/src/images/icons/tick.svg" | svgContents("fill-core") | safe }}
+              {% endif %}
+            </div>
+          {% endif %}
+        {% endfor %}
       </div>
-      {% for option in investmentOptions %}
-      {% if option.type === "accumulation" %}
-      <div class="row-data {{ option.slug }}">
-        <p>
-          Free
-        </p>
-      </div>
-      {% endif %}
-      {% endfor %}
-    </div>
 
-    <div class="grid-row">
-      <div class="row-header">
-        <h5>Fees per year<span class="text-tertiary">&thinsp;*</span></h5>
+      <div class="grid-row">
+        <div class="row-header">
+          <h5>Highlight investments</h5>
+          <p>
+            <a href="/everything-we-invest-in">See all investments</a>
+          </p>
+        </div>
+        {% for option in investmentOptions %}
+          {% if option.type === "accumulation" %}
+            <div class="row-data highlight-investments {{ option.slug }}">
+              <ul class="plain">
+                {% for item in option.highlightInvestments %}
+                  <li>
+                    <a class="tooltip">
+                      {{ item.label }}
+                      <span class="tooltip-text">{{ item.definition }}</span>
+                    </a>
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+          {% endif %}
+        {% endfor %}
       </div>
-      {% for option in investmentOptions %}
-      {% if option.type === "accumulation" %}
-      <div class="row-data {{ option.slug }}">
-        <p>
-          {{ option.fee.perAnnumPercentage }}% + ${{ option.fee.perYearPrice | currency }}
-        </p>
-        <p class="caption">
-          {% set yearlyFee = 50000 * (option.fee.perAnnumPercentage / 100) + option.fee.perYearPrice %}
-          <small>${{ yearlyFee | currency }}
-            per year on a balance of $50,000</small>
-        </p>
-      </div>
-      {% endif %}
-      {% endfor %}
-    </div>
-
-    <div class="grid-row">
-      <div class="row-header">
-        <h5>
-          <a class="tooltip">Investment objectives<span class="tooltip-text">How much we aim for your money to grow each
-              year</span></a>
-        </h5>
-      </div>
-      {% for option in investmentOptions %}
-      {% if option.type === "accumulation" %}
-      <div class="row-data {{ option.slug }}">
-        <p>
-          <a class="tooltip">CPI<span class="tooltip-text">Consumer Price Index</span></a>
-          +
-          {{ option.investmentObjective }}%
-        </p>
-        <p class="caption">
-          <small>Per annum over
-            <a class="tooltip">rolling ten-year periods<span class="tooltip-text">Across 10 consecutive years</span></a>
-            (after fees and taxes)
-          </small>
-        </p>
-      </div>
-      {% endif %}
-      {% endfor %}
     </div>
 
-    <div class="grid-row">
-      <div class="row-header">
-        <h5>
-          <a class="tooltip">Asset allocation<span class="tooltip-text">How we balance risk and reward in order to
-              achieve investment objectives</span></a>
-        </h5>
-      </div>
-      {% for option in investmentOptions %}
-      {% if option.type === "accumulation" %}
-      <div class="row-data {{ option.slug }}">
-        <p>{{ option.assetAllocation.growth }}% Growth</p>
-        <p>{{ option.assetAllocation.defensive }}% Defensive</p>
-      </div>
-      {% endif %}
-      {% endfor %}
-    </div>
+    {# Table two of two #}
+    <div class="table-container">
+      {{ initialTableRow("true", "Money talk") }}
 
-    <div class="grid-row">
-      <div class="row-header">
-        <h5>Recent returns</h5>
-        <p>
-          <a href="/performance-and-returns">See full performance and returns</a>
-        </p>
+      <div class="grid-row">
+        <div class="row-header">
+          <h5>Fees per year<span class="text-tertiary">&thinsp;*</span></h5>
+        </div>
+        {% for option in investmentOptions %}
+          {% if option.type === "accumulation" %}
+            <div class="row-data {{ option.slug }}">
+              <p>
+                {{ option.fee.perAnnumPercentage }}% + ${{ option.fee.perYearPrice | currency }}
+              </p>
+              <p class="caption">
+                {% set yearlyFee = 50000 * (option.fee.perAnnumPercentage / 100) + option.fee.perYearPrice %}
+                <small>${{ yearlyFee | currency }}
+                  per year on a balance of $50,000</small>
+              </p>
+            </div>
+          {% endif %}
+        {% endfor %}
       </div>
 
-      {# TODO: Change structure of performanceReturns.json (via ReturnsToGithub.js serverless function) so the below
+      <div class="grid-row">
+        <div class="row-header">
+          <h5>
+            <a class="tooltip">Investment objectives<span class="tooltip-text">How much we aim for your money to grow each year</span></a>
+          </h5>
+        </div>
+        {% for option in investmentOptions %}
+          {% if option.type === "accumulation" %}
+            <div class="row-data {{ option.slug }}">
+              <p>
+                <a class="tooltip">CPI<span class="tooltip-text">CPI (which stands for 'Consumer Price Index') is how much the price of stuff changes each year.</span></a>
+                +
+                {{ option.investmentObjective }}%
+              </p>
+              <p class="caption">
+                <small>Per annum over
+                  <a class="tooltip">rolling ten-year periods<span class="tooltip-text">Across 10 consecutive years</span></a>
+                  (after fees and taxes)
+                </small>
+              </p>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+
+      <div class="grid-row">
+        <div class="row-header">
+          <h5>
+            <a class="tooltip">Asset allocation^<span class="tooltip-text">How we balance risk and reward in order to achieve investment objectives</span></a>
+          </h5>
+        </div>
+        {% for option in investmentOptions %}
+          {% if option.type === "accumulation" %}
+            <div class="row-data {{ option.slug }}">
+              <p>{{ option.assetAllocation.growth }}% Growth</p>
+              <p>{{ option.assetAllocation.defensive }}% Defensive</p>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+
+      <div class="grid-row">
+        <div class="row-header">
+          <h5>Recent returns**</h5>
+          <small>As at
+            {{ performanceReturns.dateAsAt | dateFilter }}</small>
+          <p>
+            <a href="/performance-and-returns">See full performance and returns</a>
+          </p>
+        </div>
+
+        {# TODO: Change structure of performanceReturns.json (via ReturnsToGithub.js serverless function) so the below
       repeated markup can be done through a loop as above #}
-      {# Cannot use macro as macro variables are referenced from within loops #}
-      {# Balanced Index #}
-      <div class="row-data balanced-index">
-        {% for row in performanceReturns.table %}
-        {% if row.rowHeading === "1 Year" %}
-        <p>{{ row.balancedIndex }}</p>
-        {% endif %}
-        {% endfor %}
-        <p class="caption">
-          <small>Over the last year</small>
-        </p>
-
-        {% for row in performanceReturns.table %}
-        {% if row.rowHeading === "Since inception" %}
-        <p>{{ row.balancedIndex }}</p>
-        {% endif %}
-        {% endfor %}
-        <p class="caption">
-          <small>Since inception<br>
-            {% for row in performanceReturns.table %}
-            {% if row.rowHeading === "Launch date" %}
-            <span class="text-tertiary">({{ row.balancedIndex }})</span></small>
-          {% endif %}
+        {# Cannot use macro as macro variables are referenced from within loops #}
+        {# Balanced Index #}
+        <div class="row-data balanced-index">
+          {% for row in performanceReturns.table %}
+            {% if row.rowHeading === "1 Year" %}
+              <p>{{ row.balancedIndex }}</p>
+            {% endif %}
           {% endfor %}
-        </p>
+          <p class="caption">
+            <small>One year</small>
+          </p>
+
+          {% for row in performanceReturns.table %}
+            {% if row.rowHeading === "Since inception" %}
+              <p>{{ row.balancedIndex }}</p>
+            {% endif %}
+          {% endfor %}
+          <p class="caption">
+            <small>Since inception<br>
+              {% for row in performanceReturns.table %}
+                {% if row.rowHeading === "Launch date" %}
+                  <span class="text-tertiary">({{ row.balancedIndex }})</span></small>
+              {% endif %}
+            {% endfor %}
+          </p>
+        </div>
+
+        {# Balanced Impact #}
+        <div class="row-data balanced-impact">
+          {% for row in performanceReturns.table %}
+            {% if row.rowHeading === "1 Year" %}
+              <p>{{ row.balancedImpact }}</p>
+            {% endif %}
+          {% endfor %}
+          <p class="caption">
+            <small>Over the last year</small>
+          </p>
+
+          {% for row in performanceReturns.table %}
+            {% if row.rowHeading === "Since inception" %}
+              <p>{{ row.balancedImpact }}</p>
+            {% endif %}
+          {% endfor %}
+          <p class="caption">
+            <small>Since inception<br>
+              {% for row in performanceReturns.table %}
+                {% if row.rowHeading === "Launch date" %}
+                  <span class="text-tertiary">({{ row.balancedImpact }})</span></small>
+              {% endif %}
+            {% endfor %}
+          </p>
+        </div>
+
+        {# Renewables Plus Growth #}
+        <div class="row-data renewables-plus-growth">
+          {% for row in performanceReturns.table %}
+            {% if row.rowHeading === "1 Year" %}
+              <p>{{ row.renewablesPlusGrowth }}</p>
+            {% endif %}
+          {% endfor %}
+          <p class="caption">
+            <small>Over the last year</small>
+          </p>
+
+          {% for row in performanceReturns.table %}
+            {% if row.rowHeading === "Since inception" %}
+              <p>{{ row.renewablesPlusGrowth }}</p>
+            {% endif %}
+          {% endfor %}
+          <p class="caption">
+            <small>Since inception<br>
+              {% for row in performanceReturns.table %}
+                {% if row.rowHeading === "Launch date" %}
+                  <span class="text-tertiary">({{ row.renewablesPlusGrowth }})</span></small>
+              {% endif %}
+            {% endfor %}
+          </p>
+        </div>
       </div>
+    </div>
 
-      {# Balanced Impact #}
-      <div class="row-data balanced-impact">
-        {% for row in performanceReturns.table %}
-        {% if row.rowHeading === "1 Year" %}
-        <p>{{ row.balancedImpact }}</p>
-        {% endif %}
-        {% endfor %}
-        <p class="caption">
-          <small>Over the last year</small>
+    <div class="table-disclaimers grid container">
+      <div>
+        <p class="disclaimer">*&thinsp;Read our
+          <a href="https://www.futuresuper.com.au/pds">Product Disclosure Statement</a>
+          full details on how fees apply to your Future Super account. The fees shown above are the total Investment Fees, Administration Fees and Indirect Cost Ratio payable for each of our investment options. Other fees and costs may apply to your account. There's no dollar-based admin fee when your balance is below $6,000.
         </p>
-
-        {% for row in performanceReturns.table %}
-        {% if row.rowHeading === "Since inception" %}
-        <p>{{ row.balancedImpact }}</p>
-        {% endif %}
-        {% endfor %}
-        <p class="caption">
-          <small>Since inception<br>
-            {% for row in performanceReturns.table %}
-            {% if row.rowHeading === "Launch date" %}
-            <span class="text-tertiary">({{ row.balancedImpact }})</span></small>
-          {% endif %}
-          {% endfor %}
+        <p class="disclaimer">^&thinsp;The asset allocation shown is a strategic asset allocation and the actual allocation may vary within the ranges outlined in the fund Product Disclosure Statement and Additional Information Booklet. You can view our investment strategy including asset allocations on page 16 of the Future Super Additional Information Booklet, obtainable at futuresuper.com.au. This information is correct as at 01/01/2021 and is subject to change.
         </p>
-      </div>
-
-      {# Renewables Plus Growth #}
-      <div class="row-data renewables-plus-growth">
-        {% for row in performanceReturns.table %}
-        {% if row.rowHeading === "1 Year" %}
-        <p>{{ row.renewablesPlusGrowth }}</p>
-        {% endif %}
-        {% endfor %}
-        <p class="caption">
-          <small>Over the last year</small>
-        </p>
-
-        {% for row in performanceReturns.table %}
-        {% if row.rowHeading === "Since inception" %}
-        <p>{{ row.renewablesPlusGrowth }}</p>
-        {% endif %}
-        {% endfor %}
-        <p class="caption">
-          <small>Since inception<br>
-            {% for row in performanceReturns.table %}
-            {% if row.rowHeading === "Launch date" %}
-            <span class="text-tertiary">({{ row.renewablesPlusGrowth }})</span></small>
-          {% endif %}
-          {% endfor %}
+        <p class="disclaimer">**&thinsp;Returns provided are after investment fees, percentage-based administration fees and taxes but before dollar-based administration fees have been taken out. Returns for periods of greater than one year are on a per annum compound basis. Return of capital and the performance of your investment in the Fund are not guaranteed. Past performance is not a reliable indicator of future performance.
         </p>
       </div>
     </div>
-  </div>
 
-  <div class="table-container">
-    {{ initialTableRow("true") }}
-  </div>
+    <div class="table-container">
+      {{ initialTableRow("true") }}
+    </div>
 
-  <div class="table-disclaimers grid container">
-    <div>
-      <p class="disclaimer">*&thinsp;Read our <a href="https://www.futuresuper.com.au/pds">Product Disclosure
-          Statement</a> full details on how fees apply to your Future Super account. The fees shown above are the total
-        Investment Fees, Administration Fees and Indirect Cost Ratio payable for each of our investment options. Other
-        fees and costs may apply to your account. There's no dollar-based admin fee when your balance is below $6,000.
+    <section class="callout container">
+      <h2>Not sure? No stress.</h2>
+      <p>You can change your investment option
+        <a class="tooltip">up to four times a year<span class="tooltip-text">Additional switches will incur a $55 switching fee</span></a>
+        with no switching fee.
       </p>
-    </div>
-  </div>
+    </section>
+  </article>
 
-  <section class="callout container">
-    <h2>Not sure? No stress.</h2>
-    <p>You can change your investment option any time after joining, up to four times a year. Learn more
-      <a href="#todo">here</a>.
-    </p>
-  </section>
-</article>
-
-{% include "partials/also-see.html" %}
+  {% include "partials/also-see.html" %}
 
 {% endblock %}
