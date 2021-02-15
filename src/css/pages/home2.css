@@ -84,7 +84,7 @@ address {
 
 @font-face {
   font-family: "JetBrainsMono";
-  src: url("../fonts/JetBrainsMonoVariable.ttf") format("truetype");
+  src: url("../fonts/JetBrainsMonoVariable-subset.woff2") format("woff2");
   font-weight: 1 999;
   font-display: swap;
 }
@@ -1130,6 +1130,7 @@ article header p {
   grid-column: 5/13;
 }
 .tidbit.your-money-talks {
+  background-color: #ffebb9;
   background-image: url("/images/dithered/earth.png");
   background-position: top 40vh left -20%;
 }
@@ -1185,7 +1186,7 @@ article header p {
   grid-column: 4/13;
 }
 .tidbit.join-in-a-few-taps {
-  background-color: #2bb151;
+  background-color: #ddffe7;
   background-image: url("/images/dithered/wind-turbine.png"), url("/images/dithered/sunflower.png");
   background-position: top 2rem left -5rem, top 34vh right -6rem;
 }
@@ -1195,6 +1196,7 @@ article header p {
   }
 }
 .tidbit.join-in-a-few-taps .poster {
+  background-color: #2bb151;
   margin-bottom: 10vh;
 }
 @media (min-width: 48rem) {

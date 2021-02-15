@@ -84,7 +84,7 @@ address {
 
 @font-face {
   font-family: "JetBrainsMono";
-  src: url("../fonts/JetBrainsMonoVariable.ttf") format("truetype");
+  src: url("../fonts/JetBrainsMonoVariable-subset.woff2") format("woff2");
   font-weight: 1 999;
   font-display: swap;
 }
