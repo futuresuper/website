@@ -4,14 +4,6 @@ const rellaxPoster = new Rellax(".rellax-poster", {
   speed: 3,
   horizontal: false,
 });
-
-// const rellaxText = new Rellax(".rellax-text", {
-//   center: true,
-//   round: true,
-//   speed: 1.5,
-//   horizontal: false,
-// });
-
 const rellaxImg = new Rellax(".rellax-img", {
   center: true,
   round: true,

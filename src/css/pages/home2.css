@@ -920,7 +920,7 @@ input.search {
   left: calc(100% - 2.5rem);
 }
 
-.product-review-carousel figure .star-container .star, .product-review-carousel, .tidbit.join-in-a-few-taps, .tidbit.your-money-talks, .tidbit.give-fossil-fuels-the-flick, .sprite-container, article header {
+.product-review-carousel figure .star-container .star, .product-review-carousel, .tidbit.join-in-a-few-taps, .tidbit.your-money-talks, .tidbit.give-fossil-fuels-the-flick, .sprite, article header {
   image-rendering: -webkit-optimize-contrast;
   /* Webkit (non-standard naming)*/
   image-rendering: crisp-edges;
@@ -1021,7 +1021,7 @@ article header p {
   line-height: 125%;
 }
 
-.sprite-container {
+.sprite {
   position: absolute;
 }
 
@@ -1123,7 +1123,7 @@ article header p {
   grid-column: 5/13;
 }
 .tidbit.your-money-talks {
-  background-color: url("/images/dithered/earth.png");
+  background-image: url("/images/dithered/earth.png");
   background-position: top 40vh left -20%;
 }
 @media (min-width: 48rem) {
@@ -1203,7 +1203,7 @@ article header p {
   color: #000000;
   background-color: #f9ecf5;
   background-image: url("/images/dithered/smoke-stack-small-green.png");
-  background-position: bottom 7rem right -2rem;
+  background-position: bottom 14rem right -2rem;
   background-repeat: no-repeat;
 }
 .product-review-carousel #coal {
@@ -1293,19 +1293,22 @@ article header p {
 .product-review-carousel figure figcaption cite a:hover {
   color: #c851a3;
 }
-.product-review-carousel .see-all-reviews {
+.product-review-carousel footer {
+  padding-top: 7rem;
+}
+.product-review-carousel footer .see-all-reviews {
   position: absolute;
-  bottom: 1rem;
+  bottom: 3rem;
 }
 @media (min-width: 40rem) {
-  .product-review-carousel .see-all-reviews {
+  .product-review-carousel footer .see-all-reviews {
     font-size: 1.5rem;
   }
 }
-.product-review-carousel .see-all-reviews a {
+.product-review-carousel footer .see-all-reviews a {
   color: inherit;
 }
-.product-review-carousel .see-all-reviews a:hover {
+.product-review-carousel footer .see-all-reviews a:hover {
   color: #c851a3;
 }
 

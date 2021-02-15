@@ -101,7 +101,7 @@ article header {
   }
 }
 
-.sprite-container {
+.sprite {
   position: absolute;
   @extend %background-crisp;
 }
@@ -212,7 +212,7 @@ article header {
     }
   }
   &.your-money-talks {
-    background-color: url("/images/dithered/earth.png");
+    background-image: url("/images/dithered/earth.png");
     @extend %background-crisp;
     background-position: top 40vh left -20%;
     @media (min-width: $breakpoint-md) {
@@ -296,7 +296,7 @@ article header {
   background-color: $fig-300;
   background-image: url("/images/dithered/smoke-stack-small-green.png");
   @extend %background-crisp;
-  background-position: bottom 7rem right -2rem;
+  background-position: bottom 14rem right -2rem;
   background-repeat: no-repeat;
 
   #coal {
@@ -398,19 +398,22 @@ article header {
     }
   }
 
-  .see-all-reviews {
-    position: absolute;
-    bottom: 1rem;
+  footer {
+    padding-top: 7rem;
+    .see-all-reviews {
+      position: absolute;
+      bottom: 3rem;
 
-    @media (min-width: $breakpoint-sm) {
-      font-size: $font-size-24;
-    }
+      @media (min-width: $breakpoint-sm) {
+        font-size: $font-size-24;
+      }
 
-    a {
-      color: inherit;
+      a {
+        color: inherit;
 
-      &:hover {
-        color: $fig-500;
+        &:hover {
+          color: $fig-500;
+        }
       }
     }
   }
