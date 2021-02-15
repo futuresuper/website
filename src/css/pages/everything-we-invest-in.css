@@ -970,7 +970,8 @@ input.search {
 }
 @media (min-width: 48rem) {
   .everything-we-invest-in .investment-card-section .sort-item {
-    grid-column: span 3;
+    grid-column-start: 10;
+    grid-column-end: 13;
   }
 }
 .everything-we-invest-in .investment-card-section .sort-item h5 {
