@@ -25,6 +25,7 @@ module.exports = (config) => {
   config.addPassthroughCopy("./src/admin/");
   config.addPassthroughCopy("./src/css/");
   config.addPassthroughCopy("./src/_data/custodians.json");
+  config.addPassthroughCopy("_redirects");
 
   // Add filters to Eleventy
   // Handle dates in areas such as blog posts
