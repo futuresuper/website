@@ -1,12 +1,18 @@
 @use "../base" as *;
 
+%background-crisp {
+  image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming)*/
+  image-rendering: crisp-edges;
+  image-rendering: -moz-crisp-edges; /* Firefox */
+  image-rendering: -o-crisp-edges; /* Opera */
+}
+
 // Override body background
 .flow-content {
   background-color: $mint-300 !important; // TODO fix @use or whatever else is blocking this for cascading properly
 }
 
 // Override site header margins
-
 article header .button,
 .tidbit .button {
   font-size: $font-size-xl;
@@ -23,7 +29,7 @@ article header,
   text-align: center;
 }
 
-// Override default bolded buttons
+// Override default bolded text
 article header h1,
 .tidbit h2,
 article header .button,
@@ -32,49 +38,64 @@ article header .button,
 }
 
 article header h1,
-.tidbit h2 {
-  margin: 0 auto 4rem;
+.tidbit .poster h2 {
+  margin-bottom: 0;
   line-height: 100%;
   text-transform: uppercase;
   font-size: clamp($font-size-48, 5vh, 5rem);
   @media (min-width: $breakpoint-md) {
     font-size: clamp($font-size-48, 9vh, 5rem);
   }
+}
+
+.poster {
+  word-spacing: 100vw;
+  margin: 0 auto 4rem;
+  width: max-content;
+  width: clamp(16rem, 62vw, 21rem);
+  height: clamp(18rem, 48vh, 30rem);
+  @media (min-width: $breakpoint-md) {
+    width: clamp(16rem, 64vw, 24rem);
+    height: clamp(18rem, 54vh, 40rem);
+  }
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 article header {
-  // Bleed into site-header
-  $site-header-background-y-offset: 16rem;
-  // margin-top: -$site-header-background-y-offset;
-  // padding-top: $site-header-background-y-offset;
+  margin-top: -5rem;
+  padding-top: 3rem;
   padding-bottom: 6vh;
 
   background-color: $mint-300;
   background-image: url("/images/dithered/smoke-stack.png");
+  @extend %background-crisp;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top (-$site-header-background-y-offset) center;
+  background-position: top -16rem center;
 
   @media (min-width: $breakpoint-md) {
+    margin-top: 0;
+    padding-top: 0;
+
     background-image: url(/images/dithered/smoke-stack.png), url(/images/dithered/smoke-stack.png);
     background-size: 32vh;
-    background-position: top 13rem left 25%, top 21rem right 25%;
+    background-position: top -4rem left 25%, top 8rem right 25%;
   }
-
-  h1 {
+  .poster {
     background-color: $mint-300;
-    color: $mint-500;
-    margin-bottom: 0;
-
     width: clamp(16rem, 62vw, 28rem);
     height: clamp(22rem, 48vh, 50vh);
 
     @media (min-width: $breakpoint-md) {
       width: clamp(28rem, 40vw, 28rem);
       height: clamp(10rem, 56vh, 60rem);
+    }
+
+    h1 {
+      color: $mint-500;
+      margin-bottom: 0;
     }
   }
 
@@ -93,21 +114,27 @@ article header {
   }
 }
 
+.sprite {
+  position: absolute;
+  @extend %background-crisp;
+}
+
 .tidbit {
   padding-top: 5rem;
   padding-bottom: 4rem;
   background-repeat: no-repeat;
+  // Allow for inline child images to be positioned absolutely
+  position: relative;
 
-  h2 {
-    background-color: $fraise-500;
-    color: rgba(255, 255, 255, 0.9);
-    width: clamp(16rem, 62vw, 21rem);
-    height: clamp(18rem, 48vh, 30rem);
-
-    @media (min-width: $breakpoint-md) {
-      width: clamp(16rem, 64vw, 24rem);
-      height: clamp(18rem, 54vh, 40rem);
+  .poster {
+    h2 {
+      color: rgba(255, 255, 255, 0.9);
     }
+  }
+
+  .article-content {
+    // Ensure text stays above any parallax elements
+    position: relative;
   }
 
   p:not(.disclaimer) {
@@ -147,13 +174,38 @@ article header {
   // Begin section-specific styling
   &.give-fossil-fuels-the-flick {
     background-color: $fraise-300;
-    background-image: url("/images/dithered/barrel.png"), url("/images/dithered/smoke-stack-small-red.png"), url("/images/dithered/coal.png");
-    background-position: top 75vh right 0, top 40vh right 50%, top -2rem right -2rem;
+    background-image: url("/images/dithered/barrel.png"), url("/images/dithered/smoke-stack-small-red.png");
+    @extend %background-crisp;
+    background-position: top 75vh right 0, top 40vh right 50%;
     @media (min-width: $breakpoint-md) {
-      background-position: top 50vh left 20%, top 30vh right 20%, top -2rem left 30%;
+      background-position: top 50vh left 20%, top 30vh right 20%;
     }
 
-    h2 {
+    .coal {
+      top: -2rem;
+      right: -2rem;
+      width: 20rem;
+      height: 20rem;
+
+      @media (min-width: $breakpoint-md) {
+        left: 30%;
+      }
+
+      background-color: $mango-300;
+      background-image: url("/images/dithered/coal-sprite.png");
+      background-size: 100rem 20rem;
+      animation: moveCoalX 5000ms steps(5) infinite;
+      @keyframes moveCoalX {
+        from {
+          background-position-x: 0;
+        }
+        to {
+          background-position-x: -100rem;
+        }
+      }
+    }
+
+    .poster {
       background-color: $fraise-500;
       margin-bottom: 54vh;
       @media (min-width: $breakpoint-md) {
@@ -167,14 +219,40 @@ article header {
     }
   }
   &.your-money-talks {
-    background-color: $mango-300;
-    background-image: url("/images/dithered/dollar-coin.png"), url("/images/dithered/earth.png");
-    background-position: top -2vh right -5rem, top 40vh left -20%;
+    background-image: url("/images/dithered/earth.png");
+    @extend %background-crisp;
+    background-position: top 40vh left -20%;
     @media (min-width: $breakpoint-md) {
-      background-position: top 4vh right 32%, top 50vh left 28%;
+      background-position: top 50vh left 28%;
     }
 
-    h2 {
+    .coin {
+      top: -2vh;
+      right: -5rem;
+      width: 20rem;
+      height: 20rem;
+
+      @media (min-width: $breakpoint-md) {
+        top: 4vh;
+        left: 52%;
+      }
+
+      background-color: $black-500;
+      background-image: url("/images/dithered/coin-sprite.png");
+      background-size: 1200rem 20rem;
+      animation: moveCoinX 1000ms steps(61) infinite;
+      @keyframes moveCoinX {
+        from {
+          background-position-x: 0;
+        }
+        to {
+          background-position-x: -1200rem;
+        }
+      }
+    }
+
+    .poster {
+      background: $mint-500;
       background-color: $mango-500;
       margin-bottom: 15vh;
       @media (min-width: $breakpoint-md) {
@@ -198,15 +276,15 @@ article header {
     }
   }
   &.join-in-a-few-taps {
-    background-color: $mint-300;
+    background-color: $mint-500;
     background-image: url("/images/dithered/wind-turbine.png"), url("/images/dithered/sunflower.png");
+    @extend %background-crisp;
     background-position: top 2rem left -5rem, top 34vh right -6rem;
     @media (min-width: $breakpoint-md) {
       background-position: top 10vh left 32%, top 48vh right 28%;
     }
 
-    h2 {
-      background-color: $mint-500;
+    .poster {
       margin-bottom: 10vh;
       @media (min-width: $breakpoint-md) {
         margin-top: 6vh;
@@ -218,14 +296,35 @@ article header {
 
 .product-review-carousel {
   padding: 8rem 0;
+  // Allow for inline child images, footer text, to be positioned absolutely
+  position: relative;
+
   color: $black-900;
   background-color: $fig-300;
-  background-image: url("/images/dithered/coal.png"), url("/images/dithered/smoke-stack-small-green.png");
-  background-position: top 0 left -4rem, bottom 7rem right -2rem;
+  background-image: url("/images/dithered/smoke-stack-small-green.png");
+  @extend %background-crisp;
+  background-position: bottom 14rem right -2rem;
   background-repeat: no-repeat;
 
-  // For aligning footer
-  position: relative;
+  .coal {
+    top: -2rem;
+    left: -4rem;
+    width: 20rem;
+    height: 20rem;
+
+    background-color: $mango-300;
+    background-image: url("/images/dithered/coal-sprite.png");
+    background-size: 100rem 20rem;
+    animation: moveCoalX 5000ms steps(5) infinite;
+    @keyframes moveCoalX {
+      from {
+        background-position-x: 0;
+      }
+      to {
+        background-position-x: -100rem;
+      }
+    }
+  }
 
   figure {
     padding: 2rem 2rem 6rem 2rem;
@@ -239,6 +338,7 @@ article header {
         width: 42px;
         height: 38px;
         background-image: url("/images/dithered/starburst-sprite.png");
+        @extend %background-crisp;
         animation: moveStarX 1000ms steps(7) infinite;
         &:nth-of-type(2) {
           animation-delay: 25ms;
@@ -305,25 +405,33 @@ article header {
     }
   }
 
-  .see-all-reviews {
-    position: absolute;
-    bottom: 1rem;
+  footer {
+    padding-top: 7rem;
+    .see-all-reviews {
+      position: absolute;
+      bottom: 3rem;
 
-    @media (min-width: $breakpoint-sm) {
-      font-size: $font-size-24;
-    }
+      @media (min-width: $breakpoint-sm) {
+        font-size: $font-size-24;
+      }
 
-    a {
-      color: inherit;
+      a {
+        color: inherit;
 
-      &:hover {
-        color: $fig-500;
+        &:hover {
+          color: $fig-500;
+        }
       }
     }
   }
 }
 
-// Override default footer styling, just on homepage
-body > .flow-content > footer {
-  background: $white-500;
+body > .flow-content {
+  // Stop absolutely-positioned images from causing overflow-x
+  overflow-x: hidden;
+
+  // Override default footer styling, just on homepage
+  > footer {
+    background: $white-500;
+  }
 }
