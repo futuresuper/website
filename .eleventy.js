@@ -25,6 +25,7 @@ module.exports = (config) => {
   config.addPassthroughCopy("./src/admin/");
   config.addPassthroughCopy("./src/css/");
   config.addPassthroughCopy("./src/_data/custodians.json");
+  config.addPassthroughCopy("_redirects");
 
   // Add filters to Eleventy
   // Handle dates in areas such as blog posts
@@ -102,6 +103,14 @@ module.exports = (config) => {
         .sort((a, b) => b.data.order - a.data.order)
         .reverse()
     );
+  });
+
+  // Return a collection of just the documents for our reconciliation efforts
+  config.addCollection("reconciliationDocuments", (collection) => {
+    return collection
+      .getFilteredByGlob("./src/documents-and-forms/reconciliation/*.md")
+      .sort((a, b) => b.data.order - a.data.order)
+      .reverse();
   });
 
   // Allow JavaScript to be minified via the jsmin Nunjucks filter

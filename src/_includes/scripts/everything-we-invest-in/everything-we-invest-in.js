@@ -1,5 +1,7 @@
 // Basic/Detailed View Selector
 var details = document.getElementsByClassName("details");
+// Uncomment below once we're okay to show detailed view
+/*
 var viewSelector = document.querySelector("#detailed-info");
 viewSelector.addEventListener("change", function () {
   let visibility = viewSelector.value === "detailed" ? "block" : "none";
@@ -7,6 +9,7 @@ viewSelector.addEventListener("change", function () {
     details[i].style.display = visibility;
   }
 });
+*/
 
 // 2) Reusable function to convert any string/text to css-friendly format
 var conv = function (str) {
