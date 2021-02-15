@@ -107,7 +107,7 @@
     "label": "Balanced Growth Pension",
     "slug": "balanced-growth-pension",
     "opticalLabel": ["Balanced", "Growth Pension"],
-    "subtitle": "Zero fossil fuels, plus investments in renewable energy and social impact projects.",
+    "subtitle": "Zero fossil fuels. Targets investment in social impact and renewable energy projects.",
     "type": "pension",
     "fightsInequality": true,
     "investsInRenewables": true,

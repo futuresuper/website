@@ -56,9 +56,9 @@
     <div class="table-intro grid container">
       <div>
         <h2>Let's break things down</h2>
-        <p>Not sure what something means? Tap anything with a
+        <p>Don’t speak finance? Super is full of jargon that hurts our brains. Hover over anything with a
           <a class="tooltip">dotted underline<span class="tooltip-text">You're a natural!</span></a>
-          to see a full, jargon-free, explanation.
+          to see a normal human explanation.
         </p>
       </div>
     </div>
@@ -104,7 +104,7 @@
 
       <div class="grid-row">
         <div class="row-header">
-          <h5>Invests in renewables</h5>
+          <h5>Invests in climate solutions</h5>
         </div>
         {% for option in investmentOptions %}
           {% if option.type === "pension" %}
@@ -112,36 +112,6 @@
               {% if option.investsInRenewables %}
                 {{ "/src/images/icons/tick.svg" | svgContents("fill-core") | safe }}
               {% endif %}
-            </div>
-          {% endif %}
-        {% endfor %}
-      </div>
-
-      <div class="grid-row">
-        <div class="row-header">
-          <h5>Entry fee</h5>
-        </div>
-        {% for option in investmentOptions %}
-          {% if option.type === "pension" %}
-            <div class="row-data {{ option.slug }}">
-              <p>
-                Free
-              </p>
-            </div>
-          {% endif %}
-        {% endfor %}
-      </div>
-
-      <div class="grid-row">
-        <div class="row-header">
-          <h5>Exit fee</h5>
-        </div>
-        {% for option in investmentOptions %}
-          {% if option.type === "pension" %}
-            <div class="row-data {{ option.slug }}">
-              <p>
-                Free
-              </p>
             </div>
           {% endif %}
         {% endfor %}
@@ -210,7 +180,9 @@
 
       <div class="grid-row">
         <div class="row-header">
-          <h5>Recent returns</h5>
+          <h5>Recent returns^</h5>
+          <small>As at
+            {{ performanceReturns.dateAsAt | dateFilter }}</small>
           <p>
             <a href="/performance-and-returns">See full performance and returns</a>
           </p>
@@ -227,7 +199,7 @@
             {% endif %}
           {% endfor %}
           <p class="caption">
-            <small>Over the last year</small>
+            <small>One year</small>
           </p>
 
           {% for row in performanceReturns.table %}
@@ -251,7 +223,10 @@
       <div>
         <p class="disclaimer">*&thinsp;Read our
           <a href="https://www.futuresuper.com.au/pppds">Pension Product Disclosure Statement</a>
-          for full details on how fees apply to your Future Super account. The fees shown above are the total Investment Fees, Administration Fees and Indirect Cost Ratio payable for our pension option. Other fees and costs may apply to your account.</p>
+          for full details on how fees apply to your Future Super account. The fees shown above are the total Investment Fees, Administration Fees and Indirect Cost Ratio payable for our pension option. Other fees and costs may apply to your account.
+        </p>
+        <p class="disclaimer">^&thinsp;Returns provided are after investment fees, percentage-based administration fees and taxes but before dollar-based administration fees have been taken out. Returns for periods of greater than one year are on a per annum compound basis. Return of capital and the performance of your investment in the Fund are not guaranteed. Past performance is not a reliable indicator of future performance.
+        </p>
       </div>
     </div>
 

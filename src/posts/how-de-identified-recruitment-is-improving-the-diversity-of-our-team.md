@@ -6,10 +6,10 @@ tags:
   - Equality
   - News
 author: Veronica Sherwood-Meares
+image: "https://res.cloudinary.com/future-super/image/upload/c_scale,w_240/v1613109309/for-hire-sign.jpg"
 canonical: "https://www.linkedin.com/pulse/how-de-identified-recruitment-improving-diversity-our-veronica/"
 description: >-
   People were generally pretty surprised when I responded telling them we don’t look at CVs at Future Super. So how do we hire?
-image:
 ---
 
 In the days and weeks after posting a job ad for a role in my team a couple of months ago, my LinkedIn inbox was flooded with people sending me their CVs and asking if they would be a good fit for the role.

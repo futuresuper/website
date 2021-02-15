@@ -198,7 +198,7 @@
       <div class="grid-row">
         <div class="row-header">
           <h5>
-            <a class="tooltip">Asset allocation^<span class="tooltip-text">How we balance risk and reward in order to achieve investment objectives</span></a>
+            <a class="tooltip">Asset allocation<span class="tooltip-text">How we balance risk and reward in order to achieve investment objectives</span></a>
           </h5>
         </div>
         {% for option in investmentOptions %}
@@ -213,7 +213,7 @@
 
       <div class="grid-row">
         <div class="row-header">
-          <h5>Recent returns**</h5>
+          <h5>Recent returns^</h5>
           <small>As at
             {{ performanceReturns.dateAsAt | dateFilter }}</small>
           <p>
@@ -258,7 +258,7 @@
             {% endif %}
           {% endfor %}
           <p class="caption">
-            <small>Over the last year</small>
+            <small>One year</small>
           </p>
 
           {% for row in performanceReturns.table %}
@@ -284,7 +284,7 @@
             {% endif %}
           {% endfor %}
           <p class="caption">
-            <small>Over the last year</small>
+            <small>One year</small>
           </p>
 
           {% for row in performanceReturns.table %}
@@ -310,9 +310,7 @@
           <a href="https://www.futuresuper.com.au/pds">Product Disclosure Statement</a>
           full details on how fees apply to your Future Super account. The fees shown above are the total Investment Fees, Administration Fees and Indirect Cost Ratio payable for each of our investment options. Other fees and costs may apply to your account. There's no dollar-based admin fee when your balance is below $6,000.
         </p>
-        <p class="disclaimer">^&thinsp;The asset allocation shown is a strategic asset allocation and the actual allocation may vary within the ranges outlined in the fund Product Disclosure Statement and Additional Information Booklet. You can view our investment strategy including asset allocations on page 16 of the Future Super Additional Information Booklet, obtainable at futuresuper.com.au. This information is correct as at 01/01/2021 and is subject to change.
-        </p>
-        <p class="disclaimer">**&thinsp;Returns provided are after investment fees, percentage-based administration fees and taxes but before dollar-based administration fees have been taken out. Returns for periods of greater than one year are on a per annum compound basis. Return of capital and the performance of your investment in the Fund are not guaranteed. Past performance is not a reliable indicator of future performance.
+        <p class="disclaimer">^&thinsp;Returns provided are after investment fees, percentage-based administration fees and taxes but before dollar-based administration fees have been taken out. Returns for periods of greater than one year are on a per annum compound basis. Return of capital and the performance of your investment in the Fund are not guaranteed. Past performance is not a reliable indicator of future performance.
         </p>
       </div>
     </div>
