@@ -32,7 +32,7 @@ header[role="banner"] {
     }
   }
 
-  section {
+  .container-unlimited {
     margin-top: 1rem;
     margin-bottom: $space-section-y-sm;
     @media (min-width: $breakpoint-md) {
@@ -107,6 +107,13 @@ header[role="banner"] {
             display: block;
           }
         }
+      }
+    }
+
+    .nav-container {
+      .dropdown-content {
+        // Show above rellax content that have transforms applied
+        z-index: 1;
       }
     }
 
@@ -200,7 +207,6 @@ header[role="banner"] {
         width: 100%;
         padding: 5rem $space-page-padding-x-dynamic 3rem;
         position: fixed;
-        z-index: 4;
         left: 0;
         top: 0;
         background-color: $off-white-300;
