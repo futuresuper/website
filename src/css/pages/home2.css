@@ -920,7 +920,7 @@ input.search {
   left: calc(100% - 2.5rem);
 }
 
-.product-review-carousel figure .star-container .star, .product-review-carousel, .tidbit.join-in-a-few-taps, .tidbit.your-money-talks, .tidbit.give-fossil-fuels-the-flick, .tidbit .img-container img, article header {
+.product-review-carousel figure .star-container .star, .product-review-carousel, .tidbit.join-in-a-few-taps, .tidbit.your-money-talks, .tidbit.give-fossil-fuels-the-flick #coal, .tidbit.give-fossil-fuels-the-flick, .tidbit .img-container img, article header {
   image-rendering: -webkit-optimize-contrast;
   /* Webkit (non-standard naming)*/
   image-rendering: crisp-edges;
@@ -1026,7 +1026,6 @@ article header p {
   padding-bottom: 4rem;
   background-repeat: no-repeat;
   position: relative;
-  overflow: hidden;
 }
 .tidbit h2 {
   background-color: #f04b23;
@@ -1061,6 +1060,11 @@ article header p {
   vertical-align: top;
   position: relative;
   top: -2px;
+}
+.tidbit .sprite-container {
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
 }
 .tidbit .img-container {
   position: absolute;
@@ -1099,6 +1103,27 @@ article header p {
 @media (min-width: 48rem) {
   .tidbit.give-fossil-fuels-the-flick {
     background-position: top 50vh left 20%, top 30vh right 20%, top -2rem left 30%;
+  }
+}
+.tidbit.give-fossil-fuels-the-flick #coal {
+  top: -2rem;
+  right: -2rem;
+  background-color: #ffebb9;
+  background-image: url("/images/dithered/coal-sprite.png");
+  background-size: 100rem 20rem;
+  animation: moveCoalX 1000ms steps(5) infinite;
+}
+@media (min-width: 48rem) {
+  .tidbit.give-fossil-fuels-the-flick #coal {
+    left: 30%;
+  }
+}
+@keyframes moveCoalX {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: -100rem;
   }
 }
 .tidbit.give-fossil-fuels-the-flick h2 {
@@ -1271,6 +1296,9 @@ article header p {
   color: #c851a3;
 }
 
+body > .flow-content {
+  overflow-x: hidden;
+}
 body > .flow-content > footer {
   background: #ffffff;
 }

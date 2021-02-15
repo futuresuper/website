@@ -107,8 +107,6 @@ article header {
   background-repeat: no-repeat;
   // Allow for inline child images to be positioned absolutely
   position: relative;
-  // Stop these images from causing overflow-x
-  overflow: hidden;
 
   h2 {
     background-color: $fraise-500;
@@ -145,6 +143,12 @@ article header {
       position: relative;
       top: -2px;
     }
+  }
+
+  .sprite-container {
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
   }
 
   .img-container {
@@ -188,6 +192,29 @@ article header {
     background-position: top 75vh right 0, top 40vh right 50%, top -2rem right -2rem;
     @media (min-width: $breakpoint-md) {
       background-position: top 50vh left 20%, top 30vh right 20%, top -2rem left 30%;
+    }
+
+    #coal {
+      top: -2rem;
+      right: -2rem;
+
+      @media (min-width: $breakpoint-md) {
+        left: 30%;
+      }
+
+      background-color: $mango-300;
+      @extend %background-crisp;
+      background-image: url("/images/dithered/coal-sprite.png");
+      background-size: 100rem 20rem;
+      animation: moveCoalX 1000ms steps(5) infinite;
+      @keyframes moveCoalX {
+        from {
+          background-position-x: 0;
+        }
+        to {
+          background-position-x: -100rem;
+        }
+      }
     }
 
     h2 {
@@ -375,7 +402,12 @@ article header {
   }
 }
 
-// Override default footer styling, just on homepage
-body > .flow-content > footer {
-  background: $white-500;
+body > .flow-content {
+  // Stop absolutely-positioned images from causing overflow-x
+  overflow-x: hidden;
+
+  // Override default footer styling, just on homepage
+  > footer {
+    background: $white-500;
+  }
 }
