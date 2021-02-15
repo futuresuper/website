@@ -1,4 +1,10 @@
-# From	                                                To
+# ------------------------------
+# Redirects are all handled in this file
+# Processed by Netlify on deployment - see https://docs.netlify.com/routing/redirects/
+# Use * for wildcard
+# ------------------------------
+# Redirect From	                                        Redirect To
+# ------------------------------
 /au	                                                 	  /
 /choosing	                                              /
 /choosing/testimonials	                               	/
