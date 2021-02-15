@@ -276,7 +276,7 @@ article header {
     }
   }
   &.join-in-a-few-taps {
-    background-color: $mint-300;
+    background-color: $mint-500;
     background-image: url("/images/dithered/wind-turbine.png"), url("/images/dithered/sunflower.png");
     @extend %background-crisp;
     background-position: top 2rem left -5rem, top 34vh right -6rem;

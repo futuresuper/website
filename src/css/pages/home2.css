@@ -1185,7 +1185,7 @@ article header p {
   grid-column: 4/13;
 }
 .tidbit.join-in-a-few-taps {
-  background-color: #ddffe7;
+  background-color: #2bb151;
   background-image: url("/images/dithered/wind-turbine.png"), url("/images/dithered/sunflower.png");
   background-position: top 2rem left -5rem, top 34vh right -6rem;
 }
