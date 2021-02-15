@@ -920,7 +920,7 @@ input.search {
   left: calc(100% - 2.5rem);
 }
 
-.product-review-carousel figure .star-container .star, .product-review-carousel, .tidbit.join-in-a-few-taps, .tidbit.your-money-talks, .tidbit.give-fossil-fuels-the-flick, .tidbit .img-container img, .tidbit .sprite-container, article header {
+.product-review-carousel figure .star-container .star, .product-review-carousel, .tidbit.join-in-a-few-taps, .tidbit.your-money-talks, .tidbit.give-fossil-fuels-the-flick, .tidbit .img-container img, .sprite-container, article header {
   image-rendering: -webkit-optimize-contrast;
   /* Webkit (non-standard naming)*/
   image-rendering: crisp-edges;
@@ -1021,6 +1021,10 @@ article header p {
   line-height: 125%;
 }
 
+.sprite-container {
+  position: absolute;
+}
+
 .tidbit {
   padding-top: 5rem;
   padding-bottom: 4rem;
@@ -1060,9 +1064,6 @@ article header p {
   vertical-align: top;
   position: relative;
   top: -2px;
-}
-.tidbit .sprite-container {
-  position: absolute;
 }
 .tidbit .img-container {
   position: absolute;
@@ -1157,7 +1158,7 @@ article header p {
   background-color: #140f14;
   background-image: url("/images/dithered/coin-sprite.png");
   background-size: 1200rem 20rem;
-  animation: moveCoalX 1000ms steps(61) infinite 1s;
+  animation: moveCoinX 1000ms steps(61) infinite 1s;
 }
 @media (min-width: 48rem) {
   .tidbit.your-money-talks #coin {
@@ -1165,7 +1166,7 @@ article header p {
     left: 52%;
   }
 }
-@keyframes moveCoalX {
+@keyframes moveCoinX {
   from {
     background-position-x: 0;
   }
@@ -1228,12 +1229,30 @@ article header p {
 
 .product-review-carousel {
   padding: 8rem 0;
+  position: relative;
   color: #000000;
   background-color: #f9ecf5;
   background-image: url("/images/dithered/coal.png"), url("/images/dithered/smoke-stack-small-green.png");
   background-position: top 0 left -4rem, bottom 7rem right -2rem;
   background-repeat: no-repeat;
-  position: relative;
+}
+.product-review-carousel #coal {
+  top: -2rem;
+  left: -4rem;
+  width: 20rem;
+  height: 20rem;
+  background-color: #ffebb9;
+  background-image: url("/images/dithered/coal-sprite.png");
+  background-size: 100rem 20rem;
+  animation: moveCoalX 1000ms steps(5) infinite;
+}
+@keyframes moveCoalX {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: -100rem;
+  }
 }
 .product-review-carousel figure {
   padding: 2rem 2rem 6rem 2rem;

@@ -101,6 +101,11 @@ article header {
   }
 }
 
+.sprite-container {
+  position: absolute;
+  @extend %background-crisp;
+}
+
 .tidbit {
   padding-top: 5rem;
   padding-bottom: 4rem;
@@ -143,11 +148,6 @@ article header {
       position: relative;
       top: -2px;
     }
-  }
-
-  .sprite-container {
-    position: absolute;
-    @extend %background-crisp;
   }
 
   .img-container {
@@ -253,8 +253,8 @@ article header {
       background-color: $black-500;
       background-image: url("/images/dithered/coin-sprite.png");
       background-size: 1200rem 20rem;
-      animation: moveCoalX 1000ms steps(61) infinite 1s;
-      @keyframes moveCoalX {
+      animation: moveCoinX 1000ms steps(61) infinite 1s;
+      @keyframes moveCoinX {
         from {
           background-position-x: 0;
         }
@@ -320,6 +320,9 @@ article header {
 
 .product-review-carousel {
   padding: 8rem 0;
+  // Allow for inline child images, footer text, to be positioned absolutely
+  position: relative;
+
   color: $black-900;
   background-color: $fig-300;
   background-image: url("/images/dithered/coal.png"), url("/images/dithered/smoke-stack-small-green.png");
@@ -327,8 +330,29 @@ article header {
   background-position: top 0 left -4rem, bottom 7rem right -2rem;
   background-repeat: no-repeat;
 
-  // For aligning footer
-  position: relative;
+  #coal {
+    top: -2rem;
+    left: -4rem;
+    width: 20rem;
+    height: 20rem;
+
+    // @media (min-width: $breakpoint-md) {
+    //   left: 30%;
+    // }
+
+    background-color: $mango-300;
+    background-image: url("/images/dithered/coal-sprite.png");
+    background-size: 100rem 20rem;
+    animation: moveCoalX 1000ms steps(5) infinite;
+    @keyframes moveCoalX {
+      from {
+        background-position-x: 0;
+      }
+      to {
+        background-position-x: -100rem;
+      }
+    }
+  }
 
   figure {
     padding: 2rem 2rem 6rem 2rem;
