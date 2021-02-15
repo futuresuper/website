@@ -29,7 +29,7 @@ article header,
   text-align: center;
 }
 
-// Override default bolded buttons
+// Override default bolded text
 article header h1,
 .tidbit h2,
 article header .button,
@@ -38,17 +38,29 @@ article header .button,
 }
 
 article header h1,
-.tidbit h2 {
-  margin: 0 auto 4rem;
+.tidbit .poster h2 {
+  margin-bottom: 0;
   line-height: 100%;
   text-transform: uppercase;
   font-size: clamp($font-size-48, 5vh, 5rem);
   @media (min-width: $breakpoint-md) {
     font-size: clamp($font-size-48, 9vh, 5rem);
   }
+}
+
+.poster {
+  word-spacing: 100vw;
+  margin: 0 auto 4rem;
+  width: max-content;
+  width: clamp(16rem, 62vw, 21rem);
+  height: clamp(18rem, 48vh, 30rem);
+  @media (min-width: $breakpoint-md) {
+    width: clamp(16rem, 64vw, 24rem);
+    height: clamp(18rem, 54vh, 40rem);
+  }
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 article header {
@@ -71,18 +83,19 @@ article header {
     background-size: 32vh;
     background-position: top -4rem left 25%, top 8rem right 25%;
   }
-
-  h1 {
+  .poster {
     background-color: $mint-300;
-    color: $mint-500;
-    margin-bottom: 0;
-
     width: clamp(16rem, 62vw, 28rem);
     height: clamp(22rem, 48vh, 50vh);
 
     @media (min-width: $breakpoint-md) {
       width: clamp(28rem, 40vw, 28rem);
       height: clamp(10rem, 56vh, 60rem);
+    }
+
+    h1 {
+      color: $mint-500;
+      margin-bottom: 0;
     }
   }
 
@@ -113,15 +126,9 @@ article header {
   // Allow for inline child images to be positioned absolutely
   position: relative;
 
-  h2 {
-    background-color: $fraise-500;
-    color: rgba(255, 255, 255, 0.9);
-    width: clamp(16rem, 62vw, 21rem);
-    height: clamp(18rem, 48vh, 30rem);
-
-    @media (min-width: $breakpoint-md) {
-      width: clamp(16rem, 64vw, 24rem);
-      height: clamp(18rem, 54vh, 40rem);
+  .poster {
+    h2 {
+      color: rgba(255, 255, 255, 0.9);
     }
   }
 
@@ -174,7 +181,7 @@ article header {
       background-position: top 50vh left 20%, top 30vh right 20%;
     }
 
-    #coal {
+    .coal {
       top: -2rem;
       right: -2rem;
       width: 20rem;
@@ -187,7 +194,7 @@ article header {
       background-color: $mango-300;
       background-image: url("/images/dithered/coal-sprite.png");
       background-size: 100rem 20rem;
-      animation: moveCoalX 1000ms steps(5) infinite;
+      animation: moveCoalX 5000ms steps(5) infinite;
       @keyframes moveCoalX {
         from {
           background-position-x: 0;
@@ -198,7 +205,7 @@ article header {
       }
     }
 
-    h2 {
+    .poster {
       background-color: $fraise-500;
       margin-bottom: 54vh;
       @media (min-width: $breakpoint-md) {
@@ -219,7 +226,7 @@ article header {
       background-position: top 50vh left 28%;
     }
 
-    #coin {
+    .coin {
       top: -2vh;
       right: -5rem;
       width: 20rem;
@@ -233,7 +240,7 @@ article header {
       background-color: $black-500;
       background-image: url("/images/dithered/coin-sprite.png");
       background-size: 1200rem 20rem;
-      animation: moveCoinX 1000ms steps(61) infinite 1s;
+      animation: moveCoinX 1000ms steps(61) infinite;
       @keyframes moveCoinX {
         from {
           background-position-x: 0;
@@ -244,7 +251,8 @@ article header {
       }
     }
 
-    h2 {
+    .poster {
+      background: $mint-500;
       background-color: $mango-500;
       margin-bottom: 15vh;
       @media (min-width: $breakpoint-md) {
@@ -276,8 +284,7 @@ article header {
       background-position: top 10vh left 32%, top 48vh right 28%;
     }
 
-    h2 {
-      background-color: $mint-500;
+    .poster {
       margin-bottom: 10vh;
       @media (min-width: $breakpoint-md) {
         margin-top: 6vh;
@@ -299,7 +306,7 @@ article header {
   background-position: bottom 14rem right -2rem;
   background-repeat: no-repeat;
 
-  #coal {
+  .coal {
     top: -2rem;
     left: -4rem;
     width: 20rem;
@@ -308,7 +315,7 @@ article header {
     background-color: $mango-300;
     background-image: url("/images/dithered/coal-sprite.png");
     background-size: 100rem 20rem;
-    animation: moveCoalX 1000ms steps(5) infinite;
+    animation: moveCoalX 5000ms steps(5) infinite;
     @keyframes moveCoalX {
       from {
         background-position-x: 0;
