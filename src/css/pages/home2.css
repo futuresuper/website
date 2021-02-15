@@ -920,7 +920,7 @@ input.search {
   left: calc(100% - 2.5rem);
 }
 
-.product-review-carousel figure .star-container .star, .product-review-carousel, .tidbit.join-in-a-few-taps, .tidbit.your-money-talks, .tidbit.give-fossil-fuels-the-flick, .tidbit .img-container img, .sprite-container, article header {
+.product-review-carousel figure .star-container .star, .product-review-carousel, .tidbit.join-in-a-few-taps, .tidbit.your-money-talks, .tidbit.give-fossil-fuels-the-flick, .sprite-container, article header {
   image-rendering: -webkit-optimize-contrast;
   /* Webkit (non-standard naming)*/
   image-rendering: crisp-edges;
@@ -1065,24 +1065,6 @@ article header p {
   position: relative;
   top: -2px;
 }
-.tidbit .img-container {
-  position: absolute;
-  width: 20rem;
-  height: 20rem;
-}
-@media (min-width: 48rem) {
-  .tidbit .img-container {
-    width: 30rem;
-    height: 30rem;
-  }
-}
-.tidbit .img-container img {
-  width: 80%;
-  height: 80%;
-  position: absolute;
-  top: 10%;
-  left: 10%;
-}
 .tidbit aside {
   margin-top: 2rem;
 }
@@ -1096,12 +1078,12 @@ article header p {
 }
 .tidbit.give-fossil-fuels-the-flick {
   background-color: #ffe6e1;
-  background-image: url("/images/dithered/barrel.png"), url("/images/dithered/smoke-stack-small-red.png"), url("/images/dithered/coal.png");
-  background-position: top 75vh right 0, top 40vh right 50%, top -2rem right -2rem;
+  background-image: url("/images/dithered/barrel.png"), url("/images/dithered/smoke-stack-small-red.png");
+  background-position: top 75vh right 0, top 40vh right 50%;
 }
 @media (min-width: 48rem) {
   .tidbit.give-fossil-fuels-the-flick {
-    background-position: top 50vh left 20%, top 30vh right 20%, top -2rem left 30%;
+    background-position: top 50vh left 20%, top 30vh right 20%;
   }
 }
 .tidbit.give-fossil-fuels-the-flick #coal {
@@ -1141,13 +1123,12 @@ article header p {
   grid-column: 5/13;
 }
 .tidbit.your-money-talks {
-  background-color: #ffebb9;
-  background-image: url("/images/dithered/dollar-coin.png"), url("/images/dithered/earth.png");
-  background-position: top -2vh right -5rem, top 40vh left -20%;
+  background-color: url("/images/dithered/earth.png");
+  background-position: top 40vh left -20%;
 }
 @media (min-width: 48rem) {
   .tidbit.your-money-talks {
-    background-position: top 4vh right 32%, top 50vh left 28%;
+    background-position: top 50vh left 28%;
   }
 }
 .tidbit.your-money-talks #coin {
@@ -1215,25 +1196,14 @@ article header p {
     margin-bottom: 24vh;
   }
 }
-.tidbit.join-in-a-few-taps #sunflower {
-  background-color: #f9ecf5;
-  top: 34vh;
-  right: -6rem;
-}
-@media (min-width: 48rem) {
-  .tidbit.join-in-a-few-taps #sunflower {
-    top: 40vh;
-    right: 28%;
-  }
-}
 
 .product-review-carousel {
   padding: 8rem 0;
   position: relative;
   color: #000000;
   background-color: #f9ecf5;
-  background-image: url("/images/dithered/coal.png"), url("/images/dithered/smoke-stack-small-green.png");
-  background-position: top 0 left -4rem, bottom 7rem right -2rem;
+  background-image: url("/images/dithered/smoke-stack-small-green.png");
+  background-position: bottom 7rem right -2rem;
   background-repeat: no-repeat;
 }
 .product-review-carousel #coal {

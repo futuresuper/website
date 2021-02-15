@@ -150,25 +150,6 @@ article header {
     }
   }
 
-  .img-container {
-    position: absolute;
-    width: 20rem;
-    height: 20rem;
-    @media (min-width: $breakpoint-md) {
-      width: 30rem;
-      height: 30rem;
-    }
-
-    img {
-      width: 80%;
-      height: 80%;
-      position: absolute;
-      top: 10%;
-      left: 10%;
-      @extend %background-crisp;
-    }
-  }
-
   aside {
     margin-top: 2rem;
 
@@ -186,11 +167,11 @@ article header {
   // Begin section-specific styling
   &.give-fossil-fuels-the-flick {
     background-color: $fraise-300;
-    background-image: url("/images/dithered/barrel.png"), url("/images/dithered/smoke-stack-small-red.png"), url("/images/dithered/coal.png");
+    background-image: url("/images/dithered/barrel.png"), url("/images/dithered/smoke-stack-small-red.png");
     @extend %background-crisp;
-    background-position: top 75vh right 0, top 40vh right 50%, top -2rem right -2rem;
+    background-position: top 75vh right 0, top 40vh right 50%;
     @media (min-width: $breakpoint-md) {
-      background-position: top 50vh left 20%, top 30vh right 20%, top -2rem left 30%;
+      background-position: top 50vh left 20%, top 30vh right 20%;
     }
 
     #coal {
@@ -231,12 +212,11 @@ article header {
     }
   }
   &.your-money-talks {
-    background-color: $mango-300;
-    background-image: url("/images/dithered/dollar-coin.png"), url("/images/dithered/earth.png");
+    background-color: url("/images/dithered/earth.png");
     @extend %background-crisp;
-    background-position: top -2vh right -5rem, top 40vh left -20%;
+    background-position: top 40vh left -20%;
     @media (min-width: $breakpoint-md) {
-      background-position: top 4vh right 32%, top 50vh left 28%;
+      background-position: top 50vh left 28%;
     }
 
     #coin {
@@ -304,17 +284,6 @@ article header {
         margin-bottom: 24vh;
       }
     }
-
-    #sunflower {
-      background-color: $fig-300;
-      top: 34vh;
-      right: -6rem;
-
-      @media (min-width: $breakpoint-md) {
-        top: 40vh;
-        right: 28%;
-      }
-    }
   }
 }
 
@@ -325,9 +294,9 @@ article header {
 
   color: $black-900;
   background-color: $fig-300;
-  background-image: url("/images/dithered/coal.png"), url("/images/dithered/smoke-stack-small-green.png");
+  background-image: url("/images/dithered/smoke-stack-small-green.png");
   @extend %background-crisp;
-  background-position: top 0 left -4rem, bottom 7rem right -2rem;
+  background-position: bottom 7rem right -2rem;
   background-repeat: no-repeat;
 
   #coal {
@@ -335,10 +304,6 @@ article header {
     left: -4rem;
     width: 20rem;
     height: 20rem;
-
-    // @media (min-width: $breakpoint-md) {
-    //   left: 30%;
-    // }
 
     background-color: $mango-300;
     background-image: url("/images/dithered/coal-sprite.png");
