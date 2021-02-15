@@ -219,6 +219,7 @@ article header {
     }
   }
   &.your-money-talks {
+    background-color: $mango-300;
     background-image: url("/images/dithered/earth.png");
     @extend %background-crisp;
     background-position: top 40vh left -20%;
@@ -276,7 +277,7 @@ article header {
     }
   }
   &.join-in-a-few-taps {
-    background-color: $mint-500;
+    background-color: $mint-300;
     background-image: url("/images/dithered/wind-turbine.png"), url("/images/dithered/sunflower.png");
     @extend %background-crisp;
     background-position: top 2rem left -5rem, top 34vh right -6rem;
@@ -285,6 +286,7 @@ article header {
     }
 
     .poster {
+      background-color: $mint-500;
       margin-bottom: 10vh;
       @media (min-width: $breakpoint-md) {
         margin-top: 6vh;
