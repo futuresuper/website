@@ -104,6 +104,14 @@ module.exports = (config) => {
     );
   });
 
+  // Return a collection of just the documents for our reconciliation efforts
+  config.addCollection("reconciliationDocuments", (collection) => {
+    return collection
+      .getFilteredByGlob("./src/documents-and-forms/reconciliation/*.md")
+      .sort((a, b) => b.data.order - a.data.order)
+      .reverse();
+  });
+
   // Allow JavaScript to be minified via the jsmin Nunjucks filter
   // https://www.11ty.dev/docs/quicktips/inline-js/
   config.addNunjucksAsyncFilter("jsmin", async function (code, callback) {
