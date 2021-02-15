@@ -147,8 +147,7 @@ article header {
 
   .sprite-container {
     position: absolute;
-    width: 20rem;
-    height: 20rem;
+    @extend %background-crisp;
   }
 
   .img-container {
@@ -197,13 +196,14 @@ article header {
     #coal {
       top: -2rem;
       right: -2rem;
+      width: 20rem;
+      height: 20rem;
 
       @media (min-width: $breakpoint-md) {
         left: 30%;
       }
 
       background-color: $mango-300;
-      @extend %background-crisp;
       background-image: url("/images/dithered/coal-sprite.png");
       background-size: 100rem 20rem;
       animation: moveCoalX 1000ms steps(5) infinite;
@@ -237,6 +237,31 @@ article header {
     background-position: top -2vh right -5rem, top 40vh left -20%;
     @media (min-width: $breakpoint-md) {
       background-position: top 4vh right 32%, top 50vh left 28%;
+    }
+
+    #coin {
+      top: -2vh;
+      right: -5rem;
+      width: 20rem;
+      height: 20rem;
+
+      @media (min-width: $breakpoint-md) {
+        top: 4vh;
+        left: 52%;
+      }
+
+      background-color: $black-500;
+      background-image: url("/images/dithered/coin-sprite.png");
+      background-size: 1200rem 20rem;
+      animation: moveCoalX 1000ms steps(61) infinite 1s;
+      @keyframes moveCoalX {
+        from {
+          background-position-x: 0;
+        }
+        to {
+          background-position-x: -1200rem;
+        }
+      }
     }
 
     h2 {
