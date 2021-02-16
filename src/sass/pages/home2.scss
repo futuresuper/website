@@ -366,26 +366,6 @@ article header {
       background-position: top 10vh left 32%;
     }
 
-    .fire {
-      // @include sprite("fire", 195.125, 292.6875, $background-color, $animation-duration, $animation-steps, $pos-top, $pos-top-md, $pos-x-type, $pos-x, $pos-x-md-type, $pos-x-md);
-      top: 30vh;
-      left: 0;
-      width: 13.9375rem;
-      height: 20rem;
-
-      background-image: url("/images/dithered/fire-sprite.png");
-      // background-size: 195.125 20rem;
-      animation: moveFireX 2000ms steps(14) infinite;
-      @keyframes moveFireX {
-        from {
-          background-position-x: 0;
-        }
-        to {
-          background-position-x: -195.125rem;
-        }
-      }
-    }
-
     .flower {
       top: 34vh;
       right: -6rem;
@@ -412,6 +392,45 @@ article header {
         }
       }
       @media (min-width: $breakpoint-md) {
+        background-image: url("/images/dithered/flower-sprite-960h.png");
+        background-size: 150rem 30rem;
+        @keyframes moveFlowerX {
+          from {
+            background-position-x: 0;
+          }
+          to {
+            background-position-x: -150rem;
+          }
+        }
+      }
+    }
+
+    .flower-b {
+      top: 34vh;
+      left: 0;
+      width: 20rem;
+      height: 20rem;
+
+      @media (min-width: $breakpoint-md) {
+        top: 48vh;
+        width: 30rem;
+        height: 30rem;
+      }
+
+      background-color: $fig-300;
+      background-image: url("/images/dithered/flower-sprite.png");
+      background-size: 100rem 20rem;
+      animation: moveFlowerX 2000ms steps(5) infinite;
+      @keyframes moveFlowerX {
+        from {
+          background-position-x: 0;
+        }
+        to {
+          background-position-x: -100rem;
+        }
+      }
+      @media (min-width: $breakpoint-md) {
+        background-image: url("/images/dithered/flower-sprite-480h.png");
         background-size: 150rem 30rem;
         @keyframes moveFlowerX {
           from {

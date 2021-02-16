@@ -1238,22 +1238,6 @@ article header p {
     background-position: top 10vh left 32%;
   }
 }
-.tidbit.join-in-a-few-taps .fire {
-  top: 30vh;
-  left: 0;
-  width: 13.9375rem;
-  height: 20rem;
-  background-image: url("/images/dithered/fire-sprite.png");
-  animation: moveFireX 2000ms steps(14) infinite;
-}
-@keyframes moveFireX {
-  from {
-    background-position-x: 0;
-  }
-  to {
-    background-position-x: -195.125rem;
-  }
-}
 .tidbit.join-in-a-few-taps .flower {
   top: 34vh;
   right: -6rem;
@@ -1282,6 +1266,46 @@ article header p {
 }
 @media (min-width: 48rem) {
   .tidbit.join-in-a-few-taps .flower {
+    background-image: url("/images/dithered/flower-sprite-960h.png");
+    background-size: 150rem 30rem;
+  }
+  @keyframes moveFlowerX {
+    from {
+      background-position-x: 0;
+    }
+    to {
+      background-position-x: -150rem;
+    }
+  }
+}
+.tidbit.join-in-a-few-taps .flower-b {
+  top: 34vh;
+  left: 0;
+  width: 20rem;
+  height: 20rem;
+  background-color: #f9ecf5;
+  background-image: url("/images/dithered/flower-sprite.png");
+  background-size: 100rem 20rem;
+  animation: moveFlowerX 2000ms steps(5) infinite;
+}
+@media (min-width: 48rem) {
+  .tidbit.join-in-a-few-taps .flower-b {
+    top: 48vh;
+    width: 30rem;
+    height: 30rem;
+  }
+}
+@keyframes moveFlowerX {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: -100rem;
+  }
+}
+@media (min-width: 48rem) {
+  .tidbit.join-in-a-few-taps .flower-b {
+    background-image: url("/images/dithered/flower-sprite-480h.png");
     background-size: 150rem 30rem;
   }
   @keyframes moveFlowerX {
