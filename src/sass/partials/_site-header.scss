@@ -33,6 +33,9 @@ header[role="banner"] {
   // Style core navigation area
   .banner-content {
     padding-top: 1rem;
+    @media (min-width: $breakpoint-nav) {
+      padding-top: 2rem;
+    }
     margin-bottom: $space-section-y-sm;
 
     display: flex;

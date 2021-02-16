@@ -1018,6 +1018,11 @@ header[role=banner] .banner-content {
   justify-content: space-between;
   align-items: center;
 }
+@media (min-width: 56rem) {
+  header[role=banner] .banner-content {
+    padding-top: 2rem;
+  }
+}
 header[role=banner] .banner-content nav.desktop {
   display: none;
 }
