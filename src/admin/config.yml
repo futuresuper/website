@@ -11,7 +11,11 @@ media_library:
 collections:
   - name: "posts"
     label: "Posts"
-    folder: "posts"
+    folder: "src/posts"
+    create: true
     slug: "{{slug}}"
     fields:
-      - { label: "Title", name: "Title", widget: "string" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Body", name: "body", widget: "markdown" }
