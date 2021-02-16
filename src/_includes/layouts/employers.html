@@ -45,19 +45,12 @@
       <section>
         <h2>Related documents and forms</h2>
         <ul class="plain doc-or-form-item">
-          {% for selectedItem in pageDocsAndForms %}
-            {# Construct a file path that will match the url of the below collection items #}
-            {% set selectedItemFilePath %}/documents-and-forms/{{ selectedItem.section }}/{{ selectedItem.slug }}/{% endset %}
-            {# Loop through all the documents and forms #}
-            {% for item in collections.allDocumentsAndForms %}
-              {# Compare the two file paths #}
-              {% if selectedItemFilePath === item.url %}
-                {# If there's a match, include it on the page #}
-                <li>
-                  {% include "partials/documents-and-forms/rich-text-block.html" %}
-                </li>
-              {% endif %}
-            {% endfor %}
+          {% for item in collections.documentsAndForms %}
+            {% if item.data.category === "Employer Forms" %}
+              <li>
+                {% include "partials/documents-and-forms/rich-text-block.html" %}
+              </li>
+            {% endif %}
           {% endfor %}
         </ul>
       </section>

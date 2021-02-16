@@ -60,55 +60,10 @@ module.exports = (config) => {
       .reverse();
   });
 
-  // TODO: Map through every repeated collection below, dynamically
-  // Return a collection of just the documents and forms for the fund
-  config.addCollection("fundDocumentsAndForms", (collection) => {
-    return collection
-      .getFilteredByGlob("./src/documents-and-forms/fund/*.md")
-      .sort((a, b) => b.data.order - a.data.order)
-      .reverse();
-  });
-
-  // Return a collection of just the documents and forms for individuals
-  config.addCollection("individualsDocumentsAndForms", (collection) => {
-    return collection
-      .getFilteredByGlob("./src/documents-and-forms/individuals/*.md")
-      .sort((a, b) => b.data.order - a.data.order)
-      .reverse();
-  });
-
-  // Return a collection of just the documents for pension plan
-  config.addCollection("pensionDocuments", (collection) => {
-    return collection
-      .getFilteredByGlob("./src/documents-and-forms/pension-documents/*.md")
-      .sort((a, b) => b.data.order - a.data.order)
-      .reverse();
-  });
-
-  // Return a collection of just the forms for pension plan
-  config.addCollection("pensionForms", (collection) => {
-    return collection
-      .getFilteredByGlob("./src/documents-and-forms/pension-forms/*.md")
-      .sort((a, b) => b.data.order - a.data.order)
-      .reverse();
-  });
-
-  // Return a collection of all Markdown documents and forms
   // For use when cross-linking to documents and forms from other pages such as Employers
-  config.addCollection("allDocumentsAndForms", (collection) => {
-    return (
-      collection
-        .getFilteredByGlob("./src/documents-and-forms/*/*.md")
-        // TODO: sort by section (subfolder), then data.order
-        .sort((a, b) => b.data.order - a.data.order)
-        .reverse()
-    );
-  });
-
-  // Return a collection of just the documents for our reconciliation efforts
-  config.addCollection("reconciliationDocuments", (collection) => {
+  config.addCollection("documentsAndForms", (collection) => {
     return collection
-      .getFilteredByGlob("./src/documents-and-forms/reconciliation/*.md")
+      .getFilteredByGlob("./src/documents-and-forms/*.md")
       .sort((a, b) => b.data.order - a.data.order)
       .reverse();
   });
