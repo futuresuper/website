@@ -1,10 +1,64 @@
 @use "../base" as *;
 
+// Create reusable extend for often-used crispy background
 %background-crisp {
   image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming)*/
   image-rendering: crisp-edges;
   image-rendering: -moz-crisp-edges; /* Firefox */
   image-rendering: -o-crisp-edges; /* Opera */
+}
+
+// Create mixin for repetitive image styles
+@mixin sprite($file-name, $img-width, $img-width-md, $background-color, $animation-duration, $animation-steps, $pos-top, $pos-top-md, $pos-x-type, $pos-x, $pos-x-md-type, $pos-x-md) {
+  width: 20rem;
+  height: 20rem;
+
+  top: $pos-top;
+
+  @if $pos-x-type == "left" {
+    left: $pos-x;
+  }
+  @if $pos-x-type == "right" {
+    right: $pos-x;
+  }
+
+  @media (min-width: $breakpoint-md) {
+    top: $pos-top-md;
+    width: 30rem;
+    height: 30rem;
+
+    @if $pos-x-md-type == "left" {
+      left: $pos-x-md;
+    }
+    @if $pos-x-md-type == "right" {
+      right: $pos-x-md;
+    }
+  }
+
+  background-color: $background-color;
+  background-image: url("/images/dithered/#{$file-name}-sprite.png");
+  background-size: $img-width 20rem;
+  animation: #{$file-name}MoveX $animation-duration steps($animation-steps) infinite;
+  @keyframes #{$file-name}MoveX {
+    from {
+      background-position-x: 0;
+    }
+    to {
+      background-position-x: -$img-width;
+    }
+  }
+  @media (min-width: $breakpoint-md) {
+    // TODO: automate $img-width-md if it is always 150% of $img-width
+    background-size: $img-width-md 30rem;
+    @keyframes #{$file-name}MoveX {
+      from {
+        background-position-x: 0;
+      }
+      to {
+        background-position-x: -$img-width-md;
+      }
+    }
+  }
 }
 
 // Override body background
@@ -111,6 +165,7 @@ article header {
     padding-left: 3rem;
     padding-right: 3rem;
     line-height: $line-height-125;
+    background-color: $mint-300;
   }
 }
 
@@ -174,14 +229,16 @@ article header {
   // Begin section-specific styling
   &.give-fossil-fuels-the-flick {
     background-color: $fraise-300;
-    background-image: url("/images/dithered/barrel.png"), url("/images/dithered/smoke-stack-small-red.png");
+    background-image: url("/images/dithered/smoke-stack-small-red.png");
     @extend %background-crisp;
-    background-position: top 75vh right 0, top 40vh right 50%;
+    background-position: top 40vh right 50%;
     @media (min-width: $breakpoint-md) {
-      background-position: top 50vh left 20%, top 30vh right 20%;
+      background-position: top 30vh right 20%;
     }
 
     .coal {
+      // @include sprite("coal", 100rem, 150rem, $mango-300, 5000ms, 5, -2rem, -2rem, "right", -2rem, "left", 30%);
+      // TODO: replace below (all examples) with @sprite mixin and/or higher-order styles in .sprite class
       top: -2rem;
       right: -2rem;
       width: 20rem;
@@ -201,6 +258,30 @@ article header {
         }
         to {
           background-position-x: -100rem;
+        }
+      }
+    }
+    .barrel {
+      top: 75vh;
+      right: 0;
+      width: 20rem;
+      height: 20rem;
+
+      @media (min-width: $breakpoint-md) {
+        top: 50vh;
+        left: 20%;
+      }
+
+      background-color: $mango-300;
+      background-image: url("/images/dithered/barrel-sprite.png");
+      background-size: 340rem 20rem;
+      animation: moveBarrel 2000ms steps(17) infinite;
+      @keyframes moveBarrel {
+        from {
+          background-position-x: 0;
+        }
+        to {
+          background-position-x: -340rem;
         }
       }
     }
@@ -240,14 +321,14 @@ article header {
 
       background-color: $black-500;
       background-image: url("/images/dithered/coin-sprite.png");
-      background-size: 1200rem 20rem;
-      animation: moveCoinX 1000ms steps(61) infinite;
+      background-size: 340rem 20rem;
+      animation: moveCoinX 2000ms steps(17) infinite;
       @keyframes moveCoinX {
         from {
           background-position-x: 0;
         }
         to {
-          background-position-x: -1200rem;
+          background-position-x: -340rem;
         }
       }
     }
@@ -278,11 +359,69 @@ article header {
   }
   &.join-in-a-few-taps {
     background-color: $mint-300;
-    background-image: url("/images/dithered/wind-turbine.png"), url("/images/dithered/sunflower.png");
+    background-image: url("/images/dithered/wind-turbine.png");
     @extend %background-crisp;
-    background-position: top 2rem left -5rem, top 34vh right -6rem;
+    background-position: top 2rem left -5rem;
     @media (min-width: $breakpoint-md) {
-      background-position: top 10vh left 32%, top 48vh right 28%;
+      background-position: top 10vh left 32%;
+    }
+
+    .fire {
+      // @include sprite("fire", 195.125, 292.6875, $background-color, $animation-duration, $animation-steps, $pos-top, $pos-top-md, $pos-x-type, $pos-x, $pos-x-md-type, $pos-x-md);
+      top: 30vh;
+      left: 0;
+      width: 13.9375rem;
+      height: 20rem;
+
+      background-image: url("/images/dithered/fire-sprite.png");
+      // background-size: 195.125 20rem;
+      animation: moveFireX 2000ms steps(14) infinite;
+      @keyframes moveFireX {
+        from {
+          background-position-x: 0;
+        }
+        to {
+          background-position-x: -195.125rem;
+        }
+      }
+    }
+
+    .flower {
+      top: 34vh;
+      right: -6rem;
+      width: 20rem;
+      height: 20rem;
+
+      @media (min-width: $breakpoint-md) {
+        top: 48vh;
+        left: 54%;
+        width: 30rem;
+        height: 30rem;
+      }
+
+      background-color: $fig-300;
+      background-image: url("/images/dithered/flower-sprite.png");
+      background-size: 100rem 20rem;
+      animation: moveFlowerX 2000ms steps(5) infinite;
+      @keyframes moveFlowerX {
+        from {
+          background-position-x: 0;
+        }
+        to {
+          background-position-x: -100rem;
+        }
+      }
+      @media (min-width: $breakpoint-md) {
+        background-size: 150rem 30rem;
+        @keyframes moveFlowerX {
+          from {
+            background-position-x: 0;
+          }
+          to {
+            background-position-x: -150rem;
+          }
+        }
+      }
     }
 
     .poster {
