@@ -1340,7 +1340,7 @@ article header p {
 }
 
 body > .flow-content {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 body > .flow-content > footer {
   background: #ffffff;
