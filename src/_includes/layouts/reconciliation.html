@@ -20,10 +20,12 @@
     <p>Who knows, one day the full RAP could be on this webpage instead of/as well as the PDF. Until then...</p>
 
     <ul class="plain doc-or-form-item">
-      {% for item in collections.reconciliationDocuments %}
+      {% for item in collections.documentsAndForms %}
+      {% if item.data.category === "Reconciliation Documents" %}
       <li>
         {% include "partials/documents-and-forms/rich-text-block.html" %}
       </li>
+      {% endif %}
       {% endfor %}
     </ul>
 

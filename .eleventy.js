@@ -60,7 +60,7 @@ module.exports = (config) => {
       .reverse();
   });
 
-  // For use when cross-linking to documents and forms from other pages such as Employers
+  // Return a collection of documents and forms
   config.addCollection("documentsAndForms", (collection) => {
     return collection
       .getFilteredByGlob("./src/documents-and-forms/*.md")
