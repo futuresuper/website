@@ -62,3 +62,22 @@ collections:
             ],
         }
       - { label: "Order", name: "order", widget: "number" }
+  - name: "careers"
+    label: "Careers"
+    folder: "src/careers"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Start Date", name: "startDate", widget: "date" }
+      - { label: "End Date", name: "endDate", widget: "date" }
+      - { label: "Location", name: "location", widget: "string" }
+      - { label: "Salary", name: "salary", widget: "string", required: false }
+      - { label: "Application URL", name: "url", widget: "string" }
+      - {
+          label: "Summary",
+          name: "summary",
+          widget: "text",
+          hint: "One paragraph, no longer than about 4 lines",
+        }
+      - { label: "Role Description", name: "body", widget: "markdown" }
