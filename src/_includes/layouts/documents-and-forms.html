@@ -2,6 +2,19 @@
 
 {% set pageHeaderTitle = title %}
 
+{% macro documentGroup(title, category) %}
+  <h2>{{ title }}</h2>
+  <ul class="plain doc-or-form-item">
+    {% for item in collections.documentsAndForms %}
+      {% if item.data.category === category %}
+        <li>
+          {% include "partials/documents-and-forms/rich-text-block.html" %}
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+{% endmacro %}
+
 {% block content %}
 
   <article class="container">
@@ -10,15 +23,7 @@
 
     <div class="article-content">
       <section>
-        <h2>Super fund documents</h2>
-
-        <ul class="plain doc-or-form-item">
-          {% for item in collections.fundDocumentsAndForms %}
-            <li>
-              {% include "partials/documents-and-forms/rich-text-block.html" %}
-            </li>
-          {% endfor %}
-        </ul>
+        {{ documentGroup("Super fund documents", "Super Documents") }}
 
         <p class="text-tertiary disclaimer">
           * On 1 April 2020, the way that opt-out (sometimes called default) insurance cover is provided through super is changing. The change is being made to address situations where individuals’ super account balances are being eroded by insurance fees charged for cover that they don’t know they have, that they don’t want, or that is unsuitable for their situation. The good news is that at Future Super, we only offer opt-in (voluntary) insurance. This means that it’s your choice to sign up and pay for the type and amount of insurance cover that you want. It also means that the majority of our members won’t be impacted by these changes. However, if you did take out insurance cover through Future Super between 1 November 2019 and 18 March 2020 and have an account balance below $6,000.00, please look out for some separate correspondence from us asking you to make a one-off election to maintain your insurance cover.
@@ -31,15 +36,7 @@
       </section>
 
       <section>
-        <h2>Forms for individuals</h2>
-        <p>Forms you will need to become a member of Future Super, as well as forms regarding rollovers, withdrawals, insurance and other transactions with the fund.</p>
-        <ul class="plain doc-or-form-item">
-          {% for item in collections.individualsDocumentsAndForms %}
-            <li>
-              {% include "partials/documents-and-forms/rich-text-block.html" %}
-            </li>
-          {% endfor %}
-        </ul>
+        {{ documentGroup("Forms for individuals", "Super Forms") }}
       </section>
 
       <section>
@@ -50,75 +47,19 @@
       </section>
 
       <section>
-        <h2>Fund annual reports</h2>
-        <ul class="plain doc-or-form-item">
-          {% for item in annualReports %}
-            <li>
-              <div class="icon">
-                <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">
-                  {{ "/src/images/icons/download.svg" | svgContents("fill-light") | safe }}
-                </a>
-              </div>
-              <div class="text">
-                <h3>
-                  <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">30 June
-                    {{ item.year }}
-                    {% if item.title %}{{
-                item.title
-                }}
-                    {% else %}
-                      Fund Annual Report{% endif %}
-                  </a>
-                </h3>
-              </div>
-            </li>
-          {% endfor %}
-        </ul>
+        {{ documentGroup("Fund annual reports", "Annual Reports") }}
       </section>
 
       <section>
-        <h2>Pension plan documents</h2>
-        <ul class="plain doc-or-form-item">
-          {% for item in collections.pensionDocuments %}
-            <li>
-              {% include "partials/documents-and-forms/rich-text-block.html" %}
-            </li>
-          {% endfor %}
-        </ul>
+        {{ documentGroup("Pension plan documents", "Pension Documents") }}
       </section>
 
       <section>
-        <h2>Pension plan forms</h2>
-        <p>Forms you will need to become a member of the Future Super Pension Plan, as well as forms regarding withdrawals, beneficiaries, advisers and other transactions relating to your account.</p>
-        <ul class="plain doc-or-form-item">
-          {% for item in collections.pensionForms %}
-            <li>
-              {% include "partials/documents-and-forms/rich-text-block.html" %}
-            </li>
-          {% endfor %}
-        </ul>
+        {{ documentGroup("Pension plan forms", "Pension Forms") }}
       </section>
 
       <section>
-        <h2>Impact reports</h2>
-
-        <ul class="plain doc-or-form-item">
-          {% for item in impactReports %}
-            <li>
-              <div class="icon">
-                <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">
-                  {{ "/src/images/icons/download.svg" | svgContents("fill-light") | safe }}
-                </a>
-              </div>
-              <div class="text">
-                <h3>
-                  <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.year }}
-                    Impact Report</a>
-                </h3>
-              </div>
-            </li>
-          {% endfor %}
-        </ul>
+        {{ documentGroup("Impact reports", "Impact Reports") }}
       </section>
 
     </div>

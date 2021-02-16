@@ -18,4 +18,47 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Image", name: "image", widget: "image" }
+      - {
+          label: "Tags",
+          name: "tags",
+          widget: "list",
+          hint: "Add as many tags as you like, with a comma seperating each one",
+        }
+      - { label: "Author", name: "author", widget: "string" }
+      - {
+          label: "Description",
+          name: "description",
+          widget: "text",
+          hint: "One paragraph, no longer than about 4 lines",
+        }
       - { label: "Body", name: "body", widget: "markdown" }
+  - name: "documentsAndForms"
+    label: "Documents and Forms"
+    folder: "src/documents-and-forms"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Document URL", name: "url", widget: "string" }
+      - {
+          label: "Link Type",
+          name: "type",
+          widget: "select",
+          options: ["PDF", "Online", "Contact"],
+        }
+      - {
+          label: "Category",
+          name: "category",
+          widget: "select",
+          options:
+            [
+              "Super Documents",
+              "Super Forms",
+              "Pension Documents",
+              "Pension Forms",
+              "Annual Reports",
+              "Impact Reports",
+              "Employer Forms",
+            ],
+        }
+      - { label: "Order", name: "order", widget: "number" }
