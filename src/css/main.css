@@ -304,11 +304,22 @@ details .contents :last-child {
   background-color: #ffffff;
 }
 
+body .flow-content {
+  background-color: #ffffff;
+  margin-bottom: 100vh;
+}
+body.site-header-aoc-active {
+  margin-top: 60vh !important;
+  box-shadow: 0 -1rem 5rem #0b0b0a;
+}
 body.site-header-menu-active {
-  position: fixed;
+  background-color: #1d1d1b;
 }
 body.site-header-menu-active .acknowledgement-of-country.footer {
   display: none;
+}
+body.site-header-menu-active .flow-content {
+  margin-bottom: 0;
 }
 body.site-header-menu-active .flow-content #main-content,
 body.site-header-menu-active .flow-content > footer {
@@ -1109,8 +1120,6 @@ header[role=banner] .menu-content {
 }
 header[role=banner].site-header-menu-active {
   width: 100vw;
-  height: 100vh;
-  overflow-y: scroll;
   background-color: #1d1d1b;
   color: #ffffff;
 }
@@ -1443,15 +1452,6 @@ header[role=heading] .page-header-summary {
 }
 .acknowledgement-of-country .details p a:hover {
   color: #ffffff;
-}
-
-body .flow-content {
-  background-color: #ffffff;
-  margin-bottom: 100vh;
-}
-body.site-header-aoc-active {
-  margin-top: 60vh !important;
-  box-shadow: 0 -1rem 5rem #0b0b0a;
 }
 
 /*# sourceMappingURL=main.css.map */

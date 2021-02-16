@@ -171,9 +171,7 @@ header[role="banner"] {
   // See layout.scss for global changes
   &.site-header-menu-active {
     width: 100vw;
-    height: 100vh;
-    overflow-y: scroll;
-    background-color: $grey-800;
+    background-color: $site-header-background;
     color: $white-500;
 
     .banner-content {
