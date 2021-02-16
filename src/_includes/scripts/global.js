@@ -3,19 +3,19 @@
 document.documentElement.className = "js";
 
 // Handle mobile menu navigation
-const navContainer = document.querySelector(".nav-container");
-const menuCloseButton = document.querySelector("#menu-button-close");
-const menuOpenButton = document.querySelector("#menu-button-open");
-const menuChangeElements = [document.body, navContainer, menuCloseButton, menuOpenButton];
+const siteHeader = document.querySelector('header[role="banner"]');
+const menuButtonOpen = document.querySelector(".menu-button#open");
+const menuButtonClose = document.querySelector(".menu-button#close");
+const menuChangeElements = [document.body, siteHeader];
 
-function showMobileMenu(show) {
+function showMenu(show) {
   if (show) {
     menuChangeElements.forEach((element) => {
-      element.classList.add("mobile-menu-active");
+      element.classList.add("site-header-menu-active");
     });
   } else {
     menuChangeElements.forEach((element) => {
-      element.classList.remove("mobile-menu-active");
+      element.classList.remove("site-header-menu-active");
     });
   }
 }
@@ -36,7 +36,7 @@ async function showNextCustodianName() {
   let custodianData = await fetchCustodianData();
   custodianEls.forEach((element) => {
     element.textContent = custodianData[currentCustodianIndex];
-    element.classList.remove("active");
+    element.classList.remove("act`ive");
   });
   currentCustodianIndex = currentCustodianIndex < custodianData.length - 1 ? currentCustodianIndex + 1 : 0;
 
@@ -90,9 +90,9 @@ if (!visited) {
   // Show acknowledgement of country in the header
   aocHeader.classList.add("active");
   // Tell siteContent to make room for it
-  siteContent.classList.add("aoc-active");
+  siteContent.classList.add("site-header-aoc-active");
   // Prepare the body so the mobile menu also makes room for it
-  document.body.classList.add("aoc-active");
+  document.body.classList.add("site-header-aoc-active");
   // Animate the yellow text on 'Traditional Custodians' in the header
   const traditionalCustodiansInHeader = document.querySelector(".acknowledgement-of-country.header p span.traditional-custodians");
   traditionalCustodiansInHeader.classList.add("active");

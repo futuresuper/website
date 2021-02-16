@@ -2,9 +2,7 @@
 
 // Target only the site header
 header[role="banner"] {
-  overflow: hidden;
-
-  // Notice banner (visually above header content) styling
+  // Style conditional notice banner
   .banner {
     text-align: center;
     padding: 1.5rem;
@@ -32,27 +30,89 @@ header[role="banner"] {
     }
   }
 
-  .container-unlimited {
-    margin-top: 1rem;
+  // Style core navigation area
+  .banner-content {
+    padding-top: 1rem;
     margin-bottom: $space-section-y-sm;
-    @media (min-width: $breakpoint-md) {
-      margin-bottom: $space-section-y-sm;
-    }
-
-    // TODO: investigate if this style is still necessary
-    // Unsure what for. AoC? Banner?
-    @media (min-width: 1068px) {
-      margin-top: 2rem;
-    }
 
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+
+    nav.desktop {
+      display: none;
+      @media (min-width: $breakpoint-nav) {
+        display: flex;
+        justify-content: space-between;
+        flex: 1;
+        // Position dropdown elements above any transforms or page content
+        z-index: 1;
+      }
+
+      .nav-group {
+        display: flex;
+      }
+
+      .button.clear {
+        &:after {
+          content: " ▾";
+        }
+      }
+
+      .non-dropdown {
+        display: inline-block;
+        padding: 1rem 2rem;
+        text-decoration: none;
+        font-weight: 700;
+        border: 1px solid transparent;
+
+        color: $black-900;
+
+        &:hover {
+          color: $grey-500;
+        }
+      }
+
+      .dropdown {
+        border: 1px solid transparent;
+
+        &:hover {
+          color: $black-900;
+          background-color: $white-500;
+          border: 1px solid $black-900;
+
+          .dropdown-content {
+            display: flex;
+          }
+        }
+      }
+
+      .dropdown-content {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        min-width: 10rem;
+        background-color: $white-500;
+        border: 1px solid $black-900;
+        margin-left: -1px;
+
+        a {
+          text-decoration: none;
+          font-weight: 500;
+          color: $black-900;
+          padding: 1rem 2rem;
+
+          &:hover {
+            background-color: $black-900;
+            color: $white-500;
+          }
+        }
+      }
+    }
 
     .logo,
-    .show-hide-mobile-menu {
+    .menu-button {
       height: 2.5rem;
-      z-index: 5; // Show even when mobile popup menu open
 
       // Set a default branded fill colour for icons
       svg {
@@ -72,204 +132,129 @@ header[role="banner"] {
     }
 
     .logo {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
       margin-right: 2rem;
+      // Necessary to align SVG in center of larger tap target
+      display: flex;
 
       svg {
         height: 1.25rem;
         width: auto;
+        margin: auto;
       }
     }
 
-    .show-hide-mobile-menu {
-      .menu-button {
-        cursor: pointer;
-        height: 2.5rem;
-        width: 2.5rem;
+    .menu-button {
+      cursor: pointer;
+      width: 2.5rem;
+      height: 2.5rem;
 
-        svg {
-          height: 2.5rem;
-          width: 2.5rem;
-        }
-
-        &#menu-button-open {
-          display: block;
-          &.mobile-menu-active {
-            display: none;
-          }
-        }
-
-        &#menu-button-close {
-          display: none;
-          &.mobile-menu-active {
-            display: block;
-          }
-        }
+      &#close {
+        display: none;
       }
-    }
-
-    .nav-container {
-      .dropdown-content {
-        // Show above rellax content that have transforms applied
-        z-index: 1;
-      }
-    }
-
-    @media (min-width: 1068px) {
-      .show-hide-mobile-menu {
+      @media (min-width: $breakpoint-nav) {
         display: none;
       }
 
-      .nav-container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-grow: 1;
-
-        nav {
-          display: flex;
-          align-items: center;
-
-          .clear {
-            &:after {
-              content: " ▾";
-            }
-          }
-
-          .non-dropdown {
-            display: inline-block;
-            padding: 1rem 2rem;
-            text-decoration: none;
-            font-weight: 700;
-            border: 1px solid transparent;
-
-            color: $black-900;
-
-            &:hover {
-              color: $grey-500;
-            }
-          }
-
-          .dropdown {
-            border: 1px solid transparent;
-
-            &:hover {
-              color: $black-900;
-              background-color: $white-500;
-              border: 1px solid $black-900;
-
-              .dropdown-content {
-                display: flex;
-              }
-            }
-          }
-
-          .dropdown-content {
-            display: none;
-            flex-direction: column;
-            position: absolute;
-            min-width: 10rem;
-            background-color: $white-500;
-            border: 1px solid $black-900;
-            margin-left: -1px;
-
-            a {
-              text-decoration: none;
-              font-weight: 500;
-              color: $black-900;
-              padding: 1rem 2rem;
-
-              &:hover {
-                background-color: $black-900;
-                color: $white-500;
-              }
-            }
-          }
-        }
-      }
-    }
-
-    // Mobile menu
-    @media (max-width: 1067px) {
-      .show-hide-mobile-menu {
-        display: block;
-      }
-
-      .nav-container {
-        display: none;
-        &.mobile-menu-active {
-          display: flex;
-        }
-
-        height: 100%;
+      svg {
         width: 100%;
-        padding: 5rem $space-page-padding-x-dynamic 3rem;
-        position: fixed;
-        left: 0;
-        top: 0;
-        background-color: $off-white-300;
-        overflow-x: hidden;
-        flex-direction: column;
+        height: 100%;
+      }
+    }
+  }
 
-        // Style the in-site navigation
-        nav:first-of-type {
-          .button {
-            color: $black-900;
-            padding: 1.4rem 0 0.8rem 0;
-          }
-          .non-dropdown {
-            display: block;
-            padding: 1.4rem 0 2rem 0;
-            text-decoration: none;
-            color: $black-900;
-            font-weight: 700;
+  // Default menu is closed
+  .menu-content {
+    display: none;
+  }
 
-            &:hover {
-              color: $blue-500;
-            }
-          }
-          .dropdown-content {
-            a {
-              display: block;
-              padding: 1rem 0;
-              color: $black-900;
-              text-decoration: none;
-              &:hover {
-                color: $blue-500;
-              }
+  // Begin styling open menu
+  // See layout.scss for global changes
+  &.site-header-menu-active {
+    width: 100vw;
+    background-color: $site-header-background;
+    color: $white-500;
 
-              &:not(:last-of-type) {
-                border-bottom: 1px solid $grey-200;
-              }
-            }
+    .banner-content {
+      margin-bottom: 4rem;
+      .logo,
+      .menu-button {
+        // Set a default branded fill colour for icons
+        svg {
+          .fill-target {
+            fill: $grey-200;
           }
         }
 
-        // Style the outer-site (login, join) navigation
-        nav:last-of-type {
+        &:hover {
+          svg {
+            .fill-target {
+              fill: $grey-400;
+            }
+          }
+        }
+      }
+
+      .menu-button {
+        &#open {
+          display: none;
+        }
+        &#close {
+          display: inherit;
+        }
+      }
+    }
+
+    .menu-content {
+      display: inherit;
+
+      nav.mobile,
+      .nav-group,
+      .nav-group-subgroup {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .nav-group-subgroup {
+        h2 {
+          margin-bottom: 0.5rem;
+          color: $grey-400;
+        }
+        li {
           a {
             display: block;
-            width: 100%;
-            text-align: center;
-            margin-top: 1rem;
-            border: 2px solid $black-900;
-            &:first-of-type {
-              font-size: 1.125rem;
-              font-weight: 700;
-              padding: 0.8rem 2rem;
-              text-decoration: none;
-              color: $black-900;
-              &:hover {
-                background-color: $pink-500;
-              }
+            padding: 1rem 0;
+            color: $white-500;
+            text-decoration: none;
+            transition: $transition-text-hover;
+            &:hover {
+              color: $mint-500;
             }
-            &:last-of-type {
-              &:hover {
-                border-color: $blue-500;
-              }
-            }
+          }
+
+          &:not(:last-of-type) {
+            border-bottom: 1px solid $grey-500;
+          }
+        }
+        &:not(:last-of-type) {
+          margin-bottom: 3rem;
+        }
+      }
+
+      .nav-group.cta {
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        // Calculate extra padding for iPhone home button
+        padding-bottom: env(safe-area-inset-bottom);
+        .button.primary {
+          &:hover {
+            background-color: $mint-500;
+          }
+        }
+        .button.clear {
+          margin-top: 0.5rem;
+          &:hover {
+            color: $mint-500;
+            background-color: rgba(255, 255, 255, 0.1);
           }
         }
       }

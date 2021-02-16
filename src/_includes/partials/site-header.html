@@ -9,23 +9,15 @@
   {% endif %}
 
   {# Regular site header content #}
-  <section class="container-unlimited">
+  <div class="banner-content container-unlimited">
     <a class="logo" href="/" aria-label="{{ site.name }} — Home">
       {{ '/src/images/logo-single-line.svg' | svgContents | safe }}
     </a>
-    <div class="show-hide-mobile-menu">
-      <a onclick="showMobileMenu(true)" id="menu-button-open" class="menu-button">
-        {{ '/src/images/icons/menu.svg' | svgContents | safe }}
-      </a>
-      <a onclick="showMobileMenu(false)" id="menu-button-close" class="menu-button">
-        {{ '/src/images/icons/cross.svg' | svgContents | safe }}
-      </a>
-    </div>
 
-    <div class="nav-container">
-      <nav aria-label="Primary">
+    {# Desktop navigation content #}
+    <nav class="desktop" aria-label="Primary">
+      <div class="nav-group">
         {% for item in navigation.items %}
-        {# Not all items will go in site header, so check them #}
         {% if item.inSiteHeader %}
         {# Show any direct links differently to dropdowns #}
         {% if item.url %}
@@ -48,11 +40,53 @@
         {% endif %}
         {% endif %}
         {% endfor %}
-      </nav>
-      <nav>
+      </div>
+      <div class="nav-group">
         <a href="{{ site.signInUrl }}" class="non-dropdown">Login</a>
         <a href="{{ site.joinUrl }}" class="button primary">Join Now</a>
-      </nav>
-    </div>
-  </section>
+      </div>
+    </nav>
+
+    <a class="menu-button" id="open" onclick="showMenu(true)">
+      {{ '/src/images/icons/menu.svg' | svgContents | safe }}
+    </a>
+    <a class="menu-button" id="close" onclick="showMenu(false)">
+      {{ '/src/images/icons/cross.svg' | svgContents | safe }}
+    </a>
+  </div>
+
+  {# Mobile navigation menu content #}
+  <div class="menu-content container-unlimited">
+    <nav class="mobile" aria-label="Primary">
+      <div class="nav-group">
+        {% for item in navigation.items %}
+        {% if item.inSiteHeader %}
+        {# Show any direct links differently to dropdowns #}
+        {% if item.url %}
+        <a class="non-dropdown" href="{{ item.url }}">{{ item.text }}</a>
+        {% else %}
+        {# Make every other item a heading #}
+        <div class="nav-group-subgroup">
+          <h2>{{ item.text }}</h2>
+          <ul class="plain">
+            {% for subItem in item.subItems %}
+            {% if subItem.inSiteHeader %}
+            <li>
+              {# Not all subitems will go in site header (even if their parent does), so check them #}
+              <a href="{{ subItem.url }}">{{ subItem.text }}</a>
+            </li>
+            {% endif %}
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+        {% endif %}
+        {% endfor %}
+      </div>
+      <div class="nav-group cta">
+        <a href="{{ site.joinUrl }}" class="button primary inverted">Join Now</a>
+        <a href="{{ site.signInUrl }}" class="button clear">Login</a>
+      </div>
+    </nav>
+  </div>
 </header>

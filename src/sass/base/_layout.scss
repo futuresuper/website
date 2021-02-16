@@ -2,9 +2,10 @@
 @use "type" as *;
 
 // Breakpoints
-$breakpoint-sm: 40rem; //640px
-$breakpoint-md: 48rem; //768px
-$breakpoint-lg: 80rem; //1280px
+$breakpoint-sm: 40rem; // 640px
+$breakpoint-md: 48rem; // 768px
+$breakpoint-nav: 56rem; // 896px
+$breakpoint-lg: 80rem; // 1280px
 
 // Often-referenced spacing units
 $space-section-y-sm: 6rem;
@@ -43,11 +44,36 @@ $height-acknowledgement-of-country-header: 60vh;
 $height-acknowledgement-of-country-footer: 100vh;
 
 body {
-  &.mobile-menu-active {
-    // Stop the page content from scrolling if the full-screen menu is open
-    position: fixed;
+  .flow-content {
+    background-color: $white-500;
+    // Match height of below element acknowledgement-of-country (footer)
+    margin-bottom: $height-acknowledgement-of-country-footer;
+  }
 
-    &.aoc-active {
+  &.site-header-aoc-active {
+    // Match height of above element acknowledgement-of-country (header)
+    margin-top: $height-acknowledgement-of-country-header !important;
+    box-shadow: 0 -1rem 5rem $grey-900;
+  }
+
+  &.site-header-menu-active {
+    // Match background colour to that of menu for scroll bleed-through
+    background-color: $site-header-background;
+
+    // Remove underlying elements so scroll area is only the site header
+    .acknowledgement-of-country.footer {
+      display: none;
+    }
+    .flow-content {
+      margin-bottom: 0;
+      #main-content,
+      > footer {
+        display: none;
+      }
+    }
+
+    // Correctly offset height if header aoc is active
+    &.site-header-aoc-active {
       top: -$height-acknowledgement-of-country-header;
     }
   }
