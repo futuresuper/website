@@ -1,17 +1,21 @@
 @use "../base" as *;
 
+$sprite-width: 20rem;
+$sprite-height: $sprite-width;
+
 // Create reusable extend for often-used crispy background
 %background-crisp {
   image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming)*/
+  image-rendering: pixelated;
   image-rendering: crisp-edges;
   image-rendering: -moz-crisp-edges; /* Firefox */
   image-rendering: -o-crisp-edges; /* Opera */
 }
 
 // Create mixin for repetitive image styles
-@mixin sprite($file-name, $img-width, $img-width-md, $background-color, $animation-duration, $animation-steps, $pos-top, $pos-top-md, $pos-x-type, $pos-x, $pos-x-md-type, $pos-x-md) {
-  width: 20rem;
-  height: 20rem;
+@mixin sprite($file-name, $img-width, $background-color, $animation-duration, $animation-steps, $pos-top, $pos-top-md, $pos-x-type, $pos-x, $pos-x-md-type, $pos-x-md) {
+  width: $sprite-width;
+  height: $sprite-height;
 
   top: $pos-top;
 
@@ -24,8 +28,8 @@
 
   @media (min-width: $breakpoint-md) {
     top: $pos-top-md;
-    width: 30rem;
-    height: 30rem;
+    width: $sprite-width * 1.5;
+    height: $sprite-height * 1.5;
 
     @if $pos-x-md-type == "left" {
       left: $pos-x-md;
@@ -36,9 +40,17 @@
   }
 
   background-color: $background-color;
-  background-image: url("/images/dithered/#{$file-name}-sprite.png");
-  background-size: $img-width 20rem;
+  background-image: url("/images/dithered/#{$file-name}-sprite-320h.png");
+  // $img-width is preferably pixel width / 16 for rems
+  // E.g. "100rem"
+  background-size: $img-width $sprite-height;
   animation: #{$file-name}MoveX $animation-duration steps($animation-steps) infinite;
+  @media (min-width: $breakpoint-md) {
+    background-image: url("/images/dithered/#{$file-name}-sprite-480h.png");
+    background-size: $img-width * 1.5 $sprite-height * 1.5;
+    animation: #{$file-name}MoveXMd $animation-duration steps($animation-steps) infinite;
+  }
+
   @keyframes #{$file-name}MoveX {
     from {
       background-position-x: 0;
@@ -47,16 +59,12 @@
       background-position-x: -$img-width;
     }
   }
-  @media (min-width: $breakpoint-md) {
-    // TODO: automate $img-width-md if it is always 150% of $img-width
-    background-size: $img-width-md 30rem;
-    @keyframes #{$file-name}MoveX {
-      from {
-        background-position-x: 0;
-      }
-      to {
-        background-position-x: -$img-width-md;
-      }
+  @keyframes #{$file-name}MoveXMd {
+    from {
+      background-position-x: 0;
+    }
+    to {
+      background-position-x: -($img-width * 1.5);
     }
   }
 }
@@ -237,53 +245,11 @@ article header {
     }
 
     .coal {
-      // @include sprite("coal", 100rem, 150rem, $mango-300, 5000ms, 5, -2rem, -2rem, "right", -2rem, "left", 30%);
-      // TODO: replace below (all examples) with @sprite mixin and/or higher-order styles in .sprite class
-      top: -2rem;
-      right: -2rem;
-      width: 20rem;
-      height: 20rem;
-
-      @media (min-width: $breakpoint-md) {
-        left: 30%;
-      }
-
-      background-color: $mango-300;
-      background-image: url("/images/dithered/coal-sprite.png");
-      background-size: 100rem 20rem;
-      animation: moveCoalX 5000ms steps(5) infinite;
-      @keyframes moveCoalX {
-        from {
-          background-position-x: 0;
-        }
-        to {
-          background-position-x: -100rem;
-        }
-      }
+      @include sprite("coal", 100rem, $mango-300, 5000ms, 5, -2rem, -2rem, "right", -2rem, "left", 30%);
     }
+
     .barrel {
-      top: 75vh;
-      right: 0;
-      width: 20rem;
-      height: 20rem;
-
-      @media (min-width: $breakpoint-md) {
-        top: 50vh;
-        left: 20%;
-      }
-
-      background-color: $mango-300;
-      background-image: url("/images/dithered/barrel-sprite.png");
-      background-size: 340rem 20rem;
-      animation: moveBarrel 2000ms steps(17) infinite;
-      @keyframes moveBarrel {
-        from {
-          background-position-x: 0;
-        }
-        to {
-          background-position-x: -340rem;
-        }
-      }
+      @include sprite("barrel", 320rem, $mango-300, 2000ms, 16, 75vh, 50vh, "right", 0, "left", 20%);
     }
 
     .poster {
@@ -309,28 +275,7 @@ article header {
     }
 
     .coin {
-      top: -2vh;
-      right: -5rem;
-      width: 20rem;
-      height: 20rem;
-
-      @media (min-width: $breakpoint-md) {
-        top: 4vh;
-        left: 52%;
-      }
-
-      background-color: $black-500;
-      background-image: url("/images/dithered/coin-sprite.png");
-      background-size: 340rem 20rem;
-      animation: moveCoinX 2000ms steps(17) infinite;
-      @keyframes moveCoinX {
-        from {
-          background-position-x: 0;
-        }
-        to {
-          background-position-x: -340rem;
-        }
-      }
+      @include sprite("coin", 340rem, $black-500, 2000ms, 17, -2vh, 4vh, "right", -5rem, "left", 52%);
     }
 
     .poster {
@@ -367,80 +312,7 @@ article header {
     }
 
     .flower {
-      top: 34vh;
-      right: -6rem;
-      width: 20rem;
-      height: 20rem;
-
-      @media (min-width: $breakpoint-md) {
-        top: 48vh;
-        left: 54%;
-        width: 30rem;
-        height: 30rem;
-      }
-
-      background-color: $fig-300;
-      background-image: url("/images/dithered/flower-sprite.png");
-      background-size: 100rem 20rem;
-      animation: moveFlowerX 2000ms steps(5) infinite;
-      @keyframes moveFlowerX {
-        from {
-          background-position-x: 0;
-        }
-        to {
-          background-position-x: -100rem;
-        }
-      }
-      @media (min-width: $breakpoint-md) {
-        background-image: url("/images/dithered/flower-sprite-960h.png");
-        background-size: 150rem 30rem;
-        @keyframes moveFlowerX {
-          from {
-            background-position-x: 0;
-          }
-          to {
-            background-position-x: -150rem;
-          }
-        }
-      }
-    }
-
-    .flower-b {
-      top: 34vh;
-      left: 0;
-      width: 20rem;
-      height: 20rem;
-
-      @media (min-width: $breakpoint-md) {
-        top: 48vh;
-        width: 30rem;
-        height: 30rem;
-      }
-
-      background-color: $fig-300;
-      background-image: url("/images/dithered/flower-sprite.png");
-      background-size: 100rem 20rem;
-      animation: moveFlowerX 2000ms steps(5) infinite;
-      @keyframes moveFlowerX {
-        from {
-          background-position-x: 0;
-        }
-        to {
-          background-position-x: -100rem;
-        }
-      }
-      @media (min-width: $breakpoint-md) {
-        background-image: url("/images/dithered/flower-sprite-480h.png");
-        background-size: 150rem 30rem;
-        @keyframes moveFlowerX {
-          from {
-            background-position-x: 0;
-          }
-          to {
-            background-position-x: -150rem;
-          }
-        }
-      }
+      @include sprite("flower", 100rem, $fig-300, 2000ms, 5, 34vh, 40vh, "right", -6rem, "left", 54%);
     }
 
     .poster {
@@ -467,23 +339,24 @@ article header {
   background-repeat: no-repeat;
 
   .coal {
-    top: -2rem;
-    left: -4rem;
-    width: 20rem;
-    height: 20rem;
+    @include sprite("coal", 100rem, $mango-300, 5000ms, 5, -2rem, -2rem, "left", -4rem, "left", -4rem);
+    // top: -2rem;
+    // left: -4rem;
+    // width: 20rem;
+    // height: 20rem;
 
-    background-color: $mango-300;
-    background-image: url("/images/dithered/coal-sprite.png");
-    background-size: 100rem 20rem;
-    animation: moveCoalX 5000ms steps(5) infinite;
-    @keyframes moveCoalX {
-      from {
-        background-position-x: 0;
-      }
-      to {
-        background-position-x: -100rem;
-      }
-    }
+    // background-color: $mango-300;
+    // background-image: url("/images/dithered/coal-sprite.png");
+    // background-size: 100rem 20rem;
+    // animation: moveCoalX 5000ms steps(5) infinite;
+    // @keyframes moveCoalX {
+    //   from {
+    //     background-position-x: 0;
+    //   }
+    //   to {
+    //     background-position-x: -100rem;g
+    //   }
+    // }
   }
 
   figure {
