@@ -1053,6 +1053,7 @@ article header p {
   padding-left: 3rem;
   padding-right: 3rem;
   line-height: 125%;
+  background-color: #ddffe7;
 }
 
 .sprite {
@@ -1103,12 +1104,12 @@ article header p {
 }
 .tidbit.give-fossil-fuels-the-flick {
   background-color: #ffe6e1;
-  background-image: url("/images/dithered/barrel.png"), url("/images/dithered/smoke-stack-small-red.png");
-  background-position: top 75vh right 0, top 40vh right 50%;
+  background-image: url("/images/dithered/smoke-stack-small-red.png");
+  background-position: top 40vh right 50%;
 }
 @media (min-width: 48rem) {
   .tidbit.give-fossil-fuels-the-flick {
-    background-position: top 50vh left 20%, top 30vh right 20%;
+    background-position: top 30vh right 20%;
   }
 }
 .tidbit.give-fossil-fuels-the-flick .coal {
@@ -1132,6 +1133,30 @@ article header p {
   }
   to {
     background-position-x: -100rem;
+  }
+}
+.tidbit.give-fossil-fuels-the-flick .barrel {
+  top: 75vh;
+  right: 0;
+  width: 20rem;
+  height: 20rem;
+  background-color: #ffebb9;
+  background-image: url("/images/dithered/barrel-sprite.png");
+  background-size: 340rem 20rem;
+  animation: moveBarrel 2000ms steps(17) infinite;
+}
+@media (min-width: 48rem) {
+  .tidbit.give-fossil-fuels-the-flick .barrel {
+    top: 50vh;
+    left: 20%;
+  }
+}
+@keyframes moveBarrel {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: -340rem;
   }
 }
 .tidbit.give-fossil-fuels-the-flick .poster {
@@ -1164,8 +1189,8 @@ article header p {
   height: 20rem;
   background-color: #140f14;
   background-image: url("/images/dithered/coin-sprite.png");
-  background-size: 1200rem 20rem;
-  animation: moveCoinX 1000ms steps(61) infinite;
+  background-size: 340rem 20rem;
+  animation: moveCoinX 2000ms steps(17) infinite;
 }
 @media (min-width: 48rem) {
   .tidbit.your-money-talks .coin {
@@ -1178,7 +1203,7 @@ article header p {
     background-position-x: 0;
   }
   to {
-    background-position-x: -1200rem;
+    background-position-x: -340rem;
   }
 }
 .tidbit.your-money-talks .poster {
@@ -1205,12 +1230,67 @@ article header p {
 }
 .tidbit.join-in-a-few-taps {
   background-color: #ddffe7;
-  background-image: url("/images/dithered/wind-turbine.png"), url("/images/dithered/sunflower.png");
-  background-position: top 2rem left -5rem, top 34vh right -6rem;
+  background-image: url("/images/dithered/wind-turbine.png");
+  background-position: top 2rem left -5rem;
 }
 @media (min-width: 48rem) {
   .tidbit.join-in-a-few-taps {
-    background-position: top 10vh left 32%, top 48vh right 28%;
+    background-position: top 10vh left 32%;
+  }
+}
+.tidbit.join-in-a-few-taps .fire {
+  top: 30vh;
+  left: 0;
+  width: 13.9375rem;
+  height: 20rem;
+  background-image: url("/images/dithered/fire-sprite.png");
+  animation: moveFireX 2000ms steps(14) infinite;
+}
+@keyframes moveFireX {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: -195.125rem;
+  }
+}
+.tidbit.join-in-a-few-taps .flower {
+  top: 34vh;
+  right: -6rem;
+  width: 20rem;
+  height: 20rem;
+  background-color: #f9ecf5;
+  background-image: url("/images/dithered/flower-sprite.png");
+  background-size: 100rem 20rem;
+  animation: moveFlowerX 2000ms steps(5) infinite;
+}
+@media (min-width: 48rem) {
+  .tidbit.join-in-a-few-taps .flower {
+    top: 48vh;
+    left: 54%;
+    width: 30rem;
+    height: 30rem;
+  }
+}
+@keyframes moveFlowerX {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: -100rem;
+  }
+}
+@media (min-width: 48rem) {
+  .tidbit.join-in-a-few-taps .flower {
+    background-size: 150rem 30rem;
+  }
+  @keyframes moveFlowerX {
+    from {
+      background-position-x: 0;
+    }
+    to {
+      background-position-x: -150rem;
+    }
   }
 }
 .tidbit.join-in-a-few-taps .poster {
