@@ -430,7 +430,8 @@ article header {
 
 body > .flow-content {
   // Stop absolutely-positioned images from causing overflow-x
-  overflow-x: hidden;
+  // Set specifically overflow instead as overflow-x causes multiple scrollbars
+  overflow: hidden;
 
   // Override default footer styling, just on homepage
   > footer {
