@@ -1,0 +1,41 @@
+{% extends "layouts/base.html" %}
+
+{% set pageHeaderTitle = "Left Future Super?" %}
+
+{% block content %}
+  <article class="container">
+    {% include "partials/page-header.html" %}
+
+    <div class="form-container">
+      <form name="Exit Survey" method="POST" data-netlify="true">
+        <p>
+          <label>First Name
+            <input type="text" id="name" name="name"/></label>
+        </p>
+        <p>
+          <label>Email
+            <input type="email" id="email" name="email"/></label>
+        </p>
+        <p>
+          <label>What did you like about being a future super member?
+            <input type="text" name="What liked"/></label>
+        </p>
+        <p>
+          <label>What made you decide to leave future super?
+            <input type="text" name="Why left"/></label>
+        </p>
+        <p>
+          <label>What could we have done differently to improve your experience?
+            <input type="text" name="What could have done differently"/></label>
+        </p>
+        <p>
+          <label>Anything else you would like us to know?
+            <input type="text" name="Anything else to tell us"/></label>
+        </p>
+        <p>
+          <button type="submit" class="primary">Send</button>
+        </p>
+      </form>
+    </div>
+  </article>
+{% endblock %}
