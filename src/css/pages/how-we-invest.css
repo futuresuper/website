@@ -304,10 +304,17 @@ input.search {
   background-color: #ffffff;
 }
 
-body.mobile-menu-active {
+body.site-header-menu-active {
   position: fixed;
 }
-body.mobile-menu-active.aoc-active {
+body.site-header-menu-active .acknowledgement-of-country.footer {
+  display: none;
+}
+body.site-header-menu-active .flow-content #main-content,
+body.site-header-menu-active .flow-content > footer {
+  display: none;
+}
+body.site-header-menu-active.site-header-aoc-active {
   top: -60vh;
 }
 
