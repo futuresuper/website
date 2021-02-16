@@ -36,7 +36,7 @@ async function showNextCustodianName() {
   let custodianData = await fetchCustodianData();
   custodianEls.forEach((element) => {
     element.textContent = custodianData[currentCustodianIndex];
-    element.classList.remove("act`ive");
+    element.classList.remove("active");
   });
   currentCustodianIndex = currentCustodianIndex < custodianData.length - 1 ? currentCustodianIndex + 1 : 0;
 
