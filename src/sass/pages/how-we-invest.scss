@@ -5,6 +5,52 @@
 // namespace (ie '$grey-100' instead of 'base.$grey100')
 @use "../base" as *;
 
+$marquee-height: 5rem;
+
+.marquee {
+  overflow: hidden;
+  position: relative;
+  height: $marquee-height;
+  background-color: $mint-300;
+  border-top: 1px solid $mint-500;
+  border-bottom: 1px solid $mint-500;
+  width: 200%;
+
+  ul {
+    position: absolute;
+    list-style-type: none;
+    margin: 0;
+    width: 50%;
+    height: $marquee-height;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    animation: marquee 14s linear infinite;
+
+    &:hover {
+      animation-play-state: paused;
+    }
+
+    li {
+      text-transform: uppercase;
+      color: $mint-500;
+      font-size: $font-size-40;
+      margin-right: 5rem;
+    }
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(25%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+}
+
+// Being old styles
+
 .screens-container {
   background-color: $white-500;
   max-width: $breakpoint-sm;

@@ -940,6 +940,44 @@ input.search {
   left: calc(100% - 2.5rem);
 }
 
+.marquee {
+  overflow: hidden;
+  position: relative;
+  height: 5rem;
+  background-color: #ddffe7;
+  border-top: 1px solid #2bb151;
+  border-bottom: 1px solid #2bb151;
+  width: 200%;
+}
+.marquee ul {
+  position: absolute;
+  list-style-type: none;
+  margin: 0;
+  width: 50%;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  animation: marquee 14s linear infinite;
+}
+.marquee ul:hover {
+  animation-play-state: paused;
+}
+.marquee ul li {
+  text-transform: uppercase;
+  color: #2bb151;
+  font-size: 2.5rem;
+  margin-right: 5rem;
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(25%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 .screens-container {
   background-color: #ffffff;
   max-width: 40rem;
