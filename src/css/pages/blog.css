@@ -939,6 +939,9 @@ input.search {
   left: calc(100% - 2.5rem);
 }
 
+.post-item > * {
+  grid-column: span 12;
+}
 @media (min-width: 48rem) {
   .post-item > h2,
 .post-item > h3 {

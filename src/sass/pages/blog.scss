@@ -5,6 +5,9 @@
 $transition-section-hover: opacity 250ms ease-in-out;
 
 .post-item {
+  > * {
+    grid-column: span 12;
+  }
   > h2,
   > h3 {
     @media (min-width: $breakpoint-md) {
