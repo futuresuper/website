@@ -1,7 +1,7 @@
 @use "../base" as *;
 
-$sprite-width: 20rem;
-$sprite-height: $sprite-width;
+$img-width: 20rem;
+$img-height: $img-width;
 
 // Create reusable extend for often-used crispy background
 %background-crisp {
@@ -12,42 +12,67 @@ $sprite-height: $sprite-width;
   image-rendering: -o-crisp-edges; /* Opera */
 }
 
-// Create mixin for repetitive image styles
-@mixin sprite($file-name, $img-width, $background-color, $animation-duration, $animation-steps, $pos-top, $pos-top-md, $pos-x-type, $pos-x, $pos-x-md-type, $pos-x-md) {
-  width: $sprite-width;
-  height: $sprite-height;
-
-  top: $pos-top;
-
+// Create mixin for the repetitive image styles
+@mixin still($file-name, $background-color, $pos-y-type, $pos-y, $pos-y-md, $pos-x-type, $pos-x, $pos-x-md-type, $pos-x-md) {
+  width: $img-width;
+  height: $img-height;
+  @if $pos-y-type == "top" {
+    top: $pos-y;
+  }
+  @if $pos-y-type == "bottom" {
+    bottom: $pos-y;
+  }
   @if $pos-x-type == "left" {
     left: $pos-x;
   }
   @if $pos-x-type == "right" {
     right: $pos-x;
   }
-
   @media (min-width: $breakpoint-md) {
-    top: $pos-top-md;
-    width: $sprite-width * 1.5;
-    height: $sprite-height * 1.5;
-
+    width: $img-width * 1.5;
+    height: $img-height * 1.5;
+    @if $pos-y-type == "top" {
+      top: $pos-y-md;
+      bottom: auto;
+    }
+    @if $pos-y-type == "bottom" {
+      top: auto;
+      bottom: $pos-y-md;
+    }
     @if $pos-x-md-type == "left" {
       left: $pos-x-md;
+      right: auto;
     }
     @if $pos-x-md-type == "right" {
+      left: auto;
       right: $pos-x-md;
     }
   }
-
   background-color: $background-color;
+
+  // Begin still-specific styles that will be overridden when used within @sprite
+  background-image: url("/images/dithered/#{$file-name}-320h.png");
+  background-size: $img-height $img-height;
+  @media (min-width: $breakpoint-md) {
+    background-image: url("/images/dithered/#{$file-name}-480h.png");
+    background-size: $img-width * 1.5 $img-height * 1.5;
+  }
+}
+
+// Create additional mixin for those images that also animate
+@mixin sprite($file-name, $file-width, $background-color, $pos-y-type, $pos-y, $pos-y-md, $pos-x-type, $pos-x, $pos-x-md-type, $pos-x-md, $animation-duration, $animation-steps) {
+  @include still($file-name, $background-color, $pos-y-type, $pos-y, $pos-y-md, $pos-x-type, $pos-x, $pos-x-md-type, $pos-x-md);
+
+  // Begin mixin content specific for sprites, not still images
+  // Append sprite to file name
   background-image: url("/images/dithered/#{$file-name}-sprite-320h.png");
   // $img-width is preferably pixel width / 16 for rems
   // E.g. "100rem"
-  background-size: $img-width $sprite-height;
+  background-size: $file-width $img-height;
   animation: #{$file-name}MoveX $animation-duration steps($animation-steps) infinite;
   @media (min-width: $breakpoint-md) {
     background-image: url("/images/dithered/#{$file-name}-sprite-480h.png");
-    background-size: $img-width * 1.5 $sprite-height * 1.5;
+    background-size: $file-width * 1.5 $img-height * 1.5;
     animation: #{$file-name}MoveXMd $animation-duration steps($animation-steps) infinite;
   }
 
@@ -56,7 +81,7 @@ $sprite-height: $sprite-width;
       background-position-x: 0;
     }
     to {
-      background-position-x: -$img-width;
+      background-position-x: -$file-width;
     }
   }
   @keyframes #{$file-name}MoveXMd {
@@ -64,7 +89,7 @@ $sprite-height: $sprite-width;
       background-position-x: 0;
     }
     to {
-      background-position-x: -($img-width * 1.5);
+      background-position-x: -($file-width * 1.5);
     }
   }
 }
@@ -131,7 +156,7 @@ article header {
   padding-bottom: 6vh;
 
   background-color: $mint-300;
-  background-image: url("/images/dithered/smoke-stack.png");
+  background-image: url("/images/dithered/smoke-stack-hero.png");
   @extend %background-crisp;
   background-size: cover;
   background-repeat: no-repeat;
@@ -141,7 +166,7 @@ article header {
     margin-top: 0;
     padding-top: 0;
 
-    background-image: url(/images/dithered/smoke-stack.png), url(/images/dithered/smoke-stack.png);
+    background-image: url(/images/dithered/smoke-stack-hero.png), url(/images/dithered/smoke-stack-hero.png);
     background-size: 32vh;
     background-position: top -4rem left 25%, top 8rem right 25%;
   }
@@ -177,7 +202,7 @@ article header {
   }
 }
 
-.sprite {
+.dithered-img {
   position: absolute;
   @extend %background-crisp;
 }
@@ -237,19 +262,15 @@ article header {
   // Begin section-specific styling
   &.give-fossil-fuels-the-flick {
     background-color: $fraise-300;
-    background-image: url("/images/dithered/smoke-stack-small-red.png");
-    @extend %background-crisp;
-    background-position: top 40vh right 50%;
-    @media (min-width: $breakpoint-md) {
-      background-position: top 30vh right 20%;
-    }
-
     .coal {
-      @include sprite("coal", 100rem, $mango-300, 5000ms, 5, -2rem, -2rem, "right", -2rem, "left", 30%);
+      @include sprite("coal", 100rem, $mango-300, "top", -2rem, -2rem, "right", -2rem, "right", 40%, 5000ms, 5);
     }
-
+    .smoke-stack {
+      @include still("smoke-stack", $fig-300, "top", 40vh, 30vh, "right", 50%, "right", 20%);
+      transform: scale(0.75);
+    }
     .barrel {
-      @include sprite("barrel", 320rem, $mango-300, 2000ms, 16, 75vh, 50vh, "right", 0, "left", 20%);
+      @include sprite("barrel", 320rem, $mango-300, "top", 75vh, 54vh, "right", 0, "left", 20%, 2000ms, 16);
     }
 
     .poster {
@@ -265,17 +286,16 @@ article header {
       grid-column: 5/13;
     }
   }
+
   &.your-money-talks {
     background-color: $mango-300;
-    background-image: url("/images/dithered/earth.png");
-    @extend %background-crisp;
-    background-position: top 40vh left -20%;
-    @media (min-width: $breakpoint-md) {
-      background-position: top 50vh left 28%;
-    }
-
     .coin {
-      @include sprite("coin", 340rem, $black-500, 2000ms, 17, -2vh, 4vh, "right", -5rem, "left", 52%);
+      @include sprite("coin", 340rem, $black-500, "top", -2vh, 4vh, "right", -5rem, "left", 52%, 2000ms, 17);
+      transform: scale(0.75);
+      transform-origin: top right;
+    }
+    .earth {
+      @include still("earth", $blueberry-300, "top", 40vh, 50vh, "left", -20%, "left", 28%);
     }
 
     .poster {
@@ -304,15 +324,13 @@ article header {
   }
   &.join-in-a-few-taps {
     background-color: $mint-300;
-    background-image: url("/images/dithered/wind-turbine.png");
-    @extend %background-crisp;
-    background-position: top 2rem left -5rem;
-    @media (min-width: $breakpoint-md) {
-      background-position: top 10vh left 32%;
+    .wind {
+      @include still("wind", $mango-300, "top", 2rem, 10vh, "left", -5rem, "right", 50%);
+      transform: scale(0.75);
+      transform-origin: top left;
     }
-
     .flower {
-      @include sprite("flower", 100rem, $fig-300, 2000ms, 5, 34vh, 40vh, "right", -6rem, "left", 54%);
+      @include sprite("flower", 100rem, $fig-300, "top", 34vh, 40vh, "right", -6rem, "left", 54%, 2000ms, 5);
     }
 
     .poster {
@@ -330,33 +348,15 @@ article header {
   padding: 8rem 0;
   // Allow for inline child images, footer text, to be positioned absolutely
   position: relative;
-
   color: $black-900;
   background-color: $fig-300;
-  background-image: url("/images/dithered/smoke-stack-small-green.png");
-  @extend %background-crisp;
-  background-position: bottom 14rem right -2rem;
-  background-repeat: no-repeat;
-
   .coal {
-    @include sprite("coal", 100rem, $mango-300, 5000ms, 5, -2rem, -2rem, "left", -4rem, "left", -4rem);
-    // top: -2rem;
-    // left: -4rem;
-    // width: 20rem;
-    // height: 20rem;
-
-    // background-color: $mango-300;
-    // background-image: url("/images/dithered/coal-sprite.png");
-    // background-size: 100rem 20rem;
-    // animation: moveCoalX 5000ms steps(5) infinite;
-    // @keyframes moveCoalX {
-    //   from {
-    //     background-position-x: 0;
-    //   }
-    //   to {
-    //     background-position-x: -100rem;g
-    //   }
-    // }
+    @include sprite("coal", 100rem, $mango-300, "top", -2rem, -2rem, "left", -4rem, "left", -4rem, 5000ms, 5);
+    transform: scale(0.75);
+    transform-origin: top left;
+  }
+  .smoke-stack {
+    @include still("smoke-stack", $mint-300, "bottom", 14rem, 4rem, "right", -2rem, "right", -2rem);
   }
 
   figure {
