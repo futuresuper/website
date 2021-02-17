@@ -4,74 +4,75 @@
 
 {# If this is a tag, grab those items instead as one large collection #}
 {% if tag %}
-  {% set postListItems = collections[tag] %}
-  {% set summary = 'Blog posts filed under “' + tag + '”' %}
+{% set postListItems = collections[tag] %}
+{% set summary = 'Blog posts filed under “' + tag + '”' %}
 {% endif %}
 
 {% block content %}
-  <article class="container">
-    {% include "partials/page-header.html" %}
-    <!-- Loops through and presents posts, such as blog posts -->
-    {% for post in collections.blog %}
-      <div class="post-item grid">
-        {# SET YEAR & MONTH VALS #}
-        {% set year = post.date | year %}
-        {% set month = post.date | month %}
+<article class="container">
+  {% include "partials/page-header.html" %}
+  <!-- Loops through and presents posts, such as blog posts -->
+  {% for post in collections.blog %}
+  <div class="post-item grid">
+    {# SET YEAR & MONTH VALS #}
+    {% set year = post.date | year %}
+    {% set month = post.date | month %}
 
-        {# PRINT YEAR IF NOT REPEAT OF PREVIOUS #}
-        {% if year === lastYear %}
-          <div></div>
-        {% else %}
-          <h2 class="year-only">{{ year }}</h2>
-          <h2 class="month-and-year">{{ month }}
-            {{ year }}</h2>
+    {# PRINT YEAR IF NOT REPEAT OF PREVIOUS #}
+    {% if year === lastYear %}
+    <div></div>
+    {% else %}
+    <h2 class="year-only">{{ year }}</h2>
+    <h2 class="month-and-year">{{ month }}
+      {{ year }}</h2>
 
-        {% endif %}
-        {% set lastYear = post.date | year %}
+    {% endif %}
+    {% set lastYear = post.date | year %}
 
-        {# PRINT MONTH IF NOT REPEAT OF PREVIOUS #}
-        {% if month === lastMonth %}
-          <div></div>
-        {% else %}
-          <h3 class="month-only">{{ month }}</h3>
-        {% endif %}
-        {% set lastMonth = post.date | month %}
+    {# PRINT MONTH IF NOT REPEAT OF PREVIOUS #}
+    {% if month === lastMonth %}
+    <div></div>
+    {% else %}
+    <h3 class="month-only">{{ month }}</h3>
+    {% endif %}
+    {% set lastMonth = post.date | month %}
 
-        {# IMAGE #}
-        <a href="{{ post.url }}">
-          {% if post.data.image %}
-            <img src="{{ post.data.image }}" alt="{{ post.data.title }}" loading="lazy">
-          {% else %}
-            <div class="image-placeholder"></div>
+    {# IMAGE #}
+    <a href="{{ post.url }}">
+      {% if post.data.image %}
+      <img src="{{ post.data.image }}" alt="{{ post.data.title }}" loading="lazy">
+      {% else %}
+      <div class="image-placeholder"></div>
+      {% endif %}
+      {#
+    </a> #}
+
+    {# TITLE + TEXT #}
+    {# For smaller breakpoints #}
+    <div class="post-text">
+      <h3>{{ post.data.title }}</h3>
+      {# For larger breakpoints #}
+      <h4>{{ post.data.title }}</h4>
+      <p class="summary">{{ post.data.description }}</p>
+      <div class="details">
+        <p class="author">{{ post.data.author }}</p>
+        {% if post.data.tags[0] %}
+        <p class="tags">
+          {% for tag in post.data.tags %}
+          {{ tag }}
+          {% if loop.last === false %}
+          {{ " • " }}
           {% endif %}
-          {# </a> #}
-
-          {# TITLE + TEXT #}
-          {# For smaller breakpoints #}
-          <div class="post-text">
-            <h3>{{ post.data.title }}</h3>
-            {# For larger breakpoints #}
-            <h4>{{ post.data.title }}</h4>
-            <p class="summary">{{ post.data.description }}</p>
-            <div class="details">
-              <p class="author">{{ post.data.author }}</p>
-              {% if post.data.tags %}
-                <p class="tags">
-                  {% for tag in post.data.tags %}
-                    {{ tag }}
-                    {% if loop.last === false %}
-                      {{ " • " }}
-                    {% endif %}
-                  {% endfor %}
-                {% endif %}
-              </p>
-            </div>
-          </div>
-        </a>
+          {% endfor %}
+        </p>
+        {% endif %}
       </div>
-    {% endfor %}
+    </div>
+    </a>
+  </div>
+  {% endfor %}
 
-  </article>
+</article>
 
-  {% include "partials/join-cta.html" %}
+{% include "partials/join-cta.html" %}
 {% endblock %}

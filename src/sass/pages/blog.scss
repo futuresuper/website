@@ -80,8 +80,10 @@ $transition-section-hover: opacity 250ms ease-in-out;
 
       @media (min-width: $breakpoint-md) {
         p {
-          margin: 0;
-          line-height: 100%;
+          margin: 0.5rem 0 0 0;
+          line-height: $line-height-xs;
+          // Take full remaining space
+          flex: 1;
         }
       }
     }
