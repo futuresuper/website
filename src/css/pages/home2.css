@@ -107,8 +107,9 @@ h1 {
   line-height: 115%;
   margin-bottom: 1.8rem;
   font-size: 2.8rem;
-  font-size: clamp(2rem, 15vw, 5rem);
+  font-size: clamp(2rem, 14vw, 5rem);
   letter-spacing: -0.09rem;
+  overflow-wrap: break-word;
 }
 
 h2 {
@@ -938,9 +939,10 @@ input.search {
   left: calc(100% - 2.5rem);
 }
 
-.product-review-carousel figure .star-container .star, .product-review-carousel, .tidbit.join-in-a-few-taps, .tidbit.your-money-talks, .tidbit.give-fossil-fuels-the-flick, .sprite, article header {
+.product-review-carousel figure .star-container .star, .dithered-img, article header {
   image-rendering: -webkit-optimize-contrast;
   /* Webkit (non-standard naming)*/
+  image-rendering: pixelated;
   image-rendering: crisp-edges;
   image-rendering: -moz-crisp-edges;
   /* Firefox */
@@ -1014,7 +1016,7 @@ article header {
   padding-top: 3rem;
   padding-bottom: 6vh;
   background-color: #ddffe7;
-  background-image: url("/images/dithered/smoke-stack.png");
+  background-image: url("/images/dithered/smoke-stack-hero.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top -16rem center;
@@ -1023,7 +1025,7 @@ article header {
   article header {
     margin-top: 0;
     padding-top: 0;
-    background-image: url(/images/dithered/smoke-stack.png), url(/images/dithered/smoke-stack.png);
+    background-image: url(/images/dithered/smoke-stack-hero.png), url(/images/dithered/smoke-stack-hero.png);
     background-size: 32vh;
     background-position: top -4rem left 25%, top 8rem right 25%;
   }
@@ -1056,7 +1058,7 @@ article header p {
   background-color: #ddffe7;
 }
 
-.sprite {
+.dithered-img {
   position: absolute;
 }
 
@@ -1104,30 +1106,43 @@ article header p {
 }
 .tidbit.give-fossil-fuels-the-flick {
   background-color: #ffe6e1;
-  background-image: url("/images/dithered/smoke-stack-small-red.png");
-  background-position: top 40vh right 50%;
-}
-@media (min-width: 48rem) {
-  .tidbit.give-fossil-fuels-the-flick {
-    background-position: top 30vh right 20%;
-  }
 }
 .tidbit.give-fossil-fuels-the-flick .coal {
-  top: -2rem;
-  right: -2rem;
   width: 20rem;
   height: 20rem;
+  top: -2rem;
+  right: -2rem;
   background-color: #ffebb9;
-  background-image: url("/images/dithered/coal-sprite.png");
+  background-image: url("/images/dithered/coal-320h.png");
+  background-size: 20rem 20rem;
+  background-image: url("/images/dithered/coal-sprite-320h.png");
   background-size: 100rem 20rem;
-  animation: moveCoalX 5000ms steps(5) infinite;
+  animation: coalMoveX 5000ms steps(5) infinite;
 }
 @media (min-width: 48rem) {
   .tidbit.give-fossil-fuels-the-flick .coal {
-    left: 30%;
+    width: 30rem;
+    height: 30rem;
+    top: -2rem;
+    bottom: auto;
+    left: auto;
+    right: 40%;
   }
 }
-@keyframes moveCoalX {
+@media (min-width: 48rem) {
+  .tidbit.give-fossil-fuels-the-flick .coal {
+    background-image: url("/images/dithered/coal-480h.png");
+    background-size: 30rem 30rem;
+  }
+}
+@media (min-width: 48rem) {
+  .tidbit.give-fossil-fuels-the-flick .coal {
+    background-image: url("/images/dithered/coal-sprite-480h.png");
+    background-size: 150rem 30rem;
+    animation: coalMoveXMd 5000ms steps(5) infinite;
+  }
+}
+@keyframes coalMoveX {
   from {
     background-position-x: 0;
   }
@@ -1135,28 +1150,89 @@ article header p {
     background-position-x: -100rem;
   }
 }
-.tidbit.give-fossil-fuels-the-flick .barrel {
-  top: 75vh;
-  right: 0;
-  width: 20rem;
-  height: 20rem;
-  background-color: #ffebb9;
-  background-image: url("/images/dithered/barrel-sprite.png");
-  background-size: 340rem 20rem;
-  animation: moveBarrel 2000ms steps(17) infinite;
-}
-@media (min-width: 48rem) {
-  .tidbit.give-fossil-fuels-the-flick .barrel {
-    top: 50vh;
-    left: 20%;
-  }
-}
-@keyframes moveBarrel {
+@keyframes coalMoveXMd {
   from {
     background-position-x: 0;
   }
   to {
-    background-position-x: -340rem;
+    background-position-x: -150rem;
+  }
+}
+.tidbit.give-fossil-fuels-the-flick .smoke-stack {
+  width: 20rem;
+  height: 20rem;
+  top: 40vh;
+  right: 50%;
+  background-color: #f9ecf5;
+  background-image: url("/images/dithered/smoke-stack-320h.png");
+  background-size: 20rem 20rem;
+  transform: scale(0.75);
+}
+@media (min-width: 48rem) {
+  .tidbit.give-fossil-fuels-the-flick .smoke-stack {
+    width: 30rem;
+    height: 30rem;
+    top: 30vh;
+    bottom: auto;
+    left: auto;
+    right: 20%;
+  }
+}
+@media (min-width: 48rem) {
+  .tidbit.give-fossil-fuels-the-flick .smoke-stack {
+    background-image: url("/images/dithered/smoke-stack-480h.png");
+    background-size: 30rem 30rem;
+  }
+}
+.tidbit.give-fossil-fuels-the-flick .barrel {
+  width: 20rem;
+  height: 20rem;
+  top: 75vh;
+  right: 0;
+  background-color: #ffebb9;
+  background-image: url("/images/dithered/barrel-320h.png");
+  background-size: 20rem 20rem;
+  background-image: url("/images/dithered/barrel-sprite-320h.png");
+  background-size: 320rem 20rem;
+  animation: barrelMoveX 2000ms steps(16) infinite;
+}
+@media (min-width: 48rem) {
+  .tidbit.give-fossil-fuels-the-flick .barrel {
+    width: 30rem;
+    height: 30rem;
+    top: 54vh;
+    bottom: auto;
+    left: 20%;
+    right: auto;
+  }
+}
+@media (min-width: 48rem) {
+  .tidbit.give-fossil-fuels-the-flick .barrel {
+    background-image: url("/images/dithered/barrel-480h.png");
+    background-size: 30rem 30rem;
+  }
+}
+@media (min-width: 48rem) {
+  .tidbit.give-fossil-fuels-the-flick .barrel {
+    background-image: url("/images/dithered/barrel-sprite-480h.png");
+    background-size: 480rem 30rem;
+    animation: barrelMoveXMd 2000ms steps(16) infinite;
+  }
+}
+@keyframes barrelMoveX {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: -320rem;
+  }
+}
+@keyframes barrelMoveXMd {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: -480rem;
   }
 }
 .tidbit.give-fossil-fuels-the-flick .poster {
@@ -1174,36 +1250,83 @@ article header p {
 }
 .tidbit.your-money-talks {
   background-color: #ffebb9;
-  background-image: url("/images/dithered/earth.png");
-  background-position: top 40vh left -20%;
-}
-@media (min-width: 48rem) {
-  .tidbit.your-money-talks {
-    background-position: top 50vh left 28%;
-  }
 }
 .tidbit.your-money-talks .coin {
-  top: -2vh;
-  right: -5rem;
   width: 20rem;
   height: 20rem;
+  top: -2vh;
+  right: -5rem;
   background-color: #140f14;
-  background-image: url("/images/dithered/coin-sprite.png");
+  background-image: url("/images/dithered/coin-320h.png");
+  background-size: 20rem 20rem;
+  background-image: url("/images/dithered/coin-sprite-320h.png");
   background-size: 340rem 20rem;
-  animation: moveCoinX 2000ms steps(17) infinite;
+  animation: coinMoveX 2000ms steps(17) infinite;
+  transform: scale(0.75);
+  transform-origin: top right;
 }
 @media (min-width: 48rem) {
   .tidbit.your-money-talks .coin {
+    width: 30rem;
+    height: 30rem;
     top: 4vh;
+    bottom: auto;
     left: 52%;
+    right: auto;
   }
 }
-@keyframes moveCoinX {
+@media (min-width: 48rem) {
+  .tidbit.your-money-talks .coin {
+    background-image: url("/images/dithered/coin-480h.png");
+    background-size: 30rem 30rem;
+  }
+}
+@media (min-width: 48rem) {
+  .tidbit.your-money-talks .coin {
+    background-image: url("/images/dithered/coin-sprite-480h.png");
+    background-size: 510rem 30rem;
+    animation: coinMoveXMd 2000ms steps(17) infinite;
+  }
+}
+@keyframes coinMoveX {
   from {
     background-position-x: 0;
   }
   to {
     background-position-x: -340rem;
+  }
+}
+@keyframes coinMoveXMd {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: -510rem;
+  }
+}
+.tidbit.your-money-talks .earth {
+  width: 20rem;
+  height: 20rem;
+  top: 40vh;
+  left: -20%;
+  background-color: #d0e0ff;
+  background-image: url("/images/dithered/earth-320h.png");
+  background-size: 20rem 20rem;
+}
+@media (min-width: 48rem) {
+  .tidbit.your-money-talks .earth {
+    width: 30rem;
+    height: 30rem;
+    top: 50vh;
+    bottom: auto;
+    left: 28%;
+    right: auto;
+  }
+}
+@media (min-width: 48rem) {
+  .tidbit.your-money-talks .earth {
+    background-image: url("/images/dithered/earth-480h.png");
+    background-size: 30rem 30rem;
   }
 }
 .tidbit.your-money-talks .poster {
@@ -1230,49 +1353,70 @@ article header p {
 }
 .tidbit.join-in-a-few-taps {
   background-color: #ddffe7;
-  background-image: url("/images/dithered/wind-turbine.png");
-  background-position: top 2rem left -5rem;
+}
+.tidbit.join-in-a-few-taps .wind {
+  width: 20rem;
+  height: 20rem;
+  top: 2rem;
+  left: -5rem;
+  background-color: #ffebb9;
+  background-image: url("/images/dithered/wind-320h.png");
+  background-size: 20rem 20rem;
+  transform: scale(0.75);
+  transform-origin: top left;
 }
 @media (min-width: 48rem) {
-  .tidbit.join-in-a-few-taps {
-    background-position: top 10vh left 32%;
+  .tidbit.join-in-a-few-taps .wind {
+    width: 30rem;
+    height: 30rem;
+    top: 10vh;
+    bottom: auto;
+    left: auto;
+    right: 50%;
   }
 }
-.tidbit.join-in-a-few-taps .fire {
-  top: 30vh;
-  left: 0;
-  width: 13.9375rem;
-  height: 20rem;
-  background-image: url("/images/dithered/fire-sprite.png");
-  animation: moveFireX 2000ms steps(14) infinite;
-}
-@keyframes moveFireX {
-  from {
-    background-position-x: 0;
-  }
-  to {
-    background-position-x: -195.125rem;
+@media (min-width: 48rem) {
+  .tidbit.join-in-a-few-taps .wind {
+    background-image: url("/images/dithered/wind-480h.png");
+    background-size: 30rem 30rem;
   }
 }
 .tidbit.join-in-a-few-taps .flower {
-  top: 34vh;
-  right: -6rem;
   width: 20rem;
   height: 20rem;
+  top: 34vh;
+  right: -6rem;
   background-color: #f9ecf5;
-  background-image: url("/images/dithered/flower-sprite.png");
+  background-image: url("/images/dithered/flower-320h.png");
+  background-size: 20rem 20rem;
+  background-image: url("/images/dithered/flower-sprite-320h.png");
   background-size: 100rem 20rem;
-  animation: moveFlowerX 2000ms steps(5) infinite;
+  animation: flowerMoveX 2000ms steps(5) infinite;
 }
 @media (min-width: 48rem) {
   .tidbit.join-in-a-few-taps .flower {
-    top: 48vh;
-    left: 54%;
     width: 30rem;
     height: 30rem;
+    top: 40vh;
+    bottom: auto;
+    left: 54%;
+    right: auto;
   }
 }
-@keyframes moveFlowerX {
+@media (min-width: 48rem) {
+  .tidbit.join-in-a-few-taps .flower {
+    background-image: url("/images/dithered/flower-480h.png");
+    background-size: 30rem 30rem;
+  }
+}
+@media (min-width: 48rem) {
+  .tidbit.join-in-a-few-taps .flower {
+    background-image: url("/images/dithered/flower-sprite-480h.png");
+    background-size: 150rem 30rem;
+    animation: flowerMoveXMd 2000ms steps(5) infinite;
+  }
+}
+@keyframes flowerMoveX {
   from {
     background-position-x: 0;
   }
@@ -1280,17 +1424,12 @@ article header p {
     background-position-x: -100rem;
   }
 }
-@media (min-width: 48rem) {
-  .tidbit.join-in-a-few-taps .flower {
-    background-size: 150rem 30rem;
+@keyframes flowerMoveXMd {
+  from {
+    background-position-x: 0;
   }
-  @keyframes moveFlowerX {
-    from {
-      background-position-x: 0;
-    }
-    to {
-      background-position-x: -150rem;
-    }
+  to {
+    background-position-x: -150rem;
   }
 }
 .tidbit.join-in-a-few-taps .poster {
@@ -1309,26 +1448,83 @@ article header p {
   position: relative;
   color: #000000;
   background-color: #f9ecf5;
-  background-image: url("/images/dithered/smoke-stack-small-green.png");
-  background-position: bottom 14rem right -2rem;
-  background-repeat: no-repeat;
 }
 .product-review-carousel .coal {
-  top: -2rem;
-  left: -4rem;
   width: 20rem;
   height: 20rem;
+  top: -2rem;
+  left: -4rem;
   background-color: #ffebb9;
-  background-image: url("/images/dithered/coal-sprite.png");
+  background-image: url("/images/dithered/coal-320h.png");
+  background-size: 20rem 20rem;
+  background-image: url("/images/dithered/coal-sprite-320h.png");
   background-size: 100rem 20rem;
-  animation: moveCoalX 5000ms steps(5) infinite;
+  animation: coalMoveX 5000ms steps(5) infinite;
+  transform: scale(0.75);
+  transform-origin: top left;
 }
-@keyframes moveCoalX {
+@media (min-width: 48rem) {
+  .product-review-carousel .coal {
+    width: 30rem;
+    height: 30rem;
+    top: -2rem;
+    bottom: auto;
+    left: -4rem;
+    right: auto;
+  }
+}
+@media (min-width: 48rem) {
+  .product-review-carousel .coal {
+    background-image: url("/images/dithered/coal-480h.png");
+    background-size: 30rem 30rem;
+  }
+}
+@media (min-width: 48rem) {
+  .product-review-carousel .coal {
+    background-image: url("/images/dithered/coal-sprite-480h.png");
+    background-size: 150rem 30rem;
+    animation: coalMoveXMd 5000ms steps(5) infinite;
+  }
+}
+@keyframes coalMoveX {
   from {
     background-position-x: 0;
   }
   to {
     background-position-x: -100rem;
+  }
+}
+@keyframes coalMoveXMd {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: -150rem;
+  }
+}
+.product-review-carousel .smoke-stack {
+  width: 20rem;
+  height: 20rem;
+  bottom: 14rem;
+  right: -2rem;
+  background-color: #ddffe7;
+  background-image: url("/images/dithered/smoke-stack-320h.png");
+  background-size: 20rem 20rem;
+}
+@media (min-width: 48rem) {
+  .product-review-carousel .smoke-stack {
+    width: 30rem;
+    height: 30rem;
+    top: auto;
+    bottom: 4rem;
+    left: auto;
+    right: -2rem;
+  }
+}
+@media (min-width: 48rem) {
+  .product-review-carousel .smoke-stack {
+    background-image: url("/images/dithered/smoke-stack-480h.png");
+    background-size: 30rem 30rem;
   }
 }
 .product-review-carousel figure {
