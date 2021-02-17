@@ -5,7 +5,7 @@ date: 2021-02-12T07:00:00.122Z
 tags:
   - Equality
   - News
-author: Khi Prasser
+author: Khaila (Khi) Prasser
 canonical:
 description: >-
   Why we introduced menstrual and menopausal leave.
