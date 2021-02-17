@@ -20,6 +20,58 @@ function showMenu(show) {
   }
 }
 
+window.onload = function () {
+  const referer = getQueryVariable("r");
+  const refererCookie = getCookie("fsreferer");
+
+  if (referer) {
+    setCookie("fsreferer", referer, 365);
+    document.getElementById("referer").value = referer;
+  } else if (refererCookie) {
+    document.getElementById("referer").value = refererCookie;
+  }
+
+  if (referer || refererCookie) {
+    const linksToJoin = document.querySelectorAll(
+      '[href="https://join.futuresuper.com.au"]'
+    );
+    linksToJoin.forEach((el) => {
+      el.setAttribute("href", "#");
+      el.setAttribute("onclick", "showJoinOverlay(true)");
+    });
+  }
+};
+
+function showJoinOverlay(show) {
+  if (show) {
+    document.getElementById("join-overlay").style.display = "block";
+  } else {
+    document.getElementById("join-overlay").style.display = "none";
+  }
+}
+
+function setCookie(cname, cvalue, exdays) {
+  var d = new Date();
+  d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
+  var expires = "expires=" + d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+  var name = cname + "=";
+  var ca = document.cookie.split(";");
+  for (var i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == " ") {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return false;
+}
+
 // Rotate custodians in acknowledgement of country (both header and footer)
 let currentCustodianIndex = 0;
 // There may be 2 of these custodian elements (header and footer)

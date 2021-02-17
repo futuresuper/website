@@ -49,7 +49,7 @@
         {% include styles %}
         {% endset %}
         <style>
-          {{ css | cssmin | safe }}
+          {{css | cssmin | safe}}
         </style>
       {% endfor %}
     {% endif %}
@@ -65,6 +65,11 @@
       {% include "partials/site-footer.html" %}
     </div>
     {% include "partials/acknowledgement-of-country-footer.html" %}
+
+    {# Add pre-join form to capture details if there is a referral code in URL params #}
+    <div id="join-overlay">
+      {% include "partials/join-overlay.html" %}
+    </div>
 
     {# Add global script #}
     {% set globaljs %}
