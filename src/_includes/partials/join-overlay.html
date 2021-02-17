@@ -1,0 +1,26 @@
+<div class="join-overlay-container">
+  <div class="close-button-container">
+    <a id="join-close" onclick="showJoinOverlay(false)">
+      {{ '/src/images/icons/cross.svg' | svgContents | safe }}
+    </a>
+  </div>
+  <h2>Join Future Super</h2>
+  <form method="GET" action="https://join.futuresuper.com.au/">
+    <p>
+      <label>First Name
+        <input type="text" id="first_name" name="first_name"/></label>
+    </p>
+    <p>
+      <label>Email<sup>^</sup>
+        <input type="email" id="email" name="email"/></label>
+    </p>
+    <input type="text" id="referer" name="referer" style="display: none"/>
+    <p>
+      <button type="submit" class="primary">Next</button>
+    </p>
+  </form>
+
+  <p class="disclaimer">
+    ^ By providing your email address, you consent and authorise us to send you communications or information, including information required by law, via email or similar technologies. Your details will never be passed onto a third party other than in accordance with our Privacy Policy. You can elect to receive communications by post at any time by contacting Future Super on 1300 658 422 or via email at info@myfuturesuper.com.au or in writing at GPO Box 1858, Sydney, NSW 2001.
+  </p>
+</div>

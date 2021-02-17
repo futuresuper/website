@@ -1,0 +1,43 @@
+@use "../base" as *;
+
+#join-overlay {
+  display: none;
+}
+
+.join-overlay-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: $white-500;
+  z-index: 900;
+  overflow-y: scroll;
+  padding: 8vw;
+  @media (min-width: $breakpoint-md) {
+    padding: 8vw 20vw;
+  }
+
+  .close-button-container {
+    text-align: right;
+    #join-close {
+      cursor: pointer;
+      svg {
+        height: 3rem;
+      }
+    }
+  }
+
+  form {
+    max-width: 30rem;
+    margin-bottom: 4vw;
+
+    input {
+      margin-top: 0.25rem;
+      margin-bottom: 1.5rem;
+      display: block;
+      width: 100%;
+      padding: 0.5rem;
+    }
+  }
+}
