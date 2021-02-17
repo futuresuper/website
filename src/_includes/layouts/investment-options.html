@@ -38,9 +38,7 @@
             <div class="option-card-large-container">
               {% if option.leadingStat %}
                 <div class="leading-stat">
-                  <p>
-                    <strong>{{ option.leadingStat }}</strong>
-                  </p>
+                  <p>{{ option.leadingStat }}</p>
                 </div>
               {% endif %}
               <div class="option-card-large {{ option.slug }}{% if option.leadingStat %} with-leading-stat{% endif %}">

@@ -299,7 +299,7 @@ details .contents :last-child {
   line-height: 140%;
 }
 
-.option-card-large-container .option-card-large, input.search {
+input.search {
   border: 2px solid #e6e6e5;
   background-color: #ffffff;
 }
@@ -534,76 +534,76 @@ input.search {
   font-size: 1.125rem;
 }
 
-.option-card-large-container .balanced-index.option-card-large, .table-container .grid-row .balanced-index.row-data {
+.table-container .grid-row .balanced-index.row-data {
   color: #3c1631;
 }
-.option-card-large-container .balanced-index.option-card-large svg.fill-core .fill-target, .table-container .grid-row .balanced-index.row-data svg.fill-core .fill-target {
+.table-container .grid-row .balanced-index.row-data svg.fill-core .fill-target {
   fill: #c445a2;
 }
-.option-card-large-container .balanced-index.option-card-large svg.fill-core .stroke-target, .table-container .grid-row .balanced-index.row-data svg.fill-core .stroke-target {
+.table-container .grid-row .balanced-index.row-data svg.fill-core .stroke-target {
   stroke: #c445a2;
 }
-.option-card-large-container .balanced-index.option-card-large svg.fill-light .stroke-target, .table-container .grid-row .balanced-index.row-data svg.fill-light .stroke-target {
+.table-container .grid-row .balanced-index.row-data svg.fill-light .stroke-target {
   stroke: #dc91c8;
 }
-.option-card-large-container .balanced-index.option-card-large .button, .table-container .grid-row .balanced-index.row-data .button {
+.table-container .grid-row .balanced-index.row-data .button {
   background-color: #c445a2;
 }
-.option-card-large-container .balanced-index.option-card-large .button:hover, .table-container .grid-row .balanced-index.row-data .button:hover {
+.table-container .grid-row .balanced-index.row-data .button:hover {
   background-color: #3c1631;
 }
-.option-card-large-container .balanced-impact.option-card-large, .table-container .grid-row .balanced-impact.row-data {
+.table-container .grid-row .balanced-impact.row-data {
   color: #002166;
 }
-.option-card-large-container .balanced-impact.option-card-large svg.fill-core .fill-target, .table-container .grid-row .balanced-impact.row-data svg.fill-core .fill-target {
+.table-container .grid-row .balanced-impact.row-data svg.fill-core .fill-target {
   fill: #0a5aff;
 }
-.option-card-large-container .balanced-impact.option-card-large svg.fill-core .stroke-target, .table-container .grid-row .balanced-impact.row-data svg.fill-core .stroke-target {
+.table-container .grid-row .balanced-impact.row-data svg.fill-core .stroke-target {
   stroke: #0a5aff;
 }
-.option-card-large-container .balanced-impact.option-card-large svg.fill-light .stroke-target, .table-container .grid-row .balanced-impact.row-data svg.fill-light .stroke-target {
+.table-container .grid-row .balanced-impact.row-data svg.fill-light .stroke-target {
   stroke: #a3c1ff;
 }
-.option-card-large-container .balanced-impact.option-card-large .button, .table-container .grid-row .balanced-impact.row-data .button {
+.table-container .grid-row .balanced-impact.row-data .button {
   background-color: #0a5aff;
 }
-.option-card-large-container .balanced-impact.option-card-large .button:hover, .table-container .grid-row .balanced-impact.row-data .button:hover {
+.table-container .grid-row .balanced-impact.row-data .button:hover {
   background-color: #002166;
 }
-.option-card-large-container .renewables-plus-growth.option-card-large, .table-container .grid-row .renewables-plus-growth.row-data {
+.table-container .grid-row .renewables-plus-growth.row-data {
   color: #025018;
 }
-.option-card-large-container .renewables-plus-growth.option-card-large svg.fill-core .fill-target, .table-container .grid-row .renewables-plus-growth.row-data svg.fill-core .fill-target {
+.table-container .grid-row .renewables-plus-growth.row-data svg.fill-core .fill-target {
   fill: #2bb151;
 }
-.option-card-large-container .renewables-plus-growth.option-card-large svg.fill-core .stroke-target, .table-container .grid-row .renewables-plus-growth.row-data svg.fill-core .stroke-target {
+.table-container .grid-row .renewables-plus-growth.row-data svg.fill-core .stroke-target {
   stroke: #2bb151;
 }
-.option-card-large-container .renewables-plus-growth.option-card-large svg.fill-light .stroke-target, .table-container .grid-row .renewables-plus-growth.row-data svg.fill-light .stroke-target {
+.table-container .grid-row .renewables-plus-growth.row-data svg.fill-light .stroke-target {
   stroke: #97ddab;
 }
-.option-card-large-container .renewables-plus-growth.option-card-large .button, .table-container .grid-row .renewables-plus-growth.row-data .button {
+.table-container .grid-row .renewables-plus-growth.row-data .button {
   background-color: #2bb151;
 }
-.option-card-large-container .renewables-plus-growth.option-card-large .button:hover, .table-container .grid-row .renewables-plus-growth.row-data .button:hover {
+.table-container .grid-row .renewables-plus-growth.row-data .button:hover {
   background-color: #025018;
 }
-.option-card-large-container .balanced-growth-pension.option-card-large, .table-container .grid-row .balanced-growth-pension.row-data {
+.table-container .grid-row .balanced-growth-pension.row-data {
   color: #322401;
 }
-.option-card-large-container .balanced-growth-pension.option-card-large svg.fill-core .fill-target, .table-container .grid-row .balanced-growth-pension.row-data svg.fill-core .fill-target {
+.table-container .grid-row .balanced-growth-pension.row-data svg.fill-core .fill-target {
   fill: #9a6f04;
 }
-.option-card-large-container .balanced-growth-pension.option-card-large svg.fill-core .stroke-target, .table-container .grid-row .balanced-growth-pension.row-data svg.fill-core .stroke-target {
+.table-container .grid-row .balanced-growth-pension.row-data svg.fill-core .stroke-target {
   stroke: #9a6f04;
 }
-.option-card-large-container .balanced-growth-pension.option-card-large svg.fill-light .stroke-target, .table-container .grid-row .balanced-growth-pension.row-data svg.fill-light .stroke-target {
+.table-container .grid-row .balanced-growth-pension.row-data svg.fill-light .stroke-target {
   stroke: #fac33c;
 }
-.option-card-large-container .balanced-growth-pension.option-card-large .button, .table-container .grid-row .balanced-growth-pension.row-data .button {
+.table-container .grid-row .balanced-growth-pension.row-data .button {
   background-color: #9a6f04;
 }
-.option-card-large-container .balanced-growth-pension.option-card-large .button:hover, .table-container .grid-row .balanced-growth-pension.row-data .button:hover {
+.table-container .grid-row .balanced-growth-pension.row-data .button:hover {
   background-color: #322401;
 }
 
@@ -939,114 +939,21 @@ input.search {
   left: calc(100% - 2.5rem);
 }
 
-.top {
-  margin-bottom: 6rem;
-}
-
-.option-card-large-container {
-  grid-column: span 12;
+.form-container {
   display: flex;
-  flex-direction: column;
-}
-@media (min-width: 48rem) {
-  .option-card-large-container {
-    grid-column: span 4;
-  }
-}
-.option-card-large-container .leading-stat {
-  height: 4rem;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  background-color: #fbf9f9;
-  text-align: center;
-  font-family: "JetBrainsMono", monospace;
-  font-size: 0.75rem;
-  color: #1d1d1b;
 }
-.option-card-large-container .leading-stat p {
+.form-container form {
+  padding: 2rem;
+  background-color: #f5f5f4;
+  max-width: 36rem;
+}
+.form-container form input {
+  margin-top: 0.25rem;
+  margin-bottom: 1.5rem;
+  display: block;
+  width: 100%;
   padding: 0.5rem;
-  font-weight: bold;
-  margin: 0;
-}
-.option-card-large-container .option-card-large {
-  flex-grow: 1;
-  padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-}
-@media (min-width: 48rem) {
-  .option-card-large-container .option-card-large:not(.with-leading-stat) {
-    margin-top: 4rem;
-  }
-}
-@media (min-width: 48rem) {
-  .option-card-large-container .option-card-large {
-    text-align: center;
-  }
-}
-@media (min-width: 80rem) {
-  .option-card-large-container .option-card-large {
-    padding: 3rem;
-  }
-}
-.option-card-large-container .option-card-large svg {
-  margin-bottom: 0.25rem;
-  width: 3rem;
-  height: 3rem;
-  margin-left: -0.4rem;
-}
-@media (min-width: 48rem) {
-  .option-card-large-container .option-card-large svg {
-    align-self: center;
-    margin-bottom: 1rem;
-    width: 5rem;
-    height: 5rem;
-    margin-left: 0;
-  }
-}
-@media (min-width: 80rem) {
-  .option-card-large-container .option-card-large svg {
-    width: 9rem;
-    height: 9rem;
-  }
-}
-.option-card-large-container .option-card-large h2 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
-@media (min-width: 48rem) {
-  .option-card-large-container .option-card-large h2 {
-    font-size: 1.75rem;
-    margin-bottom: 2rem;
-  }
-}
-.option-card-large-container .option-card-large p {
-  flex-grow: 1;
-}
-.option-card-large-container .option-card-large .button {
-  color: #ffffff;
-  margin-top: 0.5rem;
-  font-size: 1rem;
-  padding: 0.75rem 0;
-}
-@media (min-width: 48rem) {
-  .option-card-large-container .option-card-large .button {
-    margin-top: 1rem;
-    font-size: 1.125rem;
-    padding: 1rem 0;
-  }
-}
-@media (min-width: 48rem) {
-  .option-card-large-container.one-up {
-    grid-column: 4/10;
-  }
-}
-@media (min-width: 48rem) {
-  .option-card-large-container.one-up .option-card-large {
-    margin-top: 0;
-  }
 }
 
-/*# sourceMappingURL=investment-options.css.map */
+/*# sourceMappingURL=member-exit-survey.css.map */

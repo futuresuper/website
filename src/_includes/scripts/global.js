@@ -38,7 +38,10 @@ async function showNextCustodianName() {
     element.textContent = custodianData[currentCustodianIndex];
     element.classList.remove("active");
   });
-  currentCustodianIndex = currentCustodianIndex < custodianData.length - 1 ? currentCustodianIndex + 1 : 0;
+  currentCustodianIndex =
+    currentCustodianIndex < custodianData.length - 1
+      ? currentCustodianIndex + 1
+      : 0;
 
   custodianEls.forEach((element) => {
     element.ontransitionend = () => {
@@ -56,7 +59,9 @@ setInterval(showNextCustodianName, 4000);
 const aocFooter = document.querySelector(".acknowledgement-of-country.footer");
 const siteContent = document.querySelector("body > .flow-content");
 // Use this to also control the animation of yellow text on 'Traditional Custodians'
-const traditionalCustodiansInFooter = document.querySelector(".acknowledgement-of-country.footer p span.traditional-custodians");
+const traditionalCustodiansInFooter = document.querySelector(
+  ".acknowledgement-of-country.footer p span.traditional-custodians"
+);
 
 const config = {
   rootMargin: "-75% 0% 0% 0%",
@@ -94,7 +99,9 @@ if (!visited) {
   // Prepare the body so the mobile menu also makes room for it
   document.body.classList.add("site-header-aoc-active");
   // Animate the yellow text on 'Traditional Custodians' in the header
-  const traditionalCustodiansInHeader = document.querySelector(".acknowledgement-of-country.header p span.traditional-custodians");
+  const traditionalCustodiansInHeader = document.querySelector(
+    ".acknowledgement-of-country.header p span.traditional-custodians"
+  );
   traditionalCustodiansInHeader.classList.add("active");
   // Then set visited to true so it doesn't show next time
   localStorage.setItem("visited", true);
@@ -129,3 +136,14 @@ pageTooltips.forEach((tooltip) => {
     });
   }
 });
+
+function getQueryVariable(variable) {
+  var query = window.location.search.substring(1);
+  var vars = query.split("&");
+  for (var i = 0; i < vars.length; i++) {
+    var pair = vars[i].split("=");
+    if (decodeURIComponent(pair[0]) == variable) {
+      return decodeURIComponent(pair[1]);
+    }
+  }
+}
