@@ -954,12 +954,19 @@ input.search {
 }
 .option-card-large-container .leading-stat {
   height: 4rem;
-  line-height: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: #fbf9f9;
   text-align: center;
   font-family: "JetBrainsMono", monospace;
   font-size: 0.75rem;
   color: #1d1d1b;
+}
+.option-card-large-container .leading-stat p {
+  padding: 0.5rem;
+  font-weight: bold;
+  margin: 0;
 }
 .option-card-large-container .option-card-large {
   flex-grow: 1;
