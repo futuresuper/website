@@ -944,28 +944,44 @@ input.search {
   overflow: hidden;
   position: relative;
   height: 5rem;
+}
+.marquee.seek {
   background-color: #ddffe7;
   border-top: 1px solid #2bb151;
   border-bottom: 1px solid #2bb151;
-  width: 200%;
+}
+.marquee.seek ul {
+  animation: marquee 14s linear infinite;
+}
+.marquee.seek ul li {
+  color: #2bb151;
+}
+.marquee.exclude {
+  background-color: #ffe6e1;
+  border-top: 1px solid #f04b23;
+  border-bottom: 1px solid #f04b23;
+}
+.marquee.exclude ul {
+  animation: marquee 32s linear infinite;
+}
+.marquee.exclude ul li {
+  color: #f04b23;
+  text-decoration: line-through;
 }
 .marquee ul {
   position: absolute;
   list-style-type: none;
   margin: 0;
-  width: 50%;
   height: 5rem;
   display: flex;
   align-items: center;
   white-space: nowrap;
-  animation: marquee 14s linear infinite;
 }
 .marquee ul:hover {
   animation-play-state: paused;
 }
 .marquee ul li {
   text-transform: uppercase;
-  color: #2bb151;
   font-size: 2.5rem;
   margin-right: 5rem;
 }

@@ -11,21 +11,39 @@ $marquee-height: 5rem;
   overflow: hidden;
   position: relative;
   height: $marquee-height;
-  background-color: $mint-300;
-  border-top: 1px solid $mint-500;
-  border-bottom: 1px solid $mint-500;
-  width: 200%;
+
+  &.seek {
+    background-color: $mint-300;
+    border-top: 1px solid $mint-500;
+    border-bottom: 1px solid $mint-500;
+    ul {
+      animation: marquee 14s linear infinite;
+      li {
+        color: $mint-500;
+      }
+    }
+  }
+  &.exclude {
+    background-color: $fraise-300;
+    border-top: 1px solid $fraise-500;
+    border-bottom: 1px solid $fraise-500;
+    ul {
+      animation: marquee 32s linear infinite;
+      li {
+        color: $fraise-500;
+        text-decoration: line-through;
+      }
+    }
+  }
 
   ul {
     position: absolute;
     list-style-type: none;
     margin: 0;
-    width: 50%;
     height: $marquee-height;
     display: flex;
     align-items: center;
     white-space: nowrap;
-    animation: marquee 14s linear infinite;
 
     &:hover {
       animation-play-state: paused;
@@ -33,7 +51,6 @@ $marquee-height: 5rem;
 
     li {
       text-transform: uppercase;
-      color: $mint-500;
       font-size: $font-size-40;
       margin-right: 5rem;
     }
