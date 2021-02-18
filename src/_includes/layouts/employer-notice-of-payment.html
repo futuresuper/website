@@ -1,0 +1,92 @@
+{% extends "layouts/base.html" %}
+
+{% set pageHeaderTitle = title %}
+
+{% block content %}
+  <article class="container">
+    {% include "partials/page-header.html" %}
+
+    <div class="form-container">
+      <form name="Employer Notice of Payment" method="POST" data-netlify="true">
+        <h3>Enter your employer details</h3>
+        <p>
+          Enter your business name and the payment reference you wish to use (such as the member's member number).
+        </p>
+        <p>
+          <label>Employer name
+            <input type="text" name="Employer name" required="required"/></label>
+        </p>
+        <p>
+          <label>Contact email
+            <input type="email" name="Contact email" required="required"/></label>
+        </p>
+        <p>
+          <label>Contact Phone Number
+            <input type="text" name="Contact Phone Number" required="required"/></label>
+        </p>
+        <p>
+          <label>Payment reference
+            <input type="text" name="Payment reference" required="required"/></label>
+        </p>
+        <h3>Enter the payment contribution details</h3>
+        <p>
+          Remember: this form is for one member payment contribution only. Please submit a new form for each additional member payment contribution.
+        </p>
+        <p>
+          <label>Member name
+            <input type="text" name="Member name" required="required"/></label>
+        </p>
+        <p>
+          <label>Member number
+            <input type="text" name="Member number" required="required"/></label>
+        </p>
+        <p>
+          <label>Member date of birth
+            <input type="text" name="Member date of birth" placeholder="DD/MM/YYYY" required="required"/></label>
+        </p>
+        <h3>Contribution amounts</h3>
+        <p>
+          <label>Super guarantee amount ($)
+            <input type="number" step="0.01" id="SG-Amount" name="SG Amount" required="required" onkeyup="validateNOP()"/></label>
+        </p>
+        <p class="disclaimer">
+          Super Guarantee Contributions are the standard 9.5% employer contributions that you are required to pay each quarter.
+        </p>
+        <p>
+          <label>Salary sacrifice amount ($) (optional)
+            <input type="number" step="0.01" id="Salary-Sacrifice-Amount" name="Salary Sacrifice Amount" onkeyup="validateNOP()"/></label>
+        </p>
+        <p>
+          <label>Employer additional amount ($) (optional)
+            <input type="number" step="0.01" id="Employer-Additional-Amount" name="Employer Additional Amount" onkeyup="validateNOP()"/></label>
+        </p>
+        <p class="disclaimer">
+          Post-tax.
+
+        </p>
+        <p>
+          <label>Member contribution amount ($) (optional)
+            <input type="number" step="0.01" id="Member-Contribution-Amount" name="Member Contribution Amount" onkeyup="validateNOP()"/></label>
+        </p>
+        <p>
+          Total contribution ($)<br/>
+          <span id="total" class="bold">$0.00</span>
+        </p>
+        <input type="text" id="Total-Contribution" name="Total Contribution" style="display: none"/>
+        <h3>Contribution amounts</h3>
+        <p>
+          <label>From Date
+            <input type="text" name="From Date" placeholder="DD/MM/YYYY" required="required"/></label>
+        </p>
+        <p>
+          <label>To Date
+            <input type="text" name="To Date" placeholder="DD/MM/YYYY" required="required"/></label>
+        </p>
+
+        <p>
+          <button type="submit" class="primary">Submit for this employee</button>
+        </p>
+      </form>
+    </div>
+  </article>
+{% endblock %}
