@@ -1,0 +1,36 @@
+// Includes colours, type and everything else in "sass > base" folder
+// the "as *" is so that we can reference colours etc, without the
+// namespace (ie '$grey-100' instead of 'base.$grey100')
+@use "../base" as *;
+
+.grid {
+  @media (min-width: $breakpoint-md) {
+    > * {
+      grid-column: span 6;
+    }
+  }
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+
+  form {
+    padding: 2rem;
+    background-color: $grey-100;
+    max-width: 36rem;
+
+    input {
+      margin-top: 0.25rem;
+      margin-bottom: 1.5rem;
+      display: block;
+      width: 100%;
+      padding: 0.5rem;
+      &[type="radio"] {
+        display: inline-block;
+        width: auto;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}
