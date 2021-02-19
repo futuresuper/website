@@ -21,7 +21,7 @@ $transition-section-hover: opacity 250ms ease-in-out;
   > h2,
   > h3 {
     font-size: $font-size-xl;
-    vertical-align: baseline; // TODO: have these align on $breakpoint-md  and larger
+    vertical-align: baseline;
   }
 
   h3.month-only {

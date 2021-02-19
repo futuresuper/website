@@ -11,25 +11,13 @@ $breakpoint-lg: 80rem; // 1280px
 $space-section-y-sm: 6rem;
 $space-section-y-md: 9rem;
 $space-section-y-lg: 12rem;
-$space-section-y-dynamic: $space-section-y-sm;
 
 $space-page-padding-x-sm: 1rem;
 $space-page-padding-x-md: 2rem;
 $space-page-padding-x-lg: 3rem;
-$space-page-padding-x-dynamic: $space-page-padding-x-sm;
 
 $grid-gap-md: 2rem;
 $grid-gap-lg: 3rem;
-
-// TODO: Have Sass variables update depending on breakpoint
-// @media (min-width: $breakpoint-md) {
-//   $space-page-padding-x-dynamic: $space-page-padding-x-md !global;
-//   $space-section-y-dynamic: $space-section-y-md !global;
-// }
-// @media (min-width: $breakpoint-lg) {
-//   $space-page-padding-x-dynamic: $space-page-padding-x-lg !global;
-//   $space-section-y-dynamic: $space-section-y-lg !global;
-// }
 
 // Often-referened layout styles
 $border-style-colour: $grey-200;
@@ -127,7 +115,7 @@ body {
 
 main > article.container {
   // Add padding to containers when used for page articles
-  padding-bottom: $space-section-y-dynamic;
+  padding-bottom: $space-section-y-sm;
 }
 
 .grid {
@@ -220,8 +208,8 @@ table {
 }
 
 .callout {
-  margin-top: $space-section-y-dynamic;
-  margin-bottom: $space-section-y-dynamic;
+  margin-top: $space-section-y-sm;
+  margin-bottom: $space-section-y-sm;
   background-color: $off-white-300;
   padding: 6rem 3rem;
   display: flex;

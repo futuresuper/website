@@ -131,7 +131,7 @@
   max-width: $breakpoint-lg;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: $space-section-y-dynamic;
+  margin-bottom: $space-section-y-sm;
   padding: 0 $space-page-padding-x-sm;
 
   @media (min-width: $breakpoint-md) {
@@ -142,7 +142,7 @@
     display: none;
     @media (min-width: $breakpoint-sm) {
       display: block;
-      margin-top: -$space-section-y-dynamic;
+      margin-top: -$space-section-y-sm;
     }
   }
 
@@ -374,8 +374,8 @@
 }
 
 .table-disclaimers {
-  margin-top: -($space-section-y-dynamic / 2);
-  margin-bottom: $space-section-y-dynamic;
+  margin-top: -($space-section-y-sm / 2);
+  margin-bottom: $space-section-y-sm;
   @extend %set-grid-rythmn-text-b;
 
   > * {
