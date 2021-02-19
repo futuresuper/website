@@ -1,0 +1,27 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+
+  <article class="container">
+
+    <div id="success" style="display: none">
+      <h2>Unsubscribe successful</h2>
+      <p>We will no longer send emails to
+        <span id="your-email">your email address</span></p>
+    </div>
+
+    <div id="unsubscribe-form" style="display: none">
+      <form method="GET">
+        <p>
+          <label>Email:
+            <input type="email" id="email" name="email"/></label>
+        </p>
+        <p>
+          <button type="submit" class="primary">Unsubscribe</button>
+        </p>
+      </form>
+    </div>
+
+  </article>
+
+{% endblock %}

@@ -81,3 +81,18 @@ collections:
           hint: "One paragraph, no longer than about 4 lines",
         }
       - { label: "Role Description", name: "body", widget: "markdown" }
+  - name: "pages"
+    label: "Pages"
+    folder: "src"
+    create: false
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Subtitle", name: "summary", widget: "string" }
+      - {
+          label: "Description",
+          name: "description",
+          widget: "text",
+          hint: "One paragraph, no longer than about 4 lines",
+        }
+      - { label: "Body", name: "body", widget: "markdown" }
