@@ -939,32 +939,101 @@ input.search {
   left: calc(100% - 2.5rem);
 }
 
+.dithered-img {
+  image-rendering: -webkit-optimize-contrast;
+  /* Webkit (non-standard naming)*/
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  image-rendering: -moz-crisp-edges;
+  /* Firefox */
+  image-rendering: -o-crisp-edges;
+  /* Opera */
+}
+
+.flow-content {
+  background-color: #ddffe7 !important;
+  position: relative;
+}
+
+.dithered-img-container,
+.article-content {
+  position: relative;
+}
+
+.poster {
+  text-align: center;
+  word-spacing: 100vw;
+  margin: 0 auto 4rem;
+  width: max-content;
+  width: clamp(16rem, 62vw, 21rem);
+  height: clamp(18rem, 48vh, 30rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 @media (min-width: 48rem) {
-  .grid > * {
-    grid-column: span 6;
+  .poster {
+    width: clamp(16rem, 64vw, 24rem);
+    height: clamp(18rem, 54vh, 40rem);
+  }
+}
+.poster h1,
+.poster h2 {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.dithered-img {
+  position: absolute;
+}
+
+h1,
+h2,
+h3,
+h4,
+article header .button,
+.tidbit .button {
+  font-weight: normal;
+}
+
+.poster h1,
+.poster h2 {
+  margin-bottom: 0;
+  line-height: 100%;
+  text-transform: uppercase;
+  font-size: clamp(3rem, 5vh, 5rem);
+}
+@media (min-width: 48rem) {
+  .poster h1,
+.poster h2 {
+    font-size: clamp(3rem, 9vh, 5rem);
   }
 }
 
-.form-container {
-  display: flex;
-  justify-content: center;
+article header {
+  margin-top: -5rem;
+  padding-top: 3rem;
+  padding-bottom: 6vh;
 }
-.form-container form {
-  padding: 2rem;
-  background-color: #f5f5f4;
-  max-width: 36rem;
+article header .poster {
+  background-color: #ddffe7;
+  width: clamp(16rem, 62vw, 28rem);
+  height: clamp(22rem, 48vh, 50vh);
 }
-.form-container form input {
-  margin-top: 0.25rem;
-  margin-bottom: 1.5rem;
-  display: block;
-  width: 100%;
-  padding: 0.5rem;
+@media (min-width: 48rem) {
+  article header .poster {
+    width: clamp(28rem, 40vw, 28rem);
+    height: clamp(10rem, 56vh, 60rem);
+  }
 }
-.form-container form input[type=radio] {
-  display: inline-block;
-  width: auto;
-  margin-bottom: 0.5rem;
+article header .poster h1 {
+  margin-bottom: 0;
 }
 
-/*# sourceMappingURL=babybump.css.map */
+body > .flow-content {
+  overflow: hidden;
+}
+body > .flow-content > footer {
+  background: #ffffff;
+}
+
+/*# sourceMappingURL=dither-page-style.css.map */

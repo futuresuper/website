@@ -357,7 +357,7 @@ body.site-header-menu-active.site-header-aoc-active {
   max-width: 48rem;
 }
 .container .article-content > section > p:not(.disclaimer),
-.container .article-content > p:not(.disclaimer),
+.container .article-content > p:not(.disclaimer):not(.heading-two),
 .container .article-content > ul,
 .container .article-content > ol {
   font-size: 1.125rem;

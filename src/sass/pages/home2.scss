@@ -1,154 +1,5 @@
 @use "../base" as *;
-
-$img-width: 20rem;
-$img-height: $img-width;
-
-// Create reusable extend for often-used crispy background
-%background-crisp {
-  image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming)*/
-  image-rendering: pixelated;
-  image-rendering: crisp-edges;
-  image-rendering: -moz-crisp-edges; /* Firefox */
-  image-rendering: -o-crisp-edges; /* Opera */
-}
-
-// Create mixin for the repetitive image styles
-@mixin still($file-name, $background-color, $pos-y-type, $pos-y, $pos-y-md, $pos-x-type, $pos-x, $pos-x-md-type, $pos-x-md) {
-  width: $img-width;
-  height: $img-height;
-  @if $pos-y-type == "top" {
-    top: $pos-y;
-  }
-  @if $pos-y-type == "bottom" {
-    bottom: $pos-y;
-  }
-  @if $pos-x-type == "left" {
-    left: $pos-x;
-  }
-  @if $pos-x-type == "right" {
-    right: $pos-x;
-  }
-  @media (min-width: $breakpoint-md) {
-    width: $img-width * 1.5;
-    height: $img-height * 1.5;
-    @if $pos-y-type == "top" {
-      top: $pos-y-md;
-      bottom: auto;
-    }
-    @if $pos-y-type == "bottom" {
-      top: auto;
-      bottom: $pos-y-md;
-    }
-    @if $pos-x-md-type == "left" {
-      left: $pos-x-md;
-      right: auto;
-    }
-    @if $pos-x-md-type == "right" {
-      left: auto;
-      right: $pos-x-md;
-    }
-  }
-  background-color: $background-color;
-
-  // Begin still-specific styles that will be overridden when used within @sprite
-  background-image: url("/images/dithered/#{$file-name}-320h.png");
-  background-size: $img-height $img-height;
-  @media (min-width: $breakpoint-md) {
-    background-image: url("/images/dithered/#{$file-name}-480h.png");
-    background-size: $img-width * 1.5 $img-height * 1.5;
-  }
-}
-
-// Create additional mixin for those images that also animate
-@mixin sprite($file-name, $file-width, $background-color, $pos-y-type, $pos-y, $pos-y-md, $pos-x-type, $pos-x, $pos-x-md-type, $pos-x-md, $animation-duration, $animation-steps) {
-  @include still($file-name, $background-color, $pos-y-type, $pos-y, $pos-y-md, $pos-x-type, $pos-x, $pos-x-md-type, $pos-x-md);
-
-  // Begin mixin content specific for sprites, not still images
-  // Append sprite to file name
-  background-image: url("/images/dithered/#{$file-name}-sprite-320h.png");
-  // $img-width is preferably pixel width / 16 for rems
-  // E.g. "100rem"
-  background-size: $file-width $img-height;
-  animation: #{$file-name}MoveX $animation-duration steps($animation-steps) infinite;
-  @media (min-width: $breakpoint-md) {
-    background-image: url("/images/dithered/#{$file-name}-sprite-480h.png");
-    background-size: $file-width * 1.5 $img-height * 1.5;
-    animation: #{$file-name}MoveXMd $animation-duration steps($animation-steps) infinite;
-  }
-
-  @keyframes #{$file-name}MoveX {
-    from {
-      background-position-x: 0;
-    }
-    to {
-      background-position-x: -$file-width;
-    }
-  }
-  @keyframes #{$file-name}MoveXMd {
-    from {
-      background-position-x: 0;
-    }
-    to {
-      background-position-x: -($file-width * 1.5);
-    }
-  }
-}
-
-// Override body background
-.flow-content {
-  background-color: $mint-300 !important; //TODO: fix cascading issues causing more specific styles to be overriden by generic ones
-}
-
-// Override site header margins
-article header .button,
-.tidbit .button {
-  font-size: $font-size-xl;
-  padding: $space-button-padding-y-md 0;
-  width: 100%;
-  @media (min-width: $breakpoint-sm) {
-    width: inherit;
-    padding: 1rem 10rem;
-  }
-}
-
-article header,
-.tidbit h2 {
-  text-align: center;
-}
-
-// Override default bolded text
-article header h1,
-.tidbit h2,
-article header .button,
-.tidbit .button {
-  font-weight: normal;
-}
-
-article header h1,
-.tidbit .poster h2 {
-  margin-bottom: 0;
-  line-height: 100%;
-  text-transform: uppercase;
-  font-size: clamp($font-size-48, 5vh, 5rem);
-  @media (min-width: $breakpoint-md) {
-    font-size: clamp($font-size-48, 9vh, 5rem);
-  }
-}
-
-.poster {
-  word-spacing: 100vw;
-  margin: 0 auto 4rem;
-  width: max-content;
-  width: clamp(16rem, 62vw, 21rem);
-  height: clamp(18rem, 48vh, 30rem);
-  @media (min-width: $breakpoint-md) {
-    width: clamp(16rem, 64vw, 24rem);
-    height: clamp(18rem, 54vh, 40rem);
-  }
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+@use "dither-page-style" as *;
 
 article header {
   margin-top: -5rem;
@@ -156,17 +7,19 @@ article header {
   padding-bottom: 6vh;
 
   background-color: $mint-300;
-  background-image: url("/images/dithered/smoke-stack-hero.png");
+  background-image: url("/images/filled/smoke-stack.png");
   @extend %background-crisp;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top -16rem center;
 
+  text-align: center;
+
   @media (min-width: $breakpoint-md) {
     margin-top: 0;
     padding-top: 0;
 
-    background-image: url(/images/dithered/smoke-stack-hero.png), url(/images/dithered/smoke-stack-hero.png);
+    background-image: url(/images/filled/smoke-stack.png), url(/images/filled/smoke-stack.png);
     background-size: 32vh;
     background-position: top -4rem left 25%, top 8rem right 25%;
   }
@@ -182,7 +35,6 @@ article header {
 
     h1 {
       color: $mint-500;
-      margin-bottom: 0;
     }
   }
 
@@ -202,28 +54,22 @@ article header {
   }
 }
 
-.dithered-img {
-  position: absolute;
-  @extend %background-crisp;
+// Override site header margins
+article header .button,
+.tidbit .button {
+  font-size: $font-size-xl;
+  padding: $space-button-padding-y-md 0;
+  width: 100%;
+  @media (min-width: $breakpoint-sm) {
+    width: inherit;
+    padding: 1rem 10rem;
+  }
 }
 
 .tidbit {
   padding-top: 5rem;
   padding-bottom: 4rem;
   background-repeat: no-repeat;
-  // Allow for inline child images to be positioned absolutely
-  position: relative;
-
-  .poster {
-    h2 {
-      color: rgba(255, 255, 255, 0.9);
-    }
-  }
-
-  .article-content {
-    // Ensure text stays above any parallax elements
-    position: relative;
-  }
 
   p:not(.disclaimer) {
     text-indent: 1.75rem;
@@ -260,7 +106,7 @@ article header {
   }
 
   // Begin section-specific styling
-  &.give-fossil-fuels-the-flick {
+  &#give-fossil-fuels-the-flick {
     background-color: $fraise-300;
     .coal {
       @include sprite("coal", 100rem, $mango-300, "top", -2rem, -2rem, "right", -2rem, "right", 40%, 5000ms, 5);
@@ -287,7 +133,7 @@ article header {
     }
   }
 
-  &.your-money-talks {
+  &#your-money-talks {
     background-color: $mango-300;
     .coin {
       @include sprite("coin", 340rem, $black-500, "top", -2vh, 4vh, "right", -5rem, "left", 52%, 2000ms, 17);
@@ -322,7 +168,8 @@ article header {
       grid-column: 4/13;
     }
   }
-  &.join-in-a-few-taps {
+
+  &#join-in-a-few-taps {
     background-color: $mint-300;
     .wind {
       @include still("wind", $mango-300, "top", 2rem, 10vh, "left", -5rem, "right", 50%);
@@ -346,8 +193,6 @@ article header {
 
 .product-review-carousel {
   padding: 8rem 0;
-  // Allow for inline child images, footer text, to be positioned absolutely
-  position: relative;
   color: $black-900;
   background-color: $fig-300;
   .coal {
@@ -370,7 +215,7 @@ article header {
       .star {
         width: 42px;
         height: 38px;
-        background-image: url("/images/dithered/starburst-sprite.png");
+        background-image: url("/images/cutouts/starburst-sprite.png");
         @extend %background-crisp;
         animation: moveStarX 1000ms steps(7) infinite;
         &:nth-of-type(2) {
@@ -456,16 +301,5 @@ article header {
         }
       }
     }
-  }
-}
-
-body > .flow-content {
-  // Stop absolutely-positioned images from causing overflow-x
-  // Set specifically overflow instead as overflow-x causes multiple scrollbars
-  overflow: hidden;
-
-  // Override default footer styling, just on homepage
-  > footer {
-    background: $white-500;
   }
 }

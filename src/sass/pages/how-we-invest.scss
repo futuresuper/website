@@ -4,70 +4,244 @@
 // the "as *" is so that we can reference colours etc, without the
 // namespace (ie '$grey-100' instead of 'base.$grey100')
 @use "../base" as *;
+@use "dither-page-style" as *;
 
+%poster-height-auto {
+  height: auto;
+  padding: 3rem 0;
+}
 $marquee-height: 5rem;
 
-.marquee {
-  overflow: hidden;
-  position: relative;
-  height: $marquee-height;
+h2,
+h3,
+.heading-two,
+article header p {
+  font-size: $font-size-xl;
+  line-height: $line-height-xs;
 
-  &.seek {
-    background-color: $mint-300;
-    border-top: 1px solid $mint-500;
-    border-bottom: 1px solid $mint-500;
-    ul {
-      animation: marquee 14s linear infinite;
-      li {
-        color: $mint-500;
-      }
+  @media (min-width: $breakpoint-md) {
+    font-size: $font-size-40;
+  }
+}
+
+h2,
+h3 {
+  color: $mint-500;
+}
+
+p:not(.disclaimer) {
+  text-indent: 1.75rem;
+}
+
+article header {
+  .earth {
+    @include still("earth", $blueberry-300, "top", 6rem, 18vh, "right", -20%, "left", 46%);
+  }
+  .flower {
+    @include sprite("flower", 100rem, $fig-300, "top", 34vh, 50vh, "left", -6rem, "right", 49%, 2000ms, 5);
+  }
+
+  .poster {
+    background-color: $mint-500;
+    @extend %poster-height-auto;
+
+    margin-top: 6rem;
+    margin-bottom: 9rem;
+    @media (min-width: $breakpoint-md) {
+      margin-top: 22vh;
+      margin-bottom: 30vh;
     }
   }
-  &.exclude {
-    background-color: $fraise-300;
-    border-top: 1px solid $fraise-500;
-    border-bottom: 1px solid $fraise-500;
-    ul {
-      animation: marquee 32s linear infinite;
-      li {
-        color: $fraise-500;
-        text-decoration: line-through;
-      }
-    }
+
+  p {
+    color: $mint-500;
   }
+}
 
-  ul {
-    position: absolute;
-    list-style-type: none;
-    margin: 0;
-    height: $marquee-height;
-    display: flex;
-    align-items: center;
-    white-space: nowrap;
+// Set general background colours
+.container.exclude {
+  background-color: $fraise-300;
+}
 
-    &:hover {
-      animation-play-state: paused;
-    }
+// Style specific sections
+#mission,
+#our-theory-of-change {
+  p {
+    font-size: $font-size-xl;
+    line-height: $line-height-xs;
 
-    li {
-      text-transform: uppercase;
+    @media (min-width: $breakpoint-md) {
       font-size: $font-size-40;
-      margin-right: 5rem;
-    }
-  }
-
-  @keyframes marquee {
-    0% {
-      transform: translateX(25%);
-    }
-    100% {
-      transform: translateX(-100%);
+      text-indent: 3.5rem;
     }
   }
 }
 
-// Being old styles
+#our-theory-of-change {
+  position: relative;
 
+  .coal {
+    @include sprite("coal", 100rem, $blueberry-300, "top", -2rem, -2rem, "left", -5rem, "right", 50%, 5000ms, 5);
+  }
+  .barrel {
+    @include sprite("barrel", 320rem, $mango-300, "top", 25vh, 34vh, "right", -5rem, "left", 50%, 2000ms, 16);
+  }
+
+  .poster {
+    background-color: $mint-500;
+    @extend %poster-height-auto;
+  }
+
+  // Override colour styling for 'exclude' header
+  h3:last-of-type {
+    color: $fraise-500;
+  }
+
+  .overflow-content {
+    overflow: visible;
+
+    .marquee-container {
+      height: 56vh;
+      @extend %background-crisp;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      @media (min-width: $breakpoint-md) {
+        background-size: 20rem;
+      }
+      &.seek {
+        background-image: url("/images/mixed/wind.jpg");
+      }
+      &.exclude {
+        background-image: url("/images/mixed/bulldozer.jpg");
+      }
+
+      .marquee {
+        top: calc(56vh / 2);
+        left: -$space-page-padding-x-sm;
+        @media (min-width: $breakpoint-md) {
+          left: -$space-page-padding-x-md;
+        }
+        @media (min-width: $breakpoint-lg) {
+          left: calc(-1 * 24vw);
+          // $space-page-padding-x-lg
+        }
+        overflow: hidden;
+        position: relative;
+        width: 100vw;
+
+        height: $marquee-height;
+
+        &.seek {
+          background-color: $mint-300;
+          border-top: 1px solid $mint-500;
+          border-bottom: 1px solid $mint-500;
+          ul {
+            animation: marquee 14s linear infinite;
+            li {
+              color: $mint-500;
+            }
+          }
+        }
+        &.exclude {
+          background-color: $fraise-300;
+          border-top: 1px solid $fraise-500;
+          border-bottom: 1px solid $fraise-500;
+          ul {
+            animation: marquee 32s linear infinite;
+            li {
+              color: $fraise-500;
+              text-decoration: line-through;
+            }
+          }
+        }
+
+        ul {
+          position: absolute;
+          list-style-type: none;
+          margin: 0;
+          height: $marquee-height;
+          display: flex;
+          align-items: center;
+          white-space: nowrap;
+
+          &:hover {
+            animation-play-state: paused;
+          }
+
+          li {
+            text-transform: uppercase;
+            font-size: $font-size-40;
+            margin-right: 5rem;
+          }
+        }
+
+        @keyframes marquee {
+          0% {
+            transform: translateX(25%);
+          }
+          100% {
+            transform: translateX(-100%);
+          }
+        }
+      }
+    }
+  }
+}
+
+#rules-for-impact-investing {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+
+  background-image: url("/images/filled/solar.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  .poster {
+    background-color: $mint-500;
+    @extend %poster-height-auto;
+  }
+
+  .rules-carousel {
+    font-family: $font-stack-monospace;
+    font-weight: 500;
+    letter-spacing: -1%;
+
+    .glide__slide {
+      padding: 2rem;
+      background-color: $mint-300;
+    }
+  }
+}
+
+#how-we-exclude-investments {
+  padding-top: 10rem;
+
+  .coal {
+    @include sprite("coal", 100rem, $mango-300, "top", -2rem, -2rem, "right", -2rem, "right", 40%, 5000ms, 5);
+  }
+  .smoke-stack {
+    @include still("smoke-stack", $fig-300, "top", 40vh, 30vh, "left", -4em, "right", 52%);
+  }
+
+  .poster {
+    background-color: $fraise-500;
+    @extend %poster-height-auto;
+    hyphens: auto;
+    margin-bottom: 24vh;
+
+    // margin-top: 6rem;
+    // margin-bottom: 9rem;
+    // @media (min-width: $breakpoint-md) {
+    //   margin-top: 22vh;
+    //   margin-bottom: 30vh;
+    // }
+  }
+}
+
+//
+// Being old styles
 .screens-container {
   background-color: $white-500;
   max-width: $breakpoint-sm;

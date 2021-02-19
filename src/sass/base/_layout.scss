@@ -95,7 +95,7 @@ body {
 
     // Set larger font-size for p, li, etc
     > section > p:not(.disclaimer),
-    > p:not(.disclaimer),
+    > p:not(.disclaimer):not(.heading-two),
     > ul,
     > ol {
       font-size: $font-size-lg;
