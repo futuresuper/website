@@ -53,7 +53,7 @@ details {
 
     h3 {
       font-size: $font-size-lg;
-      margin: 0 0 0.5rem 0 !important; //TODO: why are rules in type.scss overriding this?
+      margin: 0 0 0.5rem 0 !important; //TODO: fix cascading issues causing more specific styles to be overriden by generic ones
       line-height: 100%;
     }
 
@@ -78,7 +78,7 @@ details {
 }
 
 .doc-or-form-item {
-  margin-bottom: 1rem !important; //TODO: why are rules in reset.scss overriding this?
+  margin-bottom: 1rem !important; //TODO: fix cascading issues causing more specific styles to be overriden by generic ones
   li {
     display: flex;
     padding: 1.5rem;

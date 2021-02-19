@@ -1,7 +1,7 @@
 @use "../base" as *;
 
 header[role="heading"] {
-  margin-bottom: $space-section-y-dynamic;
+  margin-bottom: $space-section-y-sm;
   text-align: center;
 
   .page-header-summary {

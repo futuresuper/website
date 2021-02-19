@@ -96,7 +96,7 @@ $img-height: $img-width;
 
 // Override body background
 .flow-content {
-  background-color: $mint-300 !important; // TODO fix @use or whatever else is blocking this for cascading properly
+  background-color: $mint-300 !important; //TODO: fix cascading issues causing more specific styles to be overriden by generic ones
 }
 
 // Override site header margins
@@ -227,8 +227,8 @@ article header {
 
   p:not(.disclaimer) {
     text-indent: 1.75rem;
-    font-size: $font-size-xl !important; // TODO: reorder CSS cascade so we don't need to use !important
-    line-height: $line-height-xs !important; // TODO: reorder CSS cascade so we don't need to use !important
+    font-size: $font-size-xl !important; //TODO: fix cascading issues causing more specific styles to be overriden by generic ones
+    line-height: $line-height-xs !important; //TODO: fix cascading issues causing more specific styles to be overriden by generic ones
 
     @media (min-width: $breakpoint-md) {
       font-size: $font-size-40 !important;

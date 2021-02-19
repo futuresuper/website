@@ -1,8 +1,8 @@
 @use "../base" as *;
 
 .also-see {
-  margin-top: $space-section-y-dynamic;
-  margin-bottom: $space-section-y-dynamic;
+  margin-top: $space-section-y-sm;
+  margin-bottom: $space-section-y-sm;
 
   ul {
     li {

@@ -194,7 +194,7 @@ $marquee-height: 5rem;
   padding-top: 2rem;
 
   .screen-icon {
-    margin: 0 auto !important; // TODO: fix what causes layout.scss to override this
+    margin: 0 auto !important; //TODO: fix cascading issues causing more specific styles to be overriden by generic ones
     width: 4rem;
   }
 
