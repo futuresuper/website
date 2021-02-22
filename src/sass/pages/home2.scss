@@ -25,13 +25,6 @@ article header {
   }
   .poster {
     background-color: $mint-300;
-    width: clamp(16rem, 62vw, 28rem);
-    height: clamp(22rem, 48vh, 50vh);
-
-    @media (min-width: $breakpoint-md) {
-      width: clamp(28rem, 40vw, 28rem);
-      height: clamp(10rem, 56vh, 60rem);
-    }
 
     h1 {
       color: $mint-500;
@@ -51,18 +44,6 @@ article header {
     padding-right: 3rem;
     line-height: $line-height-125;
     background-color: $mint-300;
-  }
-}
-
-// Override site header margins
-article header .button,
-.tidbit .button {
-  font-size: $font-size-xl;
-  padding: $space-button-padding-y-md 0;
-  width: 100%;
-  @media (min-width: $breakpoint-sm) {
-    width: inherit;
-    padding: 1rem 10rem;
   }
 }
 
@@ -205,6 +186,7 @@ article header .button,
   }
 
   figure {
+    height: auto;
     padding: 2rem 2rem 6rem 2rem;
     background-color: $fig-300;
 

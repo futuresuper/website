@@ -4,7 +4,7 @@
 
 <article>
   <header class="dithered-img-container">
-    <div class="earth dithered-img"></div>
+    <div class="earth dithered-img rellax"></div>
     <div class="flower dithered-img rellax"></div>
     <div class="container">
       <div class="poster rellax" data-rellax-xs-speed="2" data-rellax-mobile-speed="3" data-rellax-tablet-speed="5"
@@ -36,15 +36,17 @@
       <p>Your money will invest for your financial benefit and for the quality of your future as you save for
         retirement.</p>
     </section>
+  </div>
 
+  <div class="container neutral">
     <section id="our-theory-of-change" class="dithered-img-container">
-      <div class="coal dithered-img"></div>
-      <div class="barrel dithered-img"></div>
+      <div class="coal dithered-img rellax"></div>
+      <div class="barrel dithered-img rellax"></div>
       <div class="poster rellax" data-rellax-xs-speed="2" data-rellax-mobile-speed="3" data-rellax-tablet-speed="5"
         data-rellax-desktop-speed="10">
         <h2>Our theory of change</h2>
       </div>
-      <div class="overflow-content article-content">
+      <div class="article-content">
         <h3 class="heading-two">We seek</h3>
         <p>Impactful investments creating a better future.</p>
         <div class="marquee-container seek">
@@ -90,13 +92,41 @@
         <h3>Choosing impact investments</h3>
         <p>Choosing impact investments isn’t a cut-and-dry process. Each opportunity is unique and so we focus on the
           impact objective, or the ability to make a difference. Although that can be anything, there are some
-          categories
-          we keep a close eye on.</p>
+          categories we keep a close eye on.</p>
+
+        <div class="marquee-container">
+          <div class="marquee seek">
+            <ul>
+              <li>Clean energy transition</li>
+              <li>Clean energy transition</li>
+            </ul>
+          </div>
+        </div>
+
         <p>Many of Future Super’s impact investments involve the creation of new clean energy, while others create the
-          infrastructure for a more equal future, like the building of disability housing. </p>
+          infrastructure for a more equal future, like the building of disability housing.</p>
+
+        <div class="marquee-container">
+          <div class="marquee seek">
+            <ul>
+              <li>Waste management</li>
+              <li>Waste management</li>
+            </ul>
+          </div>
+        </div>
+
         <p>The point of these investments is to create tangible systems change that may not happen without our
           investment, wherever the opportunity may be.</p>
         <p>We have a framework to help identify these opportunities.</p>
+
+        <div class="marquee-container">
+          <div class="marquee seek">
+            <ul>
+              <li>Speciality housing</li>
+              <li>Speciality housing</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
   </div>
@@ -105,7 +135,7 @@
     <div class="container">
       <div class="poster rellax" data-rellax-xs-speed="2" data-rellax-mobile-speed="3" data-rellax-tablet-speed="5"
         data-rellax-desktop-speed="10">
-        <h2>Rules for impact investing</h2>
+        <h2>Rules for impact invest&shy;ing</h2>
       </div>
     </div>
 
@@ -114,7 +144,7 @@
         <div class="glide__slides">
           {% for item in impactInvestingRules %}
           <figure class="glide__slide">
-            <h3>{{ loop.index }} / {{ loop.length }}</h3>
+            <h3>{{ loop.index }} of {{ loop.length }}</h3>
             <p>{{ item }}</p>
           </figure>
           {% endfor %}
@@ -126,10 +156,10 @@
   <div class="container exclude">
     <section id="how-we-exclude-investments" class="dithered-img-container">
       <div class="coal dithered-img rellax"></div>
-      <div class="smoke-stack dithered-img"></div>
+      <div class="smoke-stack dithered-img rellax"></div>
       <div class="poster rellax" data-rellax-xs-speed="2" data-rellax-mobile-speed="3" data-rellax-tablet-speed="5"
         data-rellax-desktop-speed="10">
-        <h1>How we exclude investments</h1>
+        <h1>How we exclude invest&shy;ments</h1>
       </div>
       <div class="article-content">
         <p>We have industry-leading ethical screens to help exclude harm from your super. Investments must pass every
@@ -167,9 +197,16 @@
         </div>
       </div>
     </section>
+  </div>
 
-    <section class="callout container">
-      <h2>Everything we invest in</h2>
+  <div class="container">
+    <section id="everything-we-invest-in" class="dithered-img-container">
+      <div class="coal dithered-img rellax"></div>
+      <div class="barrel dithered-img rellax"></div>
+      <div class="poster rellax" data-rellax-xs-speed="2" data-rellax-mobile-speed="3" data-rellax-tablet-speed="5"
+        data-rellax-desktop-speed="10">
+        <h2>Every&shy;thing we invest in</h2>
+      </div>
       <p>There are plenty of regular investments that pass our above screens. Some are companies you’d recognise, like
         Netflix and Telstra.
       </p>
@@ -178,14 +215,12 @@
       <a href="/everything-we-invest-in" class="button primary">Explore Our Investments</a>
     </section>
 
-    <section class="article-content">
+    <section id="our-voting-record" class="article-content">
       <h2>Our voting record</h2>
       <p>Investing in companies gives Future Super the right to vote on their internal matters and policies. We do this
-        on
-        behalf of our members as a collective, with their values and financial futures in mind. Future Super keeps a
+        on behalf of our members as a collective, with their values and financial futures in mind. Future Super keeps a
         transparent record of our voting so you can see how we represent you on issues of climate, equality and
-        corporate
-        governance.</p>
+        corporate governance.</p>
 
       <ul class="plain doc-or-form-item">
         {% for item in collections.documentsAndForms %}
@@ -200,9 +235,10 @@
   </div>
 </article>
 
-{% include "partials/join-cta.html" %}
-
-{% include "partials/also-see.html" %}
+<div class="neutral">
+  {% include "partials/join-cta.html" %}
+  {% include "partials/also-see.html" %}
+</div>
 
 <script>
   function showScreen(screen) {

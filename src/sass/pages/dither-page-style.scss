@@ -114,6 +114,18 @@ $colour-poster-text: rgba(255, 255, 255, 0.9);
   position: relative;
 }
 
+// Override site header margins
+article header .button,
+.tidbit .button {
+  font-size: $font-size-xl;
+  padding: $space-button-padding-y-md 0;
+  width: 100%;
+  @media (min-width: $breakpoint-sm) {
+    width: inherit;
+    padding: 1rem 10rem;
+  }
+}
+
 .poster {
   text-align: center;
   word-spacing: 100vw;
@@ -162,12 +174,7 @@ article header .button,
 }
 
 article header {
-  margin-top: -5rem;
-  padding-top: 3rem;
-  padding-bottom: 6vh;
-
   .poster {
-    background-color: $mint-300;
     width: clamp(16rem, 62vw, 28rem);
     height: clamp(22rem, 48vh, 50vh);
 

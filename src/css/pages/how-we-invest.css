@@ -940,7 +940,7 @@ input.search {
   left: calc(100% - 2.5rem);
 }
 
-#our-theory-of-change .overflow-content .marquee-container, .dithered-img {
+.marquee-container, .dithered-img {
   image-rendering: -webkit-optimize-contrast;
   /* Webkit (non-standard naming)*/
   image-rendering: pixelated;
@@ -959,6 +959,20 @@ input.search {
 .dithered-img-container,
 .article-content {
   position: relative;
+}
+
+article header .button,
+.tidbit .button {
+  font-size: 1.75rem;
+  padding: 1rem 0;
+  width: 100%;
+}
+@media (min-width: 40rem) {
+  article header .button,
+.tidbit .button {
+    width: inherit;
+    padding: 1rem 10rem;
+  }
 }
 
 .poster {
@@ -1010,13 +1024,7 @@ article header .button,
   }
 }
 
-article header {
-  margin-top: -5rem;
-  padding-top: 3rem;
-  padding-bottom: 6vh;
-}
 article header .poster {
-  background-color: #ddffe7;
   width: clamp(16rem, 62vw, 28rem);
   height: clamp(22rem, 48vh, 50vh);
 }
@@ -1037,9 +1045,18 @@ body > .flow-content > footer {
   background: #ffffff;
 }
 
-#how-we-exclude-investments .poster, #rules-for-impact-investing .poster, #our-theory-of-change .poster, article header .poster {
+#everything-we-invest-in .poster, #how-we-exclude-investments .poster, #rules-for-impact-investing .poster, #our-theory-of-change .poster, article header .poster {
   height: auto;
   padding: 3rem 0;
+}
+
+.marquee-container .marquee ul, .marquee-container .marquee {
+  height: 4rem;
+}
+@media (min-width: 48rem) {
+  .marquee-container .marquee ul, .marquee-container .marquee {
+    height: 5rem;
+  }
 }
 
 h2,
@@ -1063,10 +1080,122 @@ h3 {
   color: #2bb151;
 }
 
+h3 {
+  margin-top: 3.5rem;
+  margin-bottom: 0.5rem;
+}
+
 p:not(.disclaimer) {
   text-indent: 1.75rem;
 }
 
+.exclude {
+  background-color: #ffe6e1;
+}
+
+.neutral {
+  background-color: #f5f0f0;
+}
+
+.marquee-container {
+  margin: 2.5rem auto;
+  height: 56vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (min-width: 48rem) {
+  .marquee-container {
+    background-size: 20rem;
+  }
+}
+.marquee-container.seek {
+  background-color: #2bb151;
+  background-image: url("/images/mixed/wind.jpg");
+}
+.marquee-container.exclude {
+  background-color: #f04b23;
+  background-image: url("/images/mixed/bulldozer.jpg");
+}
+.marquee-container .marquee {
+  top: calc(50% - 2rem);
+  left: -1rem;
+  overflow: hidden;
+  position: relative;
+  width: 100vw;
+}
+@media (min-width: 48rem) {
+  .marquee-container .marquee {
+    top: calc(50% - 2.5rem);
+    left: -2rem;
+  }
+}
+@media (min-width: 80rem) {
+  .marquee-container .marquee {
+    left: calc(-1 * 24vw);
+  }
+}
+.marquee-container .marquee.seek {
+  background-color: #ddffe7;
+  border-top: 1px solid #2bb151;
+  border-bottom: 1px solid #2bb151;
+}
+.marquee-container .marquee.seek ul {
+  animation: marquee 14s linear infinite;
+}
+.marquee-container .marquee.seek ul li {
+  color: #2bb151;
+}
+.marquee-container .marquee.seek ul li::after {
+  content: " ▲";
+}
+.marquee-container .marquee.exclude {
+  background-color: #ffe6e1;
+  border-top: 1px solid #f04b23;
+  border-bottom: 1px solid #f04b23;
+}
+.marquee-container .marquee.exclude ul {
+  animation: marquee 32s linear infinite;
+}
+.marquee-container .marquee.exclude ul li {
+  color: #f04b23;
+  text-decoration: line-through;
+}
+.marquee-container .marquee.exclude ul li::after {
+  content: " ▼";
+}
+.marquee-container .marquee ul {
+  position: absolute;
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+.marquee-container .marquee ul li {
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-right: 5rem;
+}
+@media (min-width: 48rem) {
+  .marquee-container .marquee ul li {
+    font-size: 2.5rem;
+  }
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(25%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+article header {
+  margin-top: -8rem;
+  padding-top: 3rem;
+  padding-bottom: 6rem;
+}
 article header .earth {
   width: 20rem;
   height: 20rem;
@@ -1158,10 +1287,6 @@ article header p {
   color: #2bb151;
 }
 
-.container.exclude {
-  background-color: #ffe6e1;
-}
-
 #mission p,
 #our-theory-of-change p {
   font-size: 1.75rem;
@@ -1175,7 +1300,12 @@ article header p {
   }
 }
 
+#mission {
+  margin-bottom: 6rem;
+}
+
 #our-theory-of-change {
+  padding-top: 5rem;
   position: relative;
 }
 #our-theory-of-change .coal {
@@ -1282,100 +1412,15 @@ article header p {
 }
 #our-theory-of-change .poster {
   background-color: #2bb151;
+  margin-bottom: 20vh;
 }
 #our-theory-of-change h3:last-of-type {
   color: #f04b23;
 }
-#our-theory-of-change .overflow-content {
-  overflow: visible;
-}
-#our-theory-of-change .overflow-content .marquee-container {
-  height: 56vh;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-@media (min-width: 48rem) {
-  #our-theory-of-change .overflow-content .marquee-container {
-    background-size: 20rem;
-  }
-}
-#our-theory-of-change .overflow-content .marquee-container.seek {
-  background-image: url("/images/mixed/wind.jpg");
-}
-#our-theory-of-change .overflow-content .marquee-container.exclude {
-  background-image: url("/images/mixed/bulldozer.jpg");
-}
-#our-theory-of-change .overflow-content .marquee-container .marquee {
-  top: calc(56vh / 2);
-  left: -1rem;
-  overflow: hidden;
-  position: relative;
-  width: 100vw;
-  height: 5rem;
-}
-@media (min-width: 48rem) {
-  #our-theory-of-change .overflow-content .marquee-container .marquee {
-    left: -2rem;
-  }
-}
-@media (min-width: 80rem) {
-  #our-theory-of-change .overflow-content .marquee-container .marquee {
-    left: calc(-1 * 24vw);
-  }
-}
-#our-theory-of-change .overflow-content .marquee-container .marquee.seek {
-  background-color: #ddffe7;
-  border-top: 1px solid #2bb151;
-  border-bottom: 1px solid #2bb151;
-}
-#our-theory-of-change .overflow-content .marquee-container .marquee.seek ul {
-  animation: marquee 14s linear infinite;
-}
-#our-theory-of-change .overflow-content .marquee-container .marquee.seek ul li {
-  color: #2bb151;
-}
-#our-theory-of-change .overflow-content .marquee-container .marquee.exclude {
-  background-color: #ffe6e1;
-  border-top: 1px solid #f04b23;
-  border-bottom: 1px solid #f04b23;
-}
-#our-theory-of-change .overflow-content .marquee-container .marquee.exclude ul {
-  animation: marquee 32s linear infinite;
-}
-#our-theory-of-change .overflow-content .marquee-container .marquee.exclude ul li {
-  color: #f04b23;
-  text-decoration: line-through;
-}
-#our-theory-of-change .overflow-content .marquee-container .marquee ul {
-  position: absolute;
-  list-style-type: none;
-  margin: 0;
-  height: 5rem;
-  display: flex;
-  align-items: center;
-  white-space: nowrap;
-}
-#our-theory-of-change .overflow-content .marquee-container .marquee ul:hover {
-  animation-play-state: paused;
-}
-#our-theory-of-change .overflow-content .marquee-container .marquee ul li {
-  text-transform: uppercase;
-  font-size: 2.5rem;
-  margin-right: 5rem;
-}
-@keyframes marquee {
-  0% {
-    transform: translateX(25%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
 
 #rules-for-impact-investing {
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
   background-image: url("/images/filled/solar.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -1383,15 +1428,47 @@ article header p {
 }
 #rules-for-impact-investing .poster {
   background-color: #2bb151;
+  margin-bottom: 0;
 }
 #rules-for-impact-investing .rules-carousel {
   font-family: "JetBrainsMono", monospace;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: -1%;
+  text-align: center;
 }
-#rules-for-impact-investing .rules-carousel .glide__slide {
-  padding: 2rem;
+#rules-for-impact-investing .rules-carousel figure {
+  padding: 0.5rem 2rem;
   background-color: #ddffe7;
+  height: auto;
+}
+#rules-for-impact-investing .rules-carousel figure h3 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+#impact-investing {
+  padding-bottom: 4rem;
+}
+#impact-investing .marquee-container {
+  height: 75vw;
+  background-size: 75vw;
+}
+@media (min-width: 48rem) {
+  #impact-investing .marquee-container {
+    background-size: 16rem;
+  }
+}
+#impact-investing .marquee-container:nth-of-type(1) {
+  background-image: url("/images/filled/solar.png");
+}
+#impact-investing .marquee-container:nth-of-type(2) {
+  background-image: url("/images/filled/speciality-housing.png");
+}
+#impact-investing .marquee-container:nth-of-type(3) {
+  background-image: url("/images/filled/waste-management.png");
+}
+#impact-investing .marquee-container .marquee {
+  background-color: #f5f0f0;
 }
 
 #how-we-exclude-investments {
@@ -1477,6 +1554,117 @@ article header p {
   background-color: #f04b23;
   hyphens: auto;
   margin-bottom: 24vh;
+}
+
+#everything-we-invest-in {
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+}
+#everything-we-invest-in .coal {
+  width: 20rem;
+  height: 20rem;
+  top: -2rem;
+  left: -5rem;
+  background-color: #d0e0ff;
+  background-image: url("/images/cutouts/coal-320h.png");
+  background-size: 20rem 20rem;
+  background-image: url("/images/cutouts/coal-sprite-320h.png");
+  background-size: 100rem 20rem;
+  animation: coalMoveX 5000ms steps(5) infinite;
+}
+@media (min-width: 48rem) {
+  #everything-we-invest-in .coal {
+    width: 30rem;
+    height: 30rem;
+    top: -2rem;
+    bottom: auto;
+    left: auto;
+    right: 50%;
+  }
+}
+@media (min-width: 48rem) {
+  #everything-we-invest-in .coal {
+    background-image: url("/images/cutouts/coal-480h.png");
+    background-size: 30rem 30rem;
+  }
+}
+@media (min-width: 48rem) {
+  #everything-we-invest-in .coal {
+    background-image: url("/images/cutouts/coal-sprite-480h.png");
+    background-size: 150rem 30rem;
+    animation: coalMoveXMd 5000ms steps(5) infinite;
+  }
+}
+@keyframes coalMoveX {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: -100rem;
+  }
+}
+@keyframes coalMoveXMd {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: -150rem;
+  }
+}
+#everything-we-invest-in .barrel {
+  width: 20rem;
+  height: 20rem;
+  top: 25vh;
+  right: -5rem;
+  background-color: #ffebb9;
+  background-image: url("/images/cutouts/barrel-320h.png");
+  background-size: 20rem 20rem;
+  background-image: url("/images/cutouts/barrel-sprite-320h.png");
+  background-size: 320rem 20rem;
+  animation: barrelMoveX 2000ms steps(16) infinite;
+}
+@media (min-width: 48rem) {
+  #everything-we-invest-in .barrel {
+    width: 30rem;
+    height: 30rem;
+    top: 34vh;
+    bottom: auto;
+    left: 50%;
+    right: auto;
+  }
+}
+@media (min-width: 48rem) {
+  #everything-we-invest-in .barrel {
+    background-image: url("/images/cutouts/barrel-480h.png");
+    background-size: 30rem 30rem;
+  }
+}
+@media (min-width: 48rem) {
+  #everything-we-invest-in .barrel {
+    background-image: url("/images/cutouts/barrel-sprite-480h.png");
+    background-size: 480rem 30rem;
+    animation: barrelMoveXMd 2000ms steps(16) infinite;
+  }
+}
+@keyframes barrelMoveX {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: -320rem;
+  }
+}
+@keyframes barrelMoveXMd {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: -480rem;
+  }
+}
+#everything-we-invest-in .poster {
+  background-color: #2bb151;
+  margin-bottom: 20vh;
 }
 
 .screens-container {

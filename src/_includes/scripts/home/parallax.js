@@ -4,7 +4,7 @@ const rellaxForeground = new Rellax(".poster.rellax, .glide.rellax", {
   speed: 3,
   horizontal: false,
 });
-const rellaxMiddleDistance = new Rellax(".sprite.rellax", {
+const rellaxMiddleDistance = new Rellax(".dithered-img.rellax", {
   center: true,
   round: true,
   speed: 0.5,

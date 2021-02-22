@@ -941,8 +941,8 @@ input.search {
 }
 
 .also-see {
-  margin-top: 6rem;
-  margin-bottom: 6rem;
+  padding-top: 6rem !important;
+  padding-bottom: 6rem !important;
 }
 .also-see ul li {
   overflow: hidden;

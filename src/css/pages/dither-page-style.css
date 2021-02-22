@@ -960,6 +960,20 @@ input.search {
   position: relative;
 }
 
+article header .button,
+.tidbit .button {
+  font-size: 1.75rem;
+  padding: 1rem 0;
+  width: 100%;
+}
+@media (min-width: 40rem) {
+  article header .button,
+.tidbit .button {
+    width: inherit;
+    padding: 1rem 10rem;
+  }
+}
+
 .poster {
   text-align: center;
   word-spacing: 100vw;
@@ -1009,13 +1023,7 @@ article header .button,
   }
 }
 
-article header {
-  margin-top: -5rem;
-  padding-top: 3rem;
-  padding-bottom: 6vh;
-}
 article header .poster {
-  background-color: #ddffe7;
   width: clamp(16rem, 62vw, 28rem);
   height: clamp(22rem, 48vh, 50vh);
 }

@@ -1,8 +1,8 @@
 @use "../base" as *;
 
 .also-see {
-  margin-top: $space-section-y-sm;
-  margin-bottom: $space-section-y-sm;
+  padding-top: $space-section-y-sm !important; //TODO: fix cascading issues causing more specific styles to be overriden by generic ones
+  padding-bottom: $space-section-y-sm !important; //TODO: fix cascading issues causing more specific styles to be overriden by generic ones
 
   ul {
     li {
