@@ -223,6 +223,7 @@ article header {
   padding-top: 5rem;
   padding-bottom: 3rem;
 
+  @extend %background-crisp;
   background-image: url("/images/filled/solar.png");
   background-repeat: no-repeat;
   background-position: center;

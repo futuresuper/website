@@ -940,7 +940,7 @@ input.search {
   left: calc(100% - 2.5rem);
 }
 
-.marquee-container, .dithered-img {
+.marquee-container, #rules-for-impact-investing, .dithered-img {
   image-rendering: -webkit-optimize-contrast;
   /* Webkit (non-standard naming)*/
   image-rendering: pixelated;
