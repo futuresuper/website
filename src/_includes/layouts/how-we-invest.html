@@ -40,8 +40,8 @@
 
   <div class="container neutral">
     <section id="our-theory-of-change" class="dithered-img-container">
-      <div class="coal dithered-img rellax"></div>
-      <div class="barrel dithered-img rellax"></div>
+      <div class="banana dithered-img rellax"></div>
+      <div class="macintosh dithered-img rellax"></div>
       <div class="poster rellax" data-rellax-xs-speed="2" data-rellax-mobile-speed="3" data-rellax-tablet-speed="5"
         data-rellax-desktop-speed="10">
         <h2>Our theory of change</h2>
@@ -135,7 +135,7 @@
     <div class="container">
       <div class="poster rellax" data-rellax-xs-speed="2" data-rellax-mobile-speed="3" data-rellax-tablet-speed="5"
         data-rellax-desktop-speed="10">
-        <h2>Rules for impact invest&shy;ing</h2>
+        <h2>Rules for impact inves&shy;ting</h2>
       </div>
     </div>
 
@@ -159,7 +159,7 @@
       <div class="smoke-stack dithered-img rellax"></div>
       <div class="poster rellax" data-rellax-xs-speed="2" data-rellax-mobile-speed="3" data-rellax-tablet-speed="5"
         data-rellax-desktop-speed="10">
-        <h1>How we exclude invest&shy;ments</h1>
+        <h2>How we exclude invest&shy;ments</h2>
       </div>
       <div class="article-content">
         <p>We have industry-leading ethical screens to help exclude harm from your super. Investments must pass every
@@ -201,36 +201,46 @@
 
   <div class="container">
     <section id="everything-we-invest-in" class="dithered-img-container">
-      <div class="coal dithered-img rellax"></div>
-      <div class="barrel dithered-img rellax"></div>
+      <div class="tv dithered-img rellax"></div>
+      <div class="fifty-cents dithered-img rellax"></div>
       <div class="poster rellax" data-rellax-xs-speed="2" data-rellax-mobile-speed="3" data-rellax-tablet-speed="5"
         data-rellax-desktop-speed="10">
         <h2>Every&shy;thing we invest in</h2>
       </div>
-      <p>There are plenty of regular investments that pass our above screens. Some are companies you’d recognise, like
-        Netflix and Telstra.
-      </p>
-      <p>We don’t expect every investment to change the world, but we do make all our investments public so that anyone
-        can see where the money goes.</p>
-      <a href="/everything-we-invest-in" class="button primary">Explore Our Investments</a>
+      <div class="article-content">
+        <p>There are plenty of regular investments that pass our above screens. Some are companies you’d recognise, like
+          Netflix and Telstra.</p>
+        <p>We don’t expect every investment to change the world, but we do make all our investments public so that
+          anyone can see where the money goes.</p>
+        <a href="/everything-we-invest-in" class="button primary">Explore Our Investments</a>
+      </div>
     </section>
 
-    <section id="our-voting-record" class="article-content">
-      <h2>Our voting record</h2>
-      <p>Investing in companies gives Future Super the right to vote on their internal matters and policies. We do this
-        on behalf of our members as a collective, with their values and financial futures in mind. Future Super keeps a
-        transparent record of our voting so you can see how we represent you on issues of climate, equality and
-        corporate governance.</p>
+    <section id="our-voting-record" class="dithered-img-container">
+      <div class="coal dithered-img rellax"></div>
+      <div class="smoke-stack dithered-img rellax"></div>
+      <div class="poster rellax" data-rellax-xs-speed="2" data-rellax-mobile-speed="3" data-rellax-tablet-speed="5"
+        data-rellax-desktop-speed="10">
+        <h2>Our voting record</h2>
+      </div>
+      <div class="article-content">
+        <p>Investing in companies gives Future Super the right to vote on their internal matters and policies. We do
+          this
+          on behalf of our members as a collective, with their values and financial futures in mind. Future Super keeps
+          a
+          transparent record of our voting so you can see how we represent you on issues of climate, equality and
+          corporate governance.</p>
 
-      <ul class="plain doc-or-form-item">
-        {% for item in collections.documentsAndForms %}
-        {% if item.data.category === "Voting Records" %}
-        <li>
-          {% include "partials/documents-and-forms/rich-text-block.html" %}
-        </li>
-        {% endif %}
-        {% endfor %}
-      </ul>
+        <ul class="plain doc-or-form-item">
+          {% for item in collections.documentsAndForms %}
+          {% if item.data.category === "Voting Records" %}
+          <li>
+            {% include "partials/documents-and-forms/rich-text-block.html" %}
+          </li>
+          {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
     </section>
   </div>
 </article>

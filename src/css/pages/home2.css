@@ -1550,10 +1550,12 @@ article header p {
   margin-bottom: 2rem;
 }
 .product-review-carousel figure .star-container .star {
-  width: 42px;
-  height: 38px;
-  background-image: url("/images/cutouts/starburst-sprite.png");
-  animation: moveStarX 1000ms steps(7) infinite;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 0.75rem;
+  background-image: url("/images/cutouts/star-sprite.png");
+  background-size: 11.25rem 1.25rem;
+  animation: moveStarX 1000ms steps(9) infinite;
 }
 .product-review-carousel figure .star-container .star:nth-of-type(2) {
   animation-delay: 25ms;
@@ -1572,7 +1574,7 @@ article header p {
     background-position-x: 0px;
   }
   to {
-    background-position-x: -294px;
+    background-position-x: -360px;
   }
 }
 .product-review-carousel figure blockquote .review-title {

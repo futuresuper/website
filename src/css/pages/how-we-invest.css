@@ -1045,7 +1045,7 @@ body > .flow-content > footer {
   background: #ffffff;
 }
 
-#everything-we-invest-in .poster, #how-we-exclude-investments .poster, #rules-for-impact-investing .poster, #our-theory-of-change .poster, article header .poster {
+#our-voting-record .poster, #everything-we-invest-in .poster, #how-we-exclude-investments .poster, #rules-for-impact-investing .poster, #our-theory-of-change .poster, article header .poster {
   height: auto;
   padding: 3rem 0;
 }
@@ -1059,33 +1059,33 @@ body > .flow-content > footer {
   }
 }
 
-h2,
-h3,
+main h2,
+main h3,
 .heading-two,
 article header p {
   font-size: 1.75rem;
   line-height: 115%;
 }
 @media (min-width: 48rem) {
-  h2,
-h3,
+  main h2,
+main h3,
 .heading-two,
 article header p {
     font-size: 2.5rem;
   }
 }
 
-h2,
-h3 {
+main h2,
+main h3 {
   color: #2bb151;
 }
 
-h3 {
+main h3 {
   margin-top: 3.5rem;
   margin-bottom: 0.5rem;
 }
 
-p:not(.disclaimer) {
+main p:not(.disclaimer) {
   text-indent: 1.75rem;
 }
 
@@ -1308,20 +1308,17 @@ article header p {
   padding-top: 5rem;
   position: relative;
 }
-#our-theory-of-change .coal {
+#our-theory-of-change .banana {
   width: 20rem;
   height: 20rem;
   top: -2rem;
   left: -5rem;
   background-color: #d0e0ff;
-  background-image: url("/images/cutouts/coal-320h.png");
+  background-image: url("/images/cutouts/banana-320h.png");
   background-size: 20rem 20rem;
-  background-image: url("/images/cutouts/coal-sprite-320h.png");
-  background-size: 100rem 20rem;
-  animation: coalMoveX 5000ms steps(5) infinite;
 }
 @media (min-width: 48rem) {
-  #our-theory-of-change .coal {
+  #our-theory-of-change .banana {
     width: 30rem;
     height: 30rem;
     top: -2rem;
@@ -1331,48 +1328,22 @@ article header p {
   }
 }
 @media (min-width: 48rem) {
-  #our-theory-of-change .coal {
-    background-image: url("/images/cutouts/coal-480h.png");
+  #our-theory-of-change .banana {
+    background-image: url("/images/cutouts/banana-480h.png");
     background-size: 30rem 30rem;
   }
 }
-@media (min-width: 48rem) {
-  #our-theory-of-change .coal {
-    background-image: url("/images/cutouts/coal-sprite-480h.png");
-    background-size: 150rem 30rem;
-    animation: coalMoveXMd 5000ms steps(5) infinite;
-  }
-}
-@keyframes coalMoveX {
-  from {
-    background-position-x: 0;
-  }
-  to {
-    background-position-x: -100rem;
-  }
-}
-@keyframes coalMoveXMd {
-  from {
-    background-position-x: 0;
-  }
-  to {
-    background-position-x: -150rem;
-  }
-}
-#our-theory-of-change .barrel {
+#our-theory-of-change .macintosh {
   width: 20rem;
   height: 20rem;
   top: 25vh;
   right: -5rem;
   background-color: #ffebb9;
-  background-image: url("/images/cutouts/barrel-320h.png");
+  background-image: url("/images/cutouts/macintosh-320h.png");
   background-size: 20rem 20rem;
-  background-image: url("/images/cutouts/barrel-sprite-320h.png");
-  background-size: 320rem 20rem;
-  animation: barrelMoveX 2000ms steps(16) infinite;
 }
 @media (min-width: 48rem) {
-  #our-theory-of-change .barrel {
+  #our-theory-of-change .macintosh {
     width: 30rem;
     height: 30rem;
     top: 34vh;
@@ -1382,32 +1353,9 @@ article header p {
   }
 }
 @media (min-width: 48rem) {
-  #our-theory-of-change .barrel {
-    background-image: url("/images/cutouts/barrel-480h.png");
+  #our-theory-of-change .macintosh {
+    background-image: url("/images/cutouts/macintosh-480h.png");
     background-size: 30rem 30rem;
-  }
-}
-@media (min-width: 48rem) {
-  #our-theory-of-change .barrel {
-    background-image: url("/images/cutouts/barrel-sprite-480h.png");
-    background-size: 480rem 30rem;
-    animation: barrelMoveXMd 2000ms steps(16) infinite;
-  }
-}
-@keyframes barrelMoveX {
-  from {
-    background-position-x: 0;
-  }
-  to {
-    background-position-x: -320rem;
-  }
-}
-@keyframes barrelMoveXMd {
-  from {
-    background-position-x: 0;
-  }
-  to {
-    background-position-x: -480rem;
   }
 }
 #our-theory-of-change .poster {
@@ -1560,20 +1508,17 @@ article header p {
   padding-top: 5rem;
   padding-bottom: 3rem;
 }
-#everything-we-invest-in .coal {
+#everything-we-invest-in .tv {
   width: 20rem;
   height: 20rem;
   top: -2rem;
   left: -5rem;
-  background-color: #d0e0ff;
-  background-image: url("/images/cutouts/coal-320h.png");
+  background-color: #ffebb9;
+  background-image: url("/images/cutouts/tv-320h.png");
   background-size: 20rem 20rem;
-  background-image: url("/images/cutouts/coal-sprite-320h.png");
-  background-size: 100rem 20rem;
-  animation: coalMoveX 5000ms steps(5) infinite;
 }
 @media (min-width: 48rem) {
-  #everything-we-invest-in .coal {
+  #everything-we-invest-in .tv {
     width: 30rem;
     height: 30rem;
     top: -2rem;
@@ -1583,48 +1528,22 @@ article header p {
   }
 }
 @media (min-width: 48rem) {
-  #everything-we-invest-in .coal {
-    background-image: url("/images/cutouts/coal-480h.png");
+  #everything-we-invest-in .tv {
+    background-image: url("/images/cutouts/tv-480h.png");
     background-size: 30rem 30rem;
   }
 }
-@media (min-width: 48rem) {
-  #everything-we-invest-in .coal {
-    background-image: url("/images/cutouts/coal-sprite-480h.png");
-    background-size: 150rem 30rem;
-    animation: coalMoveXMd 5000ms steps(5) infinite;
-  }
-}
-@keyframes coalMoveX {
-  from {
-    background-position-x: 0;
-  }
-  to {
-    background-position-x: -100rem;
-  }
-}
-@keyframes coalMoveXMd {
-  from {
-    background-position-x: 0;
-  }
-  to {
-    background-position-x: -150rem;
-  }
-}
-#everything-we-invest-in .barrel {
+#everything-we-invest-in .fifty-cents {
   width: 20rem;
   height: 20rem;
   top: 25vh;
   right: -5rem;
-  background-color: #ffebb9;
-  background-image: url("/images/cutouts/barrel-320h.png");
+  background-color: #f9ecf5;
+  background-image: url("/images/cutouts/fifty-cents-320h.png");
   background-size: 20rem 20rem;
-  background-image: url("/images/cutouts/barrel-sprite-320h.png");
-  background-size: 320rem 20rem;
-  animation: barrelMoveX 2000ms steps(16) infinite;
 }
 @media (min-width: 48rem) {
-  #everything-we-invest-in .barrel {
+  #everything-we-invest-in .fifty-cents {
     width: 30rem;
     height: 30rem;
     top: 34vh;
@@ -1634,35 +1553,71 @@ article header p {
   }
 }
 @media (min-width: 48rem) {
-  #everything-we-invest-in .barrel {
-    background-image: url("/images/cutouts/barrel-480h.png");
+  #everything-we-invest-in .fifty-cents {
+    background-image: url("/images/cutouts/fifty-cents-480h.png");
     background-size: 30rem 30rem;
   }
 }
-@media (min-width: 48rem) {
-  #everything-we-invest-in .barrel {
-    background-image: url("/images/cutouts/barrel-sprite-480h.png");
-    background-size: 480rem 30rem;
-    animation: barrelMoveXMd 2000ms steps(16) infinite;
-  }
-}
-@keyframes barrelMoveX {
-  from {
-    background-position-x: 0;
-  }
-  to {
-    background-position-x: -320rem;
-  }
-}
-@keyframes barrelMoveXMd {
-  from {
-    background-position-x: 0;
-  }
-  to {
-    background-position-x: -480rem;
-  }
-}
 #everything-we-invest-in .poster {
+  background-color: #2bb151;
+  margin-bottom: 20vh;
+}
+
+#our-voting-record {
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+}
+#our-voting-record .telephone {
+  width: 20rem;
+  height: 20rem;
+  top: -2rem;
+  left: -5rem;
+  background-color: #ffebb9;
+  background-image: url("/images/cutouts/telephone-320h.png");
+  background-size: 20rem 20rem;
+}
+@media (min-width: 48rem) {
+  #our-voting-record .telephone {
+    width: 30rem;
+    height: 30rem;
+    top: -2rem;
+    bottom: auto;
+    left: auto;
+    right: 50%;
+  }
+}
+@media (min-width: 48rem) {
+  #our-voting-record .telephone {
+    background-image: url("/images/cutouts/telephone-480h.png");
+    background-size: 30rem 30rem;
+  }
+}
+#our-voting-record .fifty-cents {
+  width: 20rem;
+  height: 20rem;
+  top: 25vh;
+  right: -5rem;
+  background-color: #f9ecf5;
+  background-image: url("/images/cutouts/fifty-cents-320h.png");
+  background-size: 20rem 20rem;
+}
+@media (min-width: 48rem) {
+  #our-voting-record .fifty-cents {
+    width: 30rem;
+    height: 30rem;
+    top: 34vh;
+    bottom: auto;
+    left: 50%;
+    right: auto;
+  }
+}
+@media (min-width: 48rem) {
+  #our-voting-record .fifty-cents {
+    background-image: url("/images/cutouts/fifty-cents-480h.png");
+    background-size: 30rem 30rem;
+  }
+}
+#our-voting-record .poster {
   background-color: #2bb151;
   margin-bottom: 20vh;
 }
