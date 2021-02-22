@@ -6,4 +6,4 @@ order: 1
 category: "Reconciliation Documents"
 ---
 
-Contains information on our reconciliation plans for July 2020 to June 2021.
+Our full Reconciliation Action Plan for July 2020 to June 2021.
