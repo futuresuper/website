@@ -961,14 +961,16 @@ article header, .product-review-carousel figure .star-container .star, .dithered
 }
 
 article header .button,
-.tidbit .button {
+.tidbit .button,
+article .button {
   font-size: 1.75rem;
   padding: 1rem 0;
   width: 100%;
 }
 @media (min-width: 40rem) {
   article header .button,
-.tidbit .button {
+.tidbit .button,
+article .button {
     width: inherit;
     padding: 1rem 10rem;
   }
@@ -1000,12 +1002,13 @@ article header .button,
   position: absolute;
 }
 
-h1,
-h2,
-h3,
-h4,
+article h1,
+article h2,
+article h3,
+article h4,
 article header .button,
-.tidbit .button {
+.tidbit .button,
+.article-content .button {
   font-weight: normal;
 }
 

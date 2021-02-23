@@ -8,7 +8,7 @@
 
 %poster-height-auto {
   height: auto;
-  padding: 3rem 0;
+  padding: 3rem 0.75rem;
 }
 %marquee-height {
   height: 4rem;
@@ -17,8 +17,8 @@
   }
 }
 
-main h2,
-main h3,
+.article-content > h2,
+.article-content > h3,
 .heading-two,
 article header p {
   font-size: $font-size-xl;
@@ -29,17 +29,17 @@ article header p {
   }
 }
 
-main h2,
-main h3 {
+.article-content > h2,
+.article-content > h3 {
   color: $mint-500;
 }
 
-main h3 {
+.article-content h3 {
   margin-top: 3.5rem;
   margin-bottom: 0.5rem;
 }
 
-main p:not(.disclaimer) {
+.article-content p:not(.disclaimer) {
   text-indent: 1.75rem;
 }
 
@@ -49,6 +49,13 @@ main p:not(.disclaimer) {
 }
 .neutral {
   background-color: $off-white-500;
+}
+
+// Set general button margins
+.article-content .button,
+.article-content .doc-or-form-item {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 // Set general marquee content
@@ -153,24 +160,22 @@ main p:not(.disclaimer) {
 article header {
   margin-top: -8rem;
   padding-top: 3rem;
-  padding-bottom: $space-section-y-sm;
+  padding-bottom: 1rem;
 
   .earth {
-    @include still("earth", $blueberry-300, "top", 6rem, 18vh, "right", -20%, "left", 46%);
+    @include still("earth", $blueberry-300, "top", 6rem, 10vh, "right", -20%, "left", 46%);
   }
   .flower {
-    @include sprite("flower", 100rem, $fig-300, "top", 34vh, 50vh, "left", -6rem, "right", 49%, 2000ms, 5);
+    @include sprite("flower", 100rem, $fig-300, "top", 34vh, 42vh, "left", -6rem, "right", 49%, 2000ms, 5);
   }
 
   .poster {
     background-color: $mint-500;
     @extend %poster-height-auto;
-
     margin-top: 6rem;
-    margin-bottom: 9rem;
+    margin-bottom: 30vh;
     @media (min-width: $breakpoint-md) {
-      margin-top: 22vh;
-      margin-bottom: 30vh;
+      margin-top: 26vh;
     }
   }
 
@@ -210,7 +215,7 @@ article header {
   .poster {
     background-color: $mint-500;
     @extend %poster-height-auto;
-    margin-bottom: 20vh;
+    margin-bottom: 24vh;
   }
 
   // Override colour styling for 'exclude' header
@@ -220,8 +225,8 @@ article header {
 }
 
 #rules-for-impact-investing {
-  padding-top: 5rem;
-  padding-bottom: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 6rem;
 
   @extend %background-crisp;
   background-image: url("/images/filled/solar.png");
@@ -242,13 +247,18 @@ article header {
     text-align: center;
 
     figure {
-      padding: 0.5rem 2rem;
+      padding: 2rem 3rem;
       background-color: $mint-300;
       height: auto;
 
       h3 {
         font-size: 1rem;
-        margin-bottom: 1rem;
+        margin-top: 0;
+        margin-bottom: 2rem;
+      }
+
+      p {
+        margin-bottom: 0;
       }
     }
   }
@@ -281,20 +291,21 @@ article header {
 }
 
 #how-we-exclude-investments {
-  padding-top: 10rem;
+  padding-top: 4rem;
+  padding-bottom: 6rem;
 
   .coal {
     @include sprite("coal", 100rem, $mango-300, "top", -2rem, -2rem, "right", -2rem, "right", 40%, 5000ms, 5);
   }
   .smoke-stack {
-    @include still("smoke-stack", $fig-300, "top", 40vh, 30vh, "left", -4em, "right", 52%);
+    @include still("smoke-stack", $fig-300, "top", 30vh, 30vh, "left", -4em, "right", 52%);
   }
 
   .poster {
     background-color: $fraise-500;
     @extend %poster-height-auto;
     hyphens: auto;
-    margin-bottom: 24vh;
+    margin-bottom: 26vh;
   }
 }
 
@@ -303,34 +314,35 @@ article header {
   padding-bottom: 3rem;
 
   .tv {
-    @include still("tv", $mango-300, "top", -2rem, -2rem, "left", -5rem, "right", 50%);
+    @include still("tv", $mango-300, "top", -3rem, -3rem, "left", -5rem, "right", 50%);
   }
   .fifty-cents {
-    @include still("fifty-cents", $fig-300, "top", 25vh, 34vh, "right", -5rem, "left", 50%);
+    @include still("fifty-cents", $fig-300, "top", 32vh, 34vh, "right", -5rem, "left", 50%);
   }
 
   .poster {
     background-color: $mint-500;
     @extend %poster-height-auto;
-    margin-bottom: 20vh;
+    margin-bottom: 18vh;
   }
 }
 
 #our-voting-record {
-  padding-top: 5rem;
+  margin-top: 3rem;
+  padding-top: 6rem;
   padding-bottom: 3rem;
 
   .telephone {
-    @include still("telephone", $mango-300, "top", -2rem, -2rem, "left", -5rem, "right", 50%);
+    @include still("telephone", $mango-300, "top", 0, 0, "right", -5rem, "left", 46%);
   }
-  .fifty-cents {
-    @include still("fifty-cents", $fig-300, "top", 25vh, 34vh, "right", -5rem, "left", 50%);
+  .megaphone {
+    @include still("megaphone", $blueberry-300, "top", 22vh, 34vh, "left", -2rem, "right", 52%);
   }
 
   .poster {
     background-color: $mint-500;
     @extend %poster-height-auto;
-    margin-bottom: 20vh;
+    margin-bottom: 19vh;
   }
 }
 
@@ -340,7 +352,7 @@ article header {
   background-color: $white-500;
   max-width: $breakpoint-sm;
   margin: 0 auto;
-  margin-bottom: 10rem;
+  // margin-bottom: 10rem;
   border: 1px solid $red-500;
   padding: 1.5rem;
 }

@@ -116,7 +116,8 @@ $colour-poster-text: rgba(255, 255, 255, 0.9);
 
 // Override site header margins
 article header .button,
-.tidbit .button {
+.tidbit .button,
+article .button {
   font-size: $font-size-xl;
   padding: $space-button-padding-y-md 0;
   width: 100%;
@@ -153,12 +154,13 @@ article header .button,
 }
 
 // Override default bolded text
-h1,
-h2,
-h3,
-h4,
+article h1,
+article h2,
+article h3,
+article h4,
 article header .button,
-.tidbit .button {
+.tidbit .button,
+.article-content .button {
   font-weight: normal;
 }
 

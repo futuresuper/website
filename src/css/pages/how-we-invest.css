@@ -962,14 +962,16 @@ input.search {
 }
 
 article header .button,
-.tidbit .button {
+.tidbit .button,
+article .button {
   font-size: 1.75rem;
   padding: 1rem 0;
   width: 100%;
 }
 @media (min-width: 40rem) {
   article header .button,
-.tidbit .button {
+.tidbit .button,
+article .button {
     width: inherit;
     padding: 1rem 10rem;
   }
@@ -1001,12 +1003,13 @@ article header .button,
   position: absolute;
 }
 
-h1,
-h2,
-h3,
-h4,
+article h1,
+article h2,
+article h3,
+article h4,
 article header .button,
-.tidbit .button {
+.tidbit .button,
+.article-content .button {
   font-weight: normal;
 }
 
@@ -1047,7 +1050,7 @@ body > .flow-content > footer {
 
 #our-voting-record .poster, #everything-we-invest-in .poster, #how-we-exclude-investments .poster, #rules-for-impact-investing .poster, #our-theory-of-change .poster, article header .poster {
   height: auto;
-  padding: 3rem 0;
+  padding: 3rem 0.75rem;
 }
 
 .marquee-container .marquee ul, .marquee-container .marquee {
@@ -1059,33 +1062,33 @@ body > .flow-content > footer {
   }
 }
 
-main h2,
-main h3,
+.article-content > h2,
+.article-content > h3,
 .heading-two,
 article header p {
   font-size: 1.75rem;
   line-height: 115%;
 }
 @media (min-width: 48rem) {
-  main h2,
-main h3,
+  .article-content > h2,
+.article-content > h3,
 .heading-two,
 article header p {
     font-size: 2.5rem;
   }
 }
 
-main h2,
-main h3 {
+.article-content > h2,
+.article-content > h3 {
   color: #2bb151;
 }
 
-main h3 {
+.article-content h3 {
   margin-top: 3.5rem;
   margin-bottom: 0.5rem;
 }
 
-main p:not(.disclaimer) {
+.article-content p:not(.disclaimer) {
   text-indent: 1.75rem;
 }
 
@@ -1095,6 +1098,12 @@ main p:not(.disclaimer) {
 
 .neutral {
   background-color: #f5f0f0;
+}
+
+.article-content .button,
+.article-content .doc-or-form-item {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 .marquee-container {
@@ -1194,7 +1203,7 @@ main p:not(.disclaimer) {
 article header {
   margin-top: -8rem;
   padding-top: 3rem;
-  padding-bottom: 6rem;
+  padding-bottom: 1rem;
 }
 article header .earth {
   width: 20rem;
@@ -1209,7 +1218,7 @@ article header .earth {
   article header .earth {
     width: 30rem;
     height: 30rem;
-    top: 18vh;
+    top: 10vh;
     bottom: auto;
     left: 46%;
     right: auto;
@@ -1237,7 +1246,7 @@ article header .flower {
   article header .flower {
     width: 30rem;
     height: 30rem;
-    top: 50vh;
+    top: 42vh;
     bottom: auto;
     left: auto;
     right: 49%;
@@ -1275,12 +1284,11 @@ article header .flower {
 article header .poster {
   background-color: #2bb151;
   margin-top: 6rem;
-  margin-bottom: 9rem;
+  margin-bottom: 30vh;
 }
 @media (min-width: 48rem) {
   article header .poster {
-    margin-top: 22vh;
-    margin-bottom: 30vh;
+    margin-top: 26vh;
   }
 }
 article header p {
@@ -1360,15 +1368,15 @@ article header p {
 }
 #our-theory-of-change .poster {
   background-color: #2bb151;
-  margin-bottom: 20vh;
+  margin-bottom: 24vh;
 }
 #our-theory-of-change h3:last-of-type {
   color: #f04b23;
 }
 
 #rules-for-impact-investing {
-  padding-top: 5rem;
-  padding-bottom: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 6rem;
   background-image: url("/images/filled/solar.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -1385,13 +1393,17 @@ article header p {
   text-align: center;
 }
 #rules-for-impact-investing .rules-carousel figure {
-  padding: 0.5rem 2rem;
+  padding: 2rem 3rem;
   background-color: #ddffe7;
   height: auto;
 }
 #rules-for-impact-investing .rules-carousel figure h3 {
   font-size: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+#rules-for-impact-investing .rules-carousel figure p {
+  margin-bottom: 0;
 }
 
 #impact-investing {
@@ -1420,7 +1432,8 @@ article header p {
 }
 
 #how-we-exclude-investments {
-  padding-top: 10rem;
+  padding-top: 4rem;
+  padding-bottom: 6rem;
 }
 #how-we-exclude-investments .coal {
   width: 20rem;
@@ -1476,7 +1489,7 @@ article header p {
 #how-we-exclude-investments .smoke-stack {
   width: 20rem;
   height: 20rem;
-  top: 40vh;
+  top: 30vh;
   left: -4em;
   background-color: #f9ecf5;
   background-image: url("/images/cutouts/smoke-stack-320h.png");
@@ -1501,7 +1514,7 @@ article header p {
 #how-we-exclude-investments .poster {
   background-color: #f04b23;
   hyphens: auto;
-  margin-bottom: 24vh;
+  margin-bottom: 26vh;
 }
 
 #everything-we-invest-in {
@@ -1511,7 +1524,7 @@ article header p {
 #everything-we-invest-in .tv {
   width: 20rem;
   height: 20rem;
-  top: -2rem;
+  top: -3rem;
   left: -5rem;
   background-color: #ffebb9;
   background-image: url("/images/cutouts/tv-320h.png");
@@ -1521,7 +1534,7 @@ article header p {
   #everything-we-invest-in .tv {
     width: 30rem;
     height: 30rem;
-    top: -2rem;
+    top: -3rem;
     bottom: auto;
     left: auto;
     right: 50%;
@@ -1536,7 +1549,7 @@ article header p {
 #everything-we-invest-in .fifty-cents {
   width: 20rem;
   height: 20rem;
-  top: 25vh;
+  top: 32vh;
   right: -5rem;
   background-color: #f9ecf5;
   background-image: url("/images/cutouts/fifty-cents-320h.png");
@@ -1560,18 +1573,19 @@ article header p {
 }
 #everything-we-invest-in .poster {
   background-color: #2bb151;
-  margin-bottom: 20vh;
+  margin-bottom: 18vh;
 }
 
 #our-voting-record {
-  padding-top: 5rem;
+  margin-top: 3rem;
+  padding-top: 6rem;
   padding-bottom: 3rem;
 }
 #our-voting-record .telephone {
   width: 20rem;
   height: 20rem;
-  top: -2rem;
-  left: -5rem;
+  top: 0;
+  right: -5rem;
   background-color: #ffebb9;
   background-image: url("/images/cutouts/telephone-320h.png");
   background-size: 20rem 20rem;
@@ -1580,10 +1594,10 @@ article header p {
   #our-voting-record .telephone {
     width: 30rem;
     height: 30rem;
-    top: -2rem;
+    top: 0;
     bottom: auto;
-    left: auto;
-    right: 50%;
+    left: 46%;
+    right: auto;
   }
 }
 @media (min-width: 48rem) {
@@ -1592,41 +1606,40 @@ article header p {
     background-size: 30rem 30rem;
   }
 }
-#our-voting-record .fifty-cents {
+#our-voting-record .megaphone {
   width: 20rem;
   height: 20rem;
-  top: 25vh;
-  right: -5rem;
-  background-color: #f9ecf5;
-  background-image: url("/images/cutouts/fifty-cents-320h.png");
+  top: 22vh;
+  left: -2rem;
+  background-color: #d0e0ff;
+  background-image: url("/images/cutouts/megaphone-320h.png");
   background-size: 20rem 20rem;
 }
 @media (min-width: 48rem) {
-  #our-voting-record .fifty-cents {
+  #our-voting-record .megaphone {
     width: 30rem;
     height: 30rem;
     top: 34vh;
     bottom: auto;
-    left: 50%;
-    right: auto;
+    left: auto;
+    right: 52%;
   }
 }
 @media (min-width: 48rem) {
-  #our-voting-record .fifty-cents {
-    background-image: url("/images/cutouts/fifty-cents-480h.png");
+  #our-voting-record .megaphone {
+    background-image: url("/images/cutouts/megaphone-480h.png");
     background-size: 30rem 30rem;
   }
 }
 #our-voting-record .poster {
   background-color: #2bb151;
-  margin-bottom: 20vh;
+  margin-bottom: 19vh;
 }
 
 .screens-container {
   background-color: #ffffff;
   max-width: 40rem;
   margin: 0 auto;
-  margin-bottom: 10rem;
   border: 1px solid #f04b23;
   padding: 1.5rem;
 }
