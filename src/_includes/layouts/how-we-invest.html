@@ -163,7 +163,8 @@
           </div>
         </div>
 
-        <p>We have a framework to help identify these opportunities.</p>
+        <p>We have a framework to help identify these opportunities outlined below. Although not exhaustive, it should
+          give you an idea of where we begin.</p>
       </div>
     </section>
   </div>
@@ -181,7 +182,11 @@
         <div class="glide__slides">
           {% for item in impactInvestingRules %}
           <figure class="glide__slide">
-            <h3>{{ loop.index }} of {{ loop.length }}</h3>
+            {% if loop.index === loop.length %}
+            <h3>Et cetera</h3>
+            {% else %}
+            <h3>#{{ loop.index }}</h3>
+            {% endif %}
             <p>{{ item }}</p>
           </figure>
           {% endfor %}

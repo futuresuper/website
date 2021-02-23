@@ -9,6 +9,12 @@ new Glide(".glide", {
   breakpoints: {
     // $breakpoint-lg and *smaller*
     1280: {
+      gap: 24,
+      peek: 24,
+      perView: 3,
+    },
+    // $breakpoint-md and *smaller*
+    768: {
       gap: 16,
       peek: 40,
       perView: 1,

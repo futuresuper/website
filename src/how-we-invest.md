@@ -13,6 +13,7 @@ impactInvestingRules:
   - Impact should be broadly experienced (i.e. by many people) or if only a small group of underserved stakeholders benefit, then the impact must be of particular significance.
   - Investments where our money doesn’t create any benefits (e.g. secondary markets like equities) cannot be considered ‘impact investments’.
   - Investments with high risk of failure will be avoided unless the failure doesn’t result in loss to members and contributes to better knowledge about effective solutions.
+  - We take into account a number of additional, more granular, rules that cover topics such as an investment’s finances and its own investments in other companies.
 alsoSee:
   - Everything We Invest In
   - Investment Options
