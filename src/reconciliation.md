@@ -1,19 +1,18 @@
 ---
-title: "Reconciliation"
-layout: "layouts/reconciliation.html"
+title: Reconciliation
+layout: layouts/reconciliation.html
 summary: Holding ourselves accountable.
 description: Why reconciliation is important to us and the action we're taking.
 ---
-
 We work on and thus profit from stolen land. The stealing of this land from First Nations Peoples started centuries of cultural desecration and genocide. We can’t claim to want a future free from inequality, and not reckon with the facts of our history.
 
 We believe that if we are to benefit from a society that is inherently unfair, it is our duty to rebuild until that society is fair.
 
 ## But you're a super fund?
 
-Our vision is to build a prosperous future, free from climate change and inequality. Developing a Reconciliation Action Plan is an essential step for us to realise this goal, as reconciliation with First Nations Peoples and the empowerment of First Nations Peoples is a crucial element of addressing the intertwined issues of climate and inequality.
+Our vision is to build a prosperous future, free from climate change and inequality. Developing a Reconciliation Action Plan is an essential step for us to realise this goal, as reconciliation with First Nations Peoples is a crucial element of addressing the intertwined issues of climate and inequality.
 
-We hope everyone who works at Future Super comes to understand why we are taking this path and chooses to walk it with us.
+We hope everyone who works at, or is a member of, Future Super comes to understand why we are taking this path and chooses to walk it with us.
 
 ## Our Reconciliation Action Plan
 
