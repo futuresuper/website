@@ -1115,33 +1115,40 @@ article header p {
 }
 @media (min-width: 48rem) {
   .marquee-container {
-    background-size: 20rem;
+    margin-bottom: 10rem;
+    background-size: 28rem;
   }
 }
 .marquee-container.seek {
-  background-color: #2bb151;
   background-image: url("/images/mixed/wind.jpg");
+  background-color: #2bb151;
+}
+@media (min-width: 48rem) {
+  .marquee-container.seek {
+    background-color: initial;
+  }
 }
 .marquee-container.exclude {
-  background-color: #f04b23;
   background-image: url("/images/mixed/bulldozer.jpg");
+  background-color: #f04b23;
+}
+@media (min-width: 48rem) {
+  .marquee-container.exclude {
+    background-color: initial;
+  }
 }
 .marquee-container .marquee {
   top: calc(50% - 2rem);
   left: -1rem;
+  width: 100vw;
   overflow: hidden;
   position: relative;
-  width: 100vw;
 }
 @media (min-width: 48rem) {
   .marquee-container .marquee {
     top: calc(50% - 2.5rem);
-    left: -2rem;
-  }
-}
-@media (min-width: 80rem) {
-  .marquee-container .marquee {
-    left: calc(-1 * 24vw);
+    left: 0;
+    width: 100%;
   }
 }
 .marquee-container .marquee.seek {
@@ -1150,7 +1157,7 @@ article header p {
   border-bottom: 1px solid #2bb151;
 }
 .marquee-container .marquee.seek ul {
-  animation: marquee 14s linear infinite;
+  animation: marquee 72s linear infinite;
 }
 .marquee-container .marquee.seek ul li {
   color: #2bb151;
@@ -1164,7 +1171,7 @@ article header p {
   border-bottom: 1px solid #f04b23;
 }
 .marquee-container .marquee.exclude ul {
-  animation: marquee 32s linear infinite;
+  animation: marquee 140s linear infinite;
 }
 .marquee-container .marquee.exclude ul li {
   color: #f04b23;
@@ -1193,7 +1200,7 @@ article header p {
 }
 @keyframes marquee {
   0% {
-    transform: translateX(25%);
+    transform: translateX(0%);
   }
   100% {
     transform: translateX(-100%);
@@ -1283,7 +1290,7 @@ article header .flower {
 }
 article header .poster {
   background-color: #2bb151;
-  margin-top: 6rem;
+  margin-top: 26vh;
   margin-bottom: 30vh;
 }
 @media (min-width: 48rem) {
@@ -1309,7 +1316,14 @@ article header p {
 }
 
 #mission {
+  margin-top: 3rem;
   margin-bottom: 6rem;
+}
+@media (min-width: 48rem) {
+  #mission {
+    margin-top: 5rem;
+    margin-bottom: 9rem;
+  }
 }
 
 #our-theory-of-change {
@@ -1332,7 +1346,7 @@ article header p {
     top: -2rem;
     bottom: auto;
     left: auto;
-    right: 50%;
+    right: 48%;
   }
 }
 @media (min-width: 48rem) {
@@ -1349,6 +1363,7 @@ article header p {
   background-color: #ffebb9;
   background-image: url("/images/cutouts/macintosh-320h.png");
   background-size: 20rem 20rem;
+  transform: scale(0.75);
 }
 @media (min-width: 48rem) {
   #our-theory-of-change .macintosh {
@@ -1356,7 +1371,7 @@ article header p {
     height: 30rem;
     top: 34vh;
     bottom: auto;
-    left: 50%;
+    left: 44%;
     right: auto;
   }
 }
@@ -1369,6 +1384,11 @@ article header p {
 #our-theory-of-change .poster {
   background-color: #2bb151;
   margin-bottom: 24vh;
+}
+@media (min-width: 48rem) {
+  #our-theory-of-change .poster {
+    margin-bottom: 40vh;
+  }
 }
 #our-theory-of-change h3:last-of-type {
   color: #f04b23;
@@ -1415,20 +1435,32 @@ article header p {
 }
 @media (min-width: 48rem) {
   #impact-investing .marquee-container {
-    background-size: 16rem;
+    height: 24rem;
+    background-size: 24rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
   }
+}
+#impact-investing .marquee-container .marquee {
+  background-color: #f5f0f0;
 }
 #impact-investing .marquee-container:nth-of-type(1) {
   background-image: url("/images/filled/solar.png");
 }
-#impact-investing .marquee-container:nth-of-type(2) {
-  background-image: url("/images/filled/speciality-housing.png");
+#impact-investing .marquee-container:nth-of-type(1) .marquee ul {
+  animation: marquee 16s linear infinite;
 }
-#impact-investing .marquee-container:nth-of-type(3) {
+#impact-investing .marquee-container:nth-of-type(2) {
   background-image: url("/images/filled/waste-management.png");
 }
-#impact-investing .marquee-container .marquee {
-  background-color: #f5f0f0;
+#impact-investing .marquee-container:nth-of-type(2) .marquee ul {
+  animation: marquee 14s linear infinite;
+}
+#impact-investing .marquee-container:nth-of-type(3) {
+  background-image: url("/images/filled/speciality-housing.png");
+}
+#impact-investing .marquee-container:nth-of-type(3) .marquee ul {
+  animation: marquee 15s linear infinite;
 }
 
 #how-we-exclude-investments {
@@ -1453,8 +1485,8 @@ article header p {
     height: 30rem;
     top: -2rem;
     bottom: auto;
-    left: auto;
-    right: 40%;
+    left: 44%;
+    right: auto;
   }
 }
 @media (min-width: 48rem) {
@@ -1494,15 +1526,16 @@ article header p {
   background-color: #f9ecf5;
   background-image: url("/images/cutouts/smoke-stack-320h.png");
   background-size: 20rem 20rem;
+  transform: scale(0.75);
 }
 @media (min-width: 48rem) {
   #how-we-exclude-investments .smoke-stack {
     width: 30rem;
     height: 30rem;
-    top: 30vh;
+    top: 28vh;
     bottom: auto;
     left: auto;
-    right: 52%;
+    right: 48%;
   }
 }
 @media (min-width: 48rem) {
@@ -1515,6 +1548,11 @@ article header p {
   background-color: #f04b23;
   hyphens: auto;
   margin-bottom: 26vh;
+}
+@media (min-width: 48rem) {
+  #how-we-exclude-investments .poster {
+    margin-bottom: 18vh;
+  }
 }
 
 #everything-we-invest-in {
@@ -1537,7 +1575,7 @@ article header p {
     top: -3rem;
     bottom: auto;
     left: auto;
-    right: 50%;
+    right: 44%;
   }
 }
 @media (min-width: 48rem) {
@@ -1554,14 +1592,15 @@ article header p {
   background-color: #f9ecf5;
   background-image: url("/images/cutouts/fifty-cents-320h.png");
   background-size: 20rem 20rem;
+  transform: scale(0.75);
 }
 @media (min-width: 48rem) {
   #everything-we-invest-in .fifty-cents {
     width: 30rem;
     height: 30rem;
-    top: 34vh;
+    top: 28vh;
     bottom: auto;
-    left: 50%;
+    left: 44%;
     right: auto;
   }
 }
@@ -1579,7 +1618,7 @@ article header p {
 #our-voting-record {
   margin-top: 3rem;
   padding-top: 6rem;
-  padding-bottom: 3rem;
+  padding-bottom: 6rem;
 }
 #our-voting-record .telephone {
   width: 20rem;
@@ -1589,6 +1628,8 @@ article header p {
   background-color: #ffebb9;
   background-image: url("/images/cutouts/telephone-320h.png");
   background-size: 20rem 20rem;
+  transform: scale(0.75);
+  transform-origin: center right;
 }
 @media (min-width: 48rem) {
   #our-voting-record .telephone {
@@ -1596,7 +1637,7 @@ article header p {
     height: 30rem;
     top: 0;
     bottom: auto;
-    left: 46%;
+    left: 44%;
     right: auto;
   }
 }
@@ -1619,10 +1660,10 @@ article header p {
   #our-voting-record .megaphone {
     width: 30rem;
     height: 30rem;
-    top: 34vh;
+    top: 20vh;
     bottom: auto;
     left: auto;
-    right: 52%;
+    right: 42%;
   }
 }
 @media (min-width: 48rem) {
@@ -1634,6 +1675,11 @@ article header p {
 #our-voting-record .poster {
   background-color: #2bb151;
   margin-bottom: 19vh;
+}
+@media (min-width: 48rem) {
+  #our-voting-record .poster {
+    margin-bottom: 32vh;
+  }
 }
 
 .screens-container {

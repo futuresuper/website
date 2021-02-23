@@ -67,31 +67,36 @@ article header p {
   background-position: center;
   background-size: cover;
   @media (min-width: $breakpoint-md) {
-    background-size: 20rem;
+    margin-bottom: 10rem;
+    background-size: 28rem;
   }
   &.seek {
-    background-color: $mint-500;
     background-image: url("/images/mixed/wind.jpg");
+    background-color: $mint-500;
+    @media (min-width: $breakpoint-md) {
+      background-color: initial;
+    }
   }
   &.exclude {
-    background-color: $fraise-500;
     background-image: url("/images/mixed/bulldozer.jpg");
+    background-color: $fraise-500;
+    @media (min-width: $breakpoint-md) {
+      background-color: initial;
+    }
   }
 
   .marquee {
     top: calc(50% - 2rem);
     left: -$space-page-padding-x-sm;
+    width: 100vw;
     @media (min-width: $breakpoint-md) {
       top: calc(50% - 2.5rem);
-      left: -$space-page-padding-x-md;
+      left: 0;
+      width: 100%;
     }
-    @media (min-width: $breakpoint-lg) {
-      left: calc(-1 * 24vw);
-      // $space-page-padding-x-lg
-    }
+
     overflow: hidden;
     position: relative;
-    width: 100vw;
 
     @extend %marquee-height;
 
@@ -100,7 +105,7 @@ article header p {
       border-top: 1px solid $mint-500;
       border-bottom: 1px solid $mint-500;
       ul {
-        animation: marquee 14s linear infinite;
+        animation: marquee 72s linear infinite;
         li {
           color: $mint-500;
           &::after {
@@ -114,7 +119,7 @@ article header p {
       border-top: 1px solid $fraise-500;
       border-bottom: 1px solid $fraise-500;
       ul {
-        animation: marquee 32s linear infinite;
+        animation: marquee 140s linear infinite;
         li {
           color: $fraise-500;
           text-decoration: line-through;
@@ -147,7 +152,7 @@ article header p {
 
     @keyframes marquee {
       0% {
-        transform: translateX(25%);
+        transform: translateX(0%);
       }
       100% {
         transform: translateX(-100%);
@@ -172,7 +177,7 @@ article header {
   .poster {
     background-color: $mint-500;
     @extend %poster-height-auto;
-    margin-top: 6rem;
+    margin-top: 26vh;
     margin-bottom: 30vh;
     @media (min-width: $breakpoint-md) {
       margin-top: 26vh;
@@ -198,7 +203,12 @@ article header {
 }
 
 #mission {
+  margin-top: 3rem;
   margin-bottom: $space-section-y-sm;
+  @media (min-width: $breakpoint-md) {
+    margin-top: 5rem;
+    margin-bottom: $space-section-y-md;
+  }
 }
 
 #our-theory-of-change {
@@ -206,16 +216,20 @@ article header {
   position: relative;
 
   .banana {
-    @include still("banana", $blueberry-300, "top", -2rem, -2rem, "left", -5rem, "right", 50%);
+    @include still("banana", $blueberry-300, "top", -2rem, -2rem, "left", -5rem, "right", 48%);
   }
   .macintosh {
-    @include still("macintosh", $mango-300, "top", 25vh, 34vh, "right", -5rem, "left", 50%);
+    @include still("macintosh", $mango-300, "top", 25vh, 34vh, "right", -5rem, "left", 44%);
+    transform: scale(0.75);
   }
 
   .poster {
     background-color: $mint-500;
     @extend %poster-height-auto;
     margin-bottom: 24vh;
+    @media (min-width: $breakpoint-md) {
+      margin-bottom: 40vh;
+    }
   }
 
   // Override colour styling for 'exclude' header
@@ -272,20 +286,31 @@ article header {
     height: 75vw;
     background-size: 75vw;
     @media (min-width: $breakpoint-md) {
-      background-size: 16rem;
+      height: 24rem;
+      background-size: 24rem;
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+    }
+    .marquee {
+      background-color: $off-white-500;
     }
     &:nth-of-type(1) {
       background-image: url("/images/filled/solar.png");
+      .marquee ul {
+        animation: marquee 16s linear infinite;
+      }
     }
     &:nth-of-type(2) {
-      background-image: url("/images/filled/speciality-housing.png");
+      background-image: url("/images/filled/waste-management.png");
+      .marquee ul {
+        animation: marquee 14s linear infinite;
+      }
     }
     &:nth-of-type(3) {
-      background-image: url("/images/filled/waste-management.png");
-    }
-
-    .marquee {
-      background-color: $off-white-500;
+      background-image: url("/images/filled/speciality-housing.png");
+      .marquee ul {
+        animation: marquee 15s linear infinite;
+      }
     }
   }
 }
@@ -295,10 +320,11 @@ article header {
   padding-bottom: 6rem;
 
   .coal {
-    @include sprite("coal", 100rem, $mango-300, "top", -2rem, -2rem, "right", -2rem, "right", 40%, 5000ms, 5);
+    @include sprite("coal", 100rem, $mango-300, "top", -2rem, -2rem, "right", -2rem, "left", 44%, 5000ms, 5);
   }
   .smoke-stack {
-    @include still("smoke-stack", $fig-300, "top", 30vh, 30vh, "left", -4em, "right", 52%);
+    @include still("smoke-stack", $fig-300, "top", 30vh, 28vh, "left", -4em, "right", 48%);
+    transform: scale(0.75);
   }
 
   .poster {
@@ -306,6 +332,9 @@ article header {
     @extend %poster-height-auto;
     hyphens: auto;
     margin-bottom: 26vh;
+    @media (min-width: $breakpoint-md) {
+      margin-bottom: 18vh;
+    }
   }
 }
 
@@ -314,10 +343,11 @@ article header {
   padding-bottom: 3rem;
 
   .tv {
-    @include still("tv", $mango-300, "top", -3rem, -3rem, "left", -5rem, "right", 50%);
+    @include still("tv", $mango-300, "top", -3rem, -3rem, "left", -5rem, "right", 44%);
   }
   .fifty-cents {
-    @include still("fifty-cents", $fig-300, "top", 32vh, 34vh, "right", -5rem, "left", 50%);
+    @include still("fifty-cents", $fig-300, "top", 32vh, 28vh, "right", -5rem, "left", 44%);
+    transform: scale(0.75);
   }
 
   .poster {
@@ -330,19 +360,24 @@ article header {
 #our-voting-record {
   margin-top: 3rem;
   padding-top: 6rem;
-  padding-bottom: 3rem;
+  padding-bottom: $space-section-y-sm;
 
   .telephone {
-    @include still("telephone", $mango-300, "top", 0, 0, "right", -5rem, "left", 46%);
+    @include still("telephone", $mango-300, "top", 0, 0, "right", -5rem, "left", 44%);
+    transform: scale(0.75);
+    transform-origin: center right;
   }
   .megaphone {
-    @include still("megaphone", $blueberry-300, "top", 22vh, 34vh, "left", -2rem, "right", 52%);
+    @include still("megaphone", $blueberry-300, "top", 22vh, 20vh, "left", -2rem, "right", 42%);
   }
 
   .poster {
     background-color: $mint-500;
     @extend %poster-height-auto;
     margin-bottom: 19vh;
+    @media (min-width: $breakpoint-md) {
+      margin-bottom: 32vh;
+    }
   }
 }
 
