@@ -207,36 +207,44 @@
         <p>We have industry-leading ethical screens to help exclude harm from your super. Investments must pass every
           screen to be included. This means they don’t work against our mission.</p>
         <p>Explore to see how we screen and which companies fail our criteria.</p>
+      </div>
 
-        {# Todo: JS fallback #}
-        <div class="screens-container">
+      {# Todo: JS fallback #}
+      <div class="screens-container">
+        <div class="screens">
+          <div class="scroll-buttons">
+            <button id="left">{{ "/src/images/icons/arrow-west.svg" | svgContents | safe }}</button>
+            <button id="right" class="active"> {{ "/src/images/icons/arrow-east.svg" | svgContents | safe }}</button>
+          </div>
+
           <div class="buttons-container">
             {% for screen in screens %}
             <button onclick="showScreen('{{ screen.name }}')">{{ screen.name }}</button>
             {% endfor %}
           </div>
+          <div class="shadow-box"></div>
           {% for screen in screens %}
-          <div class="screen-container criteria-intro" id="{{ screen.name }}" {% if loop.first %}style="display:block;"
-            {% else %}style="display:none;" {% endif %}>
-
-            <h3>{{ screen.name }}</h3>
-            <p class="is-screened">Is screened for through the following criteria...</p>
+          <div class="screen-container" id="{{ screen.name }}" {% if loop.first %}style="display:block;" {% else
+            %}style="display:none;" {% endif %}>
+            <div class="criteria-intro">
+              <h3>{{ screen.name }}</h3>
+              <p>{{ screen.linkingVerb | capitalize }} screened via the following criteria...</p>
+            </div>
             {% for criteria in screen.criteria %}
-            <div class="criteria-container">
-              <div class="criteria">
-                <p class="question">{{ criteria.question }}</p>
-                <p class="example-label">Failing examples include...</p>
-                <ul class="examples">
-                  {% for example in criteria.examples %}
-                  <li>{{ example }}</li>
-                  {% endfor %}
-                </ul>
-              </div>
+            <div class="criteria-item">
+              <p>{{ criteria.question }}</p>
+              <p class="label">Failing examples include...</p>
+              <ul class="plain">
+                {% for example in criteria.examples %}
+                <li>{{ example }}</li>
+                {% endfor %}
+              </ul>
             </div>
             {% endfor %}
           </div>
           {% endfor %}
         </div>
+        <button type="button" class="expander">Show me more</button>
       </div>
     </section>
   </div>
@@ -282,6 +290,29 @@
           {% endif %}
           {% endfor %}
         </ul>
+
+        <p>We publish our proxy voting record annually following the end of each financial year. This voting summary
+          reflects the voting record for both direct investments and for investments made through funds that Future
+          Super invests in.</p>
+      </div>
+    </section>
+
+    <section class="article-content">
+      <div>
+        <p class="disclaimer">
+          Investment in Australian equities is predominantly made via the BetaShares Australian Sustainability Leaders
+          ETF. Investment in international equities is via the BetaShares Global Sustainability Leaders ETF. Exposure to
+          global green bonds is predominantly made via the BetaShares Sustainability Leaders Diversified Bond ETF. For
+          more information about these ETFs see <a href="https://www.betashares.com.au" target="_blank"
+            rel="noopener noreferrer">https://www.betashares.com.au</a>.
+        </p>
+        <p class="disclaimer">
+          Future Super Investment Services Pty Ltd (FSIS) is a service provider to BetaShares for these products, with
+          its role being to provide recommendations to the Responsible Investment Committee on the index constituents
+          and corporate actions. Details of FSIS services to BetaShares are found in the <a
+            href="https://futuresuper.com.au/fsg" target="_blank" rel="noopener noreferrer">Financial Services
+            Guide</a>.
+        </p>
       </div>
     </section>
   </div>

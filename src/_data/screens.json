@@ -1,6 +1,7 @@
 [
   {
     "name": "Fossil fuels",
+    "linkingVerb": "are",
     "criteria": [
       {
         "question": "Is the company involved at all in the exploration or extraction of fossil fuels?",
@@ -22,6 +23,7 @@
   },
   {
     "name": "Destruction of valuable environments",
+    "linkingVerb": "is",
     "criteria": [
       {
         "question": "Does the company’s operations have a direct negative impact on recognised UNESCO World Heritage areas or High Conservation value areas?",
@@ -31,6 +33,7 @@
   },
   {
     "name": "Human rights concerns",
+    "linkingVerb": "are",
     "criteria": [
       {
         "question": "Does the company have a recent history of human or labour rights violations?",
@@ -44,6 +47,7 @@
   },
   {
     "name": "Gambling",
+    "linkingVerb": "is",
     "criteria": [
       {
         "question": "Does the company profit from addiction to gambling?",
@@ -56,7 +60,8 @@
     ]
   },
   {
-    "name": "Board gender diversity",
+    "name": "Lack of boardroom gender diversity",
+    "linkingVerb": "is",
     "criteria": [
       {
         "question": "Does the company have at least one woman on their board of directors?",
@@ -65,7 +70,8 @@
     ]
   },
   {
-    "name": "Detention centres & for-profit prisons",
+    "name": "For-profit prisons",
+    "linkingVerb": "are",
     "criteria": [
       {
         "question": "Does the company provide services to the mandatory detention of asylum seekers, such as the provision of security, infrastructure or transportation of asylum seekers?",
@@ -79,6 +85,7 @@
   },
   {
     "name": "Armaments",
+    "linkingVerb": "are",
     "criteria": [
       {
         "question": "Does the company manufacture, produce or engineer weapons or armaments?",
@@ -92,6 +99,7 @@
   },
   {
     "name": "Animal cruelty",
+    "linkingVerb": "is",
     "criteria": [
       {
         "question": "Does the company farm for animal protein or provide significant services to the industry?",
@@ -113,6 +121,7 @@
   },
   {
     "name": "Tobacco",
+    "linkingVerb": "is",
     "criteria": [
       {
         "question": "Does the company produce or manufacture tobacco or tobacco products?",
@@ -125,20 +134,22 @@
     ]
   },
   {
-    "name": "Nuclear energy",
+    "name": "Uranium mining and nuclear energy",
+    "linkingVerb": "are",
     "criteria": [
       {
         "question": "Does the company mine radioactive materials?",
         "examples": ["Paladin Energy"]
       },
       {
-        "question": "Does the company produce nuclear energy or provide specific and significant services to the nuclear energy industry.",
+        "question": "Does the company produce nuclear energy or provide specific and significant services to the nuclear energy industry?",
         "examples": ["Electricite de France S.A."]
       }
     ]
   },
   {
     "name": "Alcohol",
+    "linkingVerb": "is",
     "criteria": [
       {
         "question": "Does the company derive significant revenue from the production, distribution or sale of alcohol?",
@@ -148,6 +159,7 @@
   },
   {
     "name": "Junk food",
+    "linkingVerb": "is",
     "criteria": [
       {
         "question": "Does the company manufacture, distribute or sell foods that have high fat, salt, sugar and oil content without providing nutritional value?",
@@ -157,15 +169,17 @@
   },
   {
     "name": "Payday lending",
+    "linkingVerb": "is",
     "criteria": [
       {
-        "question": "TBA",
-        "examples": ["TBA"]
+        "question": "Does the company offer payday lending services?",
+        "examples": ["Credit Corp"]
       }
     ]
   },
   {
-    "name": "Concerning chemicals",
+    "name": "Toxic chemicals",
+    "linkingVerb": "are",
     "criteria": [
       {
         "question": "Does the company produce agricultural chemicals that negatively impact natural ecosystems or human and animal health?",
@@ -179,6 +193,7 @@
   },
   {
     "name": "Pornography",
+    "linkingVerb": "is",
     "criteria": [
       {
         "question": "Does the company produce pornographic material or provide significant services to the pornographic industry?",
@@ -187,4 +202,3 @@
     ]
   }
 ]
-

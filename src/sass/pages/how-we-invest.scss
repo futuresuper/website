@@ -43,6 +43,10 @@ article header p {
   text-indent: 1.75rem;
 }
 
+article {
+  padding-bottom: $space-section-y-sm;
+}
+
 // Set general background colours
 .exclude {
   background-color: $fraise-300;
@@ -262,6 +266,7 @@ article header {
 
     figure {
       padding: 2rem 3rem;
+      border: 1px solid $mint-500;
       background-color: $mint-300;
       height: auto;
 
@@ -332,9 +337,179 @@ article header {
     background-color: $fraise-500;
     @extend %poster-height-auto;
     hyphens: auto;
-    margin-bottom: 26vh;
+    margin-bottom: 20vh;
     @media (min-width: $breakpoint-md) {
       margin-bottom: 18vh;
+    }
+  }
+
+  .screens-container {
+    font-family: $font-stack-monospace;
+    font-weight: 400;
+    letter-spacing: -1%;
+
+    background-color: $white-500;
+    border: 1px solid $red-500;
+
+    max-width: $breakpoint-sm;
+    margin: 3rem auto;
+
+    // Style for expander button
+    position: relative;
+    max-height: 50vh;
+    overflow: hidden;
+
+    .screens {
+      padding: 1.5rem;
+      @media (min-width: $breakpoint-md) {
+        padding: 2rem;
+      }
+
+      .scroll-buttons {
+        display: flex;
+        margin-bottom: 0.5rem;
+        @media (min-width: $breakpoint-md) {
+          display: none;
+        }
+
+        button {
+          width: 2.5rem;
+          height: 2.5rem;
+          padding: 0;
+          background: inherit;
+          &:hover {
+            background: $red-100;
+          }
+
+          svg {
+            width: 1.5rem;
+            height: 1.5rem;
+            // Offset to visually sit in middle
+            margin-top: 0.5rem;
+
+            .fill-target {
+              fill: $grey-300;
+            }
+          }
+
+          &.active {
+            svg {
+              .fill-target {
+                fill: $red-500;
+              }
+            }
+          }
+        }
+      }
+
+      .buttons-container {
+        overflow-x: scroll;
+        display: flex;
+        flex-wrap: nowrap;
+        @media (min-width: $breakpoint-md) {
+          flex-wrap: wrap;
+          margin-top: -0.25rem;
+          margin-left: -0.25rem;
+        }
+
+        button {
+          font-size: $font-size-sm;
+          cursor: pointer;
+          padding: 0.75rem 1rem;
+          color: $red-700;
+          border: 1px solid $red-200;
+          background-color: $white-500;
+          transition: all 200ms ease;
+          flex-shrink: 0;
+          text-align: center;
+          outline: none;
+          &:not(:last-of-type) {
+            margin-right: 0.25rem;
+          }
+          @media (min-width: $breakpoint-md) {
+            margin: 0.25rem;
+            flex-grow: 1;
+          }
+
+          &:hover {
+            background-color: $red-200;
+            border-color: $red-500;
+          }
+        }
+      }
+
+      .criteria-intro {
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 2.5rem;
+        @media (min-width: $breakpoint-md) {
+          margin-top: 4rem;
+        }
+
+        h3 {
+          color: $red-500;
+          font-size: $font-size-xl;
+          margin-bottom: 0.25rem;
+        }
+
+        p {
+          color: $red-900;
+          font-size: $font-size-xs;
+        }
+      }
+
+      .criteria-item {
+        &:not(:last-of-type) {
+          margin-bottom: 1.5rem;
+        }
+        padding: 1.5rem;
+        @media (min-width: $breakpoint-md) {
+          padding: 2rem;
+        }
+        background: $red-200;
+        color: $red-900;
+
+        .label {
+          margin-top: 2rem;
+          margin-bottom: 0.5rem;
+          color: $red-500;
+        }
+
+        .label,
+        ul li {
+          font-size: $font-size-xs;
+        }
+
+        ul li {
+          margin-bottom: 0.25rem;
+          &::before {
+            content: "❌";
+            margin-right: 1em;
+          }
+        }
+      }
+    }
+
+    .expander {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+
+      background-color: $white-500;
+      color: $red-900;
+      &:hover {
+        background-color: $red-200;
+      }
+
+      box-shadow: 0 -2rem 2rem $white-500;
+
+      // One-sided border as to not clash with parent container border
+      border-top: 1px solid $red-500;
+
+      &.active {
+        //TODO
+        box-shadow: inherit;
+      }
     }
   }
 }
@@ -361,7 +536,7 @@ article header {
 #our-voting-record {
   margin-top: 3rem;
   padding-top: 6rem;
-  padding-bottom: $space-section-y-sm;
+  padding-bottom: 3rem;
 
   .telephone {
     @include still("telephone", $mango-300, "top", 0, 0, "right", -5rem, "left", 44%);
@@ -384,21 +559,9 @@ article header {
 
 //
 // Being old styles
-.screens-container {
-  background-color: $white-500;
-  max-width: $breakpoint-sm;
-  margin: 0 auto;
-  // margin-bottom: 10rem;
-  border: 1px solid $red-500;
-  padding: 1.5rem;
-}
-
-.is-screened {
-  padding-bottom: 2rem;
-}
 
 // Fade in-and-outs of criteria
-// #criteria-container,
+// #criteria-item,
 // #selected-screen-title,
 // .screen-icon {
 //   opacity: 0;
@@ -415,43 +578,7 @@ article header {
 //   }
 // }
 
-// Buttons
-.buttons-container {
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 0.875rem;
-  margin-top: -0.25rem;
-  margin-left: -0.25rem;
-  // Mobile-specific item behaviour
-  overflow-x: scroll;
-  flex-wrap: nowrap;
-  // Tablet/desktop-specific item behaviour
-  @media (min-width: 720px) {
-    flex-wrap: wrap;
-  }
-
-  button {
-    cursor: pointer;
-    padding: 0.75rem 1rem;
-    margin: 0.25rem;
-    color: $red-700;
-    border: 1px solid $red-200;
-    background-color: $white-500;
-    transition: all 200ms ease;
-    flex-shrink: 0;
-    text-align: center;
-    outline: none;
-
-    @media (min-width: 720px) {
-      flex-grow: 1;
-    }
-
-    &:hover {
-      background-color: $red-200;
-      border-color: $red-500;
-    }
-  }
-}
+// Other old styles
 
 // Form radio buttons
 // #screens-form {
@@ -504,86 +631,3 @@ article header {
 //     }
 //   }
 // }
-
-.criteria-intro {
-  text-align: center;
-  padding-top: 2rem;
-
-  .screen-icon {
-    margin: 0 auto !important; //TODO: fix cascading issues causing more specific styles to be overriden by generic ones
-    width: 4rem;
-  }
-
-  h3 {
-    color: $red-700;
-  }
-}
-
-/* Criteria */
-.criteria {
-  margin-bottom: 3rem;
-  font-size: 0.875rem;
-}
-
-/* Style the speech bubbles */
-.question {
-  background: $red-700;
-  color: $white-500;
-  padding: 1.5rem;
-  position: relative;
-  line-height: 150%;
-  text-align: left;
-}
-
-/* Speech bubble arrows */
-.question:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  width: 0;
-  height: 0;
-  border: 1.5rem solid transparent;
-  border-top-color: $red-700;
-  border-bottom: 0;
-
-  margin-left: -0.75em;
-  margin-bottom: -1.5rem;
-}
-
-.criteria:nth-child(odd) > .question:after {
-  left: 2rem;
-  border-left: 0;
-}
-
-.criteria:nth-child(even) > .question:after {
-  right: 1.5rem;
-  border-right: 0;
-}
-
-/* Style the example bullets */
-.example-label {
-  margin-top: 1rem;
-  margin-left: 4rem;
-  font-weight: 450;
-  font-size: 0.6875rem;
-  color: $grey-400;
-  text-align: left;
-}
-
-.examples {
-  list-style: none;
-  margin: 0 auto;
-  padding: 0;
-}
-
-.example-label,
-.examples li {
-  margin-bottom: 0.25rem;
-  text-align: left;
-  margin-left: 4rem;
-}
-
-.examples li::before {
-  content: "❌";
-  margin-right: 1em;
-}
