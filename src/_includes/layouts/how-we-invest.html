@@ -221,7 +221,7 @@
             {% endfor %}
           </div>
           {% for item in screens %}
-          <div class="screen-container" aria-hidden="true" id="{{ item.name }}" {% if loop.first
+          <div class="criteria-container" aria-hidden="true" id="{{ item.name }}" {% if loop.first
             %}style="display:block;" {% else %}style="display:none;" {% endif %}>
             <div class="criteria-intro">
               <h3>{{ item.name }}</h3>
@@ -323,18 +323,4 @@
   {% include "partials/join-cta.html" %}
   {% include "partials/also-see.html" %}
 </div>
-
-<script>
-  function showScreen(screen) {
-    const screenContainers = document.getElementsByClassName("screen-container");
-    for (let i = 0; i < screenContainers.length; i++) {
-      screenContainers[i].style.display = "none";
-    }
-    document
-      .getElementById(screen)
-      .style
-      .display = "block";
-  }
-</script>
-
 {% endblock %}

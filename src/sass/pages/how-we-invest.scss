@@ -342,7 +342,6 @@ article header {
       margin-bottom: 18vh;
     }
   }
-
   .screens-container {
     font-family: $font-stack-monospace;
     font-weight: 400;
@@ -363,6 +362,14 @@ article header {
     @media (min-width: $breakpoint-md) {
       max-height: 72vh;
     }
+
+    // Set to a finite number to enable transition
+    &.active {
+      max-height: 300vh;
+    }
+
+    // Prevent iOS Safari from causing flicker on max-height transitions
+    -webkit-transform: translate3d(0, 0, 0);
 
     .screens {
       padding: 1.5rem;
@@ -475,6 +482,11 @@ article header {
         }
         background: $red-200;
         color: $red-900;
+
+        font-size: $font-size-sm;
+        @media (min-width: $breakpoint-md) {
+          font-size: 1rem;
+        }
 
         .label {
           margin-top: 2rem;
