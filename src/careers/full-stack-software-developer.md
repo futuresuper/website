@@ -2,8 +2,8 @@
 title: Full Stack Software Developer
 startDate: 2021-02-22T05:53:04.604Z
 endDate: 2021-03-09T05:53:04.632Z
-location: Australia, Sydney or Canberra Preferred
-salary: $85,000 - $90,000
+location: Australia, Sydney or Canberra (preferred)
+salary: $85,000 – $90,000
 url: full-stack-software-developer
 summary: We are looking for someone driven to join our tech team and use their
   passion, experience and skills in tech to help us in our fight for a
@@ -25,7 +25,7 @@ In the role of Software Developer, you will work with your team to build innovat
 
 Our team has a relatively flat and collaborative structure. The team reports to the Head of Tech.
 
-## What you’ll be doing:
+## What you’ll be doing
 
 * Working in a unified, agile environment with our engineering team to create and improve software that you can be proud of
 * Taking responsibility for documentation, code quality and testing, while ensuring the team is taking a best practice approach
@@ -35,7 +35,7 @@ Our team has a relatively flat and collaborative structure. The team reports to 
 * Using your creativity to overcome technical challenges
 * Travelling between Canberra and Sydney on a regular (monthly) basis to collaborate with other teams across the business
 
-## We are looking for someone who has:
+## We are looking for someone who has
 
 * PHP/Laravel software development experience (outside of university based projects), coupled with a decent understanding of the software development cycle
 * A relevant tertiary degree (Bachelor of Software Engineering, Information Technology, or equivalent)
@@ -50,7 +50,7 @@ Our team has a relatively flat and collaborative structure. The team reports to 
 * Experience working as part of a team, and enjoys taking a collaborative approach to their work
 * Availability to travel to Sydney and Canberra
 
-## It would also be great if you have:
+## It would also be great if you have
 
 * Script coding experience (bash, Python)
 * Familiarity with Linux system (or at least MacOs, from Catalina onward)
@@ -62,18 +62,12 @@ Our team has a relatively flat and collaborative structure. The team reports to 
 
 Don't meet all the criteria listed here? Don’t worry! Providing you have the right foundational experience and certain qualifications, we encourage you to apply. We are happy to train and develop people into roles, if we think they’re a great fit for our team and show promise.
 
-## You'll love working here with:
+## You'll love working here with
 
 * A purpose-oriented organisation, spending your days working on making this world a better place! The more we grow, the bigger the impact we are making on climate action and equality
 * A proud B-Corp organisation that cares about what how we behave on the inside
 * Team lunches, drinks and company-wide events
 * 14 weeks’ paid parental leave for all genders and a generous parental superannuation package, Employee Assistance Program (EAP), formal training and development with continuous improvement opportunities, a continuous supply of healthy office snacks (if/when you’re in the office) and membership to Bicycle NSW  (or your State’s equivalent) as part of our sustainable transport policy
 * Future Super is an equal opportunity employer – we provide flexible working hours, the option to work from home and a laptop you can use to work remotely (this used to be a more differentiating dot-point, but it’s still true!)
-
-The application will require answering short questions so give yourself time to complete it. Once started, you can save and return to your application before submitting.
-
-We use Applied as our de-identified recruitment platform, helping us reduce the risk of unconscious bias in our hiring process. If you are curious to know more about how it works, [check out this blog post](https://www.linkedin.com/pulse/how-de-identified-recruitment-improving-diversity-our-veronica/?trackingId=0MnwcX%2BBRQSOTl0oogaIbA%3D%3D) from our Head of Group Strategy, Veronica!
-
-Questions? Please reach out to Khi, HR Coordinator, at careers@futuresuper.com.au.
 
 ‍
