@@ -13,7 +13,7 @@
     <ul class="plain career-item">
       {% for item in collections.careers %}
       {# TODO: replace this manual check for open/closed positions with a date-based, automated, solution #}
-      {% if item.data.tempClosedBoolean === false %}
+      {% if not item.data.tempClosedBoolean %}
       <li>
         <a href="{{ item.url }}">
           <h3>{{ item.data.title }}</h3>
