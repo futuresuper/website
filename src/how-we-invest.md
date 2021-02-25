@@ -14,6 +14,14 @@ impactInvestingRules:
   - Investments where our money doesn’t create any benefits (e.g. secondary markets like equities) cannot be considered ‘impact investments’.
   - Investments with high risk of failure will be avoided unless the failure doesn’t result in loss to members and contributes to better knowledge about effective solutions.
   - We take into account a number of additional, more granular, rules that cover topics such as an investment’s finances and its own investments in other companies.
+weSeek:
+  - Clean energy
+  - Speciality housing
+  - Recycling and waste
+  - Social impact
+  - Healthcare
+  - Sustainable agriculture
+  - Preservation of biodiversity
 alsoSee:
   - Everything We Invest In
   - Investment Options

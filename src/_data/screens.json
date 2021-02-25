@@ -8,11 +8,11 @@
         "examples": ["BHP Billiton", "Woodside Petroleum (fracking)"]
       },
       {
-        "question": "Does the company own or operate fossil fuel power generators, or retail fossil fuel-generated electricity?",
+        "question": "Does the company own or operate fossil fuel power generators?",
         "examples": ["Origin Energy", "AGL (burning)"]
       },
       {
-        "question": "Does the company provide specific and significant services to the fossil fuel industry - including engineering, financing, transport or logistics?",
+        "question": "Does the company provide specific and significant services to the fossil fuel industry including engineering, financing, transport, or logistics?",
         "examples": ["Westpac", "Commonwealth Bank", "NAB", "ANZ (financing), Aurizon (rail transport)"]
       },
       {
@@ -64,7 +64,7 @@
     "linkingVerb": "is",
     "criteria": [
       {
-        "question": "Does the company have at least one woman on their board of directors?",
+        "question": "Does the company have at least one woman at board level?",
         "examples": ["Fluence", "Necon Co"]
       }
     ]
@@ -74,7 +74,7 @@
     "linkingVerb": "are",
     "criteria": [
       {
-        "question": "Does the company provide services to the mandatory detention of asylum seekers, such as the provision of security, infrastructure or transportation of asylum seekers?",
+        "question": "Does the company provide services to the mandatory detention of asylum seekers, such as the provision of security, infrastructure, or transportation of asylum seekers?",
         "examples": ["Broadspectrum"]
       },
       {
@@ -88,7 +88,7 @@
     "linkingVerb": "are",
     "criteria": [
       {
-        "question": "Does the company manufacture, produce or engineer weapons or armaments?",
+        "question": "Does the company manufacture, produce, or engineer weapons or armaments?",
         "examples": ["General Dynamics", "Lockheed Martin", "Northrop Grumman"]
       },
       {
@@ -114,7 +114,7 @@
         "examples": ["L’Oreal"]
       },
       {
-        "question": "Does the company produce controversial animal products (e.g foie gras; ivory)?",
+        "question": "Does the company produce controversial animal products (e.g foie gras, ivory)?",
         "examples": ["Burberry Group"]
       }
     ],
@@ -153,7 +153,7 @@
     "linkingVerb": "is",
     "criteria": [
       {
-        "question": "Does the company derive significant revenue from the production, distribution or sale of alcohol?",
+        "question": "Does the company derive significant revenue from the production, distribution, or sale of alcohol?",
         "examples": ["United Malt Group", "Metcash (wholesale distribution)"]
       }
     ]
@@ -163,7 +163,7 @@
     "linkingVerb": "is",
     "criteria": [
       {
-        "question": "Does the company manufacture, distribute or sell foods that have high fat, salt, sugar and oil content without providing nutritional value?",
+        "question": "Does the company manufacture, distribute or sell foods that have high fat, salt, sugar, and oil content without providing nutritional value?",
         "examples": ["McDonalds", "Hershey’s", "Mondelez International"]
       }
     ]

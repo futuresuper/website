@@ -1062,7 +1062,7 @@ body > .flow-content > footer {
   background: #ffffff;
 }
 
-#our-voting-record .poster, #everything-we-invest-in .poster, #how-we-exclude-investments .poster, #rules-for-impact-investing .poster, #our-theory-of-change .poster, article header .poster {
+#our-voting-record .poster, #everything-we-invest-in .poster, #how-we-exclude-investments .poster, #rules-for-impact-investing .poster, #how-we-get-there .poster, article header .poster {
   height: auto;
   padding: 3rem 0.75rem;
 }
@@ -1321,13 +1321,13 @@ article header p {
 }
 
 #mission p,
-#our-theory-of-change p {
+#how-we-get-there p {
   font-size: 1.75rem;
   line-height: 115%;
 }
 @media (min-width: 48rem) {
   #mission p,
-#our-theory-of-change p {
+#how-we-get-there p {
     font-size: 2.5rem;
     text-indent: 3.5rem;
   }
@@ -1344,11 +1344,11 @@ article header p {
   }
 }
 
-#our-theory-of-change {
+#how-we-get-there {
   padding-top: 5rem;
   position: relative;
 }
-#our-theory-of-change .banana {
+#how-we-get-there .banana {
   width: 20rem;
   height: 20rem;
   top: -2rem;
@@ -1358,7 +1358,7 @@ article header p {
   background-size: 20rem 20rem;
 }
 @media (min-width: 48rem) {
-  #our-theory-of-change .banana {
+  #how-we-get-there .banana {
     width: 30rem;
     height: 30rem;
     top: -2rem;
@@ -1368,12 +1368,12 @@ article header p {
   }
 }
 @media (min-width: 48rem) {
-  #our-theory-of-change .banana {
+  #how-we-get-there .banana {
     background-image: url("/images/cutouts/banana-480h.png");
     background-size: 30rem 30rem;
   }
 }
-#our-theory-of-change .macintosh {
+#how-we-get-there .macintosh {
   width: 20rem;
   height: 20rem;
   top: 25vh;
@@ -1384,7 +1384,7 @@ article header p {
   transform: scale(0.75);
 }
 @media (min-width: 48rem) {
-  #our-theory-of-change .macintosh {
+  #how-we-get-there .macintosh {
     width: 30rem;
     height: 30rem;
     top: 34vh;
@@ -1394,21 +1394,21 @@ article header p {
   }
 }
 @media (min-width: 48rem) {
-  #our-theory-of-change .macintosh {
+  #how-we-get-there .macintosh {
     background-image: url("/images/cutouts/macintosh-480h.png");
     background-size: 30rem 30rem;
   }
 }
-#our-theory-of-change .poster {
+#how-we-get-there .poster {
   background-color: #2bb151;
   margin-bottom: 24vh;
 }
 @media (min-width: 48rem) {
-  #our-theory-of-change .poster {
+  #how-we-get-there .poster {
     margin-bottom: 40vh;
   }
 }
-#our-theory-of-change h3:last-of-type {
+#how-we-get-there h3:last-of-type {
   color: #f04b23;
 }
 

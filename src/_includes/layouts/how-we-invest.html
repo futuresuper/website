@@ -13,7 +13,7 @@
       </div>
       <div class="article-content">
         <p class="heading-two">
-          A better way to invest super for your future.
+          Future Super believes there is a better way to invest super for your future.
         </p>
       </div>
     </div>
@@ -22,24 +22,20 @@
   <div class="container">
     <section class="article-content">
       <p>The super industry’s purpose is to invest and grow Australia’s retirement savings. But super funds have
-        consistently invested money in fossil fuels and other harmful industries that have set us on a path towards
-        climate change.
-      </p>
-      <p>Future Super offers a better way to invest super for your future.</p>
+        consistently invested money in harmful industries like fossil fuels that have set us on a path towards climate
+        change.</p>
+      <p>Future Super believes there is a better way to invest super for your future.</p>
+      <p>We invest for your financial future <em>and</em> for the quality of your future as you save for retirement.</p>
     </section>
 
     <section id="mission" class="article-content">
       <h3 class="heading-two">Our mission</h3>
-      <p>We grow retirement savings by investing in a future free from climate change and inequality.</p>
-
-      <h3 class="heading-two">What that means</h3>
-      <p>Your money will invest for your financial benefit and for the quality of your future as you save for
-        retirement.</p>
+      <p>To grow retirement savings by investing in a future free from climate change and inequality.</p>
     </section>
   </div>
 
   <div class="neutral">
-    <section id="our-theory-of-change" class="container dithered-img-container">
+    <section id="how-we-get-there" class="container dithered-img-container">
       <div class="macintosh dithered-img"></div>
       <div class="banana dithered-img rellax"></div>
       <div class="poster rellax" data-rellax-xs-speed="2" data-rellax-mobile-speed="3" data-rellax-tablet-speed="5"
@@ -52,34 +48,18 @@
         <div class="marquee-container seek">
           <div class="marquee seek">
             <ul>
-              <li>Clean energy</li>
-              <li>Speciality housing</li>
-              <li>Recycling and waste</li>
-              <li>Social impact</li>
-              <li>Healthcare</li>
-              <li>Sustainable agriculture</li>
-              <li>Preservation of biodiversity</li>
-              <li>Clean energy</li>
-              <li>Speciality housing</li>
-              <li>Recycling and waste</li>
-              <li>Social impact</li>
-              <li>Healthcare</li>
-              <li>Sustainable agriculture</li>
-              <li>Preservation of biodiversity</li>
-              <li>Clean energy</li>
-              <li>Speciality housing</li>
-              <li>Recycling and waste</li>
-              <li>Social impact</li>
-              <li>Healthcare</li>
-              <li>Sustainable agriculture</li>
-              <li>Preservation of biodiversity</li>
-              <li>Clean energy</li>
-              <li>Speciality housing</li>
-              <li>Recycling and waste</li>
-              <li>Social impact</li>
-              <li>Healthcare</li>
-              <li>Sustainable agriculture</li>
-              <li>Preservation of biodiversity</li>
+              {% for item in weSeek %}
+              <li>{{ item }}</li>
+              {% endfor %}
+              {% for item in weSeek %}
+              <li>{{ item }}</li>
+              {% endfor %}
+              {% for item in weSeek %}
+              <li>{{ item }}</li>
+              {% endfor %}
+              {% for item in weSeek %}
+              <li>{{ item }}</li>
+              {% endfor %}
             </ul>
           </div>
         </div>
@@ -110,14 +90,14 @@
     <section id="impact-investing" class="container">
       <div class="article-content">
         <h2>Impact investing</h2>
-        <p>Impact investing is what makes Future Super unique. No other super fund actively seeks investments that
-          provide
-          the greatest opportunity for your money to make a positive impact.</p>
-        <p>We define impact according to our mission, as meaningful systems change leading to a prosperous future free
-          from climate change and inequality. </p>
-        <p>An impact investment at Future Super must provide financial value to our members and also make a direct
-          contribution to action on climate change or inequality. Impact investments make up roughly 10% of all
-          investments (by financial value)* made by Future Super.</p>
+        <p>Impact investing is what makes Future Super unique and industry leaders in financial impact. We actively seek
+          investments that provide the greatest opportunity for your money to make a positive impact.</p>
+        <p>We define impact according to our mission: as meaningful systems change leading to a prosperous future free
+          from climate change and inequality. Every dollar invested with Future Super contributes to our impact, but
+          impact investments make a significant contribution to our mission in their own right.</p>
+        <p>An impact investment at Future Super needs to be able to provide financial value to our members and also make
+          a direct contribution to action on climate change or inequality. Impact investments make up roughly 10% of all
+          investments (by financial value)<span>*</span> made by Future Super.</p>
 
         <h3>Choosing impact investments</h3>
         <p>Choosing impact investments isn’t a cut-and-dry process. Each opportunity is unique and so we focus on the
@@ -268,11 +248,11 @@
         <h2>Every&shy;thing we invest in</h2>
       </div>
       <div class="article-content">
-        <p>There are plenty of regular investments that pass our above screens. Some are companies you’d recognise, like
-          Netflix and Telstra.</p>
-        <p>We don’t expect every investment to change the world, but we do make all our investments public so that
-          anyone can see where the money goes.</p>
-        <a href="/everything-we-invest-in" class="button primary">Explore Our Investments</a>
+        <p>While Future Super aims to invest in companies that further our mission, there are plenty of investments that
+          pass our screens which aren’t considered impact investments.</p>
+        <p>Some are companies you’d recognise, like Netflix or Telstra. We don’t expect every investment to change the
+          world, but we do make all our investments public so that anyone can see where the money goes.</p>
+        <a href="/everything-we-invest-in" class="button primary">Explore our investments</a>
       </div>
     </section>
 
@@ -285,11 +265,9 @@
       </div>
       <div class="article-content">
         <p>Investing in companies gives Future Super the right to vote on their internal matters and policies. We do
-          this
-          on behalf of our members as a collective, with their values and financial futures in mind. Future Super keeps
-          a
-          transparent record of our voting so you can see how we represent you on issues of climate, equality and
-          corporate governance.</p>
+          this on behalf of our members as a collective, with their values and financial futures in mind. Future Super
+          keeps a transparent record of our voting so you can see how we represent you on issues of climate, equality
+          and corporate governance.</p>
 
         <ul class="plain doc-or-form-item">
           {% for item in collections.documentsAndForms %}
@@ -309,6 +287,7 @@
 
     <section class="article-content">
       <div>
+        <p class="disclaimer">*&thinsp;As of January 1st, 2021.</p>
         <p class="disclaimer">
           Investment in Australian equities is predominantly made via the BetaShares Australian Sustainability Leaders
           ETF. Investment in international equities is via the BetaShares Global Sustainability Leaders ETF. Exposure to
