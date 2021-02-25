@@ -208,7 +208,15 @@
         <p>Explore to see how we screen and which companies fail our criteria.</p>
       </div>
 
-      {# Todo: JS fallback #}
+      <div class="perma-tooltip-container">
+        <p id="swipe-instructions" class="perma-tooltip">
+          Swipe and tap to see other ethical screens in action.
+        </p>
+        <p id="tap-instructions" class="perma-tooltip">
+          Tap another item to see its ethical screens in action.
+        </p>
+      </div>
+      {# Todo: Create fallback for no JS #}
       <div class="screens-container">
         <div class="screens">
           <div class="scroll-buttons">
@@ -217,17 +225,16 @@
           </div>
           <div class="buttons-container">
             {% for item in screens %}
-            <input type="radio" name="screen" id="{{ item.name | slug }}" value="{{ item.name }}" {% if loop.first %}
-              checked="true" {% endif %} onclick="showScreen('{{ item.name }}')">
-            <label for="{{ item.name | slug }}">{{ item.name }}</label>
+            <input type="radio" name="screen" id="button-{{ item.name | slug }}" value="{{ item.name }}" {% if
+              loop.first %} checked="true" {% endif %} onclick="showScreen('{{ item.name | slug }}')">
+            <label for="button-{{ item.name | slug }}">{{ item.name }}</label>
             {% endfor %}
           </div>
           {% for item in screens %}
-          <div class="criteria-container" aria-hidden="true" id="{{ item.name }}" {% if loop.first
-            %}style="display:block;" {% else %}style="display:none;" {% endif %}>
+          <div class="criteria-container{% if loop.first %} active{% endif %}" id="{{ item.name | slug }}">
             <div class="criteria-intro">
               <h3>{{ item.name }}</h3>
-              <p>{{ item.linkingVerb | capitalize }} screened for via the following criteria...</p>
+              <p>{{ item.linkingVerb }} screened for via the following criteria...</p>
             </div>
             {% for criteria in item.criteria %}
             <div class="criteria-item">

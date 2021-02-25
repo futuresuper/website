@@ -342,6 +342,49 @@ article header {
       margin-bottom: 18vh;
     }
   }
+
+  .perma-tooltip-container,
+  .screens-container {
+    max-width: $breakpoint-sm;
+    margin: 0 auto;
+  }
+
+  .perma-tooltip-container {
+    position: relative;
+    &.active {
+      display: none;
+    }
+
+    .perma-tooltip {
+      top: 0.5rem;
+      left: -0.5rem;
+      width: 13rem;
+      @media (min-width: $breakpoint-sm) {
+        top: 3rem;
+        left: -1.5rem;
+        width: auto;
+      }
+      @media (min-width: $breakpoint-md) {
+        top: 0.25rem;
+        left: auto;
+        right: -1.5rem;
+        width: auto;
+      }
+
+      &#swipe-instructions {
+        @media (min-width: $breakpoint-md) {
+          display: none;
+        }
+      }
+      &#tap-instructions {
+        display: none;
+        @media (min-width: $breakpoint-md) {
+          display: inherit;
+        }
+      }
+    }
+  }
+
   .screens-container {
     font-family: $font-stack-monospace;
     font-weight: 400;
@@ -379,6 +422,7 @@ article header {
 
       .scroll-buttons {
         display: flex;
+        justify-content: flex-end;
         margin-bottom: 0.5rem;
         @media (min-width: $breakpoint-md) {
           display: none;
@@ -421,8 +465,7 @@ article header {
         @media (min-width: $breakpoint-md) {
           overflow-x: inherit;
           flex-wrap: wrap;
-          margin-top: -0.25rem;
-          margin-left: -0.25rem;
+          margin-right: 0;
         }
 
         input {
@@ -440,17 +483,22 @@ article header {
         }
 
         label {
+          font-size: $font-size-sm;
           cursor: pointer;
           padding: 0.75rem 1rem;
-          margin: 0.25rem;
+          // Give all a right-side margin
+          &:not(:last-of-type) {
+            margin-right: 0.25rem;
+          }
           color: $red-700;
           border: 1px solid $red-200;
           background-color: $white-500;
           transition: all 200ms ease;
           flex-shrink: 0;
           text-align: center;
-
           @media (min-width: $breakpoint-md) {
+            font-size: 1rem;
+            margin: 0.25rem;
             flex-grow: 1;
           }
 
@@ -459,105 +507,87 @@ article header {
             border-color: $red-500;
           }
         }
-
-        // button {
-        //   font-size: $font-size-sm;
-        //   cursor: pointer;
-        //   padding: 0.75rem 1rem;
-        //   color: $red-700;
-        //   border: 1px solid $red-200;
-        //   background-color: $white-500;
-        //   transition: all 200ms ease;
-        //   flex-shrink: 0;
-        //   text-align: center;
-        //   outline: none;
-        //   &:not(:last-of-type) {
-        //     margin-right: 0.25rem;
-        //   }
-        //   @media (min-width: $breakpoint-md) {
-        //     margin: 0.25rem;
-        //     flex-grow: 1;
-        //   }
-
-        //   &:hover {
-        //     background-color: $red-200;
-        //     border-color: $red-500;
-        //   }
-        // }
       }
 
-      .criteria-intro {
-        text-align: center;
-        margin-top: 2rem;
-        margin-bottom: 1.5rem;
-        @media (min-width: $breakpoint-md) {
-          margin-top: 3rem;
-          margin-bottom: 2rem;
+      .criteria-container {
+        display: none;
+        &.active {
+          display: inherit;
         }
 
-        h3 {
-          color: $red-500;
-          font-size: $font-size-xl;
-          margin-bottom: 0.25rem;
-        }
-
-        p {
-          color: $red-900;
-          font-size: $font-size-xs;
-          // Set optical padding to prevent awkward line breaks
-          padding: 0 2rem;
-          @media (min-width: $breakpoint-sm) {
-            padding: 0;
-          }
-        }
-      }
-
-      .criteria-item {
-        &:not(:last-of-type) {
-          margin-bottom: 1.5rem;
-        }
-        padding: 1.5rem;
-        @media (min-width: $breakpoint-md) {
-          padding: 2rem;
-        }
-        background: $red-200;
-        color: $red-900;
-
-        font-size: $font-size-sm;
-        @media (min-width: $breakpoint-md) {
-          font-size: 1rem;
-        }
-
-        .examples-intro {
+        .criteria-intro {
+          text-align: center;
           margin-top: 2rem;
-          margin-bottom: 0.5rem;
-          color: $red-500;
-        }
-
-        .examples-intro,
-        ul li {
-          font-size: $font-size-xs;
-        }
-
-        ul li {
-          margin-bottom: 0.25rem;
-          &::before {
-            content: "❌";
-            margin-right: 1em;
+          margin-bottom: 1.5rem;
+          @media (min-width: $breakpoint-md) {
+            margin-top: 3rem;
+            margin-bottom: 2rem;
           }
 
-          a {
-            color: $red-700;
+          h3 {
+            color: $red-500;
+            font-size: $font-size-xl;
+            margin-bottom: 0.25rem;
+          }
 
-            &:hover {
-              color: $red-500;
+          p {
+            color: $red-900;
+            font-size: $font-size-xs;
+            // Set optical padding to prevent awkward line breaks
+            padding: 0 2rem;
+            @media (min-width: $breakpoint-sm) {
+              padding: 0;
             }
           }
         }
-      }
 
-      .disclaimer {
-        margin-top: 2rem;
+        .criteria-item {
+          &:not(:last-of-type) {
+            margin-bottom: 1.5rem;
+          }
+          padding: 1.5rem;
+          @media (min-width: $breakpoint-md) {
+            padding: 2rem;
+          }
+          background: $red-200;
+          color: $red-900;
+
+          font-size: $font-size-sm;
+          @media (min-width: $breakpoint-md) {
+            font-size: 1rem;
+          }
+
+          .examples-intro {
+            margin-top: 2rem;
+            margin-bottom: 0.5rem;
+            color: $red-500;
+          }
+
+          .examples-intro,
+          ul li {
+            font-size: $font-size-xs;
+          }
+
+          ul li {
+            margin-bottom: 0.25rem;
+            &::before {
+              content: "❌";
+              margin-right: 1em;
+            }
+
+            a {
+              color: $red-700;
+
+              &:hover {
+                color: $red-500;
+              }
+            }
+          }
+        }
+
+        .disclaimer {
+          margin-top: 2rem;
+        }
       }
     }
 

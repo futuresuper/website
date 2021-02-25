@@ -881,6 +881,29 @@ input.search {
   }
 }
 
+.perma-tooltip,
+.tooltip-text {
+  width: 13rem;
+  font-family: "JetBrainsMono", monospace;
+  font-weight: 500;
+  letter-spacing: -1%;
+  font-size: 0.75rem;
+  padding: 0.75rem;
+  position: absolute;
+  z-index: 3;
+}
+.perma-tooltip::after,
+.tooltip-text::after {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+}
+
 .tooltip {
   position: relative;
   display: inline;
@@ -895,31 +918,15 @@ input.search {
   display: block;
 }
 .tooltip .tooltip-text {
-  font-family: "JetBrainsMono", monospace;
-  font-weight: 500;
-  letter-spacing: -1%;
   display: none;
   background-color: #000000;
   color: #ffffff;
   text-align: center;
-  font-size: 0.75rem;
-  padding: 0.75rem;
-  position: absolute;
-  z-index: 3;
-  width: 13rem;
   transform: translate(-50%, 0);
   left: 50%;
   bottom: 100%;
 }
 .tooltip .tooltip-text::after {
-  content: " ";
-  position: absolute;
-  top: 100%;
-  /* At the bottom of the tooltip */
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
   border-color: #140f14 transparent transparent transparent;
 }
 .tooltip .tooltip-text.left {
@@ -938,6 +945,13 @@ input.search {
 }
 .tooltip .tooltip-text.right::after {
   left: calc(100% - 2.5rem);
+}
+
+.perma-tooltip {
+  background-color: #fac33c;
+}
+.perma-tooltip::after {
+  border-color: #fac33c transparent transparent transparent;
 }
 
 .marquee-container, #rules-for-impact-investing, .dithered-img {
@@ -1560,6 +1574,50 @@ article header p {
     margin-bottom: 18vh;
   }
 }
+#how-we-exclude-investments .perma-tooltip-container,
+#how-we-exclude-investments .screens-container {
+  max-width: 40rem;
+  margin: 0 auto;
+}
+#how-we-exclude-investments .perma-tooltip-container {
+  position: relative;
+}
+#how-we-exclude-investments .perma-tooltip-container.active {
+  display: none;
+}
+#how-we-exclude-investments .perma-tooltip-container .perma-tooltip {
+  top: 0.5rem;
+  left: -0.5rem;
+  width: 13rem;
+}
+@media (min-width: 40rem) {
+  #how-we-exclude-investments .perma-tooltip-container .perma-tooltip {
+    top: 3rem;
+    left: -1.5rem;
+    width: auto;
+  }
+}
+@media (min-width: 48rem) {
+  #how-we-exclude-investments .perma-tooltip-container .perma-tooltip {
+    top: 0.25rem;
+    left: auto;
+    right: -1.5rem;
+    width: auto;
+  }
+}
+@media (min-width: 48rem) {
+  #how-we-exclude-investments .perma-tooltip-container .perma-tooltip#swipe-instructions {
+    display: none;
+  }
+}
+#how-we-exclude-investments .perma-tooltip-container .perma-tooltip#tap-instructions {
+  display: none;
+}
+@media (min-width: 48rem) {
+  #how-we-exclude-investments .perma-tooltip-container .perma-tooltip#tap-instructions {
+    display: inherit;
+  }
+}
 #how-we-exclude-investments .screens-container {
   font-family: "JetBrainsMono", monospace;
   font-weight: 400;
@@ -1592,6 +1650,7 @@ article header p {
 }
 #how-we-exclude-investments .screens-container .screens .scroll-buttons {
   display: flex;
+  justify-content: flex-end;
   margin-bottom: 0.5rem;
 }
 @media (min-width: 48rem) {
@@ -1628,8 +1687,7 @@ article header p {
   #how-we-exclude-investments .screens-container .screens .buttons-container {
     overflow-x: inherit;
     flex-wrap: wrap;
-    margin-top: -0.25rem;
-    margin-left: -0.25rem;
+    margin-right: 0;
   }
 }
 #how-we-exclude-investments .screens-container .screens .buttons-container input {
@@ -1645,9 +1703,9 @@ article header p {
   border-color: #db380f;
 }
 #how-we-exclude-investments .screens-container .screens .buttons-container label {
+  font-size: 0.875rem;
   cursor: pointer;
   padding: 0.75rem 1rem;
-  margin: 0.25rem;
   color: #db380f;
   border: 1px solid #faccc2;
   background-color: #ffffff;
@@ -1655,8 +1713,13 @@ article header p {
   flex-shrink: 0;
   text-align: center;
 }
+#how-we-exclude-investments .screens-container .screens .buttons-container label:not(:last-of-type) {
+  margin-right: 0.25rem;
+}
 @media (min-width: 48rem) {
   #how-we-exclude-investments .screens-container .screens .buttons-container label {
+    font-size: 1rem;
+    margin: 0.25rem;
     flex-grow: 1;
   }
 }
@@ -1664,74 +1727,80 @@ article header p {
   background-color: #faccc2;
   border-color: #f04b23;
 }
-#how-we-exclude-investments .screens-container .screens .criteria-intro {
+#how-we-exclude-investments .screens-container .screens .criteria-container {
+  display: none;
+}
+#how-we-exclude-investments .screens-container .screens .criteria-container.active {
+  display: inherit;
+}
+#how-we-exclude-investments .screens-container .screens .criteria-container .criteria-intro {
   text-align: center;
   margin-top: 2rem;
   margin-bottom: 1.5rem;
 }
 @media (min-width: 48rem) {
-  #how-we-exclude-investments .screens-container .screens .criteria-intro {
+  #how-we-exclude-investments .screens-container .screens .criteria-container .criteria-intro {
     margin-top: 3rem;
     margin-bottom: 2rem;
   }
 }
-#how-we-exclude-investments .screens-container .screens .criteria-intro h3 {
+#how-we-exclude-investments .screens-container .screens .criteria-container .criteria-intro h3 {
   color: #f04b23;
   font-size: 1.75rem;
   margin-bottom: 0.25rem;
 }
-#how-we-exclude-investments .screens-container .screens .criteria-intro p {
+#how-we-exclude-investments .screens-container .screens .criteria-container .criteria-intro p {
   color: #47170b;
   font-size: 0.75rem;
   padding: 0 2rem;
 }
 @media (min-width: 40rem) {
-  #how-we-exclude-investments .screens-container .screens .criteria-intro p {
+  #how-we-exclude-investments .screens-container .screens .criteria-container .criteria-intro p {
     padding: 0;
   }
 }
-#how-we-exclude-investments .screens-container .screens .criteria-item {
+#how-we-exclude-investments .screens-container .screens .criteria-container .criteria-item {
   padding: 1.5rem;
   background: #faccc2;
   color: #47170b;
   font-size: 0.875rem;
 }
-#how-we-exclude-investments .screens-container .screens .criteria-item:not(:last-of-type) {
+#how-we-exclude-investments .screens-container .screens .criteria-container .criteria-item:not(:last-of-type) {
   margin-bottom: 1.5rem;
 }
 @media (min-width: 48rem) {
-  #how-we-exclude-investments .screens-container .screens .criteria-item {
+  #how-we-exclude-investments .screens-container .screens .criteria-container .criteria-item {
     padding: 2rem;
   }
 }
 @media (min-width: 48rem) {
-  #how-we-exclude-investments .screens-container .screens .criteria-item {
+  #how-we-exclude-investments .screens-container .screens .criteria-container .criteria-item {
     font-size: 1rem;
   }
 }
-#how-we-exclude-investments .screens-container .screens .criteria-item .examples-intro {
+#how-we-exclude-investments .screens-container .screens .criteria-container .criteria-item .examples-intro {
   margin-top: 2rem;
   margin-bottom: 0.5rem;
   color: #f04b23;
 }
-#how-we-exclude-investments .screens-container .screens .criteria-item .examples-intro,
-#how-we-exclude-investments .screens-container .screens .criteria-item ul li {
+#how-we-exclude-investments .screens-container .screens .criteria-container .criteria-item .examples-intro,
+#how-we-exclude-investments .screens-container .screens .criteria-container .criteria-item ul li {
   font-size: 0.75rem;
 }
-#how-we-exclude-investments .screens-container .screens .criteria-item ul li {
+#how-we-exclude-investments .screens-container .screens .criteria-container .criteria-item ul li {
   margin-bottom: 0.25rem;
 }
-#how-we-exclude-investments .screens-container .screens .criteria-item ul li::before {
+#how-we-exclude-investments .screens-container .screens .criteria-container .criteria-item ul li::before {
   content: "❌";
   margin-right: 1em;
 }
-#how-we-exclude-investments .screens-container .screens .criteria-item ul li a {
+#how-we-exclude-investments .screens-container .screens .criteria-container .criteria-item ul li a {
   color: #db380f;
 }
-#how-we-exclude-investments .screens-container .screens .criteria-item ul li a:hover {
+#how-we-exclude-investments .screens-container .screens .criteria-container .criteria-item ul li a:hover {
   color: #f04b23;
 }
-#how-we-exclude-investments .screens-container .screens .disclaimer {
+#how-we-exclude-investments .screens-container .screens .criteria-container .disclaimer {
   margin-top: 2rem;
 }
 #how-we-exclude-investments .screens-container .expander {
