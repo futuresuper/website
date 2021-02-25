@@ -6,8 +6,6 @@
 @use "../base" as *;
 @use "dither-page-style" as *;
 
-$transition-expander-height: 1000ms ease;
-
 %poster-height-auto {
   height: auto;
   padding: 3rem 0.75rem;
@@ -359,7 +357,7 @@ article header {
     // Style for expander button
     position: relative;
     overflow: hidden;
-    transition: max-height $transition-expander-height;
+    transition: max-height 1000ms ease;
 
     max-height: 64vh;
     @media (min-width: $breakpoint-md) {
@@ -371,7 +369,6 @@ article header {
       @media (min-width: $breakpoint-md) {
         padding: 2rem;
       }
-      // transition: padding-bottom $transition-expander-height;
 
       .scroll-buttons {
         display: flex;
@@ -516,7 +513,6 @@ article header {
       width: 100%;
       position: absolute;
       bottom: 0;
-
       background-color: $white-500;
       color: $red-900;
       &:hover {
@@ -524,12 +520,11 @@ article header {
       }
 
       box-shadow: 0 -2rem 2rem $white-500;
-
       // One-sided border as to not clash with parent container border
       border-top: 1px solid $red-500;
 
       &.active {
-        box-shadow: inherit;
+        display: none;
       }
     }
   }

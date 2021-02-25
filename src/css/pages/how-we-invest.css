@@ -1724,7 +1724,7 @@ article header p {
   background-color: #faccc2;
 }
 #how-we-exclude-investments .screens-container .expander.active {
-  box-shadow: inherit;
+  display: none;
 }
 
 #everything-we-invest-in {
