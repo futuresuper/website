@@ -217,7 +217,9 @@
           </div>
           <div class="buttons-container">
             {% for item in screens %}
-            <button onclick="showScreen('{{ item.name }}')">{{ item.name }}</button>
+            <input type="radio" name="screen" id="{{ item.name | slug }}" value="{{ item.name }}" {% if loop.first %}
+              checked="true" {% endif %} onclick="showScreen('{{ item.name }}')">
+            <label for="{{ item.name | slug }}">{{ item.name }}</label>
             {% endfor %}
           </div>
           {% for item in screens %}
@@ -230,7 +232,7 @@
             {% for criteria in item.criteria %}
             <div class="criteria-item">
               <p>{{ criteria.question }}</p>
-              <p class="label">Failing examples include...</p>
+              <p class="examples-intro">Failing examples include...</p>
               <ul class="plain">
                 {% for example in criteria.examples %}
                 <li>{{ example | safe }}</li>
