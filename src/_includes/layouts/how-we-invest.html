@@ -44,7 +44,7 @@
       <div class="banana dithered-img rellax"></div>
       <div class="poster rellax" data-rellax-xs-speed="2" data-rellax-mobile-speed="3" data-rellax-tablet-speed="5"
         data-rellax-desktop-speed="7">
-        <h2>Our theory of change</h2>
+        <h2>How we get there</h2>
       </div>
       <div class="article-content">
         <h3 class="heading-two">We seek</h3>
@@ -163,8 +163,7 @@
           </div>
         </div>
 
-        <p>We have a framework to help identify these opportunities outlined below. Although not exhaustive, it should
-          give you an idea of where we begin.</p>
+        <p>We have a framework to help identify these opportunities outlined below.</p>
       </div>
     </section>
   </div>
@@ -183,7 +182,7 @@
           {% for item in impactInvestingRules %}
           <figure class="glide__slide">
             {% if loop.index === loop.length %}
-            <h3>Et cetera</h3>
+            <h3>And more</h3>
             {% else %}
             <h3>#{{ loop.index }}</h3>
             {% endif %}
@@ -216,35 +215,37 @@
             <button id="left">{{ "/src/images/icons/arrow-west.svg" | svgContents | safe }}</button>
             <button id="right" class="active"> {{ "/src/images/icons/arrow-east.svg" | svgContents | safe }}</button>
           </div>
-
           <div class="buttons-container">
-            {% for screen in screens %}
-            <button onclick="showScreen('{{ screen.name }}')">{{ screen.name }}</button>
+            {% for item in screens %}
+            <button onclick="showScreen('{{ item.name }}')">{{ item.name }}</button>
             {% endfor %}
           </div>
-          <div class="shadow-box"></div>
-          {% for screen in screens %}
-          <div class="screen-container" id="{{ screen.name }}" {% if loop.first %}style="display:block;" {% else
-            %}style="display:none;" {% endif %}>
+          {% for item in screens %}
+          <div class="screen-container" aria-hidden="true" id="{{ item.name }}" {% if loop.first
+            %}style="display:block;" {% else %}style="display:none;" {% endif %}>
             <div class="criteria-intro">
-              <h3>{{ screen.name }}</h3>
-              <p>{{ screen.linkingVerb | capitalize }} screened via the following criteria...</p>
+              <h3>{{ item.name }}</h3>
+              <p>{{ item.linkingVerb | capitalize }} screened for via the following criteria...</p>
             </div>
-            {% for criteria in screen.criteria %}
+            {% for criteria in item.criteria %}
             <div class="criteria-item">
               <p>{{ criteria.question }}</p>
               <p class="label">Failing examples include...</p>
               <ul class="plain">
                 {% for example in criteria.examples %}
-                <li>{{ example }}</li>
+                <li>{{ example | safe }}</li>
                 {% endfor %}
               </ul>
             </div>
             {% endfor %}
+            {% if item.note %}
+            <p class="disclaimer">{{ item.note | safe }}</p>
+            {% endif %}
           </div>
+
           {% endfor %}
         </div>
-        <button type="button" class="expander">Show me more</button>
+        <button type="button" class="expander">Show more</button>
       </div>
     </section>
   </div>

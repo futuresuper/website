@@ -41,7 +41,7 @@
       },
       {
         "question": "Has the company taken swift and appropriate action when alerted to reports of labour exploitation in their business or supply chain?",
-        "examples": ["Phillips-Van Heusen Corporation"]
+        "examples": ["Phillips-Van Heusen Corporation (did not address <a href=\"https://www.aspi.org.au/report/uyghurs-sale\" target=\"_blank\" rel=\"noopener noreferrer\">ASPI report</a> on slave labour in China’s Xinjiang region)"]
       }
     ]
   },
@@ -60,7 +60,7 @@
     ]
   },
   {
-    "name": "Lack of boardroom gender diversity",
+    "name": "Lack of board diversity",
     "linkingVerb": "is",
     "criteria": [
       {
@@ -75,7 +75,7 @@
     "criteria": [
       {
         "question": "Does the company provide services to the mandatory detention of asylum seekers, such as the provision of security, infrastructure or transportation of asylum seekers?",
-        "examples": ["Serco", "Transfield"]
+        "examples": ["Broadspectrum"]
       },
       {
         "question": "Does the company profit from or own for-profit prisons?",
@@ -84,7 +84,7 @@
     ]
   },
   {
-    "name": "Armaments",
+    "name": "Weapons",
     "linkingVerb": "are",
     "criteria": [
       {
@@ -117,7 +117,8 @@
         "question": "Does the company produce controversial animal products (e.g foie gras; ivory)?",
         "examples": ["Burberry Group"]
       }
-    ]
+    ],
+    "note": "Future Super recognises that animal agriculture is a major driver of climate change. However, when it comes to agriculture and food supply chains, we consider our members’ consumption habits and the current lack of comparable alternative options for feeding our population. The complexity of this situation means we don't take the approach of divesting from all animal agriculture, only from companies that fail our animal cruelty screen. However, we do use our power as a fund manager to advocate for companies to manage animal welfare and climate risks in a meaningful way. See: <a href=\"https://caer.com.au/wp-content/uploads/2018/05/ASX-listed-Company-Exposure-to-Intensive-Animal-Farming-and-Live-Animal-Export.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">Caer Report: Climate Change, Superannuation and Millennials</a>, sponsored by Future Super."
   },
   {
     "name": "Tobacco",

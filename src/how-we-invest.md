@@ -3,7 +3,7 @@ title: "How We Invest"
 layout: "layouts/how-we-invest.html"
 summary: A better way to invest super for your future.
 description: We invest our members’ super for competitive financial returns whilst helping to create the sort of world they want to retire in. We consider how each investment we make can contribute to a prosperous future free from climate change and inequality.
-pageScripts: ["node_modules/@glidejs/glide/dist/glide.min.js", "node_modules/rellax/rellax.min.js", "scripts/home/parallax.js", "scripts/how-we-invest/impactInvestingRulesCarousel.js", "scripts/how-we-invest/screenScroller.js"]
+pageScripts: ["node_modules/@glidejs/glide/dist/glide.min.js", "node_modules/rellax/rellax.min.js", "scripts/home/parallax.js", "scripts/how-we-invest/impactInvestingRulesCarousel.js", "scripts/how-we-invest/screenScroller.js", "scripts/how-we-invest/screenExpander.js"]
 pageStyles: ["node_modules/@glidejs/glide/dist/css/glide.core.min.css", "src/css/pages/dither-page-style.css", "src/css/pages/how-we-invest.css"]
 impactInvestingRules:
   - The investment demonstrates a clear impact objective, making a strong case that their actions intentionally contribute to positive change in the world.

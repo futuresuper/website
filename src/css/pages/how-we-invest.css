@@ -1569,8 +1569,14 @@ article header p {
   max-width: 40rem;
   margin: 3rem auto;
   position: relative;
-  max-height: 50vh;
   overflow: hidden;
+  transition: max-height 1000ms ease;
+  max-height: 64vh;
+}
+@media (min-width: 48rem) {
+  #how-we-exclude-investments .screens-container {
+    max-height: 72vh;
+  }
 }
 #how-we-exclude-investments .screens-container .screens {
   padding: 1.5rem;
@@ -1616,6 +1622,7 @@ article header p {
 }
 @media (min-width: 48rem) {
   #how-we-exclude-investments .screens-container .screens .buttons-container {
+    overflow-x: inherit;
     flex-wrap: wrap;
     margin-top: -0.25rem;
     margin-left: -0.25rem;
@@ -1649,11 +1656,12 @@ article header p {
 #how-we-exclude-investments .screens-container .screens .criteria-intro {
   text-align: center;
   margin-top: 2rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
 }
 @media (min-width: 48rem) {
   #how-we-exclude-investments .screens-container .screens .criteria-intro {
-    margin-top: 4rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
   }
 }
 #how-we-exclude-investments .screens-container .screens .criteria-intro h3 {
@@ -1693,6 +1701,15 @@ article header p {
 #how-we-exclude-investments .screens-container .screens .criteria-item ul li::before {
   content: "❌";
   margin-right: 1em;
+}
+#how-we-exclude-investments .screens-container .screens .criteria-item ul li a {
+  color: #db380f;
+}
+#how-we-exclude-investments .screens-container .screens .criteria-item ul li a:hover {
+  color: #f04b23;
+}
+#how-we-exclude-investments .screens-container .screens .disclaimer {
+  margin-top: 2rem;
 }
 #how-we-exclude-investments .screens-container .expander {
   width: 100%;

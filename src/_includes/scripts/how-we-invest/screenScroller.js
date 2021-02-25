@@ -2,7 +2,7 @@ const buttons = document.querySelectorAll(".scroll-buttons button");
 const leftButton = document.getElementById("left");
 const rightButton = document.getElementById("right");
 const screensList = document.querySelector(".screens .buttons-container");
-const scrollJumpDistance = screensList.clientWidth * 0.85;
+const scrollJumpDistance = screensList.clientWidth * 0.75;
 
 leftButton.onclick = function () {
   screensList.scrollBy({
