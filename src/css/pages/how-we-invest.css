@@ -1102,7 +1102,7 @@ article header p {
   margin-bottom: 0.5rem;
 }
 
-.article-content p:not(.disclaimer) {
+.article-content p:not(.disclaimer):not(.heading-two) {
   text-indent: 1.75rem;
 }
 

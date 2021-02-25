@@ -39,7 +39,7 @@ article header p {
   margin-bottom: 0.5rem;
 }
 
-.article-content p:not(.disclaimer) {
+.article-content p:not(.disclaimer):not(.heading-two) {
   text-indent: 1.75rem;
 }
 
@@ -654,45 +654,3 @@ article header {
     }
   }
 }
-
-//
-// Being old styles
-
-// Fade in-and-outs of criteria
-// #criteria-item,
-// #selected-screen-title,
-// .screen-icon {
-//   opacity: 0;
-//   transition: opacity 250ms ease-in-out;
-
-//   &.is-visible {
-//     opacity: 1;
-//   }
-// }
-
-// .scroll-buttons {
-//   @media (min-width: 720px) {
-//     display: none;
-//   }
-// }
-
-// Other old styles
-
-// Form radio buttons
-// #screens-form {
-//   display: flex;
-//   flex-wrap: wrap;
-//   font-family: "JetBrains Mono";
-//   font-size: 0.875rem;
-//   margin-top: -0.25rem;
-//   margin-left: -0.25rem;
-//   // Mobile-specific item behaviour
-//   overflow-x: scroll;
-//   flex-wrap: nowrap;
-//   // Tablet/desktop-specific item behaviour
-//   @media (min-width: 720px) {
-//     flex-wrap: wrap;
-//   }
-
-//
-// }
