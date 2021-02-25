@@ -2,6 +2,7 @@ new Glide(".glide", {
   type: "carousel",
   autoplay: 4000,
   animationDuration: 600,
+  dragThreshold: 16,
   // *Larger* than $breakpoint-lg
   gap: 128, // px between each item
   peek: 56, // px on side margins

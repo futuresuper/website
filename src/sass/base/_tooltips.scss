@@ -4,6 +4,30 @@
 $tooltip-width: 13rem;
 $tooltip-padding: 0.75rem;
 
+// Universal tooltip styling for all situations
+.perma-tooltip,
+.tooltip-text {
+  width: 13rem;
+  font-family: $font-stack-monospace;
+  font-weight: 500;
+  letter-spacing: -1%;
+  font-size: 0.75rem;
+  padding: $tooltip-padding;
+  position: absolute;
+  z-index: 3;
+
+  &::after {
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+  }
+}
+
+// Hover tooltip styling
 .tooltip {
   position: relative;
   display: inline;
@@ -20,30 +44,15 @@ $tooltip-padding: 0.75rem;
   }
 
   .tooltip-text {
-    font-family: $font-stack-monospace;
-    font-weight: 500;
-    letter-spacing: -1%;
     display: none;
     background-color: $black-900;
     color: $white-500;
     text-align: center;
-    font-size: 0.75rem;
-    padding: $tooltip-padding;
-    position: absolute;
-    z-index: 3;
-    width: 13rem;
     transform: translate(-50%, 0);
     left: 50%;
     bottom: 100%;
 
     &::after {
-      content: " ";
-      position: absolute;
-      top: 100%; /* At the bottom of the tooltip */
-      left: 50%;
-      margin-left: -5px;
-      border-width: 5px;
-      border-style: solid;
       border-color: $black-500 transparent transparent transparent;
     }
 
@@ -70,5 +79,14 @@ $tooltip-padding: 0.75rem;
         left: calc(100% - 2.5rem);
       }
     }
+  }
+}
+
+// Permanent tooltip styling
+.perma-tooltip {
+  background-color: $yellow-500;
+
+  &::after {
+    border-color: $yellow-500 transparent transparent transparent;
   }
 }
