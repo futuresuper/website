@@ -4,55 +4,54 @@
 
 {% block content %}
 
-<article class="container">
+  <article class="container">
 
-  {% include "partials/page-header.html" %}
+    {% include "partials/page-header.html" %}
 
-  <div class="article-content">
-    <div class="search-container">
-      <input id="faq-search-box" class="search" type="text" placeholder="What do you need help with?" value=""
-        onkeyup="updateSearchResults()">
-      <a href="#" id="clear-button" onclick="clearResults()">
-        <img src="https://assets-global.website-files.com/5ec37dbb4834011cb8cd3469/5ef9950b028b64cce0dcf229_Cross.svg">
-      </a>
-      <div id="divider">
-        <div id="inner"></div>
-      </div>
-      <div id="faqs-container">
-        {% for faq in collections.faqs %}
-        <a class="faq-result" href="{{ faq.url }}" " data-result=" {{ faq.data.title }} ">
+    <div class="article-content">
+      <div class="search-container">
+        <input id="faq-search-box" class="search" type="text" placeholder="What do you need help with?" value="" onkeyup="updateSearchResults()">
+        <a href="#" id="clear-button" onclick="clearResults()">
+          <img src="https://assets-global.website-files.com/5ec37dbb4834011cb8cd3469/5ef9950b028b64cce0dcf229_Cross.svg">
+        </a>
+        <div id="divider">
+          <div id="inner"></div>
+        </div>
+        <div id="faqs-container">
+          {% for faq in collections.faqs %}
+            <a class="faq-result" href="{{ faq.url }}" " data-result=" {{ faq.data.title }} ">
               {{ faq.data.title }}
             </a>
           {% endfor %}
-          <p id=" no-matches-found">
-          Sorry, we didn't find matching results. Feel free to
-          <a href="/contact-us">contact us</a>
-          for help.
+          <p id="no-matches-found">
+            Sorry, we didn't find matching results. Feel free to
+            <a href="/contact-us">contact us</a>
+            for help.
           </p>
-      </div>
-    </div>
-
-    {% for faqCategory in faqCategories %}
-    <section>
-      <h2>{{ faqCategory }}</h2>
-      {% for item in collections.faqs %}
-      {% if item.data.category === faqCategory %}
-      <details>
-        <summary>{{ item.data.title }}</summary>
-        <div class="contents">
-          {{ item.templateContent | safe }}
-          <a class="text-tertiary disclaimer" href="{{ item.url }}">Permalink</a>
-
         </div>
-      </details>
-      {% endif %}
+      </div>
+
+      {% for faqCategory in faqCategories %}
+        <section>
+          <h2>{{ faqCategory }}</h2>
+          {% for item in collections.faqs %}
+            {% if item.data.category === faqCategory %}
+              <details>
+                <summary>{{ item.data.title }}</summary>
+                <div class="contents">
+                  {{ item.templateContent | safe }}
+                  <a class="text-tertiary disclaimer" href="{{ item.url }}">Permalink</a>
+
+                </div>
+              </details>
+            {% endif %}
+          {% endfor %}
+        </section>
       {% endfor %}
-    </section>
-    {% endfor %}
 
-  </div>
-</article>
+    </div>
+  </article>
 
-{% include "partials/also-see.html" %}
+  {% include "partials/also-see.html" %}
 
 {% endblock %}
