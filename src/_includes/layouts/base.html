@@ -53,6 +53,70 @@
         </style>
       {% endfor %}
     {% endif %}
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer'
+            ? '&l=' + l
+            : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f
+          .parentNode
+          .insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-WDKLJP');
+    </script>
+
+    <!-- Autopilot -->
+    <script type="text/javascript">
+      (function (o) {
+        var b = "https://briskpelican.io/anywhere/",
+          t = "072396077b1c40c39e84f98a104af57eeddb872ab9a643b4ac354d41e8ae661e",
+          a = window.AutopilotAnywhere = {
+            _runQueue: [],
+            run: function () {
+              this
+                ._runQueue
+                .push(arguments);
+            }
+          },
+          c = encodeURIComponent,
+          s = "SCRIPT",
+          d = document,
+          l = d.getElementsByTagName(s)[0],
+          p = "t=" + c(d.title || "") + "&u=" + c(d.location.href || "") + "&r=" + c(d.referrer || ""),
+          j = "text/javascript",
+          z,
+          y;
+        if (!window.Autopilot) 
+          window.Autopilot = a;
+        if (o.app) 
+          p = "devmode=true&" + p;
+        z = function (src, asy) {
+          var e = d.createElement(s);
+          e.src = src;
+          e.type = j;
+          e.async = asy;
+          l
+            .parentNode
+            .insertBefore(e, l);
+        };
+        y = function () {
+          z(b + t + '?' + p, true);
+        };
+        if (window.attachEvent) {
+          window.attachEvent("onload", y);
+        } else {
+          window.addEventListener("load", y, false);
+        }
+      })({});
+    </script>
+
   </head>
 
   <body>
