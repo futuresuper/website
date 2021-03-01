@@ -167,21 +167,21 @@ article {
 
 // Style specific sections
 article header {
-  margin-top: -8rem;
+  margin-top: -5rem;
   padding-top: 3rem;
   padding-bottom: 1rem;
 
   .earth {
-    @include still("earth", $blueberry-300, "top", 6rem, 10vh, "right", -20%, "left", 46%);
+    @include still("earth", $blueberry-300, "top", 3rem, 10vh, "right", -20%, "left", 46%);
   }
   .flower {
-    @include sprite("flower", 100rem, $fig-300, "top", 34vh, 42vh, "left", -6rem, "right", 49%, 2000ms, 5);
+    @include sprite("flower", 100rem, $fig-300, "top", 32vh, 42vh, "left", -6rem, "right", 49%, 2000ms, 5);
   }
 
   .poster {
     background-color: $mint-500;
     @extend %poster-height-auto;
-    margin-top: 26vh;
+    margin-top: 16vh;
     margin-bottom: 30vh;
     @media (min-width: $breakpoint-md) {
       margin-top: 26vh;
