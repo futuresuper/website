@@ -14,8 +14,8 @@
     "targets20Percent": false,
     "highlightInvestments": [
       {
-        "label": "RateSetter",
-        "definition": "Provides green loans to fund the purchase and installation of approved clean energy products, such as solar panels and home batteries"
+        "label": "Plenti",
+        "definition": "Provides green loans to fund the purchase and installation of clean energy products"
       }
     ],
     "fee": {
@@ -43,7 +43,7 @@
     "targets20Percent": false,
     "highlightInvestments": [
       {
-        "label": "RateSetter",
+        "label": "Plenti",
         "definition": "Provides green loans to fund the purchase and installation of clean energy products"
       },
       {
@@ -80,8 +80,8 @@
     "targets20Percent": true,
     "highlightInvestments": [
       {
-        "label": "New Energy Solar",
-        "definition": "Owns and manages large scale solar generation facilities across Australia and the United States"
+        "label": "Juice Capital Energy",
+        "definition": "Finances and develops solar energy projects"
       },
       {
         "label": "Infradebt Ethical Fund",
