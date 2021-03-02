@@ -1,6 +1,6 @@
 ---
 title: "Senior Investment Risk Manager"
-url: "https://app.beapplied.com/apply/h8kzxvzeon"
+applicationUrl: "https://app.beapplied.com/apply/h8kzxvzeon"
 location: "Sydney"
 salary: "$165,000 – $175,000 + super"
 startDate: "2021-01-01"
