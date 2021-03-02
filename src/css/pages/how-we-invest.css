@@ -1138,7 +1138,7 @@ article {
   }
 }
 .marquee-container.seek {
-  background-image: url("/images/mixed/wind.jpg");
+  background-image: url("/images/mixed/wind.png");
   background-color: #2bb151;
 }
 @media (min-width: 48rem) {
@@ -1147,7 +1147,7 @@ article {
   }
 }
 .marquee-container.exclude {
-  background-image: url("/images/mixed/bulldozer.jpg");
+  background-image: url("/images/mixed/bulldozer.png");
   background-color: #f04b23;
 }
 @media (min-width: 48rem) {
@@ -1465,7 +1465,7 @@ article header p {
   background-color: #f5f0f0;
 }
 #impact-investing .marquee-container:nth-of-type(1) {
-  background-image: url("/images/filled/solar.png");
+  background-image: url("/images/filled/clean-energy-transition.png");
 }
 #impact-investing .marquee-container:nth-of-type(1) .marquee ul {
   animation: marquee 16s linear infinite;
