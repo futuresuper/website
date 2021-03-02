@@ -73,7 +73,7 @@ collections:
       - { label: "End Date", name: "endDate", widget: "date" }
       - { label: "Location", name: "location", widget: "string" }
       - { label: "Salary", name: "salary", widget: "string", required: false }
-      - { label: "Application URL", name: "url", widget: "string" }
+      - { label: "Application URL", name: "applicationUrl", widget: "string" }
       - {
           label: "Summary",
           name: "summary",
