@@ -1,5 +1,6 @@
 // Declare filters
 // Date filters
+const moment = require("moment");
 const dateFilter = require("./src/filters/date-filter.js");
 const w3DateFilter = require("./src/filters/w3-date-filter.js");
 const timeSinceFilter = require("./src/filters/time-since-filter.js");
@@ -46,10 +47,11 @@ module.exports = (config) => {
 
   // Return a collection of careers
   config.addCollection("careers", (collection) => {
-    return [...collection.getFilteredByGlob("./src/careers/*.md")];
-    // TODO: filter-out items that have an endDate older than today
-    // ...or a startDate in the future
-    // TODO: rerun this function automatically, often
+    const today = moment();
+    return collection
+      .getFilteredByGlob("./src/careers/*.md")
+      .filter((c) => moment(c.data.startDate).isSameOrBefore(today, "day"))
+      .filter((c) => moment(c.data.endDate).isSameOrAfter(today, "day"));
   });
 
   // Return a collection of FAQs
