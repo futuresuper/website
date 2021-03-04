@@ -4,42 +4,40 @@
 
 {% block content %}
 
-<article class="container">
-  {% include "partials/page-header.html" %}
-  <div class="article-content">
-    <h2>Our current job openings</h2>
-    {# Only show list if there is more than one active job #}
-    {% if collections.careers.length %}
-    <ul class="plain career-item">
-      {% for item in collections.careers %}
-      {# TODO: replace this manual check for open/closed positions with a date-based, automated, solution #}
-      {% if not item.data.tempClosedBoolean %}
-      <li>
-        <a href="{{ item.url }}">
-          <h3>{{ item.data.title }}</h3>
-          <p>
-            {{ item.data.salary }}<br>
-            {{ item.data.location }}<br>
-            Closes {{ item.data.endDate | dateFilter }}
-          </p>
-        </a>
-      </li>
+  <article class="container">
+    {% include "partials/page-header.html" %}
+    <div class="article-content">
+      <h2>Our current job openings</h2>
+      {# Only show list if there is more than one active job #}
+      {% if collections.careers.length %}
+        <ul class="plain career-item">
+          {% for item in collections.careers %}
+            <li>
+              <a href="{{ item.url }}">
+                <h3>{{ item.data.title }}</h3>
+                <p>
+                  {{ item.data.salary }}<br>
+                  {{ item.data.location }}<br>
+                  Closes
+                  {{ item.data.endDate | dateFilter }}
+                </p>
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+        {# Otherwise show fallback #}
+      {% else %}
+        <p>We don't have any job openings at the moment. Please check back soon!</p>
       {% endif %}
-      {% endfor %}
-    </ul>
-    {# Otherwise show fallback #}
-    {% else %}
-    <p>We don't have any job openings at the moment. Please check back soon!</p>
-    {% endif %}
 
-    <h2>Our efforts to make working here fair for all</h2>
-    <ul>
-      <li>14 weeks paid parental leave</li>
-      <li>Flexible working arrangements</li>
-      <li>Additional super for staff earning under $80,000 p.a.</li>
-      <li>Safe place for trans and non-binary employees</li>
-    </ul>
-  </div>
-</article>
-{% include "partials/also-see.html" %}
+      <h2>Our efforts to make working here fair for all</h2>
+      <ul>
+        <li>14 weeks paid parental leave</li>
+        <li>Flexible working arrangements</li>
+        <li>Additional super for staff earning under $80,000 p.a.</li>
+        <li>Safe place for trans and non-binary employees</li>
+      </ul>
+    </div>
+  </article>
+  {% include "partials/also-see.html" %}
 {% endblock %}
