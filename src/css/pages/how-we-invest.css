@@ -1408,7 +1408,7 @@ article header p {
     margin-bottom: 40vh;
   }
 }
-#how-we-get-there h3:last-of-type {
+#how-we-get-there h3:first-of-type {
   color: #f04b23;
 }
 

@@ -172,10 +172,33 @@ article header {
   padding-bottom: 1rem;
 
   .earth {
-    @include still("earth", $blueberry-300, "top", 3rem, 10vh, "right", -20%, "left", 46%);
+    @include still(
+      "earth",
+      $blueberry-300,
+      "top",
+      3rem,
+      10vh,
+      "right",
+      -20%,
+      "left",
+      46%
+    );
   }
   .flower {
-    @include sprite("flower", 100rem, $fig-300, "top", 32vh, 42vh, "left", -6rem, "right", 49%, 2000ms, 5);
+    @include sprite(
+      "flower",
+      100rem,
+      $fig-300,
+      "top",
+      32vh,
+      42vh,
+      "left",
+      -6rem,
+      "right",
+      49%,
+      2000ms,
+      5
+    );
   }
 
   .poster {
@@ -220,10 +243,30 @@ article header {
   position: relative;
 
   .banana {
-    @include still("banana", $blueberry-300, "top", -2rem, -2rem, "left", -5rem, "right", 48%);
+    @include still(
+      "banana",
+      $blueberry-300,
+      "top",
+      -2rem,
+      -2rem,
+      "left",
+      -5rem,
+      "right",
+      48%
+    );
   }
   .macintosh {
-    @include still("macintosh", $mango-300, "top", 25vh, 34vh, "right", -5rem, "left", 44%);
+    @include still(
+      "macintosh",
+      $mango-300,
+      "top",
+      25vh,
+      34vh,
+      "right",
+      -5rem,
+      "left",
+      44%
+    );
     transform: scale(0.75);
   }
 
@@ -237,7 +280,7 @@ article header {
   }
 
   // Override colour styling for 'exclude' header
-  h3:last-of-type {
+  h3:first-of-type {
     color: $fraise-500;
   }
 }
@@ -326,10 +369,33 @@ article header {
   padding-bottom: 6rem;
 
   .coal {
-    @include sprite("coal", 100rem, $mango-300, "top", -2rem, -2rem, "right", -2rem, "left", 44%, 5000ms, 5);
+    @include sprite(
+      "coal",
+      100rem,
+      $mango-300,
+      "top",
+      -2rem,
+      -2rem,
+      "right",
+      -2rem,
+      "left",
+      44%,
+      5000ms,
+      5
+    );
   }
   .smoke-stack {
-    @include still("smoke-stack", $fig-300, "top", 30vh, 28vh, "left", -4em, "right", 48%);
+    @include still(
+      "smoke-stack",
+      $fig-300,
+      "top",
+      30vh,
+      28vh,
+      "left",
+      -4em,
+      "right",
+      48%
+    );
     transform: scale(0.75);
   }
 
@@ -617,10 +683,30 @@ article header {
   padding-bottom: 3rem;
 
   .tv {
-    @include still("tv", $mango-300, "top", -3rem, -3rem, "left", -5rem, "right", 44%);
+    @include still(
+      "tv",
+      $mango-300,
+      "top",
+      -3rem,
+      -3rem,
+      "left",
+      -5rem,
+      "right",
+      44%
+    );
   }
   .fifty-cents {
-    @include still("fifty-cents", $fig-300, "top", 32vh, 28vh, "right", -5rem, "left", 44%);
+    @include still(
+      "fifty-cents",
+      $fig-300,
+      "top",
+      32vh,
+      28vh,
+      "right",
+      -5rem,
+      "left",
+      44%
+    );
     transform: scale(0.75);
   }
 
@@ -637,12 +723,32 @@ article header {
   padding-bottom: 3rem;
 
   .telephone {
-    @include still("telephone", $mango-300, "top", 0, 0, "right", -5rem, "left", 44%);
+    @include still(
+      "telephone",
+      $mango-300,
+      "top",
+      0,
+      0,
+      "right",
+      -5rem,
+      "left",
+      44%
+    );
     transform: scale(0.75);
     transform-origin: center right;
   }
   .megaphone {
-    @include still("megaphone", $blueberry-300, "top", 22vh, 20vh, "left", -2rem, "right", 42%);
+    @include still(
+      "megaphone",
+      $blueberry-300,
+      "top",
+      22vh,
+      20vh,
+      "left",
+      -2rem,
+      "right",
+      42%
+    );
   }
 
   .poster {
