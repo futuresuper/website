@@ -4,7 +4,7 @@
     "linkingVerb": "are",
     "criteria": [
       {
-        "question": "Is the company involved at all in the exploration or extraction of fossil fuels?",
+        "question": "Does the company have direct fossil fuel reserves or mines and extracts fossil fuels?",
         "examples": ["BHP Billiton", "Woodside Petroleum (fracking)"]
       },
       {
@@ -14,10 +14,6 @@
       {
         "question": "Does the company provide specific and significant services to the fossil fuel industry including engineering, financing, transport, or logistics?",
         "examples": ["Westpac", "Commonwealth Bank", "NAB", "ANZ (financing), Aurizon (rail transport)"]
-      },
-      {
-        "question": "Is the continued viability of the business dependent on the continuation of the fossil fuel industry?",
-        "examples": ["Downer EDI (revenue streams)"]
       }
     ]
   },
@@ -26,17 +22,17 @@
     "linkingVerb": "is",
     "criteria": [
       {
-        "question": "Does the company’s operations have a direct negative impact on recognised UNESCO World Heritage areas or High Conservation value areas?",
+        "question": "Does the company’s operations have a direct negative impact on recognised UNESCO World Heritage areas or High Conservation areas?",
         "examples": ["JBS (deforestation)"]
       }
     ]
   },
   {
-    "name": "Human rights concerns",
+    "name": "Labour rights concerns",
     "linkingVerb": "are",
     "criteria": [
       {
-        "question": "Does the company have a recent history of human or labour rights violations?",
+        "question": "Is there credible evidence of the company continuously and directly violating labour rights (including child labour, forced labour, unsafe working conditions and pattern of corruption)?",
         "examples": ["Under Armour"]
       },
       {
@@ -50,11 +46,11 @@
     "linkingVerb": "is",
     "criteria": [
       {
-        "question": "Does the company profit from addiction to gambling?",
+        "question": "Does the company own casinos or manufacture gaming products?",
         "examples": ["Woolworths", "Aristocrat Leisure (ownership of poker machines and casinos)"]
       },
       {
-        "question": "Does the company provide significant services to the gambling industry?",
+        "question": "Does the company provide significant and specific services to the gambling industry? (eg. distribution and payment services)",
         "examples": ["Fidelity National Information Services (payment services)"]
       }
     ]
@@ -64,21 +60,21 @@
     "linkingVerb": "is",
     "criteria": [
       {
-        "question": "Does the company have at least one woman at board level?",
+        "question": "Does the listed company have at least one woman at board or the equivalent level?",
         "examples": ["Fluence", "Necon Co"]
       }
     ]
   },
   {
-    "name": "For-profit prisons",
+    "name": "Detintion of asylum seekers and for-profit prisons",
     "linkingVerb": "are",
     "criteria": [
       {
-        "question": "Does the company provide services to the mandatory detention of asylum seekers, such as the provision of security, infrastructure, or transportation of asylum seekers?",
+        "question": "Does the company own or provide significant and specific services to the mandatory detention of asylum seekers, such as the provision of security, infrastructure, or transportation of asylum seekers?",
         "examples": ["Broadspectrum"]
       },
       {
-        "question": "Does the company profit from or own for-profit prisons?",
+        "question": "Does the company own for-profit prisons?",
         "examples": ["GEO Group (prison and detention centre operator)", "Serco (prison and detention centre operator)"]
       }
     ]
@@ -92,7 +88,7 @@
         "examples": ["General Dynamics", "Lockheed Martin", "Northrop Grumman"]
       },
       {
-        "question": "Does the company provide specific and significant services to military forces?",
+        "question": "Does the company provide specific and significant services to military and armaments manufacturing?",
         "examples": ["SpeedCast (satellite communications)"]
       }
     ]
@@ -102,11 +98,11 @@
     "linkingVerb": "is",
     "criteria": [
       {
-        "question": "Does the company farm for animal protein or provide significant services to the industry?",
+        "question": "Does the company intensively farm for animal protein?",
         "examples": ["Inghams"]
       },
       {
-        "question": "Does the company engage in or provide significant services to the live export industry?",
+        "question": "Is the company directly involved in the live animal export industry?",
         "examples": ["Elders"]
       },
       {
@@ -114,7 +110,7 @@
         "examples": ["L’Oreal"]
       },
       {
-        "question": "Does the company produce controversial animal products (e.g foie gras, ivory)?",
+        "question": "Does the company produce or use controversial animal products (e.g foie gras, ivory)?",
         "examples": ["Burberry Group"]
       }
     ],
@@ -129,7 +125,7 @@
         "examples": ["Marlborough"]
       },
       {
-        "question": "Does the company provide significant services to the tobacco industry?",
+        "question": "Does the company provide significant services (including retail sale) to the tobacco industry?",
         "examples": ["Amcor (packaging)"]
       }
     ]
@@ -139,7 +135,7 @@
     "linkingVerb": "are",
     "criteria": [
       {
-        "question": "Does the company mine radioactive materials?",
+        "question": "Does the company mine uranium?",
         "examples": ["Paladin Energy"]
       },
       {
@@ -163,13 +159,13 @@
     "linkingVerb": "is",
     "criteria": [
       {
-        "question": "Does the company manufacture, distribute or sell foods that have high fat, salt, sugar, and oil content without providing nutritional value?",
+        "question": "Does the company manufacture, distribute or sell foods that have high fat, salt, sugar and oil content without providing nutritional value?",
         "examples": ["McDonalds", "Hershey’s", "Mondelez International"]
       }
     ]
   },
   {
-    "name": "Payday lending",
+    "name": "Payday lending (Australia only)",
     "linkingVerb": "is",
     "criteria": [
       {
@@ -179,7 +175,7 @@
     ]
   },
   {
-    "name": "Toxic chemicals",
+    "name": "Chemicals of concern",
     "linkingVerb": "are",
     "criteria": [
       {
@@ -187,7 +183,7 @@
         "examples": ["Nufarm"]
       },
       {
-        "question": "Does the company use toxic chemicals in the extraction or mining of minerals and metals?",
+        "question": "Does the company use toxic chemicals in the extraction or mining of silver and gold?",
         "examples": ["Saracen (cyanide in mining)"]
       }
     ]
@@ -197,7 +193,7 @@
     "linkingVerb": "is",
     "criteria": [
       {
-        "question": "Does the company produce pornographic material or provide significant services to the pornographic industry?",
+        "question": "Does the company produce pornographic material or provide specific and significant services to the pornographic industry (including sale)?",
         "examples": ["No companies assessed"]
       }
     ]
