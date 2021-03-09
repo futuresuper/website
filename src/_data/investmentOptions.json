@@ -5,10 +5,7 @@
     "opticalLabel": ["Balanced", "Index"],
     "subtitle": "Zero fossil fuels but no impact targets.",
     "type": "accumulation",
-    "impact": {
-      "label": "Low",
-      "definition": "Takes your money out of harmful companies by divesting, making it more expensive for those companies to make money"
-    },
+    "carbonImpact": 5,
     "fightsInequality": false,
     "investsInRenewables": false,
     "targets20Percent": false,
@@ -31,13 +28,10 @@
   {
     "label": "Balanced Impact",
     "slug": "balanced-impact",
+    "carbonImpact": 10,
     "opticalLabel": ["Balanced", "Impact"],
     "subtitle": "Zero fossil fuels. Targets investment in social impact and renewable energy projects.",
     "type": "accumulation",
-    "impact": {
-      "label": "Medium",
-      "definition": "Takes your money out of harmful companies by divesting, and directs it to companies and projects fighting inequality"
-    },
     "fightsInequality": true,
     "investsInRenewables": true,
     "targets20Percent": false,
@@ -71,10 +65,7 @@
     "opticalLabel": ["Renewables", "Plus Growth"],
     "subtitle": "Zero fossil fuels. Targets 20% allocation to climate change solutions.",
     "type": "accumulation",
-    "impact": {
-      "label": "High",
-      "definition": "Takes your money out of harmful companies by divesting, and directs it to wind farms, solar farms and other companies fighting climate change"
-    },
+    "carbonImpact": 15,
     "fightsInequality": true,
     "investsInRenewables": true,
     "targets20Percent": true,

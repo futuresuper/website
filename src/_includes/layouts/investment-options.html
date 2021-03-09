@@ -120,6 +120,27 @@
 
     <div class="grid-row">
       <div class="row-header">
+        <h5>
+          <a class="tooltip">Carbon impact<span class="tooltip-text">Your individual impact by switching to this
+              portfolio</span></a>
+        </h5>
+        <p>
+          <a href="/carbon-transparency">See how this is calculated</a>
+        </p>
+      </div>
+      {% for option in investmentOptions %}
+      {% if option.type === "accumulation" %}
+      <div class="row-data {{ option.slug }}">
+        <ul class="plain">
+          <li>{{ option.carbonImpact }}</li>
+        </ul>
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+
+    <div class="grid-row">
+      <div class="row-header">
         <h5>Highlight investments</h5>
         <p>
           <a href="/everything-we-invest-in">See all investments</a>
