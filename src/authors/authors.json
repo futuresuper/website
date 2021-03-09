@@ -1,0 +1,10 @@
+{
+  "eleventyComputed": {
+    "title": "Author | {{ authorName }}"
+  },
+  "layout": "layouts/blog.html",
+  "permalink": "/author/{{ authorName | slug }}/index.html",
+  "pageStyles": [
+    "src/css/pages/blog.css"
+  ]
+}
