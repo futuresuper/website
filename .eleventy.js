@@ -45,6 +45,11 @@ module.exports = (config) => {
     return [...collection.getFilteredByGlob("./src/posts/*.md")].reverse();
   });
 
+  // Return a collection of blog posts in reverse date order
+  config.addCollection("authors", (collection) => {
+    return [...collection.getFilteredByGlob("./src/authors/*.md")];
+  });
+
   // Return a collection of careers
   config.addCollection("careers", (collection) => {
     const today = moment();
