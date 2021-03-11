@@ -12,6 +12,11 @@
 
     <div class="article-content">
       {{ content | safe }}
+
+      {# Add download link for documents #}
+      {% if url %}
+        <a href="{{ url }}">Download</a>
+      {% endif %}
     </div>
 
   </article>
