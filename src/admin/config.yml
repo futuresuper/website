@@ -88,7 +88,12 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Subtitle", name: "summary", widget: "string" }
+      - {
+          label: "Subtitle",
+          name: "summary",
+          widget: "string",
+          required: false,
+        }
       - {
           label: "Description",
           name: "description",
