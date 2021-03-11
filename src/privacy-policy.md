@@ -4,7 +4,7 @@ layout: layouts/article.html
 description: We will always respect your privacy. Read our privacy policy to find out more.
 alsoSee:
   - Terms and Conditions
-summary: We will always respect your privacy. Read our privacy policy to find out more.
+summary: ""
 ---
 ## About this policy
 
