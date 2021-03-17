@@ -61,7 +61,16 @@ collections:
               "Employer Forms",
             ],
         }
-      - { label: "Order", name: "order", widget: "number" }
+      - { label: "Order",
+          name: "order",
+          widget: "number",
+          hint: "A number that decides where this will sit in relation to its category siblings",
+        }
+      - { label: "Description",
+          name: "body",
+          widget: "text",
+          hint: "One sentence that briefly describes what this contains"
+        }
   - name: "careers"
     label: "Careers"
     folder: "src/careers"
