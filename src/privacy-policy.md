@@ -1,14 +1,14 @@
 ---
-title: "Privacy Policy"
-layout: "layouts/article.html"
+title: Privacy Policy
+layout: layouts/article.html
 description: We will always respect your privacy. Read our privacy policy to find out more.
 alsoSee:
   - Terms and Conditions
+summary: ""
 ---
-
 ## About this policy
 
-The _​Privacy Act 1988​_ requires organisations that are bound by the ​*Australian Privacy Principles*​ to have
+The *​Privacy Act 1988​* requires organisations that are bound by the ​*Australian Privacy Principles*​ to have
 a privacy policy. This privacy policy sets out the way in which we collect and handle personal information.
 
 We may amend or update this policy from time to time. If this happens, we will keep you posted via our
@@ -32,22 +32,24 @@ participate in one of our surveys or interact with our website and advertising m
 
 The Future Super website collects data in order to provide services to you. This includes:
 
-- (a) **Technical data** ​– the website gathers technical data through browsing and usage
-  information, in particular via the use of cookies. Cookies are small data files transferred onto
-  computers or devices by websites which tell us when you visit our website, the pages you
-  visit and the information you download. They also remember your preferences and details so
-  you can easily continue your browsing session when you return to our website. Acceptance
-  of these cookies is required in order to use the website. The website also collects technical
-  data associated with your smartphone, tablet or computer (such as IP addresses, access
-  provider, hardware configuration, software configuration, country of origin), or associated
-  with the website (such as log and history of all data exchanges, log and history of
-  connections);
-- (b) **Identity data** ​– the website collects personal data when you submit a contact form. This
-  data includes information about your identity such as full name and email address, details of
-  products or services which we have provided to you or about which you have enquired and
-  information contained in any communications between you and us; and
-- (c) ​**Behavioural data** ​– the website automatically collects behavioural data, including but not
-  limited to data on location, device (phone, tablet or computer) and usage.
+(a) **Technical data** ​– the website gathers technical data through browsing and usage
+information, in particular via the use of cookies. Cookies are small data files transferred onto
+computers or devices by websites which tell us when you visit our website, the pages you
+visit and the information you download. They also remember your preferences and details so
+you can easily continue your browsing session when you return to our website. Acceptance
+of these cookies is required in order to use the website. The website also collects technical
+data associated with your smartphone, tablet or computer (such as IP addresses, access
+provider, hardware configuration, software configuration, country of origin), or associated
+with the website (such as log and history of all data exchanges, log and history of
+connections);
+
+(b) **Identity data** ​– the website collects personal data when you submit a contact form. This
+data includes information about your identity such as full name and email address, details of
+products or services which we have provided to you or about which you have enquired and
+information contained in any communications between you and us; and
+
+(c) ​**Behavioural data** ​– the website automatically collects behavioural data, including but not
+limited to data on location, device (phone, tablet or computer) and usage.
 
 ## How we use your data
 
@@ -56,44 +58,58 @@ activities and provide you with the platform services.
 
 We use personal information for several other related purposes, including:
 
-- (a) to provide you with our products and services;
-- (b) to give you information about our products and services;
-- (c) to interact with you;
-- (d) to run surveys;
-- (e) to conduct product and market research;
-- (f) to develop consumer insights so we can better understand your preferences and interests,
-  personalise your experience and enhance the products and services you receive;
-- (g) to perform administrative and operational functions;
-- (h) to comply with any legal requirements;
-- (i) for any related purpose for which we are entitled to use your personal information; and
-- (j) for any other purpose for which you give your consent.
+(a) to provide you with our products and services;
+
+(b) to give you information about our products and services;
+
+(c) to interact with you;
+
+(d) to run surveys;
+
+(e) to conduct product and market research;
+
+(f) to develop consumer insights so we can better understand your preferences and interests,
+personalise your experience and enhance the products and services you receive;
+
+(g) to perform administrative and operational functions;
+
+(h) to comply with any legal requirements;
+
+(i) for any related purpose for which we are entitled to use your personal information; and
+
+(j) for any other purpose for which you give your consent.
 
 ## Who gets your personal information?
 
 We may disclose your personal information for purposes permitted by the law. These include disclosure
 to the following third parties for the purposes described in this policy:
 
-- (a) our employees, related entities and employees of those entities;
-- (b) our business partners;
-- (c) our professional advisors, dealers and agents;
-- (d) third parties and contractors who provide services to us, including customer enquiries
-  and support services, debt-recovery functions, technology service providers, marketing,
-  and advertising;
-- (e) any third parties authorised by you to receive information held by us; and
-- (f) government, regulatory and law enforcement agencies as required, authorised or
-  permitted by law.
+(a) our employees, related entities and employees of those entities;
+
+(b) our business partners;
+
+(c) our professional advisors, dealers and agents;
+
+(d) third parties and contractors who provide services to us, including customer enquiries
+and support services, debt-recovery functions, technology service providers, marketing,
+and advertising;
+
+(e) any third parties authorised by you to receive information held by us; and
+
+(f) government, regulatory and law enforcement agencies as required, authorised or
+permitted by law.
 
 ## Protecting your privacy
 
 We take all reasonable steps to protect your personal information from misuse, interference and loss as
 well as from unauthorised access, modification and disclosure. We:
 
-- only store your personal information on computer systems located in Australia;
-- ensure that access to these systems is highly restricted and controlled;
-- implement organisational, physical and logical security measures;
-- use strong encryption to protect data communications between the platform services;
-- encrypt data traffic via the Internet between the website and the systems; and
-- limit access to your data so that only staff who require your information to perform a specific
+* only store your personal information on computer systems located in Australia;
+* ensure that access to these systems is highly restricted and controlled;
+* implement organisational, physical and logical security measures;
+* use strong encryption to protect data communications between the platform services;
+* encrypt data traffic via the Internet between the website and the systems; and
+* limit access to your data so that only staff who require your information to perform a specific
   task or function are able to access your personal information.
 
 Future Super employees must abide by this privacy policy and are kept up-to-date on security practices.
@@ -104,7 +120,7 @@ your personal devices to restrict unauthorised access to your personal informati
 cannot guarantee the security of your personal information.
 
 In the event of any data breach, we will follow the specific requirements of the *​Privacy Act 1988*​ and the
-_Privacy Amendment (Notifiable Data Breaches) Act 2017 (Cth)​_ and notify you and other affected
+*Privacy Amendment (Notifiable Data Breaches) Act 2017 (Cth)​* and notify you and other affected
 individuals as appropriate.
 
 Note however, that your use of an Internet Service Provider (ISP) will be subject to the separately
@@ -145,10 +161,10 @@ information is hacked or personal information is mistakenly provided to the wron
 
 Our notification to you will be sent as soon as practicable and will contain:
 
-- a description of the data breach;
-- the kinds of information concerned; and
-- the steps we have or will take to rectify the data breach; and
-- recommendations about the steps you should take in response to the data breach.
+* a description of the data breach;
+* the kinds of information concerned; and
+* the steps we have or will take to rectify the data breach; and
+* recommendations about the steps you should take in response to the data breach.
 
 ## Making contact or complaints
 

@@ -1,11 +1,13 @@
 ---
-title: "Social Media Producer"
-applicationUrl: "https://app.beapplied.com/apply/g5q8gvo7up"
-location: "Sydney (preferred)"
-salary: "$160,000 – $70,000 + 10.5% super"
-startDate: "2021-01-18"
-endDate: "2021-02-02"
-summary: "With ambitious targets and a passionate membership base, we’re on the hunt for a Social Media Producer to be the voice of Future Super on social digital platforms."
+title: Social Media Producer
+startDate: 2021-01-18
+endDate: 2021-02-02
+location: Sydney (preferred)
+salary: $60,000 – $70,000 + 10.5% super
+applicationUrl: https://app.beapplied.com/apply/g5q8gvo7up
+summary: With ambitious targets and a passionate membership base, we’re on the
+  hunt for a Social Media Producer to be the voice of Future Super on social
+  digital platforms.
 ---
 
 ## About Future Super
