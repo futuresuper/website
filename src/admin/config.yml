@@ -64,7 +64,7 @@ collections:
       - { label: "Order",
           name: "order",
           widget: "number",
-          hint: "A number that decides where this will sit in relation to its category siblings",
+          hint: "A number that determines where this will sit in relation to its category siblings",
         }
       - { label: "Description",
           name: "body",
