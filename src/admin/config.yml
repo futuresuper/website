@@ -1,112 +1,60 @@
 backend:
-  name: git-gateway
-  branch: main
+    name: git-gateway
+    branch: main
 
 media_library:
-  name: cloudinary
-  config:
-    cloud_name: future-super
-    api_key: 749866111487797 # Public Key
+    name: cloudinary
+    config:
+        cloud_name: future-super
+        api_key: 749866111487797 # Public Key
 
 collections:
-  - name: "posts"
-    label: "Posts"
-    folder: "src/posts"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Date", name: "date", widget: "datetime" }
-      - { label: "Image", name: "image", widget: "image" }
-      - {
-          label: "Tags",
-          name: "tags",
-          widget: "list",
-          hint: "Add as many tags as you like, with a comma seperating each one",
-        }
-      - { label: "Author", name: "author", widget: "string" }
-      - {
-          label: "Description",
-          name: "description",
-          widget: "text",
-          hint: "One paragraph, no longer than about 4 lines",
-        }
-      - { label: "Body", name: "body", widget: "markdown" }
-  - name: "documentsAndForms"
-    label: "Documents and Forms"
-    folder: "src/documents-and-forms"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Document URL", name: "url", widget: "string" }
-      - {
-          label: "Link Type",
-          name: "type",
-          widget: "select",
-          options: ["PDF", "Online", "Contact"],
-        }
-      - {
-          label: "Category",
-          name: "category",
-          widget: "select",
-          options:
-            [
-              "Super Documents",
-              "Super Forms",
-              "Pension Documents",
-              "Pension Forms",
-              "Annual Reports",
-              "Impact Reports",
-              "Employer Forms",
-            ],
-        }
-      - { label: "Order",
-          name: "order",
-          widget: "number",
-          hint: "A number that decides where this will sit in relation to its category siblings",
-        }
-      - { label: "Description",
-          name: "body",
-          widget: "text",
-          hint: "One sentence that briefly describes what this contains"
-        }
-  - name: "careers"
-    label: "Careers"
-    folder: "src/careers"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Start Date", name: "startDate", widget: "date" }
-      - { label: "End Date", name: "endDate", widget: "date" }
-      - { label: "Location", name: "location", widget: "string" }
-      - { label: "Salary", name: "salary", widget: "string", required: false }
-      - { label: "Application URL", name: "applicationUrl", widget: "string" }
-      - {
-          label: "Summary",
-          name: "summary",
-          widget: "text",
-          hint: "One paragraph, no longer than about 4 lines",
-        }
-      - { label: "Role Description", name: "body", widget: "markdown" }
-  - name: "pages"
-    label: "Pages"
-    folder: "src"
-    create: false
-    slug: "{{slug}}"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - {
-          label: "Subtitle",
-          name: "summary",
-          widget: "string",
-          required: false,
-        }
-      - {
-          label: "Description",
-          name: "description",
-          widget: "text",
-          hint: "One paragraph, no longer than about 4 lines",
-        }
-      - { label: "Body", name: "body", widget: "markdown" }
+    - name: "posts"
+      label: "Posts"
+      folder: "src/posts"
+      create: true
+      slug: "{{slug}}"
+      fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Date", name: "date", widget: "datetime" }
+          - { label: "Image", name: "image", widget: "image" }
+          - { label: "Tags", name: "tags", widget: "list", hint: "Add as many tags as you like, with a comma seperating each one" }
+          - { label: "Author", name: "author", widget: "string" }
+          - { label: "Description", name: "description", widget: "text", hint: "One paragraph, no longer than about 4 lines" }
+          - { label: "Body", name: "body", widget: "markdown" }
+    - name: "documentsAndForms"
+      label: "Documents and Forms"
+      folder: "src/documents-and-forms"
+      create: true
+      slug: "{{slug}}"
+      fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Document URL", name: "url", widget: "string" }
+          - { label: "Link Type", name: "type", widget: "select", options: ["PDF", "Online", "Contact"] }
+          - { label: "Category", name: "category", widget: "select", options: ["Super Documents", "Super Forms", "Pension Documents", "Pension Forms", "Annual Reports", "Impact Reports", "Employer Forms"] }
+          - { label: "Order", name: "order", widget: "number", hint: "A number that determines where this will sit in relation to its category siblings" }
+          - { label: "Description", name: "body", widget: "text", hint: "One sentence that briefly describes what this contains" }
+    - name: "careers"
+      label: "Careers"
+      folder: "src/careers"
+      create: true
+      slug: "{{slug}}"
+      fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Start Date", name: "startDate", widget: "date" }
+          - { label: "End Date", name: "endDate", widget: "date" }
+          - { label: "Location", name: "location", widget: "string" }
+          - { label: "Salary", name: "salary", widget: "string", required: false }
+          - { label: "Application URL", name: "applicationUrl", widget: "string" }
+          - { label: "Summary", name: "summary", widget: "text", hint: "One paragraph, no longer than about 4 lines" }
+          - { label: "Role Description", name: "body", widget: "markdown" }
+    - name: "pages"
+      label: "Pages"
+      folder: "src"
+      create: false
+      slug: "{{slug}}"
+      fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Subtitle", name: "summary", widget: "string", required: false }
+          - { label: "Description", name: "description", widget: "text", hint: "One paragraph, no longer than about 4 lines" }
+          - { label: "Body", name: "body", widget: "markdown" }
