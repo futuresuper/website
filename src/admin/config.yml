@@ -1,12 +1,12 @@
 backend:
-  name: git-gateway
-  branch: main
+    name: git-gateway
+    branch: main
 
 media_library:
-  name: cloudinary
-  config:
-    cloud_name: future-super
-    api_key: 749866111487797 # Public Key
+    name: cloudinary
+    config:
+        cloud_name: future-super
+        api_key: 749866111487797 # Public Key
 
 collections:
   - name: "posts"
