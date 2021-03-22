@@ -121,19 +121,21 @@
     <div class="grid-row">
       <div class="row-header">
         <h5>
-          <a class="tooltip">Carbon impact<span class="tooltip-text">Your individual impact by switching to this
-              portfolio</span></a>
+          <a class="tooltip">Emissions<span class="tooltip-text">How much carbon dioxide it would take to create an
+              equivalent climate impact</span></a>
         </h5>
+        <small>Based on a balance of $30,000.</small>
         <p>
-          <a href="/carbon-transparency">See how this is calculated</a>
+          <a href="/carbon-transparency">See how we measure emissions</a>
         </p>
       </div>
       {% for option in investmentOptions %}
       {% if option.type === "accumulation" %}
       <div class="row-data {{ option.slug }}">
-        <ul class="plain">
-          <li>{{ option.carbonImpact }}</li>
-        </ul>
+        <p>{{ option.impact | twoDecimalPlaces }}</p>
+        <p class="caption">
+          <small>tonnes of CO<sub>2</sub> equivalent</small>
+        </p>
       </div>
       {% endif %}
       {% endfor %}
@@ -177,11 +179,11 @@
       {% if option.type === "accumulation" %}
       <div class="row-data {{ option.slug }}">
         <p>
-          {{ option.fee.perAnnumPercentage }}% + ${{ option.fee.perYearPrice | currency }}
+          {{ option.fee.perAnnumPercentage }}% + ${{ option.fee.perYearPrice | twoDecimalPlaces }}
         </p>
         <p class="caption">
           {% set yearlyFee = 50000 * (option.fee.perAnnumPercentage / 100) + option.fee.perYearPrice %}
-          <small>${{ yearlyFee | currency }}
+          <small>${{ yearlyFee | twoDecimalPlaces }}
             per year on a balance of $50,000</small>
         </p>
       </div>
@@ -201,7 +203,7 @@
       <div class="row-data {{ option.slug }}">
         <p>
           <a class="tooltip">CPI<span class="tooltip-text">CPI (which stands for 'Consumer Price Index') is how much the
-              price of stuff changes each year.</span></a>
+              price of stuff changes each year</span></a>
           +
           {{ option.investmentObjective }}%
         </p>
@@ -236,8 +238,7 @@
     <div class="grid-row">
       <div class="row-header">
         <h5>Recent returns^</h5>
-        <small>As at
-          {{ performanceReturns.dateAsAt | dateFilter }}</small>
+        <small>As at {{ performanceReturns.dateAsAt | dateFilter }}.</small>
         <p>
           <a href="/performance-and-returns">See full performance and returns</a>
         </p>

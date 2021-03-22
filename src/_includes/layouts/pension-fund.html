@@ -125,11 +125,11 @@
       {% if option.type === "pension" %}
       <div class="row-data {{ option.slug }}">
         <p>
-          {{ option.fee.perAnnumPercentage }}% + ${{ option.fee.perYearPrice | currency }}
+          {{ option.fee.perAnnumPercentage }}% + ${{ option.fee.perYearPrice | twoDecimalPlaces }}
         </p>
         <p class="caption">
           {% set yearlyFee = 50000 * (option.fee.perAnnumPercentage / 100) + option.fee.perYearPrice %}
-          <small>${{ yearlyFee | currency }}
+          <small>${{ yearlyFee | twoDecimalPlaces }}
             per year on a balance of $50,000</small>
         </p>
       </div>

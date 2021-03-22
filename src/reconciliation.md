@@ -3,8 +3,6 @@ title: Reconciliation
 layout: layouts/reconciliation.html
 summary: Holding ourselves accountable.
 description: Why reconciliation is important to us and the action we're taking.
-alsoSee:
-  - Carbon Transparency
 ---
 
 We work on and thus profit from stolen land. The stealing of this land from Aboriginal and Torres Strait Islander people started centuries of cultural desecration and genocide. We can’t claim to want a future free from inequality, and not reckon with the facts of our history.

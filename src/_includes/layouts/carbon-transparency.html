@@ -1,0 +1,26 @@
+{% extends "layouts/base.html" %}
+
+{% set pageHeaderTitle = title %}
+
+{% block content %}
+
+<article class="container">
+
+  {% include "partials/page-header.html" %}
+
+  <div class="article-content">
+    {{ content | safe }}
+    <ul class="plain doc-or-form-item">
+      {% for item in collections.documentsAndForms %}
+      {% if item.data.category === "Carbon Transparency Documents" %}
+      <li>
+        {% include "partials/documents-and-forms/rich-text-block.html" %}
+      </li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+
+  </div>
+</article>
+
+{% endblock %}
