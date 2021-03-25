@@ -1,138 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    {% if title === "Home" %}
-      {% set pageTitle = "Future Super | Ethical & Sustainable Superannuation" %}
-    {% elif title %}
-      {% set pageTitle = title + " | Future Super" %}
-    {% else %}
-      {% set pageTitle = "Future Super" %}
-    {% endif %}
-    {% if image %}
-      {% set ogImage = image %}
-    {% else %}
-      {% set ogImage = "https://www.futuresuper.com.au/images/future-super-og.png" %}
-    {% endif %}
-    {% if description %}
-      {% set ogDescription = description %}
-    {% else %}
-      {% set ogDescription = "Build the future you want to see. Your super has the power to combat climate change, let’s put it to work." %}
-    {% endif %}
-    <title>{{ pageTitle }}</title>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 viewport-fit=cover" shrink-to-fit="no"/>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <meta name="description" content="{{ ogDescription }}"/>
-    <meta property="og:title" content="{{ pageTitle }}"/>
-    <meta property="og:description" content="{{ ogDescription }}"/>
-    <meta property="og:image" content="{{ ogImage }}"/>
-    <meta property="og:type" content="website"/>
-    <meta property="twitter:title" content="{{ pageTitle }}"/>
-    <meta property="twitter:description" content="{{ ogDescription }}"/>
-    <meta property="twitter:image" content="{{ ogImage }}"/>
-    <meta
-    name="twitter:card" content="summary_large_image"/>
-    {# Favicons #}
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32.png">
-    <link
-    rel="apple-touch-icon" href="/images/favicon/apple-touch-icon.png">
-    {# https://web.dev/add-manifest/ #}
-    <link rel="manifest" href="/manifest.json"/>
-    <link rel="stylesheet" href="{{ '/css/main.css' | url }}">
-    {% if pageStyles %}
-      {% for styles in pageStyles %}
-        {% set css %}
-        {% include styles %}
-        {% endset %}
-        <style>
-          {{css | cssmin | safe}}</style>
-      {% endfor %}
-    {% endif %}
-    <!-- Google Tag Manager -->
-    <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != 'dataLayer'
-            ? '&l=' + l
-            : '';
-        j.async = true;
-        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, 'script', 'dataLayer', 'GTM-WDKLJP');
-    </script>
-    <!-- Autopilot -->
-    <script type="text/javascript">
-      (function (o) {
-        var b = "https://briskpelican.io/anywhere/",
-          t = "072396077b1c40c39e84f98a104af57eeddb872ab9a643b4ac354d41e8ae661e",
-          a = window.AutopilotAnywhere = {
-            _runQueue: [],
-            run: function () {
-              this._runQueue.push(arguments);
-            }
-          },
-          c = encodeURIComponent,
-          s = "SCRIPT",
-          d = document,
-          l = d.getElementsByTagName(s)[0],
-          p = "t=" + c(d.title || "") + "&u=" + c(d.location.href || "") + "&r=" + c(d.referrer || ""),
-          j = "text/javascript",
-          z,
-          y;
-        if (!window.Autopilot) 
-          window.Autopilot = a;
-        
-        if (o.app) 
-          p = "devmode=true&" + p;
-        
-        z = function (src, asy) {
-          var e = d.createElement(s);
-          e.src = src;
-          e.type = j;
-          e.async = asy;
-          l.parentNode.insertBefore(e, l);
-        };
-        y = function () {
-          z(b + t + '?' + p, true);
-        };
-        if (window.attachEvent) {
-          window.attachEvent("onload", y);
-        } else {
-          window.addEventListener("load", y, false);
-        }
-      })({});
-    </script>
-  </head>
-  <body>
-    {# {% include "partials/acknowledgement-of-country-header.html" %} #}
-    <div class="flow-content">
-      {% include "partials/site-header.html" %}
-      <main tabindex="-1" id="main-content"> {% block content %}{% endblock %}
-        </main>
-        {% include "partials/site-footer.html" %}
-      </div>
-      {% include "partials/acknowledgement-of-country-footer.html" %}
-      {# Add pre-join form to capture details if there is a referral code in URL params #}
-      <div id="join-overlay">
-        {% include "partials/join-overlay.html" %}
-      </div>
-      {# Add global script #}
-      {% set globaljs %}
-      {% include "scripts/global.js" %}
-      {% endset %}
-      <script>
-        {{ globaljs | jsmin | safe }}</script>
-      {% if pageScripts %}
-        {% for script in pageScripts %}
-          {% set js %}
-          {% include script %}
-          {% endset %}
+      <html lang="en">
+        <head>
+          {% if title === "Home" %}
+            {% set pageTitle = "Future Super | Ethical & Sustainable Superannuation" %}
+          {% elif title %}
+            {% set pageTitle = title + " | Future Super" %}
+          {% else %}
+            {% set pageTitle = "Future Super" %}
+          {% endif %}
+          {% if image %}
+            {% set ogImage = image %}
+          {% else %}
+            {% set ogImage = "https://www.futuresuper.com.au/images/future-super-og.png" %}
+          {% endif %}
+          {% if description %}
+            {% set ogDescription = description %}
+          {% else %}
+            {% set ogDescription = "Build the future you want to see. Your super has the power to combat climate change, let’s put it to work." %}
+          {% endif %}
+          <title>{{ pageTitle }}</title>
+          <meta charset="UTF-8"/>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0 viewport-fit=cover" shrink-to-fit="no"/>
+          <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+          <meta name="description" content="{{ ogDescription }}"/>
+          <meta property="og:title" content="{{ pageTitle }}"/>
+          <meta property="og:description" content="{{ ogDescription }}"/>
+          <meta property="og:image" content="{{ ogImage }}"/>
+          <meta property="og:type" content="website"/>
+          <meta property="twitter:title" content="{{ pageTitle }}"/>
+          <meta property="twitter:description" content="{{ ogDescription }}"/>
+          <meta property="twitter:image" content="{{ ogImage }}"/>
+          <meta
+          name="twitter:card" content="summary_large_image"/>
+          {# Favicons #}
+          <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32.png">
+          <link
+          rel="apple-touch-icon" href="/images/favicon/apple-touch-icon.png">
+          {# https://web.dev/add-manifest/ #}
+          <link rel="manifest" href="/manifest.json"/>
+          <link rel="stylesheet" href="{{ '/css/main.css' | url }}">
+          {% if pageStyles %}
+            {% for styles in pageStyles %}
+              {% set css %}
+              {% include styles %}
+              {% endset %}
+              <style>
+                {{css | cssmin | safe}}</style>
+            {% endfor %}
+          {% endif %}
+          <!-- Google Tag Manager -->
           <script>
-            {{ js | jsmin | safe }}</script>
-        {% endfor %}
-      {% endif %}
-    </body>
-  </html>
+            (function (w, d, s, l, i) {
+              w[l] = w[l] || [];
+              w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+              var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer'
+                  ? '&l=' + l
+                  : '';
+              j.async = true;
+              j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+              f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-WDKLJP');
+          </script>
+          <!-- Autopilot -->
+          <script type="text/javascript">
+            (function (o) {
+              var b = "https://briskpelican.io/anywhere/",
+                t = "072396077b1c40c39e84f98a104af57eeddb872ab9a643b4ac354d41e8ae661e",
+                a = window.AutopilotAnywhere = {
+                  _runQueue: [],
+                  run: function () {
+                    this._runQueue.push(arguments);
+                  }
+                },
+                c = encodeURIComponent,
+                s = "SCRIPT",
+                d = document,
+                l = d.getElementsByTagName(s)[0],
+                p = "t=" + c(d.title || "") + "&u=" + c(d.location.href || "") + "&r=" + c(d.referrer || ""),
+                j = "text/javascript",
+                z,
+                y;
+              if (!window.Autopilot) 
+                window.Autopilot = a;
+              
+              if (o.app) 
+                p = "devmode=true&" + p;
+              
+              z = function (src, asy) {
+                var e = d.createElement(s);
+                e.src = src;
+                e.type = j;
+                e.async = asy;
+                l.parentNode.insertBefore(e, l);
+              };
+              y = function () {
+                z(b + t + '?' + p, true);
+              };
+              if (window.attachEvent) {
+                window.attachEvent("onload", y);
+              } else {
+                window.addEventListener("load", y, false);
+              }
+            })({});
+          </script>
+        </head>
+        <body>
+          {# {% include "partials/acknowledgement-of-country-header.html" %} #}
+          <div class="flow-content">
+            {% include "partials/site-header.html" %}
+            <main tabindex="-1" id="main-content"> {% block content %}{% endblock %}
+              </main>
+              {% include "partials/site-footer.html" %}
+            </div>
+            {% include "partials/acknowledgement-of-country-footer.html" %}
+            {# Add pre-join form to capture details if there is a referral code in URL params #}
+            <div id="join-overlay">
+              {% include "partials/join-overlay.html" %}
+            </div>
+            {# Add global script #}
+            {% set globaljs %}
+            {% include "scripts/global.js" %}
+            {% endset %}
+            <script>
+              {{ globaljs | jsmin | safe }}</script>
+            {% if pageScripts %}
+              {% for script in pageScripts %}
+                {% set js %}
+                {% include script %}
+                {% endset %}
+                <script>
+                  {{ js | jsmin | safe }}</script>
+              {% endfor %}
+            {% endif %}
+          </body>
+        </html>
