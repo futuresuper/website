@@ -16,3 +16,6 @@ npm-debug.*
 .sass-cache
 .env
 .cache
+
+# Andrew - Ignore settings so can change - causing trouble
+.vscode/

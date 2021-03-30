@@ -1,9 +1,15 @@
 @use "../base" as *;
 
 .were-out {
+  h1 {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    text-align: center;
+  }
+
   .grid {
     @media (min-width: $breakpoint-sm) {
-      gap: 1.5rem;
+      gap: 3rem;
       > * {
         grid-column: span 6;
       }

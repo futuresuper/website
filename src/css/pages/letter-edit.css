@@ -953,29 +953,61 @@ input.search {
   border-color: #fac33c transparent transparent transparent;
 }
 
-.were-out h1 {
-  padding-top: 4rem;
-  padding-bottom: 2rem;
+.letter-edit {
+  background: #140f14;
+  color: #ffffff;
+}
+.letter-edit .logo {
+  font-size: 1.2rem;
+  margin: 1rem;
+}
+.letter-edit .container {
+  max-width: 660px;
+}
+.letter-edit h1 {
   text-align: center;
+  text-transform: uppercase;
 }
-@media (min-width: 40rem) {
-  .were-out .grid {
-    gap: 3rem;
-  }
-  .were-out .grid > * {
-    grid-column: span 6;
-  }
-}
-.were-out button {
-  margin-bottom: 2rem;
-}
-.were-out img,
-.were-out .disclaimer:last-of-type {
+.letter-edit select {
+  width: 100%;
+  padding: 1rem;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
   margin-bottom: 4rem;
 }
-.were-out button > span {
-  font-weight: 400;
-  font-size: 0.8rem;
+.letter-edit .letter-container {
+  display: flex;
+  background: #f5f0f0;
+  color: #140f14;
+  width: 100%;
+  min-height: 460px;
+}
+.letter-edit .letter-container .letter-holes {
+  width: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.letter-edit .letter-container .letter-holes .hole {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: #140f14;
+}
+.letter-edit .letter-container .letter-body {
+  padding: 2rem;
 }
 
-/*# sourceMappingURL=were-out.css.map */
+.letter-send {
+  padding: 4rem 0;
+}
+.letter-send .container {
+  max-width: 660px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*# sourceMappingURL=letter-edit.css.map */
