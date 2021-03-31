@@ -1,9 +1,82 @@
-{% extends "layouts/base.html" %}
-            {% set pageHeaderTitle = title %}
-            {% block content %}
-              <div class="container">
-                <h1>We're Out Billboard</h1>
-                <h3>Can you see your name?</h3>
-              </div>
-              <img src="https://res.cloudinary.com/future-super/image/upload/c_scale,w_1200/v1616632236/billboard_1.jpg" style="width: 100%"/>
-            {% endblock %}
+{% extends "layouts/base.html" %} {% set pageHeaderTitle = title %} {% block
+content %}
+
+<div class="letter-edit">
+  <p class="logo">FS</p>
+  <div class="container">
+    <h1 id="title-sender">Nice Work Jake! Your letter has been sent</h1>
+    <h1 id="title-shared">Your friend Jake sent a letter</h1>
+    <div class="letter-container">
+      <div class="letter-holes">
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+      </div>
+      <div class="letter-body">
+        <p class="bold">Attn: CEO & Executives of --Fund Name--</p>
+        <p>
+          It’s time to stop investing in fossil fuels.<br /><br />
+
+          I have chosen to leave your super fund because the way you invest
+          shows that you aren’t taking the risk of climate change seriously.<br /><br />
+
+          We need climate action now, not in 2050. So I’m asking your fund to
+          change for the benefit of the future we share and stop investing in
+          fossil fuels.<br /><br />
+
+          When it comes to fossil fuels - I’m out. Will you be too?<br /><br />
+
+          Signed,
+        </p>
+        <p>Jake</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="share" class="letter-send">
+  <div class="container">
+    <p>If you’d like to share your letter, here’s your personal link:</p>
+    <div class="share-container">
+      <div class="share-link">www.futuresuper.com.au/letter?r=jake-1234</div>
+      <button class="primary">COPY LINK</button>
+    </div>
+    <p style="margin-top: 2rem; text-align: center; font-size: 0.9rem">
+      We’ll let you know when someone joins Future Super from this link so you
+      can see the difference you make.
+    </p>
+  </div>
+</div>
+<div id="join" class="letter-send">
+  <div class="container">
+    <p>Not a Future Super member yet?</p>
+    <button class="primary join">JOIN NOW</button>
+    <p>Already a Future Super member?</p>
+    <button class="primary">SEND A LETTER TO YOUR OLD FUND</button>
+  </div>
+</div>
+
+<script>
+  function getQueryVariable(variable) {
+    var query = window.location.search.substring(1);
+    var vars = query.split("&");
+    for (var i = 0; i < vars.length; i++) {
+      var pair = vars[i].split("=");
+      if (decodeURIComponent(pair[0]) == variable) {
+        return decodeURIComponent(pair[1]);
+      }
+    }
+  }
+  let referer = getQueryVariable("r");
+  console.log("REFERER: " + referer);
+  let share = getQueryVariable("share") ? true : false;
+  console.log("SHARE: " + share);
+  if (share) {
+    document.getElementById("join").style.display = "none";
+    document.getElementById("title-shared").style.display = "none";
+  } else {
+    document.getElementById("share").style.display = "none";
+    document.getElementById("title-sender").style.display = "none";
+  }
+</script>
+
+{% endblock %}

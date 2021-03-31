@@ -953,22 +953,27 @@ input.search {
   border-color: #fac33c transparent transparent transparent;
 }
 
-.letter-edit {
+.letter-edit,
+.letter {
   background: #140f14;
   color: #ffffff;
 }
-.letter-edit .logo {
+.letter-edit .logo,
+.letter .logo {
   font-size: 1.2rem;
   margin: 1rem;
 }
-.letter-edit .container {
+.letter-edit .container,
+.letter .container {
   max-width: 660px;
 }
-.letter-edit h1 {
+.letter-edit h1,
+.letter h1 {
   text-align: center;
   text-transform: uppercase;
 }
-.letter-edit select {
+.letter-edit select,
+.letter select {
   width: 100%;
   padding: 1rem;
   background-color: transparent;
@@ -976,27 +981,31 @@ input.search {
   color: #ffffff;
   margin-bottom: 4rem;
 }
-.letter-edit .letter-container {
+.letter-edit .letter-container,
+.letter .letter-container {
   display: flex;
   background: #f5f0f0;
   color: #140f14;
   width: 100%;
   min-height: 460px;
 }
-.letter-edit .letter-container .letter-holes {
+.letter-edit .letter-container .letter-holes,
+.letter .letter-container .letter-holes {
   width: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
-.letter-edit .letter-container .letter-holes .hole {
+.letter-edit .letter-container .letter-holes .hole,
+.letter .letter-container .letter-holes .hole {
   width: 1rem;
   height: 1rem;
   border-radius: 50%;
   background: #140f14;
 }
-.letter-edit .letter-container .letter-body {
+.letter-edit .letter-container .letter-body,
+.letter .letter-container .letter-body {
   padding: 2rem;
 }
 
@@ -1010,4 +1019,32 @@ input.search {
   align-items: center;
 }
 
-/*# sourceMappingURL=letter-edit.css.map */
+.share-container {
+  display: flex;
+}
+@media (max-width: 48rem) {
+  .share-container {
+    flex-direction: column;
+  }
+}
+.share-container .share-link {
+  height: 68px;
+  border: 1px solid #140f14;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+  padding: 2rem;
+}
+@media (max-width: 48rem) {
+  .share-container .share-link {
+    padding: 1rem 0.5rem;
+    font-size: 0.8rem;
+  }
+}
+
+.join {
+  margin-bottom: 4rem;
+}
+
+/*# sourceMappingURL=letter.css.map */
