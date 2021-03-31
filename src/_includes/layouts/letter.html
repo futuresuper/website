@@ -1,23 +1,43 @@
 {% extends "layouts/base.html" %} {% set pageHeaderTitle = title %} {% block
-content %} {# {% include "partials/page-header.html" %} #} {# TO DO: Hook up
-personal code and button to register opt-in on Autopilot #}
+content %}
 
-<div class="billboard">
-  <h1 id="title-sender">Your name is in there somewhere… Can you find it?</h1>
-  <h1 id="title-shared">
-    Your friend's name is in there somewhere… Can you find it?
-  </h1>
-  <img
-    class="billboard-image"
-    src="https://res.cloudinary.com/future-super/image/upload/c_scale,w_1200/v1616632236/billboard_1.jpg"
-  />
+<div class="letter-edit">
+  <p class="logo">FS</p>
+  <div class="container">
+    <h1 id="title-sender">Nice Work Jake! Your letter has been sent</h1>
+    <h1 id="title-shared">Your friend Jake sent a letter</h1>
+    <div class="letter-container">
+      <div class="letter-holes">
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+      </div>
+      <div class="letter-body">
+        <p class="bold">Attn: CEO & Executives of --Fund Name--</p>
+        <p>
+          It’s time to stop investing in fossil fuels.<br /><br />
+
+          I have chosen to leave your super fund because the way you invest
+          shows that you aren’t taking the risk of climate change seriously.<br /><br />
+
+          We need climate action now, not in 2050. So I’m asking your fund to
+          change for the benefit of the future we share and stop investing in
+          fossil fuels.<br /><br />
+
+          When it comes to fossil fuels - I’m out. Will you be too?<br /><br />
+
+          Signed,
+        </p>
+        <p>Jake</p>
+      </div>
+    </div>
+  </div>
 </div>
-
 <div id="share" class="letter-send">
   <div class="container">
-    <p>Share the billboard with your personal link:</p>
+    <p>If you’d like to share your letter, here’s your personal link:</p>
     <div class="share-container">
-      <div class="share-link">www.futuresuper.com.au/billboard?r=jake-1234</div>
+      <div class="share-link">www.futuresuper.com.au/letter?r=jake-1234</div>
       <button class="primary">COPY LINK</button>
     </div>
     <p style="margin-top: 2rem; text-align: center; font-size: 0.9rem">
@@ -30,6 +50,8 @@ personal code and button to register opt-in on Autopilot #}
   <div class="container">
     <p>Not a Future Super member yet?</p>
     <button class="primary join">JOIN NOW</button>
+    <p>Already a Future Super member?</p>
+    <button class="primary">SEND A LETTER TO YOUR OLD FUND</button>
   </div>
 </div>
 

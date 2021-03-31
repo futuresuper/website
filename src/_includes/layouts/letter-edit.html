@@ -1,0 +1,55 @@
+{% extends "layouts/base.html" %} {% set pageHeaderTitle = title %} {% block
+content %}
+
+<script>
+  function handleChange() {
+    const fund = document.getElementById("fund").value;
+    console.log(fund);
+  }
+</script>
+<div class="letter-edit">
+  <p class="logo">FS</p>
+  <div class="container">
+    <h1>Tell them it’s time.</h1>
+    <p>Select your fund</p>
+    <select id="fund" onchange="handleChange()">
+      {% for fund in funds %}
+      <option value="{{fund}}">{{fund}}</option>
+      {% endfor %}
+    </select>
+
+    <p>Click the message below to edit</p>
+    <div class="letter-container">
+      <div class="letter-holes">
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+      </div>
+      <div class="letter-body">
+        <p class="bold">Attn: CEO & Executives of --Fund Name--</p>
+        <p contenteditable="true">
+          It’s time to stop investing in fossil fuels.<br /><br />
+
+          I have chosen to leave your super fund because the way you invest
+          shows that you aren’t taking the risk of climate change seriously.<br /><br />
+
+          We need climate action now, not in 2050. So I’m asking your fund to
+          change for the benefit of the future we share and stop investing in
+          fossil fuels.<br /><br />
+
+          When it comes to fossil fuels - I’m out. Will you be too?<br /><br />
+
+          Signed,
+        </p>
+        <p>Your name</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="letter-send">
+  <div class="container">
+    <p>When you’re happy with the message, hit the button below.</p>
+    <button class="primary">Send now</button>
+  </div>
+</div>
+{% endblock %}

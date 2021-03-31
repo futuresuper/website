@@ -1,0 +1,32 @@
+{% extends "layouts/base.html" %}
+{% set pageHeaderTitle = title %}
+{% block content %}
+{# {% include "partials/page-header.html" %} #}
+{# TO DO: Hook up personal code and button to register opt-in on Autopilot #}
+
+<div class="were-out">
+  <h1>We're Out Billboard</h1>
+  <div class="container grid">
+    <img class="billboard-image"
+      src="https://res.cloudinary.com/future-super/image/upload/c_scale,w_600/v1617067955/billboard_example_with_zoom.png" />
+    <div>
+      <p class="bold">Feels good to have your super out of fossil fuels, doesn’t it? Well now you have the chance to
+        shout about it on one of our billboards.</p>
+      <p>
+        Saying ‘We’re Out’ is a great way to campaign against the fossil fuel industry and adding your name raises
+        awareness about how super is being used. You could give someone the confidence to consider switching super and
+        join our movement.
+      </p>
+      <button class="primary">
+        COUNT ME IN<br />
+        <span>I ACCEPT THE BELOW TERMS</span>
+      </button>
+      <p class="disclaimer bold">THE TERMS</p>
+      <p class="disclaimer">I consent to Future Super publishing my name (as First Initial. Last Name) in print and
+        digital content for Future Super’s ‘We’re Out’ campaign. My name may be used for up to twelve months from today.
+        I may withdraw my consent at any time, however I acknowledge that printed content cannot be recalled. My
+        information will be handled in line with Future Super’s Privacy Policy.</p>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends "layouts/base.html" %} {% set pageHeaderTitle = title %} {% block
+content %} {# {% include "partials/page-header.html" %} #} {# TO DO: Hook up
+personal code and button to register opt-in on Autopilot #}
+
+<div class="were-out">
+  <h1>You're In!</h1>
+
+  <div class="container grid">
+    <img
+      class="billboard-image"
+      src="https://res.cloudinary.com/future-super/image/upload/c_scale,w_600/v1617067955/billboard_example_with_zoom.png"
+    />
+    <div>
+      <h3>Your spot on the billboard is confirmed.</h3>
+      <p>This is how your name will appear:</p>
+      <p class="bold">J. Landa</p>
+      <p>
+        Please <a href="/contact-us">contact us</a> if you have any questions.
+      </p>
+    </div>
+  </div>
+</div>
+{% endblock %}
