@@ -1,32 +1,86 @@
-{% extends "layouts/base.html" %}
-{% set pageHeaderTitle = title %}
-{% block content %}
-{# {% include "partials/page-header.html" %} #}
-{# TO DO: Hook up personal code and button to register opt-in on Autopilot #}
+{% extends "layouts/base.html" %} {% set pageHeaderTitle = title %} {% block
+content %}
 
 <div class="were-out">
   <h1>We're Out Billboard</h1>
   <div class="container grid">
-    <img class="billboard-image"
-      src="https://res.cloudinary.com/future-super/image/upload/c_scale,w_600/v1617067955/billboard_example_with_zoom.png" />
+    <img
+      class="billboard-image"
+      src="https://res.cloudinary.com/future-super/image/upload/c_scale,w_600/v1617067955/billboard_example_with_zoom.png"
+    />
     <div>
-      <p class="bold">Feels good to have your super out of fossil fuels, doesn’t it? Well now you have the chance to
-        shout about it on one of our billboards.</p>
-      <p>
-        Saying ‘We’re Out’ is a great way to campaign against the fossil fuel industry and adding your name raises
-        awareness about how super is being used. You could give someone the confidence to consider switching super and
-        join our movement.
+      <p class="bold">
+        Feels good to have your super out of fossil fuels, doesn’t it? Well now
+        you have the chance to shout about it on one of our billboards.
       </p>
-      <button class="primary">
+      <p>
+        Saying ‘We’re Out’ is a great way to campaign against the fossil fuel
+        industry and adding your name raises awareness about how super is being
+        used. You could give someone the confidence to consider switching super
+        and join our movement.
+      </p>
+      <p>Here's how your name will appear:</p>
+      <p id="name" class="bold">A.PERSON</p>
+      <button id="button" class="primary" onclick="handleClick()">
         COUNT ME IN<br />
         <span>I ACCEPT THE BELOW TERMS</span>
       </button>
       <p class="disclaimer bold">THE TERMS</p>
-      <p class="disclaimer">I consent to Future Super publishing my name (as First Initial. Last Name) in print and
-        digital content for Future Super’s ‘We’re Out’ campaign. My name may be used for up to twelve months from today.
-        I may withdraw my consent at any time, however I acknowledge that printed content cannot be recalled. My
-        information will be handled in line with Future Super’s Privacy Policy.</p>
+      <p class="disclaimer">
+        I consent to Future Super publishing my name (as First Initial. Last
+        Name) in print and digital content for Future Super’s ‘We’re Out’
+        campaign. My name may be used for up to twelve months from today. I may
+        withdraw my consent at any time, however I acknowledge that printed
+        content cannot be recalled. My information will be handled in line with
+        Future Super’s Privacy Policy.
+      </p>
     </div>
   </div>
 </div>
+
+<script>
+  async function postData(url = "", data = {}) {
+    const response = await fetch(url, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data), // body data type must match "Content-Type" header
+    });
+    return response.json(); // parses JSON response into native JavaScript objects
+  }
+
+  function handleClick() {
+    document.getElementById("button").innerHTML = "Please wait...";
+    if (name) {
+      postData(
+        "https://67l8qspd50.execute-api.ap-southeast-2.amazonaws.com/prod/billboard?name=" +
+          name.toUpperCase()
+      ).then((data) => {
+        window.location.href =
+          "https://www.futuresuper.com.au/were-out-confirmed/?n=" + name;
+      });
+    } else {
+      console.log("Name unknown");
+    }
+  }
+
+  function getQueryVariable(variable) {
+    var query = window.location.search.substring(1);
+    var vars = query.split("&");
+    for (var i = 0; i < vars.length; i++) {
+      var pair = vars[i].split("=");
+      if (decodeURIComponent(pair[0]) == variable) {
+        return decodeURIComponent(pair[1]);
+      }
+    }
+  }
+
+  let name = getQueryVariable("n");
+  console.log("NAME: " + name);
+
+  if (name) {
+    document.getElementById("name").innerHTML = name.toUpperCase();
+  }
+</script>
 {% endblock %}
