@@ -1,23 +1,54 @@
 {% extends "layouts/base.html" %} {% set pageHeaderTitle = title %} {% block
-content %} {# {% include "partials/page-header.html" %} #} {# TO DO: Hook up
-personal code and button to register opt-in on Autopilot #}
+content %}
 
-<div class="were-out">
-  <h1>You're In!</h1>
-
-  <div class="container grid">
-    <img
-      class="billboard-image"
-      src="https://res.cloudinary.com/future-super/image/upload/c_scale,w_600/v1617067955/billboard_example_with_zoom.png"
-    />
-    <div>
-      <h3>Your spot on the billboard is confirmed.</h3>
-      <p>This is how your name will appear:</p>
-      <p class="bold">J. Landa</p>
-      <p>
-        Please <a href="/contact-us">contact us</a> if you have any questions.
-      </p>
-    </div>
-  </div>
+<div class="were-out container" style="max-width: 660px">
+  <h1>Success!</h1>
+  <p class="center">
+    You’ve agreed to your name featuring in Future Super’s
+    <i>We’re Out</i> campaign. Here’s how your name will appear:
+  </p>
+  <h3 id="name" class="bold center">A. Person</h3>
+  <img
+    class="billboard-image"
+    src="https://res.cloudinary.com/future-super/image/upload/c_scale,w_660/v1617067955/billboard_example_with_zoom.png"
+    style="width: 100%"
+  />
+  <p>
+    If there’s a mistake and you wish to correct your name or not be included,
+    email marketing@futuresuper.com.au
+  </p>
+  <p class="disclaimer">REVIEW THE TERMS YOU AGREED TO</p>
+  <p class="disclaimer">
+    I consent to Future Super publishing my first initial and surname in an
+    advertisement relating to divesting from the fossil fuel industry. This ad
+    may feature on a billboard or appear in newspapers, other mainstream media
+    and social media platforms. My name may be used for a period of up to twelve
+    months from today’s date. Names will be published in the order they are
+    received. I may withdraw my consent by contacting
+    marketing@futuresuper.com.au, however I acknowledge that non-digital content
+    already in circulation cannot be recalled. My information will be handled in
+    line with Future Super’s
+    <a href="/privacy-policy">Privacy Policy</a>.
+  </p>
 </div>
+
+<script>
+  function getQueryVariable(variable) {
+    var query = window.location.search.substring(1);
+    var vars = query.split("&");
+    for (var i = 0; i < vars.length; i++) {
+      var pair = vars[i].split("=");
+      if (decodeURIComponent(pair[0]) == variable) {
+        return decodeURIComponent(pair[1]);
+      }
+    }
+  }
+
+  let name = getQueryVariable("n");
+  console.log("NAME: " + name);
+
+  if (name) {
+    document.getElementById("name").innerHTML = name.toUpperCase();
+  }
+</script>
 {% endblock %}

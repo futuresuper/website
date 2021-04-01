@@ -17,7 +17,9 @@ personal code and button to register opt-in on Autopilot #}
   <div class="container">
     <p>Share the billboard with your personal link:</p>
     <div class="share-container">
-      <div class="share-link">www.futuresuper.com.au/billboard?r=jake-1234</div>
+      <div id="personal-url" class="share-link">
+        www.futuresuper.com.au/billboard
+      </div>
       <button class="primary">COPY LINK</button>
     </div>
     <p style="margin-top: 2rem; text-align: center; font-size: 0.9rem">
@@ -44,8 +46,12 @@ personal code and button to register opt-in on Autopilot #}
       }
     }
   }
-  let referer = getQueryVariable("r");
-  console.log("REFERER: " + referer);
+  let code = getQueryVariable("r");
+  console.log("REFERER: " + code);
+  if (code) {
+    document.getElementById("personal-url").innerHTML =
+      "www.futuresuper.com.au/billboard?r=" + code;
+  }
   let share = getQueryVariable("share") ? true : false;
   console.log("SHARE: " + share);
   if (share) {
