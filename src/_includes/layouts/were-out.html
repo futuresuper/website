@@ -4,21 +4,18 @@ content %}
 <div class="were-out">
   <h1>We're Out Billboard</h1>
   <div class="container grid">
-    <img
-      class="billboard-image"
-      src="https://res.cloudinary.com/future-super/image/upload/c_scale,w_600/v1617067955/billboard_example_with_zoom.png"
-    />
     <div>
-      <p class="bold">
-        Feels good to have your super out of fossil fuels, doesn’t it? Well now
-        you have the chance to shout about it on one of our billboards.
-      </p>
       <p>
-        Saying ‘We’re Out’ is a great way to campaign against the fossil fuel
-        industry and adding your name raises awareness about how super is being
-        used. You could give someone the confidence to consider switching super
-        and join our movement.
+        <span id="first-name" class="bold"></span>Here's what the billboard will
+        look like:
       </p>
+      <img
+        class="billboard-image"
+        src="https://res.cloudinary.com/future-super/image/upload/c_scale,w_600/v1617067955/billboard_example_with_zoom.png"
+      />
+    </div>
+
+    <div>
       <p>Here's how your name will appear:</p>
       <p id="name" class="bold">A.PERSON</p>
       <button id="button" class="primary" onclick="handleClick()">
@@ -27,12 +24,16 @@ content %}
       </button>
       <p class="disclaimer bold">THE TERMS</p>
       <p class="disclaimer">
-        I consent to Future Super publishing my name (as First Initial. Last
-        Name) in print and digital content for Future Super’s ‘We’re Out’
-        campaign. My name may be used for up to twelve months from today. I may
-        withdraw my consent at any time, however I acknowledge that printed
-        content cannot be recalled. My information will be handled in line with
-        Future Super’s Privacy Policy.
+        I consent to Future Super publishing my first initial and surname in an
+        advertisement relating to divesting from the fossil fuel industry. This
+        ad may feature on a billboard or appear in newspapers, other mainstream
+        media and social media platforms. My name may be used for a period of up
+        to twelve months from today’s date. Names will be published in the order
+        they are received. I may withdraw my consent by contacting
+        marketing@futuresuper.com.au, however I acknowledge that non-digital
+        content already in circulation cannot be recalled. My information will
+        be handled in line with Future Super’s
+        <a href="/privacy-policy">Privacy Policy</a>.
       </p>
     </div>
   </div>
@@ -52,13 +53,14 @@ content %}
 
   function handleClick() {
     document.getElementById("button").innerHTML = "Please wait...";
-    if (name) {
+    if (billboardName) {
       postData(
         "https://67l8qspd50.execute-api.ap-southeast-2.amazonaws.com/prod/billboard?name=" +
-          name.toUpperCase()
+          billboardName
       ).then((data) => {
         window.location.href =
-          "https://www.futuresuper.com.au/were-out-confirmed/?n=" + name;
+          "https://www.futuresuper.com.au/were-out-confirmed/?n=" +
+          billboardName;
       });
     } else {
       console.log("Name unknown");
@@ -76,11 +78,14 @@ content %}
     }
   }
 
-  let name = getQueryVariable("n");
-  console.log("NAME: " + name);
+  let first = getQueryVariable("f");
+  let last = getQueryVariable("l");
+  let billboardName = (first[0] + "." + last).toUpperCase();
+  console.log("NAME: " + billboardName);
 
-  if (name) {
-    document.getElementById("name").innerHTML = name.toUpperCase();
+  if (billboardName) {
+    document.getElementById("first-name").innerHTML = first + ", ";
+    document.getElementById("name").innerHTML = billboardName;
   }
 </script>
 {% endblock %}
