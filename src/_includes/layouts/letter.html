@@ -4,8 +4,10 @@ content %}
 <div class="letter-edit">
   <p class="logo">FS</p>
   <div class="container">
-    <h1 id="title-sender">Nice Work Jake! Your letter has been sent</h1>
-    <h1 id="title-shared">Your friend Jake sent a letter</h1>
+    <h1 id="title-sender">
+      Nice Work<span id="name1"></span>! Your letter has been sent
+    </h1>
+    <h1 id="title-shared">Your friend<span id="name2"></span> sent a letter</h1>
     <div class="letter-container">
       <div class="letter-holes">
         <div class="hole"></div>
@@ -13,7 +15,7 @@ content %}
         <div class="hole"></div>
       </div>
       <div class="letter-body">
-        <p class="bold">Attn: CEO & Executives of --Fund Name--</p>
+        <p class="bold">Attn: CEO & Executives of <span id="fund"></span></p>
         <p>
           It’s time to stop investing in fossil fuels.<br /><br />
 
@@ -24,11 +26,9 @@ content %}
           change for the benefit of the future we share and stop investing in
           fossil fuels.<br /><br />
 
-          When it comes to fossil fuels - I’m out. Will you be too?<br /><br />
-
-          Signed,
+          When it comes to fossil fuels - I’m out. Will you be too?
         </p>
-        <p>Jake</p>
+        <p id="signature"></p>
       </div>
     </div>
   </div>
@@ -37,7 +37,10 @@ content %}
   <div class="container">
     <p>If you’d like to share your letter, here’s your personal link:</p>
     <div class="share-container">
-      <div class="share-link">www.futuresuper.com.au/letter?r=jake-1234</div>
+      <div class="share-link">
+        www.futuresuper.com.au/letter?r=<span id="rcode"></span>
+      </div>
+      {# TO DO: Make This Work #}
       <button class="primary">COPY LINK</button>
     </div>
     <p style="margin-top: 2rem; text-align: center; font-size: 0.9rem">
@@ -66,16 +69,47 @@ content %}
       }
     }
   }
+  async function postData(url = "", data = {}) {
+    const response = await fetch(url, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data), // body data type must match "Content-Type" header
+    });
+    return response.json(); // parses JSON response into native JavaScript objects
+  }
   let referer = getQueryVariable("r");
-  console.log("REFERER: " + referer);
+  let fname = getQueryVariable("first");
+  let fund = getQueryVariable("fund");
   let share = getQueryVariable("share") ? true : false;
+  console.log("REFERER: " + referer);
   console.log("SHARE: " + share);
+  console.log("FIRST: " + fname);
+  console.log("FUND: " + fund);
   if (share) {
     document.getElementById("join").style.display = "none";
     document.getElementById("title-shared").style.display = "none";
   } else {
     document.getElementById("share").style.display = "none";
     document.getElementById("title-sender").style.display = "none";
+  }
+  if (fname) {
+    document.getElementById("name1").innerHTML = " " + fname;
+    document.getElementById("name2").innerHTML = " " + fname;
+    document.getElementById("signature").innerHTML = "Signed,<br/>" + fname;
+  }
+  if (fund) {
+    document.getElementById("fund").innerHTML = fund;
+  }
+  if (referer) {
+    document.getElementById("rcode").innerHTML = referer;
+    postData(
+      "https://67l8qspd50.execute-api.ap-southeast-2.amazonaws.com/prod/letter?rcode=" +
+        referer
+    ).then((data) => {
+      console.log(data);
+    });
   }
 </script>
 

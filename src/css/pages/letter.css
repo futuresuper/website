@@ -971,6 +971,7 @@ input.search {
 .letter h1 {
   text-align: center;
   text-transform: uppercase;
+  font-size: 4rem;
 }
 .letter-edit select,
 .letter select {
