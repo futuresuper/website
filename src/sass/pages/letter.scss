@@ -91,3 +91,16 @@
 .join {
   margin-bottom: 4rem;
 }
+
+#success-banner {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: $green-500;
+  font-size: 1.2rem;
+}

@@ -488,6 +488,7 @@ button,
   text-decoration: none;
   transition: background-color 100ms ease-in-out;
   text-align: center;
+  outline: none;
 }
 button.full-width,
 .button.full-width {
