@@ -42,7 +42,7 @@ Here’s just a few of the things we’re proud to have delivered on behalf of o
 
 - [3 solar farms](https://www.myfuturesuper.com.au/blog/3-solar-farms-that-prove-everyday-aussies-can-supercharge-the-renewables-revolution) that prove everyday Aussies can supercharge the renewable revolution,
 - Research that shows [an allocation of just 7.7% of super could get Australia to 100% renewable power by 2030](https://www.myfuturesuper.com.au/blog/new-research-reveals-that-7-7-of-australias-retirement-savings-could-fund-100-renewable-power-by-2030),
-- [BabyBump](https://www.myfuturesuper.com.au/blog/having-a-baby-thats-super) - a fee-rebate for new parents to make super more fair for parents and help address some of the structural inequality in the super system,
+- [Baby Bump](https://www.myfuturesuper.com.au/blog/having-a-baby-thats-super) - a fee-rebate for new parents to make super more fair for parents and help address some of the structural inequality in the super system,
 - Supported author and climate hero [Bill McKibben’s recent Accelerate Climate Action tour](https://www.myfuturesuper.com.au/blog/this-is-our-why-reflections-on-bill-mckibbens-accelerate-climate-action-tour),
 - Advocating to [increase gender diversity](https://www.myfuturesuper.com.au/blog/divest-from-the-patriarchy-why-future-super-is-advocating-for-gender-diversity-in-the-boardroom) in company boards,
 - Awarded “Best in the World” by [BCorp](http://bcorporation.com.au/).
