@@ -1,0 +1,32 @@
+@use "../base" as *;
+
+.were-out {
+  h1 {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    text-align: center;
+  }
+
+  .grid {
+    @media (min-width: $breakpoint-sm) {
+      gap: 3rem;
+      > * {
+        grid-column: span 6;
+      }
+    }
+  }
+
+  button {
+    margin-bottom: 2rem;
+  }
+
+  img,
+  .disclaimer:last-of-type {
+    margin-bottom: 4rem;
+  }
+
+  button > span {
+    font-weight: 400;
+    font-size: 0.8rem;
+  }
+}

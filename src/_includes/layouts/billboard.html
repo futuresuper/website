@@ -1,0 +1,69 @@
+{% extends "layouts/base.html" %} {% set pageHeaderTitle = title %} {% block
+content %} {# {% include "partials/page-header.html" %} #} {# TO DO: Hook up
+personal code and button to register opt-in on Autopilot #}
+
+<div class="billboard">
+  <div class="container">
+    <h1 id="title-sender">Your name is in there somewhere… Can you find it?</h1>
+    <h1 id="title-shared">
+      Your friend's name is in there somewhere… Can you find it?
+    </h1>
+  </div>
+
+  <img
+    class="billboard-image"
+    src="https://res.cloudinary.com/future-super/image/upload/c_scale,w_1200/v1616632236/billboard_1.jpg"
+  />
+</div>
+
+<div id="share" class="letter-send">
+  <div class="container">
+    <p>Share the billboard with your personal link:</p>
+    <div class="share-container">
+      <div id="personal-url" class="share-link">
+        www.futuresuper.com.au/billboard
+      </div>
+      <button class="primary">COPY LINK</button>
+    </div>
+    <p style="margin-top: 2rem; text-align: center; font-size: 0.9rem">
+      We’ll let you know when someone joins Future Super from this link so you
+      can see the difference you make.
+    </p>
+  </div>
+</div>
+<div id="join" class="letter-send">
+  <div class="container">
+    <p>Not a Future Super member yet?</p>
+    <button class="primary join">JOIN NOW</button>
+  </div>
+</div>
+
+<script>
+  function getQueryVariable(variable) {
+    var query = window.location.search.substring(1);
+    var vars = query.split("&");
+    for (var i = 0; i < vars.length; i++) {
+      var pair = vars[i].split("=");
+      if (decodeURIComponent(pair[0]) == variable) {
+        return decodeURIComponent(pair[1]);
+      }
+    }
+  }
+  let code = getQueryVariable("r");
+  console.log("REFERER: " + code);
+  if (code) {
+    document.getElementById("personal-url").innerHTML =
+      "www.futuresuper.com.au/billboard?r=" + code;
+  }
+  let share = getQueryVariable("share") ? true : false;
+  console.log("SHARE: " + share);
+  if (share) {
+    document.getElementById("join").style.display = "none";
+    document.getElementById("title-shared").style.display = "none";
+  } else {
+    document.getElementById("share").style.display = "none";
+    document.getElementById("title-sender").style.display = "none";
+  }
+</script>
+
+{% endblock %}

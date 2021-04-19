@@ -1,0 +1,51 @@
+{% extends "layouts/base.html" %} {% set pageHeaderTitle = title %} {% block
+content %}
+
+<div class="were-out container" style="max-width: 660px">
+  <h1>Success!</h1>
+  <p class="center">
+    You’ve agreed to your name featuring in Future Super’s
+    <i>We’re Out</i> campaign. Here’s how your name will appear:
+  </p>
+  <h3 id="name" class="bold center">A. Person</h3>
+  <img
+    class="billboard-image"
+    src="https://res.cloudinary.com/future-super/image/upload/c_scale,w_660/v1617067955/billboard_example_with_zoom.png"
+    style="width: 100%"
+  />
+  <p>
+    If there’s a mistake and you wish to correct your name or not be included,
+    email marketing@futuresuper.com.au
+  </p>
+  <p class="disclaimer">REVIEW THE TERMS YOU AGREED TO</p>
+  <p class="disclaimer">
+    I consent to Future Super publishing my name (as First Initial. Last Name)
+    in print and digital content for Future Super’s ‘We’re Out’ campaign. My
+    name may be used for up to twelve months from today. I may withdraw my
+    consent at any time by contacting marketing@myfuturesuper.com.au, however I
+    acknowledge that printed content cannot be recalled. My information will be
+    handled in line with Future Super’s
+    <a href="/privacy-policy">Privacy Policy</a>.
+  </p>
+</div>
+
+<script>
+  function getQueryVariable(variable) {
+    var query = window.location.search.substring(1);
+    var vars = query.split("&");
+    for (var i = 0; i < vars.length; i++) {
+      var pair = vars[i].split("=");
+      if (decodeURIComponent(pair[0]) == variable) {
+        return decodeURIComponent(pair[1]);
+      }
+    }
+  }
+
+  let name = getQueryVariable("n");
+  console.log("NAME: " + name);
+
+  if (name) {
+    document.getElementById("name").innerHTML = name.toUpperCase();
+  }
+</script>
+{% endblock %}

@@ -1,0 +1,68 @@
+{% extends "layouts/base.html" %} {% set pageHeaderTitle = title %} {% block
+content %} {# To do - for the Friend version - Get the Name and Fund from refer
+code #}
+
+<div class="letter-edit">
+  <p class="logo">FS</p>
+  <div class="container">
+    <h1 id="title-sender">
+      Nice Work<span id="name1"></span>! Your letter has been sent
+    </h1>
+    <h1 id="title-shared">Your friend<span id="name2"></span> sent a letter</h1>
+    <div class="letter-container">
+      <div class="letter-holes">
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+      </div>
+      <div class="letter-body">
+        <p class="bold">
+          Attn: CEO & Executives of <span id="fund">my old fund</span>
+        </p>
+        <p>
+          It’s time to stop investing in fossil fuels.<br /><br />
+
+          I have chosen to leave your super fund because the way you invest
+          shows that you aren’t taking the risk of climate change seriously.<br /><br />
+
+          We need climate action now, not in 2050. So I’m asking your fund to
+          change for the benefit of the future we share and stop investing in
+          fossil fuels.<br /><br />
+
+          When it comes to fossil fuels - I’m out. Will you be too?
+        </p>
+        <p id="signature"></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="share" class="letter-send">
+  <div class="container">
+    <p>If you’d like to share your letter, here’s your personal link:</p>
+    <div class="share-container">
+      <div class="share-link">
+        www.futuresuper.com.au/letter?r=<span id="rcode"></span>
+      </div>
+      {# TO DO: Make This Work #}
+      <button id="copy-button" class="primary" onclick="copyShareLink()">
+        COPY LINK
+      </button>
+    </div>
+    <p style="margin-top: 2rem; text-align: center; font-size: 0.9rem">
+      We’ll let you know when someone joins Future Super from this link so you
+      can see the difference you make.
+    </p>
+  </div>
+</div>
+<div id="join" class="letter-send">
+  <div class="container">
+    <p>Not a Future Super member yet?</p>
+    <button class="primary join" href="{{ site.joinUrl }}">JOIN NOW</button>
+    {#
+    <p>Already a Future Super member?</p>
+    <button class="primary">SEND A LETTER TO YOUR OLD FUND</button> #}
+  </div>
+</div>
+<div id="success-banner">Link Copied</div>
+
+{% endblock %}

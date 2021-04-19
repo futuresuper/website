@@ -1,0 +1,49 @@
+@use "../base" as *;
+
+.billboard {
+  text-align: center;
+
+  h1 {
+    padding: 4rem 2rem;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.letter-send {
+  padding: 4rem 0;
+
+  .container {
+    max-width: 660px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.share-container {
+  display: flex;
+  @media (max-width: $breakpoint-md) {
+    flex-direction: column;
+  }
+
+  .share-link {
+    height: 68px;
+    border: 1px solid $black-500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    padding: 2rem;
+    @media (max-width: $breakpoint-md) {
+      padding: 1rem 0.5rem;
+      font-size: 0.8rem;
+    }
+  }
+}
+
+.join {
+  margin-bottom: 4rem;
+}

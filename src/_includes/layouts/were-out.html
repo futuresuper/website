@@ -1,0 +1,89 @@
+{% extends "layouts/base.html" %} {% set pageHeaderTitle = title %} {% block
+content %}
+
+<div class="were-out">
+  <h1>We're Out Billboard</h1>
+  <div class="container grid">
+    <div>
+      <p>
+        <span id="first-name" class="bold"></span>Here's what the billboard will
+        look like:
+      </p>
+      <img
+        class="billboard-image"
+        src="https://res.cloudinary.com/future-super/image/upload/c_scale,w_600/v1617067955/billboard_example_with_zoom.png"
+      />
+    </div>
+
+    <div>
+      <p>Here's how your name will appear:</p>
+      <p id="name" class="bold">A.PERSON</p>
+      <button id="button" class="primary" onclick="handleClick()">
+        COUNT ME IN<br />
+        <span>I ACCEPT THE BELOW TERMS</span>
+      </button>
+      <p class="disclaimer bold">THE TERMS</p>
+      <p class="disclaimer">
+        I consent to Future Super publishing my name (as First Initial. Last
+        Name) in print and digital content for Future Super’s ‘We’re Out’
+        campaign. My name may be used for up to twelve months from today. I may
+        withdraw my consent at any time by contacting
+        marketing@myfuturesuper.com.au, however I acknowledge that printed
+        content cannot be recalled. My information will be handled in line with
+        Future Super’s
+        <a href="/privacy-policy">Privacy Policy</a>.
+      </p>
+    </div>
+  </div>
+</div>
+
+<script>
+  async function postData(url = "", data = {}) {
+    const response = await fetch(url, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data), // body data type must match "Content-Type" header
+    });
+    return response.json(); // parses JSON response into native JavaScript objects
+  }
+
+  function handleClick() {
+    document.getElementById("button").innerHTML = "Please wait...";
+    if (billboardName) {
+      postData(
+        "https://67l8qspd50.execute-api.ap-southeast-2.amazonaws.com/prod/billboard?name=" +
+          billboardName
+      ).then((data) => {
+        window.location.href =
+          "https://www.futuresuper.com.au/were-out-confirmed/?n=" +
+          billboardName;
+      });
+    } else {
+      console.log("Name unknown");
+    }
+  }
+
+  function getQueryVariable(variable) {
+    var query = window.location.search.substring(1);
+    var vars = query.split("&");
+    for (var i = 0; i < vars.length; i++) {
+      var pair = vars[i].split("=");
+      if (decodeURIComponent(pair[0]) == variable) {
+        return decodeURIComponent(pair[1]);
+      }
+    }
+  }
+
+  let first = getQueryVariable("f");
+  let last = getQueryVariable("l");
+  let billboardName = (first[0] + "." + last).toUpperCase();
+  console.log("NAME: " + billboardName);
+
+  if (billboardName) {
+    document.getElementById("first-name").innerHTML = first + ", ";
+    document.getElementById("name").innerHTML = billboardName;
+  }
+</script>
+{% endblock %}
