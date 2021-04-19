@@ -6,7 +6,7 @@ tags:
 author: Emily Flood
 canonical:
 description: >-
-  On 1 May 2019, Future Super became the first super fund to completely exclude investments in companies that have no women on their boards.
+    On 1 May 2019, Future Super became the first super fund to completely exclude investments in companies that have no women on their boards.
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834014a40cd3dc8_All-male-board-divested-tiny.jpg
 ---
 
@@ -34,4 +34,4 @@ This week marks the final deadline, and as a result we’ve **divested** from 7 
 
 We’re proud to stand by our members and partners in investing in a fair and equal future.
 
-This step supplements our other strategies to use our power as an employer, investor, and superannuation fund to improve equality. This includes sponsoring the ASX 100 gender pay gap [Leaders and Laggards report](https://accr.org.au/gender-pay-equity-report/), our [BabyBump program](https://www.myfuturesuper.com.au/babybump) to support primary caregivers who take a career break to care for a child, and our internal policies and pay gap reporting for staff.
+This step supplements our other strategies to use our power as an employer, investor, and superannuation fund to improve equality. This includes sponsoring the ASX 100 gender pay gap [Leaders and Laggards report](https://accr.org.au/gender-pay-equity-report/), our [Baby Bump program](https://www.myfuturesuper.com.au/baby-bump) to support primary caregivers who take a career break to care for a child, and our internal policies and pay gap reporting for staff.
