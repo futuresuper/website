@@ -5,6 +5,7 @@
   "signInUrl": "https://my.futuresuper.com.au/",
   "banner": {
     "shown": false,
+    "text": "We're working on a problem with our website. Please <a href=\"/contact-us\">contact us</a> if you need help.",
     "adviceOrCritical": "critical"
   }
 }

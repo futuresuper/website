@@ -2,9 +2,7 @@
   {# Conditional banner #}
   {% if site.banner.shown %}
   <aside class="banner {{ site.banner.adviceOrCritical }}">
-    <p>This is an important banner. Find out more
-      <a href="#">here</a>.
-    </p>
+    <p>{{ site.banner.text | safe }}</p>
   </aside>
   {% endif %}
 
