@@ -54,6 +54,17 @@ content %}
     document.getElementById("name").innerHTML = name.toUpperCase();
   }
 
+  async function postData(url = "", data = {}) {
+    const response = await fetch(url, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data), // body data type must match "Content-Type" header
+    });
+    return response.json(); // parses JSON response into native JavaScript objects
+  }
+
   function processOptIn(billboardName) {
     postData(
       "https://67l8qspd50.execute-api.ap-southeast-2.amazonaws.com/prod/billboard?name=" +
