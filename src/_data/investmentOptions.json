@@ -9,12 +9,7 @@
     "fightsInequality": false,
     "investsInRenewables": false,
     "targets20Percent": false,
-    "highlightInvestments": [
-      {
-        "label": "Plenti",
-        "definition": "Provides green loans to fund the purchase and installation of clean energy products"
-      }
-    ],
+    "highlightInvestments": [],
     "fee": {
       "perAnnumPercentage": 0.874,
       "perYearPrice": 93.6
@@ -36,10 +31,6 @@
     "investsInRenewables": true,
     "targets20Percent": false,
     "highlightInvestments": [
-      {
-        "label": "Plenti",
-        "definition": "Provides green loans to fund the purchase and installation of clean energy products"
-      },
       {
         "label": "Vision Fund International",
         "definition": "Micro-finance products that promote financial inclusion in rural areas, particularly for people living in poverty"
