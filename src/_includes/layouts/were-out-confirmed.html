@@ -42,10 +42,23 @@ content %}
   }
 
   let name = getQueryVariable("n");
-  console.log("NAME: " + name);
+  let first = getQueryVariable("first");
+  let last = getQueryVariable("last");
+
+  if (first && last) {
+    name = (first[0] + "." + last).toUpperCase();
+    processOptIn(name);
+  }
 
   if (name) {
     document.getElementById("name").innerHTML = name.toUpperCase();
+  }
+
+  function processOptIn(billboardName) {
+    postData(
+      "https://67l8qspd50.execute-api.ap-southeast-2.amazonaws.com/prod/billboard?name=" +
+        billboardName
+    );
   }
 </script>
 {% endblock %}
