@@ -1,15 +1,14 @@
 ---
-title: "A bloody good policy"
+author: Khaila (Khi) Prasser
 slug: a-bloody-good-policy
 date: 2021-02-12T07:00:00.122Z
+canonical: null
+title: A bloody good policy
+image: https://res.cloudinary.com/future-super/image/upload/v1619415184/siora-photography-228Ug-nLxx8-unsplash.jpg
 tags:
   - Equality
   - News
-author: Khaila (Khi) Prasser
-canonical:
-description: >-
-  Why we introduced menstrual and menopausal leave.
-image: https://media-exp1.licdn.com/dms/image/C4D12AQF5UsFiYFxDSg/article-cover_image-shrink_720_1280/0/1613084227746?e=1619049600&v=beta&t=5hVI8-KOyguSgu6n8plUiv-cT98co-FIvxYfUqnYbBg
+description: Why we introduced menstrual and menopausal leave.
 ---
 
 For most of my life, I have felt embarrassed and compelled to make excuses for having my period. Yep, that thing that happens somewhat regularly to half the world’s population.
