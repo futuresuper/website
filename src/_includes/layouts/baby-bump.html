@@ -1,123 +1,188 @@
-{% extends "layouts/base.html" %}
+{% extends "layouts/base.html" %} {% set pageHeaderTitle = title %} {% block
+content %}
+<article class="container">
+  {% include "partials/page-header.html" %}
 
-{% set pageHeaderTitle = title %}
+  <div class="grid">
+    <div>
+      <h3>What is Baby Bump?</h3>
+      <p>
+        Baby Bump is a refund of the annual dollar-based administration fee for
+        the time you’re on parental leave, up to a maximum of 12 months
+        ($93.60).
+      </p>
 
-{% block content %}
-  <article class="container">
-    {% include "partials/page-header.html" %}
+      <p>We created Baby Bump for two reasons:</p>
 
-    <div class="grid">
-      <div>
-        <h3>What is Baby Bump?</h3>
-        <p>Baby Bump is a refund of the annual dollar-based administration fee for the time you’re on parental leave, up to a maximum of 12 months ($93.60).</p>
+      <ul>
+        <li>
+          Employers don't have to pay super when you take parental leave, and
+        </li>
+        <li>Dads are less likely to take parental leave than mums.</li>
+      </ul>
+      <p>
+        These two factors contribute to the startling gender inequality in super
+        - that, on average, women retire with 47% less super than men.
+      </p>
 
-        <p>We created Baby Bump for two reasons:</p>
+      <p>
+        So Baby Bump is Future Super’s baby step towards making super more fair
+        for our members.
+      </p>
 
-        <ul>
-          <li>Employers don't have to pay super when you take parental leave, and</li>
-          <li>Dads are less likely to take parental leave than mums These two factors contribute to the startling gender inequality in super - that, on average, women retire with 47% less super than men, and mothers a whopping 60% less than fathers.</li>
-        </ul>
-        <p>So Baby Bump is Future Super’s baby step towards making super more fair for our members.</p>
+      <h3>Am I eligible?</h3>
+      ‍
+      <p>You may be eligible for the Baby Bump fee refund if:</p>
 
-        <h3>Am I eligible?</h3>
-        ‍
-        <p>You may be eligible for the Baby Bump fee refund if:</p>
+      <ul>
+        <li>You are a Future Super member</li>
+        <li>
+          A new child entered into your care within the past 18 months, whether
+          by birth or adoption
+        </li>
+        <li>
+          You have taken parental leave or left work to care for your new child
+        </li>
+      </ul>
 
-        <ul>
-          <li>You are a Future Super member</li>
-          <li>A new child entered into your care within the past 18 months, whether by birth or adoption</li>
-          <li>You have taken parental leave or left work to care for your new child</li>
-        </ul>
+      <p>
+        To confirm eligibility, we do require some paperwork to confirm the
+        birth or adoption of your new child. You can provide this documentation
+        after submitting your Baby Bump application below.
+      </p>
 
-        <p>To confirm eligibility, we do require some paperwork to confirm the birth or adoption of your new child. You can provide this documentation after submitting your Baby Bump application below.</p>
+      <h3>When should I apply?</h3>
+      ‍
+      <p>
+        A Baby Bump application should be submitted when you return to work
+        after parental leave (or start working more than 10 hours per week).
+      </p>
 
-        <h3>When should I apply?</h3>
-        ‍
-        <p>A Baby Bump application should be submitted when you return to work after parental leave (or start working more than 10 hours per week).</p>
+      <p>
+        Making the switch to full-time parent? You can still apply! If you're
+        not returning to work or planning to work more than 10 hours per week,
+        apply for the full Baby Bump refund after the child has been in your
+        care for 12 months.
+      </p>
 
-        <p>Making the switch to full-time parent? You can still apply! If you're not returning to work or planning to work more than 10 hours per week, apply for the full Baby Bump refund after the child has been in your care for 12 months.</p>
-
-        <p>Please note that Baby Bump applications must be received within 18 months of your new child's birth or adoption.</p>
-
-      </div>
-
-      <div class="form-container">
-        <form name="BabyBump" method="POST" data-netlify="true">
-          <h3>Apply for Baby Bump</h3>
-          <p>
-            <label>Name
-              <input type="text" name="Name"/></label>
-          </p>
-          <p>
-            <label>Member Number
-              <input type="text" name="Member Number"/></label>
-          </p>
-          <p>
-            <label>Email
-              <input type="email" name="Email"/></label>
-          </p>
-          <p>
-            <label>How has your new child come into your care?
-              <div>
-                <input type="radio" name="How came into care" value="birth"/>
-                <label for="birth">Birth</label>
-              </div>
-              <div>
-                <input type="radio" name="How came into care" value="adoption"/>
-                <label for="adoption">Adoption</label>
-              </div>
-            </label>
-          </p>
-
-          <p>
-            <label>What date did this child come into your care?
-              <input type="text" name="Date came into care" placeholder="DD/MM/YYYY"/></label>
-          </p>
-          <p>
-            <label>Which of these apply to you?
-              <div>
-                <input type="radio" name="Which of these apply to you" value="Full Time Parent"/>
-                <label for="Full Time Parent">Full-time parent OR returning to work for less than 10 hours per week (12 or more months since birth/adoption)</label>
-              </div>
-              <div>
-                <input type="radio" name="Which of these apply to you" value="Returning To Work"/>
-                <label for="Returning To Work">Returning to work for 10 or more hours per week</label>
-              </div>
-            </label>
-          </p>
-          <p>
-            <label>What date did you start your parental leave?
-              <input type="text" name="Date started parental leave" placeholder="DD/MM/YYYY"/></label>
-          </p>
-          <p>
-            <label>What date did you end your parental leave?
-              <input type="text" name="Date ended parental leave" placeholder="DD/MM/YYYY"/></label>
-          </p>
-          <p>
-            <label>Did you work during your parental leave?
-              <div>
-                <input type="radio" name="Did you work" value="yes"/>
-                <label for="yes">Yes</label>
-              </div>
-              <div>
-                <input type="radio" name="Did you work" value="no"/>
-                <label for="no">No</label>
-              </div>
-            </label>
-          </p>
-          <p>
-            <label>If yes, did you work 10 hours or more in a single week throughout this time? If so, how many weeks did you work 10 hours or more?
-              <input type="text" name="How many weeks worked 10 hours or more"/></label>
-          </p>
-          <p class="disclaimer">
-            If you are deemed eligible, we will request a copy of your child’s birth certificate or adoption papers before the rebate is paid. All information collected will be stored and used in line with our
-            <a href="/privacy-policy">Privacy Policy</a>.
-          </p>
-          <p>
-            <button type="submit" class="primary">Submit</button>
-          </p>
-        </form>
-      </div>
+      <p>
+        Please note that Baby Bump applications must be received within 18
+        months of your new child's birth or adoption.
+      </p>
     </div>
-  </article>
+
+    <div class="form-container">
+      <form name="BabyBump" method="POST" data-netlify="true">
+        <h3>Apply for Baby Bump</h3>
+        <p>
+          <label>Name <input type="text" name="Name" /></label>
+        </p>
+        <p>
+          <label
+            >Member Number <input type="text" name="Member Number"
+          /></label>
+        </p>
+        <p>
+          <label>Email <input type="email" name="Email" /></label>
+        </p>
+        <p>
+          <label
+            >How has your new child come into your care?
+            <div>
+              <input type="radio" name="How came into care" value="birth" />
+              <label for="birth">Birth</label>
+            </div>
+            <div>
+              <input type="radio" name="How came into care" value="adoption" />
+              <label for="adoption">Adoption</label>
+            </div>
+          </label>
+        </p>
+
+        <p>
+          <label
+            >What date did this child come into your care?
+            <input
+              type="text"
+              name="Date came into care"
+              placeholder="DD/MM/YYYY"
+          /></label>
+        </p>
+        <p>
+          <label
+            >Which of these apply to you?
+            <div>
+              <input
+                type="radio"
+                name="Which of these apply to you"
+                value="Full Time Parent"
+              />
+              <label for="Full Time Parent"
+                >Full-time parent OR returning to work for less than 10 hours
+                per week (12 or more months since birth/adoption)</label
+              >
+            </div>
+            <div>
+              <input
+                type="radio"
+                name="Which of these apply to you"
+                value="Returning To Work"
+              />
+              <label for="Returning To Work"
+                >Returning to work for 10 or more hours per week</label
+              >
+            </div>
+          </label>
+        </p>
+        <p>
+          <label
+            >What date did you start your parental leave?
+            <input
+              type="text"
+              name="Date started parental leave"
+              placeholder="DD/MM/YYYY"
+          /></label>
+        </p>
+        <p>
+          <label
+            >What date did you end your parental leave?
+            <input
+              type="text"
+              name="Date ended parental leave"
+              placeholder="DD/MM/YYYY"
+          /></label>
+        </p>
+        <p>
+          <label
+            >Did you work during your parental leave?
+            <div>
+              <input type="radio" name="Did you work" value="yes" />
+              <label for="yes">Yes</label>
+            </div>
+            <div>
+              <input type="radio" name="Did you work" value="no" />
+              <label for="no">No</label>
+            </div>
+          </label>
+        </p>
+        <p>
+          <label
+            >If yes, did you work 10 hours or more in a single week throughout
+            this time? If so, how many weeks did you work 10 hours or more?
+            <input type="text" name="How many weeks worked 10 hours or more"
+          /></label>
+        </p>
+        <p class="disclaimer">
+          If you are deemed eligible, we will request a copy of your child’s
+          birth certificate or adoption papers before the rebate is paid. All
+          information collected will be stored and used in line with our
+          <a href="/privacy-policy">Privacy Policy</a>.
+        </p>
+        <p>
+          <button type="submit" class="primary">Submit</button>
+        </p>
+      </form>
+    </div>
+  </div>
+</article>
 {% endblock %}
