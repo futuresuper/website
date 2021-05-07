@@ -1,237 +1,388 @@
-{% extends "layouts/base.html" %}
+{% extends "layouts/base.html" %} {% block content %}
 
-{% block content %}
-
-  <article>
-    <header class="dithered-img-container">
-      <div class="earth dithered-img rellax"></div>
-      <div class="flower dithered-img rellax"></div>
-      <div class="container">
-        <div class="poster rellax" data-rellax-xs-speed="2" data-rellax-mobile-speed="3" data-rellax-tablet-speed="5" data-rellax-desktop-speed="5">
-          <h1>How we invest</h1>
-        </div>
-        <div class="article-content">
-          <p class="heading-two">
-            Super done differently.
-          </p>
-        </div>
+<article>
+  <header class="dithered-img-container">
+    <div class="earth dithered-img rellax"></div>
+    <div class="flower dithered-img rellax"></div>
+    <div class="container">
+      <div
+        class="poster rellax"
+        data-rellax-xs-speed="2"
+        data-rellax-mobile-speed="3"
+        data-rellax-tablet-speed="5"
+        data-rellax-desktop-speed="5"
+      >
+        <h1>How we invest</h1>
       </div>
-    </header>
-
-    <div class="container">
-      <section class="article-content">
-        <p>The super industry’s purpose is to invest and grow Australia’s retirement savings. But super funds have consistently invested money in harmful industries like fossil fuels that have set us on a path towards climate change.</p>
-        <p>Future Super believes there is a better way to invest super for your future. We invest for your financial future
-          <em>and</em>
-          for the quality of your future as you save for retirement.</p>
-      </section>
-
-      <section id="mission" class="article-content">
-        <h3 class="heading-two">Our mission</h3>
-        <p>To grow retirement savings by investing in a future free from climate change and inequality.</p>
-      </section>
-
-      <section id="impact" class="article-content">
-        <h3 class="heading-two">Our impact</h3>
-        <p>We define impact according to our mission: as meaningful systems change leading to a prosperous future free from climate change and inequality. Every dollar invested with Future Super contributes toward impact by influencing the flow of capital enabling our engagement with companies. Additionally, our impact investments make a significant contribution to our mission in their own right.</p>
-      </section>
-
-      <section id="approach" class="article-content" style="margin-bottom: 60px">
-        <h3 class="heading-two">Our approach</h3>
-        <p>Our approach to managing our member’ superannuation is guided by the philosophy that:</p>
-        <ul>
-          <li>It’s important to protect our members from the stranded asset risk of fossil fuels</li>
-          <li>Companies and assets with superior environmental, social and governance (aka ESG) performance are more likely to provide better long term returns at a lower level of risk</li>
-          <li>Investing in assets that build a fairer, renewable energy powered future can help us achieve financial outperformance for our members</li>
-          <li>We can honour the trust our members place in us by using all of the tools at our disposal as investors to safeguard their future</li>
-        </ul>
-        <p>This philosophy informs our approach to investing. This includes:</p>
-        <ul>
-          <li>Ensuring our portfolios are 100% fossil fuel free across all asset classes (categories of investment). Not just removing direct fossil fuel exposures, but also the companies and assets that are significantly exposed to the fossil fuel industry</li>
-          <li>Investing as broadly as possible in the companies and assets that pass our negative screens, including companies or assets that are ethically ‘neutral’, so that we have a better likelihood of capturing ESG outperformance at a lower level of risk</li>
-          <li>Using all of the levers available to us as investors to help build a liveable planet. This includes actively engaging our investees and industry on important issues, voting our shares according to our ethical mandate, divesting and excluding unethical companies, and directing capital toward companies and assets that are making the world a better place</li>
-        </ul>
-      </section>
+      <div class="article-content">
+        <p class="heading-two">Super done differently.</p>
+      </div>
     </div>
+  </header>
 
-    <div class="neutral">
-      <section id="how-we-get-there" class="container dithered-img-container">
-        <div class="macintosh dithered-img"></div>
-        <div class="banana dithered-img rellax"></div>
-        <div class="poster rellax" data-rellax-xs-speed="2" data-rellax-mobile-speed="3" data-rellax-tablet-speed="5" data-rellax-desktop-speed="5">
-          <h2>What's In and What's Out</h2>
-        </div>
-        <div class="article-content">
+  <div class="container">
+    <section class="article-content">
+      <p>
+        The super industry’s purpose is to invest and grow Australia’s
+        retirement savings. But super funds have consistently invested money in
+        harmful industries like fossil fuels that have set us on a path towards
+        climate change.
+      </p>
+      <p>
+        Future Super believes there is a better way to invest super for your
+        future. We invest for your financial future
+        <em>and</em>
+        for the quality of your future as you save for retirement.
+      </p>
+    </section>
 
-          <h3 class="heading-two">We exclude</h3>
-          <p>Investments with harmful impacts on people and the planet.</p>
-          <div class="marquee-container exclude">
-            <div class="marquee exclude">
-              <ul>
-                {% for screen in screens %}
-                  <li>{{ screen.name }}</li>
-                {% endfor %}
-                {% for screen in screens %}
-                  <li>{{ screen.name }}</li>
-                {% endfor %}
-                {% for screen in screens %}
-                  <li>{{ screen.name }}</li>
-                {% endfor %}
-                {% for screen in screens %}
-                  <li>{{ screen.name }}</li>
-                {% endfor %}
-              </ul>
-            </div>
-          </div>
-          <h3 class="heading-two">We seek</h3>
-          <p>Ethical investments creating a better future.</p>
-          <div class="marquee-container seek">
-            <div class="marquee seek">
-              <ul>
-                {% for item in weSeek %}
-                  <li>{{ item }}</li>
-                {% endfor %}
-                {% for item in weSeek %}
-                  <li>{{ item }}</li>
-                {% endfor %}
-                {% for item in weSeek %}
-                  <li>{{ item }}</li>
-                {% endfor %}
-                {% for item in weSeek %}
-                  <li>{{ item }}</li>
-                {% endfor %}
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
+    <section id="mission" class="article-content">
+      <h3 class="heading-two">Our mission</h3>
+      <p>
+        To grow retirement savings by investing in a future free from climate
+        change and inequality.
+      </p>
+    </section>
 
-    <div class="exclude">
-      <section id="how-we-exclude-investments" class="container dithered-img-container">
-        <div class="smoke-stack dithered-img"></div>
-        <div class="coal dithered-img rellax"></div>
-        <div class="poster rellax" data-rellax-xs-speed="2" data-rellax-mobile-speed="3" data-rellax-tablet-speed="5" data-rellax-desktop-speed="5">
-          <h2>How we exclude invest&shy;ments</h2>
-        </div>
-        <div class="article-content">
-          <p>We have industry-leading ethical screens to help exclude harm from your super. Investments must pass every screen to be included. This means they don’t work against our mission.</p>
-          <p>Explore to see how we screen and which companies fail our criteria.</p>
-        </div>
+    <section id="impact" class="article-content">
+      <h3 class="heading-two">Our impact</h3>
+      <p>
+        We define impact according to our mission: as meaningful systems change
+        leading to a prosperous future free from climate change and inequality.
+        Every dollar invested with Future Super contributes toward impact by
+        influencing the flow of capital enabling our engagement with companies.
+        Additionally, our impact investments make a significant contribution to
+        our mission in their own right.
+      </p>
+    </section>
 
-        <div class="perma-tooltip-container">
-          <p id="swipe-instructions" class="perma-tooltip">
-            Swipe and tap to see other ethical screens in action
-          </p>
-          <p id="tap-instructions" class="perma-tooltip">
-            Tap another item to see its ethical screens in action
-          </p>
-        </div>
-        {# Todo: Create fallback for no JS #}
-        <div class="screens-container">
-          <div class="screens">
-            <div class="scroll-buttons">
-              <button id="left">{{ "/src/images/icons/arrow-west.svg" | svgContents | safe }}</button>
-              <button id="right" class="active">
-                {{ "/src/images/icons/arrow-east.svg" | svgContents | safe }}</button>
-            </div>
-            <div class="buttons-container">
-              {% for item in screens %}
-                <input type="radio" name="screen" id="button-{{ item.name | slug }}" value="{{ item.name }}" {% if
-              loop.first %} checked="true" {% endif %} onclick="showScreen('{{ item.name | slug }}')">
-                <label for="button-{{ item.name | slug }}">{{ item.name }}</label>
-              {% endfor %}
-            </div>
-            {% for item in screens %}
-              <div class="criteria-container{% if loop.first %} active{% endif %}" id="{{ item.name | slug }}">
-                <div class="criteria-intro">
-                  <h3>{{ item.name }}</h3>
-                  <p>{{ item.linkingVerb }}
-                    screened for via the following criteria...</p>
-                </div>
-                {% for criteria in item.criteria %}
-                  <div class="criteria-item">
-                    <p>{{ criteria.question }}</p>
-                    <p class="examples-intro">Failing examples include...</p>
-                    <ul class="plain">
-                      {% for example in criteria.examples %}
-                        <li>{{ example | safe }}</li>
-                      {% endfor %}
-                    </ul>
-                  </div>
-                {% endfor %}
-                {% if item.note %}
-                  <p class="disclaimer">{{ item.note | safe }}</p>
-                {% endif %}
-              </div>
-
-            {% endfor %}
-          </div>
-          <button type="button" class="expander">Show more</button>
-
-        </div>
-        <div class="container">
-          <p class="disclaimer">All Future Super investments are screened to ensure they align with our members’ values. However, we consider how each investment and asset class may have exposure to ethical risks or impact opportunities, as well as how they can work together to produce the best possible outcomes for investors. Therefore, adapting our screening, stewardship and impact strategies for each investment leverages it for the best effect while also reflecting our broader investment and risk management strategies. For more information on Future Super’s impact strategy, screening guideline for each asset, and specific thresholds for each screen,
-            <a href="https://www.futuresuper.com.au/impact-screening-strategy">click here</a>.</p>
-        </div>
-      </section>
-    </div>
-
-    <div class="container">
-      <section id="everything-we-invest-in" class="dithered-img-container">
-        <div class="fifty-cents dithered-img"></div>
-        <div class="tv dithered-img rellax"></div>
-        <div class="poster rellax" data-rellax-xs-speed="2" data-rellax-mobile-speed="2" data-rellax-tablet-speed="2" data-rellax-desktop-speed="2">
-          <h2>Every&shy;thing we invest in</h2>
-        </div>
-        <div class="article-content">
-          <p>While Future Super aims to invest in companies that further our mission, there are plenty of investments that pass our screens which aren’t considered impact investments.</p>
-          <p>Some are companies you’d recognise, like Netflix or Telstra. We don’t expect every investment to change the world, but we do make all our investments public so that anyone can see where the money goes.</p>
-          <a href="/everything-we-invest-in" class="button primary">Explore our investments</a>
-        </div>
-      </section>
-
-      <section id="our-voting-record" class="dithered-img-container">
-        <div class="telephone dithered-img"></div>
-        <div class="megaphone dithered-img rellax"></div>
-        <div class="poster rellax" data-rellax-xs-speed="2" data-rellax-mobile-speed="2" data-rellax-tablet-speed="2" data-rellax-desktop-speed="2">
-          <h2>Our voting record</h2>
-        </div>
-        <div class="article-content">
-          <p>Investing in companies gives Future Super the right to vote on their internal matters and policies. We do this on behalf of our members as a collective, with their values and financial futures in mind. Future Super keeps a transparent record of our voting so you can see how we represent you on issues of climate, equality and corporate governance.</p>
-
-          <ul class="plain doc-or-form-item">
-            {% for item in collections.documentsAndForms %}
-              {% if item.data.category === "Voting Records" %}
-                <li>
-                  {% include "partials/documents-and-forms/rich-text-block.html" %}
-                </li>
-              {% endif %}
-            {% endfor %}
-          </ul>
-
-          <p>We publish our proxy voting record annually following the end of each financial year. This voting summary reflects the voting record for both direct investments and for investments made through funds that Future Super invests in.</p>
-        </div>
-      </section>
-
-      <section class="article-content">
-        <div>
-          <p class="disclaimer">*&thinsp;As of January 1st, 2021.</p>
-          <p class="disclaimer">
-            Investment in Australian equities is predominantly made via the BetaShares Australian Sustainability Leaders ETF. Investment in international equities is via the BetaShares Global Sustainability Leaders ETF. Exposure to global green bonds is predominantly made via the BetaShares Sustainability Leaders Diversified Bond ETF. For more information about these ETFs see
-            <a href="https://www.betashares.com.au" target="_blank" rel="noopener noreferrer">https://www.betashares.com.au</a>.
-          </p>
-          <p class="disclaimer">
-            Future Super Investment Services Pty Ltd (FSIS) is a service provider to BetaShares for these products, with its role being to provide recommendations to the Responsible Investment Committee on the index constituents and corporate actions. Details of FSIS services to BetaShares are found in the
-            <a href="https://futuresuper.com.au/fsg" target="_blank" rel="noopener noreferrer">Financial Services Guide</a>.
-          </p>
-        </div>
-      </section>
-    </div>
-  </article>
+    <section id="approach" class="article-content" style="margin-bottom: 60px">
+      <h3 class="heading-two">Our approach</h3>
+      <p>
+        Our approach to managing our member’ superannuation is guided by the
+        philosophy that:
+      </p>
+      <ul>
+        <li>
+          It’s important to protect our members from the stranded asset risk of
+          fossil fuels
+        </li>
+        <li>
+          Companies and assets with superior environmental, social and
+          governance (aka ESG) performance are more likely to provide better
+          long term returns at a lower level of risk
+        </li>
+        <li>
+          Investing in assets that build a fairer, renewable energy powered
+          future can help us achieve financial outperformance for our members
+        </li>
+        <li>
+          We can honour the trust our members place in us by using all of the
+          tools at our disposal as investors to safeguard their future
+        </li>
+      </ul>
+      <p>This philosophy informs our approach to investing. This includes:</p>
+      <ul>
+        <li>
+          Ensuring our portfolios are 100% fossil fuel free across all asset
+          classes (categories of investment). Not just removing direct fossil
+          fuel exposures, but also the companies and assets that are
+          significantly exposed to the fossil fuel industry
+        </li>
+        <li>
+          Investing as broadly as possible in the companies and assets that pass
+          our negative screens, including companies or assets that are ethically
+          ‘neutral’, so that we have a better likelihood of capturing ESG
+          outperformance at a lower level of risk
+        </li>
+        <li>
+          Using all of the levers available to us as investors to help build a
+          liveable planet. This includes actively engaging our investees and
+          industry on important issues, voting our shares according to our
+          ethical mandate, divesting and excluding unethical companies, and
+          directing capital toward companies and assets that are making the
+          world a better place
+        </li>
+      </ul>
+    </section>
+  </div>
 
   <div class="neutral">
-    {% include "partials/join-cta.html" %}
-    {% include "partials/also-see.html" %}
+    <section id="how-we-get-there" class="container dithered-img-container">
+      <div class="macintosh dithered-img"></div>
+      <div class="banana dithered-img rellax"></div>
+      <div
+        class="poster rellax"
+        data-rellax-xs-speed="2"
+        data-rellax-mobile-speed="3"
+        data-rellax-tablet-speed="5"
+        data-rellax-desktop-speed="5"
+      >
+        <h2>What's In and What's Out</h2>
+      </div>
+      <div class="article-content">
+        <h3 class="heading-two">We exclude</h3>
+        <p>Investments with harmful impacts on people and the planet.</p>
+        <div class="marquee-container exclude">
+          <div class="marquee exclude">
+            <ul>
+              {% for screen in screens %}
+              <li>{{ screen.name }}</li>
+              {% endfor %} {% for screen in screens %}
+              <li>{{ screen.name }}</li>
+              {% endfor %} {% for screen in screens %}
+              <li>{{ screen.name }}</li>
+              {% endfor %} {% for screen in screens %}
+              <li>{{ screen.name }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+        <h3 class="heading-two">We seek</h3>
+        <p>Ethical investments creating a better future.</p>
+        <div class="marquee-container seek">
+          <div class="marquee seek">
+            <ul>
+              {% for item in weSeek %}
+              <li>{{ item }}</li>
+              {% endfor %} {% for item in weSeek %}
+              <li>{{ item }}</li>
+              {% endfor %} {% for item in weSeek %}
+              <li>{{ item }}</li>
+              {% endfor %} {% for item in weSeek %}
+              <li>{{ item }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
+
+  <div class="exclude">
+    <section
+      id="how-we-exclude-investments"
+      class="container dithered-img-container"
+    >
+      <div class="smoke-stack dithered-img"></div>
+      <div class="coal dithered-img rellax"></div>
+      <div
+        class="poster rellax"
+        data-rellax-xs-speed="2"
+        data-rellax-mobile-speed="3"
+        data-rellax-tablet-speed="5"
+        data-rellax-desktop-speed="5"
+      >
+        <h2>How we exclude invest&shy;ments</h2>
+      </div>
+      <div class="article-content">
+        <p>
+          We have industry-leading ethical screens to help exclude harm from
+          your super. Investments must pass every screen to be included. This
+          means they don’t work against our mission.
+        </p>
+        <p>
+          Explore to see how we screen and which companies fail our criteria.
+        </p>
+      </div>
+
+      <div class="perma-tooltip-container">
+        <p id="swipe-instructions" class="perma-tooltip">
+          Swipe and tap to see other ethical screens in action
+        </p>
+        <p id="tap-instructions" class="perma-tooltip">
+          Tap another item to see its ethical screens in action
+        </p>
+      </div>
+      {# Todo: Create fallback for no JS #}
+      <div class="screens-container">
+        <div class="screens">
+          <div class="scroll-buttons">
+            <button id="left">
+              {{ "/src/images/icons/arrow-west.svg" | svgContents | safe }}
+            </button>
+            <button id="right" class="active">
+              {{ "/src/images/icons/arrow-east.svg" | svgContents | safe }}
+            </button>
+          </div>
+          <div class="buttons-container">
+            {% for item in screens %}
+            <input
+              type="radio"
+              name="screen"
+              id="button-{{ item.name | slug }}"
+              value="{{ item.name }}"
+              {%
+              if
+              loop.first
+              %}
+              checked="true"
+              {%
+              endif
+              %}
+              onclick="showScreen('{{ item.name | slug }}')"
+            />
+            <label for="button-{{ item.name | slug }}">{{ item.name }}</label>
+            {% endfor %}
+          </div>
+          {% for item in screens %}
+          <div
+            class="criteria-container{% if loop.first %} active{% endif %}"
+            id="{{ item.name | slug }}"
+          >
+            <div class="criteria-intro">
+              <h3>{{ item.name }}</h3>
+              <p>
+                {{ item.linkingVerb }} screened for via the following
+                criteria...
+              </p>
+            </div>
+            {% for criteria in item.criteria %}
+            <div class="criteria-item">
+              <p>{{ criteria.question }}</p>
+              <p class="examples-intro">Failing examples include...</p>
+              <ul class="plain">
+                {% for example in criteria.examples %}
+                <li>{{ example | safe }}</li>
+                {% endfor %}
+              </ul>
+            </div>
+            {% endfor %} {% if item.note %}
+            <p class="disclaimer">{{ item.note | safe }}</p>
+            {% endif %}
+          </div>
+
+          {% endfor %}
+        </div>
+        <button type="button" class="expander">Show more</button>
+      </div>
+      <div class="container">
+        <p class="disclaimer">
+          All Future Super investments are screened to ensure they align with
+          our members’ values. However, we consider how each investment and
+          asset class may have exposure to ethical risks or impact
+          opportunities, as well as how they can work together to produce the
+          best possible outcomes for investors. Therefore, adapting our
+          screening, stewardship and impact strategies for each investment
+          leverages it for the best effect while also reflecting our broader
+          investment and risk management strategies. For more information on
+          Future Super’s impact strategy, screening guideline for each asset,
+          and specific thresholds for each screen,
+          <a href="https://www.futuresuper.com.au/impact-screening-strategy"
+            >click here</a
+          >.
+        </p>
+      </div>
+    </section>
+  </div>
+
+  <div class="container">
+    <section id="everything-we-invest-in" class="dithered-img-container">
+      <div class="fifty-cents dithered-img"></div>
+      <div class="tv dithered-img rellax"></div>
+      <div
+        class="poster rellax"
+        data-rellax-xs-speed="2"
+        data-rellax-mobile-speed="2"
+        data-rellax-tablet-speed="2"
+        data-rellax-desktop-speed="2"
+      >
+        <h2>Every&shy;thing we invest in</h2>
+      </div>
+      <div class="article-content">
+        <p>
+          While Future Super aims to invest in companies that further our
+          mission, there are plenty of investments that pass our screens which
+          aren’t considered impact investments.
+        </p>
+        <p>
+          Some are companies you’d recognise, like Netflix or Telstra. We don’t
+          expect every investment to change the world, but we do make all our
+          investments public so that anyone can see where the money goes.
+        </p>
+        <a href="/everything-we-invest-in" class="button primary"
+          >Explore our investments</a
+        >
+      </div>
+    </section>
+
+    {# Hiding as requested for compliance review #} {#
+    <section id="our-voting-record" class="dithered-img-container">
+      <div class="telephone dithered-img"></div>
+      <div class="megaphone dithered-img rellax"></div>
+      <div
+        class="poster rellax"
+        data-rellax-xs-speed="2"
+        data-rellax-mobile-speed="2"
+        data-rellax-tablet-speed="2"
+        data-rellax-desktop-speed="2"
+      >
+        <h2>Our voting record</h2>
+      </div>
+      <div class="article-content">
+        <p>
+          Investing in companies gives Future Super the right to vote on their
+          internal matters and policies. We do this on behalf of our members as
+          a collective, with their values and financial futures in mind. Future
+          Super keeps a transparent record of our voting so you can see how we
+          represent you on issues of climate, equality and corporate governance.
+        </p>
+
+        <ul class="plain doc-or-form-item">
+          {% for item in collections.documentsAndForms %} {% if
+          item.data.category === "Voting Records" %}
+          <li>
+            {% include "partials/documents-and-forms/rich-text-block.html" %}
+          </li>
+          {% endif %} {% endfor %}
+        </ul>
+
+        <p>
+          We publish our proxy voting record annually following the end of each
+          financial year. This voting summary reflects the voting record for
+          both direct investments and for investments made through funds that
+          Future Super invests in.
+        </p>
+      </div>
+    </section>
+    #}
+
+    <section class="article-content">
+      <div>
+        <p class="disclaimer">*&thinsp;As of January 1st, 2021.</p>
+        <p class="disclaimer">
+          Investment in Australian equities is predominantly made via the
+          BetaShares Australian Sustainability Leaders ETF. Investment in
+          international equities is via the BetaShares Global Sustainability
+          Leaders ETF. Exposure to global green bonds is predominantly made via
+          the BetaShares Sustainability Leaders Diversified Bond ETF. For more
+          information about these ETFs see
+          <a
+            href="https://www.betashares.com.au"
+            target="_blank"
+            rel="noopener noreferrer"
+            >https://www.betashares.com.au</a
+          >.
+        </p>
+        <p class="disclaimer">
+          Future Super Investment Services Pty Ltd (FSIS) is a service provider
+          to BetaShares for these products, with its role being to provide
+          recommendations to the Responsible Investment Committee on the index
+          constituents and corporate actions. Details of FSIS services to
+          BetaShares are found in the
+          <a
+            href="https://futuresuper.com.au/fsg"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Financial Services Guide</a
+          >.
+        </p>
+      </div>
+    </section>
+  </div>
+</article>
+
+<div class="neutral">
+  {% include "partials/join-cta.html" %} {% include "partials/also-see.html" %}
+</div>
 {% endblock %}
