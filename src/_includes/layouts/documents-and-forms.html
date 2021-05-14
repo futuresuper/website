@@ -1,70 +1,88 @@
-{% extends "layouts/base.html" %}
+{% extends "layouts/base.html" %} {% set pageHeaderTitle = title %} {% macro
+documentGroup(title, category) %}
+<h2>{{ title }}</h2>
+<ul class="plain doc-or-form-item">
+  {% for item in collections.documentsAndForms %} {% if item.data.category ===
+  category %}
+  <li>{% include "partials/documents-and-forms/rich-text-block.html" %}</li>
+  {% endif %} {% endfor %}
+</ul>
+{% endmacro %} {% block content %}
 
-{% set pageHeaderTitle = title %}
+<article class="container">
+  {% include "partials/page-header.html" %}
 
-{% macro documentGroup(title, category) %}
-  <h2>{{ title }}</h2>
-  <ul class="plain doc-or-form-item">
-    {% for item in collections.documentsAndForms %}
-      {% if item.data.category === category %}
-        <li>
-          {% include "partials/documents-and-forms/rich-text-block.html" %}
-        </li>
-      {% endif %}
-    {% endfor %}
-  </ul>
-{% endmacro %}
+  <div class="article-content">
+    <section>
+      {{ documentGroup("Super fund documents", "Super Documents") }}
 
-{% block content %}
+      <p class="text-tertiary disclaimer">
+        * On 1 April 2020, the way that opt-out (sometimes called default)
+        insurance cover is provided through super is changing. The change is
+        being made to address situations where individuals’ super account
+        balances are being eroded by insurance fees charged for cover that they
+        don’t know they have, that they don’t want, or that is unsuitable for
+        their situation. The good news is that at Future Super, we only offer
+        opt-in (voluntary) insurance. This means that it’s your choice to sign
+        up and pay for the type and amount of insurance cover that you want. It
+        also means that the majority of our members won’t be impacted by these
+        changes. However, if you did take out insurance cover through Future
+        Super between 1 November 2019 and 18 March 2020 and have an account
+        balance below $6,000.00, please look out for some separate
+        correspondence from us asking you to make a one-off election to maintain
+        your insurance cover.
+      </p>
+      <p class="text-tertiary disclaimer">
+        ** As at the 2nd December 2019, the 60 day opt-in window will only apply
+        to new members on the first occasion that they join Future Super. You
+        can still apply for voluntary cover, if your 60 days has lapsed, subject
+        to eligibility. Please call us on 1300 658 422 for further
+        information.Our insurance coverage has not changed because of COVID-19.
+        Where a claim is made because of COVID-19, we will carefully assess
+        these against the terms of the relevant policy to ensure our members
+        receive the right decision promptly. As Future Super only offers opt-in
+        insurance, insurance will continue so long as the account has enough
+        funds to cover monthly premiums. When a member makes a full withdrawal
+        or the balance drops below the cost of monthly premiums, the policy will
+        be switched off. Special consideration may be given to members wishing
+        to reinstate their policy after a COVID early release payment by the
+        insurer. For more information on insurance with Future Super,
+        <a href="/contact-us"> contact us</a>.
+      </p>
+    </section>
 
-  <article class="container">
+    <section>
+      {{ documentGroup("Forms for individuals", "Super Forms") }}
+    </section>
 
-    {% include "partials/page-header.html" %}
+    <section>
+      <h2>Forms for employers</h2>
+      <p>
+        Please visit our
+        <a href="/employers">Employers page</a>
+        to find the details and forms required to register as an employer and
+        make employer contributions.
+      </p>
+    </section>
 
-    <div class="article-content">
-      <section>
-        {{ documentGroup("Super fund documents", "Super Documents") }}
+    <section>
+      {{ documentGroup("Fund annual reports", "Annual Reports") }}
+    </section>
 
-        <p class="text-tertiary disclaimer">
-          * On 1 April 2020, the way that opt-out (sometimes called default) insurance cover is provided through super is changing. The change is being made to address situations where individuals’ super account balances are being eroded by insurance fees charged for cover that they don’t know they have, that they don’t want, or that is unsuitable for their situation. The good news is that at Future Super, we only offer opt-in (voluntary) insurance. This means that it’s your choice to sign up and pay for the type and amount of insurance cover that you want. It also means that the majority of our members won’t be impacted by these changes. However, if you did take out insurance cover through Future Super between 1 November 2019 and 18 March 2020 and have an account balance below $6,000.00, please look out for some separate correspondence from us asking you to make a one-off election to maintain your insurance cover.
-        </p>
-        <p class="text-tertiary disclaimer">
-          ** As at the 2nd December 2019, the 60 day opt-in window will only apply to new members on the first occasion that they join Future Super. You can still apply for voluntary cover, if your 60 days has lapsed, subject to eligibility. Please call us on 1300 658 422 for further information.Our insurance coverage has not changed because of COVID-19. Where a claim is made because of COVID-19, we will carefully assess these against the terms of the relevant policy to ensure our members receive the right decision promptly. As Future Super only offers opt-in insurance, insurance will continue so long as the account has enough funds to cover monthly premiums. When a member makes a full withdrawal or the balance drops below the cost of monthly premiums, the policy will be switched off. Special consideration may be given to members wishing to reinstate their policy after a COVID early release payment by the insurer. For more information on insurance with Future Super,
-          <a href="/contact-us">
-            contact us</a>.
-        </p>
-      </section>
+    <section>
+      {{ documentGroup("Portfolio Holdings Disclosure Statements", "PHDs") }}
+    </section>
 
-      <section>
-        {{ documentGroup("Forms for individuals", "Super Forms") }}
-      </section>
+    <section>
+      {{ documentGroup("Pension plan documents", "Pension Documents") }}
+    </section>
 
-      <section>
-        <h2>Forms for employers</h2>
-        <p>Please visit our
-          <a href="/employers">Employers page</a>
-          to find the details and forms required to register as an employer and make employer contributions.</p>
-      </section>
+    <section>
+      {{ documentGroup("Pension plan forms", "Pension Forms") }}
+    </section>
 
-      <section>
-        {{ documentGroup("Fund annual reports", "Annual Reports") }}
-      </section>
+    <section>{{ documentGroup("Impact reports", "Impact Reports") }}</section>
+  </div>
+</article>
 
-      <section>
-        {{ documentGroup("Pension plan documents", "Pension Documents") }}
-      </section>
-
-      <section>
-        {{ documentGroup("Pension plan forms", "Pension Forms") }}
-      </section>
-
-      <section>
-        {{ documentGroup("Impact reports", "Impact Reports") }}
-      </section>
-
-    </div>
-  </article>
-
-  {% include "partials/also-see.html" %}
-
-{% endblock %}
+{% include "partials/also-see.html" %} {% endblock %}

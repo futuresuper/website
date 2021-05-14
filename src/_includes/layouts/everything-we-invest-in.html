@@ -1,58 +1,63 @@
-{% extends "layouts/base.html" %}
-
-{% set pageHeaderTitle = title %}
-
-{% block content %}
-  <div class="everything-we-invest-in mix-container">
-    {# Page header and selectors #}
-    <div class="container">
-      {% include "partials/page-header.html" %}
+{% extends "layouts/base.html" %} {% set pageHeaderTitle = title %} {% block
+content %}
+<div class="everything-we-invest-in mix-container">
+  {# Page header and selectors #}
+  <div class="container">{% include "partials/page-header.html" %}</div>
+  <div class="selectors container">
+    <div class="selectors-row">
+      <div class="everything-form-text">Show me</div>
+      <fieldset data-filter-group="">
+        <select class="everything-dropdown select-filter">
+          <option value="">all types of</option>
+          {% for companyType in companyTypes %}
+          <option
+            value=".{{ companyType | lower |  replace(' ', '-') | replace('&amp;', '') | replace(',', '')}}"
+          >
+            {{ companyType | replace('&amp;', '&')}}
+          </option>
+          {% endfor %}
+        </select>
+      </fieldset>
+      <div>investments</div>
     </div>
-    <div class="selectors container">
-      <div class="selectors-row">
-        <div class="everything-form-text">Show me</div>
-        <fieldset data-filter-group="">
-          <select class="everything-dropdown select-filter">
-            <option value="">all types of</option>
-            {% for companyType in companyTypes %}
-              <option value=".{{ companyType | lower |  replace(' ', '-') | replace('&amp;', '') | replace(',', '')}}">
-                {{ companyType | replace('&amp;', '&')}}
-              </option>
-            {% endfor %}
-          </select>
-        </fieldset>
-        <div>investments</div>
-      </div>
-      {# Selectors section #}
-      <div class="selectors-row">
-        <div>from</div>
-        <fieldset data-filter-group="">
-          <select class="everything-dropdown select-filter">
-            <option value="">any country</option>
-            {% for country in countries %}
-              <option value=".{{ country | lower |  replace(' ', '-')}}">{{country}}</option>
-            {% endfor %}
-          </select>
-        </fieldset>
-        <div>in</div>
-        <fieldset data-filter-group="">
-          <select class="everything-dropdown select-filter">
-            <option value="">any investment option</option>
-            <option value=".balanced-index">Balanced Index</option>
-            <option value=".balanced-impact">Balanced Impact</option>
-            <option value=".renewables-plus-growth">Renewables Plus Growth</option>
-            <option value=".pension-fund">Pension Fund</option>
-          </select>
-        </fieldset>
-      </div>
+    {# Selectors section #}
+    <div class="selectors-row">
+      <div>from</div>
+      <fieldset data-filter-group="">
+        <select class="everything-dropdown select-filter">
+          <option value="">any country</option>
+          {% for country in countries %}
+          <option value=".{{ country | lower |  replace(' ', '-')}}">
+            {{country}}
+          </option>
+          {% endfor %}
+        </select>
+      </fieldset>
+      <div>in</div>
+      <fieldset data-filter-group="">
+        <select class="everything-dropdown select-filter">
+          <option value="">any investment option</option>
+          <option value=".balanced-index">Balanced Index</option>
+          <option value=".balanced-impact">Balanced Impact</option>
+          <option value=".renewables-plus-growth">
+            Renewables Plus Growth
+          </option>
+          <option value=".pension-fund">Pension Fund</option>
+        </select>
+      </fieldset>
     </div>
+  </div>
 
-    {# Section with investment cards #}
-    <div class="container-unlimited investment-card-section">
-      {# Date and sort by filter #}
-      <div class="info-at-top grid">
-        {# Hidden until we get data from Investments, and compliance sign-off #}
-        {# <div class="sort-item">
+  {# Section with investment cards #}
+  <div class="container-unlimited investment-card-section">
+    {# Date and sort by filter #}
+    <p class="heading-five">
+      <a href="/PHD-20210331">Download PDF of all investments</a>
+    </p>
+    <div class="info-at-top grid">
+      {# Hidden until we get data from Investments, and compliance sign-off #}
+      {#
+      <div class="sort-item">
         <h5>Show</h5>
         <fieldset>
           <select id="detailed-info">
@@ -60,72 +65,74 @@
             <option value="detailed">Detailed info</option>
           </select>
         </fieldset>
-      </div> #}
-        <div class="sort-item">
-          <h5>Sort by</h5>
-          <fieldset>
-            <select class="select-sort" name="field">
-              <option value="featured:asc">Featured</option>
-              <option value="name:asc">Alphabetically</option>
-              {# Hidden until we get data from Investments, and compliance sign-off #}
-              {# <option value="size:desc">Holding Size</option> #}
-            </select>
-          </fieldset>
-        </div>
-        <p class="as-at-date heading-five">As at
-          {{ investments.asAtDate }}</p>
       </div>
+      #}
 
-      {# Investment Cards #}
-      <div class="grid">
-        {% for investment in investments.list %}
-          <div class="mix investment-container" data-name="{{ investment.name }}" data-featured="{{ investment.featured }}" data-size="{{ investment.totalSize }}">
-            <h3>{{ investment.name }}</h3>
-            {% if investment.country %}
-              <h4>Country</h4>
-              <div class="filter-category">{{ investment.country }}</div>
-            {% endif %}
-            {% if investment.businessType %}
-              <h4>Business Type</h4>
-              <div class="filter-category">{{ investment.businessType }}</div>
-            {% endif %}
-            {% for investmentOption in investment.investmentOptions %}
-              <div style="display: none" class="filter-category">{{ investmentOption.name }}</div>
-            {% endfor %}
-            <div class="details" style="display: none">
-              <h4>Investment Type</h4>
-              <div class="filter-category">{{ investment.type }}</div>
-              <h4>Investment Options</h4>
-              <div class="grid-options-weight">
-                <div class="bold">Option</div>
-                <div class="bold">Portfolio Weight</div>
-                {% for investmentOption in investment.investmentOptions %}
-                  <div>{{ investmentOption.name }}</div>
-                  <div>{{ investmentOption.weight | round(2) }}%</div>
-                {% endfor %}
-              </div>
-              <h4>Total Holding Size (All Options)</h4>
-              <div>
-                {% if investment.totalSize > 0.1 %}
-                  ${{ investment.totalSize | round(1) }}
-                  Million
-                {% else %}
-                  Less than $0.1 Million
-                {% endif %}
-              </div>
-              {% if investment.etf !== "No" %}
-                <h4>Held via ETF</h4>
-                <div>{{ investment.etf }}</div>
-              {% endif %}
-            </div>
-          </div>
-        {% endfor %}
+      <div class="sort-item">
+        <h5>Sort by</h5>
+        <fieldset>
+          <select class="select-sort" name="field">
+            <option value="featured:asc">Featured</option>
+            <option value="name:asc">Alphabetically</option>
+            {# Hidden until we get data from Investments, and compliance
+            sign-off #} {#
+            <option value="size:desc">Holding Size</option>
+            #}
+          </select>
+        </fieldset>
       </div>
-
-      <div id="no-items-found-message">
-        No items found
-      </div>
+      <p class="as-at-date heading-five">As at {{ investments.asAtDate }}</p>
     </div>
+
+    {# Investment Cards #}
+    <div class="grid">
+      {% for investment in investments.list %}
+      <div
+        class="mix investment-container"
+        data-name="{{ investment.name }}"
+        data-featured="{{ investment.featured }}"
+        data-size="{{ investment.totalSize }}"
+      >
+        <h3>{{ investment.name }}</h3>
+        {% if investment.country %}
+        <h4>Country</h4>
+        <div class="filter-category">{{ investment.country }}</div>
+        {% endif %} {% if investment.businessType %}
+        <h4>Business Type</h4>
+        <div class="filter-category">{{ investment.businessType }}</div>
+        {% endif %} {% for investmentOption in investment.investmentOptions %}
+        <div style="display: none" class="filter-category">
+          {{ investmentOption.name }}
+        </div>
+        {% endfor %}
+        <div class="details" style="display: none">
+          <h4>Investment Type</h4>
+          <div class="filter-category">{{ investment.type }}</div>
+          <h4>Investment Options</h4>
+          <div class="grid-options-weight">
+            <div class="bold">Option</div>
+            <div class="bold">Portfolio Weight</div>
+            {% for investmentOption in investment.investmentOptions %}
+            <div>{{ investmentOption.name }}</div>
+            <div>{{ investmentOption.weight | round(2) }}%</div>
+            {% endfor %}
+          </div>
+          <h4>Total Holding Size (All Options)</h4>
+          <div>
+            {% if investment.totalSize > 0.1 %} ${{ investment.totalSize |
+            round(1) }} Million {% else %} Less than $0.1 Million {% endif %}
+          </div>
+          {% if investment.etf !== "No" %}
+          <h4>Held via ETF</h4>
+          <div>{{ investment.etf }}</div>
+          {% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div id="no-items-found-message">No items found</div>
   </div>
+</div>
 
 {% endblock %}
