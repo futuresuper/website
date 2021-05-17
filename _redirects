@@ -106,4 +106,7 @@
 # ------------------------------
 # Domain Redirects
 # ------------------------------
-https://www.futuresuper.com/* https://www.futuresuper.com.au/:splat 200
+https://www.futuresuper.com/*   https://www.futuresuper.com.au/:splat 200
+https://futuresuper.com/*       https://www.futuresuper.com.au/:splat 200
+http://www.futuresuper.com/*    https://www.futuresuper.com.au/:splat 200
+http://futuresuper.com/*        https://www.futuresuper.com.au/:splat 200
