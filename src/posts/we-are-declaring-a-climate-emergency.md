@@ -1,7 +1,7 @@
 ---
 title: We are declaring a climate emergency
 date: 2021-05-18T06:28:01.344Z
-image: https://res.cloudinary.com/future-super/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1621318835/ClimateEmergency_04.png
+image: https://res.cloudinary.com/future-super/image/upload/v1621318832/ClimateEmergency_01.png
 tags:
   - climate
   - emergency
