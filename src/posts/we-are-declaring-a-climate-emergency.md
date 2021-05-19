@@ -17,7 +17,7 @@ We’re proud to announce that we are declaring a climate emergency.
 
 ### **Make the Strongest Signal You Can**
 
-At Future Super, we spend our days connecting members with the power of their retirement savings. We help them move money away from fossil fuel and other harmful investments into more planet-friendly alternatives. We were founded to fight the climate crisis. Even so, we believe publicly declaring a climate emergency is still a meaningful step that we can take.
+At Future Super, we spend our days connecting members with the power of their retirement savings. We help them move money away from fossil fuels and other harmful investments into more planet-friendly alternatives. We were founded to fight the climate crisis. Even so, we believe publicly declaring a climate emergency is still a meaningful step that we can take.
 
 This year we joined a group of other B Corps called the B Corp Climate Collective. Together, we are following a climate action roadmap to progress climate action in our businesses, while sharing our progress, triumphs and challenges. This declaration is the first action on that roadmap. 
 
