@@ -38,6 +38,8 @@ personal code and button to register opt-in on Autopilot #}
   </div>
 </div>
 
+{% include "partials/popup-message.html" %}
+
 <script>
   function getQueryVariable(variable) {
     var query = window.location.search.substring(1);
@@ -68,6 +70,11 @@ personal code and button to register opt-in on Autopilot #}
   function handleCopy() {
     const text = "www.futuresuper.com.au/billboard?r=" + code;
     copyTextToClipboard(text);
+    const popup = document.getElementById("popup-message");
+    popup.style.display = "flex";
+    setTimeout(function () {
+      popup.style.display = "none";
+    }, 3000);
   }
 </script>
 
