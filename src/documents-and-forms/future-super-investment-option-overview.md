@@ -1,5 +1,5 @@
 ---
-title: Future Super Investment Option Overview
+title: Investment Option Overview
 url: https://content.myfuturesuper.com.au/forms-docs/Future_Super_Investment_Option_Overview.pdf
 type: PDF
 category: Super Documents
