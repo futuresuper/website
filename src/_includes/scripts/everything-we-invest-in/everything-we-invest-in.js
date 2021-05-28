@@ -15,12 +15,15 @@ viewSelector.addEventListener("change", function () {
 var conv = function (str) {
   if (!str) {
     str = "empty";
+  } else {
+    const newStr = str
+      .replace(/[!\"#$%&'\(\)\*\+,\.\/:;<=>\?\@\[\\\]\^`\{\|\}~]/g, "")
+      .replace(/ /g, "-")
+      .toLowerCase()
+      .trim();
+    console.log(newStr);
+    return newStr;
   }
-  return str
-    .replace(/[!\"#$%&'\(\)\*\+,\.\/:;<=>\?\@\[\\\]\^`\{\|\}~]/g, "")
-    .replace(/ /g, "-")
-    .toLowerCase()
-    .trim();
 };
 
 // 3) Creating dynamic elements classes from its categories for filtering:
@@ -50,10 +53,12 @@ var noItemsFoundMessage = document.getElementById("no-items-found-message");
 noItemsFoundMessage.style.display = "none";
 
 // hide detailed view by deafult
+/*
 var details = document.getElementsByClassName("details");
 for (var i = 0; i < details.length; i++) {
   details[i].style.display = "none";
 }
+*/
 
 var mixer = mixitup(containerEl, {
   multifilter: {

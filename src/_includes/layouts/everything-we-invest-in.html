@@ -101,9 +101,8 @@ content %}
         <h4>Business Type</h4>
         <div class="filter-category">{{ investment.businessType }}</div>
         {% endif %} {% for investmentOption in investment.investmentOptions %}
-        <div style="display: none" class="filter-category">
-          {{ investmentOption.name }}
-        </div>
+        <!-- prettier-ignore -->
+        <div style="display: none" class="filter-category">{{ investmentOption.name }}</div>
         {% endfor %}
         <div class="details" style="display: none">
           <h4>Investment Type</h4>
