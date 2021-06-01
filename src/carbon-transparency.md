@@ -1,8 +1,8 @@
 ---
-title: "Carbon Transparency"
-layout: "layouts/carbon-transparency.html"
-summary: There’s no excuse for not admitting your emitting.
-description: There’s no excuse for not admitting your emitting.
+title: Carbon Transparency
+layout: layouts/carbon-transparency.html
+summary: Open the lid on emissions your money creates, avoids, and abates.
+description: Open the lid on emissions your money creates, avoids, and abates.
 ---
 
 Our investment portfolio has been carbon negative since 2018. But our standards aren’t exactly standard. Most businesses don’t even report their climate impact. When they do, there’s no standardised way of calculating carbon. That’s a problem.
