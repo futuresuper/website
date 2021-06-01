@@ -1,0 +1,7 @@
+{
+    "table": [
+        { "rowHeading": "Buy Price", "rowSubHeading": "As at 29/05/2021", "balancedIndex": "1.266796", "balancedImpact": "1.266796", "renewablesPlusGrowth": "1.266796", "balancedGrowthPension": "1.266796" },
+        { "rowHeading": "Sell Price", "rowSubHeading": "As at 29/05/2021", "balancedIndex": "1.265024", "balancedImpact": "1.265024", "renewablesPlusGrowth": "1.265024", "balancedGrowthPension": "1.265024" },
+        { "rowHeading": "Historial Pricing", "rowType": "URL", "balancedIndex": "http://todo.todo.csv", "balancedImpact": "http://todo.todo.csv", "renewablesPlusGrowth": "http://todo.todo.csv", "balancedGrowthPension": "http://todo.todo.csv" }
+    ]
+}

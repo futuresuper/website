@@ -1,0 +1,85 @@
+{% extends "layouts/base.html" %}
+
+{% set pageHeaderTitle = title %}
+{% set iconsPath = '/src/images/icons/investment-options/' %}
+
+{% block content %}
+<article class="container">
+  {% include "partials/page-header.html" %}
+
+  <div class="table-container four-up">
+    <div class="grid-row">
+      <div class="row-header"></div>
+      {% for option in investmentOptions %}
+      <div class="row-data option-card-mini {{ option.slug }}">
+        {% set iconUrl = iconsPath + option.slug + ".svg" %}
+        {{ iconUrl | svgContents("fill-core") | safe }}
+        <h4>{{ option.opticalLabel[0] }}<br>{{ option.opticalLabel[1] }}</h4>
+        <a {% if option.type==="accumulation" %}href="/investment-options" {% elseif option.type==="pension"
+          %}href="/pension-fund" {% endif %} class="button full-width">View</a>
+      </div>
+      {% endfor %}
+    </div>
+
+    {% for row in unitPrices.table %}
+    <div class="grid-row">
+      <div class="row-header">
+        <h5>{{ row.rowHeading }}</h5>
+        {% if row.rowSubHeading %}
+        <p>{{ row.rowSubHeading }}</p>
+        {% endif %}
+      </div>
+      <div class="row-data balanced-index">
+        <p>
+          {% if row.rowType === "URL" %}
+          <a href="{{ row.balancedIndex }}">Download</a>
+          {% else %}
+          {{ row.balancedIndex }}
+          {% endif %}
+        </p>
+      </div>
+      <div class="row-data balanced-impact">
+        <p>
+          {% if row.rowType === "URL" %}
+          <a href="{{ row.balancedImpact }}">Download</a>
+          {% else %}
+          {{ row.balancedImpact }}
+          {% endif %}
+        </p>
+      </div>
+      <div class="row-data renewables-plus-growth">
+        <p>
+          {% if row.rowType === "URL" %}
+          <a href="{{ row.renewablesPlusGrowth }}">Download</a>
+          {% else %}
+          {{ row.renewablesPlusGrowth }}
+          {% endif %}
+        </p>
+      </div>
+      <div class="row-data balanced-growth-pension">
+        <p>
+          {% if row.rowType === "URL" %}
+          <a href="{{ row.balancedGrowthPension }}">Download</a>
+          {% else %}
+          {{ row.balancedGrowthPension }}
+          {% endif %}
+        </p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+  <div class="table-disclaimers grid container">
+    <div>
+      <p class="disclaimer">TODO: any compliance disclaimers.</p>
+    </div>
+  </div>
+
+  <div class="article-content">
+    {% include "partials/page-faqs.html" %}
+  </div>
+</article>
+
+{% include "partials/also-see.html" %}
+
+{% endblock %}

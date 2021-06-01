@@ -1,12 +1,11 @@
 ---
-title: "Performance and Returns"
-layout: "layouts/performance-and-returns.html"
-data: performanceReturns
-summary: See the competitive performance of our funds over the short, medium and long term.
+title: "Unit Prices"
+layout: "layouts/unit-prices.html"
+data: unitPrices
 description: See the competitive performance of our funds over the short, medium and long term.
 faqCategory: "Investments and returns"
 alsoSee:
-  - Unit Prices
+  - Performance and Returns
   - Investment Options
   - Pension Fund
   - Everything We Invest In
