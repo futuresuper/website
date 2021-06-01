@@ -3,34 +3,33 @@
 // namespace (ie '$grey-100' instead of 'base.$grey100')
 @use "../base" as *;
 
-.grid {
-  @media (min-width: $breakpoint-md) {
-    > * {
-      grid-column: span 6;
-    }
-  }
-}
-
 .form-container {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
+    // Match visual spacing from .container .article-content
+    margin-top: 9rem;
 
-  form {
-    padding: 2rem;
-    background-color: $grey-100;
-    max-width: 36rem;
+    form {
+        padding: 3rem 2rem 2rem 2rem;
+        background-color: $grey-100;
+        max-width: 36rem;
 
-    input {
-      margin-top: 0.25rem;
-      margin-bottom: 1.5rem;
-      display: block;
-      width: 100%;
-      padding: 0.5rem;
-      &[type="radio"] {
-        display: inline-block;
-        width: auto;
-        margin-bottom: 0.5rem;
-      }
+        h3 {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        input {
+            margin-top: 0.25rem;
+            margin-bottom: 1.5rem;
+            display: block;
+            width: 100%;
+            padding: 0.5rem;
+            &[type="radio"] {
+                display: inline-block;
+                width: auto;
+                margin-bottom: 0.5rem;
+            }
+        }
     }
-  }
 }

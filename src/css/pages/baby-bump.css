@@ -948,20 +948,19 @@ input.search {
   border-color: #fac33c transparent transparent transparent;
 }
 
-@media (min-width: 48rem) {
-  .grid > * {
-    grid-column: span 6;
-  }
-}
-
 .form-container {
   display: flex;
   justify-content: center;
+  margin-top: 9rem;
 }
 .form-container form {
-  padding: 2rem;
+  padding: 3rem 2rem 2rem 2rem;
   background-color: #f5f5f4;
   max-width: 36rem;
+}
+.form-container form h3 {
+  text-align: center;
+  margin-bottom: 3rem;
 }
 .form-container form input {
   margin-top: 0.25rem;
