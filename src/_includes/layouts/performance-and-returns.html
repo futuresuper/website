@@ -1,18 +1,12 @@
 {% extends "layouts/base.html" %}
 
 {% set pageHeaderTitle = title %}
+{% set summary = "As of " + performanceReturns.dateAsAt | dateFilter + "." %}
 {% set iconsPath = '/src/images/icons/investment-options/' %}
 
 {% block content %}
 <article class="container">
   {% include "partials/page-header.html" %}
-
-  <div class="table-intro grid container">
-    <div>
-      <h2>Investment returns</h2>
-      <p>The following data is current as of {{ performanceReturns.dateAsAt | dateFilter }}.</p>
-    </div>
-  </div>
 
   <div class="table-container four-up">
     <div class="grid-row">
@@ -68,82 +62,6 @@
         compound
         basis. Return of capital and the performance of your investment in the Fund are not guaranteed. Past performance
         is not a reliable indicator of future performance.</p>
-    </div>
-  </div>
-
-  <div class="table-intro grid container">
-    <div>
-      <h2 id="unit-prices">Unit prices</h2>
-      <p>The unit price for all members of the fund (the value of a unit) is calculated every week day and changes based
-        on the value of the assets the fund invests in, as well as the fees and taxes that are due.</p>
-    </div>
-  </div>
-
-  <div class="table-container four-up">
-    <div class="grid-row">
-      <div class="row-header"></div>
-      {% for option in investmentOptions %}
-      <div class="row-data option-card-mini {{ option.slug }}">
-        {% set iconUrl = iconsPath + option.slug + ".svg" %}
-        {{ iconUrl | svgContents("fill-core") | safe }}
-        <h4>{{ option.opticalLabel[0] }}<br>{{ option.opticalLabel[1] }}</h4>
-        <a {% if option.type==="accumulation" %}href="/investment-options" {% elseif option.type==="pension"
-          %}href="/pension-fund" {% endif %} class="button full-width">View</a>
-      </div>
-      {% endfor %}
-    </div>
-
-    {% for row in unitPrices.table %}
-    <div class="grid-row">
-      <div class="row-header">
-        <h5>{{ row.rowHeading }}</h5>
-        {% if row.rowSubHeading %}
-        <p>{{ row.rowSubHeading }}</p>
-        {% endif %}
-      </div>
-      <div class="row-data balanced-index">
-        <p>
-          {% if row.rowType === "URL" %}
-          <a href="{{ row.balancedIndex }}">Download</a>
-          {% else %}
-          {{ row.balancedIndex }}
-          {% endif %}
-        </p>
-      </div>
-      <div class="row-data balanced-impact">
-        <p>
-          {% if row.rowType === "URL" %}
-          <a href="{{ row.balancedImpact }}">Download</a>
-          {% else %}
-          {{ row.balancedImpact }}
-          {% endif %}
-        </p>
-      </div>
-      <div class="row-data renewables-plus-growth">
-        <p>
-          {% if row.rowType === "URL" %}
-          <a href="{{ row.renewablesPlusGrowth }}">Download</a>
-          {% else %}
-          {{ row.renewablesPlusGrowth }}
-          {% endif %}
-        </p>
-      </div>
-      <div class="row-data balanced-growth-pension">
-        <p>
-          {% if row.rowType === "URL" %}
-          <a href="{{ row.balancedGrowthPension }}">Download</a>
-          {% else %}
-          {{ row.balancedGrowthPension }}
-          {% endif %}
-        </p>
-      </div>
-    </div>
-    {% endfor %}
-  </div>
-
-  <div class="table-disclaimers grid container">
-    <div>
-      <p class="disclaimer">TODO: any compliance disclaimers for unit prices.</p>
     </div>
   </div>
 

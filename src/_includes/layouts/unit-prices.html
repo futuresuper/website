@@ -1,6 +1,7 @@
 {% extends "layouts/base.html" %}
 
 {% set pageHeaderTitle = title %}
+{% set summary = "As of " + unitPrices.dateAsAt | dateFilter + "." %}
 {% set iconsPath = '/src/images/icons/investment-options/' %}
 
 {% block content %}
@@ -71,7 +72,7 @@
 
   <div class="table-disclaimers grid container">
     <div>
-      <p class="disclaimer">TODO: any compliance disclaimers.</p>
+      <p class="disclaimer">TODO: any compliance disclaimers go here.</p>
     </div>
   </div>
 
