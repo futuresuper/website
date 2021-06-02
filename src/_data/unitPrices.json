@@ -1,8 +1,9 @@
 {
     "dateAsAt": "2021-05-31",
     "table": [
-        { "rowHeading": "Buy Price", "balancedIndex": "1.266796", "balancedImpact": "1.266796", "renewablesPlusGrowth": "1.266796", "balancedGrowthPension": "1.266796" },
-        { "rowHeading": "Sell Price", "balancedIndex": "1.265024", "balancedImpact": "1.265024", "renewablesPlusGrowth": "1.265024", "balancedGrowthPension": "1.265024" },
-        { "rowHeading": "Historial Pricing", "rowType": "URL", "balancedIndex": "http://todo.todo.csv", "balancedImpact": "http://todo.todo.csv", "renewablesPlusGrowth": "http://todo.todo.csv", "balancedGrowthPension": "http://todo.todo.csv" }
+        { "investment_option_id": "11", "investment_option_label": "Renewables Plus", "account_type_label": "Accumulation", "effective_date": "2021-05-28", "buy_price": "1.272975", "sell_price": "1.271067" },
+        { "investment_option_id": "12", "investment_option_label": "Balanced Index", "account_type_label": "Accumulation", "effective_date": "2021-05-28", "buy_price": "1.275605", "sell_price": "1.273821" },
+        { "investment_option_id": "15", "investment_option_label": "Pension Balanced Growth", "account_type_label": "Account-Based Pension", "effective_date": "2021-05-28", "buy_price": "1.609939", "sell_price": "1.607687" },
+        { "investment_option_id": "10", "investment_option_label": "Balanced Impact", "account_type_label": "Accumulation", "effective_date": "2021-05-28", "buy_price": "1.577175", "sell_price": "1.574969" }
     ]
 }

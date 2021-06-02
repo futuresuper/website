@@ -22,52 +22,38 @@
       {% endfor %}
     </div>
 
-    {% for row in unitPrices.table %}
     <div class="grid-row">
       <div class="row-header">
-        <h5>{{ row.rowHeading }}</h5>
-        {% if row.rowSubHeading %}
-        <p>{{ row.rowSubHeading }}</p>
-        {% endif %}
+        <h5>Buy price</h5>
       </div>
-      <div class="row-data balanced-index">
-        <p>
-          {% if row.rowType === "URL" %}
-          <a href="{{ row.balancedIndex }}">Download</a>
-          {% else %}
-          {{ row.balancedIndex }}
-          {% endif %}
-        </p>
+      {% for row in unitPrices.table %}
+      <div class="row-data {{ row.investment_option_label | slug }}">
+        <p>{{ row.buy_price }}</p>
       </div>
-      <div class="row-data balanced-impact">
-        <p>
-          {% if row.rowType === "URL" %}
-          <a href="{{ row.balancedImpact }}">Download</a>
-          {% else %}
-          {{ row.balancedImpact }}
-          {% endif %}
-        </p>
-      </div>
-      <div class="row-data renewables-plus-growth">
-        <p>
-          {% if row.rowType === "URL" %}
-          <a href="{{ row.renewablesPlusGrowth }}">Download</a>
-          {% else %}
-          {{ row.renewablesPlusGrowth }}
-          {% endif %}
-        </p>
-      </div>
-      <div class="row-data balanced-growth-pension">
-        <p>
-          {% if row.rowType === "URL" %}
-          <a href="{{ row.balancedGrowthPension }}">Download</a>
-          {% else %}
-          {{ row.balancedGrowthPension }}
-          {% endif %}
-        </p>
-      </div>
+      {% endfor %}
     </div>
-    {% endfor %}
+
+    <div class="grid-row">
+      <div class="row-header">
+        <h5>Sell price</h5>
+      </div>
+      {% for row in unitPrices.table %}
+      <div class="row-data {{ row.investment_option_label | slug }}">
+        <p>{{ row.sell_price }}</p>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="grid-row">
+      <div class="row-header">
+        <h5>Historical pricing</h5>
+      </div>
+      {% for row in unitPrices.table %}
+      <div class="row-data {{ row.investment_option_label | slug }}">
+        <p><a href="{{ row.historical_pricing }}">Download</a></p>
+      </div>
+      {% endfor %}
+    </div>
   </div>
 
   <div class="table-disclaimers grid container">
