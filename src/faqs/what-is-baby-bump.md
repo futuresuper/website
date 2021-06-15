@@ -1,7 +1,7 @@
 ---
 title: "What is Baby Bump? "
 slug: what-is-baby-bump
-date: 2021-06-08T06:44:02Z
+date: 2021-06-15T05:10:56Z
 category: Fees
 order: 1
 ---
@@ -15,7 +15,7 @@ We created Baby Bump for two reasons:
 
 These two factors contribute to the startling gender inequality in super - that, on average, women retire with 42%\* less super than men. So Baby Bump is Future Super’s baby step towards making super more fair for our members.
 
-You don't have to be a woman to take advantage of our Baby Bump policy however. If you have welcomed a new child into your family and taken parental leave or left work to care for that child, you can apply for the Baby Bump regardless of your gender.
+You don't have to be the birth parent to take advantage of our Baby Bump policy however. If you have welcomed a new child into your family and taken parental leave or left work to care for that child, you can apply for the Baby Bump regardless of your gender.
 
 For more information on eligibility and how to apply please see this [page](https://www.futuresuper.com.au/baby-bump/). 
 
