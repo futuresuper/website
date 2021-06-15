@@ -1,31 +1,33 @@
 ---
-title: "Baby Bump"
-layout: "layouts/baby-bump.html"
+title: Baby Bump
+layout: layouts/baby-bump.html
 summary: Future Super's baby step towards making super more fair for our members.
-description: A refund of the annual dollar-based administration fee for the time you’re on parental leave, up to a maximum of 12 months ($93.60).
-pageStyles: ["src/css/pages/baby-bump.css"]
+description: A refund of the annual dollar-based administration fee for the time
+  you’re on parental leave, up to a maximum of 12 months ($93.60).
+pageStyles:
+  - src/css/pages/baby-bump.css
 ---
-
 Baby Bump is a refund of the annual dollar-based administration fee for the time you are on parental leave, up to a maximum of 12 months (equivalent to $93.60).
 
 We created Baby Bump for two reasons:
 
-- Employers don't have to pay super when you take parental leave
-- Primary carers (who are historically mostly women) are more likely to take parental leave than other carers
+* Employers don't have to pay super when you take parental leave
+* Primary carers (who are historically mostly women) are more likely to take parental leave than other carers
 
-These two factors contribute to the startling gender inequality in super: that, on average, women retire with 42%\* less super than men. So Baby Bump is Future Super’s baby step towards making super more fair for our members.
+These two factors contribute to the startling gender inequality in super: that, on average, women retire with 42%* less super than men. So Baby Bump is Future Super’s baby step towards making super more fair for our members.
 
-You don't have to be a woman to take advantage of our Baby Bump policy however. If you have welcomed a new child into your family and taken parental leave or left work to care for that child, you can apply for the Baby Bump regardless of your gender.
+You don't have to be the birth parent to take advantage of our Baby Bump policy however. If you have welcomed a new child into your family and taken parental leave or left work to care for that child, you can apply for the Baby Bump regardless of your gender.
 
-_\*See [Closing the super gender gap](https://www.abc.net.au/radio/programs/nightlife/first-hour-finance/13310718#:~:text=Women%20can%20expect%20to%20retire,bridge%20the%20super%20gender%20gap.) (Philip Clark for ABC, 2021)_
+*\*See [Closing the super gender gap](https://www.abc.net.au/radio/programs/nightlife/first-hour-finance/13310718#:~:text=Women%20can%20expect%20to%20retire,bridge%20the%20super%20gender%20gap.) (Philip Clark for ABC, 2021)*
 
 ## Am I eligible?
+
 ‍
 You may be eligible for the Baby Bump fee refund if:
 
-- You are a Future Super member
-- A new child entered into your care within the past 18 months, whether by birth or adoption, or foster care
-- You have taken parental leave or left work to care for your new child
+* You are a Future Super member
+* A new child entered into your care within the past 18 months, whether by birth or adoption, or foster care
+* You have taken parental leave or left work to care for your new child
 
 To confirm eligibility, we do require some paperwork to confirm the birth, adoption, or foster care of your new child. You can provide this documentation after submitting your Baby Bump application below.
 
