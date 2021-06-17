@@ -24,6 +24,11 @@
           "text": "Performance & Returns",
           "url": "/performance-and-returns/",
           "inSiteHeader": true
+        },
+        {
+          "text": "Unit Prices",
+          "url": "/unit-prices/",
+          "inSiteHeader": false
         }
       ]
     },
@@ -51,6 +56,11 @@
           "text": "Employers",
           "url": "/employers/",
           "inSiteHeader": true
+        },
+        {
+          "text": "Carbon Transparency",
+          "url": "/carbon-transparency/",
+          "inSiteHeader": false
         },
         {
           "text": "Blog",
@@ -90,7 +100,11 @@
         {
           "text": "Sign Up",
           "url": "https://join.futuresuper.com.au"
-        }
+        },
+        {
+          "text": "Baby Bump",
+          "url": "/baby-bump/"
+        }        
       ]
     },
     {

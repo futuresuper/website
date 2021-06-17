@@ -85,7 +85,8 @@
     }
   }
   // Balanced Growth Pension
-  &.balanced-growth-pension {
+  &.balanced-growth-pension,
+  &.pension-balanced-growth {
     color: $option-balanced-growth-pension-dark;
 
     svg {
