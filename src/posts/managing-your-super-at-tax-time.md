@@ -76,11 +76,11 @@ If you do need an account summary before the annual member statements are releas
 
 Yes, there are some age restrictions for making personal contributions. If you are under 67 you can make personal contributions regardless if you are working or not. If you are between 67 and 74 you must pass the [work test](https://www.futuresuper.com.au/faqs/what-is-the-work-test/) or [work test exemption](https://futuresuper.groovehq.com/help/what-is-the-work-test-exemption) to be eligible to make personal contributions. If you are over 75 you cannot make personal contributions.
 
-##### Do I have to fill out a contribution form every time I make a payment?
+### Do I have to fill out a contribution form every time I make a payment?
 
 Not necessarily. If you make contributions with the same amount, frequency (e.g. every 4 weeks) and payment reference, then you can note this in one form. However, if you make contributions of varying amounts or at varying frequency, you will need to complete a new personal contribution form each time.
 
-##### Do personal contributions count towards my contributions cap?
+### Do personal contributions count towards my contributions cap?
 
 Yes, personal contributions will count towards contribution caps. 
 
@@ -90,13 +90,19 @@ If you choose not to claim a tax deduction for your personal contribution, the c
 
 Please note, the contribution caps will change on 1st July 2021. For more information on contribution caps and the upcoming changes, please refer to this [ATO webpage](https://www.ato.gov.au/super/self-managed-super-funds/contributions-and-rollovers/contribution-caps/). 
 
-##### Can I use some of my contribution cap allowance from other years?
+### Can I use some of my contribution cap allowance from other years?
 
 Yes, you may be able to access your unused contribution caps from other years under the [carry-forward arrangements](https://www.ato.gov.au/individuals/super/in-detail/growing-your-super/super-contributions---too-much-can-mean-extra-tax/?page=6) for concessional contributions or [bring forward arrangements](https://www.ato.gov.au/Individuals/Super/In-detail/Growing-your-super/Super-contributions---too-much-can-mean-extra-tax/?anchor=Bringforwardarrangements#Bringforwardarrangements) for non-concessional contributions. 
 
 Eligibility conditions apply. Please read the eligibility criteria carefully to find out if these arrangements are available to you. 
 
-___
+- - -
 
 **\
 For more information, the ATO’s website has a useful guide for [concessional contributions](https://www.ato.gov.au/Individuals/Super/In-detail/Growing-your-super/Super-contributions---too-much-can-mean-extra-tax/?page=2#Carry_forward_concessional_contributions) and [non-concessional contributions](https://www.ato.gov.au/Individuals/Super/In-detail/Growing-your-super/Super-contributions---too-much-can-mean-extra-tax/?page=8#Non_concessional_contributions_and_contribution_caps).**
+
+*Please note that the information provided is of a general nature only and we have not taken your personal financial objectives, situation or needs into account.*
+
+*We recommend you seek financial advice when considering if Future Super is right for your objectives and needs.* 
+
+*Please read our [Product Disclosure Document](https://www.futuresuper.com.au/pds) and [Additional Information Booklet](https://www.futuresuper.com.au/aib) for more information about our products and services.*
