@@ -2,135 +2,145 @@
 content %}
 <div class="everything-we-invest-in mix-container">
   {# Page header and selectors #}
-  <div class="container">{% include "partials/page-header.html" %}</div>
-  <div class="selectors container">
-    <div class="selectors-row">
-      <div class="everything-form-text">Show me</div>
-      <fieldset data-filter-group="">
-        <select class="everything-dropdown select-filter">
-          <option value="">all types of</option>
-          {% for companyType in companyTypes %}
-          <option
-            value=".{{ companyType | lower |  replace(' ', '-') | replace('&amp;', '') | replace(',', '')}}"
-          >
-            {{ companyType | replace('&amp;', '&')}}
-          </option>
-          {% endfor %}
-        </select>
-      </fieldset>
-      <div>investments</div>
-    </div>
-    {# Selectors section #}
-    <div class="selectors-row">
-      <div>from</div>
-      <fieldset data-filter-group="">
-        <select class="everything-dropdown select-filter">
-          <option value="">any country</option>
-          {% for country in countries %}
-          <option value=".{{ country | lower |  replace(' ', '-')}}">
-            {{country}}
-          </option>
-          {% endfor %}
-        </select>
-      </fieldset>
-      <div>in</div>
-      <fieldset data-filter-group="">
-        <select class="everything-dropdown select-filter">
-          <option value="">any investment option</option>
-          <option value=".balanced-index">Balanced Index</option>
-          <option value=".balanced-impact">Balanced Impact</option>
-          <option value=".renewables-plus-growth">
-            Renewables Plus Growth
-          </option>
-          <option value=".pension-fund">Pension Fund</option>
-        </select>
-      </fieldset>
+  <div class="container">
+    {% include "partials/page-header.html" %}
+    <div class="article-content">
+      <p>Want to know everything that Future Super invests in, how much money we allocate to each company, and which investments go in which options? You’re in the right place.</p>
+      <p>We believe in the rules that guide our investments and in your right to know how they play out. We think we stack up pretty favourably with any ethical fund, so have at it. Dig deep.</p>
     </div>
   </div>
 
-  {# Section with investment cards #}
-  <div class="container-unlimited investment-card-section">
-    {# Date and sort by filter #}
-    <p class="heading-five">
-      <a href="/phd-20210331">Download PDF of all investments</a>
-    </p>
-    <div class="info-at-top grid">
-      {# Hidden until we get data from Investments, and compliance sign-off #}
-      {#
-      <div class="sort-item">
-        <h5>Show</h5>
-        <fieldset>
-          <select id="detailed-info">
-            <option value="basic">Basic info</option>
-            <option value="detailed">Detailed info</option>
-          </select>
-        </fieldset>
-      </div>
-      #}
+  <div class="container table-intro">
 
-      <div class="sort-item">
-        <h5>Sort by</h5>
-        <fieldset>
-          <select class="select-sort" name="field">
-            <option value="featured:asc">Featured</option>
-            <option value="name:asc">Alphabetically</option>
-            {# Hidden until we get data from Investments, and compliance
-            sign-off #} {#
-            <option value="size:desc">Holding Size</option>
-            #}
-          </select>
-        </fieldset>
-      </div>
-      <p class="as-at-date heading-five">As at {{ investments.asAtDate }}</p>
-    </div>
-
-    {# Investment Cards #}
-    <div class="grid">
-      {% for investment in investments.list %}
-      <div
-        class="mix investment-container"
-        data-name="{{ investment.name }}"
-        data-featured="{{ investment.featured }}"
-        data-size="{{ investment.totalSize }}"
+    <h2>Searchable table</h2>
+    <p>We update this information every 3 months. It is current as of 31 March 2021. Downloadable versions are available below.</p>
+    <h3>Filters</h3>
+    <fieldset data-filter-group="">
+      <select
+        class="everything-dropdown select-filter investment-options-filter"
       >
-        <h3>{{ investment.name }}</h3>
-        {% if investment.country %}
-        <h4>Country</h4>
-        <div class="filter-category">{{ investment.country }}</div>
-        {% endif %} {% if investment.businessType %}
-        <h4>Business Type</h4>
-        <div class="filter-category">{{ investment.businessType }}</div>
-        {% endif %} {% for investmentOption in investment.investmentOptions %}
-        <!-- prettier-ignore -->
-        <div style="display: none" class="filter-category">{{ investmentOption.name }}</div>
+        <option value="">Investment option</option>
+        <option value=".balanced-index">Balanced Index</option>
+        <option value=".balanced-impact">Balanced Impact</option>
+        <option value=".renewables-plus-growth">Renewables Plus Growth</option>
+        <option value=".pension-fund">Pension Fund</option>
+      </select>
+    </fieldset>
+
+    <fieldset data-filter-group="">
+      <select class="everything-dropdown select-filter">
+        <option value="">Asset class</option>
+        <option value=".growth-alternatives">Growth Alternatives</option>
+        <option value=".international-shares">International Shares</option>
+        <option value=".domestic-shares">Domestic Shares</option>
+        <option value=".fixed-interest">Fixed Interest</option>
+        <option value=".cash">Cash</option>
+      </select>
+    </fieldset>
+
+    <fieldset data-filter-group="">
+      <select class="everything-dropdown select-filter">
+        <option value="">Country</option>
+        {% for country in countries %}
+        <option value=".{{ country | lower |  replace(' ', '-')}}">
+          {{country}}
+        </option>
         {% endfor %}
-        <div class="details" style="display: none">
-          <h4>Investment Type</h4>
-          <div class="filter-category">{{ investment.type }}</div>
-          <h4>Investment Options</h4>
-          <div class="grid-options-weight">
-            <div class="bold">Option</div>
-            <div class="bold">Portfolio Weight</div>
-            {% for investmentOption in investment.investmentOptions %}
-            <div>{{ investmentOption.name }}</div>
-            <div>{{ investmentOption.weight | round(2) }}%</div>
-            {% endfor %}
-          </div>
-          <h4>Total Holding Size (All Options)</h4>
-          <div>
-            {% if investment.totalSize > 0.1 %} ${{ investment.totalSize |
-            round(1) }} Million {% else %} Less than $0.1 Million {% endif %}
-          </div>
-          {% if investment.etf !== "No" %}
-          <h4>Held via ETF</h4>
-          <div>{{ investment.etf }}</div>
-          {% endif %}
-        </div>
+      </select>
+    </fieldset>
+
+    <fieldset data-filter-group="">
+      <select class="everything-dropdown select-filter">
+        <option value="">Business type</option>
+        {% for companyType in companyTypes %}
+        <option
+          value=".{{ companyType | lower |  replace(' ', '-') | replace('&amp;', '') | replace(',', '')}}"
+        >
+          {{ companyType | replace('&amp;', '&')}}
+        </option>
+        {% endfor %}
+      </select>
+    </fieldset>
+
+
+    <h3>Results</h3>
+    <p style="width: 50%">Our entire portfolio is invested across 1234 assets, listed below. The total amount invested in all of our investment options at 31st March 2021 was $1,234,567.</p>
+
+  </div>
+
+  {# Investments Table #}
+  <div class="container-unlimited investment-card-section">
+    <div class="grid header-row">
+      <div>Name</div>
+      <div>Type</div>
+      <div>Business Type</div>
+      <div class="all-options-col hide-on-reset">Country</div>
+      <div class="all-options-col hide-on-reset">$ Value</div>
+      <div style="display: none" class="balanced-index-col hide-on-reset">
+        $ Value (Balanced Index)
       </div>
-      {% endfor %}
+      <div style="display: none" class="balanced-index-col hide-on-reset">
+        % of Balanced Index
+      </div>
     </div>
+    {% for investment in investments.list %}
+    <div
+      class="mix grid table-row"
+      data-name="{{ investment.name }}"
+      data-size="{{ investment.totalSize }}"
+      data-balanced-index-weight="{{ investment.investmentOptions["Balanced Index"].weight }}"
+      onclick="showInvestmentOverlay(true)"
+    >
+      <div>{{ investment.name }}</div>
+      <div class="filter-category">{{ investment.type }}</div>
+      <div class="filter-category">{{ investment.businessSector }}</div>
+      <div class="filter-category all-options-col hide-on-reset">
+        {{ investment.country }}
+      </div>
+      <div class="all-options-col hide-on-reset">
+        {% if investment.totalSize > 0.1 %} ${{ investment.totalSize | round(1)
+        }} Million {% else %} Less than $0.1 Million {% endif %}
+      </div>
+      {% if investment.investmentOptions["Balanced Index"] %}
+      <div style="display: none" class="filter-category">Balanced Index</div>
+      <div style="display: none" class="balanced-index-col hide-on-reset">
+        ${{investment.investmentOptions["Balanced Index"].value | round(2)}}
+        Million
+      </div>
+      <div style="display: none" class="balanced-index-col hide-on-reset">
+        {{investment.investmentOptions["Balanced Index"].weight | round(2)}}%
+      </div>
+      {% endif %} {% if investment.investmentOptions["Balanced Impact"] %}
+      <div style="display: none" class="filter-category">Balanced Impact</div>
+
+      {% endif %} {% if investment.investmentOptions["Renewables Plus Growth"]
+      %}
+      <!-- prettier-ignore -->
+      <div style="display: none" class="filter-category">Renewables Plus Growth</div>
+      {% endif %} {% if investment.investmentOptions["Pension Fund"] %}
+      <div style="display: none" class="filter-category">Pension Fund</div>
+      {% endif %}
+    </div>
+    {% endfor %}
 
     <div id="no-items-found-message">No items found</div>
+  </div>
+
+  {# APPLE MODAL EXAMPLE #}
+  <div id="details-overlay" style="display: none">
+    <div class="close-button-container">
+      <a id="join-close" onclick="showInvestmentOverlay(false)">
+        {{ '/src/images/icons/cross.svg' | svgContents | safe }}
+      </a>
+    </div>
+    <h2>Apple</h2>
+    <h3>What do they do?</h3>
+    <p>Apple offer consumer electronics, computer software and online services.</p>
+    <h3>How do they measure up against our screens?</h3>
+    <p>Apple seek to be leaders in sustainability, and have published a plan for all its products to be carbon neutral by 2030.</p>
+    <p>There have been some concerns over human rights issues and labour practices, however our team are confident satisfied that Apple are genuinely seeking to be leaders in this area.</p>
+    <h3>Have we ever engaged with Apple?</h3>
+    <p>Yes, on multiple occasians, and we've received satisfactory responses in regards to all questions we've posed.</p>
   </div>
 </div>
 

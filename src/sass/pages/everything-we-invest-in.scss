@@ -6,13 +6,19 @@
 @use "../base" as *;
 
 .everything-we-invest-in {
+  .table-intro {
+    margin: 4rem 0;
+  }
+
   fieldset {
     display: inline-block;
     border: 0;
+    padding: 0;
+    margin-bottom: 2rem;
   }
 
   select {
-    background-color: $grey-100;
+    background-color: $white-500;
     width: 100%;
     padding: 8px 12px;
     font-size: 1rem;
@@ -20,98 +26,65 @@
     border: 1px solid $grey-500;
     outline: none;
   }
-  .selectors {
-    margin-bottom: $space-section-y-sm;
-    @media (min-width: $breakpoint-md) {
-      margin-bottom: $space-section-y-md;
-    }
-    @media (min-width: $breakpoint-lg) {
-      margin-bottom: $space-section-y-lg;
-    }
-  }
-  .selectors-row {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    text-align: center;
-  }
 
   .investment-card-section {
     margin-bottom: $space-section-y-sm;
 
-    .info-at-top {
-      margin-bottom: 3rem;
-      align-items: center;
+    .grid {
+      font-family: $font-stack-monospace;
+      padding: 1rem 0;
+      border-bottom: 2px solid $grey-100;
+      font-size: 0.8rem;
 
-      select {
-        background-color: $white-500;
+      :nth-child(1) {
+        grid-column: span 4;
+        font-weight: bold;
+      }
+      :nth-child(2) {
+        grid-column: span 2;
+      }
+      :nth-child(3) {
+        grid-column: span 2;
+      }
+      :nth-child(4) {
+        grid-column: span 2;
+      }
+      :nth-child(5) {
+        grid-column: span 2;
       }
     }
 
-    .sort-item {
-      grid-column: span 6;
-      @media (min-width: $breakpoint-md) {
-        // grid-column: span 3;
-        // uncomment above and remove below once 2nd filter good to go
-        grid-column-start: 10;
-        grid-column-end: 13;
-      }
-      display: flex;
-      align-items: center;
-
-      h5 {
-        font-weight: normal;
-        flex: 1;
-        margin: 0;
-      }
-
-      fieldset {
-        flex: 3;
-        margin: 0;
-        padding: 0;
-      }
+    .table-row:hover {
+      background-color: $off-white-300;
+      cursor: pointer;
     }
 
-    .as-at-date {
-      margin: 1rem 0 0 0;
-      line-height: 100%;
-      color: $grey-500;
-      grid-row: 2 / 2;
-      @media (min-width: $breakpoint-md) {
-        margin: 0;
-        grid-row: 1 / 1;
-        grid-column: 1 / 7;
-      }
+    .header-row {
+      font-family: $font-stack-sans-serif;
+      font-size: 1rem;
+      font-weight: bold;
+      border-bottom: 2px solid $grey-300;
     }
   }
 
-  .grid-options-weight {
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-    grid-gap: 0.5rem;
-    font-size: 0.8rem;
-    padding: 0.6rem;
-  }
-
-  .investment-container {
+  #details-overlay {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100vh;
+    background-color: $off-white-500;
+    border-left: 1px solid $grey-300;
     padding: 2rem;
-    @extend %border-style-card;
-    // Prevent titles from spilling out of container
-    overflow-wrap: break-word;
-    // And just in case...
-    overflow: hidden;
-
-    @media (min-width: $breakpoint-md) {
-      grid-column: span 4;
-    }
-
-    @media (min-width: $breakpoint-lg) {
-      grid-column: span 3;
-    }
-
-    h4 {
-      margin-top: 0.5rem;
+  }
+  .close-button-container {
+    text-align: right;
+    #join-close {
+      cursor: pointer;
+      svg {
+        height: 3rem;
+      }
     }
   }
 }
