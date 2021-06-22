@@ -71,7 +71,7 @@ content %}
   {# Investments Table #}
   <div class="container-unlimited investment-card-section">
     <div class="grid header-row">
-      <div>Name</div>
+      <div></div>
       <div>Type</div>
       <div>Business Type</div>
       <div class="all-options-col hide-on-reset">Country</div>
@@ -114,7 +114,21 @@ content %}
         onclick="showInvestmentOverlay(true)"
       {% endif %}
     >
-      <div>{{ investment.name }}</div>
+      <div>
+        <div>
+        {{ investment.name }}
+        </div>
+        <div style="font-weight: normal; font-size: 0.7rem">
+        {% if investment.name === "Cash at Bank" %}Cash we have ready to invest in great assets
+        {% elseif investment.name === "Infradebt Ethical Infrastructure Debt Fund" %}Lends money to major renewables projects
+        {% elseif investment.name === "Artesian Sustainability and Green Bond Fund" %}Invests in innovative climate solutions projects
+        {% elseif investment.name === "Bendigo And Adelaide Bank" %}Australia's biggest bank with no fossil fuels
+        {% elseif investment.name === "Suncorp Group Ltd" %}A big financial institution that doesn't invest in fossil fuels
+        {% else %}
+        {{investment.businessIndustry}}
+        {% endif %}
+        </div>
+      </div>
       <div class="filter-category">{{ investment.type }}</div>
       <div class="filter-category">{{ investment.businessSector }}</div>
       <div class="filter-category all-options-col hide-on-reset">
