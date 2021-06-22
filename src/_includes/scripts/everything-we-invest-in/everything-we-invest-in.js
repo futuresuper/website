@@ -61,15 +61,24 @@ var mixer = mixitup(containerEl, {
 });
 
 // Show/hide cols based on investment option selection
-investmentOptionsFilter.addEventListener("change", function () {
+investmentOptionsFilter.addEventListener("change", function (e) {
+  const option = investmentOptionsFilter.value;
   resetCols();
-  var colItems = document.querySelectorAll(
-    investmentOptionsFilter.value + "-col"
-  );
-  colItems.forEach(function (elem) {
-    elem.style.display = "block";
-  });
-  mixer.sort("balanced-index-weight:desc");
+  if (!option) {
+    var colItems = document.querySelectorAll(".all-options-col");
+    colItems.forEach(function (elem) {
+      elem.style.display = "block";
+    });
+    mixer.sort("size:desc");
+  } else {
+    var colItems = document.querySelectorAll(
+      option + "-col"
+    );
+    colItems.forEach(function (elem) {
+      elem.style.display = "block";
+    });
+    mixer.sort(option.slice(1) + "-weight:desc");
+  }
 });
 
 function resetCols() {

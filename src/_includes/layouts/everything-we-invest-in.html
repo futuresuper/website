@@ -82,6 +82,24 @@ content %}
       <div style="display: none" class="balanced-index-col hide-on-reset">
         % of Balanced Index
       </div>
+      <div style="display: none" class="balanced-impact-col hide-on-reset">
+        $ Value (Balanced Impact)
+      </div>
+      <div style="display: none" class="balanced-impact-col hide-on-reset">
+        % of Balanced Impact
+      </div>
+      <div style="display: none" class="renewables-plus-growth-col hide-on-reset">
+        $ Value (Renewables Plus Growth)
+      </div>
+      <div style="display: none" class="renewables-plus-growth-col hide-on-reset">
+        % of Renewables Plus Growth
+      </div>
+      <div style="display: none" class="pension-fund-col hide-on-reset">
+        $ Value (Pension Fund)
+      </div>
+      <div style="display: none" class="pension-fund-col hide-on-reset">
+        % of Pension Fund
+      </div>
     </div>
     {% for investment in investments.list %}
     <div
@@ -89,7 +107,12 @@ content %}
       data-name="{{ investment.name }}"
       data-size="{{ investment.totalSize }}"
       data-balanced-index-weight="{{ investment.investmentOptions["Balanced Index"].weight }}"
-      onclick="showInvestmentOverlay(true)"
+      data-balanced-impact-weight="{{ investment.investmentOptions["Balanced Impact"].weight }}"
+      data-renewables-plus-growth-weight="{{ investment.investmentOptions["Renewables Plus Growth"].weight }}"
+      data-pension-fund-weight="{{ investment.investmentOptions["Pension Fund"].weight }}"
+      {% if investment.name === "Apple" %}
+        onclick="showInvestmentOverlay(true)"
+      {% endif %}
     >
       <div>{{ investment.name }}</div>
       <div class="filter-category">{{ investment.type }}</div>
@@ -112,13 +135,33 @@ content %}
       </div>
       {% endif %} {% if investment.investmentOptions["Balanced Impact"] %}
       <div style="display: none" class="filter-category">Balanced Impact</div>
-
+      <div style="display: none" class="balanced-impact-col hide-on-reset">
+        ${{investment.investmentOptions["Balanced Impact"].value | round(2)}}
+        Million
+      </div>
+      <div style="display: none" class="balanced-impact-col hide-on-reset">
+        {{investment.investmentOptions["Balanced Impact"].weight | round(2)}}%
+      </div>
       {% endif %} {% if investment.investmentOptions["Renewables Plus Growth"]
       %}
       <!-- prettier-ignore -->
       <div style="display: none" class="filter-category">Renewables Plus Growth</div>
+      <div style="display: none" class="renewables-plus-growth-col hide-on-reset">
+        ${{investment.investmentOptions["Renewables Plus Growth"].value | round(2)}}
+        Million
+      </div>
+      <div style="display: none" class="renewables-plus-growth-col hide-on-reset">
+        {{investment.investmentOptions["Renewables Plus Growth"].weight | round(2)}}%
+      </div>
       {% endif %} {% if investment.investmentOptions["Pension Fund"] %}
       <div style="display: none" class="filter-category">Pension Fund</div>
+      <div style="display: none" class="pension-fund-col hide-on-reset">
+        ${{investment.investmentOptions["Pension Fund"].value | round(2)}}
+        Million
+      </div>
+      <div style="display: none" class="pension-fund-col hide-on-reset">
+        {{investment.investmentOptions["Pension Fund"].weight | round(2)}}%
+      </div>
       {% endif %}
     </div>
     {% endfor %}
@@ -126,7 +169,6 @@ content %}
     <div id="no-items-found-message">No items found</div>
   </div>
 
-{# comment #}
   {# APPLE MODAL EXAMPLE #}
   <div id="details-overlay" style="display: none">
     <div class="close-button-container">
