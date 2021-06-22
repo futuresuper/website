@@ -1,6 +1,6 @@
 ---
 title: "What’s the deadline to make personal contributions for the 2020/21 financial year?"
-slug: whats-the-deadline-to-make-personal-contributions-for-the-2020/21-financial-year
+slug: whats-the-deadline-to-make-personal-contributions-for-the-2020-21-financial-year
 date: 2021-06-21T04:43:31Z
 category: Contributions and payments to your super
 order: 137
