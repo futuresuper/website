@@ -3,7 +3,7 @@ title: Social Media Producer
 startDate: 2021-06-22T03:13:42.808Z
 endDate: 2021-07-07T03:13:42.831Z
 location: "Sydney (preferred)"
-salary: $60,000 - 70,000 + 10.5%
+salary: $60,000 - 70,000 + 10.5% super
 applicationUrl: https://app.beapplied.com/apply/lv2bu6tyd9
 summary: "We're looking for a Social Media Producer to help us help people
   realise the power of their money. If social media is your place of community
