@@ -51,6 +51,6 @@ Don’t tick all the boxes? That’s ok, we like thinking outside the box. We va
 
 The application will require answering short questions so give yourself time to complete it. Once started, you can save and return to your application before submitting.
 
-We use Applied as our de-identified recruitment platform, helping us reduce the risk of unconscious bias in our hiring process. If you are curious to know more about how it works, [check out this blog post](https://www.linkedin.com/pulse/how-de-identified-recruitment-improving-diversity-our-veronica/?trackingId=0MnwcX%2BBRQSOTl0oogaIbA%3D%3D) from our Head of Group Strategy, Veronica! 
+We use Applied as our de-identified recruitment platform, helping us reduce the risk of unconscious bias in our hiring process. If you are curious to know more about how it works, [check out this blog post](/blog/how-de-identified-recruitment-is-improving-the-diversity-of-our-team/) from our Head of Group Strategy, Veronica!
 
-Questions? Please reach out to Khi, HR Coordinator, at careers@futuresuper.com.au.
+Questions? Please reach out to Khi, HR Coordinator, at [careers@futuresuper.com.au](mailto:careers@futuresuper.com.au?subject=Working%20at%20Future%20Super).
