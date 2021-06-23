@@ -48,9 +48,3 @@ Don’t tick all the boxes? That’s ok, we like thinking outside the box. We va
 * Team lunches, drinks and company-wide events
 * 14 weeks’ paid parental leave for all genders and a generous parental superannuation package, Employee Assistance Program (EAP), formal training and development with continuous improvement opportunities, a continuous supply of healthy office snacks (if/when you’re in the office) and membership to Bicycle NSW as part of our sustainable transport policy
 * Future Super is an equal opportunity employer – we provide flexible working hours, the option to work from home and a laptop you can use to work remotely (this used to be a more differentiating dot-point, but it’s still true!)
-
-The application will require answering short questions so give yourself time to complete it. Once started, you can save and return to your application before submitting.
-
-We use Applied as our de-identified recruitment platform, helping us reduce the risk of unconscious bias in our hiring process. If you are curious to know more about how it works, [check out this blog post](https://www.linkedin.com/pulse/how-de-identified-recruitment-improving-diversity-our-veronica/?trackingId=0MnwcX%2BBRQSOTl0oogaIbA%3D%3D) from our Head of Group Strategy, Veronica! 
-
-Questions? Please reach out to Khi, HR Coordinator, at careers@futuresuper.com.au.
