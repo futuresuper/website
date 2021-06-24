@@ -66,17 +66,35 @@ var mixer = mixitup(containerEl, {
   },
   callbacks: {
     onMixEnd: function (state) {
+      const selector = state.activeFilter.selector;
+      if (textSearch && !selector.includes("data-name")) {
+        const str = "[data-name*=" + textSearch.toUpperCase() + "]" + selector;
+        mixer.filter(str);
+      }
       // prettier-ignore
       let matchingText = ['There are <span style="font-weight: bold">' + state.totalMatching + "</span> "];
-      matchingText.push(businessType ? businessType + " " : "");
-      matchingText.push(assetClass ? assetClass + " assets" : " assets");
-      matchingText.push(country ? "from " + country + " " : "");
       matchingText.push(
-        investmentOption
-          ? "in the " + investmentOption + " option."
-          : "across all investment options."
+        businessType && businessType !== "Business type"
+          ? businessType + " "
+          : ""
       );
-      resultsText.innerHTML = matchingText.join(" ");
+      matchingText.push(
+        assetClass && assetClass !== "Asset class"
+          ? assetClass + " assets"
+          : " assets"
+      );
+      matchingText.push(
+        country && country !== "Country" ? " from " + country + " " : " "
+      );
+      matchingText.push(
+        investmentOption && investmentOption !== "Investment option"
+          ? "in the " + investmentOption + " option"
+          : "across all investment options"
+      );
+      matchingText.push(
+        textSearch ? " that match your search for '" + textSearch + "'." : "."
+      );
+      resultsText.innerHTML = matchingText.join("");
       // ## 3 - hasFailed true? show alert
       if (state.hasFailed) {
         noItemsFoundMessage.style.display = "block"; // ## 3 - hasFailed false? hide alert
@@ -103,6 +121,21 @@ businessTypeFilter.addEventListener("change", function (e) {
   businessType =
     e.target.options[e.target.options.selectedIndex].innerText.trim();
 });
+
+let textSearch;
+function handleChange(text) {
+  console.log(text);
+  textSearch = text;
+  const state = mixer.getState();
+  const firstDot = state.activeFilter.selector.indexOf(".");
+  const append =
+    firstDot > -1 ? state.activeFilter.selector.slice(firstDot) : "";
+  let str = "";
+  if (text.length > 0) {
+    str = "[data-name*=" + text.toUpperCase() + "]";
+  }
+  mixer.filter(str + append);
+}
 
 // Show/hide cols based on investment option selection
 investmentOptionsFilter.addEventListener("change", function (e) {

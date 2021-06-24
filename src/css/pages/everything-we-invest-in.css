@@ -1021,5 +1021,23 @@ input.search {
 .everything-we-invest-in .close-button-container #join-close svg {
   height: 3rem;
 }
+.everything-we-invest-in #search-container {
+  border: 2px solid #e6e6e5;
+  max-width: 40rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+}
+.everything-we-invest-in #search-container svg {
+  margin-right: 1rem;
+}
+.everything-we-invest-in #search-container input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 100%;
+  outline: none;
+}
 
 /*# sourceMappingURL=everything-we-invest-in.css.map */
