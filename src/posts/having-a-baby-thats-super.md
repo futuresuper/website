@@ -1,17 +1,16 @@
 ---
-title: "Having a baby? That’s super!"
+author: Kirstin Hunter
 slug: having-a-baby-thats-super
 date: 2019-02-05T19:23:53.261Z
-tags:
-    - Equality
-    - Ethical Investing
-author: Kirstin Hunter
-canonical:
-description: >-
-    Introducing Baby Bump, Future Super's new initiative to make super more fair for parents.
+canonical: null
+title: Having a baby? That’s super!
 image: https://uploads-ssl.webflow.com/5ec37dbb4834014045cd346d/5ec37dbc4834014ad9cd3e36_having%20a%20baby%20(1).png
+tags:
+  - Equality
+  - Ethical Investing
+description: Introducing Baby Bump, Future Super's new initiative to make super
+  more fair for parents.
 ---
-
 ## Introducing Baby Bump
 
 Baby Bump is a new program for Future Super members where you receive a refund of the weekly member fee for the time you’re on parental leave, up to a maximum of 12 months.
@@ -22,7 +21,7 @@ It's our way of making super more fair for parents, and it's a baby step towards
 
 ## Gender Inequality and Super
 
-> At Future Super we’re very aware (and have [written previously](https://www.myfuturesuper.com.au/blog/making-superannuation-just-a-little-more-super-for-women)) of the glaring injustices in our superannuation system that mean women in Australia retire with [47% less super than men](http://makesuperfair.com.au/).
+At Future Super we’re very aware (and have [written previously](https://www.myfuturesuper.com.au/blog/making-superannuation-just-a-little-more-super-for-women)) of the glaring injustices in our superannuation system that mean women in Australia retire with [47% less super than men](http://makesuperfair.com.au/).
 
 For parents, that gap is even wider, with mothers retiring with a whopping [60% less super than fathers](https://percapita.org.au/research/not-so-super/).
 
@@ -32,6 +31,6 @@ This sobering figure actually **reveals two massive problems in Australia**: the
 
 The Baby Bump program is a fee rebate for Future Super members of **any gender** who have recently become new parents, whether by birth or adoption. All you need to do is complete [this simple form](https://myfuturesuper.com.au/baby-bump) and confirm your eligibility, we’ll rebate our membership fee back into your super account for the period that you’re on parental leave (up to $93.60).
 
-> Baby Bump is our way of saying CONGRATULATIONS on your new arrival!
+Baby Bump is our way of saying CONGRATULATIONS on your new arrival!
 
 ...and it’s a baby step we can take towards fixing the structural inequality in the super system for new parents: by **protecting the super for women taking time out of work** to be with their new child, and **removing one of the barriers** that might stop fathers from doing the same.
