@@ -28,7 +28,7 @@ content %}
     </fieldset>
 
     <fieldset data-filter-group="">
-      <select class="everything-dropdown select-filter">
+      <select class="everything-dropdown select-filter asset-class-filter">
         <option value="">Asset class</option>
         <option value=".growth-alternatives">Growth Alternatives</option>
         <option value=".international-shares">International Shares</option>
@@ -39,7 +39,7 @@ content %}
     </fieldset>
 
     <fieldset data-filter-group="">
-      <select class="everything-dropdown select-filter">
+      <select class="everything-dropdown select-filter country-filter">
         <option value="">Country</option>
         {% for country in countries %}
         <option value=".{{ country | lower |  replace(' ', '-')}}">
@@ -50,7 +50,7 @@ content %}
     </fieldset>
 
     <fieldset data-filter-group="">
-      <select class="everything-dropdown select-filter">
+      <select class="everything-dropdown select-filter business-type-filter">
         <option value="">Business type</option>
         {% for companyType in companyTypes %}
         <option
@@ -64,7 +64,7 @@ content %}
 
 
     <h3>Results</h3>
-    <p style="width: 50%">Our entire portfolio is invested across 1234 assets, listed below. The total amount invested in all of our investment options at 31st March 2021 was $1,234,567.</p>
+    <p style="width: 50%" id="results-description"></p>
 
   </div>
 
