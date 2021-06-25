@@ -1,0 +1,67 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+  <div class="home container">
+    <div class="hero-section">
+      <h1 class="heading-zero">Switch your super.<br>Shake the system.</h1>
+      <p>Your super has the power to combat climate change.
+        <br>Let’s put it to work.</p>
+      <a href="{{ site.joinUrl }}" class="button primary">Join Now</a>
+    </div>
+
+    <section>
+      <div>
+        <h2>Give fossil fuels the flick</h2>
+        <p>Each time just 34 people switch, that’s another million dollars out of super exposed to the fossil fuel industry^.</p>
+        <aside>
+          <p class="disclaimer">
+            ^Assumes average balance of $30,000, and that super has been moved from a Fund that invests in fossil fuels.
+          </p>
+        </aside>
+      </div>
+      <img src="{% src 'coal-flick.png', 502 %}" alt="A hand flicking a piece of coal" loading="lazy">
+    </section>
+
+    <section>
+      <div>
+        <h2>Your money talks</h2>
+        <p>Changing the future is simple when you understand your power over the systems around you.</p>
+        <p>Only 7.7% of super could fund Australia's transition to 100% clean energy*.</p>
+        <p>Future Super helps move your super out of fossil fuels and into climate solutions to make that vision for your future a reality.</p>
+        <p class="featured-link">
+          <a href="/how-we-invest" class="no-underline bold pink">See how we invest →</a>
+        </p>
+        <aside>
+          <p class="disclaimer">
+            <a href="https://www.uts.edu.au/research-and-teaching/our-research/institute-sustainable-futures/our-research/energy-and-climate/supercharging-clean-energy" target="_blank" rel="noopener noreferrer">
+              * Supercharging Australia's Clean Energy Transition
+            </a>
+            <br/>UTS: Institute For Sustainable Futures, 2018
+          </p>
+        </aside>
+      </div>
+      <img src="{% src 'queen-megaphone.png', 464 %}" alt="A collage of the queen and a megaphone" loading="lazy">
+    </section>
+
+    <section>
+      <div>
+        <h2>Join in just a few minutes</h2>
+        <p>It only takes 5 minutes to switch to super you can believe in.</p>
+        <a href="{{ site.joinUrl }}" class="no-underline bold green">Make the switch →</a>
+      </div>
+      <div class="image">
+        <picture>
+          <source media="(max-width: 599px)" srcset="{% src 'phone-tap.png', 205 %}">
+          <source media="(min-width: 600px)" srcset="{% src 'mouse-click-wind.png', 498 %}">
+          <img src="{% src 'phone-tap', 205 %}" alt="A finger tapping a mobile phone">
+        </picture>
+      </div>
+    </section>
+
+  </div>
+
+  {% include "partials/product-review-carousel.html" %}
+
+  {% include "partials/join-cta.html" %}
+
+{% endblock %}
