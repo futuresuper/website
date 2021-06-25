@@ -199,6 +199,10 @@ p a:hover {
   color: #f04b23;
 }
 
+.blue {
+  color: #0a5aff;
+}
+
 details,
 .doc-or-form-item li,
 .career-item li {

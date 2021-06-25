@@ -1,67 +1,247 @@
-{% extends "layouts/base.html" %}
-
-{% block content %}
-  <div class="home container">
-    <div class="hero-section">
-      <h1 class="heading-zero">Switch your super.<br>Shake the system.</h1>
-      <p>Your super has the power to combat climate change.
-        <br>Let’s put it to work.</p>
-      <a href="{{ site.joinUrl }}" class="button primary">Join Now</a>
-    </div>
-
-    <section>
-      <div>
-        <h2>Give fossil fuels the flick</h2>
-        <p>Each time just 34 people switch, that’s another million dollars out of super exposed to the fossil fuel industry^.</p>
-        <aside>
-          <p class="disclaimer">
-            ^Assumes average balance of $30,000, and that super has been moved from a Fund that invests in fossil fuels.
-          </p>
-        </aside>
-      </div>
-      <img src="{% src 'coal-flick.png', 502 %}" alt="A hand flicking a piece of coal" loading="lazy">
-    </section>
-
-    <section>
-      <div>
-        <h2>Your money talks</h2>
-        <p>Changing the future is simple when you understand your power over the systems around you.</p>
-        <p>Only 7.7% of super could fund Australia's transition to 100% clean energy*.</p>
-        <p>Future Super helps move your super out of fossil fuels and into climate solutions to make that vision for your future a reality.</p>
-        <p class="featured-link">
-          <a href="/how-we-invest" class="no-underline bold pink">See how we invest →</a>
-        </p>
-        <aside>
-          <p class="disclaimer">
-            <a href="https://www.uts.edu.au/research-and-teaching/our-research/institute-sustainable-futures/our-research/energy-and-climate/supercharging-clean-energy" target="_blank" rel="noopener noreferrer">
-              * Supercharging Australia's Clean Energy Transition
-            </a>
-            <br/>UTS: Institute For Sustainable Futures, 2018
-          </p>
-        </aside>
-      </div>
-      <img src="{% src 'queen-megaphone.png', 464 %}" alt="A collage of the queen and a megaphone" loading="lazy">
-    </section>
-
-    <section>
-      <div>
-        <h2>Join in just a few minutes</h2>
-        <p>It only takes 5 minutes to switch to super you can believe in.</p>
-        <a href="{{ site.joinUrl }}" class="no-underline bold green">Make the switch →</a>
-      </div>
-      <div class="image">
-        <picture>
-          <source media="(max-width: 599px)" srcset="{% src 'phone-tap.png', 205 %}">
-          <source media="(min-width: 600px)" srcset="{% src 'mouse-click-wind.png', 498 %}">
-          <img src="{% src 'phone-tap', 205 %}" alt="A finger tapping a mobile phone">
-        </picture>
-      </div>
-    </section>
-
+{% extends "layouts/base.html" %} {% block content %}
+<div class="home container">
+  <div class="hero-section" style="margin: 0">
+    <h1 style="text-transform: uppercase">
+      The super fund that’s doing something about climate change
+    </h1>
+    <p>
+      If your super isn’t planning for climate change then it’s not investing
+      for your future.
+    </p>
+    <p>
+      Future Super promises your super will have:<br />
+      <span class="bold"
+        >No fossil fuels · Investment in climate solutions · 100%
+        transparency</span
+      >
+    </p>
+    <a href="{{ site.joinUrl }}" class="button primary">Join Now</a>
   </div>
 
-  {% include "partials/product-review-carousel.html" %}
+  <section>
+    <div>
+      <h2>
+        The future isn’t only measured in dollars. It’s measured in celsius.
+      </h2>
+      <p>
+        The future of our planet is everyone’s business, but it’s ours more than
+        most. We invest billions of dollars that people will one day retire on,
+        and we care about what kind of world we deliver. So we choose renewables
+        over fossil fuels, responsibility over a quick buck and the future over
+        now.
+      </p>
+      <p>
+        Every investment at Future Super is screened for negative impacts on the
+        climate and we manage your super in ways that protect you from the risks
+        some investments pose to your financial and actual future. We also keep
+        up to date with the goings on in the world and conduct monthly reviews
+        of our investments to ensure that we do what we say when it comes to
+        your super.
+      </p>
+      <p>
+        But your financial returns are equally. Future Super has a record of
+        competitive returns for our members.
+      </p>
+    </div>
+    <img
+      src="{% src 'dollarsCelsuis.png', 502 %}"
+      alt="A thermometer and money"
+      loading="lazy"
+    />
+  </section>
 
-  {% include "partials/join-cta.html" %}
+  <section>
+    <div>
+      <h2>
+        Results speak louder than words: Future Super Balanced Impact was #1 in
+        FY 2019-20^
+      </h2>
+      <p>
+        Past performance is no guarantee of future returns, but you can still
+        check out our history of returns with one simple click.
+      </p>
+      <p class="featured-link">
+        <a href="/performance-and-returns" class="no-underline bold pink"
+          >See our performance →</a
+        >
+      </p>
+      <aside>
+        <p class="disclaimer">
+          Superratings Fund Crediting Survey - Balanced (60-79) 2020.
+        </p>
+      </aside>
+    </div>
+    <img
+      src="{% src 'numberone.png', 464 %}"
+      alt="A collage of the queen and a megaphone"
+      loading="lazy"
+    />
+  </section>
 
+  <section>
+    <div>
+      <h2>The best decisions aren’t always the hard ones.</h2>
+      <p>
+        An electric bike in winter. An eco-friendly diet. Shopping local and
+        dressing ethically. Let’s face it - being a good human can be pretty
+        hard work sometimes.
+      </p>
+      <p>
+        But the decision of where your super gets invested is an easy change
+        that can protect your future without requiring daily sacrifices from
+        you. This one, small decision can have an exponential impact and becomes
+        a lifetime of good ethical and financial choices.
+      </p>
+      <p>
+        Here’s how investing with Future Super can compare with other actions
+        you might take.
+      </p>
+    </div>
+    <img
+      src="{% src 'data-vis2.png', 464 %}"
+      alt="A graph comparing carbon emissions"
+      loading="lazy"
+    />
+  </section>
+
+  <section>
+    <div>
+      <h2>
+        We’re not solving climate change. We’re investing in the companies who
+        will.
+      </h2>
+      <p>
+        Investing your super in things like renewable energy instead of fossil
+        fuels isn’t just an ethical choice. It’s boarding the future at the
+        first stop.
+      </p>
+      <p>
+        Big businesses make a lot of money destroying our planet and most
+        investors just want a slice of those profits, so they let that status
+        quo stand.
+      </p>
+      <p>
+        Climate change is a problem driven by companies who make money while
+        destroying our planet. Most investors will look the other way, but we
+        know business needs to change quickly to safeguard our planet and
+        investments. That’s why we invest in those doing the work to prepare for
+        a future without fossil fuels. We take money out of the hands of
+        unsustainable companies and put it to work on investments that can
+        thrive as the world moves to reduce emissions.
+      </p>
+      <p>
+        We know that just a fraction of the $3 trillion in super funds could
+        finance Australia’s transition to 100% renewable energy. Right now, more
+        money than that is already invested in fossil fuels by the super
+        industry. Future Super makes it easy for you to choose clean energy
+        instead.
+      </p>
+      <p>
+        Future Super invests in solar, wind, infrastructure, social housing and
+        more. So when the world pays the price of climate recovery - it will be
+        into your pocket.
+      </p>
+      <p class="featured-link">
+        <a href="/how-we-invest" class="no-underline bold blue"
+          >Learn more about how we invest →</a
+        >
+      </p>
+    </div>
+    <img
+      src="{% src 'just7percent2.png', 464 %}"
+      alt="A graph showeing 7 percent"
+      loading="lazy"
+    />
+  </section>
+
+  <section>
+    <div>
+      <h2>Join in just a few minutes</h2>
+      <p>
+        The average time taken to complete the switch to Future Super is
+        currently:
+      </p>
+      <p>
+        <span class="bold"> 6 mins 39 seconds</span>
+      </p>
+      <a href="{{ site.joinUrl }}" class="no-underline bold green"
+        >Make the switch →</a
+      >
+    </div>
+    <div class="image">
+      <picture>
+        <source
+          media="(max-width: 599px)"
+          srcset="{% src 'phone-tap.png', 205 %}"
+        />
+        <source
+          media="(min-width: 600px)"
+          srcset="{% src 'mouse-click-wind.png', 498 %}"
+        />
+        <img
+          src="{% src 'phone-tap', 205 %}"
+          alt="A finger tapping a mobile phone"
+        />
+      </picture>
+    </div>
+  </section>
+</div>
+
+{% include "partials/product-review-carousel.html" %}
+
+<div class="home container">
+  <section>
+    <div>
+      <h2>Clear. Transparent. Open Source.</h2>
+      <p>
+        Future Super does everything we can to make sure that if you have a
+        question about your super, we have an answer easily available and easy
+        to understand.
+      </p>
+    </div>
+    <div>
+      <div style="border: 1px solid black; padding: 1rem; margin-bottom: 1rem">
+        <p>
+          Want to dive into the data about how our investment strategy impacts
+          your financial carbon emissions?
+        </p>
+        <p>
+          <a href="/ImpactReport2019" class="no-underline bold red"
+            >Browse our latest impact report →</a
+          >
+        </p>
+      </div>
+      <div style="border: 1px solid black; padding: 1rem; margin-bottom: 1rem">
+        <p>
+          Want to know everything that Future Super invests in, how much money
+          we allocate to each company, and which investments go in which
+          options?
+        </p>
+        <p>
+          <a href="/everything-we-invest-in" class="no-underline bold pink"
+            >Check out everything we invest in →</a
+          >
+        </p>
+      </div>
+      <div style="border: 1px solid black; padding: 1rem">
+        <p>
+          Want to know how each of our screens works, including tolerance and
+          how we define things like “fossil fuels”?
+        </p>
+        <p>
+          <a href="/how-we-invest" class="no-underline bold green"
+            >Understand our screens →</a
+          >
+        </p>
+      </div>
+    </div>
+  </section>
+</div>
+<aside class="join-cta">
+  <div class="container">
+    <h2>You don’t have to be an activist to join Future Super*</h2>
+    <p>*But joining Future Super might make you an activist.</p>
+    <a href="{{ site.joinUrl }}" class="button primary">Join Now</a>
+  </div>
+</aside>
 {% endblock %}

@@ -49,7 +49,11 @@ h1 {
   line-height: $line-height-xs;
   margin-bottom: 1.8rem;
   font-size: 2.8rem; // Fallback
-  font-size: clamp(2rem, 14vw, 5rem); // Min, Variable (including space for scrollbar), Max
+  font-size: clamp(
+    2rem,
+    14vw,
+    5rem
+  ); // Min, Variable (including space for scrollbar), Max
   letter-spacing: -0.09rem; // Fallback
   overflow-wrap: break-word; // Backup in case string is too large for container
 }
@@ -140,4 +144,8 @@ p {
 
 .red {
   color: $red-500;
+}
+
+.blue {
+  color: $blue-500;
 }
