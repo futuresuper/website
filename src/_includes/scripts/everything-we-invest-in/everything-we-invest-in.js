@@ -124,7 +124,7 @@ businessTypeFilter.addEventListener("change", function (e) {
 
 let textSearch;
 function handleChange(text) {
-  console.log(text);
+  // console.log(text);
   textSearch = text;
   const state = mixer.getState();
   const firstDot = state.activeFilter.selector.indexOf(".");

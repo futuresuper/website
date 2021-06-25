@@ -1024,7 +1024,7 @@ input.search {
 .everything-we-invest-in #search-container {
   border: 2px solid #e6e6e5;
   max-width: 40rem;
-  padding: 1rem;
+  padding: 0.5rem;
   margin-bottom: 2rem;
   display: flex;
   align-items: center;

@@ -1,8 +1,8 @@
 {% extends "layouts/base.html" %} {% set pageHeaderTitle = title %} {% block
 content %}
-<div class="everything-we-invest-in mix-container">
+<div class="everything-we-invest-in mix-container container">
   {# Page header and selectors #}
-  <div class="container">
+  <div>
     {% include "partials/page-header.html" %}
     <div class="article-content">
       <p>Want to know everything that Future Super invests in, how much money we allocate to each company, and which investments go in which options? You’re in the right place.</p>
@@ -10,7 +10,7 @@ content %}
     </div>
   </div>
 
-  <div class="container table-intro">
+  <div class="table-intro">
 
     <h2>Searchable table</h2>
     <p>We update this information every 3 months. It is current as of 31 March 2021. Downloadable versions are available below.</p>
@@ -66,7 +66,7 @@ content %}
       <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M26.25 19.25C26.25 23.116 23.116 26.25 19.25 26.25C15.384 26.25 12.25 23.116 12.25 19.25C12.25 15.384 15.384 12.25 19.25 12.25C23.116 12.25 26.25 15.384 26.25 19.25ZM24.9013 28.101C23.2698 29.1449 21.3306 29.75 19.25 29.75C13.451 29.75 8.75 25.049 8.75 19.25C8.75 13.451 13.451 8.75 19.25 8.75C25.049 8.75 29.75 13.451 29.75 19.25C29.75 21.7036 28.9084 23.9606 27.4982 25.7482L32.9078 31.1577L30.4329 33.6326L24.9013 28.101Z" fill="black"/>
       </svg>
-      <input type="text" onkeyup="handleChange(this.value)" placeholder="Enter a name, asset class, country, or business type" />
+      <input type="text" onkeyup="handleChange(this.value)" placeholder="Search by investment name..." />
     </div>
 
 
@@ -76,7 +76,7 @@ content %}
   </div>
 
   {# Investments Table #}
-  <div class="container-unlimited investment-card-section">
+  <div class="investment-card-section">
     <div class="grid header-row">
       <div></div>
       <div>Type</div>
@@ -206,6 +206,39 @@ content %}
     <h3>Have we ever engaged with Apple?</h3>
     <p>Yes, on multiple occasians, and we've received satisfactory responses in regards to all questions we've posed.</p>
   </div>
+
+  <div id="downloads-section">
+
+    <h2>Downloadable files</h2>
+    <ul class="plain doc-or-form-item" style="max-width: 50%">
+      <li>
+        <div class="icon">
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            {{ "/src/images/icons/download.svg" | svgContents("fill-light") | safe }}
+          </a>
+        </div>
+        <div class="text">
+          <h3><a href="#" target="_blank" rel="noopener noreferrer">All our investments (CSV)</a></h3>
+          As at 31 March 2021
+        </div>
+      </li>
+      <li>
+        <div class="icon">
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            {{ "/src/images/icons/download.svg" | svgContents("fill-light") | safe }}
+          </a>
+        </div>
+        <div class="text">
+          <h3><a href="#" target="_blank" rel="noopener noreferrer">All our investments (PDF)</a></h3>
+          As at 31 March 2021
+        </div>
+      </li>
+    </ul>
+
+
+  </div>
+
 </div>
 
+{% include "partials/also-see.html" %}
 {% endblock %}

@@ -10,4 +10,8 @@ pageScripts:
     "scripts/everything-we-invest-in/mixitup-multifilter.js",
     "scripts/everything-we-invest-in/everything-we-invest-in.js",
   ]
+alsoSee:
+  - How we invest
+  - Support and FAQs
+  - Performance and returns
 ---
