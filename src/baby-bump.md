@@ -3,11 +3,11 @@ title: Baby Bump
 layout: layouts/baby-bump.html
 summary: Future Super's baby step towards making super more fair for our members.
 description: A refund of the annual dollar-based administration fee for the time
-  you’re on parental leave, up to a maximum of 12 months ($93.60).
+  you’re on parental leave, up to a maximum of 12 months ($60).
 pageStyles:
   - src/css/pages/baby-bump.css
 ---
-Baby Bump is a refund of the annual dollar-based administration fee for the time you are on parental leave, up to a maximum of 12 months (equivalent to $93.60).
+Baby Bump is a refund of the annual dollar-based administration fee for the time you are on parental leave, up to a maximum of 12 months (equivalent to $60).
 
 We created Baby Bump for two reasons:
 
