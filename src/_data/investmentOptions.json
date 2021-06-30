@@ -11,8 +11,8 @@
     "targets20Percent": false,
     "highlightInvestments": [],
     "fee": {
-      "perAnnumPercentage": 0.874,
-      "perYearPrice": 93.6
+      "perAnnumPercentage": 0.885,
+      "perYearPrice": 60
     },
     "investmentObjective": 2.5,
     "assetAllocation": {
@@ -41,8 +41,8 @@
       }
     ],
     "fee": {
-      "perAnnumPercentage": 1.478,
-      "perYearPrice": 93.6
+      "perAnnumPercentage": 1.501,
+      "perYearPrice": 60
     },
     "investmentObjective": 2.5,
     "assetAllocation": {
@@ -75,8 +75,8 @@
       }
     ],
     "fee": {
-      "perAnnumPercentage": 1.488,
-      "perYearPrice": 93.6
+      "perAnnumPercentage": 1.501,
+      "perYearPrice": 60
     },
     "investmentObjective": 2.5,
     "assetAllocation": {
@@ -94,8 +94,8 @@
     "fightsInequality": true,
     "investsInRenewables": true,
     "fee": {
-      "perAnnumPercentage": 0.874,
-      "perYearPrice": 93.6
+      "perAnnumPercentage": 0.882,
+      "perYearPrice": 60
     },
     "investmentObjective": 2.5,
     "assetAllocation": {
