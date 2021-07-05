@@ -40,6 +40,7 @@
         grid-column: span 4;
         font-weight: bold;
       }
+
       :nth-child(2) {
         grid-column: span 2;
       }
@@ -52,18 +53,30 @@
       :nth-child(5) {
         grid-column: span 2;
       }
+
+      @media (max-width: $breakpoint-md) {
+        :nth-child(1) {
+          grid-column: span 12;
+        }
+      }
     }
 
-    .table-row:hover {
-      background-color: $off-white-300;
-      cursor: pointer;
-    }
+    // .table-row:hover {
+    //   background-color: $off-white-300;
+    //   cursor: pointer;
+    // }
 
     .header-row {
       font-family: $font-stack-sans-serif;
       font-size: 1rem;
       font-weight: bold;
       border-bottom: 2px solid $grey-300;
+    }
+
+    @media (max-width: $breakpoint-md) {
+      .hide-on-mobile {
+        display: none;
+      }
     }
   }
 

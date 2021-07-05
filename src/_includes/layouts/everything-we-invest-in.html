@@ -30,7 +30,7 @@ content %}
     <fieldset data-filter-group="">
       <select class="everything-dropdown select-filter asset-class-filter">
         <option value="">Asset class</option>
-        <option value=".growth-alternatives">Growth Alternatives</option>
+        <option value=".alternatives">Alternatives</option>
         <option value=".international-shares">International Shares</option>
         <option value=".domestic-shares">Domestic Shares</option>
         <option value=".fixed-interest">Fixed Interest</option>
@@ -79,32 +79,32 @@ content %}
   <div class="investment-card-section">
     <div class="grid header-row">
       <div></div>
-      <div>Type</div>
-      <div>Business Type</div>
-      <div class="all-options-col hide-on-reset">Country</div>
-      <div class="all-options-col hide-on-reset">$ Value</div>
-      <div style="display: none" class="balanced-index-col hide-on-reset">
+      <div class="hide-on-mobile">Asset Class</div>
+      <div class="hide-on-mobile">Business Type</div>
+      <div class="all-options-col hide-on-reset hide-on-mobile">Country</div>
+      <div class="all-options-col hide-on-reset hide-on-mobile">$ Value</div>
+      <div style="display: none" class="balanced-index-col hide-on-reset hide-on-mobile">
         $ Value (Balanced Index)
       </div>
-      <div style="display: none" class="balanced-index-col hide-on-reset">
+      <div style="display: none" class="balanced-index-col hide-on-reset hide-on-mobile">
         % of Balanced Index
       </div>
-      <div style="display: none" class="balanced-impact-col hide-on-reset">
+      <div style="display: none" class="balanced-impact-col hide-on-reset hide-on-mobile">
         $ Value (Balanced Impact)
       </div>
-      <div style="display: none" class="balanced-impact-col hide-on-reset">
+      <div style="display: none" class="balanced-impact-col hide-on-reset hide-on-mobile">
         % of Balanced Impact
       </div>
-      <div style="display: none" class="renewables-plus-growth-col hide-on-reset">
+      <div style="display: none" class="renewables-plus-growth-col hide-on-reset hide-on-mobile">
         $ Value (Renewables Plus Growth)
       </div>
-      <div style="display: none" class="renewables-plus-growth-col hide-on-reset">
+      <div style="display: none" class="renewables-plus-growth-col hide-on-reset hide-on-mobile">
         % of Renewables Plus Growth
       </div>
-      <div style="display: none" class="pension-fund-col hide-on-reset">
+      <div style="display: none" class="pension-fund-col hide-on-reset hide-on-mobile">
         $ Value (Pension Fund)
       </div>
-      <div style="display: none" class="pension-fund-col hide-on-reset">
+      <div style="display: none" class="pension-fund-col hide-on-reset hide-on-mobile">
         % of Pension Fund
       </div>
     </div>
@@ -117,9 +117,9 @@ content %}
       data-balanced-impact-weight="{{ investment.investmentOptions["Balanced Impact"].weight }}"
       data-renewables-plus-growth-weight="{{ investment.investmentOptions["Renewables Plus Growth"].weight }}"
       data-pension-fund-weight="{{ investment.investmentOptions["Pension Fund"].weight }}"
-      {% if investment.name === "Apple" %}
+      {# {% if investment.name === "Apple" %}
         onclick="showInvestmentOverlay(true)"
-      {% endif %}
+      {% endif %} #}
     >
       <div>
         <div>
@@ -140,18 +140,20 @@ content %}
         {% endif %}
         </div>
       </div>
-      <div class="filter-category">{{ investment.type }}</div>
-      <div class="filter-category">{{ investment.businessSector }}</div>
-      <div class="filter-category all-options-col hide-on-reset">
-        {{ investment.country }}
+      <div class="filter-category hide-on-mobile">
+      {% if investment.type === "Growth Alternatives" or investment.type === "Defensive Alternatives" %}Alternatives
+      {% else %}{{ investment.type }}{% endif %}
       </div>
-      <div class="all-options-col hide-on-reset">
+      <div class="filter-category hide-on-mobile">{{ investment.businessSector }}</div>
+      <!-- prettier-ignore -->
+      <div class="filter-category all-options-col hide-on-reset hide-on-mobile">{{ investment.country }}</div>
+      <div class="all-options-col hide-on-reset hide-on-mobile">
         {% if investment.totalSize > 0.1 %} ${{ investment.totalSize | round(1)
         }} Million {% else %} Less than $0.1 Million {% endif %}
       </div>
       {% if investment.investmentOptions["Balanced Index"] %}
       <div style="display: none" class="filter-category">Balanced Index</div>
-      <div style="display: none" class="balanced-index-col hide-on-reset">
+      <div style="display: none" class="balanced-index-col hide-on-reset hide-on-mobile">
         ${{investment.investmentOptions["Balanced Index"].value | round(2)}}
         Million
       </div>
@@ -160,7 +162,7 @@ content %}
       </div>
       {% endif %} {% if investment.investmentOptions["Balanced Impact"] %}
       <div style="display: none" class="filter-category">Balanced Impact</div>
-      <div style="display: none" class="balanced-impact-col hide-on-reset">
+      <div style="display: none" class="balanced-impact-col hide-on-reset hide-on-mobile">
         ${{investment.investmentOptions["Balanced Impact"].value | round(2)}}
         Million
       </div>
@@ -171,7 +173,7 @@ content %}
       %}
       <!-- prettier-ignore -->
       <div style="display: none" class="filter-category">Renewables Plus Growth</div>
-      <div style="display: none" class="renewables-plus-growth-col hide-on-reset">
+      <div style="display: none" class="renewables-plus-growth-col hide-on-reset hide-on-mobile">
         ${{investment.investmentOptions["Renewables Plus Growth"].value | round(2)}}
         Million
       </div>
@@ -180,7 +182,7 @@ content %}
       </div>
       {% endif %} {% if investment.investmentOptions["Pension Fund"] %}
       <div style="display: none" class="filter-category">Pension Fund</div>
-      <div style="display: none" class="pension-fund-col hide-on-reset">
+      <div style="display: none" class="pension-fund-col hide-on-reset hide-on-mobile">
         ${{investment.investmentOptions["Pension Fund"].value | round(2)}}
         Million
       </div>

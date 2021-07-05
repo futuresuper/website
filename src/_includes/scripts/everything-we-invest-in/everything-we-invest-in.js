@@ -25,7 +25,9 @@ var conv = function (str) {
 var catArray = document.querySelectorAll(".filter-category");
 catArray.forEach(function (elem) {
   var text = elem.innerText || elem.innerContent;
+  // console.log(text);
   var className = conv(text);
+  // console.log(className);
   elem.parentElement.classList.add(className);
 });
 
@@ -144,17 +146,23 @@ investmentOptionsFilter.addEventListener("change", function (e) {
   investmentOption =
     e.target.options[e.target.options.selectedIndex].innerText.trim();
   resetCols();
+  const windowWidth = window.innerWidth;
+  console.log(windowWidth);
   if (!option) {
-    var colItems = document.querySelectorAll(".all-options-col");
-    colItems.forEach(function (elem) {
-      elem.style.display = "block";
-    });
+    if (windowWidth > 768) {
+      var colItems = document.querySelectorAll(".all-options-col");
+      colItems.forEach(function (elem) {
+        elem.style.display = "block";
+      });
+    }
     mixer.sort("size:desc");
   } else {
-    var colItems = document.querySelectorAll(option + "-col");
-    colItems.forEach(function (elem) {
-      elem.style.display = "block";
-    });
+    if (windowWidth > 768) {
+      var colItems = document.querySelectorAll(option + "-col");
+      colItems.forEach(function (elem) {
+        elem.style.display = "block";
+      });
+    }
     mixer.sort(option.slice(1) + "-weight:desc");
   }
 });

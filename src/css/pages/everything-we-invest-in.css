@@ -991,15 +991,21 @@ input.search {
 .everything-we-invest-in .investment-card-section .grid :nth-child(5) {
   grid-column: span 2;
 }
-.everything-we-invest-in .investment-card-section .table-row:hover {
-  background-color: #fbf9f9;
-  cursor: pointer;
+@media (max-width: 48rem) {
+  .everything-we-invest-in .investment-card-section .grid :nth-child(1) {
+    grid-column: span 12;
+  }
 }
 .everything-we-invest-in .investment-card-section .header-row {
   font-family: "Helvetica Neue", "Helvetica", sans-serif;
   font-size: 1rem;
   font-weight: bold;
   border-bottom: 2px solid #dadad7;
+}
+@media (max-width: 48rem) {
+  .everything-we-invest-in .investment-card-section .hide-on-mobile {
+    display: none;
+  }
 }
 .everything-we-invest-in #details-overlay {
   z-index: 999;
