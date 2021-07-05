@@ -140,10 +140,8 @@ content %}
         {% endif %}
         </div>
       </div>
-      <div class="filter-category hide-on-mobile">
-      {% if investment.type === "Growth Alternatives" or investment.type === "Defensive Alternatives" %}Alternatives
-      {% else %}{{ investment.type }}{% endif %}
-      </div>
+      <!-- prettier-ignore -->
+      <div class="filter-category hide-on-mobile">{% if investment.type === "Growth Alternatives" or investment.type === "Defensive Alternatives" %}Alternatives{% else %}{{ investment.type }}{% endif %}</div>
       <div class="filter-category hide-on-mobile">{{ investment.businessSector }}</div>
       <!-- prettier-ignore -->
       <div class="filter-category all-options-col hide-on-reset hide-on-mobile">{{ investment.country }}</div>
