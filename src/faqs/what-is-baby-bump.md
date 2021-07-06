@@ -1,12 +1,12 @@
 ---
 title: "What is Baby Bump? "
 slug: what-is-baby-bump
-date: 2021-06-15T05:10:56Z
+date: 2021-06-30T05:24:35Z
 category: Fees
 order: 1
 ---
 
-Baby Bump is a refund of the annual dollar-based administration fee for the time you are on parental leave, up to a maximum of 12 months (equivalent to $93.60).
+Baby Bump is a refund of the annual dollar-based administration fee for the time you are on parental leave, up to a maximum of 12 months (equivalent to $60).
 
 We created Baby Bump for two reasons:
 
