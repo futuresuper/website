@@ -112,11 +112,11 @@ content %}
     <div
       class="mix grid table-row"
       data-name="{{ investment.name | upper }}"
-      data-size="{{ investment.totalSize }}"
-      data-balanced-index-weight="{{ investment.investmentOptions["Balanced Index"].weight }}"
-      data-balanced-impact-weight="{{ investment.investmentOptions["Balanced Impact"].weight }}"
-      data-renewables-plus-growth-weight="{{ investment.investmentOptions["Renewables Plus Growth"].weight }}"
-      data-pension-fund-weight="{{ investment.investmentOptions["Pension Fund"].weight }}"
+      data-size="{% if investment.name === "Cash at Bank" %}-1{% else %}{{investment.totalSize}}{% endif %}"
+      data-balanced-index-weight="{% if investment.name === "Cash at Bank" %}-1{% else %}{{investment.investmentOptions["Balanced Index"].weight}}{% endif %}"
+      data-balanced-impact-weight="{% if investment.name === "Cash at Bank" %}-1{% else %}{{ investment.investmentOptions["Balanced Impact"].weight }}{% endif %}"
+      data-renewables-plus-growth-weight="{% if investment.name === "Cash at Bank" %}-1{% else %}{{ investment.investmentOptions["Renewables Plus Growth"].weight }}{% endif %}"
+      data-pension-fund-weight="{% if investment.name === "Cash at Bank" %}-1{% else %}{{ investment.investmentOptions["Pension Fund"].weight }}{% endif %}"
       {# {% if investment.name === "Apple" %}
         onclick="showInvestmentOverlay(true)"
       {% endif %} #}
