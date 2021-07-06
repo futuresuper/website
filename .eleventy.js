@@ -94,7 +94,7 @@ module.exports = (config) => {
   config.addFilter("slug", (input) => {
     const options = {
       replacement: "-",
-      remove: /[&,+()$~%.'":*?<>{}#]/g,
+      remove: /[&,+()$~%.'":*?<>{}#/]/g,
       lower: true,
     };
     return slugify(input, options);
