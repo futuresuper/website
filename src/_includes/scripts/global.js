@@ -24,6 +24,9 @@ window.onload = function () {
   const referer = getQueryVariable("r");
   const refererCookie = getCookie("fsreferer");
 
+  console.log(referer);
+  console.log(refererCookie);
+
   if (referer) {
     setCookie("fsreferer", referer, 365);
     document.getElementById("referer").value = referer;
